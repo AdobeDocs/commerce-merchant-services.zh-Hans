@@ -4,7 +4,7 @@ description: 使用API密钥和私钥连接您的商务实例，并在配置中�
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---

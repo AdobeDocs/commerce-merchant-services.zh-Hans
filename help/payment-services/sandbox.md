@@ -4,7 +4,7 @@ description: 使用PayPal沙盒帐户 [!DNL Payment Services] 在测试模式下
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---

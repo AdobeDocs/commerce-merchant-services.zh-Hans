@@ -4,7 +4,7 @@ description: 按照以下步骤安装 [!DNL Upgrade Compatibility Tool] 为您�
 exl-id: e1dabc9a-0ab0-4f8d-98d3-7a32abbedcb8
 source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---

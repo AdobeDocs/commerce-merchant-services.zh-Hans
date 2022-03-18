@@ -4,7 +4,7 @@ description: Adobe Commerce中的结帐页面概述。
 exl-id: afe3a93d-8aba-428e-ac9d-0be8d23ceb47
 source-git-commit: d8302d2d652b4e2380cc862183e58cbd2cca831b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '130'
 ht-degree: 0%
 
 ---

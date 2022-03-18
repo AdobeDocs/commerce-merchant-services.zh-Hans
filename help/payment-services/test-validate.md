@@ -4,7 +4,7 @@ description: 测试和验证有助于确保 [!DNL Payment Services] 功能可按
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---

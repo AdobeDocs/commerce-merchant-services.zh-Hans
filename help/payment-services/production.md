@@ -4,7 +4,7 @@ description: 通过启用 [!DNL Payment Services] 生产。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---

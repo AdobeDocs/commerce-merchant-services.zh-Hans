@@ -4,7 +4,7 @@ description: 了解如何管理现有的实时搜索规则。
 exl-id: 1a2ca9f9-1cf2-446f-809b-03ca5c798b13
 source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '134'
 ht-degree: 0%
 
 ---

@@ -4,7 +4,7 @@ description: 为实时搜索彩块化配置价格彩块化范围和间隔。
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
 source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
