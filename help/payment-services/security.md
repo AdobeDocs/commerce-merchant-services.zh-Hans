@@ -1,0 +1,40 @@
+---
+title: 安全性和合规性
+description: 查看您网站的安全性和合规性要求。
+exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
+source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
+
+---
+
+# 安全性和合规性
+
+安全是 [!DNL Payment Services] 和贵机构未传递任何受专用或支付卡行业(PCI)管制的信息 [!DNL Payment Services].
+
+## 商务安全
+
+Adobe Commerce和Magento Open Source包括对多项安全功能的支持。
+
+请参阅 [安全性](https://docs.magento.com/user-guide/stores/security.html)核心用户指南中的{target=&quot;_blank&quot;}，用于查看安全最佳实践，以及了解如何管理管理员会话和凭据、实施CAPTCHA和管理网站限制。
+
+## PCI合规性
+
+支付卡行业(PCI)为接受通过互联网通过信用卡付款的企业制定了一套要求。 除了维护安全的环境外，处理客户信用卡信息的商家还负责满足一些标准准则。
+
+请参阅 [PCI合规指南](https://docs.magento.com/user-guide/stores/compliance-pci.html){target=&quot;_blank&quot;}以了解详细信息。
+
+商户可以完成 [自我评估调查表](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target=&quot;_blank&quot;}，这是一个用于评估持卡人数据安全性的自验证工具。
+
+### 信用卡字段
+
+使用信用卡字段，您的服务中不会传递PCI管制的数据。 您不必存储或维护该数据，这可大大减少PCI合规性问题。
+
+### PayPal智能按钮
+
+使用PayPal智能按钮，您的服务中不会传递PCI调节的数据。 您不必存储或维护该数据，这可大大减少PCI合规性问题。
+
+出于安全原因，PayPal在结帐期间不传递帐单地址 — 国家/地区、电子邮件和名称是使用的唯一帐单信息。 您可以选择启用网站的PayPal结帐功能，以通过联系PayPal并完成审查流程来返回完整的帐单地址。
+
+PayPal还集成了欺诈保护功能，利用机器学习帮助您打击欺诈。 请参阅PayPal的 [卖家保护文档](https://www.paypal.com/us/webapps/mpp/security/seller-protection) 以了解更多信息。
