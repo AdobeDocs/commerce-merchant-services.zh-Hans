@@ -2,10 +2,10 @@
 title: 实时搜索发行说明
 description: 有关Adobe Commerce中实时搜索的最新发行信息。
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 8fea8145e624b57278b9373246e8c4249472a03d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '653'
+ht-degree: 1%
 
 ---
 
@@ -16,6 +16,19 @@ ht-degree: 0%
 * ![新建](../assets/new.svg)  — 新增功能
 * ![修复](../assets/fix.svg)  — 修复和改进功能
 * ![错误](../assets/bug.svg)  — 已知问题
+
+## [!DNL Live Search] 2.0
+
+* 与Adobe Commerce(EE)兼容：2.4.x
+* 与Adobe Commerce for Cloud(ECE)兼容：2.4.x
+* 稳定性：稳定
+
+* ![新建](../assets/new.svg) - [店面弹出窗口](quick-tour.md) 可以通过 *管理员*.
+* ![新建](../assets/new.svg)  — 测试版 [PWA](https://developer.adobe.com/commerce/pwa-studio/) 兼容性。
+* ![新建](../assets/new.svg) - Live Search安装过程已更新，并显示高级流程更改。
+* ![修复](../assets/fix.svg) - [高级搜索](https://docs.magento.com/user-guide/catalog/search-advanced.html) 链接已从storefront footer中删除。
+* ![错误](../assets/bug.svg)  — 不支持以下产品属性 [MagentoGraphQL API](https://devdocs.magento.com/guides/v2.4/graphql) 与测试版PWA相关时： `description`, `name`, `short_description`
+* ![错误](../assets/bug.svg)  — 实时搜索PWA测试版不支持 [事件处理](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
 ## [!DNL Live Search] 1.3.1
 
@@ -47,7 +60,7 @@ ht-degree: 0%
 * 稳定性：稳定
 
 * ![新建](../assets/new.svg)  — 店面 [弹出窗口](storefront-popover.md) 当购物者在“搜索”框中键入查询时，显示热门搜索结果的建议产品和缩略图。
-* ![新建](../assets/new.svg)  — 商务管理员会话在键盘长时间不活动期间保持打开状态
+* ![新建](../assets/new.svg)  — 商务 *管理员* 会话在键盘长时间不活动期间保持打开状态
 * ![新建](../assets/new.svg) - [!DNL Live Search] 载入后自动启用
 * ![修复](../assets/fix.svg)  — 初始索引时间不到1小时
 * ![修复](../assets/fix.svg)  — 近乎实时的增量产品更新（安装和设置后）

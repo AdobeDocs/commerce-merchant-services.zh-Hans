@@ -3,20 +3,22 @@ user-guide-title: Live Search指南
 user-guide-description: 本指南提供了有关使用Adobe Commerce中的实时搜索的详细说明。
 breadcrumb-title: Live Search指南
 hide: true
-source-git-commit: b4310f95a038022e377158bca77f5fa9eaf05078
+source-git-commit: 2e375aac4edb1f5d8e57096d8b399801f3a3e5f3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '90'
+ht-degree: 2%
 
 ---
 
 # Live Search for Commerce {#live-search}
 
-- [Live Search指南](overview.md)
-- 快速入门 {#getting-started}
-   - [安装](install.md)
-   - [发行说明](release-notes.md)
-- 实时搜索店面{#live-search-storefront}
+- [指南概述](guide-overview.md)
+- [Live Search简介](overview.md)
+- [发行说明](release-notes.md)
+- 板载实时搜索 {#onboard}
+   - [入门概述](onboarding-overview.md)
+   - [安装Live Search](install.md)
+- 实时搜索店面 {#live-search-storefront}
    - [快速浏览](quick-tour.md)
    - [店面弹出窗口](storefront-popover.md)
    - [弹出窗口元素的样式设置](storefront-popover-styling.md)
