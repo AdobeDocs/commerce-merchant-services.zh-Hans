@@ -2,8 +2,7 @@
 user-guide-title: Live Search指南
 user-guide-description: 本指南提供了有关使用Adobe Commerce中的实时搜索的详细说明。
 breadcrumb-title: Live Search指南
-hide: true
-source-git-commit: 2e375aac4edb1f5d8e57096d8b399801f3a3e5f3
+source-git-commit: 93f7157135ae3eb1adb880752585565b8bfd9fbb
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 2%
