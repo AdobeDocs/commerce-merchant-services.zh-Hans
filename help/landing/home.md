@@ -3,27 +3,18 @@ title: 服务文档
 description: 浏览Adobe Commerce产品文档的服务
 seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
+breadcrumb-title: 文档
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 2f64ddf30cb9bcd5d2d05b37fbe601f9bfe8e84b
+source-git-commit: ddfcc8e195b1971b0f431205948faa6c6dd2c49f
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 2%
+source-wordcount: '314'
+ht-degree: 0%
 
 ---
 
-# 服务文档 {#documentation}
-
-![Adobe Commerce 的服务](./assets/banner-services-home.png)
+# <!-- use banner as heading -->![服务文档](./assets/banner-services-home.png) {#documentation}
 
 Adobe提供托管服务的集合，以帮助商户支持其业务的关键组件。
-
-## 连接到服务
-
-的 [Commerce Services Connector](https://docs.magento.com/user-guide/system/saas.html) 使用API密钥和私钥为Adobe Commerce或Magento Open Source实例提供集成。 对于数据服务(仅限Adobe Commerce)，您还可以在配置中指定数据空间。
-
-## 目录同步
-
-对于使用目录数据(产品Recommendations和Live Search)的服务， [目录同步](https://docs.magento.com/user-guide/system/catalog-sync.html) 流程会持续将产品数据从Commerce Server导出到Commerce Services，以使服务保持最新。
 
 ## 可用服务
 
@@ -31,7 +22,7 @@ Adobe提供托管服务的集合，以帮助商户支持其业务的关键组件
 <tr>
    <td valign="top">
        <img alt="[!UICONTROL Product Recommendations]" src="assets/product-recs.png" />
-    <div><a href="https://docs.magento.com/user-guide/recommendations/overview.html">
+    <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/overview.html">
     <strong>[!DNL Product Recommendations]</strong></a>
     </div>
     <p>(仅限Adobe Commerce)<br><em>根据购物者行为、流行趋势、产品相似度等添加AI推荐。</em></p>
@@ -65,6 +56,14 @@ Adobe提供托管服务的集合，以帮助商户支持其业务的关键组件
   </td>
 </tr>
 </table>
+
+## 连接到服务
+
+的 [Commerce Services Connector](https://docs.magento.com/user-guide/system/saas.html) 使用API密钥和私钥为Adobe Commerce或Magento Open Source实例提供集成。 对于数据服务(仅限Adobe Commerce)，您还可以在配置中指定数据空间。
+
+## 目录同步
+
+对于使用目录数据(产品Recommendations和Live Search)的服务， [目录同步](https://docs.magento.com/user-guide/system/catalog-sync.html) 流程会持续将产品数据从Commerce Server导出到Commerce Services，以使服务保持最新。
 
 ## 新增功能
 
