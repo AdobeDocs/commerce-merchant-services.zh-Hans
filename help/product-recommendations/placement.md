@@ -1,9 +1,9 @@
 ---
 title: 版面和标签
 description: 了解您可以在网站的各个页面上的位置放置推荐，以及针对每种推荐类型常用标签的建议。
-source-git-commit: 4ec8acf6795cd451df48fbfba12e8635c180bf79
+source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,11 @@ ht-degree: 0%
 
 有这么多的推荐类型可供选择，您应该在每个页面上使用哪些推荐类型？ 如果您不确定从何处开始，请尝试以下操作：
 
-|主页|`Recommended for you`| |产品页|`Viewed this, viewed that`| |购物车|`Bought this, bought that`|
+| 页面 | 推荐类型 |
+|---|---|
+| 主页 | `Recommended for you` |
+| 产品页面 | `Viewed this, viewed that` |
+| 购物车 | `Bought this, bought that` |
 
 您可以跟踪 [量度](workspace.md) 并根据需要进行调整。 请记住，实验是关键。
 

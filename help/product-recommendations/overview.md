@@ -1,9 +1,9 @@
 ---
 title: 概述
 description: '"[!DNL Product Recommendations] 是一款功能强大的营销工具，可用于提高转化率、提高收入和刺激购物者参与度。”'
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -31,18 +31,3 @@ ht-degree: 0%
 - 从九种不同的智能推荐类型中进行选择，具体选项基于以下方面：基于购物者、基于项目、基于受欢迎程度、趋势和基于相似度
 - 在购物者的店面历程中，使用行为数据对推荐进行个性化
 - 测量与每个推荐相关的关键量度，以帮助您了解推荐的影响
-
-- [入门](onboarding.md)
-完成产品推荐的安装和配置。
-
-- [工作区](workspace.md)
-通过“推荐”工作区了解您的方法。 创建和编辑推荐。
-
-- [类型](type.md)
-了解可部署到网站上各个页面的建议。
-
-- [过滤器](filters.md)
-定义包含或排除用作推荐的产品的条件。
-
-- [版面和标签](placement.md)
-了解您可以在网站的各个页面上的位置放置推荐，以及针对每种推荐类型常用标签的建议。
