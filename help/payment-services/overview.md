@@ -4,9 +4,9 @@ description: 了解如何安装和使用 [!DNL Payment Services] 作为您的Ado
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: b790ef50c2acaa830ce5ad1b9a755f9d7f9dd5c5
+source-git-commit: 5f731eca49b6f59bbeb7190e0026eb05f2d1a99b
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,10 @@ ht-degree: 0%
 
 ## 已接受的信用卡和货币
 
-目前， [!DNL Payment Services] 仅以美国(US)提供并接受美元(USD)货币。
+目前， [!DNL Payment Services] 仅在中可用：
+
+* 美国（美国）和接受美元（美元）货币。
+* 加拿大(CA)和接受加元(CAD)货币。
 
 请参阅 [PayPal货币可用性](https://developer.paypal.com/docs/platforms/checkout/reference/country-availability-advanced-cards/) 文档以了解更多信息。
 

@@ -2,10 +2,10 @@
 title: '"[!DNL Payment Services] 发行说明"'
 description: 查看发行说明，了解有关 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: eb8fdba65b4b64730d0ad4fa6e0c9b64bdadc7df
+source-git-commit: 5f731eca49b6f59bbeb7190e0026eb05f2d1a99b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '553'
+ht-degree: 1%
 
 ---
 
@@ -16,6 +16,42 @@ ht-degree: 0%
 ![新建](../assets/new.svg) 新增功能
 ![修复的问题](../assets/fix.svg) 修复和改进功能
 ![已知问题](../assets/bug.svg) 已知问题
+
+## v1.1.0
+
+![新建](../assets/new.svg)<!-- Issue PAY-2127 --> [[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) 现在与Adobe Commerce和Magento Open Source版本2.4.0到2.4.4兼容。
+
+![新建](../assets/new.svg)<!-- Issue PAY-2682 --> 的 [!DNL Payment Services] Adobe Commerce和Magento Open Source的扩展适用于加拿大商户。 商户可以在以下任一位置查看付款配置 [法语](overview.md?lang=fr) 或 [英语](overview.md?lang=en).
+
+![新建](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] 支持 [加元(CAD)](overview.md#accepted-credit-cards-and-currencies) 信用卡和Paypal。 购物者可以使用其首选语言获得购物体验，具体取决于他们所在商店的区域设置。
+
+![新建](../assets/new.svg)<!-- Issue PAY-2680 --> 商家可以 [板载 [!DNL Payment Services]](onboard.md) 扩展。
+
+![新建](../assets/new.svg)<!-- Issue PAY-2678 --> 商户现在可以查看 [财务报告](order-payment-status.md) 加元。
+
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-2710 --> [!DNL Payment Services] 现在与 [8.1菲律宾比索](https://www.php.net/releases/8.1/en.php).
+
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-3035 --> 改进了 [!DNL Payment Services] 扩展。
+
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-3017 --> 改进了沙盒模式警报，可通过多个存储区显示正确的警报。
+
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-2742 --> [!DNL Payment Services] 允许在存储视图级别启用/禁用可用的付款方法，如Venmo。
+
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-2277 --> 改进了管理员中商家有选择地禁用/启用PayPal智能按钮的功能。
+
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-2561 --> 以前删除的产品不会显示在 _审阅顺序_ 页面。
+
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-2456 --> [!DNL Payment Services] 改进了管理员中的付款方法标签。
+
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-2907 --> 改进了交易数据收集，以便最好地利用欺诈规则和按存储容量使用计费保护。
+
+![已知问题](../assets/bug.svg)<!-- Issue PAY-2473 --> 使用 [编辑器键值不正确](https://support.magento.com/hc/en-us/articles/4406603542541) 在安装扩展期间，会阻止用户 [身份验证](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 正确 `MAGEID`.
+
+![已知问题](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] [报告](https://support.magento.com/hc/en-us/articles/4406114741517) 付款和订单付款状态可能无法立即同步。
+
+![已知问题](../assets/bug.svg)<!-- Issue PAY-2475 --> [PayPal沙盒帐户](https://support.magento.com/hc/en-us/articles/4406954952461) 表示 [!DNL Payment Services] 如果在载入期间创建了帐户，则无法验证。
+
+![已知问题](../assets/bug.svg)<!-- Issue PAY-2842 --> [测试信用卡失败](https://support.magento.com/hc/en-us/articles/4406954952461) 在沙盒环境中处理付款时使用PayPal。
 
 ## v1.0.0
 
