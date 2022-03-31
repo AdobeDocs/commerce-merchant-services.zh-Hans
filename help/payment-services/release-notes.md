@@ -2,10 +2,10 @@
 title: '"[!DNL Payment Services] 发行说明"'
 description: 查看发行说明，了解有关 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 5f731eca49b6f59bbeb7190e0026eb05f2d1a99b
+source-git-commit: 93a10d91a2dc92db530074d7fc2dfd4f31a9488d
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ![新建](../assets/new.svg)<!-- Issue PAY-2127 --> [[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) 现在与Adobe Commerce和Magento Open Source版本2.4.0到2.4.4兼容。
 
-![新建](../assets/new.svg)<!-- Issue PAY-2682 --> 的 [!DNL Payment Services] Adobe Commerce和Magento Open Source的扩展适用于加拿大商户。 商户可以在以下任一位置查看付款配置 [法语](overview.md?lang=fr) 或 [英语](overview.md?lang=en).
+![新建](../assets/new.svg)<!-- Issue PAY-2682 --> 的 [!DNL Payment Services] Adobe Commerce和Magento Open Source的扩展适用于加拿大商户。 商户可以在以下任一位置查看付款配置 [法语](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr) 或 [英语](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=en).
 
 ![新建](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] 支持 [加元(CAD)](overview.md#accepted-credit-cards-and-currencies) 信用卡和Paypal。 购物者可以使用其首选语言获得购物体验，具体取决于他们所在商店的区域设置。
 
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 ![已知问题](../assets/bug.svg)<!-- Issue PAY-2475 --> [PayPal沙盒帐户](https://support.magento.com/hc/en-us/articles/4406954952461) 表示 [!DNL Payment Services] 如果在载入期间创建了帐户，则无法验证。
 
-![已知问题](../assets/bug.svg)<!-- Issue PAY-2842 --> [测试信用卡失败](https://support.magento.com/hc/en-us/articles/4406954952461) 在沙盒环境中处理付款时使用PayPal。
+![已知问题](../assets/bug.svg)<!-- Issue PAY-2842 --> [测试信用卡失败](https://support.magento.com/hc/en-us/articles/5201041963917) 在沙盒环境中处理付款时使用PayPal。
 
 ## v1.0.0
 
