@@ -2,9 +2,9 @@
 title: 安装Live Search
 description: 了解如何从Adobe Commerce安装、更新和卸载Live Search。
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: b6aca1b78fae6d8c43ca47307aa1c63dbdc1c36a
+source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1199'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Live Search作为Marketplace的扩展安装。 在 [!DNL Live Search] 模块（�
 
 1. 配置 [API密钥](#configure-api-keys) 并验证您的目录数据是否 [已同步](#synchronize-catalog-data) with [!DNL Live Search] 服务。
 
-1. 要使Facet在店面中可用作过滤器，请将 [facet](https://docs.magento.com/user-guide/live-search/facets-add.html) 你需要，根据 [分面要求](https://docs.magento.com/user-guide/live-search/facets.html).
+1. 要使Facet在店面中可用作过滤器，请将 [facet](facets-add.md) 你需要，根据 [分面要求](facets.md).
 
    您应该能够在 `cron` 运行属性馈送和导出属性元数据。
 
@@ -123,7 +123,7 @@ Live Search作为Marketplace的扩展安装。 在 [!DNL Live Search] 模块（�
 
 1. 配置 [API密钥](#configure-api-keys) 并验证您的目录数据是否 [已同步](#synchronize-catalog-data) with [!DNL Live Search] 服务。
 
-1. 要使Facet在店面中可用作过滤器，请将 [facet](https://docs.magento.com/user-guide/live-search/facets-add.html) 你需要，根据 [分面要求](https://docs.magento.com/user-guide/live-search/facets.html).
+1. 要使Facet在店面中可用作过滤器，请将 [facet](facets-add.md) 你需要，根据 [分面要求](facets.md).
 
    您应该能够在 `cron` 运行产品和属性信息源，并将属性元数据导出到 [!DNL Live Search] 服务。
 
@@ -177,7 +177,7 @@ Live Search作为Marketplace的扩展安装。 在 [!DNL Live Search] 模块（�
 
 ### 将来的产品更新
 
-初始同步后，增量产品更新可能最多需要15分钟才能用于店面搜索。 要了解更多信息，请转到 [流产品更新](https://devdocs.magento.com/live-search/indexing.html).
+初始同步后，增量产品更新可能最多需要15分钟才能用于店面搜索。 要了解更多信息，请转到 [流产品更新](indexing.md).
 
 ## 测试连接 {#test-connection}
 

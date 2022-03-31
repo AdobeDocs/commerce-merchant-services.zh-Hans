@@ -2,9 +2,9 @@
 title: 实时搜索发行说明
 description: 有关Adobe Commerce中实时搜索的最新发行信息。
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 8fea8145e624b57278b9373246e8c4249472a03d
+source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '648'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 1%
 * 与Adobe Commerce for Cloud(ECE)兼容：2.4.x
 * 稳定性：稳定
 
-* ![新建](../assets/new.svg) - [性能](https://docs.magento.com/user-guide/live-search/performance.html) 报表功能板提供有关购物者使用的搜索词的分析。
+* ![新建](../assets/new.svg) - [性能](performance.md) 报表功能板提供有关购物者使用的搜索词的分析。
 * ![新建](../assets/new.svg) - [!DNL Live Search] [Storefront事件SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) 通过事件发布和订阅服务以及量度，提供对常用数据层的访问。
 * ![修复](../assets/fix.svg) - [店面弹出窗口](https://devdocs.magento.com/live-search/storefront-popover.html) 具有新 `active` 类 `.search-autocomplete` 可控制可见性的容器。
 * ![修复](../assets/fix.svg)  — 在店面， [搜索词](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) 页脚链接已删除，且其缓存已禁用 [!DNL Live Search] 安装。
