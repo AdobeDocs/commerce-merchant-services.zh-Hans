@@ -2,9 +2,9 @@
 title: 店面弹出窗口
 description: 实时搜索店面弹出窗口可动态返回建议的产品和缩略图。
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 10cea4389d685ce0e26b083872b13a1cd19ba2af
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ When [!DNL Live Search] is [已安装](install.md)，则当购物者在 [搜索]
 
 >[!NOTE]
 >
->的 [!DNL Live Search] 店面弹出窗口仅适用于使用 *卢马* 主题，或基于 *卢马*. 的 *卢马* 主题包含在 [!DNL Commerce] 示例数据。 弹出窗口不支持 *空白* 主题。 请参阅 [使用修改的主题](#working-with-modified-theme) 以了解更多信息。
+>的 [!DNL Live Search] 店面弹出窗口仅适用于使用 *卢马* 主题，或基于 *卢马*. 的 *卢马* 主题包含在 [!DNL Commerce] 示例数据。 弹出窗口不支持 *空白* 主题。 请参阅 [弹出窗口元素的样式设置](storefront-popover-styling.md) 以了解更多。
 
 ## 可搜索属性
 

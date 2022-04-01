@@ -2,7 +2,7 @@
 title: 快速浏览
 description: 从店面快速浏览实时搜索。
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
@@ -16,6 +16,7 @@ ht-degree: 0%
 ## 在键入时搜索
 
 [!DNL Live Search] 在 [弹出窗口](storefront-popover.md) 当购物者在 [搜索](https://docs.magento.com/user-guide/catalog/search-quick.html) 框中。 的 [产品详细信息](https://docs.magento.com/user-guide/quick-tour/product-page.html) 当购物者单击推荐或特色产品时，会显示页面。 A _查看全部_ 弹出窗口页脚中的链接会显示搜索结果页面。
+
 [!DNL Live Search] 对于包含两个或更多字符的查询，返回“按键入搜索”结果。 对于部分匹配，每个词的最大字符数为20。 查询中的字符数不可配置。 弹出窗口中包含以下字段： `name`, `sku`和 `category_ids`.
 
 ![店面示例 — 在键入时搜索](assets/storefront-search-as-you-type.png)

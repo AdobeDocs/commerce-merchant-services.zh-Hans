@@ -2,7 +2,7 @@
 title: 添加Facet
 description: 了解如何将可过滤的产品属性添加为实时搜索彩块化。
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ## 步骤2:编辑Facet属性（可选）
 
-1. 要编辑小平面属性，请单击 **更多** (![更多选择器](assets/btn-more.png) 选项。
+1. 要编辑小平面属性，请单击 **更多** (![更多选择器](assets/btn-more.png))选项。
 1. 在菜单中，单击 **编辑**. 然后，根据需要调整以下属性。
 
    * 标签 — ([无头](facets-type.md) （仅限）输入要使用的Facet标签。

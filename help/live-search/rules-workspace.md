@@ -2,9 +2,9 @@
 title: 规则工作区
 description: 通过实时搜索规则工作区了解您的方法。
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ ht-degree: 0%
 
 | 控制 | 描述 |
 |--- |--- |
-| 添加规则 | 打开 [规则编辑器]({% link live-search/rules-add.md %})。 |
+| 添加规则 | 打开 [规则编辑器](rules-add.md). |
 | 状态 | 按状态筛选规则列表。 选项：全部、活动、不活动、已计划 |
 | ![列选择器](assets/btn-show-hide-columns.png) | 指定网格中可见的列。 选项：上次更新时间、开始日期、结束日期、状态 |
 | 搜索 | 按全名或部分匹配搜索规则。 |

@@ -2,9 +2,9 @@
 title: 添加同义词
 description: 添加实时搜索同义词，以改进对搜索请求的响应。
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -63,8 +63,8 @@ ht-degree: 0%
 
 ## 步骤3:发布更改
 
-当同义词完成时，单击 **发布更改**.
-您的更新可能最多需要两个小时才能在店面提供。
+1. 当同义词完成时，单击 **发布更改**.
+1. 在店面等待长达2小时，以便更新内容可用。
 
 ![发布更改](assets/synonym-publish.png)
 

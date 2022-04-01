@@ -2,7 +2,7 @@
 title: 管理Facet
 description: 了解如何管理现有的实时搜索Facet。
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%
@@ -56,19 +56,19 @@ ht-degree: 0%
 
 点击时，针脚会更改颜色，用于将面移动到 *固定的Facet* 或 *动态Facet* 中。
 
-1. 将小平面固定到 *过滤器* 列表，在 *动态Facet* 列出并单击灰色的针脚(![固定选择器](assets/btn-pin-gray.png).
+1. 将小平面固定到 *过滤器* 列表，在 *动态Facet* 列出并单击灰色的针脚(![固定选择器](assets/btn-pin-gray.png))。
 销将变为蓝色，小平面将移动到 *固定的Facet* 中。
-1. 要取消固定一个面，请在 *固定的Facet* 列出并单击蓝色针脚(![固定选择器](assets/btn-pin-blue.png).
+1. 要取消固定一个面，请在 *固定的Facet* 列出并单击蓝色针脚(![固定选择器](assets/btn-pin-blue.png))。
 销将变灰，小平面将移动到 *动态Facet* 中。
 
    ![固定和动态Facet](assets/facets-pinned-unpinned.png)
 
 ## 移动已固定的面
 
-通过将行移动到其他位置，可以更改已固定小平面的顺序。 已固定的彩块具有 *移动* 图标(![移动选择器](assets/btn-move.png) 在行的开头。 与固定Facet不同，动态Facet无法移动。
+通过将行移动到其他位置，可以更改已固定小平面的顺序。 已固定的彩块具有 *移动* 图标(![移动选择器](assets/btn-move.png))。 与固定Facet不同，动态Facet无法移动。
 
 1. 在 *固定的Facet* 列表中的
-1. 使用 **移动** (![移动选择器](assets/btn-move.png) 图标将行拖到 *固定的Facet* 中。
+1. 使用 **移动** (![移动选择器](assets/btn-move.png))图标，以将行拖到 *固定的Facet* 中。
 更改发布后，重新排序的彩块化会显示在店面中 *过滤器* 列表。
 
 ## 删除Facet

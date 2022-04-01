@@ -2,7 +2,7 @@
 title: 弹出窗口元素的样式设置
 description: 有关自定义实时搜索店面弹出窗口的技术说明。
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 0%
@@ -32,7 +32,7 @@ ht-degree: 0%
 .search-autocomplete          /* not visible */
 ```
 
-有关店面元素样式的更多信息，请参阅 [层叠样式表(CSS)](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/css-overview.html) 在 [前端开发人员指南](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html).
+有关店面元素样式的更多信息，请参阅 [层叠样式表(CSS)](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/css-overview.html) 在 [Frontend开发人员指南](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html).
 
 ## 类选择器
 
