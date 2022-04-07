@@ -1,17 +1,17 @@
 ---
-title: 在管理员中配置
-description: 安装后，您可以配置 [!DNL Payment Services] 中。
+title: 旧版支付服务配置
+description: 安装后，您可以配置 [!DNL Payment Services] 在存储配置的管理员中。
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
 
-# 在管理员中配置
+# 旧版支付服务配置
 
 您可以自定义 [!DNL Payment Services] 使用管理员中的有用配置选项来满足您的需求。
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 请参阅 [付款选项](payments-options.md#paypal-smart-buttons) 以了解更多信息。
 
-### 配置PayPal智能按钮
+### 配置 [!DNL PayPal Smart Buttons]
 
 您可以在管理员中启用和配置PayPal智能按钮付款选项：
 
@@ -93,7 +93,7 @@ ht-degree: 0%
 1. 要启用调试模式，请选择 `Yes` 对于 **[!UICONTROL Debug Mode]** (`No` 禁用)。
 1. 要保存更改，请单击 **[!UICONTROL Save Config]** .
 
-#### 配置选项
+### 配置选项
 
 | 字段 | 范围 | 描述 |
 |---|---|---|
@@ -106,3 +106,15 @@ ht-degree: 0%
 | [!UICONTROL Show buttons on product detail page] | 商店视图 | 启用或禁用 [!DNL PayPal Smart Buttons] 在产品详细信息页面上。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons in mini cart preview] | 商店视图 | 启用或禁用 [!DNL PayPal Smart Buttons] 在小型图预览中。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons on cart page] | 商店视图 | 启用或禁用 [!DNL PayPal Smart Buttons] 在购物车页面上。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+
+### [!DNL PayPal Smart Buttons] 样式选项
+
+| 字段 | [范围]({% link configuration/scope.md %}) | 描述 |
+|--- |--- |--- |
+| [!UICONTROL Layout] | 存储视图 | 为Paypal智能按钮定义布局样式。 选项： [!UICONTROL Vertical] / [!UICONTROL Horizontal] |
+| [!UICONTROL Color] | 存储视图 | 定义Paypal智能按钮的颜色。 选项： [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |
+| [!UICONTROL Shape] | 存储视图 | 定义Paypal智能按钮的形状。 选项： [!UICONTROL Rectangular] / [!UICONTROL Pill] |
+| [!UICONTROL Use Default Height] | 存储视图 | 定义PayPal智能按钮是否使用默认高度。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Height] | 存储视图 | 定义PayPal智能按钮的高度。 默认值：无 |
+| [!UICONTROL Label] | 存储视图 | 定义显示在PayPal智能按钮中的标签。 选项： [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
+| [!UICONTROL Tagline] | 存储视图 | 启用标记。 选项： [!UICONTROL Yes] / [!UICONTROL No] |

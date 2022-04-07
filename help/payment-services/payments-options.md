@@ -2,18 +2,19 @@
 title: 付款选项
 description: 设置付款选项以自定义商店客户可用的方法。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 9aa701e006a7f107775679f156f84d3e2fdc153b
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
 
 # 付款选项
 
-具有Adobe Commerce和Magento Open Source [!DNL Payment Services]，则您可以使用多个付款选项。 在管理存储配置中设置这些选项(**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**)**[!UICONTROL Sales]**，选择&#x200B;**[!UICONTROL Payment Method]s**，然后转到_[!UICONTROL Recommended Solutions]_ 页面上。
+具有Adobe Commerce和Magento Open Source [!DNL Payment Services]，则您可以使用多个付款选项。 您可以通过以下方式配置这些付款选项：
 
-![付款方法视图](assets/methods-view.png)
+* [功能板](configure-dashboard.md)
+* [存储配置](configure-admin.md) （建议使用旧版付款选项或多商店设置）
 
 每种付款方法的行为取决于您在结账流程中的位置：
 
@@ -22,17 +23,21 @@ ht-degree: 0%
 * 购物车 — 单击 _查看和编辑购物车_ 从迷你车上
 * 结帐视图 — 单击时可用 _继续结帐_ 从迷你购物车或购物车
 
+>[!IMPORTANT]
+>
+>必须先完成支付服务载入，然后才能处理付款。
+
 ## [!UICONTROL Credit Card Fields]
 
 [!UICONTROL Credit Card Fields] 为信用卡或借记卡付款方法提供简单且安全的结账。 当购物者使用信用卡字段签出时，他们会输入其名称、帐单地址以及信用卡或借记卡信息，以下单。 在购买会话期间，可安全地使用客户信息，以无缝指导客户完成结账流程。
 
-您可以配置 [!UICONTROL Credit Card Fields] 中。 请参阅 [配置 [!DNL Payment Services]](configure-admin.md#configure-credit-card-fields) 以了解更多信息。
+您可以配置 [!UICONTROL Credit Card Fields] （在存储配置或Payment Services仪表板中）。 请参阅 [配置 [!DNL Payment Services]](configure-dashboard.md#configure-credit-card-fields) 以了解更多信息。
 
 ## [!DNL PayPal Smart Buttons]
 
 [!DNL PayPal Smart Buttons]，后者使用PayPal完成购买，存储购物者的送货地址、帐单地址和付款详细信息以供日后使用。 购物者可以使用PayPal之前存储或提供的任何付款方法。
 
-您可以配置 [!DNL PayPal Smart Buttons] 中。 请参阅 [配置 [!DNL Payment Services]](configure-admin.md#configure-paypal-smart-buttons) 以了解更多信息。
+您可以配置 [!DNL PayPal Smart Buttons] （在存储配置或Payment Services仪表板中）。  请参阅 [配置 [!DNL Payment Services]](configure-dashboard.md#configure-paypal-smart-buttons) 以了解更多信息。
 
 ### PayPal按钮
 

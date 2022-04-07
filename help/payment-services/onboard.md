@@ -4,9 +4,9 @@ description: 将实例与 [!DNL Payment Services] 功能。
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
@@ -59,3 +59,4 @@ ht-degree: 0%
 * [故障诊断 [!DNL Payment Services] 安装](https://support.magento.com/hc/en-us/articles/4406603542541)
 * [PayPal沙盒帐户未验证](https://support.magento.com/hc/en-us/articles/4406954952461)
 * [延迟 [!DNL Payment Services] 报告数据](https://support.magento.com/hc/en-us/articles/4406114741517)
+* [在沙盒环境中处理付款时，测试信用卡失败并出现PayPal错误](https://support.magento.com/hc/en-us/articles/5201041963917)

@@ -2,10 +2,10 @@
 title: '"[!DNL Payment Services] 发行说明"'
 description: 查看发行说明，了解有关 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 93a10d91a2dc92db530074d7fc2dfd4f31a9488d
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '555'
+ht-degree: 1%
 
 ---
 
@@ -42,8 +42,6 @@ ht-degree: 0%
 ![修复的问题](../assets/fix.svg)<!-- Issue PAY-2561 --> 以前删除的产品不会显示在 _审阅顺序_ 页面。
 
 ![修复的问题](../assets/fix.svg)<!-- Issue PAY-2456 --> [!DNL Payment Services] 改进了管理员中的付款方法标签。
-
-![修复的问题](../assets/fix.svg)<!-- Issue PAY-2907 --> 改进了交易数据收集，以便最好地利用欺诈规则和按存储容量使用计费保护。
 
 ![已知问题](../assets/bug.svg)<!-- Issue PAY-2473 --> 使用 [编辑器键值不正确](https://support.magento.com/hc/en-us/articles/4406603542541) 在安装扩展期间，会阻止用户 [身份验证](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 正确 `MAGEID`.
 

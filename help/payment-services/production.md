@@ -2,9 +2,9 @@
 title: 启用 [!DNL Payment Services] 生产
 description: 通过启用 [!DNL Payment Services] 生产。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,17 @@ ht-degree: 0%
 
 ## 从Adobe请求付款权利
 
-要启用实时载入，您必须从 [Adobe](https://business.adobe.com/resources/payment-services.html).
+要启用实时载入，您必须从Adobe请求付款权利：
+
+1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. 单击 **[!UICONTROL Get Live Payments]** 在 [!DNL Payment Services] 功能板。
+
+   ![请求授权](assets/request-entitlements.png)
+
+1. 填写表单。
+1. 销售团队的一位成员将与您联系。
+
+或者，您也可以在以下位置从Adobe请求付款授权： [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
 
 >[!IMPORTANT]
 >

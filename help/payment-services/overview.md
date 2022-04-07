@@ -4,9 +4,9 @@ description: 了解如何安装和使用 [!DNL Payment Services] 作为您的Ado
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: 5f731eca49b6f59bbeb7190e0026eb05f2d1a99b
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
@@ -36,13 +36,14 @@ ht-degree: 0%
 [!DNL Payment Services] 是您的在线结账一站式服务（从结算和退款到付款）。 它提供了强大的工具，为您提供为购买者创建最佳体验所需的洞察和控制。
 
 * [**入门**](onboard.md) — 该流程将指导您完成商业注册、技术配置、授权、沙盒环境配置和实时付款启用。
-* [**付款结账**](configure-admin.md) — 使用相关的特定于本地和地区的付款方法，以最好地为客户服务。
+* [**付款结账**](configure-dashboard.md) — 使用相关的特定于本地和地区的付款方法，以最好地为客户服务。
+* [**付款选项**](payments-options.md) — 设置付款选项，以自定义可供您的商店（或多商店）客户使用的方法。
 * **现金流量管理财务报告** — 同步 [付款详细信息](order-payment-status.md) 订购，以便对已处理的数量、付款余额和详细内容实现完全透明 [事务级报告](payouts.md) 进行财务对账。
 * **透明定价** — 定价清晰、前期；你看到的是你得到的。
 
 ## 可用性
 
-[!DNL Payment Services] 适用于Adobe Commerce和Magento Open Source。 的 [!DNL Payment Services] 扩展现在与Adobe Commerce版本2.4.0到2.4.3-p1兼容。
+[!DNL Payment Services] 适用于Adobe Commerce和Magento Open Source。 的 [!DNL Payment Services] 扩展现在与Adobe Commerce版本2.4.x兼容。
 
 请参阅 [生命周期策略](https://devdocs.magento.com/release/lifecycle-policy.html){target=&quot;_blank&quot;}和 [[!DNL Payment Services] 发行说明](release-notes.md) 页面，以了解更多版本和特定于版本的信息。
 
