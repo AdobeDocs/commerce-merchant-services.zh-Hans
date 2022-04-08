@@ -2,7 +2,7 @@
 title: '''[!DNL Express Checkout] (针对Adobe Commerce开发人员信息)'
 description: '''[!DNL Express Checkout] 开发人员信息。'
 exl-id: 8926eda4-b4de-4938-a86c-b095616f61f6
-source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
+source-git-commit: 46d5cae4e55a2983a2dc8c442cf5530803be65af
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 通过使用扩展点，您可以进行自定义，而无需实际更改应用程序代码中的核心组件。
 
-### 发运详细信息步骤
+## 发运详细信息步骤
 
 使用登录后，可以使用扩展点自定义自动步骤导航 [!DNL Bolt].
 
