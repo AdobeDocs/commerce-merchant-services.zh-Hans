@@ -2,9 +2,9 @@
 title: 测试 [!DNL Express Checkout] 适用于Adobe Commerce扩展
 description: 测试和验证可确保 [!DNL Express Checkout] 扩展可按预期工作。
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
-source-git-commit: d8302d2d652b4e2380cc862183e58cbd2cca831b
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ### 使用沙盒帐户
 
-在测试和验证沙盒时，您必须使用假信用卡号和 [沙盒](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;}个商户帐户，以便您不会对现有信用卡帐户创建实际费用。
+在测试和验证沙盒时，您必须使用假信用卡号和 [沙盒](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;}中的商户帐户 [!DNL Bolt]，以便您不会对现有信用卡帐户创建实际费用。
 
 ## 在生产中测试
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 1. 转到店面，并将所需物品放入购物车。
 1. 继续结帐。
-1. 输入在出现提示时与螺栓帐户关联的电子邮件地址。
+1. 输入与 [!DNL Bolt] 帐户。
 1. 输入发送到帐户电子邮件地址的一次性密码(OTP)。
 1. 选择环境功能板：
 

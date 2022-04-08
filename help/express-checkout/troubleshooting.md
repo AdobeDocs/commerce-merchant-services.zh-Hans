@@ -2,9 +2,9 @@
 title: 对 [!DNL Express Checkout]
 description: 对错误进行故障诊断，在使用 [!DNL Express Checkout] (对于Adobe Commerce扩展)。
 exl-id: a379ff81-360d-4cb9-a123-47e8cbc0cdbd
-source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -95,9 +95,9 @@ Adobe Commerce通常可配置为支持多达20条街道地址线。
 
 有一个已知问题，即 [!DNL Express Checkout].
 
-当您启用 `Enable terms and conditions` 复选框和 [使用Bolt帐户登录](https://help.bolt.com/shoppers/guides/checkout/log-in/)，则不会显示复选框。
+当您启用 `Enable terms and conditions` 复选框，并使用 [!DNL Bolt] 帐户， `Enable terms and conditions` 复选框。 请参阅 [登录](https://help.bolt.com/shoppers/account/login-dashboard/) [!DNL Bolt] 页面以了解更多信息。
 
-请参阅 [条款和条件](https://docs.magento.com/user-guide/sales/terms-and-conditions.html) 主题以了解更多信息。
+请参阅 [条款和条件](https://docs.magento.com/user-guide/sales/terms-and-conditions.html) 主题，以了解有关管理员配置的更多信息。
 
 ## 当 `Display Billing Address On` 设置为 `payment page`
 
@@ -105,7 +105,7 @@ Adobe Commerce通常可配置为支持多达20条街道地址线。
 
 如果您将 `Display Billing Address On` 参数 `payment page` 和 [使用Bolt帐户登录](https://help.bolt.com/shoppers/guides/checkout/log-in/) 当您检查 `My billing and shipping address are the same` 复选框：
 
-![同一地址](../assets/checked-address.png)
+![同一地址](assets/checked-address.png)
 
 单选按钮显示 `use existing card`.
 
@@ -119,4 +119,4 @@ Adobe Commerce使您能够将您的商店本地化到多个地区和市场。 �
 
 ## 获取帮助
 
-如需更多帮助或问题，请联系Adobe Commerce支持。
+请联系Adobe Commerce支持部门以获取任何帮助。

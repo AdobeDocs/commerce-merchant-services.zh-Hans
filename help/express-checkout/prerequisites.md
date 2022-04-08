@@ -2,10 +2,10 @@
 title: '''[!DNL Express Checkout] 先决条件'
 description: 验证您的系统是否满足使用 [!DNL Express Checkout] (对于Adobe Commerce扩展)。
 exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
-source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '151'
+ht-degree: 1%
 
 ---
 
@@ -34,4 +34,4 @@ ht-degree: 0%
 | ISPU | [!DNL In-Store Pickup] 不支持(ISPU)功能 |
 | 多运送 | 不支持多运送 |
 
-请参阅 [螺栓限制](https://help.bolt.com/integrations/adobe-express-checkout/set-up/#limitations) 页面，以了解有关Bolt和 [!DNL Express Checkout] 扩展。
+请参阅 [[!DNL Bolt] 限制](https://help.bolt.com/integrations/adobe-express-checkout/set-up/#limitations) 有关兼容性限制的详细信息 [!DNL Bolt] 和 [!DNL Express Checkout] 扩展。
