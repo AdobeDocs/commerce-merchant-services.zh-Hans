@@ -2,10 +2,10 @@
 title: 实时搜索发行说明
 description: 有关Adobe Commerce中实时搜索的最新发行信息。
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
+source-git-commit: a3a52af6cd907b2b8734a5dd3ca7df71158db190
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,12 +23,16 @@ ht-degree: 1%
 * 与Adobe Commerce for Cloud(ECE)兼容：2.4.x
 * 稳定性：稳定
 
+现有 [!DNL Live Search] 安装必须升级到 [!DNL Live Search] 2.0.0可利用以下新增功能、修复和改进功能：
+
+* ![新建](../assets/new.svg) - [!DNL Live Search] 现在，运行Adobe Commerce 2.4.4的安装支持PHP 8.1。
+* ![新建](../assets/new.svg) - `Magento_ElasticsearchCatalogPermissionsGraphQl` 模块会添加到安装过程中禁用的模块列表。
 * ![新建](../assets/new.svg) - [店面弹出窗口](quick-tour.md) 可以通过 *管理员*.
-* ![新建](../assets/new.svg)  — 测试版 [PWA](https://developer.adobe.com/commerce/pwa-studio/) 兼容性。
-* ![新建](../assets/new.svg) - Live Search安装过程已更新，并显示高级流程更改。
+* ![新建](../assets/new.svg)  — 测试版 [PWA](https://developer.adobe.com/commerce/pwa-studio/) 兼容性 [!DNL Live Search].
+* ![新建](../assets/new.svg) - [!DNL Live Search] 安装过程会更新高级过程更改。
 * ![修复](../assets/fix.svg) - [高级搜索](https://docs.magento.com/user-guide/catalog/search-advanced.html) 链接已从storefront footer中删除。
 * ![错误](../assets/bug.svg)  — 不支持以下产品属性 [MagentoGraphQL API](https://devdocs.magento.com/guides/v2.4/graphql) 与测试版PWA相关时： `description`, `name`, `short_description`
-* ![错误](../assets/bug.svg)  — 实时搜索PWA测试版不支持 [事件处理](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
+* ![错误](../assets/bug.svg)  — 测试版PWA [!DNL Live Search] 不支持 [事件处理](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
 ## [!DNL Live Search] 1.3.1
 

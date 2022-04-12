@@ -1,25 +1,26 @@
 ---
 title: 入门概述
 description: 实时搜索入门流程、系统要求、边界和限制
-source-git-commit: 6220824c6032a33a760fe5c2bb5d2346e00a074b
+exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
+source-git-commit: f33f02fa15b6250970bda3302d3403b6fcec5786
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # 入门概述
 
-要开始使用Adobe Commerce的实时搜索，您必须完成一些入门步骤以安装扩展、配置API密钥和同步目录。
+开始使用 [!DNL Live Search] 对于Adobe Commerce，请完成载入过程以安装扩展、配置API密钥并同步目录。
 
 ## 载入流程
 
-![实时搜索载入图](assets/onboarding-flow.svg)
+![[!DNL Live Search] 载入图](assets/onboarding-flow.svg)
 
 ## 要求 {#requirements}
 
 * [Adobe Commerce](https://magento.com/products/magento-commerce) 2.4.x
-* 7.3菲律宾比索/7.4
+* PHP 7.3 / 7.4 / 8.1
 * [!DNL Composer]
 
 ### 支持的平台
@@ -29,7 +30,7 @@ ht-degree: 0%
 
 ## 边界和阈值
 
-目前，实时搜索/类别API具有以下受支持的限制和静态边界：
+此时， [!DNL Live Search] 搜索/类别API具有以下受支持的限制和静态边界：
 
 ### 索引
 
@@ -39,17 +40,17 @@ ht-degree: 0%
 
 ### 查询限制
 
-* 实时搜索无权访问类别树的完整分类，这会导致某些分层导航搜索方案超出其覆盖范围。
-* 实时搜索使用唯一的GraphQL端点进行查询，以支持智能分面和按类型搜索等功能。 尽管与 [MagentoGraphQL API](https://devdocs.magento.com/guides/v2.4/graphql)，则存在一些差异，某些字段当前可能不完全兼容。
+* [!DNL Live Search] 无权访问类别树的完整分类，这会导致某些分层导航搜索方案超出其覆盖范围。
+* [!DNL Live Search] 对查询使用唯一的GraphQL端点来支持智能分面和按类型搜索等功能。 尽管与 [MagentoGraphQL API](https://devdocs.magento.com/guides/v2.4/graphql)，则存在一些差异，某些字段当前可能不完全兼容。
 
 ### PWA测试版
 
-* 实时搜索PWA测试版不支持 [事件处理](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
+* 测试版PWA [!DNL Live Search] 不支持 [事件处理](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 * 与的测试版相关联使用时，GraphQL不支持以下产品属性 [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
 
 ### 当前不支持
 
-* 的 [高级搜索](https://docs.magento.com/user-guide/catalog/search-advanced.html) 安装实时搜索时，模块会被禁用，并且会删除店面页脚中的“高级搜索”链接。
+* 的 [高级搜索](https://docs.magento.com/user-guide/catalog/search-advanced.html) 模块在 [!DNL Live Search] ，并且会删除店面页脚中的高级搜索链接。
 * [客户群组](https://docs.magento.com/user-guide/customers/customer-groups.html)
 * [自定义价格组](https://docs.magento.com/user-guide/catalog/product-price-group.html)
 * 使用的多个库存位置 [MCOM](https://docs.magento.com/user-guide/mcom.html) 或其他OMS扩展

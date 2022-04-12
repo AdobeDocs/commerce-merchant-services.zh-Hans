@@ -2,9 +2,9 @@
 title: Facet技术说明
 description: 有关使用实时搜索彩块化的技术说明。
 exl-id: 37982610-0ff7-48b7-b088-be7d2eff8a57
-source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+source-git-commit: e53fb13b98684757b8081b2e19dd33d925e8ce5d
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '114'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,3 @@ Faceting是一种高性能的过滤方法，它使用可搜索的静态和动态
 * `categories` 聚合 — 聚合 `categories`，应用 `color` 和 `price` 过滤器，但不是 `categories` 过滤器。
 * `color` 聚合 — 聚合 `color`，应用 `price` 和 `categories` 过滤器，但不是 `color` 过滤器。
 * `price` 聚合 — 聚合 `price`，应用 `color` 和 `categories` 过滤器，但不是 `price` 过滤器。
-
-## 默认属性值
-
-以下产品属性具有 [店面属性](https://docs.magento.com/user-guide/stores/attributes-product.html) 默认情况下处于启用状态。
-
-| 属性 | Storefront属性 | 属性 |
-|---|---|---|
-| 可排序 | 用于在产品清单中排序 | `price` |
-| 可搜索 | 在搜索中使用 | `price` <br />`sku`<br />`name` |
-| 可过滤InSearch | 在分层导航中使用 — 可过滤（包含结果） | `price`<br />`visibility`<br />`category_name` |

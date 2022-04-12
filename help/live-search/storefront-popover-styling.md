@@ -2,7 +2,7 @@
 title: 弹出窗口元素的样式设置
 description: 有关自定义实时搜索店面弹出窗口的技术说明。
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 479bf3fba776f47942a0ac8419abbae5553339f0
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 0%
