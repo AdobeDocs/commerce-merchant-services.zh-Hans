@@ -1,9 +1,10 @@
 ---
 title: 验证事件集合
 description: 了解如何验证行为数据是否被发送到Adobe Commerce。
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
+source-git-commit: 7d9cef7a81196921b465ccf2dcd58d98b66d6598
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -22,6 +23,9 @@ ht-degree: 0%
 1. 重新加载页面。
 1. 您应会看到 `ds.js` 或 `ds.min.js` 在 **名称** 列。
 
+![事件收集器JS](assets/filter-ds.png)
+_事件收集器JS_
+
 要确保事件在您网站的页面（主页、产品、结帐等）上触发，请执行以下操作：
 
 1. 确保禁用浏览器上的任何广告拦截器，并接受网站上的Cookie。
@@ -29,6 +33,9 @@ ht-degree: 0%
 1. 选择 **网络** 选项卡和过滤器 `tp2`.
 1. 重新加载页面。
 1. 您应会在下方看到调用 `tp2` 在 **名称** 列。
+
+![触发事件](assets/filter-tp2.png)
+_验证事件是否触发_
 
 ## 使用Snowploogh Chrome扩展进行验证
 
@@ -46,7 +53,8 @@ ht-degree: 0%
 
 1. 验证 [SaaS数据空间ID](https://docs.magento.com/user-guide/configuration/services/saas.html) 设置正确。
 
-如果在验证是否收集事件并将其发送到Adobe Commerce时遇到任何问题， [联系支持](https://support.magento.com/hc/en-us).
+![雪犁过滤器](assets/snowplow-filter.png)
+_雪犁过滤器_
 
 >[!NOTE]
 >

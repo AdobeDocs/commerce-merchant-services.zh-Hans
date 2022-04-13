@@ -1,9 +1,10 @@
 ---
 title: 设置
 description: 了解如何更改 [!DNL Product Recommendations] 数据以及如何启用可视化推荐。
-source-git-commit: 8c85d26474e371d30b76499f312553a07e329a80
+exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
+source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -51,7 +52,7 @@ ht-degree: 0%
 
 1. 在Recommendations源部分中，单击 **编辑配置**.
 
-1. 按照配置新 [商务服务].
+1. 按照配置新 [[!DNL Commerce] 服务](/help/landing/saas.md).
 
 ## 启用可视化推荐
 

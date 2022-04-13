@@ -1,9 +1,10 @@
 ---
 title: Commerce Services Connector
 description: 了解如何使用API密钥和私钥将Adobe Commerce或Magento Open Source实例集成到服务中。
-source-git-commit: 8789bd21362109325d0d7b23d9b130067390eeae
+exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
+source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -18,9 +19,9 @@ ht-degree: 0%
 
 | 服务 | 可用性 |
 | ---|--- |
-| [!DNL Product Recommendations] 由Adobe Sensei提供支持 | Adobe Commerce |
-| [!DNL Live Search] 由Adobe Sensei提供支持 | Adobe Commerce |
-| [!DNL Payment Services] | Adobe Commerce和Magento Open Source |
+| [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) 由Adobe Sensei提供支持 | Adobe Commerce |
+| [[!DNL Live Search]](/help/live-search/overview.md) 由Adobe Sensei提供支持 | Adobe Commerce |
+| [[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce和Magento Open Source |
 
 ## 架构
 
@@ -74,7 +75,7 @@ API密钥和私钥是从 [!DNL Commerce] 许可证持有人的帐户，由 [!DNL
 
 >[!NOTE]
 >
-> 如果您没有看到 **Commerce Services Connector** 部分 [!DNL Commerce] 配置中，您必须安装 [!DNL Commerce] 所需模块 [!DNL Commerce Service]，例如 [!DNL Product Recommendations].
+> 如果您没有看到 **[!UICONTROL Commerce Services Connector]** 部分 [!DNL Commerce] 配置中，您必须安装 [!DNL Commerce] 所需模块 [!DNL Commerce] 服务，例如 [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md).
 
 要选择或创建SaaS项目，请请求 [!DNL Commerce] 来自的API密钥 [!DNL Commerce] 您的商店的许可证持有者。
 
