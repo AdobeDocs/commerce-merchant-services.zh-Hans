@@ -2,9 +2,9 @@
 title: 添加Facet
 description: 了解如何将可过滤的产品属性添加为实时搜索彩块化。
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 966b15e6cb8c839c39575a3ad25a6b460201330b
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 0%
    * 标签 — ([无头](facets-type.md) （仅限）输入要使用的Facet标签。
    * 选择类型 —  *选择类型* 全部使用 [!DNL Commerce] 店面 `single select`. 对于无头实施， `multi-select` 类型可以分配逻辑运算符(`or` 或 `and`)来确定返回的产品集。
    * 排序类型 — Facet按字母顺序对所有 [!DNL Commerce] 店面。 对于无头实施，Facet可以按字母顺序或按计数进行排序。 选项：按字母顺序，计数（仅限无头）
-   * 最大值 — 输入店面中显示的最大面值数。 有效条目：0 - 10
+   * 最大值 — 输入店面中显示的最大面值数。 有效条目：0-30;默认：8
 
 1. 完成后，单击 **保存**.
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 | 标签 | ([无头](facets-type.md) 仅) [facet标签](facets-type.md) 可以编辑店面中显示的内容，以与您的品牌保持一致。 |
 | 选择类型 | 显示 [选择方法](facets-type.md) 与产品属性关联的ID。 中的所有方面 [!DNL Commerce] 店面 `Single select` 仅。 无头实施还支持 `Multi-select` 逻辑运算符 `OR` 和 `AND`. |
 | 排序类型 | 用于 [排序](facets-type.md) 彩块化。 全部 [!DNL Commerce] 店面仅按字母顺序对小面块进行排序。 无头实施也可以按 `Count`. 选项：<br />按字母顺序 — 按字母顺序对彩块化进行排序。<br />计数 — （仅限无头）根据找到的匹配数对彩块化进行排序。 |
-| 最大值 | 可在每个面的店面中显示的最大值数。 表示一系列值的小平面会均匀分布。 默认：8 |
+| 最大值 | 可在每个面的店面中显示的最大值数。 表示一系列值的小平面会均匀分布。 有效条目：0-30;默认：8 |
 
 ### 控件
 
