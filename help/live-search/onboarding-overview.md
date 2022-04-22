@@ -2,9 +2,9 @@
 title: 入门概述
 description: 实时搜索入门流程、系统要求、边界和限制
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: f33f02fa15b6250970bda3302d3403b6fcec5786
+source-git-commit: f2934746c327528d5d52f2ae356afe303ff9b81b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,7 @@ ht-degree: 0%
 
 ### PWA测试版
 
+* 与使用本机Commerce店面的Live Search相比，当前Live Search测试版PWA实施需要更多的处理时间才能返回搜索结果。
 * 测试版PWA [!DNL Live Search] 不支持 [事件处理](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 * 与的测试版相关联使用时，GraphQL不支持以下产品属性 [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
 
@@ -55,3 +56,5 @@ ht-degree: 0%
 * [自定义价格组](https://docs.magento.com/user-guide/catalog/product-price-group.html)
 * 使用的多个库存位置 [MCOM](https://docs.magento.com/user-guide/mcom.html) 或其他OMS扩展
 * [集成的B2B功能](https://business.adobe.com/products/magento/b2b-ecommerce.html)
+* 产品价格不包括 [增值税](https://docs.magento.com/user-guide/tax/vat.html) （增值税）。
+* 无现货产品会显示在搜索结果中，与 [股票期权](https://docs.magento.com/user-guide/catalog/inventory-options-global.html) 配置。

@@ -2,7 +2,7 @@
 title: 添加Facet
 description: 了解如何将可过滤的产品属性添加为实时搜索彩块化。
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 966b15e6cb8c839c39575a3ad25a6b460201330b
+source-git-commit: f31c76404315a9fe142bf0c72ff9999c4a87365d
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -54,8 +54,8 @@ ht-degree: 0%
 
    ![分面工作区](assets/facet-edit.png)
 
-1. 将小平面固定到 *过滤器* 列表，单击灰色的推销(![固定选择器](assets/btn-pin-gray.png).
-1. 要更改被固定的面的顺序，请单击 **移动** (![移动选择器](assets/btn-move.png) 图标，然后将行拖到 *固定的Facet* 中。
+1. 将小平面固定到 *过滤器* 列表，单击灰色的推销(![固定选择器](assets/btn-pin-gray.png))。
+1. 要更改被固定的面的顺序，请单击 **移动** (![移动选择器](assets/btn-move.png))图标，并将行拖到 *固定的Facet* 中。
 
 ## 步骤3:发布更改
 

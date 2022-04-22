@@ -2,16 +2,16 @@
 title: Live Search指南概述
 description: Adobe Commerce的实时搜索功能可提供闪电般的快速、超相关且直观的搜索体验。
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: a8943e56cc074a96d3f9e1009b76fa589b76a8a4
+source-git-commit: 9d1637efdfde60f7b94c4fa60b369225b799bc83
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
 
 # Live Search指南概述
 
-[!DNL Live Search] Adobe Commerce提供了闪电般快速、超相关且直观的搜索体验，并且可免费供Adobe Commerce使用。 [!DNL Live Search] 由Powered提供 [Adobe Sensei](https://www.adobe.com/sensei.html) 使用人工智能和机器学习算法对聚合的访客数据进行深入分析。 此数据与Adobe Commerce目录结合使用后，可提供极具吸引力、相关性和个性化的购物体验。 注重速度、相关性和易用性， [!DNL Live Search] 对购物者和商人而言，这是改变游戏规则的因素。
+[!DNL Live Search] 从Adobe Commerce免费为Adobe Commerce提供闪电般快速、超相关且直观的搜索体验。 [!DNL Live Search] 由Powered提供 [Adobe Sensei](https://www.adobe.com/sensei.html) 使用人工智能和机器学习算法对聚合的访客数据进行深入分析。 此数据与Adobe Commerce目录结合使用后，可提供极具吸引力、相关性和个性化的购物体验。 注重速度、相关性和易用性， [!DNL Live Search] 对购物者和商人而言，这是改变游戏规则的因素。
 
 Live Search有三个管理员区域：
 
