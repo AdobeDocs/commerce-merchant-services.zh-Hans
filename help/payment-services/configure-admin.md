@@ -4,9 +4,9 @@ description: 安装后，您可以配置 [!DNL Payment Services] 在存储配置
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ ht-degree: 0%
 
 ### [!DNL PayPal Smart Buttons] 样式选项
 
-| 字段 | [范围]({% link configuration/scope.md %}) | 描述 |
+| 字段 | 范围 | 描述 |
 |--- |--- |--- |
 | [!UICONTROL Layout] | 存储视图 | 为Paypal智能按钮定义布局样式。 选项： [!UICONTROL Vertical] / [!UICONTROL Horizontal] |
 | [!UICONTROL Color] | 存储视图 | 定义Paypal智能按钮的颜色。 选项： [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |

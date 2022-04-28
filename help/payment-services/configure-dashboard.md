@@ -3,9 +3,10 @@ title: 在功能板中配置
 description: 安装后，您可以配置 [!DNL Payment Services] 中。
 role: Admin, User
 level: Intermediate
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+exl-id: 015c5c8c-8184-45c1-932a-f4365ddf5a30
+source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -97,4 +98,4 @@ ht-degree: 0%
 1. 要保存更改，请单击 **[!UICONTROL Save]** 的双曲余切值。
 1. 导航到 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** 单击 **[!UICONTROL Flush Cache]** 刷新所有无效的缓存。
 
-您可以配置 [!DNL PayPal Smart Buttons] 样式。 请参阅 [配置 [!DNL PayPal Smart Buttons style]](configure-admin.md#configure-paypal-smart-button-styling) 以了解更多信息。
+您可以配置 [!DNL PayPal Smart Buttons] 样式。 请参阅 [PayPal&#39;s Buttons风格指南](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) 以了解更多信息。
