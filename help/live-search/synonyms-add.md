@@ -2,16 +2,16 @@
 title: 添加同义词
 description: 添加实时搜索同义词，以改进对搜索请求的响应。
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 87e0500c623f9492d1722c21a2b47bf43d104829
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # 添加同义词
 
-添加您自己策划的 [!DNL Live Search] 用于改进对搜索请求的响应并保持客户参与度的同义词。
+通过添加您自己策划的实时搜索同义词列表，提高客户参与度。 [!DNL Live Search] 每个同义词最多可管理200个同义词 `Data Space ID`.
 
 ![[!DNL Live Search] 同义词](assets/synonym-workspace.png)
 

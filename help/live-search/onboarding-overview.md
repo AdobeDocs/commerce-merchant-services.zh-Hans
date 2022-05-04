@@ -2,9 +2,9 @@
 title: 入门概述
 description: 实时搜索入门流程、系统要求、边界和限制
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: f2934746c327528d5d52f2ae356afe303ff9b81b
+source-git-commit: 66ffbf2576615bb1f6015a13c65af86e8d7ea700
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,11 @@ ht-degree: 0%
 * 仅对Adobe Commerce数据库中的产品进行索引
 * 不为CMS页面编入索引
 
-### 查询限制
+### 同义词
+
+* [!DNL Live Search] 每个同义词最多可管理200个同义词 `Data Space ID`.
+
+### 查询
 
 * [!DNL Live Search] 无权访问类别树的完整分类，这会导致某些分层导航搜索方案超出其覆盖范围。
 * [!DNL Live Search] 对查询使用唯一的GraphQL端点来支持智能分面和按类型搜索等功能。 尽管与 [MagentoGraphQL API](https://devdocs.magento.com/guides/v2.4/graphql)，则存在一些差异，某些字段当前可能不完全兼容。
