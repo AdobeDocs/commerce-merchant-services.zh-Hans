@@ -4,9 +4,9 @@ description: 安装后，您可以配置 [!DNL Payment Services] 中。
 role: Admin, User
 level: Intermediate
 exl-id: 015c5c8c-8184-45c1-932a-f4365ddf5a30
-source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
+source-git-commit: 44e97a0299e980656aef557eb5c2bac9b6443452
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,8 @@ ht-degree: 0%
 
 1. 要保存更改，请单击 **[!UICONTROL Save]** 的双曲余切值。
 
+   如果尝试在不保存更改的情况下离开此视图，则会显示一个模式窗口，提示您放弃更改、继续编辑或保存更改。
+
 1. 导航到 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** 单击 **[!UICONTROL Flush Cache]** 刷新所有无效的缓存。
 
 ### 信用卡字段
@@ -63,6 +65,9 @@ ht-degree: 0%
 1. 至 [设置付款操作](production.md#set-payment-services-as-payment-method)，设置 **[!UICONTROL Payment action]** to `Authorize` 或 `Authorize and Capture`.
 1. 对于 **[!UICONTROL Debug Mode]**，切换选择器以启用调试模式。
 1. 要保存更改，请单击 **[!UICONTROL Save]** 的双曲余切值。
+
+   如果尝试在不保存更改的情况下离开此视图，则会显示一个模式窗口，提示您放弃更改、继续编辑或保存更改。
+
 1. 导航到 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** 单击 **[!UICONTROL Flush Cache]** 刷新所有无效的缓存。
 
 ### PayPal智能按钮
@@ -83,6 +88,9 @@ ht-degree: 0%
 1. 要更改 [稍后付费消息传送](payments-options.md#pay-later-button) （如果需要）切换 **[!UICONTROL Display Pay Later message]** 选项。
 1. 要启用调试模式，请单击 **[!UICONTROL Debug Mode]**,
 1. 要保存更改，请单击 **[!UICONTROL Save]** 的双曲余切值。
+
+   如果尝试在不保存更改的情况下离开此视图，则会显示一个模式窗口，提示您放弃更改、继续编辑或保存更改。
+
 1. 导航到 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** 单击 **[!UICONTROL Flush Cache]** 刷新所有无效的缓存。
 
 ### 按钮样式
@@ -96,6 +104,9 @@ ht-degree: 0%
 1. 要启用按钮高度选择器，请单击 **[!UICONTROL Responsive button height]**.
 1. 修改 **[!UICONTROL Label]**，请选择所需的标签选项。
 1. 要保存更改，请单击 **[!UICONTROL Save]** 的双曲余切值。
+
+   如果尝试在不保存更改的情况下离开此视图，则会显示一个模式窗口，提示您放弃更改、继续编辑或保存更改。
+
 1. 导航到 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** 单击 **[!UICONTROL Flush Cache]** 刷新所有无效的缓存。
 
 您可以配置 [!DNL PayPal Smart Buttons] 样式。 请参阅 [PayPal&#39;s Buttons风格指南](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) 以了解更多信息。
