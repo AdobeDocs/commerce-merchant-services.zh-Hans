@@ -4,22 +4,22 @@ description: 使用“支付”报表可以完全透明地记录支付金额、�
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: aff1a43fedab473b84d02068a7d3fbd33b4fe093
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
 
 # 派息报告
 
-[!DNL Payment Services] 对于Adobe Commerce和Magento Open Source，您可以提供全面的报表，以便您能够清楚地了解商店的订单和付款情况。
+[!DNL Payment Services] 表示 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供全面的报表，以便您能够清楚地了解商店的订单和付款情况。
 
 ![财务报表视图](assets/reports-view.png)
 
 “付款”报表一目了然地显示全面的付款信息，使您对付款金额、已处理数量和财务对账交易级别的详细报告完全透明。
 
-您不必打开多个功能板或视图来交叉引用订单和付款或调节帐户。 [!DNL Payment Services] 对于Adobe Commerce和Magento Open Source，您可以从一个位置 — “支付报告” — 采取所有这些行动，以便您能够高效地查看和管理您的支付。
+您不必打开多个视图来交叉引用订单和付款或调节帐户。 [!DNL Payment Services] 表示 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 使您能够从一个位置执行所有这些操作，即支付报告，以便您能够高效查看和管理您的支付。
 
 请参阅管理员的“支付”报表中关联的商务订单和交易ID、交易金额、每笔交易的付款方法等。
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 数据源选择的工作方式如下：
 
-* 如果您没有处于实时模式的任何存储，则数据源选择将默认为 [!UICONTROL Sandbox]_.
+* 如果您没有处于实时模式的任何存储，则数据源选择将默认为 _[!UICONTROL Sandbox]_.
 * 如果您在实时模式下有任何存储（一个或多个），则数据源选择将默认为 _[!UICONTROL Live]_.
 * 报表导出始终遵循数据源选择。
 

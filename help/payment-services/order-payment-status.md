@@ -4,22 +4,22 @@ description: 使用“订单付款状态”报表可查看订单的付款状态�
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: cd1c735e9b3be0d75019e0987c84899f9aa66951
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---
 
 # 订单付款状态报表
 
-[!DNL Payment Services] 对于Adobe Commerce和Magento Open Source，您可以提供全面的报表，以便您能够清楚地了解商店的订单和付款情况。
+[!DNL Payment Services] 表示 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供全面的报表，以便您能够清楚地了解商店的订单和付款情况。
 
 ![财务报表视图](assets/reports-view.png)
 
 “订单付款状态”报表可帮助您轻松了解特定订单在订单中的现金流程流中的位置。 此报表允许您快速查看订单的付款状态并识别任何潜在问题。
 
-您不必打开多个视图，即可人工交叉引用订单和付款。 [!DNL Payment Services] 对于Adobe Commerce和Magento Open Source，您可以在订单付款状态报表中全面查看订单和付款。
+您不必打开多个视图，即可人工交叉引用订单和付款。 [!DNL Payment Services] 表示 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 使您能够从“订单付款状态”报表中全面查看订单和付款。
 
 请在“管理员”中查看此报表中的付款状态、开票和发运状态、退款状态、争议状态等。
 

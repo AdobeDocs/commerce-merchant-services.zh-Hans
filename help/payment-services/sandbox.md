@@ -2,9 +2,9 @@
 title: 设置测试沙盒
 description: 使用PayPal沙盒帐户 [!DNL Payment Services] 在测试模式下。
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ PayPal沙盒帐户允许您使用 [!DNL Payment Services] 在测试模式下。 
 要完成沙盒载入，请执行以下操作：
 
 1. 导航到 [PayPal开发人员帐户页面](https://developer.paypal.com/developer/accounts/).
-1. 单击 **[!UICONTROL Log in to Dashboard]** 并使用您现有的凭据登录到PayPal Developers帐户，或单击 **注册** 创建帐户。
+1. 单击 **[!UICONTROL Log in to Home]** 并使用您现有的凭据登录到PayPal Developers帐户，或单击 **注册** 创建帐户。
 1. 创建PayPal沙盒帐户：
    1. 转到 _[!UICONTROL SANDBOX]_>**[!UICONTROL Accounts]**.
    1. 单击 **[!UICONTROL Create account]**.
@@ -42,7 +42,7 @@ PayPal沙盒帐户允许您使用 [!DNL Payment Services] 在测试模式下。 
 
    如果尚未完成的沙盒载入，则会显示此选项 [!DNL Payment Services].
 
-   沙盒商户ID是自动生成并填充到 [配置](configure-admin.md). 请勿更改或更改此ID。
+   沙盒商户ID是自动生成并填充到 [设置](settings.md). 请勿更改或更改此ID。
 
    您将看到一个PayPal窗口，用于连接PayPal帐户以开始接受付款。
 
@@ -59,7 +59,7 @@ PayPal沙盒帐户允许您使用 [!DNL Payment Services] 在测试模式下。 
 
 >[!IMPORTANT]
 >
->如果您撤消对 [!DNL Payment Services] 对于Adobe Commerce和Magento Open Source以处理您的付款（在您的PayPal帐户设置中），您商店中的订单无法由 [!DNL Payment Services].
+>如果您撤消对 [!DNL Payment Services] 表示 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 处理付款时（在您的PayPal帐户设置中），您商店中的订单无法由 [!DNL Payment Services].
 
 ## 启用联系电话号码
 

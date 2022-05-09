@@ -4,16 +4,16 @@ description: 将实例与 [!DNL Payment Services] 功能。
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
 # 板载 [!DNL Payment Services]
 
-开始使用 [!DNL Payment Services] 对于Adobe Commerce和Magento Open Source，您必须完成一些入门步骤，以将您的实例与付款功能连接起来。
+开始使用 [!DNL Payment Services] 表示 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source]，则必须完成一些入门步骤，以便将实例与付款功能连接。
 
 ## 载入流程
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 在您完成沙盒或实时支付入门后，即可从访问财务报告 [!DNL Payment Services] 中。
 
-如果载入并启用了沙盒和实时支付，则可以从 [!DNL Payment Services] 家。
+如果载入并启用了沙盒和实时支付，则可以从 [!DNL Payment Services] 回家。
 
 ## 先决条件
 

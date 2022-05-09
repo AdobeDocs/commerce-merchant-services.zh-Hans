@@ -1,11 +1,11 @@
 ---
 user-guide-title: '[!DNL Payment Services] 指南'
-user-guide-description: 本指南提供了有关安装和配置的详细信息 [!DNL Payment Services] 用于您的Adobe Commerce或Magento Open Source商店。
+user-guide-description: 本指南提供了有关安装和配置的详细信息 [!DNL Payment Services] , [!DNL Adobe Commerce] 或 [!DNL Magento Open Source] 存储。
 breadcrumb-title: '[!DNL Payment Services] 指南'
 index: true
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '71'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,8 @@ ht-degree: 2%
    - [设置测试沙盒](sandbox.md)
    - [为生产启用](production.md)
 - 配置 [!DNL Payment Services] {#configure}
-   - [在功能板中配置](configure-dashboard.md)
+   - [[!DNL Payment Services] 主页](payments-home.md)
+   - [[!DNL Payment Services] 设置](settings.md)
    - [命令行配置](configure-cli.md)
    - [旧版支付配置](configure-admin.md)
 - [测试和验证](test-validate.md)

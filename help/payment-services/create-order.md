@@ -2,18 +2,18 @@
 title: 通过 [!DNL Payment Services]
 description: 管理员能够使用 [!DNL Payment Services] 由商家直接从管理员处向需要帮助的客户发送。
 exl-id: 1542a33f-9c01-4c36-bbce-bfa3107fbeb8
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '162'
 ht-degree: 1%
 
 ---
 
 # 通过 [!DNL Payment Services]
 
-您可以自定义 [!DNL Payment Services] 使用管理员中的配置选项，以满足您的需要。
+您可以使用 [[!DNL Payment Services] 设置](settings.md).
 
-[!DNL Payment Services] 对于Adobe Commerce和Magento Open Source，允许您商家直接向管理员为需要帮助的客户执行订单。 的 **[!UICONTROL Create New Order]** 表单包含完成正常结账流程所需的所有信息，包括包含信用卡信息的托管字段。 请参阅 [创建订单](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target=&quot;_blank&quot;}以了解有关所需步骤的详细信息。
+[!DNL Payment Services] 表示 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 允许您向需要帮助的客户直接由商家向管理员执行订单。 的 **[!UICONTROL Create New Order]** 表单包含完成正常结账流程所需的所有信息，包括包含信用卡信息的托管字段。 请参阅 [创建订单](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target=&quot;_blank&quot;}以了解有关所需步骤的详细信息。
 
 ## 托管信用卡字段
 

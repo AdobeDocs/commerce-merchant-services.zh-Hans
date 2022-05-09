@@ -2,9 +2,9 @@
 title: 启用 [!DNL Payment Services] 生产
 description: 通过启用 [!DNL Payment Services] 生产。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '685'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
    如果尚未配置，则会显示此选项 [!DNL Payment Services] 作为一个或多个Magento网站的付款方法。
 
-   系统会将您定向到管理员中的配置区域，并展开相关选项(**[!UICONTROL Sales]** > **[!UICONTROL Payment Methods]** > _[!UICONTROL Recommended Solutions]_>_[!UICONTROL Payment Services]_)，您可以在其中启用 [!DNL Payment Services] 选项 [付款方法](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target=&quot;_blank&quot;}。
+   将您定向到“主页”视图中的设置区域，并展开相关选项(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_)，您可以在其中启用 [!DNL Payment Services] 选项 [付款方法](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target=&quot;_blank&quot;}。
 
 1. 在 _[!UICONTROL General Configuration]_，设置&#x200B;**[!UICONTROL Enable]**to `Yes`.
 1. 已设置 **[!UICONTROL Payment Action]**，用于 _[!UICONTROL Credit Card Fields]_和_[!UICONTROL PayPal Smart Buttons]_，更改为以下任一内容：
@@ -32,13 +32,13 @@ ht-degree: 0%
    | `Authorize` | 批准购买并暂停资金。 该金额在被商户“捕获”之前不会撤回。 |
    | `Authorize and Capture` | 批准购买，商家将“捕获”资金。 |
 
-1. 单击 **[!UICONTROL Save Config]**.
-1. 单击 **[!UICONTROL Go to Payment Services]** 被引回 [!DNL Payment Services] 家。
+1. 单击 **[!UICONTROL Save]**.
+1. 单击 **[!UICONTROL Go to Payment Services]** 被引回 [!DNL Payment Services] 回家。
 1. [清除缓存](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}。
 
    应在每次配置更改后完成清除。
 
-请参阅 [配置支付服务](configure-admin.md) 有关配置信用卡字段和PayPal智能按钮的详细信息。
+请参阅 [配置支付服务](settings.md) 有关配置信用卡字段和PayPal智能按钮的详细信息。
 
 ## 完整的商户登入
 
@@ -64,14 +64,14 @@ ht-degree: 0%
 
    >[!IMPORTANT]
    >
-   >如果您撤消对 [!DNL Payment Services] 对于Adobe Commerce和Magento Open Source以处理您的付款（在您的PayPal帐户设置中），您商店中的订单无法由 [!DNL Payment Services].
+   >如果您撤消对 [!DNL Payment Services] 表示 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 处理付款时（在您的PayPal帐户设置中），您商店中的订单无法由 [!DNL Payment Services].
 
 ## 从Adobe请求付款权利
 
 要启用实时载入，您必须从Adobe请求付款权利：
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. 单击 **[!UICONTROL Get Live Payments]** 在 [!DNL Payment Services] 功能板。
+1. 单击 **[!UICONTROL Get Live Payments]** 在 [!DNL Payment Services] 回家。
 
    ![请求授权](assets/request-entitlements.png)
 
@@ -88,10 +88,9 @@ ht-degree: 0%
 
 获取 [!DNL Payment Services] _商户ID_:
 
-1. 在 _管理员_ 侧栏，导航到 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
-1. 在左侧面板中，展开 **[!UICONTROL Sales]** 选择 **[!UICONTROL Payment Methods]**.
-1. 展开 _[!UICONTROL Recommended Solutions]_中。
-1. 在 _[!UICONTROL Payment Services]_部分，展开_[!UICONTROL General Configuration]_ 中。
+
+1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. 在主页视图中，单击 **[!UICONTROL Settings]**. 请参阅 [主页](payments-home.md) 以了解更多信息。
 1. 选择所需的 _商户ID_ 并将其提交给销售代表，销售代表将配置正确的定价层。
 
 ## 启用实时付款
@@ -100,12 +99,10 @@ A _生产商ID_ 会在 [配置](configure-admin.md). 请勿更改或更改此ID�
 
 要启用实时付款，请执行以下操作：
 
-1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
-1. 在左侧面板中，展开 **[!UICONTROL Sales]** 选择 **[!UICONTROL Payment Methods]**.
-1. 展开 _[!UICONTROL Recommended Solutions]_中。
-1. 在 _[!UICONTROL Payment Services]_部分，展开_[!UICONTROL General Configuration]_ 中。
-1. 已设置 **[!UICONTROL Method]** to `Production`.
-1. 单击 **[!UICONTROL Save Config]**.
+1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. 在主页上，单击 **[!UICONTROL Settings]** 的双曲余切值。 请参阅 [主页](payments-home.md) 以了解更多信息。
+1. 在 _[!UICONTROL General Configuration]_节集&#x200B;**[!UICONTROL Payment mode]**to `Production`.
+1. 单击 **[!UICONTROL Save]**.
 1. [清除缓存](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}。
 
    >[!IMPORTANT]
@@ -114,7 +111,7 @@ A _生产商ID_ 会在 [配置](configure-admin.md). 请勿更改或更改此ID�
 
 如果您导航回 [!DNL Payment Services] 主页上，沙盒支付模式消息将不再显示，因为您现在正在处理实时支付。
 
-请参阅 [在管理员中配置](configure-admin.md) 以了解更多配置选项。
+请参阅 [在管理员中配置](configure-admin.md) ，以了解旧版配置选项。
 
 >[!IMPORTANT]
 >

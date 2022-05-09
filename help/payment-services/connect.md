@@ -2,9 +2,9 @@
 title: 连接实例
 description: 使用API密钥和私钥连接您的商务实例，并在配置中指定数据空间。
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ### 商务API密钥和私钥
 
-某些Adobe Commerce和Magento Open Source功能部署为SaaS（软件即服务），称为Commerce Services。 要使用这些服务，您必须使用API密钥和私钥将您的Commerce实例连接到这些服务，并在 [配置](https://docs.magento.com/user-guide/configuration/services/saas.html){target=&quot;_blank&quot;}。
+部分 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 功能部署为SaaS（软件即服务），称为Commerce Services。 要使用这些服务，您必须使用API密钥和私钥将您的Commerce实例连接到这些服务，并在 [配置](https://docs.magento.com/user-guide/configuration/services/saas.html){target=&quot;_blank&quot;}。
 
 创建由MageID标识的商务帐户时，可以生成商务API密钥和私钥。 使用Commerce Services，例如 [!DNL Payment Services], [!DNL Product Recommendations]或 [!DNL Live Search]，则许可证持有者必须生成这些密钥，才能通过授权验证。 然后，这些密钥可以传递给代表许可证持有者管理项目和环境的系统集成商或开发团队。 如果您是解决方案集成商，则还有权根据自己的需要使用这些服务。 在这种情况下，商务合作伙伴合同的签名者应生成密钥。
 
@@ -67,8 +67,8 @@ ht-degree: 0%
 
 在创建SaaS项目时， Commerce会根据您的商务许可证生成一个或多个SaaS数据空间：
 
-* Adobe Commerce — 一个生产数据空间；两个测试数据空间
-* Magento Open Source — 一个生产数据空间；没有测试数据空间
+* [!DNL Adobe Commerce]  — 一个生产数据空间；两个测试数据空间
+* [!DNL Magento Open Source]  — 一个生产数据空间；没有测试数据空间
 
 ### 配置SaaS项目
 

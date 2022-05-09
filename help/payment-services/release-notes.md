@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] 发行说明"'
 description: 查看发行说明，了解有关 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '529'
 ht-degree: 1%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 1%
 
 ## v1.1.0
 
-![新建](../assets/new.svg)<!-- Issue PAY-2127 --> [[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) 现在与Adobe Commerce和Magento Open Source版本2.4.0到2.4.4兼容。
+![新建](../assets/new.svg)<!-- Issue PAY-2127 --> [[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) 现在与 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 版本2.4.0到2.4.4。
 
-![新建](../assets/new.svg)<!-- Issue PAY-2682 --> 的 [!DNL Payment Services] Adobe Commerce和Magento Open Source的扩展适用于加拿大商户。 商户可以在以下任一位置查看付款配置 [法语](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr) 或 [英语](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=en).
+![新建](../assets/new.svg)<!-- Issue PAY-2682 --> 的 [!DNL Payment Services] 扩展 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 可供加拿大商家使用。 商户可以在以下任一位置查看付款配置 [法语](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr) 或 [英语](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=en).
 
 ![新建](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] 支持 [加元(CAD)](overview.md#accepted-credit-cards-and-currencies) 信用卡和Paypal。 购物者可以使用其首选语言获得购物体验，具体取决于他们所在商店的区域设置。
 
@@ -53,13 +53,13 @@ ht-degree: 1%
 
 ## v1.0.0
 
-![新建](../assets/new.svg)<!-- Issue PAY-2127 --> 正式发布。 [支付服务](https://marketplace.magento.com/magento-payment-services.html) 现在与Adobe Commerce和Magento Open Source版本2.4.0到2.4.3-p1兼容。
+![新建](../assets/new.svg)<!-- Issue PAY-2127 --> 正式发布。 [支付服务](https://marketplace.magento.com/magento-payment-services.html) 现在与 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 版本2.4.0到2.4.3-p1。
 
-![新建](../assets/new.svg)<!-- Issue PAY-124 --> 的 [!DNL Payment Services] Adobe Commerce和Magento Open Source的扩展可以安装 [Adobe Commerce云基础架构](install.md#magento-commerce-cloud) 或 [本地](install.md#on-premises) 实例。 这些方法需要使用命令行接口。
+![新建](../assets/new.svg)<!-- Issue PAY-124 --> 的 [!DNL Payment Services] 扩展 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 可以为 [[!DNL Adobe Commerce] 云基础架构](install.md#magento-commerce-cloud) 或 [本地](install.md#on-premises) 实例。 这些方法需要使用命令行接口。
 
 ![新建](../assets/new.svg)<!-- Issue PAY-1986 --> [!DNL Payment Services] 支持 [沙盒帐户](onboard.md#enable-sandbox-testing) 允许商家在测试模式下评估扩展。
 
-![新建](../assets/new.svg)<!-- Issue PAY-666 --> 商家可以 [配置Payment Services](configure-admin.md) 扩展，具有基本付款行为（例如将身份验证捕获一起，以及在沙盒或生产环境之间切换）。
+![新建](../assets/new.svg)<!-- Issue PAY-666 --> 商家可以 [配置Payment Services](settings.md) 扩展，具有基本付款行为（例如将身份验证捕获一起，以及在沙盒或生产环境之间切换）。
 
 ![新建](../assets/new.svg)<!-- Issue PAY-780 --> 购物者可以 [!DNL Payment Services] 或者你通过电话接下命令 [创建整个订单](create-order.md) 在管理员中。
 
@@ -67,7 +67,7 @@ ht-degree: 1%
 
 ![新建](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] 支持适合任何商户的分层定价（基于TPV）。
 
-![新建](../assets/new.svg)<!-- Issue PAY-1443 --> 可以自定义PayPal按钮的外观以及 [支付服务](https://devdocs.magento.com/payment-services/customize-buttons-messaging.html) 扩展。
+![新建](../assets/new.svg)<!-- Issue PAY-1443 --> 可以自定义PayPal按钮的外观以及 [支付服务](payments-options.md) 扩展。
 
 ![已知问题](../assets/bug.svg)<!-- Issue PAY-2473 --> 使用 [编辑器键值不正确](https://support.magento.com/hc/en-us/articles/4406603542541) 在安装扩展期间，会阻止用户 [身份验证](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 正确 `MAGEID`.
 
