@@ -2,9 +2,9 @@
 title: Commerce Services Connector
 description: 了解如何使用API密钥和私钥将Adobe Commerce或Magento Open Source实例集成到服务中。
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
+source-git-commit: 3035edd14ca6d7b29e7fa6f4c6ed2a66401171c1
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '801'
 ht-degree: 0%
 
 ---
@@ -42,10 +42,6 @@ API密钥和私钥是从 [!DNL Commerce] 许可证持有人的帐户，由 [!DNL
 1. 在 **Magento** 选项卡，选择 **API门户** 的问题。
 
 1. 从 _环境_ 菜单，选择 **生产** 或 **沙盒**.
-
-   >[!NOTE]
-   >
-   > 对于 [!DNL _产品Recommendations_] 和 [!DNL _实时搜索_]，选择 **生产**. 生产密钥让您可以访问生产和非生产数据空间。 沙盒键不用于这些服务。
 
 1. 在 _API密钥_ 部分，单击 **新增**.
 

@@ -1,16 +1,17 @@
 ---
 title: 安装和配置
 description: 了解如何安装、更新和卸载 [!DNL Product Recommendations].
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
+source-git-commit: b06d5000263b7ee09608a4a8510d76e9f4bdb809
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
 
 # 安装和配置
 
-部署 [!DNL Product Recommendations] 在您的店面和管理员中，您需要安装模块并配置Commerce Services Connector。 随着更新的发布，您可以轻松地使用最新版本更新安装。
+部署 [!DNL Product Recommendations] 要求您安装模块并配置 [Commerce Services Connector](../landing/saas.md). 随着更新的发布，您可以轻松地使用最新版本更新安装。
 
 - [安装](#install)
 - [配置](#configure)
@@ -51,7 +52,7 @@ composer require magento/module-visual-product-recommendations
 
 要确保目录导出正常运行，请确认 [cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) 工作和 [索引器](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) 正在运行， `Product Feed` 索引器设置为 `Update by Schedule`.
 
-当您通过API密钥成功链接到Commerce Services并指定SaaS数据空间时，目录同步将启动并 [验证](verify.md) 行为数据被发送到您的店面。
+当您通过API密钥成功链接到Commerce Services并指定SaaS数据空间时，将开始目录同步。 然后，您可以 [验证](verify.md) 行为数据被发送到您的店面。
 
 ## 更新 [!DNL Product Recommendations] 安装 {#update}
 
