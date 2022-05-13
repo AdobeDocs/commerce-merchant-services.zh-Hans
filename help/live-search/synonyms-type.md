@@ -2,9 +2,9 @@
 title: 同义词的类型
 description: 单向和双向实时搜索同义词扩展了关键词的定义。
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: c8fd75f68ed0def18f6f89adc777244057c5d79d
+source-git-commit: 7c3b7ff9e892521108dfec3f308db795e3ab42f9
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,10 @@ ht-degree: 0%
 ### 关键词映射
 
 此技术使用可搜索的产品属性而不是同义词来在产品之间创建基于关键字的关联。 因此，映射的产品可能会显示在其他产品的搜索结果中。 要了解更多信息，请参阅 [搜索结果](https://docs.magento.com/user-guide/catalog/search-results.html).
+
+### 使用单词
+
+如果同义词词包含多个词，则词之间的空白会将它们视为单独的同义词。 例如，如果将“时间段”定义为“watch”的同义词，则词语“time”和“piece”将被视为单独的同义词。
 
 ### 单数和复数的使用
 
