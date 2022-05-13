@@ -2,9 +2,9 @@
 title: Live Search指南概述
 description: Adobe Commerce的实时搜索功能可提供闪电般的快速、超相关且直观的搜索体验。
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: 5f83b72c18490a6829ef30064f75c5d963bd93be
+source-git-commit: 2676c363182d0b7cb02d15d1093066b1ad4e7b87
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Live Search有三个管理员区域：
 
-* 店面：使用CSS样式自定义店面弹出窗口。
+* 店面：使用CSS样式自定义 [!DNL storefront popover].
 * 管理员：使用此区域可访问配置和设置。
 * 命令行界面：使用此工具执行安装和后端配置任务。
 

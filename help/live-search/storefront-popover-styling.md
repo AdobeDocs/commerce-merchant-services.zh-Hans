@@ -2,16 +2,16 @@
 title: 弹出窗口元素的样式设置
 description: 有关自定义实时搜索店面弹出窗口的技术说明。
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 479bf3fba776f47942a0ac8419abbae5553339f0
+source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
 
-# 弹出窗口元素的样式设置
+# 样式 [!DNL Popover] 元素
 
-的 [店面弹出窗口](storefront-popover.md) 始终显示产品 `name` 和 `price`，且无法配置字段的选择。 但是，弹出窗口元素可以使用CSS类设置样式。 例如，以下声明会更改弹出窗口容器和页脚的背景颜色。
+的 [[!DNL storefront popover]](storefront-popover.md) 始终显示产品 `name` 和 `price`，且无法配置字段的选择。 但是， [!DNL popover] 元素可以使用CSS类设置样式。 例如，以下声明会更改 [!DNL popover] 容器和页脚。
 
 ```css
 .livesearch.popover-container {
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 容器可见性
 
-的父组件 `.livesearch.popover-container` is `.search-autocomplete`.  的 `.active` 类表示容器的可见性。 的 `.active` 弹出窗口打开时，会有条件地添加类。
+的父组件 `.livesearch.popover-container` is `.search-autocomplete`.  的 `.active` 类表示容器的可见性。 的 `.active` 当 [!DNL popover] 打开。
 
 ```css
 .search-autocomplete.active   /* visible */
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 ## 类选择器
 
-以下类选择器可用于设置弹出窗口中的容器、建议和产品元素的样式。
+以下类选择器可用于设置 [!DNL popover].
 
 * `.livesearch.popover-container`
 * `.livesearch.view-all-footer`
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 `.livesearch.popover-container`
 
-![弹出容器](assets/livesearch-popover-container.png)
+![[!DNL Popover] 容器](assets/livesearch-popover-container.png)
 
 `.livesearch.view-all-footer`
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 ## 使用修改的主题 {#working-with-modified-theme}
 
-店面弹出窗口可与自定义的 [主题](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html) 会从 *卢马*. 的 `top.search` 块 `header-wrapper` 的 `Magento_Search` 不得修改模块。
+的 [!DNL storefront popover] 可与自定义 [主题](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html) 会从 *卢马*. 的 `top.search` 块 `header-wrapper` 的 `Magento_Search` 不得修改模块。
 
 ```html
 <referenceContainer name="header-wrapper">
@@ -97,9 +97,9 @@ ht-degree: 0%
 </referenceContainer>
 ```
 
-## 禁用弹出窗口
+## 禁用 [!DNL popover]
 
-禁用弹出窗口并恢复标准 [快速搜索](https://docs.magento.com/user-guide/catalog/search-quick.html) 功能中，输入以下命令：
+禁用 [!DNL popover] 并恢复标准 [快速搜索](https://docs.magento.com/user-guide/catalog/search-quick.html) 功能中，输入以下命令：
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover

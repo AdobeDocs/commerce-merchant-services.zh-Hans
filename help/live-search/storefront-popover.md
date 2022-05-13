@@ -2,22 +2,22 @@
 title: 店面弹出窗口
 description: 实时搜索店面弹出窗口可动态返回建议的产品和缩略图。
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
 
-# 店面弹出窗口
+# [!DNL Storefront Popover]
 
-When [!DNL Live Search] is [已安装](install.md)，则当购物者在 [搜索](https://docs.magento.com/user-guide/catalog/search-quick.html) 框中。 键入每个字符后，弹出窗口会更新为建议的产品以及顶部搜索结果的缩略图图像。
+When [!DNL Live Search] is [已安装](install.md), a [!DNL popover] 当购物者在 [搜索](https://docs.magento.com/user-guide/catalog/search-quick.html) 框中。 键入了每个字符后， [!DNL popover] 更新了推荐的产品和排名最前的搜索结果的缩略图图像。
 
 [!DNL Live Search] 返回包含两个或更多字符的查询的结果。 对于部分匹配，每个词的最大字符数为20。 “键入搜索”查询中的字符数不可配置。
 
 >[!NOTE]
 >
->的 [!DNL Live Search] 店面弹出窗口仅适用于使用 *卢马* 主题，或基于 *卢马*. 的 *卢马* 主题包含在 [!DNL Commerce] 示例数据。 弹出窗口不支持 *空白* 主题。 请参阅 [弹出窗口元素的样式设置](storefront-popover-styling.md) 以了解更多。
+>的 [!DNL Live Search] [!DNL storefront popover] 仅适用于使用 *卢马* 主题，或基于 *卢马*. 的 *卢马* 主题包含在 [!DNL Commerce] 示例数据。 的 [!DNL popover] 不支持 *空白* 主题。 请参阅 [样式 [!DNL Popover] 元素](storefront-popover-styling.md) 以了解更多。
 
 ## 可搜索属性
 
@@ -29,16 +29,16 @@ When [!DNL Live Search] is [已安装](install.md)，则当购物者在 [搜索]
 * `name`
 * `categories`
 
-![实时搜索弹出窗口](assets/storefront-search-as-you-type.png)
+[[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
-## 弹出窗口页面大小
+## [!DNL Popover] 页面大小
 
-弹出窗口的页面大小决定可返回多少行自动完成的产品。 以前，页面大小硬编码为六行。 但是， `page_size` “值”现在是可从 *管理员*. 在Live Search安装期间， `page_size` 值会更改为 [目录搜索](https://docs.magento.com/user-guide/configuration/catalog/catalog.html#catalog-search) - `Autocomplete Limit` 设置。
+的页面大小 [!DNL popover] 确定可返回多少行自动完成的产品。 以前，页面大小硬编码为六行。 但是， `page_size` “值”现在是可从 *管理员*. 在Live Search安装期间， `page_size` 值会更改为 [目录搜索](https://docs.magento.com/user-guide/configuration/catalog/catalog.html#catalog-search) - `Autocomplete Limit` 设置。
 
-默认情况下，“目录搜索 — 自动完成限制”值设置为八行（或八行）。 要更改弹出窗口的页面大小，请执行以下操作：
+默认情况下，“目录搜索 — 自动完成限制”值设置为八行（或八行）。 更改 [!DNL popover]，请执行以下操作：
 
 1. 在 *管理员* 侧栏，转到 **商店** >设置> **配置**.
 1. 在左侧面板中，展开 **目录** 选择 **目录** 中。
 1. 展开 *目录搜索* 中。
-1. 设置 **自动完成限制** 到要在弹出窗口中允许的行数。
+1. 设置 **自动完成限制** 到要在 [!DNL popover].
 1. 完成后，单击 **保存配置**.

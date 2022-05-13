@@ -2,10 +2,10 @@
 title: 实时搜索发行说明
 description: 有关Adobe Commerce中实时搜索的最新发行信息。
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: a3a52af6cd907b2b8734a5dd3ca7df71158db190
+source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '676'
+ht-degree: 1%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 * ![新建](../assets/new.svg) - [!DNL Live Search] 现在，运行Adobe Commerce 2.4.4的安装支持PHP 8.1。
 * ![新建](../assets/new.svg) - `Magento_ElasticsearchCatalogPermissionsGraphQl` 模块会添加到安装过程中禁用的模块列表。
-* ![新建](../assets/new.svg) - [店面弹出窗口](quick-tour.md) 可以通过 *管理员*.
+* ![新建](../assets/new.svg) - [[!DNL storefront popover]](quick-tour.md) 可以通过 *管理员*.
 * ![新建](../assets/new.svg)  — 测试版 [PWA](https://developer.adobe.com/commerce/pwa-studio/) 兼容性 [!DNL Live Search].
 * ![新建](../assets/new.svg) - [!DNL Live Search] 安装过程会更新高级过程更改。
 * ![修复](../assets/fix.svg) - [高级搜索](https://docs.magento.com/user-guide/catalog/search-advanced.html) 链接已从storefront footer中删除。
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 * ![修复](../assets/fix.svg) - [自定义价格属性](https://docs.magento.com/user-guide/stores/attributes-input-types.html) 当配置为 [面]({% link live-search/facets-add.md %})。
 * ![修复](../assets/fix.svg)  — 修复了在没有 [货币符号](https://docs.magento.com/user-guide/stores/currency-symbols.html) (`data-currency-symbol`)可用。
-* ![修复](../assets/fix.svg) - [店面弹出窗口](storefront-popover.md) 现在显示 [特价](https://docs.magento.com/user-guide/catalog/product-price-special.html) （最低最终价格）。
+* ![修复](../assets/fix.svg) - [[!DNL Storefront popover]](storefront-popover.md) 现在显示 [特价](https://docs.magento.com/user-guide/catalog/product-price-special.html) （最低最终价格）。
 
 ## [!DNL Live Search] 1.3.0
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 * ![新建](../assets/new.svg) - [性能](performance.md) 报表功能板提供有关购物者使用的搜索词的分析。
 * ![新建](../assets/new.svg) - [!DNL Live Search] [Storefront事件SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) 通过事件发布和订阅服务以及量度，提供对常用数据层的访问。
-* ![修复](../assets/fix.svg) - [店面弹出窗口](https://devdocs.magento.com/live-search/storefront-popover.html) 具有新 `active` 类 `.search-autocomplete` 可控制可见性的容器。
+* ![修复](../assets/fix.svg) - [[!DNL Storefront Popover]](https://devdocs.magento.com/live-search/storefront-popover.html) 具有新 `active` 类 `.search-autocomplete` 可控制可见性的容器。
 * ![修复](../assets/fix.svg)  — 在店面， [搜索词](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) 页脚链接已删除，且其缓存已禁用 [!DNL Live Search] 安装。
 * ![错误](../assets/bug.svg) - Search适配器的修补程序处理重复产品。
 * ![错误](../assets/bug.svg) - [!DNL Live Search] 支持 [单源](https://docs.magento.com/user-guide/catalog/inventory-sources.html) 具有多个（虚拟）库存位置的（实际）库存位置 [股票](https://docs.magento.com/user-guide/catalog/inventory-stock.html). 当前不支持多个库存源。
@@ -63,7 +63,7 @@ ht-degree: 0%
 * 与Adobe Commerce for Cloud(ECE)兼容：2.4.x
 * 稳定性：稳定
 
-* ![新建](../assets/new.svg)  — 店面 [弹出窗口](storefront-popover.md) 当购物者在“搜索”框中键入查询时，显示热门搜索结果的建议产品和缩略图。
+* ![新建](../assets/new.svg) - [[!DNL Storefront popover]](storefront-popover.md) 当购物者在“搜索”框中键入查询时，显示热门搜索结果的建议产品和缩略图。
 * ![新建](../assets/new.svg)  — 商务 *管理员* 会话在键盘长时间不活动期间保持打开状态
 * ![新建](../assets/new.svg) - [!DNL Live Search] 载入后自动启用
 * ![修复](../assets/fix.svg)  — 初始索引时间不到1小时
