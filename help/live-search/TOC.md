@@ -1,27 +1,27 @@
 ---
-user-guide-title: Live Search指南
-user-guide-description: 本指南提供了有关使用Adobe Commerce中的实时搜索的详细说明。
-breadcrumb-title: Live Search指南
-source-git-commit: 93f7157135ae3eb1adb880752585565b8bfd9fbb
+user-guide-title: '"[!DNL Live Search] 指南”'
+user-guide-description: “本指南提供了有关使用 [!DNL Live Search] 来自Adobe Commerce。”
+breadcrumb-title: '"[!DNL Live Search] 指南”'
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '90'
+source-wordcount: '72'
 ht-degree: 2%
 
 ---
 
-# Live Search for Commerce {#live-search}
+# [!DNL Live Search] （商务） {#live-search}
 
 - [指南概述](guide-overview.md)
-- [Live Search简介](overview.md)
+- [简介 [!DNL Live Search]](overview.md)
 - [发行说明](release-notes.md)
 - 板载实时搜索 {#onboard}
    - [入门概述](onboarding-overview.md)
-   - [安装Live Search](install.md)
-- 实时搜索店面 {#live-search-storefront}
+   - [安装 [!DNL Live Search]](install.md)
+- [!DNL Live Search] 店面 {#live-search-storefront}
    - [快速浏览](quick-tour.md)
-   - [店面弹出窗口](storefront-popover.md)
-   - [弹出窗口元素的样式设置](storefront-popover-styling.md)
-- 实时搜索管理员{#live-search-admin}
+   - [店面 [!DNL Popover]](storefront-popover.md)
+   - [样式 [!DNL Popover] 元素](storefront-popover-styling.md)
+- [!DNL Live Search] 管理员{#live-search-admin}
    - [工作区](workspace.md)
    - [性能](performance.md)
    - Facet {#facets}

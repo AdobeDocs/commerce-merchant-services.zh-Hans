@@ -1,10 +1,10 @@
 ---
-title: 实时搜索设置
-description: 为实时搜索彩块化配置价格彩块化范围和间隔。
+title: '"[!DNL Live Search] 设置”'
+description: “配置价格方面范围和间隔 [!DNL Live Search] facet”。
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
-title: 安装Live Search
-description: 了解如何从Adobe Commerce安装、更新和卸载Live Search。
+title: '"安装 [!DNL Live Search]"'
+description: “了解如何安装、更新和卸载 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: ec68feaebc911c097bd643aabfc61ec586a7e099
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1267'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
-title: 弹出窗口元素的样式设置
-description: 有关自定义实时搜索店面弹出窗口的技术说明。
+title: “样式 [!DNL Popover] 元素”
+description: “关于自定义 [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '205'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
-title: Live Search指南概述
-description: Adobe Commerce的实时搜索功能可提供闪电般的快速、超相关且直观的搜索体验。
+title: '"[!DNL Live Search] 指南概述”'
+description: '"[!DNL Live Search] Adobe Commerce提供了快速、超相关、直观的搜索体验。”'
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: 2676c363182d0b7cb02d15d1093066b1ad4e7b87
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---

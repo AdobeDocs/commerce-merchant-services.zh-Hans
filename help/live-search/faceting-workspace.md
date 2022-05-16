@@ -1,10 +1,10 @@
 ---
-title: 分面工作区
-description: 通过实时搜索分面工作区了解您的方法。
+title: '"分面工作区"'
+description: “学习如何 [!DNL Live Search] 分面工作区。”
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: a8943e56cc074a96d3f9e1009b76fa589b76a8a4
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---

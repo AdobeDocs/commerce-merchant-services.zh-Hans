@@ -1,10 +1,10 @@
 ---
-title: 管理同义词
-description: 了解如何管理现有的实时搜索同义词。
+title: '"管理同义词"'
+description: “了解如何管理现有 [!DNL Live Search] 同义词。”
 exl-id: 9f910b3c-ea28-4a50-9d3f-24b4812c0e75
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---

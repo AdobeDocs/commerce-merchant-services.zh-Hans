@@ -1,10 +1,10 @@
 ---
-title: 添加同义词
-description: 添加实时搜索同义词，以改进对搜索请求的响应。
+title: '"添加同义词"'
+description: '"添加 [!DNL Live Search] 用于改进对搜索请求的响应的同义词。”'
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: 87e0500c623f9492d1722c21a2b47bf43d104829
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---

@@ -1,11 +1,11 @@
 ---
-title: 实时搜索发行说明
-description: 有关Adobe Commerce中实时搜索的最新发行信息。
+title: '"[!DNL Live Search] 发行说明"'
+description: “ [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

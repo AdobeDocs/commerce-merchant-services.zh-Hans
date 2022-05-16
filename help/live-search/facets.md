@@ -1,10 +1,10 @@
 ---
-title: Facet
-description: 实时搜索彩块化使用多个属性值维度作为搜索条件。
+title: “Facet”
+description: '"[!DNL Live Search] facet使用多个属性值维度作为搜索条件。”'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 554b07c233da2af2ca2d9aacf56bdfe09dc67cd3
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
