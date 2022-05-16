@@ -2,9 +2,9 @@
 title: 结帐流程
 description: 概述 [!DNL Express Checkout] 在Adobe Commerce流量。
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
+source-git-commit: bd9541c5e4810085ab85206b2ecca21e66800a2f
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -113,4 +113,4 @@ ht-degree: 0%
 
 ## 获取帮助
 
-请联系Adobe Commerce支持部门以获取任何帮助。
+联系人 [!DNL Adobe Commerce] 工程团队通过您指定的Slack [Adobe测试版计划渠道](http://adobe-beta-programs.slack.com/) 来寻求帮助。

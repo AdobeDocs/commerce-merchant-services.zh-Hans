@@ -2,9 +2,9 @@
 title: 对 [!DNL Express Checkout]
 description: 对错误进行故障诊断，在使用 [!DNL Express Checkout] (对于Adobe Commerce扩展)。
 exl-id: a379ff81-360d-4cb9-a123-47e8cbc0cdbd
-source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
+source-git-commit: bd9541c5e4810085ab85206b2ecca21e66800a2f
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
@@ -117,6 +117,10 @@ Adobe Commerce使您能够将您的商店本地化到多个地区和市场。 �
 
 请参阅 [翻译和本地化](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html) 主题以了解更多信息。
 
+## 刷新缓存
+
+1. 导航到 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** 单击 **[!UICONTROL Flush Cache]** 刷新所有无效的缓存。
+
 ## 获取帮助
 
-请联系Adobe Commerce支持部门以获取任何帮助。
+联系人 [!DNL Adobe Commerce] 工程团队通过您指定的Slack [Adobe测试版计划渠道](http://adobe-beta-programs.slack.com/) 来寻求帮助。

@@ -2,9 +2,9 @@
 title: 载上 [!DNL Express Checkout] 适用于Adobe Commerce扩展
 description: 了解 [!DNL Express Checkout] 可能会对您的Adobe Commerce实例以及如何成功载入和设置扩展有好处。
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
+source-git-commit: bd9541c5e4810085ab85206b2ecca21e66800a2f
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -102,9 +102,10 @@ ht-degree: 0%
 启用 [!DNL Express Checkout] 对于Adobe Commerce扩展：
 
 1. 单击 **保存配置**.
+1. 导航到 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** 单击 **[!UICONTROL Flush Cache]** 刷新所有无效的缓存。
 
 ## 获取帮助
 
-入门流程旨在指导您完成设置和启用所有 [!DNL Express Checkout] 功能。 请联系Adobe Commerce支持部门以获取任何帮助。
+入门流程旨在指导您完成设置和启用 [!DNL Express Checkout] 功能。 联系人 [!DNL Adobe Commerce] 工程团队通过您指定的Slack [Adobe测试版计划渠道](http://adobe-beta-programs.slack.com/) 来寻求帮助。
 
 请参阅 [测试和验证](../express-checkout/testing.md) 主题以了解更多信息。
