@@ -4,9 +4,9 @@ description: 使用“支付”报表可以完全透明地记录支付金额、�
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,16 @@ ht-degree: 0%
 1. 单击交易日期日历选择器过滤器。
 1. 选择适用的日期范围。
 1. 在网格中查看指定日期的付款状态。
+
+## 显示和隐藏列
+
+默认情况下，“派款”报表显示大多数可用的信息列。 但是，您可以自定义在报表中看到的列。
+
+1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Payouts]**.
+1. 单击 _列设置_ 图标(![列设置图标](assets/column-settings.png))。
+1. 要自定义在报表中看到的列，请勾选或取消选中列表中的列。
+
+   “付款”报表将立即显示您在“列”设置菜单中所做的任何更改。 列首选项将会保存，并且在您离开报表视图时保持有效。
 
 ## 下载交易记录
 
