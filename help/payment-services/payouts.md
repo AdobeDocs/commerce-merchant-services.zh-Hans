@@ -4,9 +4,9 @@ description: 使用“支付”报表可以完全透明地记录支付金额、�
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
+source-git-commit: 4554ea65ded73e9552f307ff51e0e7eff64cd2e9
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 0%
 ![财务报表视图](assets/reports-view.png)
 
 “付款”报表一目了然地显示全面的付款信息，使您对付款金额、已处理数量和财务对账交易级别的详细报告完全透明。
+
+>[!NOTE]
+>
+>付款报表仅显示已捕获的订单 — 付款操作设置为 [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method)) — 或 [标记为 `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html).
 
 您不必打开多个视图来交叉引用订单和付款或调节帐户。 [!DNL Payment Services] 表示 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 使您能够从一个位置执行所有这些操作，即支付报告，以便您能够高效查看和管理您的支付。
 
@@ -106,7 +110,7 @@ ht-degree: 0%
 | [!UICONTROL Provider] | 支付提供商 |
 | [!UICONTROL Provider trans] | 交易ID |
 | [!UICONTROL Trans date] | 事务处理的启动日期和时间 |
-| [!UICONTROL Type] | 交易类型 — *[!UICONTROL PAYMENT]*, *[!UICONTROL AUTH]*, *[!UICONTROL BONUS]*, *[!UICONTROL CHARGEBACK]*, *[!UICONTROL CORRECTION]*, *[!UICONTROL CURRENCY_CONVERSATION]*, *[!UICONTROL DEPOSIT]*, *[!UICONTROL DISBURSEMENT]*, *[!UICONTROL DISPUTE]*, *[!UICONTROL FEES]*, *[!UICONTROL HOLD]*, *[!UICONTROL HOLD_RELEASE]*, *[!UICONTROL INCENTIVES]*, *[!UICONTROL OTHERS]*, *[!UICONTROL RECOUP]*, *[!UICONTROL REFUND]*, *[!UICONTROL REVERSAL]*, *[!UICONTROL WITHDRAWAL]* <br> <br>请参阅 [交易类型](#transaction-types) 以了解更多信息。 |
+| [!UICONTROL Type] | 交易类型 — *[!UICONTROL PAYMENT]*, *[!UICONTROL BONUS]*, *[!UICONTROL CHARGEBACK]*, *[!UICONTROL CORRECTION]*, *[!UICONTROL CURRENCY_CONVERSATION]*, *[!UICONTROL DEPOSIT]*, *[!UICONTROL DISBURSEMENT]*, *[!UICONTROL DISPUTE]*, *[!UICONTROL FEES]*, *[!UICONTROL HOLD]*, *[!UICONTROL HOLD_RELEASE]*, *[!UICONTROL INCENTIVES]*, *[!UICONTROL OTHERS]*, *[!UICONTROL RECOUP]*, *[!UICONTROL REFUND]*, *[!UICONTROL REVERSAL]*, *[!UICONTROL WITHDRAWAL]* <br> <br>请参阅 [交易类型](#transaction-types) 以了解更多信息。 |
 | [!UICONTROL Status] | 交易的当前状态 — *[!UICONTROL SUCCESS]*, *[!UICONTROL DENIED]*, *[!UICONTROL PENDING]* |
 | [!UICONTROL Code] | 表示信用(*CR*)或借项(*DR*) |
 | [!UICONTROL Reference ID] | 与此事件相关的原始交易ID |
