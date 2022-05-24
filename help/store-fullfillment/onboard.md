@@ -3,7 +3,7 @@ title: 板载“[!DNL Store Fulfillment]"
 description: 将您的Commerce实例连接到 [!DNL Store Fulfillment Manager] 服务，方法是完成一些入门步骤。
 role: User, Admin
 level: Intermediate
-source-git-commit: 24639b75d3c629856fbb8fc74e7eb072d4197815
+source-git-commit: f3148d575088fff3b4178f3c03e9d45ce461fbe2
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 1%
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 ## 先决条件
 
-* **商务帐户信息** — 下载和安装 [!DNL Channel Manager] 需要 [商务帐户](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}。 您需要具有以下权限的帐户ID和凭据：拥有 [!DNL Adobe Commerce] 或 [!DNL Magento Open Source] 实例。
+* **商务帐户信息** — 安装 [!DNL Store Fulfillment by Walmart Technologies] 需要 [商务帐户](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}。 您需要具有以下权限的帐户ID和凭据：拥有 [!DNL Adobe Commerce] 或 [!DNL Magento Open Source] 实例。
 
 * 对于 [!DNL Adobe Commerce] 在云基础架构项目上，软件安装程序必须具有以下访问 [!DNL Commerce] 实例：
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 
       请参阅 [管理用户访问权限](https://devdocs.magento.com/cloud/project/user-admin.html).
 
-* **通过Walmart Technologies软件存档访问商店履行，以在您的Adobe Commerce实例上安装商店履行解决方案** — 您的客户客户代表可以访问扩展安装文件。
+* **通过Walmart Technologies软件存档（.zip文件）访问商店履行，以在您的Adobe Commerce实例上安装商店履行解决方案** — 您的客户客户代表可以访问扩展安装文件。
 
 * **使用编辑器和[!DNL Commerce CLI]**  — 请参阅 [常规CLI安装](https://devdocs.magento.com/extensions/install/){target=&quot;_blank&quot;}以了解有关使用这些工具在上安装和配置扩展的信息 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 平台。
 
