@@ -4,9 +4,9 @@ description: “了解如何 [!DNL Store Fulfillment for Adobe Commerce by Walma
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: 33d8ed57f5a4b8419bd30375a1fb5bec6be37a5e
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Store Fullment for Adobe Commerce by Walmart Commerce Technologies是一款与�
 
 ## 存储履行扩展
 
-“商店履行”扩展与Adobe Commerce集成，因此您可以从管理员管理Adobe Commerce操作和客户界面的配置。
+支持和增强本机Adobe Commerce功能
 
 * 支持大多数产品类型 — 简单、可配置、分组、捆绑和虚拟
 
@@ -39,11 +39,11 @@ Store Fullment for Adobe Commerce by Walmart Commerce Technologies是一款与�
 
 * 与ERP、OMS和WMS等销售点(POS)商户系统集成，用于库存管理
 
-* 与Luma主题完全兼容。
+* 与Luma主题完全兼容
 
-* 为无头店和维尼亚店面提供GraphQL支持。
+* 为无头店和维尼亚店面提供GraphQL支持
 
-* 支持Walmart Commerce Technology的Store Assist应用程序。 此应用程序会将提货单直接发送到您员工位于正确商店的手持设备，以便能够快速、准确地提货，并在客户到达提货点时将提货单交给客户。
+* 支持Walmart Commerce Technology的Store Assist应用程序。 此应用程序会将提货单直接发送到您员工位于正确商店的手持设备，以便能够快速、准确地挑选、存放项目，并在客户签入时将这些项目交给客户。
 
 ## 商店辅助应用程序
 
@@ -61,7 +61,7 @@ Store Fullment for Adobe Commerce by Walmart Commerce Technologies是一款与�
 
 商店履行通过添加以下功能来提供改进的购物体验和简化的履行工作流程，增强了Adobe Commerce:
 
-* **存储位置选择器(SLS)** — 向Adobe Commerce产品、购物车和结帐界面中添加商店提货选项、库存可用性和商店选择器。
+* **存储位置选择器(SLS)** — 除了本机结账外，还显示产品和购物车页面上的商店提货选项、库存可用性和商店选择器。
 
 * **库存可用性** — 向Adobe Commerce Inventory management添加其他产品和全局配置选项，以支持存储级别的库存分配，从而促进及时的本地完成。
 
