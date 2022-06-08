@@ -2,9 +2,9 @@
 title: 启用 [!DNL Payment Services] 生产
 description: 通过启用 [!DNL Payment Services] 生产。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 51722d7045ccb6ccfdc7ab5bd93d5ca46b52cf03
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 0%
 
    >[!IMPORTANT]
    >
-   >如果您撤消对 [!DNL Payment Services] 表示 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 处理付款时（在您的PayPal帐户设置中），您商店中的订单无法由 [!DNL Payment Services].
+   >如果您撤消对 [!DNL Payment Services] 表示 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 处理付款时（在您的PayPal帐户设置中），您商店中的订单无法由 [!DNL Payment Services]. 在您的Payment Services主页上，会显示有关已吊销同意的警报。
 
 ## 从Adobe请求付款权利
 
@@ -115,7 +115,7 @@ A _生产商ID_ 会在 [配置](configure-admin.md). 请勿更改或更改此ID�
 
 >[!IMPORTANT]
 >
->如果您撤消对 [!DNL Payment Services] 处理付款时（在您的PayPal帐户设置中），您商店中的订单无法由 [!DNL Payment Services]. 如果要重新启用付款处理，则必须再次完成载入。
+>如果您撤消对 [!DNL Payment Services] 处理付款时（在您的PayPal帐户设置中），您商店中的订单无法由 [!DNL Payment Services]. 如果要重新启用付款处理，则必须再次完成载入。 在您的Payment Services主页上，会显示有关已吊销同意的警报。
 
 ## 在生产中测试
 

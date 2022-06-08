@@ -2,9 +2,9 @@
 title: 设置测试沙盒
 description: 使用PayPal沙盒帐户 [!DNL Payment Services] 在测试模式下。
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: e8d008d9a38cebde7772b7e3d70d2447631414fe
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ PayPal沙盒帐户允许您使用 [!DNL Payment Services] 在测试模式下。 
 
 >[!IMPORTANT]
 >
->如果您撤消对 [!DNL Payment Services] 表示 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 处理付款时（在您的PayPal帐户设置中），您商店中的订单无法由 [!DNL Payment Services].
+>如果您撤消对 [!DNL Payment Services] 表示 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 处理付款时（在您的PayPal帐户设置中），您商店中的订单无法由 [!DNL Payment Services]. 在您的Payment Services主页上，会显示有关已吊销同意的警报。 要关闭警报，请单击 **[!UICONTROL Do not show again]**.
 
 ## 启用联系电话号码
 
