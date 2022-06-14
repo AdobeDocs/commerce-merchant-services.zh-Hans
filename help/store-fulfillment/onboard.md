@@ -1,93 +1,58 @@
 ---
-title: 入门概述
-description: “连接您的 [!DNL Commerce] 实例 [!DNL Store Fulfillment Manager] 服务，只需完成几个入门步骤。”
+title: 商店履行服务入门概述
+description: '"[!DNL Live Search] 载入流程、系统要求、边界和限制”'
 role: User, Admin
 level: Intermediate
-exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 1%
+source-wordcount: '363'
+ht-degree: 0%
 
 ---
 
-# 入门概述
+# 商店履行入门概述
 
-板载商店实施，方法是在您的商务实例上安装扩展并配置API连接。 这些连接支持在您的商务实例、用于库存管理的第三方系统和商店辅助应用程序之间进行通信和数据同步。
+开始使用 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 通过设置、配置和启用以下组件：
 
-完成载入后，请通过商务管理员配置和管理解决方案
+- **存储履行扩展** — 在您的Adobe Commerce实例上安装和配置此第三方扩展。 安装后，您可以从管理员配置和管理商店履行解决方案以支持 [!DNL buy online, pickup in store] (BOPIS)方案。
 
-![[!DNL Store Fulfillment Service] 管理视图中的配置](assets/store-fulfillment-admin-home.png)
+   ![[!DNL Store Fulfillment Service] 管理视图中的配置](assets/store-fulfillment-admin-home.png)
 
-## 入门概述
+- **存储履行帐户** — 在启用过程中，客户经理会创建您的商店履行帐户，并向您提供帐户信息和凭据。 需要这些凭据才能启用Adobe Commerce与存储履行解决方案之间的连接。
 
-1. 安装Walmart Technologies for Adobe Commerce的Store Fulfillment扩展。
+- **商店辅助应用程序** — 提供与端对端商店履行工作流程关联的商店，以从移动设备管理BOPIS订单。 Store Associates可以下载和安装沃尔玛的 [!DNL Store Assist] 适用于iOS和Android设备。 应用程序载入过程由沃尔玛商务技术客户中心作为单独的过程进行管理。 但是， [某些应用程序配置设置](user-setup.md) 已从Adobe Commerce管理员完成。
 
-1. 从管理员处，启用解决方案并完成集成及其活动功能的常规配置，并完成入门入门单以连接到实施服务。
+   | 商店辅助应用程序 — 快速入门视图 | 商店辅助应用程序 — 模块视图 |
+   |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+   | ![[!DNL Store Assist App Getting Started] 在移动设备上查看](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] 在移动设备上](assets/store-assist-orders-small.png) |
 
-1. 配置投放方法。
 
-1. 将源设置为物理商店，并在目录中配置产品。
 
-1. 选择并配置电子邮件模板，以管理用于在线购买、店内装货(BOPI)交易的客户通信。
 
-1. 为Store Assist应用程序创建用户和角色。
+## 配置步骤
 
-1. 配置后台进程的计划，以将数据同步到履行服务。
+- **注册[!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]** — 填写注册表 [business.adobe.com](https://business.adobe.com/resources/store-fulfillment.html)，或联系您的Adobe Commerce客户经理以获取帮助。
 
-## 要求
+- **启动存储履行的配置请求** — 填写由您的客户经理提供的入帐表，以提供开始配置过程所需的信息。
 
-您必须满足以下要求才能安装、部署和使用解决方案。
+- **获取您的商店履行帐户凭据** — 在为您创建商店履行帐户后，您将收到将商店履行解决方案与Adobe Commerce集成所需的凭据。
 
-* **商务帐户信息** — 安装 [!DNL Channel Manager] 需要 [商务帐户](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}。 您需要具有以下权限的帐户ID和凭据：拥有 [!DNL Adobe Commerce] 实例。
+- **[下载源代码以安装 [!DNL Store Fulfillment] 扩展](install.md)**
 
-* 对于 [!DNL Adobe Commerce] 在云基础架构项目上，软件安装程序必须拥有对云项目的管理员访问权限。 请参阅 [管理用户访问权限](https://devdocs.magento.com/cloud/project/user-admin.html).
+## 入门步骤
 
-* **通过Walmart Technologies软件存档（.zip文件）访问商店履行，以安装商店履行解决方案** — 在载入和启用过程中，您的客户客户代表将提供安装文件的下载访问权限。
+1. [安装适用于Adobe Commerce的商店实施扩展](install.md).
 
-* **使用编辑器和[!DNL Commerce CLI]** — 请参阅 [常规CLI安装](https://devdocs.magento.com/extensions/install/){target=&quot;_blank&quot;}以了解有关使用这些工具在上安装和配置扩展的信息 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 平台。
+1. 从管理员那里， [启用解决方案](enable-general.md).
 
-* [!DNL Inventory Management] Adobe Commerce和Magento Open Source的扩展
+1. [从Adobe Commerce管理员中配置商店履行扩展](service-config-settings-overview.md).
 
-   您必须在Adobe Commerce和Inventory management实例上安装并启用Magento Open Source扩展。 通常，此扩展会在Adobe Commerce 2.3.x及更高版本上默认安装并启用。 有关更多信息，请参阅 [安装Inventory management](https://devdocs.magento.com/extensions/inventory-management/) ，位于Adobe Commerce开发人员文档中。
+1. [连接 [!DNL Store Fulfillment] 服务。](connect-set-up-service.md)
 
-## 平台和版本要求
+1. [为Store Assist应用程序创建用户和角色](user-setup.md)
 
-的 [!DNL Store Fulfillment] 解决方案可在以下平台上向Adobe Commerce客户提供。
+1. [下载Walmart&#39;s [!DNL Store Assist] 应用程序。 该应用程序在应用商店(iOS)和应用商店(Android)上均可用](app-setup.md)
 
-* Adobe Commerce云基础架构(ECE)
-* Adobe Commerce本地(EE)
+成功安装、配置、完成载入，并有权访问 [!DNL Store Assist] 应用程序，您 [开始创建订单并进行测试](test-and-deploy.md).
 
-“商店履行”解决方案与以下软件版本兼容。
 
-**软件兼容性**
-
-| **软件** | **最低版本** | **最大版本** |
-|----------------|---------------------|---------------------|
-| Adobe Commerce | 2.4.0 | 2.4.4 |
-| 编辑器 | 1.x | 2.x |
-| MariaDB | 10.2 | 10.4 |
-| MySQL | 5.7 | 8.0 |
-| PHP | 7.4 | 8.1 |
-
-有关详细要求，请参阅Adobe Commerce [系统要求](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) （位于开发人员文档中）。
-
-### 业务要求
-
-您的企业必须满足以下最低标准才能实施商店完成解决方案。
-
-* 仅限美国企业
-
-* B2C零售商、销售D2C的CPG制造商，或销售D2C或面向小型企业的分销商
-
-* 至少一个实体商店或仓库
-
-* 使用Inventory management for Adobe Commerce(MSI)管理您的产品清单
-
-* 将商户库存集中的能力
-
-* 将Wi-Fi可用性存储在支持“商店履行”解决方案的所有位置
-
-* 商店和仓库关联商可以在移动期间访问iOS或Android移动设备（无论是个人设备还是商家提供的设备）
-
-* 使用商店履行解决方案管理的产品必须具有包含SKU或UPC产品代码的产品属性

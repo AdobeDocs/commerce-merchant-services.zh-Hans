@@ -1,21 +1,21 @@
 ---
 title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] 指南概述'
-description: 有关 [!DNL Store Fulfillment] 适用于Adobe Commerce和Magento Open Source管理员，包括安装和入门
+description: 有关 [!DNL Store Fulfillment] 适用于Adobe Commerce管理员，包括安装和入门
 seo-title: Adobe Commerce Store Fulfillment Guide
-seo-description: Describes how to use [!DNL Store Fulfillment by Walmart Technologies] services with Adobe Commerce or Magento Open Source.
+seo-description: Describes how to use [!DNL Store Fulfillment by Walmart Commerce Technologies] services with Adobe Commerce.
 exl-id: b4af273c-5176-4a67-a783-e0bb1740b3d8
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
 
 # [!DNL Store Fulfillment] 指南概述
 
-本指南面向Adobe Commerce和Magento Open Source的管理员。 其中包含有关安装和载入的详细信息 [!DNL Store Fulfillment by Walmart Technologies]，以及服务的配置和管理。 该指南假定您基本了解核心商务配置和功能。
+本指南面向Adobe Commerce的管理员。 其中包含有关安装和载入的详细信息 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]，以及服务的配置和管理。 该指南假定您基本了解核心Adobe Commerce配置和功能。
 
-[!DNL Store Fulfillment] 具有两个商务管理员区域：
+[!DNL Store Fulfillment] Adobe Commerce管理员有两个区域：
 
 * 管理员：使用此区域访问配置UI。
 * 命令行界面：使用此工具执行安装和后端配置任务。
@@ -23,16 +23,16 @@ ht-degree: 0%
 本指南涵盖：
 
 * 全部 [!DNL Store Fulfillment] — 在管理员中完成的特定任务。
-* 全部 [!DNL Store Fulfillment] — 使用商务命令行完成的特定任务
+* 全部 [!DNL Store Fulfillment] — 使用Adobe Commerce命令行完成的特定任务
 
-本指南不涵盖Adobe Commerce和Magento Open Source的核心功能。
+本指南不涵盖Adobe Commerce的核心功能。
 
 ## 其他文档
 
 | 指南 | 描述 |
-|-----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| [Adobe Commerce 2.4用户指南](https://docs.magento.com/user-guide/) | 面向Adobe Commerce和Magento Open Source的以商户为中心的文档 |
-| [Adobe Commerce 2.4开发人员指南](https://devdocs.magento.com/) | 以开发人员为中心的文档，用于构建和自定义Adobe Commerce或Magento Open Source |
+|-----------------------------------------------------------------------|----------------------------------------------------------------------------|
+| [Adobe Commerce 2.4用户指南](https://docs.magento.com/user-guide/) | 两个Adobe Commerce的以商户为中心的文档 |
+| [Adobe Commerce 2.4开发人员指南](https://devdocs.magento.com/) | 以开发人员为中心的文档，用于构建和自定义Adobe Commerce |
 
 ## 支持
 

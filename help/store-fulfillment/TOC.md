@@ -1,13 +1,13 @@
 ---
 user-guide-title: '"[!DNL Store FulFillment Guide]"'
-user-guide-description: 本指南提供了有关为Adobe Commerce或Magento Open Source商店安装和配置商店实施服务的详细信息。
-breadcrumb-title: 《沃尔玛技术指南》
+user-guide-description: 有关安装、配置和使用用于Adobe Commerce存储的存储实施的详细信息
+breadcrumb-title: 用于Adobe Commerce的商店履行
 index: false
 hidden: true
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 3%
+source-wordcount: '84'
+ht-degree: 2%
 
 ---
 
@@ -16,15 +16,27 @@ ht-degree: 3%
 
 - [指南概述](guide-overview.md)
 - [简介 [!DNL Store Fulfillment]](introduction.md)
+- [存储辅助工作流](store-assist-modules.md)
+- [要求](solution-requirements.md)
 - [发行说明](release-notes.md)
 - 板载存储履行 {#onboarding}
    - [入门概述](onboard.md)
-   - [安装](install.md)
-   - [服务连接和设置](connect-set-up-service.md)
-   - [测试和部署](test-deploy.md)
-- 功能配置 {#configuration}
+   - [安装扩展](install.md)
+   - [连接商店履行](connect-set-up-service.md)
+   - [测试和部署](test-and-deploy.md)
+- [配置概述](service-config-settings-overview.md)
+- 存储配置 {#store-configuration}
    - [常规配置](enable-general.md)
    - [销售电子邮件](sales-emails.md)
+   - [商户商店来源](merchant-store-configuration.md)
    - [产品库存管理](product-stock.md)
-   - [存储源](store-sources.md)
+   - [Inventory management源传输](inventory-stock-transfer.md)
+   - [多个网站/范围](multi-site-and-scope-config.md)
+- 系统配置 {#system-configuration}
    - [后台进程](background-processes.md)
+   - [存储位置和映射设置](store-location-map-provider-setup.md)
+   - [签入体验设置](check-in-experience-setup.md)
+   - [用户设置](user-setup.md)
+   - [应用程序设置](app-setup.md)
+
+

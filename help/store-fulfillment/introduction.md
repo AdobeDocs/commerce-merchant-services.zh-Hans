@@ -1,12 +1,12 @@
 ---
 title: “简介 [!DNL Store Fulfillment]"
-description: “了解如何 [!DNL Store Fulfillment for Adobe Commerce by Walmart Technologies] 支持在线购买，为客户提货(BOPI)。 使用Store Assist Mobile简化商店联系商和Commerce客户的BOPIS完成和订单处理。”
+description: “了解如何 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 支持在线购买，为客户提货(BOPI)。 使用Store Assist Mobile简化商店联系商和Commerce客户的BOPIS完成和订单处理。”
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 33d8ed57f5a4b8419bd30375a1fb5bec6be37a5e
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Store Fullment for Adobe Commerce by Walmart Commerce Technologies是一款与您的 [!DNL Commerce] 在线购物、在店购物(BOPIS)客户体验。
 
-![通过Walmart Technologies管理配置实现商店](assets/store-fulfillment-admin-home.png)
+![存储实施解决方案Adobe管理配置](assets/store-fulfillment-admin-home.png)
 
 商店履行还提供端到端履行工作流程，帮助商户降低成本，同时提高转化率、平均订单价值和客户满意度。 此工作流提供了：
 
