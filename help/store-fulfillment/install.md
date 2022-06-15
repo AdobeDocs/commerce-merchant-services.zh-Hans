@@ -1,25 +1,26 @@
 ---
 title: 安装
-description: 添加描述
+description: '"安装 [!DNL Store Fulfillment solution] 用于使用PHP编辑器的Adobe Commerce店面。”'
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
 
+
 # 安装
 
-完成 [!DNL Store Fulfillment] 扩展，其中队列管理器运行和缓存配置为允许异常处理。 您的环境应包含任何其他开发工具，以确保在操作和维护Adobe Commerce实例方面采用最佳实践。
+完成 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 扩展，其中队列管理器运行和缓存配置为允许异常处理。 确保您的开发环境包含开发工具，以确保在操作和维护Adobe Commerce实例方面采用最佳实践。
 
 ## 先决条件
 
 查看 [要求](solution-requirements.md) ，并在安装 [!DNL Store Fulfillment] 扩展的Adobe Commerce。
 
-如果您已安装了Store Fulfillment for Adobe Commerce扩展的预发行版或测试版版本，请在安装当前版本之前将其删除。
+如果您已安装了Store Fullment for Adobe Commerce扩展的预发行版或测试版版本，请在安装当前版本之前使用以下命令将其删除。
 
 ```terminal
 rm -rf composer.lock vendor/walmart &&
@@ -38,9 +39,9 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **在Adobe Commerce上安装第三方扩展的体验** — 有关参考，请参阅Adobe Commerce文档。
 
-   - [在云基础架构实例上安装Adobe Commerce的扩展](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension)
+   - [在云基础架构实例上安装Adobe Commerce的扩展](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension).
 
-   - [安装Adobe Commerce本地实例的扩展](https://devdocs.magento.com/extensions/install/)
+   - [安装Adobe Commerce本地实例的扩展](https://devdocs.magento.com/extensions/install/).
 
 ### 步骤1:下载扩展包
 
@@ -79,7 +80,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
    composer config repositories.artifacts artifact artifacts/
    ```
 
-1. 将Store Fulfillment Services扩展添加到 `composer.json`
+1. 将Store Fulfillment Services扩展添加到 `composer.json`.
 
    ```bash
    composer require walmart/magento-bopis-metapackage:1.0.0
@@ -128,7 +129,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 1. 登录到服务器。
 
-   要在云基础架构上安装Adobe Commerce，请使用SSH登录到远程环境。
+   对于云基础架构上的Adobe Commerce安装， [使用SSH登录到远程环境](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
 
 1. 验证是否已启用“商店履行服务”模块。
 
@@ -182,7 +183,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 ### 其他步骤
 
-如果需要，请使用 [设置:static-content: 部署](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy) CLI命令将静态视图文件部署到生产环境。
+如果需要，请使用 `[setup:static-content: deploy](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy)` CLI命令将静态视图文件部署到生产环境。
 
 ```terminal
 php bin/magento setup:static-content:deploy -f
@@ -193,4 +194,3 @@ php bin/magento setup:static-content:deploy -f
 >[!NOTE]
 >
 >有关更多信息，请参阅 [静态内容在Adobe Commerce中部署最佳实践](https://support.magento.com/hc/en-us/articles/360031624091) 在Adobe Commerce帮助中心。
-

@@ -1,11 +1,11 @@
 ---
 title: 存储位置和映射系统配置
-description: 配置距离提供程序以支持店面UI中的存储位置映射。
+description: 配置距离提供程序以支持店面UI中的存储位置映射。 商店完成解决方案需要一个距离提供商来启用零售商店搜索以及端到端完成工作流程的其他映射和计划功能。
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
@@ -40,4 +40,3 @@ ht-degree: 0%
    - 添加 **Google API密钥**.
 
    - 已设置 **[!UICONTROL Computation Mode]** to `Driving` 和 **[!UICONTROL Value]** to `Distance`
-

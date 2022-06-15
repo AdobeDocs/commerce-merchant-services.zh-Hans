@@ -1,27 +1,27 @@
 ---
 title: “存储协助履行工作流”
-description: “了解商店辅助应用程序中提供的Pick、Stage、Hand-Off和Orders模块。 这些模块为BOPIS订单启用了端到端商店履行工作流。 Store Associates使用这些模块来管理和向客户交付商店提货单。
+description: “了解商店辅助应用程序中提供的Pick、Stage、Hand-Off和Orders模块。 这些模块为BOPIS订单启用了端到端商店履行工作流。 Store Associates使用这些模块来管理和向客户交付商店提货单。”
 role: User
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
 
 
-# 存储协助工作流
+# 存储协助履行工作流
 
 Store Assist应用程序为Store Associates提供四个模块，用于管理在线购买的店内完成过程，按商店订单提货：
 
-**[挑选](#pick-module)** — 全面了解所有已订购项目和工具，以确保选取正确的项目和正确数量。 商店关联商可以同时选取一个或多个订单，以提高效率
+- **[挑选](#pick-module)** — 全面了解所有已订购项目和工具，以确保选取正确的项目和正确数量。 商店关联商可以同时选取一个或多个订单以提高效率。
 
-**[阶段](#stage-module)** — 输入客户前往商店时订单的位置，以便Store Associates可以轻松找到它们以进行订单切换
+- **[阶段](#stage-module)** — 输入客户前往商店时订单的位置，以便Store Associates可以轻松找到它们以进行订单切换
 
-**[提交](#hand-off)** — 客户到达商店后获取实时通知，以最大程度地缩短等待时间并无缝切换订单
+- **[提交](#hand-off-module)** — 客户到达商店后获取实时通知，以最大程度地缩短等待时间并无缝切换订单
 
-**[订单数](#orders-module)** — 查看为商店下达的所有订单的列表，以便每个人都知道订单数和每个订单的状态。
+- **[订单数](#orders-module)** — 查看为商店下达的所有订单的列表，以便每个人都知道订单数和每个订单的状态。
 
 >[!NOTE]
 >

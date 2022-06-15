@@ -3,7 +3,7 @@ title: 测试和部署存储实现
 description: 测试计划以验证“商店完成”功能。 测试涵盖库存同步API、取消订单的端到端履行工作流、商店履行应用程序用户管理以及客户签入体验。
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '2652'
 ht-degree: 0%
@@ -55,9 +55,6 @@ ht-degree: 0%
 | Adobe Commerce弗朗滕 | 产品类型 | 客户，管理员 |
 | 前端结账</br>签入表单 | 签入体验 | 客户，管理员 |
 | 商店辅助应用程序 | 订购</br>挑选</br>阶段</br>和切换 | 存储关联 |
-
-
-
 
 ### 库存API同步
 
@@ -639,8 +636,6 @@ Adobe Commerce产品类型的测试方案可验证客户是否看到不同产品
 </tbody>
 </table>
 
-
-
 ## 部署
 
 在验证解决方案已配置并测试到您的规范后，您便可以从暂存环境部署到生产环境。
@@ -650,7 +645,6 @@ Adobe Commerce产品类型的测试方案可验证客户是否看到不同产品
 >[!TIP]
 >
 >有关云基础架构项目的Adobe Commerce部署准则、检查列表和最佳实践，请参阅 [部署您的商店](https://devdocs.magento.com/cloud/live/stage-prod-live.html) ，位于Adobe Commerce开发人员文档中。
-
 
 
 

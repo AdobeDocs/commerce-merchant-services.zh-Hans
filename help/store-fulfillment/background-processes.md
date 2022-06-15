@@ -1,15 +1,16 @@
 ---
-title: 后台进程
-description: '"配置 [!DNL Store Fulfillment] 将数据与履行服务同步时使用的后台流程”                   '
+title: 后台进程配置
+description: '"配置 [!DNL Store Fulfillment] 后台流程，用于将数据与履行服务同步。”                   '
 role: User, Admin
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '135'
 ht-degree: 0%
 
 ---
+
 
 # 后台进程配置
 
@@ -19,9 +20,6 @@ ht-degree: 0%
 
 ## 管理存储完成的计划任务
 
-从管理员中，转到 **[!UICONTROL Stores > Configuration > Advanced > System > Cron (Scheduled Tasks)> Cron configuration options for group:store_fulfillment]**.
-
+从管理员中，转到 **[!UICONTROL Stores > Configuration > Advanced > System > Cron (Scheduled Tasks) > Cron configuration options for group:store_fulfillment]**.
 
 查看商店履行服务的默认配置。 根据您的订单处理量和资源可用性，您可能需要调整这些设置。
-
-

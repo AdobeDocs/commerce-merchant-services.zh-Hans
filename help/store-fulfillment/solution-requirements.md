@@ -1,17 +1,17 @@
 ---
-title: 服务要求
-description: “配置和入门要求 [!DNL Store Fulfillment Manager] 服务”
+title: 存储完成要求
+description: “配置和入门要求 [!DNL Store Fulfillment solution]."
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '231'
 ht-degree: 3%
 
 ---
 
 
-# Adobe Commerce的商店实施要求
+# Adobe Commerce的存储实施要求
 
 您必须满足以下技术和业务要求才能安装并启用适用于Adobe Commerce的商店实施解决方案。
 

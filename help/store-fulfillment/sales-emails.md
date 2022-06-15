@@ -1,15 +1,16 @@
 ---
 title: 销售电子邮件
-description: 配置事务型电子邮件模板的设置，以便在订购和履行过程中与客户和存储管理员通信。
+description: 配置事务型电子邮件模板，以便在“商店提货单”的履行过程中与客户和商店管理员通信。
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 0%
 
 ---
+
 
 # 销售电子邮件
 

@@ -1,9 +1,9 @@
 ---
 title: 商店履行服务入门概述
-description: '"[!DNL Live Search] 载入流程、系统要求、边界和限制”'
+description: '"[!DNL Live Search] 载入流程、系统要求、边界和限制。”'
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -26,9 +26,6 @@ ht-degree: 0%
    |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
    | ![[!DNL Store Assist App Getting Started] 在移动设备上查看](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] 在移动设备上](assets/store-assist-orders-small.png) |
 
-
-
-
 ## 配置步骤
 
 - **注册[!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]** — 填写注册表 [business.adobe.com](https://business.adobe.com/resources/store-fulfillment.html)，或联系您的Adobe Commerce客户经理以获取帮助。
@@ -47,12 +44,11 @@ ht-degree: 0%
 
 1. [从Adobe Commerce管理员中配置商店履行扩展](service-config-settings-overview.md).
 
-1. [连接 [!DNL Store Fulfillment] 服务。](connect-set-up-service.md)
+1. [连接 [!DNL Store Fulfillment] 服务，使用提供给您的商店履行凭据](connect-set-up-service.md).
 
-1. [为Store Assist应用程序创建用户和角色](user-setup.md)
+1. [为Store Assist应用程序创建用户和角色](user-setup.md).
 
-1. [下载Walmart&#39;s [!DNL Store Assist] 应用程序。 该应用程序在应用商店(iOS)和应用商店(Android)上均可用](app-setup.md)
+1. [下载Walmart&#39;s [!DNL Store Assist] 应用程序。 该应用程序在应用商店(iOS)和应用商店(Android)上均可用](app-setup.md).
 
 成功安装、配置、完成载入，并有权访问 [!DNL Store Assist] 应用程序，您 [开始创建订单并进行测试](test-and-deploy.md).
-
 

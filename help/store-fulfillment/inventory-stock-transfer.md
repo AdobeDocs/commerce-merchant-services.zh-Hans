@@ -1,15 +1,16 @@
 ---
 title: Inventory management源传输
-description: 通过设置新库存并从默认库存中转移库存，配置库存以用于商店完成。
+description: “配置 [!DNL Store Fulfillment solution] Adobe Commerce·Inventory management。 设置新库存并从默认库存中转移库存，以便您将其分配给配置为启用“商店完成”解决方案所需的“商店提货”功能的来源。
 role: User, Admin
 level: Intermediate
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
+
 
 # Inventory management源传输
 
@@ -19,12 +20,11 @@ ht-degree: 0%
 
 1. [将库存转移到来源](https://docs.magento.com/user-guide/catalog/inventory-bulk-transfer-inventory.html) 将库存从默认库存/来源移至新库存/来源。
 
-2. [批量分配源](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) 添加所有产品的新源。
+1. [批量分配源](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) 添加所有产品的新源。
 
-3. [完成产品属性的批量更新](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) 添加 `Allow Store Pickup` 和 `Allow Home Delivery` 属性。 安装解决方案后，属性会得到最佳 *默认* 值。 但是，在您完成批量更新过程之前，这些属性不会应用于现有产品。
+1. [完成产品属性的批量更新](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) 添加 `Allow Store Pickup` 和 `Allow Home Delivery` 属性。 安装解决方案后，属性会得到最佳 *默认* 值。 但是，在您完成批量更新过程之前，这些属性不会应用于现有产品。
 
 库存将从所选来源（零售商店位置或电子商务仓库）中扣除。 用作电子商务仓库的来源必须分配给与商店提货位置相同的库存，并且在零售位置之前按优先级排列。 有关其他信息，请参阅 [对股票的来源进行优先级排序](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html).
-
 
 有关管理库存、库存和来源的更多信息，请参阅Adobe Commerce用户文档：
 

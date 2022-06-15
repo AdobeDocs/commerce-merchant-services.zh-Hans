@@ -1,10 +1,10 @@
 ---
 user-guide-title: '"[!DNL Store FulFillment Guide]"'
-user-guide-description: 有关安装、配置和使用用于Adobe Commerce存储的存储实施的详细信息
+user-guide-description: 有关安装、配置和使用Adobe Commerce商店的商店履行的详细信息。
 breadcrumb-title: 用于Adobe Commerce的商店履行
 index: false
 hidden: true
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 2%
@@ -28,7 +28,7 @@ ht-degree: 2%
 - 存储配置 {#store-configuration}
    - [常规配置](enable-general.md)
    - [销售电子邮件](sales-emails.md)
-   - [商户商店来源](merchant-store-configuration.md)
+   - [商户商店（来源）](merchant-store-configuration.md)
    - [产品库存管理](product-stock.md)
    - [Inventory management源传输](inventory-stock-transfer.md)
    - [多个网站/范围](multi-site-and-scope-config.md)

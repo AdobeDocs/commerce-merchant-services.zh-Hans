@@ -3,9 +3,9 @@ title: 连接商店履行解决方案
 description: 通过创建和授权Adobe Commerce集成，并将存储履行帐户凭据添加到Adobe Commerce服务配置，在Adobe Commerce与存储履行解决方案之间建立连接。
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 完成入伙表后，将为您创建一个沃尔玛商店履行帐户。 当凭据可用时，您将收到以下凭据：
 
-- [!DNL Merchant I]D
+- [!DNL Merchant ID]
 - [!DNL Consumer ID]
 - [!DNL Consumer Secret]
 - [!DNL API Server URL]
