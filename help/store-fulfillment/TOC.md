@@ -3,11 +3,10 @@ user-guide-title: '"[!DNL Store FulFillment Guide]"'
 user-guide-description: 有关安装、配置和使用Adobe Commerce商店的商店履行的详细信息。
 breadcrumb-title: 用于Adobe Commerce的商店履行
 index: false
-hidden: true
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: 87818d3a0eb8f0cb4bc9fac2aef3c56a2e620aaf
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

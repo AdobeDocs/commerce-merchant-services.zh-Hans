@@ -4,9 +4,9 @@ description: “了解如何 [!DNL Store Fulfillment for Adobe Commerce by Walma
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 87818d3a0eb8f0cb4bc9fac2aef3c56a2e620aaf
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -74,3 +74,8 @@ Store Fullment for Adobe Commerce by Walmart Commerce Technologies是一款与�
 * **事务型电子邮件** — 扩展了 [!UICONTROL Sales Emails] 要为在线购买添加电子邮件模板，请提取店内交易。 模板支持在订单拾取过程中客户和存储关联之间的实时通信。
 
 * **灵活履行** — 扩展 [!DNL Commerce] 支持处理延交订单、数量减少和部分订单履行的方案，同时支持支持这些方案所需的任何取消和贷项通知单。
+
+>[!TIP]
+>
+> 要快速演示“商店履行”解决方案，请参阅 [存储履行概述](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) 可用 _Adobe Commerce视频和Tutorials_.
+
