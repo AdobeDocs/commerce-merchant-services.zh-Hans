@@ -2,9 +2,9 @@
 title: '"同义词的类型"'
 description: “单向和双向 [!DNL Live Search] 同义词扩展了关键词的定义。”
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: cd1b40ffb350a87ea1317be82789f702922881b9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,13 @@ ht-degree: 0%
 
 请记住以下最佳实践，以便从实时搜索同义词中获得最大价值。
 
-### 关键词映射
+### 避免“停止词”
 
-此技术使用可搜索的产品属性而不是同义词来在产品之间创建基于关键字的关联。 因此，映射的产品可能会显示在其他产品的搜索结果中。 要了解更多信息，请参阅 [搜索结果](https://docs.magento.com/user-guide/catalog/search-results.html).
+实时搜索从同义词中筛选出常见的英语“停止词”，例如：
+
+a，a，和，是，a，a，t，b，但是，对于，如果，in，in，i，是，它，不，o，on，或者，这样，t，t，the，the，te，te，to，w，t，w，t
+
+停止词不会使同义词更有意义，但会增加必须处理的数据量。
 
 ### 使用单词
 
@@ -46,3 +50,7 @@ ht-degree: 0%
 ### 一致性
 
 与目录中术语的使用方式保持一致。 请记住，在使用方面可能存在区域差异，有时在行业内也存在差异。
+
+### 关键词映射
+
+此技术使用可搜索的产品属性而不是同义词来在产品之间创建基于关键字的关联。 因此，映射的产品可能会显示在其他产品的搜索结果中。 要了解更多信息，请参阅 [搜索结果](https://docs.magento.com/user-guide/catalog/search-results.html).
