@@ -1,9 +1,9 @@
 ---
 title: 事件
 description: 了解哪些事件会捕获数据并查看完整的架构定义。
-source-git-commit: 0b349ee75fac305e6ba5ea6eb74a76eb8ce1976a
+source-git-commit: 566abe09b8c1b0837a833b2f8fcfe1e81bb6963d
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 | [查看页面](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/page/viewAEP.ts) | 店面 |
 | [查看产品](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/viewAEP.ts) | 店面 |
 | [开始结帐](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/initiateCheckoutAEP.ts) | 店面 |
-| 完成结帐 | 店面 |
+| [完成结帐](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/checkout/placeOrderAEP.ts) | 店面 |
 | [登录](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signInAEP.ts) | 用户档案 |
 | [注销](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signOutAEP.ts) | 用户档案 |
 | [创建帐户](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/createAccountAEP.ts) | 用户档案 |
