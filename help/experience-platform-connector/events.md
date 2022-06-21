@@ -1,9 +1,9 @@
 ---
 title: 事件
 description: 了解哪些事件会捕获数据并查看完整的架构定义。
-source-git-commit: ce1ce5a7e028d1c957a9a36c73c371eedfb1e1e8
+source-git-commit: 0b349ee75fac305e6ba5ea6eb74a76eb8ce1976a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '212'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 单击事件名称可查看完整的架构定义。
 
 | Event | 类型 |
-|---|---|---|
+|---|---|
 | [添加到购物车](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/addToCartAEP.ts) | 店面 |
 | [查看购物车](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/viewAEP.ts) | 店面 |
 | [查看页面](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/page/viewAEP.ts) | 店面 |

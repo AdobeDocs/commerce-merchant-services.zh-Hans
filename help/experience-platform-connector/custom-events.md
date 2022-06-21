@@ -1,7 +1,7 @@
 ---
 title: 创建自定义事件
 description: 了解如何创建自定义事件，将您的Adobe Commerce数据与其他AdobeDX产品连接起来。
-source-git-commit: f167002e1aa401d223f0830954ab09b66017476e
+source-git-commit: 1dd8f94e632bb98666ad252badf8420a014260fb
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -42,7 +42,7 @@ mse.publish.custom({
 
 >[!NOTE]
 >
-> 使用自定义事件可能会影响OOTB Adobe Analytics报表。
+> 使用自定义事件可能会影响默认的Adobe Analytics报表。
 
 ## 处理事件覆盖（自定义属性）
 
@@ -104,4 +104,4 @@ mse.publish.productPageView({
 
 >[!NOTE]
 >
-> 使用自定义属性覆盖事件可能会影响OOTB Adobe Analytics报表。
+> 使用自定义属性覆盖事件可能会影响默认的Adobe Analytics报表。
