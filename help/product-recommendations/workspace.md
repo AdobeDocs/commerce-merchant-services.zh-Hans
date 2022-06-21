@@ -1,9 +1,10 @@
 ---
 title: 工作区
 description: 了解如何配置、管理和监控产品推荐性能。
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
+source-git-commit: 9f1f05475b2d8401ec33272e3f12e3cc7285478d
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -101,5 +102,5 @@ _Recommendations设置_
 | 收入 | 由推荐在当前时间范围内驱动的收入。 |
 | Lt收入 | （存留期收入）由推荐驱动的存留期收入。 |
 | 可视性 | 注册查看的推荐单位的百分比。 |
-| Ctr | （已注册的点击百分比）注册点击的推荐的单位展示次数百分比。 |
-| vCtr | （可查看注册的点击百分比）注册点击的推荐单元的可查看展示次数百分比。 |
+| Ctr | （点进率）注册点击的推荐的单位展示次数百分比。 |
+| vCtr | （可查看点进率）注册点击的推荐单元的可查看展示次数百分比。 |

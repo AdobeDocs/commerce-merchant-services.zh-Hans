@@ -1,9 +1,10 @@
 ---
 title: 行为数据
 description: 了解行为数据以及何时开始使用它。
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: d68a97b9-1497-4603-a72c-4aaaf6e048cb
+source-git-commit: 371ae21c97021912279381b5e32f953fe3b4f0dd
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -34,9 +35,11 @@ ht-degree: 0%
 - 某些推荐类型的培训速度比其他类型快
 - Adobe Commerce每四小时重新计算一次行为数据。 虽然从技术上讲，您可以在当时部署推荐单元，但要知道推荐在您的网站上使用的时间越长，推荐的准确性就越高。
 
+为了帮助您可视化每种推荐类型的培训进度， [创建推荐](create.md) 页面显示就绪指示器。
+
 在收集有关生产和机器学习模型的数据时，您可以实施 [剩余任务](implementation-workflow.md) 将推荐部署到店面时必需。 在您完成测试和配置推荐时，机器学习模型已收集并计算足够的数据来构建相关推荐，从而允许您将推荐部署到店面。
 
-## 备用建议
+## 备用建议 {#backuprecs}
 
 如果没有足够的输入数据来提供单位中所有请求的推荐项目，则Adobe Commerce会提供用于填充推荐单位的备用推荐。 例如，如果您部署 `Recommended for you` 推荐类型，则首次访问您网站的购物者尚未生成足够的行为数据来准确推荐个性化产品。 在这种情况下，Adobe Commerce会根据 `Most viewed` 此购物者的推荐类型。
 
