@@ -2,9 +2,9 @@
 title: “在 [!DNL Quick Checkout] (对于Adobe Commerce扩展)
 description: “了解 [!DNL Quick Checkout] 可以为您的Adobe Commerce实例以及如何成功载入和设置扩展。”
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: a62c38adeb41812e91089716eb36c375b09595f4
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,8 @@ ht-degree: 0%
 
 ## 启用扩展
 
-1. 在 _管理员_ 侧栏，导航到 **商店** > **配置** > **结帐** 以访问“结帐管理员”配置页面。
+1. 在 _管理员_ 侧栏，转到 **商店** > _设置_ > **配置**.
+1. 在左侧面板中，展开 **销售** 选择 **结帐**.
 
    ![快速结帐](assets/admin-view.png)
 
