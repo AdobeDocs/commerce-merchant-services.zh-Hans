@@ -2,7 +2,7 @@
 title: '"结帐页面"'
 description: “Adobe Commerce中的结帐页面概述”。
 exl-id: afe3a93d-8aba-428e-ac9d-0be8d23ceb47
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 0%
@@ -28,4 +28,4 @@ ht-degree: 0%
 >
 > 完成第一步后，结帐会显示结帐总数和相应的侧栏信息。
 
-请参阅 [结账流程](../quick-checkout/onboarding.md) 主题，以了解有关 [!DNL Quick Checkout] 流量。
+请参阅 [结账流程](../quick-checkout/checkout-flow.md) 主题，以了解有关 [!DNL Quick Checkout] 流量。

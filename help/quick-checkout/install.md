@@ -2,18 +2,16 @@
 title: '"安装 [!DNL Quick Checkout] (对于Adobe Commerce扩展)'
 description: “请按照以下步骤安装 [!DNL Quick Checkout] 在您的Adobe Commerce项目中。”
 exl-id: e1dabc9a-0ab0-4f8d-98d3-7a32abbedcb8
-source-git-commit: c0b1185a53cb84be2335e2e1beb392c9f23070c9
+source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
 
 # 安装 [!DNL Quick Checkout]
 
-的 [!DNL Quick Checkout] for Adobe Commerce提供无缝的结账体验，旨在将一次性来宾购物者转化为忠诚的客户持有人。
-
-的 [!DNL Quick Checkout] 扩展适用于Adobe Commerce和 [!DNL Magento Open Source] 可以安装 [!DNL Composer keys]，它们已链接到 [MagentoID(mageid)](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions)注册过程中提供的{target=&quot;_blank&quot;}。 在初始安装Adobe Commerce时或在 [!DNL Composer keys] 之前未保存到 `auth.json` 文件。
+的 [!DNL Quick Checkout] Adobe Commerce和Magento Open Source的扩展可在 [!DNL Composer keys]，它们已链接到 [MagentoID(mageid)](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions)注册过程中提供的{target=&quot;_blank&quot;}。 在初始安装Adobe Commerce时或在 [!DNL Composer keys] 之前未保存到 `auth.json` 文件。
 
 请参阅 [获取您的身份验证密钥](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html){target=&quot;_blank&quot;&quot;主题，以了解有关获取的详细信息 [!DNL Composer keys].
 
