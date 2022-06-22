@@ -2,9 +2,9 @@
 title: 创建新推荐
 description: 了解如何创建产品推荐单元。
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 1d2b4b8d85e5ccea1c4258869fbfd191a2e7987b
+source-git-commit: 5fa08429a97c9ed59a339a0eca268f99c1023b7e
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -41,8 +41,8 @@ _推荐单元_
 
    对于每个页面类型，您最多可以创建五个活动推荐单元，对于页面生成器，最多可以创建25个活动推荐单元。 页面类型灰显。达到限制时。
 
-   ![推荐名称](assets/create-recommendation.png)
-   _推荐名称和版面_
+   ![推荐名称和页面](assets/create-recommendation.png)
+   _推荐名称和页面版面_
 
 1. 在 _选择推荐类型_ 部分，指定 [推荐类型](type.md) 您希望显示在选定页面上。 对于某些页面， [投放](placement.md) “推荐”仅限于某些类型。
 
@@ -54,10 +54,10 @@ _推荐单元_
 
    根据上述因素，计算并显示准备值。 当推荐类型的就绪值为75%或更高时，该推荐类型会被视为已准备好部署。 推荐类型在准备就绪率至少为50%时，会认为已部分准备就绪。 最后，当推荐类型的就绪值小于50%时，该推荐类型会被视为未准备好部署。
 
-1. 在 _店面显示标签_ ，输入 [标签](placement.md#recommendation-labels) 对您的购物者可见的，例如“最畅销商品”。
-
-   ![推荐名称](assets/create-recommendation-select-type.png)
+   ![推荐类型](assets/create-recommendation-select-type.png)
    _推荐类型_
+
+1. 在 _店面显示标签_ ，输入 [标签](placement.md#recommendation-labels) 对您的购物者可见的，例如“最畅销商品”。
 
 1. 在 _选择产品数量_ 部分，使用滑块指定要在推荐单元中显示的产品数量。
 
@@ -72,12 +72,12 @@ _推荐单元_
 
    的 _选择位置_ 部分显示为您选择的页面类型创建的所有推荐（如果有）。
 
-   ![推荐名称](assets/create-recommendation-select-placement.png)
-   _推荐类型_
+   ![推荐顺序](assets/create-recommendation-select-placement.png)
+   _页面上的推荐顺序_
 
 1. （可选）在 _过滤器_ 部分， [应用过滤器](filters.md) 以控制哪些产品显示在推荐单元中。
 
-   ![推荐名称](assets/create-recommendation-select-placement.png)
+   ![推荐过滤器](assets/create-recommendation-filter-products.png)
    _推荐产品过滤器_
 
 1. 完成后，单击以下任一项：
