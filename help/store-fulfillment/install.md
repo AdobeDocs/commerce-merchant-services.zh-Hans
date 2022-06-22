@@ -4,9 +4,9 @@ description: '"安装 [!DNL Store Fulfillment solution] 用于使用PHP编辑器
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: 66c4ca972004c43fa55795006b1511820ca9b514
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **通过Walmart Commerce Technologies软件存档（.zip文件）访问商店履行** — 在载入和启用过程中，请与您的客户经理合作，以访问商店履行扩展的安装文件。
 
-- **Adobe Commerce帐户信息** — 安装 [!DNL Channel Manager] 需要 [商务帐户](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}。 您需要具有以下权限的帐户ID和凭据：拥有 [!DNL Adobe Commerce] 项目。
+- **Adobe Commerce帐户信息** — 安装 [!DNL Store Fulfillment] 解决方案需要 [商务帐户](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}。 您需要具有以下权限的帐户ID和凭据：拥有 [!DNL Adobe Commerce] 项目。
 
 - 对于 [!DNL Adobe Commerce] 在云基础架构项目上，软件安装程序必须拥有对云项目的管理员访问权限。 请参阅 [管理用户访问权限](https://devdocs.magento.com/cloud/project/user-admin.html).
 
