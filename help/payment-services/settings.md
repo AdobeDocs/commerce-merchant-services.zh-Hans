@@ -4,9 +4,9 @@ description: 安装后，您可以配置 [!DNL Payment Services] 在家里。
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 724abe973094c1aa631ca34bd8096052fa1e9195
+source-git-commit: aed9469d6acf638d86389cbf1c178fccd8d42759
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -65,6 +65,9 @@ ht-degree: 0%
 1. 要更改结帐期间显示的付款方法名称，请编辑 **[!UICONTROL Checkout title]** 字段。
 1. 至 [设置付款操作](production.md#set-payment-services-as-payment-method)，切换 **[!UICONTROL Payment action]** to `Authorize` 或 `Authorize and Capture`.
 1. 要启用调试模式，请将 **[!UICONTROL Debug Mode]** 选择器。
+
+   启用调试模式时，有关信用卡付款的额外调试信息会写入 `var/log/payment.log` 文件。 此信息可让您对特定付款进行更深入的分析，以协助进行疑难解答。
+
 1. 单击 **[!UICONTROL Save]**.
 
    如果尝试在不保存更改的情况下离开此视图，则会显示一个模式窗口，提示您放弃更改、继续编辑或保存更改。
@@ -88,6 +91,9 @@ ht-degree: 0%
 
 1. 要更改 [稍后付费消息传送](payments-options.md#pay-later-button)，切换 **[!UICONTROL Display Pay Later message]** 选项。
 1. 要启用调试模式，请将 **[!UICONTROL Debug Mode]** 选择器。
+
+   启用调试模式时，有关PayPal付款的额外调试信息将写入 `var/log/payment.log` 文件。 此信息可让您对特定付款进行更深入的分析，以协助进行疑难解答。
+
 1. 单击 **[!UICONTROL Save]**.
 
    如果尝试在不保存更改的情况下离开此视图，则会显示一个模式窗口，提示您放弃更改、继续编辑或保存更改。
