@@ -1,15 +1,15 @@
 ---
 title: 应用程序设置
-description: '“设置 [!DNL Store Assist] 应用程序管理端到端商店的在线购买履行工作流程和流程，可以按商店订单提货。” '
+description: 设置 [!DNL Store Assist] 要管理端到端商店的在线购买履行工作流程和流程，请按商店订单提货。
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
+source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # 应用程序设置
 
@@ -55,14 +55,15 @@ Store Assist应用程序需要两种类型的配置：
    - **切换过程** — 当Store Associate向客户交付订单时启用可选流程，例如，需要客户签名或提示关联人检查客户ID。
 
    - **在切换时启用项目拒绝** — 允许客户在订单切换期间返回或取消订单项目。
-
    与沃尔玛商务技术客户服务团队合作，完成商店辅助应用程序的前端配置。
 
 ## 应用程序下载和安装
 
 完成Store Assist应用程序配置后，Store Associates可以从其移动设备下载、安装和登录Store Assist应用程序。
 
-- 从下载Store Assist应用程序 [AppleApp Store](https://apps.apple.com/us/app/store-assist-by-walmart/id16092815390) 或者Google Play店。
+- 验证移动设备是否符合 [硬件和软件要求](solution-requirements.md#store-assist-app-requirements) 的“商店履行”解决方案。
+
+- 从下载Store Assist应用程序 [AppleApp Store](https://apps.apple.com/us/app/store-assist-by-walmart/id16092815390){target=&quot;_blank&quot;}或 [Google Play商店](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}。
 
 - Store Associates需要以下信息才能登录：
 
@@ -70,4 +71,3 @@ Store Assist应用程序需要两种类型的配置：
 
    - 存储Assist帐户凭据 — 其帐户的用户名和密码凭据。
    Adobe Commerce管理员可以为具有 [店内取货](merchant-store-configuration.md#pickup-location-configuration) 在“管理员存储”设置中启用。
-
