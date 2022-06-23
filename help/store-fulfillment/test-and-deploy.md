@@ -3,13 +3,13 @@ title: 测试和部署存储实现
 description: 测试计划以验证“商店完成”功能。 测试涵盖库存同步API、取消订单的端到端履行工作流、商店履行应用程序用户管理以及客户签入体验。
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
 source-wordcount: '2652'
 ht-degree: 0%
 
 ---
-
 
 # 测试和部署用于Adobe Commerce的商店实施
 
@@ -136,7 +136,6 @@ ht-degree: 0%
 </td>
 <td>
 <ul>
-<td>
 <li>订单历史记录更新为 <code>We refunded $X online. Transaction ID: transactionID</code> 和 <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
 <li>订单状态为 <code>Closed</code>. （我们已设置PAYMENT REVIEW。）</li>
 <li>在Adobe Commerce创建的贷项通知单。 （等到cron工作。）</li>
@@ -566,7 +565,7 @@ Adobe Commerce产品类型的测试方案可验证客户是否看到不同产品
 </tr>
 <tr>
 <td>
-<strong>单次领料快乐路径，卷边提货</strong></td>
+<strong>单次挑选 — 快乐路径、曲边拾取</strong></td>
 <td>挑选单个和多数量的物料。 不吃尼尔鱼，也吃冰糖（有暂存）。
 </td>
 <td>
@@ -645,22 +644,3 @@ Adobe Commerce产品类型的测试方案可验证客户是否看到不同产品
 >[!TIP]
 >
 >有关云基础架构项目的Adobe Commerce部署准则、检查列表和最佳实践，请参阅 [部署您的商店](https://devdocs.magento.com/cloud/live/stage-prod-live.html) ，位于Adobe Commerce开发人员文档中。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

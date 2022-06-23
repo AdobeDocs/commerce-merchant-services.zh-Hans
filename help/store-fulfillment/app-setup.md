@@ -4,9 +4,9 @@ description: 设置 [!DNL Store Assist] 要管理端到端商店的在线购买�
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Store Assist应用程序需要两种类型的配置：
 
    - **领料通知** — 指定客户下订单后是否发送推送通知以启动领料流程。
 
-   - **签入通知** — 指定客户等待时间超过指定时间段后，是否在订单接收的签入过程中发送推送通知 — 签入后。 或者，禁用通知。
+   - **签入通知** — 指定客户等待时间超过指定时间段后，在订单接收的签入过程中是否发送推送通知 — 签入后。 或者，禁用通知。
 
    - **切换过程** — 当Store Associate向客户交付订单时启用可选流程，例如，需要客户签名或提示关联人检查客户ID。
 
@@ -67,7 +67,7 @@ Store Assist应用程序需要两种类型的配置：
 
 - Store Associates需要以下信息才能登录：
 
-   - 与您的商店协助帐户关联的公司名称
+   - **[!UICONTROL Company name]** 与Store Assist帐户关联
 
-   - 存储Assist帐户凭据 — 其帐户的用户名和密码凭据。
+   - **存储协助帐户凭据** — 其帐户的用户名和密码凭据。
    Adobe Commerce管理员可以为具有 [店内取货](merchant-store-configuration.md#pickup-location-configuration) 在“管理员存储”设置中启用。

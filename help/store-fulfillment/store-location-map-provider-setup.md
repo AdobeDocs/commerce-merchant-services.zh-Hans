@@ -3,13 +3,13 @@ title: 存储位置和映射系统配置
 description: 配置距离提供程序以支持店面UI中的存储位置映射。 商店完成解决方案需要一个距离提供商来启用零售商店搜索以及端到端完成工作流程的其他映射和计划功能。
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%
 
 ---
-
 
 # 存储位置和映射设置
 
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 要配置距离提供程序，请执行以下操作：
 
-1. 从 [!UICONTROL Stores > General] 在“管理员”中，为“地图”内容类型添加Google地图集成。
+1. 从 **[!UICONTROL Stores > General]** 在“管理员”中，为“地图”内容类型添加Google地图集成。
 
    - 转到 **[!UICONTROL Stores > Configuration  > General > Content Management]**.
 
    - 将Google API密钥添加到 **[!UICONTROL Google Maps API Key]** 字段。
 
-1. 从 [!UICONTROL Stores > Inventory] 在“管理员”中，选择“商店履行”的距离提供程序。
+1. 从 **[!UICONTROL Stores > Inventory]** 在“管理员”中，选择“商店履行”的距离提供程序。
 
    - 转到 **[!UICONTROL Stores > Configuration > Catalog > Inventory]**.
 

@@ -4,9 +4,9 @@ description: '"安装 [!DNL Store Fulfillment solution] 用于使用PHP编辑器
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 66c4ca972004c43fa55795006b1511820ca9b514
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,9 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 ## 安装要求
 
-- **通过Walmart Commerce Technologies软件存档（.zip文件）访问商店履行** — 在载入和启用过程中，请与您的客户经理合作，以访问商店履行扩展的安装文件。
+- **通过Walmart Commerce Technologies软件存档（.zip文件）访问商店履行** — 在入门和启用过程中，与您的客户经理合作，以访问商店履行扩展的安装文件。
 
-- **Adobe Commerce帐户信息** — 安装 [!DNL Store Fulfillment] 解决方案需要 [商务帐户](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}。 您需要具有以下权限的帐户ID和凭据：拥有 [!DNL Adobe Commerce] 项目。
+- **Adobe Commerce帐户信息** — 安装 [!DNL Store Fulfillment] 解决方案需要 [[!DNL Commerce] 帐户](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}。 您需要具有以下权限的帐户ID和凭据：拥有 [!DNL Adobe Commerce] 项目。
 
 - 对于 [!DNL Adobe Commerce] 在云基础架构项目上，软件安装程序必须拥有对云项目的管理员访问权限。 请参阅 [管理用户访问权限](https://devdocs.magento.com/cloud/project/user-admin.html).
 
@@ -94,7 +94,8 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 使用 `bin/magento setup:upgrade` 用更改更新数据库模式和数据，以支持“存储履行”解决方案。
 
->注意：
+>[!NOTE]
+>
 >对于云基础架构项目上的Adobe Commerce，您无需注册扩展。 相反，应提交上一步中的代码更改，并将它们推送到环境分支。 在云构建和部署过程中，将自动运行更新数据库架构和数据的命令。
 
 ### 步骤5:完成安装
@@ -183,7 +184,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 ### 其他步骤
 
-如果需要，请使用 `[setup:static-content: deploy](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy)` CLI命令将静态视图文件部署到生产环境。
+如果需要，请使用 [设置:static-content:部署](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy){target=&quot;_blank&quot;} CLI命令将静态视图文件部署到生产环境。
 
 ```terminal
 php bin/magento setup:static-content:deploy -f
