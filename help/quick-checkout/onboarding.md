@@ -2,9 +2,9 @@
 title: “在 [!DNL Quick Checkout] (对于Adobe Commerce扩展)
 description: “了解 [!DNL Quick Checkout] 可以为您的Adobe Commerce实例以及如何成功载入和设置扩展。”
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: a62c38adeb41812e91089716eb36c375b09595f4
+source-git-commit: ac55bf6354c8f5569ad83dc0ac2671b34c98d303
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 ## 配置支付提供商
 
-要连接您的支付服务提供商，请按照 [处理器设置](https://help.bolt.com/integrations/adobe-express-checkout/set-up/){target=&quot;_blank&quot;}开发人员 [!DNL Bolt] 页面。
+要连接您的支付服务提供商，请按照 [处理器设置](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/){target=&quot;_blank&quot;}开发人员 [!DNL Bolt] 页面。
 
 ## 启用扩展
 
