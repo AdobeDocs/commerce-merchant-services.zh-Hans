@@ -2,10 +2,10 @@
 title: '"[!DNL Payment Services] 发行说明"'
 description: 查看发行说明，了解有关 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 6fc2db2ff842244af6a3c52b575b26233540931b
+source-git-commit: 44e1f7dce951f9244498565eccaebd70328d91e4
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,11 +17,41 @@ ht-degree: 1%
 ![修复的问题](../assets/fix.svg) 修复和改进功能
 ![已知问题](../assets/bug.svg) 已知问题
 
+有关在常规版本控制的功能版本之外发布的功能更改和修复，请参阅托管服务更新部分。
+
 请参阅 [即将发行的版本](https://devdocs.magento.com/release/) 了解发行计划和支持。
 
 请参阅 [可用性](https://devdocs.magento.com/release/availability.html) ，以了解有关产品兼容性的信息。
 
+## v1.2.0
+
+_2022年6月29日_
+
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-3264 --> 以前，当登录用户选择与其帐户的默认地址不同的帐单/送货地址时，结帐失败。 我们修复了此问题，现在已发送选定的帐单/送货地址（而不是默认的保存地址），并且结帐已成功完成。
+
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-3314 --> 如果禁用PayPal智能按钮进行结帐，则不会显示任何错误。
+
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-3330 --> 当来宾用户输入包含短划线的电话号码时，付款在结账期间不再失败。
+
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> 当商务服务凭据无效时， [!DNL Payment Services] 现在，主页将显示在管理员中。 出现凭据错误，提醒您凭据无效。
+
+![已知问题](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] 当前与不兼容 [`commerce-data-export` v101.20及更高版本](https://github.com/magento-commerce/commerce-data-export/releases/tag/v101.2.0)，这会使其与不兼容 [[!DNL Channel manager] 扩展](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
+
+### 托管服务更新
+
+这些发行说明描述了在当前v1.2.0版本与托管服务的先前1.1.0版本之间，在常规版本控制功能发布之外发生的功能更改和修复。
+
+![新建](../assets/new.svg)<!-- Issue PAY-1720 --> 现在，商店订单争议可在 [订单付款状态报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). 您可以从直接导航到PayPal Resolution Center [!DNL Payment Services] 就纠纷采取行动。
+
+![新建](../assets/new.svg)<!-- Issue PAY-2854 --> 改进了 [!DNL Payment Services] 主页包括在当前继承级别修改配置的功能，以及改进标题和导航的显示。
+
+![新建](../assets/new.svg)<!-- Issue PAY-2854 --> 现在，当您从沙盒模式切换到生产模式，以及尝试从视图导航到尚未保存的更新时，您会看到警告。
+
+![新建](../assets/new.svg)<!-- Issue PAY-2761 --> 您现在可以自定义 [订单付款状态报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 和 [派息报告](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 显示或隐藏列时，会显示或隐藏列。
+
 ## v1.1.0
+
+_2022年3月31日_
 
 ![新建](../assets/new.svg)<!-- Issue PAY-2127 --> 正式发布 — [!DNL Payment Services] 现在 [兼容 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 版本2.4.0至2.4.4](https://devdocs.magento.com/release/availability.html#compatibility).
 
@@ -47,6 +77,8 @@ ht-degree: 1%
 
 ## v1.0.0
 
+_2021年11月29日_
+
 ![新建](../assets/new.svg)<!-- Issue PAY-2127 --> 正式发布 — [[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) 现在与 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 版本2.4.0到2.4.3-p1。
 
 ![新建](../assets/new.svg)<!-- Issue PAY-124 --> 的 [!DNL Payment Services] 扩展 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 可以为 [[!DNL Adobe Commerce] 云基础架构](install.md#adobe-commerce-on-cloud-infrastructure) 或 [本地](install.md#on-premises) 实例。 这些方法需要使用命令行接口。
@@ -61,7 +93,7 @@ ht-degree: 1%
 
 ![新建](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] 支持基于总处理量的灵活分层定价，适用于任何商家。
 
-![新建](../assets/new.svg)<!-- Issue PAY-1443 --> 您可以轻松 [自定义外观](payments-options.md) Payment Services扩展的PayPal智能按钮和信用卡字段的数量。
+![新建](../assets/new.svg)<!-- Issue PAY-1443 --> 您可以轻松 [自定义外观](payments-options.md) 的PayPal智能按钮和信用卡字段 [!DNL Payment Services] 扩展。
 
 ![已知问题](../assets/bug.svg)<!-- Issue PAY-2473 --> 使用 [编辑器键不正确](https://support.magento.com/hc/en-us/articles/4406603542541) 在安装扩展期间，会阻止用户 [身份验证](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 正确 `MAGEID`.
 
