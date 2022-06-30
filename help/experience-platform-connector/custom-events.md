@@ -1,7 +1,8 @@
 ---
 title: 创建自定义事件
 description: 了解如何创建自定义事件，将您的Adobe Commerce数据与其他AdobeDX产品连接起来。
-source-git-commit: 1dd8f94e632bb98666ad252badf8420a014260fb
+exl-id: 5a754106-c66a-4280-9896-6d065df8a841
+source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -10,7 +11,7 @@ ht-degree: 0%
 
 # 创建自定义事件
 
-您可以扩展 [活动平台](events.md) 创建您自己的店面事件，以收集行业特有的数据。 创建和配置自定义事件时，该事件将发送到 [MagentoStorefront事件收集器](https://www.npmjs.com/package/@adobe/magento-storefront-event-collector).
+您可以扩展 [活动平台](events.md) 创建您自己的店面事件，以收集行业特有的数据。 创建和配置自定义事件时，该事件将发送到 [Adobe Commerce事件收集器](https://www.npmjs.com/package/@adobe/magento-storefront-event-collector).
 
 ## 处理自定义事件
 

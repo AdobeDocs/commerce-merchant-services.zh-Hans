@@ -1,14 +1,15 @@
 ---
 title: 事件
 description: 了解哪些事件会捕获数据并查看完整的架构定义。
-source-git-commit: 566abe09b8c1b0837a833b2f8fcfe1e81bb6963d
+exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
+source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
 
-# 项目信标事件
+# Experience Platform连接器事件
 
 下面列出了 [!DNL Commerce] 事件。 这些事件收集的数据会发送到Adobe Experience Platform Edge。 您还可以创建 [自定义事件](custom-events.md) 来收集开箱即用未提供的其他数据。
 

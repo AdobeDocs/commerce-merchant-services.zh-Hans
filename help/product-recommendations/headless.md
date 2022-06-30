@@ -1,9 +1,10 @@
 ---
 title: 无头
 description: 了解如何集成 [!DNL Product Recommendations] 在无头店里。
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
+source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ ht-degree: 0%
 
 1. [安装](install-configure.md) the [!DNL Product Recommendations] 模块。
 
-1. 安装和使用 [Storefront事件SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) 来发火 [行为事件](https://devdocs.magento.com/recommendations/events.html).
+1. 安装和使用 [Adobe Commerce Storefront Event SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) 来发火 [行为事件](https://devdocs.magento.com/recommendations/events.html).
 
    需要返回的最小事件数 [!DNL Product Recommendations] 结果：
 
@@ -43,7 +44,7 @@ ht-degree: 0%
    | `rec-click` | 推荐单元 |
    | `rec-add-to-cart-click` | recommendations-unit（如果“推荐”模板中存在“添加到购物车”按钮） |
 
-1. 触发事件时，使用 [Storefront事件收集器](https://devdocs.magento.com/shared-services/storefront-event-collector.html) 来处理事件，并将其发送到Adobe Sensei。
+1. 触发事件时，使用 [Adobe Commerce Storefront事件收集器](https://devdocs.magento.com/shared-services/storefront-event-collector.html) 来处理事件，并将其发送到Adobe Sensei。
 
 1. 收集行为数据后，您可以 [创建](create.md) [!DNL Product Recommendations] 中。
 
