@@ -1,9 +1,10 @@
 ---
-title: “创建订单 [!DNL Quick Checkout] 在管理员中”
-description: “管理员能够使用 [!DNL Quick Checkout] 由商家直接从管理员处向需要帮助的客户发送。”
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+title: 通过 [!DNL Quick Checkout] 在管理员中
+description: 管理员能够使用 [!DNL Quick Checkout] 由商家直接从管理员处向需要帮助的客户发送。
+exl-id: 52cb8afb-fb23-468d-94b4-9f9142c54ce0
+source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '194'
 ht-degree: 1%
 
 ---
@@ -26,4 +27,4 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
-> 在“提前采纳者计划”(EAP)期间，用户无法使用OTP登录自动填写送货和付款详细信息。
+> 用户无法使用OTP登录自动填写所有送货和付款详细信息。
