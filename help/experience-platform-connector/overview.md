@@ -1,9 +1,10 @@
 ---
 title: 指南概述
 description: Adobe Experience Platform connector for Adobe Commerce连接 [!DNL Commerce] 实例到其他Adobe Experience Cloud产品。
-source-git-commit: dc4bb1ea7d2ffc953cca31637bf5aefba6266241
+exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
+source-git-commit: 334ee967ec2379a87acfc5fb427d7ada6fa25ee7
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -23,10 +24,13 @@ Storefront事件捕获购物者交互，例如 `View Page`, `View Product`, `Ad
 授予访问权限时：
 
 1. [登录](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) Adobe帐户。
-1. 看您的 [组织](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=en#concept_EA8AEE5B02CF46ACBDAD6A8508646255). 组织ID是与您配置的Experience Cloud公司关联的ID。 此ID是由24个字符组成的字母数字字符串，其后跟（且必须包括）@AdobeOrg。
-1. 访问数据流工作区和 [创建数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en).
+1. 看您的 [组织](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=en#concept_EA8AEE5B02CF46ACBDAD6A8508646255). 组织ID是与您配置的Experience Cloud公司关联的ID。 此ID是由24个字符组成的字母数字字符串，其后跟（且必须包括） `@AdobeOrg`.
+1. 创建或更新 [XDM架构](update-xdm.md) 具有特定于商务的字段组。
+1. [创建数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en) ，然后选择包含特定于商务的 **字段组**.
 
-将Adobe Commerce实例连接到Adobe Experience Platform时，会使用组织ID和数据流。
+>[!NOTE]
+>
+> 组织ID和数据流用于将您的Adobe Commerce实例连接到Adobe Experience Platform。
 
 ## 后续步骤
 

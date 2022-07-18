@@ -1,10 +1,11 @@
 ---
-title: 项目信标发行说明
-description: Adobe Commerce中项目信标的最新发行信息。
-source-git-commit: ce1ce5a7e028d1c957a9a36c73c371eedfb1e1e8
+title: 发行说明
+description: 来自Adobe Commerce的Adobe Experience Platform Connector的最新发行信息。
+exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
+source-git-commit: 3b71b8cd6ba0036d660d078a7f80371e7671ea9f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '76'
+ht-degree: 2%
 
 ---
 
@@ -18,8 +19,8 @@ ht-degree: 0%
 
 ## Experience Platform连接器1.1.0
 
-* 与Adobe Commerce(EE)兼容：2.4.x
-* 与Adobe Commerce for Cloud(ECE)兼容：2.4.x
+* 与Adobe Commerce(EE)兼容：2.4.4
+* 与Adobe Commerce for Cloud(ECE)兼容：2.4.4
 * 稳定性：稳定
 
 ## 文档
