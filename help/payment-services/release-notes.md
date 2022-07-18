@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] 发行说明"'
 description: 查看发行说明，了解有关 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 44e1f7dce951f9244498565eccaebd70328d91e4
+source-git-commit: 7c02bb8dcb7b5daa68664bd12672ac389f84cfa1
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '812'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ _2022年3月31日_
 
 ![修复的问题](../assets/fix.svg)<!-- Issue PAY-2742 --> 您现在可以在商店视图级别启用和禁用可用的付款方法，如Venmo。 以前，您只能为每个网站配置付款方法。
 
-![修复的问题](../assets/fix.svg)<!-- Issue PAY-2277 --> 您现在可以选择性地 [启用或禁用单个PayPal智能按钮](settings.md#paypal-smart-buttons).
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-2277 --> 您现在可以选择性地 [启用或禁用单个PayPal智能按钮](settings.md#payment-buttons).
 
 ![修复的问题](../assets/fix.svg)<!-- Issue PAY-2561 --> 以前删除的产品不会显示在 _审阅顺序_ 页面。
 
