@@ -2,9 +2,9 @@
 title: “在 [!DNL Quick Checkout] (对于Adobe Commerce扩展)
 description: “了解 [!DNL Quick Checkout] 可以为您的Adobe Commerce实例以及如何成功载入和设置扩展。”
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: ac55bf6354c8f5569ad83dc0ac2671b34c98d303
+source-git-commit: 0624ddc369ddedaaf9ae741831e0d5c5589ea4c2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '684'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,12 @@ ht-degree: 0%
 
 1. [获取扩展](#get-extension).
 1. [使用创建生产或沙盒商户帐户 [!DNL Bolt]](#create-account-with-bolt). 提供验证您的身份所需的所有信息。
-1. [提供 [!DNL API Key] 和 [!DNL Publishable Key] 生成于 [!DNL Bolt]](#obtain-api-credentials).
+1. [提供 [!DNL API Key] 和 [!DNL Publishable Key]](#obtain-api-credentials) 生成于 [!DNL Bolt].
 1. [在 [!DNL Bolt] 帐户](#configure-payment-providers).
 1. [将“启用”下拉列表设置为“是”](#enable-extension) 激活扩展。
 1. [定义服务设置](#complete-admin-configuration) 配置 [!DNL Quick Checkout] 扩展。
-1. [单击Save Config按钮](#enable-live-quick-checkout) 启用扩展。
+1. [单击保存配置](#enable-live-quick-checkout) 按钮以启用扩展。
+1. 将范围切换为 **主网站** 和 [单击配置回调URL](#check-shopper-valid-account) 按钮。
 
 >[!NOTE]
 >
@@ -49,12 +50,15 @@ ht-degree: 0%
 
 ## 获取API凭据
 
-使用 [!DNL Quick Checkout] 您需要 [!DNL Bolt] 唯一键。 获取以下内容 [!DNL API keys] 导航至 **开发人员** > **API** > **键** 在 **螺栓商户仪表板**.
+使用 [!DNL Quick Checkout] 您需要 [!DNL Bolt] 唯一键和 [!DNL signing secret]. 获取以下内容 [!DNL API keys] 导航至 **开发人员** > **API** > **键** 在 **螺栓商户仪表板**.
 
 - [!DNL API key]:后端用于与交互的私钥 [!DNL Bolt] API。
 - [!DNL Publishable key]:前端用于与交互的键 [!DNL Bolt] API。
+- [!DNL Signing secret]:用于对从接收的请求进行签名验证 [!DNL Bolt].
 
-请参阅 [[!DNL Bolt] 环境详细信息](https://help.bolt.com/developers/references/environment-details/#about-keys){target=&quot;_blank&quot;}页面，了解有关API和 [!DNL Publishable keys] 对于 [!DNL Quick Checkout] 扩展。
+![快速结帐](assets/account-credentials.png)
+
+请参阅 [[!DNL Bolt] 环境详细信息](https://help.bolt.com/developers/references/environment-details/#about-keys){target=&quot;_blank&quot;}页，用于了解密钥和签名密钥 [!DNL Bolt] 对于 [!DNL Quick Checkout] 扩展。
 
 >[!CAUTION]
 >
@@ -68,9 +72,6 @@ ht-degree: 0%
 
 1. 在 _管理员_ 侧栏，转到 **商店** > _设置_ > **配置**.
 1. 在左侧面板中，展开 **销售** 选择 **结帐**.
-
-   ![快速结帐](assets/admin-view.png)
-
 1. 在 [!DNL Quick Checkout] 视图，设置 **启用** to `Yes`.
 1. 选择要使用的方法（沙盒或生产）。
 
@@ -79,9 +80,11 @@ ht-degree: 0%
 
 1. 提供您的唯一API后验证凭据，并 [!DNL Publishable keys].
 
+![快速结帐](assets/extension-view.png)
+
 >[!CAUTION]
 >
-> 您必须提供唯一的API和 [!DNL Publishable keys] 在启用扩展之前，否则客户将看到付款表单，并且无法下订单。
+> 您必须提供唯一的API和 [!DNL Publishable] 键，否则客户将看到付款表单，并且无法下订单。
 
 ## 完整的管理员配置
 
@@ -100,6 +103,19 @@ ht-degree: 0%
 
 1. 检查 [!UICONTROL Enable] 下拉列表设置为 **是** 激活扩展。
 1. 单击 **保存配置**.
+
+## 检查购物者有效帐户
+
+检查购物者是否具有 [!DNL Bolt] 帐户：
+
+1. 将范围切换为 **主网站**.
+1. 单击 **配置回调URL** 按钮。 这将启用 [!DNL Bolt] 以确定购物者是否具有帐户。 如果出现，则会显示“OTP”弹出窗口。
+
+>[!CAUTION]
+>
+> 将范围切换到 **主网站** 确保设置正确的URL。 每个网站可以有多个域。
+
+请参阅 [网站、商店和查看范围](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings){target=&quot;_blank&quot;}主题，以了解有关Adobe Commerce中作用域的更多信息。
 
 ## 获取帮助
 
