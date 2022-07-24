@@ -2,9 +2,9 @@
 title: '"安装 [!DNL Quick Checkout] (对于Adobe Commerce扩展)'
 description: “请按照以下步骤安装 [!DNL Quick Checkout] 在您的Adobe Commerce项目中。”
 exl-id: e1dabc9a-0ab0-4f8d-98d3-7a32abbedcb8
-source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
+source-git-commit: d6cb5ae5437f78cacb0208269598896f5d8523d0
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 ## 更新最小稳定性设置
 
-在安装该扩展之前，您可以更改 `minimum-stability` 要求 `RC` （释放候选项） `composer.json` 文件。 您可以使用IDE或您最喜爱的文本编辑器（如Visual Studio代码或Sublime Text）。
+安装扩展之前，请确保 `minimum-stability` 字段 `composer.json` 文件设置为 `"stable"`:
 
-在 `composer.json` 文件，更改 `"minimum-stability": "stable"` to `"minimum-stability": "RC"`.
+`"minimum-stability": "stable"`
 
 ## 安装扩展
 
