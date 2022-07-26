@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: 文档
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 688cfa8eb7a871453c7a26a442ceb54ee78b2fd9
+source-git-commit: 39f7725105cb7773fd43f4b65fd9ea0c1c2182df
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -64,13 +64,13 @@ Adobe提供托管服务的集合，以帮助商户支持其业务的关键组件
     <em>通过将Adobe Commerce或Magento Open Source产品目录与Walmart Marketplace集成，可增加销售、吸引新客户、简化销售操作并节省时间。 使商店管理员和运营人员能够从商务环境中无缝地管理Walmart Marketplace的销售、库存和产品定价。</em>
     </br>
   </td>
-    <td valign="top">
-       <img alt="存储履行" src="assets/store-fulfillment-landing-graphic.png"/>
+  <td valign="top">
+    <img alt="存储履行" src="assets/store-fulfillment-landing-graphic.png"/>
     <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html">
     <strong>[!DNL Store Fulfillment]</strong></a>
     </div>
     <p>(仅限Adobe Commerce)<br><em>通过提供通过移动设备启用的端到端、无缝的全渠道实施工作流，提供出众的在线购买、商店购物(BOPI)客户体验，并最大限度地提高商店员工的工作效率。</em></p>
-    <br>
+    </br>
   </td>
 </tr>
 </table>
@@ -94,4 +94,3 @@ Adobe提供托管服务的集合，以帮助商户支持其业务的关键组件
 * 在 [[!DNL Product Recommendations]](/help/product-recommendations/overview.md).
 * 添加了 [[!DNL Channel Manager User Guide]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html) 对于那些想通过 [!DNL Commerce] 实例。
 * 添加了 [[!DNL Store Fulfillment User Guide]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html) 对于希望提高在线购买量的客户，购物店(BOPI)客户体验，并为店内和购物店提供支持移动设备的无缝全方位渠道完成工作流。
-
