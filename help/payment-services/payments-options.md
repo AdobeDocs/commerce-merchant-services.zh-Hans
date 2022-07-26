@@ -2,9 +2,9 @@
 title: 付款选项
 description: 设置付款选项以自定义商店客户可用的方法。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 26735a191eab529bc3e8e7fc3d64295d345888d6
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 使用 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] [!DNL Payment Services]，则您可以使用多个付款选项。 您可以通过以下方式配置这些付款选项：
 
-* [主页](payments-home.md)
+* [主页设置](payments-home.md)
 * [存储配置](configure-admin.md) （建议使用旧版付款选项或多商店设置）
 
 每种付款方法的行为取决于您在结账流程中的位置：
@@ -31,31 +31,48 @@ ht-degree: 0%
 
 [!UICONTROL Credit Card Fields] 为信用卡或借记卡付款方法提供简单且安全的结账。 当购物者使用信用卡字段签出时，他们会输入其名称、帐单地址以及信用卡或借记卡信息，以下单。 在购买会话期间，可安全地使用客户信息，以无缝指导客户完成结账流程。
 
-您可以配置 [!UICONTROL Credit Card Fields] 在存储配置或支付服务主页中。 请参阅 [配置 [!DNL Payment Services]](settings.md#configure-credit-card-fields) 以了解更多信息。
+您可以配置 [!UICONTROL Credit Card Fields] 在存储配置或支付服务主页中。 请参阅 [设置](settings.md#credit-card-fields) 以了解更多信息。
 
 ## [!DNL PayPal Smart Buttons]
 
 [!DNL PayPal Smart Buttons]，后者使用PayPal完成购买，存储购物者的送货地址、帐单地址和付款详细信息以供日后使用。 购物者可以使用PayPal之前存储或提供的任何付款方法。
 
-您可以配置 [!DNL PayPal Smart Buttons] 在存储配置或支付服务主页中。  请参阅 [配置 [!DNL Payment Services]](settings.md#configure-paypal-smart-buttons) 以了解更多信息。
+![[!DNL PayPal Smart Buttons] 选项](assets/buttons-md.png)
 
-### PayPal按钮
+您可以配置 [!UICONTROL PayPal Smart Buttons] 在存储配置或支付服务主页中。  请参阅 [设置](settings.md#payment-buttons) 以了解更多信息。
+
+### [!DNL PayPal] 按钮
 
 使用PayPal按钮，客户可以轻松、放心地结帐。
 
-从产品页面、迷你购物车、购物车和结帐视图中可看到PayPal按钮。
+的 [!DNL PayPal] 按钮在产品页面、迷你购物车、购物车和结帐视图中可见。
 
-### “维恩莫”按钮
+### [!DNL Venmo] 按钮
 
 客户可以使用 [Venmo](https://venmo.com/) 按钮。
 
-从产品页面、迷你购物车、购物车和结帐视图中可看到“维姆诺”按钮。
+的 [!DNL Venmo] 按钮在产品页面、迷你购物车、购物车和结帐视图中可见。
+
+### [!DNL Apple Pay] 按钮
+
+客户可以在其设备上使用触屏ID以使用 [[!DNL Apple Pay]](https://www.apple.com/apple-pay/)，它利用存储在其iOS或macOS设备上的信用卡和借记卡付款凭据。
+
+的 [!DNL Apple Pay] 按钮在产品页面、迷你购物车、购物车和结帐视图中可见。
 
 ### [!DNL Pay Later] 按钮
 
 为客户提供短期、免息的付款和其他融资选项，以便他们现在购买并稍后使用 [!DNL Pay Later] 按钮。
 
-的 [!DNL Pay Later] 按钮在产品页面、迷你购物车、购物车和结帐视图中可见。
+的 [!DNL Pay Later] 按钮在产品页面、迷你购物车、购物车和结帐视图中可见：
+
+* **客户选择30美元到600美元之间的产品时**，在PayPal和 [!DNL Pay Later] 按钮可为客户提供有关 [!DNL Pay in 4] 付款选项。 客户可以单击 **了解更多** 了解“[!DNL Pay in 4]&quot;选项 _或_ 单击弹出式窗口中的“或查看6个月特殊融资”文本，了解并申请PayPal信用选项。
+* **当客户选择的产品或产品超过$98.99时**，在PayPal和 [!DNL Pay Later] 按钮为客户提供了有关PayPal信用付款选项的更多信息。 客户可以单击 **了解更多** 了解并申请PayPal信用选项， _或_ 单击弹出式窗口中的“或查看4中的付费”文本，以了解 [!DNL Pay in 4] 选项。
+
+   >[!NOTE]
+   >
+   >上列金额可能有变动。
+
+请参阅 [设置](settings.md#payment-buttons) 了解如何禁用/启用 [!DNL Pay Later] 消息传送。
 
 在 [!DNL Pay Later] 按钮：
 
@@ -67,19 +84,6 @@ ht-degree: 0%
 的 [!DNL Pay Now] 按钮在客户单击付款屏幕上的付款按钮时显示在PayPal弹出窗口中。
 
 如果最终订单金额尚未知晓（例如，当您还没有送货地址信息时），并且客户正在从产品页面、迷你购物车或购物车中签出，则 _继续_ 按钮。 客户单击 _继续_，在确认其付款方法后，系统会将他们定向到订单审核页面，以在完成结帐之前收集所需的详细信息。
-
-## [!DNL Pay Later] 消息
-
-为帮助您的客户确定这些是潜在的付款选项， [!DNL Pay Later] 产品页面、迷你购物车和购物车以及结帐期间均显示消息。
-
-* **客户选择30美元到600美元之间的产品时**，在PayPal和 [!DNL Pay Later] 按钮可为客户提供有关“4人支付”选项的更多信息。 客户可以单击 **了解更多** 了解“支付4”选项 _或_ 单击弹出式窗口中的“或查看6个月特殊融资”文本，了解并申请PayPal信用选项。
-* **当客户选择的产品或产品超过$98.99时**，在PayPal和 [!DNL Pay Later] 按钮为客户提供了有关PayPal信用付款选项的更多信息。 客户可以单击 **了解更多** 了解并申请PayPal信用选项 _或_ 单击弹出式窗口中的“或查看4号支付”文本，了解4号支付选项。
-
-   >[!NOTE]
-   >
-   >上列金额可能有变动。
-
-请参阅 [配置 [!DNL Payment Services]](configure-admin.md#configure-paypal-smart-buttons) 了解如何禁用或启用 [!DNL Pay Later] 消息传送。
 
 ## 订单重新计算
 

@@ -4,9 +4,9 @@ description: 使用“订单付款状态”报表可查看订单的付款状态�
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: fde5844ad6c602708f9a5ad76ce8c9b5547dba76
+source-git-commit: 59cceb1cab1ed2bcfaa7d59c54a40255a38dea29
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
@@ -73,14 +73,14 @@ ht-degree: 0%
 
 数据源选择的工作方式如下：
 
-* 如果您没有使用 [!DNL Payment Services] 在实时模式下，数据源选择默认为 [!UICONTROL Sandbox]_.
+* 如果您没有使用 [!DNL Payment Services] 在实时模式下，数据源选择默认为 _[!UICONTROL Sandbox]_.
 * 如果您有任何商店（一个或多个）使用 [!DNL Payment Services] 在实时模式下，数据源选择默认为 _[!UICONTROL Live]_.
 * 报表导出始终遵循数据源选择。
 
 为 [!UICONTROL Order Payment Status] 报表：
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. 单击 **[!UICONTROL Data source]** 选择 _[!UICONTROL Live]_或 [!UICONTROL Sandbox]_.
+1. 单击 **[!UICONTROL Data source]** 选择 _[!UICONTROL Live]_或_[!UICONTROL Sandbox]_.
 
    报表结果会根据所选的数据源重新生成。
 
@@ -105,11 +105,23 @@ ht-degree: 0%
 
 ## 查看状态
 
+“订单付款状态”报表视图显示每个付款服务订单的全面事务处理状态和付款状态信息。
+
+### 交易状态
+
 默认情况下，网格中会显示30天的订单付款状态。
 
 向左和向右滚动以查看 [订单付款状态信息](#column-descriptions)，包括订单日期、授权日期、开票、发运、付款状态等。
 
 在搜索中返回或在默认的30天订单付款状态下显示的行数显示在“订单付款状态”视图网格的上方，并与“订单日期日历选择器”筛选器一起显示。
+
+### 付款状态
+
+“付款状态”列显示任何付款的当前状态。 A `Capture failed` 付款显示红色警报状态和 `Voided` 付款显示灰色警报状态。
+
+### 退款状态
+
+“退款状态”列显示任何退款的当前状态。 A `Capture failed` 付款显示红色警报状态和 `Voided` 付款显示灰色警报状态。
 
 ## 更新报表数据
 
