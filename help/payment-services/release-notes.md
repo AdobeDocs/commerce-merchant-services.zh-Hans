@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] 发行说明"'
 description: 查看发行说明，了解有关 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 169593cdf069f9ee95be5bcff3783cc8cfc82c3f
+source-git-commit: 78f17e82a820a8be73c6abc0ef25d1bb240ea238
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,8 @@ _2022年6月29日_
 ### 托管服务更新
 
 这些发行说明描述了在当前v1.2.0版本与托管服务的先前1.1.0版本之间，在常规版本控制功能发布之外发生的功能更改和修复。
+
+![新建](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay现已作为PayPal智能按钮提供。 此 [付款选项](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) 允许客户在其设备上使用触屏ID来使用Apple Pay，它使用存储在其iOS或macOS设备上的信用卡和借记卡付款凭据。
 
 ![新建](../assets/new.svg)<!-- Issue PAY-1720 --> 现在，商店订单争议可在 [订单付款状态报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). 您可以从直接导航到PayPal Resolution Center [!DNL Payment Services] 就纠纷采取行动。
 
