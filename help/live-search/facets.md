@@ -2,9 +2,9 @@
 title: “Facet”
 description: '"[!DNL Live Search] facet使用多个属性值维度作为搜索条件。”'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 238ce2f774207f387970d3c833e0a29f0ede6550
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 |--- |--- |
 | [类别显示设置](https://docs.magento.com/user-guide/catalog/categories-display-settings.html) | 锚点 —  `Yes` |
 | [属性属性](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [目录输入类型](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
-| 属性店面属性 | 在分层导航中使用 —  `Filterable (with results)` |
+| 属性店面属性 | 在搜索结果中使用分层导航 —  `Yes` |
 
 ## 默认属性值
 
