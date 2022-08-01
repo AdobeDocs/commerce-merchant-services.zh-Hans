@@ -2,9 +2,9 @@
 title: '"[!DNL Live Search] 索引"'
 description: “了解如何 [!DNL Live Search] 索引产品属性。”
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 2835209ad881db388894c5b1da213312436d3550
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 产品属性（元数据）可确定如何在目录中使用属性、属性在存储中的外观和行为，以及数据传输操作中包含的数据。 属性元数据的范围是 `website/store/store view`.
 
-的 [!DNL Live Search] API允许客户按具有 [storefront属性](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` 设置为 `Yes` 在Adobe Commerce管理员中。
+的 [!DNL Live Search] API允许客户按具有 [storefront属性](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` 设置为 `Yes` 在Adobe Commerce管理员中。 启用后， `Search Weight` 和 `Visible in Advanced Search` 可以为属性设置。
 
 >[!NOTE]
 >
