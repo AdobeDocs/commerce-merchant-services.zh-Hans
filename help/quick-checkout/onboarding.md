@@ -2,9 +2,9 @@
 title: “在 [!DNL Quick Checkout] (对于Adobe Commerce扩展)
 description: “了解 [!DNL Quick Checkout] 可以为您的Adobe Commerce实例以及如何成功载入和设置扩展。”
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 0624ddc369ddedaaf9ae741831e0d5c5589ea4c2
+source-git-commit: 70f7772765dd66c8db779d29d4b661edb7d0c64a
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 0%
 - [!DNL Publishable key]:前端用于与交互的键 [!DNL Bolt] API。
 - [!DNL Signing secret]:用于对从接收的请求进行签名验证 [!DNL Bolt].
 
-![快速结帐](assets/account-credentials.png)
+   ![快速结帐](assets/account-credentials.png)
 
 请参阅 [[!DNL Bolt] 环境详细信息](https://help.bolt.com/developers/references/environment-details/#about-keys){target=&quot;_blank&quot;}页，用于了解密钥和签名密钥 [!DNL Bolt] 对于 [!DNL Quick Checkout] 扩展。
 
@@ -73,6 +73,13 @@ ht-degree: 0%
 1. 在 _管理员_ 侧栏，转到 **商店** > _设置_ > **配置**.
 1. 在左侧面板中，展开 **销售** 选择 **结帐**.
 1. 在 [!DNL Quick Checkout] 视图，设置 **启用** to `Yes`.
+
+![快速结帐](assets/quick-checkout-view-no-enable.png)
+
+>[!CAUTION]
+>
+> 快速结帐字段仅在 **启用** 设置为 `Yes`.
+
 1. 选择要使用的方法（沙盒或生产）。
 
    - 用于测试和开发的沙盒
@@ -80,7 +87,7 @@ ht-degree: 0%
 
 1. 提供您的唯一API后验证凭据，并 [!DNL Publishable keys].
 
-![快速结帐](assets/extension-view.png)
+![快速结帐](assets/quick-checkout-main-view.png)
 
 >[!CAUTION]
 >
