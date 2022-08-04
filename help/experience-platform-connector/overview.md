@@ -2,9 +2,9 @@
 title: 指南概述
 description: Adobe Experience Platform connector for Adobe Commerce连接 [!DNL Commerce] 实例到其他Adobe Experience Cloud产品。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 334ee967ec2379a87acfc5fb427d7ada6fa25ee7
+source-git-commit: 15b7a8be65e5063606bb58755d0719b0ca54de37
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -37,10 +37,15 @@ Storefront事件捕获购物者交互，例如 `View Page`, `View Product`, `Ad
 - 安装 [Experience Platform连接器扩展](install.md).
 
    Experience Platform连接器扩展从服务器的命令行安装，并作为 [服务](../landing/saas.md). 过程完成后，Experience Platform连接器将显示在 **系统** 菜单下 **服务** 在 [!DNL Commerce] _管理员_.
+- [上传购物者配置文件](profile.md) 店面数据可归因于特定购物者以提升其购物体验。
 
 ## 受众
 
 本指南专为必须将其Adobe Commerce店面数据与其他AdobeDX产品连接的Adobe Commerce商家而设计。
+
+### PWA Studio支持
+
+请参阅 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/) 文档，以了解有关如何在PWA Studio店面中使用Experience Platform连接器的信息。
 
 ## 已知问题
 
