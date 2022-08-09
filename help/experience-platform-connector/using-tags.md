@@ -1,9 +1,10 @@
 ---
 title: 使用Adobe Experience Platform标记收集商务数据
 description: 了解如何使用Adobe Experience Platform标记收集商务数据。
-source-git-commit: 93133019f8004437ef85db32ff336bfd0e8c6fc2
+exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
+source-git-commit: b5fb915f6ffcc24e72310bc79cba4b08a65128e3
 workflow-type: tm+mt
-source-wordcount: '2126'
+source-wordcount: '2138'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ _Experience Platform连接器数据流与标记_
 
 要收集商务事件数据，请执行以下操作：
 
-- 安装 [Adobe Commerce Event SDK](https://www.npmjs.com/package/@adobe/magento-storefront-events-sdk). 有关PHP店面，请参阅 [安装](install.md) 主题。 有关PWA Studio店面，请参阅 [PWA Studio指南](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
+- 安装 [Adobe Commerce Events SDK](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-sdk). 有关PHP店面，请参阅 [安装](install.md) 主题。 有关PWA Studio店面，请参阅 [PWA Studio指南](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
 
    >[!NOTE]
    >
@@ -161,7 +162,7 @@ _Experience Platform连接器数据流与标记_
    - **名称**: `Account email`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
-   - **[可选] 路径**: `accountContext.accountEmail`
+   - **[可选] 路径**: `accountContext.emailAddress`
 
 1. 帐户类型：
 
@@ -210,7 +211,7 @@ _Experience Platform连接器数据流与标记_
    - **名称**: `Account email`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
-   - **[可选] 路径**: `accountContext.accountEmail`
+   - **[可选] 路径**: `accountContext.emailAddress`
 
 1. 帐户类型：
 
@@ -259,7 +260,7 @@ _Experience Platform连接器数据流与标记_
    - **名称**: `Account email`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
-   - **[可选] 路径**: `accountContext.accountEmail`
+   - **[可选] 路径**: `accountContext.emailAddress`
 
 1. 帐户类型：
 
@@ -344,12 +345,23 @@ _Experience Platform连接器数据流与标记_
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `productContext.sku`
 
-1. 货币代码：
+1. 产品货币：
 
-   - **名称**: `Currency code`
+   - **名称**: `Product currency`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `productContext.pricing.currencyCode`
+
+1. 货币代码：
+
+   - **名称**: `Currency code`
+   - **扩展**: `Core`
+   - **数据元素类型**: `Custom Code`
+   - **Open Editor**:
+
+   ```bash
+   return _satellite.getVar('product currency') || _satellite.getVar('storefront').storeViewCurrencyCode
+   ```
 
 1. 特价：
 
@@ -370,7 +382,11 @@ _Experience Platform连接器数据流与标记_
    - **名称**: `Product price`
    - **扩展**: `Core`
    - **数据元素类型**: `Custom Code`
-   - **Open Editor**: `return _satellite.getVar('product regular price') || _satellite.getVar('product special price')`
+   - **Open Editor**:
+
+   ```bash
+   return _satellite.getVar('product regular price') || _satellite.getVar('product special price')
+   ```
 
 1. 产品视图：
 
@@ -414,7 +430,7 @@ _Experience Platform连接器数据流与标记_
    - **Open Editor**:
 
    ```bash
-   `return _satellite.getVar('search input').phrase;`
+   return _satellite.getVar('search input').phrase;
    ```
 
 1. 搜索输入排序
@@ -517,7 +533,7 @@ _Experience Platform连接器数据流与标记_
    - **Open Editor**:
 
    ```bash
-   return _satellite.getVar('search result').productCount;
+   return _satellite.getVar('search result').products.length;
    ```
 
 1. 搜索结果产品：
@@ -712,13 +728,13 @@ _Experience Platform连接器数据流与标记_
    - **Open Editor**:
 
    ```bash
-   const searchResult = _satellite.getVar('storefront');
+   const storefrontContext = _satellite.getVar('storefront');
    const cart = _satellite.getVar('cart');
    
    const returnList = [];
    cart.items.forEach(item => {
        const selectedOptions = [];
-       item.configurableOptions.forEach(option => {
+       item.configurableOptions?.forEach(option => {
            selectedOptions.push({
                attribute: option.optionLabel,
                value: option.valueLabel,
@@ -898,13 +914,13 @@ _Experience Platform连接器数据流与标记_
    - **Open Editor**:
 
    ```bash
-   const searchResult = _satellite.getVar('storefront');
+   const storefrontContext = _satellite.getVar('storefront');
    const cart = _satellite.getVar('cart');
    
    const returnList = [];
    cart.items.forEach(item => {
        const selectedOptions = [];
-       item.configurableOptions.forEach(option => {
+       item.configurableOptions?.forEach(option => {
            selectedOptions.push({
                attribute: option.optionLabel,
                value: option.valueLabel,
@@ -1058,13 +1074,13 @@ _Experience Platform连接器数据流与标记_
    - **Open Editor**:
 
    ```bash
-   const searchResult = _satellite.getVar('storefront');
+   const storefrontContext = _satellite.getVar('storefront');
    const cart = _satellite.getVar('cart');
    
    const returnList = [];
    cart.items.forEach(item => {
        const selectedOptions = [];
-       item.configurableOptions.forEach(option => {
+       item.configurableOptions?.forEach(option => {
            selectedOptions.push({
                attribute: option.optionLabel,
                value: option.valueLabel,

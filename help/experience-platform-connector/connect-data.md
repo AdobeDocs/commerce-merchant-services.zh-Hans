@@ -1,7 +1,8 @@
 ---
 title: 将商务数据连接到Adobe Experience Platform
 description: 了解如何将您的商务数据连接到Adobe Experience Platform。
-source-git-commit: 9b5f2da08167e22bbba504009bccc87d0ab02c48
+exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -34,7 +35,7 @@ ht-degree: 0%
 | IMS组织（全球） | 属于购买AdobeDX产品的组织的ID。 此ID可将您的Adobe Commerce实例链接到Adobe Experience Platform。 |
 | 数据流ID(Storeview) | 允许数据从Adobe Experience Platform流到其他AdobeDX产品的ID。 此ID可以与您特定Adobe Commerce实例中的特定storeView关联。 |
 
-安装Experience Platform连接器扩展后，将创建Adobe Commerce和Adobe Experience Platform之间的链接，并指定数据流ID， [!DNL Commerce] 数据开始流向Adobe Experience Platform边缘和其他AdobeDX产品。
+安装了Experience Platform连接器扩展、创建了Adobe Commerce和Adobe Experience Platform之间的链接，并指定了数据流ID后，商务数据开始流向Adobe Experience Platform边缘和其他AdobeDX产品。
 
 ## 边缘商务数据
 
