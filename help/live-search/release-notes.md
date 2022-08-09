@@ -2,10 +2,10 @@
 title: '"[!DNL Live Search] 发行说明"'
 description: “ [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 097f8af7a1e3e904c69d3a7fe52cb0db5b1b4c23
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '858'
+ht-degree: 1%
 
 ---
 
@@ -16,6 +16,29 @@ ht-degree: 0%
 * ![新建](../assets/new.svg)  — 新增功能
 * ![修复](../assets/fix.svg)  — 修复和改进功能
 * ![错误](../assets/bug.svg)  — 已知问题
+
+## [!DNL Live Search] 2.0.3
+
+* 与Adobe Commerce(EE)兼容：2.4.x
+* 与Adobe Commerce for Cloud(ECE)兼容：2.4.x
+* 稳定性：稳定
+
+* ![新建](../assets/new.svg) - Live Search现在支持B2B功能，方法是根据类别权限、共享目录和特定于客户组的定价。
+
+商户必须升级实时搜索扩展版本>= 2.0.3才能访问这些功能。
+
+我们建议用户在推送到生产环境之前先进行升级和测试。 在验证其测试环境结果后，考虑在非高峰时间升级生产环境。
+
+>[!NOTE]
+>
+>从8月9日开始，将分阶段添加对后端服务的B2B支持，预计将在8月底之前完成迁移。 如果未升级Live Search扩展，则您的店面将继续正常运行，但没有B2B功能。
+
+### 已知限制/错误：
+
+* ![错误](../assets/bug.svg)  — 建议来源于不能显示给客户群组的产品。
+* ![错误](../assets/bug.svg)  — 如果未将产品添加到“默认共享目录”，则不会显示产品。
+* 具有实时搜索PWA Studio的B2B只有在PWA Studio添加对该B2B的支持后才可用。
+* 产品覆盖和产品属性信息源可能存在同步问题，需要管理员运行 `bin/magento indexer:reset` 和 `bin/magento indexer:reindex` 才能正确重新同步。
 
 ## [!DNL Live Search] 2.0
 

@@ -2,9 +2,9 @@
 title: “Facet”
 description: '"[!DNL Live Search] facet使用多个属性值维度作为搜索条件。”'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 238ce2f774207f387970d3c833e0a29f0ede6550
+source-git-commit: 40e7da1cb71bd3c977acb77714c2cab55b3b7bf8
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,12 @@ ht-degree: 0%
 
 分面的类别和产品属性要求与用于分层导航的可过滤属性类似。 每个属性的storefront属性必须设置为 `filterable (with results)`.
 
-* 最多可以将100个属性配置为带有 [!DNL Live Search].
-* [!DNL Live Search] 索引最多300个属性，以作为可过滤/可搜索/可排序的属性，并在搜索中可见。
+实时搜索最多支持：
+
+* 配置为Facet的100个属性
+* 50个可排序属性
+* 200个可过滤属性
+* 200个可搜索属性
 
 | 设置 | 描述 |
 |--- |--- |
