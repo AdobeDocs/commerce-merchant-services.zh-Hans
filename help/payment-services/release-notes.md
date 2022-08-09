@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] 发行说明"'
 description: 查看发行说明，了解有关 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 78f17e82a820a8be73c6abc0ef25d1bb240ea238
+source-git-commit: 2c3211d5a6574f84fa499608f5ef0cb8c6ffcfed
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '924'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,14 @@ ht-degree: 0%
 请参阅 [即将发行的版本](https://devdocs.magento.com/release/) 了解发行计划和支持。
 
 请参阅 [可用性](https://devdocs.magento.com/release/availability.html) ，以了解有关产品兼容性的信息。
+
+## v1.3.0
+
+_2022年8月9日_
+
+![新建](../assets/new.svg)<!-- Issue PAY-XX --> 正式发布 — [!DNL Payment Services] 现在 [兼容 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 版本2.4.0至2.4.5](https://devdocs.magento.com/release/availability.html#compatibility).
+
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-x --> Apple Pay现在与移动和桌面设备上的Safari浏览器v15.5兼容。
 
 ## v1.2.0
 
