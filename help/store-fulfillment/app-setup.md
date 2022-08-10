@@ -4,16 +4,16 @@ description: 设置 [!DNL Store Assist] 要管理端到端商店的在线购买�
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 68e615671f4e465d7fe89794613dbf129ae66dbf
+source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # 应用程序设置
 
-Store Assist是由Walmart Commerce Technologies提供支持的“按实施即服务”(FaaS)平台应用程序。 该应用程序提供商店内实施功能来处理 [!DNL buy online], [!DNL pick up in store] （桶装）订单。  借助“商店辅助”，商店关联人员可以查看客户订购了哪些项目，更快地挑选正确的项目，并为店内或店内提货客户设置已履行订单。
+Store Assist是由Walmart Commerce Technologies提供支持的“按实施即服务”(FaaS)平台应用程序。 该应用程序提供商店内实施功能来处理 [!DNL buy online, pick up in store] （桶装）订单。 借助“商店辅助”，商店关联人员可以查看客户订购了哪些项目，更快地挑选正确的项目，并为店内或店内提货客户设置已履行订单。
 
 Store Assist应用程序接收所有订单和客户信息（从订单详细信息到提取时间），并通过移动设备在线提供用于存储关联的数据。 应用程序包括 [!UICONTROL Pick], [!UICONTROL Stage], [!UICONTROL Handoff]和 [!UICONTROL Orders] 帮助Store Associates与以下实施活动关联的模块：
 
@@ -30,13 +30,13 @@ Store Assist应用程序接收所有订单和客户信息（从订单详细信�
 
 Store Assist应用程序需要两种类型的配置：
 
-- Adobe Commerce管理员配置设置 [从Adobe Commerce管理系统设置管理用户帐户、用户角色和资源权限](user-setup.md).
+- Adobe Commerce管理系统设置 [管理用户帐户、用户角色、资源权限](user-setup.md)和 [在签入过程中，客户可以选择汽车和模型](check-in-experience-setup.md).
 
 - 用于自定义商店辅助应用程序界面的前端配置设置和其他设置，包括：
 
    - **为Store Assist应用程序添加品牌** — 使用公司徽标和颜色自定义应用程序用户界面。
 
-   - **更新默认说明** — 自定义Store Assist界面中的Pick、Stage、Handown和Order模块的说明，以符合您公司的策略和程序，并指导Store Associates完成完成工作流程的每个步骤。
+   - **更新默认说明** — 自定义“商店辅助挑选”、“暂存”、“切换”和“订单”模块中的说明，以指导Store Associates完成贵公司履行工作流程的每个步骤。
 
    - **本地化** — 选择应用程序的可用语言。 选择日期和时间格式，然后选择默认度量单位和默认货币。
 
@@ -59,7 +59,7 @@ Store Assist应用程序需要两种类型的配置：
 
 ## 应用程序下载和安装
 
-完成Store Assist应用程序配置后，Store Associates可以从其移动设备下载、安装和登录Store Assist应用程序。
+设置并配置Store Assist应用程序后，Store Associates可以从其移动设备下载、安装和登录Store Assist应用程序。
 
 - 验证移动设备是否符合 [硬件和软件要求](solution-requirements.md#store-assist-app-requirements) 的“商店履行”解决方案。
 
@@ -70,4 +70,4 @@ Store Assist应用程序需要两种类型的配置：
    - **[!UICONTROL Company name]** 与Store Assist帐户关联
 
    - **存储协助帐户凭据** — 其帐户的用户名和密码凭据。
-   Adobe Commerce管理员可以为具有 [店内取货](merchant-store-configuration.md#pickup-location-configuration) 在“管理员存储”设置中启用。
+   Adobe Commerce管理员可以创建用户帐户并设置 [!DNL Store Assist app] 具有 [店内取货](merchant-store-configuration.md#pickup-location-configuration) 在“管理员存储”设置中启用。

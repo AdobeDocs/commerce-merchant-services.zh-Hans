@@ -1,11 +1,12 @@
 ---
 title: 商店履行服务入门概述
-description: '"[!DNL Live Search] 载入流程、系统要求、边界和限制。”'
+description: '''[!DNL Live Search] 载入流程、系统要求、边界和限制。'
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
+source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -14,13 +15,13 @@ ht-degree: 0%
 
 开始使用 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 通过设置、配置和启用以下组件：
 
-- **存储履行扩展** — 在您的Adobe Commerce实例上安装和配置此第三方扩展。 安装后，您可以从管理员配置和管理商店履行解决方案以支持 [!DNL buy online, pickup in store] (BOPIS)方案。
+- **存储履行扩展** — 在您的Adobe Commerce实例上安装和配置此第三方扩展。 安装后，您可以从管理员配置和管理商店履行解决方案以支持 [!DNL buys online, pickup in store] (BOPIS)方案。
 
    ![[!DNL Store Fulfillment Service] 管理视图中的配置](assets/store-fulfillment-admin-home.png)
 
 - **存储履行帐户** — 在启用过程中，客户经理会创建您的商店履行帐户，并向您提供帐户信息和凭据。 需要这些凭据才能启用Adobe Commerce与存储履行解决方案之间的连接。
 
-- **商店辅助应用程序** — 提供与端对端商店履行工作流程关联的商店，以从移动设备管理BOPIS订单。 Store Associates可以下载和安装沃尔玛的 [!DNL Store Assist] 适用于iOS和Android设备。 应用程序载入过程由沃尔玛商务技术客户中心作为单独的过程进行管理。 但是， [某些应用程序配置设置](user-setup.md) 已从Adobe Commerce管理员完成。
+- **商店辅助应用程序** — 提供与端对端商店履行工作流程关联的商店，以从移动设备管理BOPIS订单。 Store Associates可以下载和安装沃尔玛的 [!DNL Store Assist] 适用于iOS和Android™设备。 应用程序载入过程由沃尔玛商务技术客户中心作为单独的过程进行管理。 但是， [某些应用程序配置设置](user-setup.md) 已从Adobe Commerce管理员完成。
 
    | 商店辅助应用程序 — 快速入门视图 | 商店辅助应用程序 — 模块视图 |
    |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -48,7 +49,6 @@ ht-degree: 0%
 
 1. [为Store Assist应用程序创建用户和角色](user-setup.md).
 
-1. [下载Walmart&#39;s [!DNL Store Assist] 应用程序。 该应用程序在应用商店(iOS)和应用商店(Android)上均可用](app-setup.md).
+1. [下载Walmart&#39;s [!DNL Store Assist] 应用程序。 该应用程序在Apple应用程序(iOS)和Google Play(Android™)上均可用](app-setup.md) 商店。
 
 成功安装、配置、完成载入，并有权访问 [!DNL Store Assist] 应用程序，您 [开始创建订单并进行测试](test-and-deploy.md).
-
