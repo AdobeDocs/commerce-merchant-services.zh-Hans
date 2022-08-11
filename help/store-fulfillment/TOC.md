@@ -1,12 +1,12 @@
 ---
 user-guide-title: '"[!DNL Store FulFillment Guide]"'
-user-guide-description: 有关安装、配置和使用Adobe Commerce商店的商店履行的详细信息。
+user-guide-description: 有关为Adobe Commerce存储安装、配置和使用存储实施的详细信息。
 breadcrumb-title: 用于Adobe Commerce的商店履行
-index: false
-source-git-commit: 87818d3a0eb8f0cb4bc9fac2aef3c56a2e620aaf
+index: true
+source-git-commit: 27ed666954f445eb99e0bf370d1155924bfb8ad3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '83'
+ht-degree: 2%
 
 ---
 
