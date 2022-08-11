@@ -2,28 +2,38 @@
 title: 安装 [!DNL Payment Services]
 description: 安装Payments Services扩展。
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: 647848c58213ea7f85d8a2c025146aa065042433
+source-git-commit: 43599d041899251f7716e215284b6eff9312943d
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
 
 # 安装 [!DNL Payment Services]
 
-安装 [!DNL Payment Services] 扩展 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 是使用的先决步骤 [!DNL Payment Services].
+下载并安装 [!DNL Payment Services] 扩展 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 是使用的先决步骤 [!DNL Payment Services].
 
 ![[!DNL Payment Services] 扩展管理员视图](assets/admin-view.png)
 
-的 [!DNL Payment Services] 扩展 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 可以使用编辑器键进行安装，这些键链接到MagentoID([马吉德](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) 在注册过程中提供。 在初始安装时，编辑器会使用这些键 [!DNL Adobe Commerce]，或者在以前未将编辑器键保存到 `auth.json` 文件。
+## 下载扩展
 
-请参阅 [获取您的身份验证密钥](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 有关获取编辑器键的更多信息。
+必须先从下载扩展 [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) 安装之前。
 
-有两种方法可安装此扩展 — 对于 [[!DNL Adobe Commerce] 云基础架构](install.md#adobe-commerce-on-cloud-infrastructure) 或 [本地](install.md#on-premises) 安装。 这些方法要求您使用命令行界面(CLI)。
+1. 导航到 [Commerce Marketplace中的Payment Services扩展](https://marketplace.magento.com/magento-payment-services.html).
+1. 要选择版本和版本，请切换 **[!UICONTROL Edition]** 和 **[!UICONTROL Your store version]** 选项。
+1. 单击 **[!UICONTROL Add to Cart]**.
+1. 完成结帐并单击 **[!UICONTROL Place Order]**.
+1. 查看与您的Marketplace下载相关的电子邮件，以获取订单确认和详细信息。
 
 ## 安装扩展
 
-您可以安装 [!DNL Payment Services] 扩展 [!DNL Adobe Commerce] 云基础架构和本地实例上。
+您可以安装 [!DNL Payment Services] 扩展 [!DNL Adobe Commerce] 云基础架构和本地实例上，它们与MagentoID([马吉德](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions))，其中包含编辑器键。 [!DNL Magento] 开源客户使用内部部署说明。
+
+在初始安装时，编辑器会使用这些键 [!DNL Adobe Commerce]，或者在以前未将编辑器键保存到 `auth.json` 文件。
+
+请参阅 [获取您的身份验证密钥](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 有关获取编辑器键的更多信息。
+
+请参阅 [安装扩展](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/extensions.html) 有关下载和安装扩展之前应考虑的事项的更多信息。
 
 ### [!DNL Adobe Commerce] 云基础架构
 
@@ -45,9 +55,9 @@ ht-degree: 0%
 
 1. 提交并推送更改。
 
-### 本地
+### 内部部署和其他配置
 
-此方法用于安装 [!DNL Payment Services] 内部部署实例的扩展。
+此方法用于安装 [!DNL Payment Services] 内部实例和的扩展 [!DNL Magento] 开源客户。
 
 1. 要获取该扩展，请运行以下命令：
 
@@ -63,7 +73,7 @@ ht-degree: 0%
 
    的 `composer update` 命令会更新所有依赖项。 如果不想同时更新所有依赖项，请改用以下命令： `composer require magento/payment-services`.
 
-1. 升级 [!DNL Adobe Commerce]:
+1. 升级您的实例：
 
    ```bash
    bin/magento setup:upgrade
@@ -76,7 +86,7 @@ ht-degree: 0%
    ```
 
 1. 提交更改。
-1. 要确保部署已提交的代码，请更新您的内部部署实例。
+1. 要确保部署已提交的代码，请更新您的实例。
 
 ## 升级扩展
 

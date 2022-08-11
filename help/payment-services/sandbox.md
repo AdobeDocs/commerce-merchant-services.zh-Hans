@@ -2,9 +2,9 @@
 title: 设置测试沙盒
 description: 使用PayPal沙盒帐户 [!DNL Payment Services] 在测试模式下。
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: e8d008d9a38cebde7772b7e3d70d2447631414fe
+source-git-commit: ab4a2f4d432f74cb48dc4b92468305c93088593a
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -13,22 +13,20 @@ ht-degree: 0%
 
 在开始沙盒载入之前，您必须注册一个免费的PayPal开发人员帐户，并创建商家（用于载入）和购物者帐户（用于测试结账）。 您可以根据需要创建多个开发人员帐户。
 
-PayPal沙盒帐户允许您使用 [!DNL Payment Services] 在测试模式下。 PayPal要求您使用PayPal开发人员门户生成的商业沙盒测试帐户、电子邮件和密码进行沙盒载入。 在沙盒载入过程中，请勿创建其他帐户。
+PayPal沙盒帐户允许您使用 [!DNL Payment Services] 在测试模式下。 PayPal要求您使用PayPal开发人员门户生成的商业沙盒测试帐户、电子邮件和密码进行沙盒载入。 *在沙盒载入过程中，请勿创建其他帐户。*
 
-如果您在沙盒PayPal载入过程中创建了帐户，则必须重置载入沙盒，因为或者无法验证电子邮件。
-
-要重置沙盒帐户，请执行以下操作：
-
-1. 单击 **[!UICONTROL Reset sandbox]**. 请参阅 [PayPal创建业务沙盒帐户](https://developer.paypal.com/docs/api-basics/sandbox/accounts/#create-a-business-sandbox-account) 文档以了解更多信息。
-1. 单击 **[!UICONTROL Sandbox onboarding]** 并完成下一组步骤。
+## 沙盒载入
 
 要完成沙盒载入，请执行以下操作：
 
 1. 导航到 [PayPal开发人员帐户页面](https://developer.paypal.com/developer/accounts/).
-1. 单击 **[!UICONTROL Log in to Home]** 并使用您现有的凭据登录到PayPal Developers帐户，或单击 **注册** 创建帐户。
+1. 单击 **[!UICONTROL Log in to Home]** 并使用您现有的PayPal开发人员门户生成的商业沙盒测试帐户登录，或单击 **注册** 创建帐户。
 1. 创建PayPal沙盒帐户：
    1. 转到 _[!UICONTROL SANDBOX]_>**[!UICONTROL Accounts]**.
    1. 单击 **[!UICONTROL Create account]**.
+
+      如果您在沙盒PayPal载入过程中创建了一个PayPal沙盒帐户，则必须 [重置载入沙盒](#reset-your-sandbox-account) 因为或您无法验证电子邮件。
+
    1. 选择 **[!UICONTROL Business]** 作为“帐户类型”，然后单击 **[!UICONTROL Create]**.
    1. 在 _[!UICONTROL Sandbox Accounts]_中，单击_[!UICONTROL Manage accounts]_ 列。
    1. 单击 **[!UICONTROL View/edit account]**.
@@ -46,7 +44,7 @@ PayPal沙盒帐户允许您使用 [!DNL Payment Services] 在测试模式下。 
 
    您将看到一个PayPal窗口，用于连接PayPal帐户以开始接受付款。
 
-1. 输入您的业务帐户以及国家或地区的电子邮件，然后单击 **[!UICONTROL Next]**.
+1. 输入您的PayPal业务帐户（而非PayPal沙盒帐户）以及您所在国家或地区的电子邮件，然后单击 **[!UICONTROL Next]**.
 
    ![PayPal — 用于支付的Connect PayPal帐户](assets/paypal-connectacct.png)
 
@@ -60,6 +58,15 @@ PayPal沙盒帐户允许您使用 [!DNL Payment Services] 在测试模式下。 
 >[!IMPORTANT]
 >
 >如果您撤消对 [!DNL Payment Services] 表示 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 处理付款时（在您的PayPal帐户设置中），您商店中的订单无法由 [!DNL Payment Services]. 在您的Payment Services主页上，会显示有关已吊销同意的警报。 要关闭警报，请单击 **[!UICONTROL Do not show again]**.
+
+### 重置沙盒帐户
+
+如果您在沙盒PayPal载入过程中创建了一个PayPal沙盒帐户，则必须重置载入沙盒，因为或者您无法验证电子邮件。
+
+要重置沙盒帐户，请执行以下操作：
+
+1. 单击 **[!UICONTROL Reset sandbox]**. [创建PayPal业务沙盒帐户](https://developer.paypal.com/docs/api-basics/sandbox/accounts/#create-a-business-sandbox-account).
+1. 单击 **[!UICONTROL Sandbox onboarding]** 并完成下一组步骤。
 
 ## 启用联系电话号码
 

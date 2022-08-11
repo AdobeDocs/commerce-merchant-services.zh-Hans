@@ -2,7 +2,7 @@
 title: 启用 [!DNL Payment Services] 生产
 description: 通过启用 [!DNL Payment Services] 生产。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 51722d7045ccb6ccfdc7ab5bd93d5ca46b52cf03
+source-git-commit: a983cf30872544d72bd13c3f04f04a35eebcf85d
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 0%
@@ -11,7 +11,11 @@ ht-degree: 0%
 
 # 启用 [!DNL Payment Services] 生产
 
-在Payments Services扩展之后 [已安装](install.md)，则实例为 [已配置并连接](connect.md)，而您 [设置沙盒](sandbox.md) 经过测试后，您可以继续将服务投入生产并完成 [载入过程](onboard.md).
+您可以将服务投入生产并完成 [载入过程](onboard.md)，根据本主题中的步骤，在之后：
+
+* [安装](install.md) 支付服务扩展
+* [配置和连接](connect.md) 您的实例
+* [设置](sandbox.md) 和 [测试](test-validate.md) 您的沙盒
 
 ## 已设置 [!DNL Payment Services] 作为付款方式
 
