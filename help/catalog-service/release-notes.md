@@ -1,13 +1,13 @@
 ---
-title: '"[!DNL Catalog Service] 发行说明"'
-description: “ [!DNL Catalog Service] 为Adobe Commerce。”
-source-git-commit: 3959cc5d07f9a0da0ba772a4f3bc56adeb3c6bf3
+title: '''[!DNL Catalog Service] 发行说明'''
+description: 的最新发行信息 [!DNL Catalog Service] Adobe Commerce。
+exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
+source-git-commit: 72913e0c0b7364e38d37fe1a8279c40a4e849c02
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '153'
 ht-degree: 2%
 
 ---
-
 
 # [!DNL Catalog Service] 发行说明
 
@@ -32,6 +32,7 @@ ht-degree: 2%
 
 ## 已知限制
 
+* 不支持捆绑和分组产品。
 * 不支持层定价。
 * 在图像数组中，只有第一个图像包含角色。
 * 不会检索变体的图像。
