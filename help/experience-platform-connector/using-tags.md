@@ -2,9 +2,9 @@
 title: 使用Adobe Experience Platform标记收集商务数据
 description: 了解如何使用Adobe Experience Platform标记收集商务数据。
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: b5fb915f6ffcc24e72310bc79cba4b08a65128e3
+source-git-commit: 4af50842c883d3aef7bf50d6a68b82321b784591
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2276'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ _Experience Platform连接器数据流与标记_
    ![创建新数据元素](assets/create-new-data-elements.png)
    _创建新数据元素_
 
-1. 已设置 **名称** to `Sign out`.
+1. 已设置 **名称** to `sign out`.
 
 1. 已设置 **扩展** to `Adobe Experience Platform Web SDK`.
 
@@ -76,16 +76,22 @@ _Experience Platform连接器数据流与标记_
    ![更新注销值](assets/signout-value.png)
    _更新注销值_
 
+1. 选择 **保存**.
+
 1. 创建规则：
 
    ![创建新规则](assets/create-new-rule.png)
    _创建新规则_
+
+1. 选择 **添加** 在 **事件**.
 
 1. 已设置 **扩展** to `Adobe Client Data Layer`.
 
 1. 已设置 **事件类型** to `Data Pushed`.
 
 1. 选择 **特定事件** 并设置 **要注册的事件/密钥** to `sign-out`.
+
+1. 选择 **保留更改** 以保存新规则。
 
 1. 添加操作。
 
@@ -159,36 +165,44 @@ _Experience Platform连接器数据流与标记_
 
 1. 帐户电子邮件：
 
-   - **名称**: `Account email`
+   - **名称**: `account email`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `accountContext.emailAddress`
 
 1. 帐户类型：
 
-   - **名称**: `Account type`
+   - **名称**: `account type`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `accountContext.accountType`
 
 1. 帐户ID:
 
-   - **名称**: `Account ID`
+   - **名称**: `account id`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径***: `accountContext.accountId`
 
 1. 登录：
 
-   - **名称**: `Sign in`
+   - **名称**: `sign in`
    - **扩展**: `Adobe Experience Platform Web SDK`
    - **数据元素类型**: `XDM object`
+   - **字段组**: `person` > `accountID`
+   - **帐户ID**: **值** = `%account id%`
+   - **字段组**: `person` > `accountType`
+   - **帐户类型**: **值** = `%account type%`
+   - **字段组**: `person` > `personalEmailID`
+   - **个人电子邮件地址**: **值** = `%account email%`
+   - **字段组**: `personalEmail` > `address`
+   - **地址**: **值** = `%account email%`
    - **字段组**: `userAccount` > `login`
    - **访客登录**: **值** = `1`
 
 #### 规则 
 
-- **名称**: `Sign in`
+- **名称**: `sign in`
 - **扩展**: `Adobe Client Data Layer`
 - **事件类型**: `Data Pushed`
 - **特定事件**: `sign-in`
@@ -198,7 +212,7 @@ _Experience Platform连接器数据流与标记_
 - **扩展**: `Adobe Experience Platform Web SDK`
 - **操作类型**: `Send event`
 - **类型**: `userAccount.login`
-- **XDM数据**: `%sign-in%`
+- **XDM数据**: `%sign in%`
 
 ### createAccount {#createaccount}
 
@@ -208,30 +222,38 @@ _Experience Platform连接器数据流与标记_
 
 1. 帐户电子邮件：
 
-   - **名称**: `Account email`
+   - **名称**: `account email`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `accountContext.emailAddress`
 
 1. 帐户类型：
 
-   - **名称**: `Account type`
+   - **名称**: `account type`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `accountContext.accountType`
 
 1. 帐户ID:
 
-   - **名称**: `Account ID`
+   - **名称**: `account id`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
-   - **[可选] 路径***: `accountContext.accountId`
+   - **[可选] 路径**: `accountContext.accountId`
 
 1. 创建帐户：
 
    - **名称**: `Create account`
    - **扩展**: `Adobe Experience Platform Web SDK`
    - **数据元素类型**: `XDM object`
+   - **字段组**: `person` > `accountID`
+   - **帐户ID**: **值** = `%account id%`
+   - **字段组**: `person` > `accountType`
+   - **帐户类型**: **值** = `%account type%`
+   - **字段组**: `person` > `personalEmailID`
+   - **个人电子邮件地址**: **值** = `%account email%`
+   - **字段组**: `personalEmail` > `address`
+   - **地址**: **值** = `%account email%`
    - **字段组**: `userAccount` > `createProfile`
    - **帐户配置文件创建**: **值** = `1`
 
@@ -257,30 +279,38 @@ _Experience Platform连接器数据流与标记_
 
 1. 帐户电子邮件：
 
-   - **名称**: `Account email`
+   - **名称**: `account email`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `accountContext.emailAddress`
 
 1. 帐户类型：
 
-   - **名称**: `Account type`
+   - **名称**: `account type`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `accountContext.accountType`
 
 1. 帐户ID:
 
-   - **名称**: `Account ID`
+   - **名称**: `account id`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
-   - **[可选] 路径***: `accountContext.accountId`
+   - **[可选] 路径**: `accountContext.accountId`
 
 1. 编辑帐户：
 
    - **名称**: `Edit account`
    - **扩展**: `Adobe Experience Platform Web SDK`
    - **数据元素类型**: `XDM object`
+   - **字段组**: `person` > `accountID`
+   - **帐户ID**: **值** = `%account id%`
+   - **字段组**: `person` > `accountType`
+   - **帐户类型**: **值** = `%account type%`
+   - **字段组**: `person` > `personalEmailID`
+   - **个人电子邮件地址**: **值** = `%account email%`
+   - **字段组**: `personalEmail` > `address`
+   - **地址**: **值** = `%account email%`
    - **字段组**: `userAccount` > `updateProfile`
    - **帐户配置文件创建**: **值** = `1`
 
@@ -306,17 +336,17 @@ _Experience Platform连接器数据流与标记_
 
 1. 页面名称：
 
-   - **名称**: `Page name`
+   - **名称**: `page name`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `pageContext.pageName`
 
 #### 规则 
 
-- **名称**: `Page view`
+- **名称**: `page view`
 - **扩展**: `Adobe Client Data Layer`
 - **事件类型**: `Data Pushed`
-- **特定事件**: `Core-Library Loaded`
+- **特定事件**: `page-view`
 
 ##### 操作
 
@@ -333,28 +363,28 @@ _Experience Platform连接器数据流与标记_
 
 1. 产品名称：
 
-   - **名称**: `Product name`
+   - **名称**: `product name`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `productContext.name`
 
 1. 产品SKU:
 
-   - **名称**: `Product sku`
+   - **名称**: `product sku`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `productContext.sku`
 
 1. 产品货币：
 
-   - **名称**: `Product currency`
+   - **名称**: `product currency`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `productContext.pricing.currencyCode`
 
 1. 货币代码：
 
-   - **名称**: `Currency code`
+   - **名称**: `currency code`
    - **扩展**: `Core`
    - **数据元素类型**: `Custom Code`
    - **Open Editor**:
@@ -365,21 +395,21 @@ _Experience Platform连接器数据流与标记_
 
 1. 特价：
 
-   - **名称**: `Special price`
+   - **名称**: `special price`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `productContext.pricing.specialPrice`
 
 1. 固定价格：
 
-   - **名称**: `Regular price`
+   - **名称**: `regular price`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `productContext.pricing.regularPrice`
 
 1. 产品价格：
 
-   - **名称**: `Product price`
+   - **名称**: `product price`
    - **扩展**: `Core`
    - **数据元素类型**: `Custom Code`
    - **Open Editor**:
@@ -390,14 +420,24 @@ _Experience Platform连接器数据流与标记_
 
 1. 产品视图：
 
-   - **名称**: `Product view`
+   - **名称**: `product view`
    - **扩展**: `Adobe Experience Platform Web SDK`
    - **数据元素类型**: `XDM object`
    - **字段组**: `productListItems`. 选择 **提供单个项目** ，然后单击 **添加项目** 按钮。 由于此视图是用于PDP，因此可以使用单个项目填充。
+   - **字段组**: `productListItems` > `name`
+   - **名称**: **值** = `%product name%`
+   - **字段组**: `productListItems` > `SKU`
+   - **SKU**: **值** = `%product sku%`
+   - **字段组**: `productListItems` > `priceTotal`
+   - **总价**: **值** = `%product price%`
+   - **字段组**: `productListItems` > `currencyCode`
+   - **货币代码**: **值** = `%currency code%`
+   - **字段组**: `commerce` > `productViews` > `value`
+   - **值**: **值** = `1`
 
 #### 规则 
 
-- **名称**: `Product view`
+- **名称**: `product view`
 - **扩展**: `Adobe Client Data Layer`
 - **事件类型**: `Data Pushed`
 - **特定事件**: `product-page-view`
@@ -417,14 +457,14 @@ _Experience Platform连接器数据流与标记_
 
 1. 搜索输入
 
-   - **名称**: `Search input`
+   - **名称**: `search input`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `searchInputContext.units[0]`
 
 1. 搜索输入短语
 
-   - **名称**: `Search input phrase`
+   - **名称**: `search input phrase`
    - **扩展**: `Core`
    - **数据元素类型**: `Custom Code`
    - **Open Editor**:
@@ -435,7 +475,7 @@ _Experience Platform连接器数据流与标记_
 
 1. 搜索输入排序
 
-   - **名称**: `Search input sort`
+   - **名称**: `search input sort`
    - **扩展**: `Core`
    - **数据元素类型**: `Custom Code`
    - **Open Editor**:
@@ -454,7 +494,7 @@ _Experience Platform连接器数据流与标记_
 
 1. 搜索输入过滤器
 
-   - **名称**: `Search input filters`
+   - **名称**: `search input filters`
    - **扩展**: `Core`
    - **数据元素类型**: `Custom Code`
    - **Open Editor**:
@@ -488,7 +528,7 @@ _Experience Platform连接器数据流与标记_
 
 1. 搜索请求：
 
-   - **名称**: `Search request`
+   - **名称**: `search request`
    - **扩展**: `Adobe Experience Platform Web SDK`
    - **数据元素类型**: `XDM object`
    - **字段组**: `siteSearch` > `phrase`
@@ -500,7 +540,7 @@ _Experience Platform连接器数据流与标记_
 
 #### 规则 
 
-- **名称**: `Search request sent`
+- **名称**: `search request sent`
 - **扩展**: `Adobe Client Data Layer`
 - **事件类型**: `Data Pushed`
 - **特定事件**: `search-request-sent`
@@ -520,14 +560,14 @@ _Experience Platform连接器数据流与标记_
 
 1. 搜索结果：
 
-   - **名称**: `Search results`
+   - **名称**: `search results`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `searchResultsContext.units[0]`
 
 1. 产品的搜索结果编号：
 
-   - **名称**: `Search result number of products`
+   - **名称**: `search result number of products`
    - **扩展**: `Core`
    - **数据元素类型**: `Custom Code`
    - **Open Editor**:
@@ -538,7 +578,7 @@ _Experience Platform连接器数据流与标记_
 
 1. 搜索结果产品：
 
-   - **名称**: `Search result products`
+   - **名称**: `search result products`
    - **扩展**: `Core`
    - **数据元素类型**: `Custom Code`
    - **Open Editor**:
@@ -556,7 +596,7 @@ _Experience Platform连接器数据流与标记_
 
 1. 搜索结果建议：
 
-   - **名称**: `Search result products`
+   - **名称**: `search result products`
    - **扩展**: `Core`
    - **数据元素类型**: `Custom Code`
    - **Open Editor**:
@@ -570,19 +610,21 @@ _Experience Platform连接器数据流与标记_
 
 1. 搜索响应：
 
-   - **名称**: `Search response`
+   - **名称**: `search response`
    - **扩展**: `Adobe Experience Platform Web SDK`
    - **数据元素类型**: `XDM object`
    - **字段组**: `siteSearch` > `suggestions`. 选择 **提供整个对象**.
+   - **数据元素**: `%search result suggestions%`
    - **字段组**: `siteSearch` > `numberOfResults`
    - **值**: `%search result number of products%`
    - **字段组**: `productListItems`. 选择 **提供整个对象**.
+   - **数据元素**: `%search result products%`
    - **字段组**: `searchResponse` > `value`
    - **值**: **值** = `1`
 
 #### 规则 
 
-- **名称**: `Search Response Received`
+- **名称**: `search response received`
 - **扩展**: `Adobe Client Data Layer`
 - **事件类型**: `Data Pushed`
 - **特定事件**: `search-response-received`
@@ -602,42 +644,42 @@ _Experience Platform连接器数据流与标记_
 
 1. 产品名称：
 
-   - **名称**: `Product name`
+   - **名称**: `product name`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `productContext.name`
 
 1. 产品SKU:
 
-   - **名称**: `Product sku`
+   - **名称**: `product sku`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `productContext.sku`
 
 1. 货币代码：
 
-   - **名称**: `Currency code`
+   - **名称**: `currency code`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `productContext.pricing.currencyCode`
 
 1. 产品特价：
 
-   - **名称**: `Product special price`
+   - **名称**: `product special price`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `productContext.pricing.specialPrice`
 
 1. 产品正常价格：
 
-   - **名称**: `Product regular price`
+   - **名称**: `product regular price`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `productContext.pricing.regularPrice`
 
 1. 产品价格：
 
-   - **名称**: `Product price`
+   - **名称**: `product price`
    - **扩展**: `Core`
    - **数据元素类型**: `Custom Code`
    - **Open Editor**:
@@ -648,14 +690,14 @@ _Experience Platform连接器数据流与标记_
 
 1. 购物车：
 
-   - **名称**: `Cart`
+   - **名称**: `cart`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `shoppingCartContext`
 
 1. 购物车ID:
 
-   - **名称**: `Cart id`
+   - **名称**: `cart id`
    - **扩展**: `Core`
    - **数据元素类型**: `Custom Code`
    - **Open Editor**:
@@ -666,18 +708,26 @@ _Experience Platform连接器数据流与标记_
 
 1. 添加到购物车：
 
-   - **名称**: `Add to cart`
+   - **名称**: `add to cart`
    - **扩展**: `Adobe Experience Platform Web SDK`
    - **数据元素类型**: `XDM object`
    - **字段组**: `productListItems`. 选择 **提供单个项目** ，然后单击 **添加项目** 按钮。 由于此视图是用于PDP，因此可以使用单个项目填充。
+   - **字段组**: `productListItems` > `name`
+   - **名称**: **值** = `%product name%`
+   - **字段组**: `productListItems` > `SKU`
+   - **SKU**: **值** = `%product sku%`
+   - **字段组**: `productListItems` > `priceTotal`
+   - **总价**: **值** = `%product price%`
+   - **字段组**: `productListItems` > `currencyCode`
+   - **货币代码**: **值** = `%currency code%`
    - **字段组**: `commerce` > `cart` > `cartID`
    - **购物车ID**: **值** = `%cart id%`
-   - **字段组**: `commerce` > `productListAdds` > `id`
-   - **唯一标识符**: **值** = `1`
+   - **字段组**: `commerce` > `productListAdds` > `value`
+   - **值**: **值** = `1`
 
 #### 规则 
 
-- **名称**: `Add to cart`
+- **名称**: `add to cart`
 - **扩展**: `Adobe Client Data Layer`
 - **事件类型**: `Data Pushed`
 - **特定事件**: `add-to-cart`
@@ -697,21 +747,21 @@ _Experience Platform连接器数据流与标记_
 
 1. 店面：
 
-   - **名称**: `Storefront`
+   - **名称**: `storefront`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `storefrontInstanceContext`
 
 1. 购物车：
 
-   - **名称**: `Cart`
+   - **名称**: `cart`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `shoppingCartContext`
 
 1. 购物车ID:
 
-   - **名称**: `Cart id`
+   - **名称**: `cart id`
    - **扩展**: `Core`
    - **数据元素类型**: `Custom Code`
    - **Open Editor**:
@@ -722,7 +772,7 @@ _Experience Platform连接器数据流与标记_
 
 1. 产品列表项：
 
-   - **名称**: `Product list items:`
+   - **名称**: `product list items:`
    - **扩展**: `Core`
    - **数据元素类型**: `Custom Code`
    - **Open Editor**:
@@ -757,18 +807,19 @@ _Experience Platform连接器数据流与标记_
 
 1. 查看购物车：
 
-   - **名称**: `View cart`
+   - **名称**: `view cart`
    - **扩展**: `Adobe Experience Platform Web SDK`
    - **数据元素类型**: `XDM object`
    - **字段组**: `productListItems`. 对于 `productListItems`，则可能有多个项目需要预先计算。 选择 **productListItems** > **填充整个数组**.
+   - **数据元素**: `%product list items%`
    - **字段组**: `commerce` > `cart` > `cartID`
    - **购物车ID**: **值** = `%cart id%`
-   - **字段组**: `commerce` > `productListAdds` > `id`
-   - **唯一标识符**: **值** = `1`
+   - **字段组**: `commerce` > `productListViews` > `value`
+   - **值**: **值** = `1`
 
 #### 规则 
 
-- **名称**: `View cart`
+- **名称**: `view cart`
 - **扩展**: `Adobe Client Data Layer`
 - **事件类型**: `Data Pushed`
 - **特定事件**: `shopping-cart-view`
@@ -788,42 +839,42 @@ _Experience Platform连接器数据流与标记_
 
 1. 产品名称：
 
-   - **名称**: `Product name`
+   - **名称**: `product name`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `productContext.name`
 
 1. 产品SKU:
 
-   - **名称**: `Product sku`
+   - **名称**: `product sku`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `productContext.sku`
 
 1. 货币代码：
 
-   - **名称**: `Currency code`
+   - **名称**: `currency code`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `productContext.pricing.currencyCode`
 
 1. 产品特价：
 
-   - **名称**: `Product special price`
+   - **名称**: `product special price`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `productContext.pricing.specialPrice`
 
 1. 产品正常价格：
 
-   - **名称**: `Product regular price`
+   - **名称**: `product regular price`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `productContext.pricing.regularPrice`
 
 1. 产品价格：
 
-   - **名称**: `Product price`
+   - **名称**: `product price`
    - **扩展**: `Core`
    - **数据元素类型**: `Custom Code`
    - **Open Editor**:
@@ -834,14 +885,14 @@ _Experience Platform连接器数据流与标记_
 
 1. 购物车：
 
-   - **名称**: `Cart`
+   - **名称**: `cart`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `shoppingCartContext`
 
 1. 购物车ID:
 
-   - **名称**: `Cart id`
+   - **名称**: `cart id`
    - **扩展**: `Core`
    - **数据元素类型**: `Custom Code`
    - **Open Editor**:
@@ -852,18 +903,26 @@ _Experience Platform连接器数据流与标记_
 
 1. 从购物车中删除：
 
-   - **名称**: `Remove from cart`
+   - **名称**: `remove from cart`
    - **扩展**: `Adobe Experience Platform Web SDK`
    - **数据元素类型**: `XDM object`
    - **字段组**: `productListItems`. 选择 **提供单个项目** ，然后单击 **添加项目** 按钮。 由于此视图是用于PDP，因此可以使用单个项目填充。
+   - **字段组**: `productListItems` > `name`
+   - **名称**: **值** = `%product name%`
+   - **字段组**: `productListItems` > `SKU`
+   - **SKU**: **值** = `%product sku%`
+   - **字段组**: `productListItems` > `priceTotal`
+   - **总价**: **值** = `%product price%`
+   - **字段组**: `productListItems` > `currencyCode`
+   - **货币代码**: **值** = `%currency code%`
    - **字段组**: `commerce` > `cart` > `cartID`
    - **购物车ID**: **值** = `%cart id%`
-   - **字段组**: `commerce` > `productListRemovals`
-   - **唯一标识符**: **值** = `1`
+   - **字段组**: `commerce` > `productListRemovals` > `value`
+   - **值**: **值** = `1`
 
 #### 规则 
 
-- **名称**: `Remove from cart`
+- **名称**: `remove from cart`
 - **扩展**: `Adobe Client Data Layer`
 - **事件类型**: `Data Pushed`
 - **特定事件**: `remove-from-cart`
@@ -883,21 +942,21 @@ _Experience Platform连接器数据流与标记_
 
 1. 店面：
 
-   - **名称**: `Storefront`
+   - **名称**: `storefront`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `storefrontInstanceContext`
 
 1. 购物车：
 
-   - **名称**: `Cart`
+   - **名称**: `cart`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `shoppingCartContext`
 
 1. 购物车ID:
 
-   - **名称**: `Cart id`
+   - **名称**: `cart id`
    - **扩展**: `Core`
    - **数据元素类型**: `Custom Code`
    - **Open Editor**:
@@ -908,7 +967,7 @@ _Experience Platform连接器数据流与标记_
 
 1. 产品列表项：
 
-   - **名称**: `Product list items`
+   - **名称**: `product list items`
    - **扩展**: `Core`
    - **数据元素类型**: `Custom Code`
    - **Open Editor**:
@@ -943,18 +1002,19 @@ _Experience Platform连接器数据流与标记_
 
 1. 启动结帐：
 
-   - **名称**: `Initiate checkout`
+   - **名称**: `initiate checkout`
    - **扩展**: `Adobe Experience Platform Web SDK`
    - **数据元素类型**: `XDM object`
    - **字段组**: `productListItems`. 对于 `productListItems`，则可能有多个项目需要预先计算。 选择 **productListItems** > **填充整个数组**.
+   - **数据元素**: `%product list items%`
    - **字段组**: `commerce` > `cart` > `cartID`
    - **购物车ID**: **值** = `%cart id%`
-   - **字段组**: `commerce` > `checkouts`
-   - **唯一标识符**: **值** = `1`
+   - **字段组**: `commerce` > `checkouts` > `value`
+   - **值**: **值** = `1`
 
 #### 规则 
 
-- **名称**: `Initiate checkout`
+- **名称**: `initiate checkout`
 - **扩展**: `Adobe Client Data Layer`
 - **事件类型**: `Data Pushed`
 - **特定事件**: `initiate-checkout`
@@ -974,21 +1034,21 @@ _Experience Platform连接器数据流与标记_
 
 1. 店面：
 
-   - **名称**: `Storefront`
+   - **名称**: `storefront`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `storefrontInstanceContext`
 
 1. 购物车：
 
-   - **名称**: `Cart`
+   - **名称**: `cart`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `shoppingCartContext`
 
 1. 购物车ID:
 
-   - **名称**: `Cart id`
+   - **名称**: `cart id`
    - **扩展**: `Core`
    - **数据元素类型**: `Custom Code`
    - **Open Editor**:
@@ -999,14 +1059,14 @@ _Experience Platform连接器数据流与标记_
 
 1. 顺序：
 
-   - **名称**: `Order`
+   - **名称**: `order`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `orderContext`
 
 1. 商务订单：
 
-   - **名称**: `Commerce order`
+   - **名称**: `commerce order`
    - **扩展**: `Core`
    - **数据元素类型**: `Custom Code`
    - **Open Editor**:
@@ -1042,7 +1102,7 @@ _Experience Platform连接器数据流与标记_
 
 1. 订单发运：
 
-   - **名称**: ` Order shipping`
+   - **名称**: `order shipping`
    - **扩展**: `Core`
    - **数据元素类型**: `Custom Code`
    - **Open Editor**:
@@ -1057,7 +1117,7 @@ _Experience Platform连接器数据流与标记_
 
 1. 促销活动ID:
 
-   - **名称**: `Promotion id`
+   - **名称**: `promotion id`
    - **扩展**: `Core`
    - **数据元素类型**: `Custom Code`
    - **Open Editor**:
@@ -1068,7 +1128,7 @@ _Experience Platform连接器数据流与标记_
 
 1. 产品列表项：
 
-   - **名称**: `Product list items`
+   - **名称**: `product list items`
    - **扩展**: `Core`
    - **数据元素类型**: `Custom Code`
    - **Open Editor**:
@@ -1103,14 +1163,15 @@ _Experience Platform连接器数据流与标记_
 
 1. 下单：
 
-   - **名称**: `Place order`
+   - **名称**: `place order`
    - **扩展**: `Adobe Experience Platform Web SDK`
    - **数据元素类型**: `XDM object`
    - **字段组**: `productListItems`. 对于 `productListItems`，则可能有多个项目需要预先计算。 选择 **productListItems** > **填充整个数组**.
+   - **数据元素**: `%product list items%`
    - **字段组**: `commerce` > `order`
    - **唯一标识符**: **值** = `%commerce order%`
    - **字段组**: `commerce` > `shipping`
-   - **唯一标识符**: **值** = ` %order shipping%`
+   - **唯一标识符**: **值** = `%order shipping%`
    - **字段组**: `commerce` > `promotionID`
    - **促销ID**: **值** = `%promotion id%`
    - **字段组**: `commerce` > `purchases` > `value`
@@ -1118,7 +1179,7 @@ _Experience Platform连接器数据流与标记_
 
 #### 规则 
 
-- **名称**: `Place order`
+- **名称**: `place order`
 - **扩展**: `Adobe Client Data Layer`
 - **事件类型**: `Data Pushed`
 - **特定事件**: `place-order`

@@ -2,9 +2,9 @@
 title: 指南概述
 description: Adobe Experience Platform connector for Adobe Commerce可将您的Commerce实例连接到其他Adobe Experience Cloud产品。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
+source-git-commit: 7f64e9e4b061e2c0f9813d390adefe11ce98ee87
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -58,4 +58,3 @@ Storefront事件捕获购物者交互，例如 `View Page`, `View Product`, `Ad
 
 - [帮助中心](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;}
 - [支持票证](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target=&quot;_blank&quot;} — 提交票证以接收其他帮助。
-- Slack: `#beacon-ama`
