@@ -2,9 +2,9 @@
 title: “在 [!DNL Quick Checkout] (对于Adobe Commerce扩展)
 description: “了解 [!DNL Quick Checkout] 可以为您的Adobe Commerce实例以及如何成功载入和设置扩展。”
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 05d967573f645db1e8473798df279712d6d2dfc9
+source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '701'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 ## 创建帐户 [!DNL Bolt]
 
-在配置 [!DNL Quick Checkout] 在Adobe Commerce管理员中，需要创建 [沙盒](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;}和 [生产](https://merchant.bolt.com/register){target=&quot;_blank&quot;}中的商户帐户 [!DNL Bolt]. 提供在中创建帐户所需的所有详细信息 [!DNL Bolt].
+在配置 [!DNL Quick Checkout] 在Adobe Commerce管理员中，需要创建 [沙盒](https://merchant-sandbox.bolt.com/register?platform=magento2){target=&quot;_blank&quot;}和 [生产](https://merchant.bolt.com/register?platform=magento2){target=&quot;_blank&quot;}中的商户帐户 [!DNL Bolt]. 提供在中创建帐户所需的所有详细信息 [!DNL Bolt].
 
 请参阅 [测试和验证](../quick-checkout/testing.md) 主题以了解更多信息。
 

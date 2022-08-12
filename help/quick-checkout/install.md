@@ -1,10 +1,10 @@
 ---
 title: '"安装 [!DNL Quick Checkout] (对于Adobe Commerce扩展)'
-description: “请按照以下步骤安装 [!DNL Quick Checkout] 在您的Adobe Commerce项目中。”
+description: “请按照以下步骤进行安装 [!DNL Quick Checkout] 在您的Adobe Commerce项目中。”
 exl-id: e1dabc9a-0ab0-4f8d-98d3-7a32abbedcb8
-source-git-commit: d6cb5ae5437f78cacb0208269598896f5d8523d0
+source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---

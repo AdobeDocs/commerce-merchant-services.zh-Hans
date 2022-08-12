@@ -2,9 +2,9 @@
 title: '"[!DNL Quick Checkout] 先决条件'
 description: “验证您的系统是否满足使用 [!DNL Quick Checkout] 用于Adobe Commerce扩展。”
 exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '113'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ## 兼容性限制
 
-的 [!DNL Quick Checkout] 存在早期接入计划(EAP)的兼容性问题：
+[!DNL Quick Checkout] 现有兼容性问题：
 
 | **问题** | **约束** |
 |----------------|-----------------|
