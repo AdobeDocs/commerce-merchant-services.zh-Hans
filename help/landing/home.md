@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: 文档
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 24a82d4ccf492237f50a7cb08d8c0bcf57b43a61
+source-git-commit: 9dd9564a45aa1de13bbdaed81d79fe136b55cb68
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -79,18 +79,18 @@ Adobe提供服务集合，帮助商户支持其业务的关键组成部分。
 
 的 [Commerce Services Connector](saas.md) 使用API密钥和私钥为Adobe Commerce或Magento Open Source实例提供集成。 对于数据服务(仅限Adobe Commerce)，您还可以在配置中指定数据空间。
 
-## 目录同步
+## 目录服务
 
-对于使用目录数据(产品Recommendations和Live Search)的服务， [目录同步](catalog-sync.md) 流程会持续将产品数据从Commerce Server导出到Commerce Services，以使服务保持最新。
+目录服务提供丰富的只读目录数据，以便在店面上快速、全面地呈现与产品相关的内容，包括产品详细信息页面和产品列表页面。 它为客户提供了优化的产品体验，同时提高了性能、提高了可扩展性并提高了转化率。
 
 ## 新增功能
 
 以下是对文档的最新更改：
 
-* 更新了 [!DNL Live Search] 的发行说明 [2.0版](/help/live-search/release-notes.md).
-* 添加了章节(_边界和阈值_) [安装 [!DNL Live Search]](/help/live-search/install.md) 主题。
-* 添加了 [[!DNL Payment Services] 指南](/help/payment-services/guide-overview.md) 包含新marketplace扩展和托管服务v1.0.0的最新信息。
-* 的 [!DNL Live Search] [性能报告功能板](/help/live-search/performance.md) 提供对购物者使用的搜索词有效性的分析。
-* 在 [[!DNL Product Recommendations]](/help/product-recommendations/overview.md).
-* 添加了 [[!DNL Channel Manager User Guide]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html) 对于那些想通过 [!DNL Commerce] 实例。
-* 添加了 [[!DNL Store Fulfillment User Guide]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html) 对于希望提高在线购买量的客户，购物店(BOPI)客户体验，并为店内和购物店提供支持移动设备的无缝全方位渠道完成工作流。
+* *支付服务* — 添加了有关 [下载扩展](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#download-the-extension)，改进了 [连接到Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html)和 [添加了信息](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html) 连接到“连接服务”主题，以便用户确定其服务是否已连接（如果未连接，则应执行哪些操作）。
+* 现在可用！—[目录服务](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/overview.html) 对于Adobe Commerce
+* *实时搜索* — 在 [安装Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) 和 [入门概述](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) 有关新模块中引入的OpenSearch搜索引擎的主题(有关Adobe Commerce v2.4.6的可用性)。
+* *Experience Platform连接器* — 添加了主题 [关于使用标记](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/using-tags.html) 和主题 [关于如何上传购物者配置文件](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/profile.html) 介绍如何创建用户档案和使用AEP标记的主题。
+* *快速结帐* — 改进 [入门主题](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) 重新排序步骤并包含管理员UI中存在的最新产品更改。
+* *支付服务*—[Apple Pay现已可用](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) 在支付服务中。
+* *Experience Platform连接器* — 添加了 [有关更新XDM模式的主题](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/update-xdm.html) 具有特定于Adobe Commerce的字段名称。
