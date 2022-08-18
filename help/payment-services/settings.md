@@ -4,9 +4,9 @@ description: 安装后，您可以配置 [!DNL Payment Services] 在家里。
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 60d04755b29f107a0543bd71e19ca5b2b6997b4d
+source-git-commit: ecfe1448a0272fe5401090b322f4b69dffd1a8fa
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
@@ -108,6 +108,8 @@ ht-degree: 0%
       >
       > 使用Apple Pay you [必须拥有Apple开发人员帐户](test-validate.md#test-in-sandbox-environment) （包括假信用卡和账单信息）以进行测试。 准备好在沙盒中使用Apple Pay时 *或* 生产模式，在完成任何 [测试和验证](test-validate.md)，请联系您的销售代表以为您的实时商店启用此功能。
 
+      在您打开/关闭对付款按钮或PayPal稍后付款消息的可见性时，该配置的可视预览将显示在“设置”页面的底部。
+
 1. 要启用调试模式，请将 **[!UICONTROL Debug Mode]** 选择器。
 1. 单击 **[!UICONTROL Save]**.
 
@@ -145,6 +147,9 @@ ht-degree: 0%
 1. 修改 **[!UICONTROL Shape]**，选择 `Pill` 或 `Rect`.
 1. 要启用按钮高度选择器，请切换 **[!UICONTROL Responsive button height]** 选择器。
 1. 修改 **[!UICONTROL Label]**，请选择所需的标签选项。
+
+   当您更改布局、颜色、形状、高度和标签的配置选项时，该配置的可视预览将显示在“设置”页面的底部。
+
 1. 单击 **[!UICONTROL Save]**.
 
    如果尝试在不保存更改的情况下离开此视图，则会显示一个模式窗口，提示您放弃更改、继续编辑或保存更改。

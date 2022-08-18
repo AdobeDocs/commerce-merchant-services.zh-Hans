@@ -2,9 +2,9 @@
 title: 付款选项
 description: 设置付款选项以自定义商店客户可用的方法。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 26735a191eab529bc3e8e7fc3d64295d345888d6
+source-git-commit: c7afa798096e07409fb36a3d08f7e5b2a5ce40db
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,10 @@ ht-degree: 0%
 客户可以在其设备上使用触屏ID以使用 [[!DNL Apple Pay]](https://www.apple.com/apple-pay/)，它利用存储在其iOS或macOS设备上的信用卡和借记卡付款凭据。
 
 的 [!DNL Apple Pay] 按钮在产品页面、迷你购物车、购物车和结帐视图中可见。
+
+>[!NOTE]
+>
+> 要使用Apple Pay ，请联系您的销售代表以将其启用到实时商店。
 
 ### [!DNL Pay Later] 按钮
 
