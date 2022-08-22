@@ -2,9 +2,9 @@
 title: 指南概述
 description: Adobe Experience Platform connector for Adobe Commerce可将您的Commerce实例连接到其他Adobe Experience Cloud产品。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 7f64e9e4b061e2c0f9813d390adefe11ce98ee87
+source-git-commit: 2fb44e73a76ad4e1433b2abd88be1304e7e10596
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 Experience Platform连接器扩展允许Adobe Commerce商户将数据发送到Adobe Experience Platform边缘，以便其他Adobe Experience Cloud产品(如Adobe Analytics和Adobe Target)可以使用该商务数据。 通过将您的商务数据连接到Adobe Experience Cloud中的其他产品，您可以执行各种任务，例如分析网站上的用户行为、执行AB测试，以及创建个性化的营销活动。
 
 Storefront事件捕获购物者交互，例如 `View Page`, `View Product`, `Add to Cart`，等等。 捕获的数据不包括个人身份信息(PII)。 所有用户标识符（如Cookie ID和IP地址）都严格匿名化。 [了解更多](https://www.adobe.com/privacy/experience-cloud.html). 请参阅 [storefront事件](events.md).
+
+Experience Platform连接器显示在“商务管理员”下的 **系统** >服务> **Experience Platform连接器**.
+
+![Experience Platform连接器扩展管理视图](assets/epc-adminui.png)
 
 ## 使用Experience Platform连接器的先决条件 {#prereqs}
 
