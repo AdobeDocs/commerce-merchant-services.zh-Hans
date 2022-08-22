@@ -1,14 +1,15 @@
 ---
-title: 概述
-description: '"[!DNL Product Recommendations] 是一款功能强大的营销工具，可用于提高转化率、提高收入和刺激购物者参与度。”'
-source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
+title: 简介 [!DNL Product Recommendations]
+description: '''[!DNL Product Recommendations] 是一款功能强大的营销工具，可用于提高转化率、增加收入和刺激购物者参与。”'
+exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
+source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# 概述
+# 简介 [!DNL Product Recommendations]
 
 “产品推荐”是一款功能强大的营销工具，可用于提高转化率、增加收入和刺激购物者参与。 Adobe Commerce产品推荐由 [Adobe Sensei](https://www.adobe.com/sensei.html)，它使用人工智能和机器学习算法对聚合的访客数据进行深入分析。 此数据与Adobe Commerce目录结合使用后，可提供极具吸引力、相关且个性化的体验。
 
@@ -31,3 +32,9 @@ ht-degree: 0%
 - 从九种不同的智能推荐类型中进行选择，具体选项基于以下方面：基于购物者、基于项目、基于受欢迎程度、趋势和基于相似度
 - 在购物者的店面历程中，使用行为数据对推荐进行个性化
 - 测量与每个推荐相关的关键量度，以帮助您了解推荐的影响
+
+## [!DNL Product Recommendations] 演示
+
+请观看此视频以了解 [!DNL Product Recommendations]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)
