@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: 文档
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 9dd9564a45aa1de13bbdaed81d79fe136b55cb68
+source-git-commit: 4fcab515a816c03320fa035df3e9f6dfdd8643a9
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ Adobe提供服务集合，帮助商户支持其业务的关键组成部分。
 
 ## 目录服务
 
-目录服务提供丰富的只读目录数据，以便在店面上快速、全面地呈现与产品相关的内容，包括产品详细信息页面和产品列表页面。 它为客户提供了优化的产品体验，同时提高了性能、提高了可扩展性并提高了转化率。
+的 [目录服务](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html) 提供丰富的只读目录数据，以便在店面上快速、全面地呈现与产品相关的内容，包括产品详细信息页面和产品列表页面。 它为客户提供了优化的产品体验，同时提高了性能、提高了可扩展性并提高了转化率。
 
 ## 新增功能
 
