@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] 发行说明"'
 description: 查看发行说明，了解有关 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 4489fb72eb6b6066aa2a1360d5d8c9af533e99ee
+source-git-commit: 36eafb5729910440d257ab2d89d16f6b8f01aa68
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,32 @@ ht-degree: 0%
 请参阅 [即将发行的版本](https://devdocs.magento.com/release/) 了解发行计划和支持。
 
 请参阅 [可用性](https://devdocs.magento.com/release/availability.html) ，以了解有关产品兼容性的信息。
+
+## 托管服务更新
+
+这些发行说明描述了在托管服务的常规版本控制功能版本之外发生和发布的功能更改和修复。
+
++++托管服务更新
+
+_2022年8月31日_
+
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-3629 --> 当新商家首次访问“付款服务主页”时，页面现在会立即加载以显示内容，而无需页面刷新。
+
+_2021年8月9日_
+
+![新建](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay现已作为PayPal智能按钮提供。 此 [付款选项](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) 允许客户在其iOS或macOS设备上使用触屏ID功能来选择“Apple付费”。 Apple Pay使用存储在设备上的信用卡和借记卡付款凭据处理付款。
+
+_2021年6月28日_
+
+![新建](../assets/new.svg)<!-- Issue PAY-1720 --> 现在，商店订单争议可在 [订单付款状态报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). 您可以直接从PayPal解决中心导航到争议处理中心，以便对争议采取行动 [!DNL Payment Services].
+
+![新建](../assets/new.svg)<!-- Issue PAY-2854 --> 改进了 [!DNL Payment Services] 主页包括在当前继承级别修改配置的功能，以及对标题和导航显示的改进。
+
+![新建](../assets/new.svg)<!-- Issue PAY-2854 --> 现在，当您从沙盒模式切换到生产模式，以及尝试从视图导航到尚未保存的更新时，您会看到警告。
+
+![新建](../assets/new.svg)<!-- Issue PAY-2761 --> 您现在可以自定义 [订单付款状态报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 和 [派息报告](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 显示或隐藏列时，会显示或隐藏列。
+
++++
 
 ## v1.3.0
 
@@ -46,20 +72,6 @@ _2022年6月29日_
 ![修复的问题](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> 当商务服务凭据无效时， [!DNL Payment Services] 现在，主页将显示在管理员中。 出现凭据错误，提醒您凭据无效。
 
 ![已知问题](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] 当前与不兼容 `commerce-data-export` v101.20及更高版本，这会使其与 [[!DNL Channel manager] 扩展](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
-
-### 托管服务更新
-
-这些发行说明描述了在当前v1.2.0版本与托管服务的先前1.1.0版本之间，在常规版本控制功能发布之外发生的功能更改和修复。
-
-![新建](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay现已作为PayPal智能按钮提供。 此 [付款选项](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) 允许客户在其设备上使用触屏ID来使用Apple Pay，它使用存储在其iOS或macOS设备上的信用卡和借记卡付款凭据。
-
-![新建](../assets/new.svg)<!-- Issue PAY-1720 --> 现在，商店订单争议可在 [订单付款状态报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). 您可以从直接导航到PayPal Resolution Center [!DNL Payment Services] 就纠纷采取行动。
-
-![新建](../assets/new.svg)<!-- Issue PAY-2854 --> 改进了 [!DNL Payment Services] 主页包括在当前继承级别修改配置的功能，以及改进标题和导航的显示。
-
-![新建](../assets/new.svg)<!-- Issue PAY-2854 --> 现在，当您从沙盒模式切换到生产模式，以及尝试从视图导航到尚未保存的更新时，您会看到警告。
-
-![新建](../assets/new.svg)<!-- Issue PAY-2761 --> 您现在可以自定义 [订单付款状态报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 和 [派息报告](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 显示或隐藏列时，会显示或隐藏列。
 
 ## v1.1.0
 
