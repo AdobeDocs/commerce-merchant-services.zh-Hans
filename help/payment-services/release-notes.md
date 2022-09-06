@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] 发行说明"'
 description: 查看发行说明，了解有关 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 36eafb5729910440d257ab2d89d16f6b8f01aa68
+source-git-commit: 1f88c66d0c12dcde2c8fdde1dd3b4838ae6d462d
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '986'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,12 @@ _2021年6月28日_
 ![新建](../assets/new.svg)<!-- Issue PAY-2761 --> 您现在可以自定义 [订单付款状态报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 和 [派息报告](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 显示或隐藏列时，会显示或隐藏列。
 
 +++
+
+## v1.3.1
+
+_2022年9月6日_
+
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-3663 --> 现在，当商家的商店捕获使用非全球货币授权的订单时，捕获过程将完成且不显示错误。
 
 ## v1.3.0
 
