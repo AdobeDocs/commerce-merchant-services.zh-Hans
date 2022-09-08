@@ -2,9 +2,9 @@
 title: “在 [!DNL Quick Checkout] (对于Adobe Commerce扩展)
 description: “了解 [!DNL Quick Checkout] 可以为您的Adobe Commerce实例以及如何成功载入和设置扩展。”
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
+source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '749'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,8 @@ ht-degree: 0%
 # [!DNL Quick Checkout] 载入
 
 开始使用 [!DNL Quick Checkout] 对于Adobe Commerce扩展，您必须完成一些入门步骤，才能将您的实例与我们的签出功能连接起来。
+
+![快速结帐](assets/overview-admin-panel.png)
 
 1. [获取扩展](#get-extension).
 1. [使用创建生产或沙盒商户帐户 [!DNL Bolt]](#create-account-with-bolt). 提供验证您的身份所需的所有信息。
@@ -21,6 +23,16 @@ ht-degree: 0%
 1. [定义服务设置](#complete-admin-configuration) 配置 [!DNL Quick Checkout] 扩展。
 1. [单击保存配置](#enable-live-quick-checkout) 按钮以启用扩展。
 1. 将范围切换为 **主网站** 和 [单击配置回调URL](#check-shopper-valid-account) 按钮。
+
+如果启用了Gainsight，则会触发 **参观** 按钮 [!DNL Quick Checkout] 管理面板关于 [!DNL Quick Checkout] 对于Adobe Commerce:
+
+1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** >高级：
+
+   ![快速结帐](assets/gainsight-admin.png)
+
+如果未启用Gainsight，请继续入门步骤。
+
+请参阅 [[!DNL Quick Checkout] “管理员”面板](../quick-checkout/admin-panel.md) 主题以了解更多信息。
 
 >[!NOTE]
 >

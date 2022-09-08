@@ -1,10 +1,10 @@
 ---
-title: “结帐流程”
+title: “Adobe Commerce中的结帐流程”
 description: “概述 [!DNL Quick Checkout] 在Adobe Commerce流动。”
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 05d967573f645db1e8473798df279712d6d2dfc9
+source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
