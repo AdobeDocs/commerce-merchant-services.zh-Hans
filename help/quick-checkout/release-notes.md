@@ -1,10 +1,10 @@
 ---
-title: '''[!DNL Quick Checkout] 发行说明'''
+title: '[!DNL Quick Checkout] 发行说明'
 description: 查看发行说明，了解有关 [!DNL Quick Checkout] 版本。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
+source-git-commit: 4dd8008901dbdbfaf1de5b1aa166dc70dd02440f
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '531'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,28 @@ ht-degree: 1%
 请参阅 [即将发行的版本](https://devdocs.magento.com/release/) 了解发行计划和支持。
 
 请参阅 [可用性](https://devdocs.magento.com/release/availability.html) ，以了解有关产品兼容性的信息。
+
+## v1.2.0
+
+_2022年9月8日_
+
+![新建](../assets/new.svg)<!-- Issue BOLT-341 --> 正式发布 — [[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) 现在与Adobe Commerce版本2.4.5兼容。
+
+![新建](../assets/new.svg)<!-- Issue BOLT-328 --> [!DNL Quick Checkout] 对于Adobe Commerce和Magento Open Source，提供了 [管理面板视图](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) 以及设置和使用扩展所需的所有必要信息。
+
+![新建](../assets/new.svg)<!-- Issue BOLT-364 --> 管理员用户 [可以设置用户角色和权限](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/user-roles-setup.html) 允许其他用户查看 [!DNL Quick Checkout] 管理面板。
+
+![新建](../assets/new.svg)<!-- Issue BOLT-377 --> [!DNL Quick Checkout] 管理员面板现在包含包含特定部分(如 **概述**, **报表**&#x200B;和 **设置**.
+
+![新建](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] “管理员面板”添加了一个欢迎用小组件，该小组件提供了由Gainsight提供支持的功能导览。
+
+![新建](../assets/new.svg)<!-- Issue BOLT-378 --> [!DNL Quick Checkout] [管理面板视图](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) 合并 **配置** 步骤，当API和可发布密钥未在 [设置](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 中。
+
+![新建](../assets/new.svg)<!-- Issue BOLT-380 --> [!DNL Quick Checkout] [管理面板视图](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) 合并 **资源** 部分进行更改。
+
+![新建](../assets/new.svg)<!-- Issue BOLT-381 --> [!DNL Quick Checkout] [管理面板视图](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) 包括 **帮助和支持** 中。
+
+![修复的问题](../assets/fix.svg)<!-- Issue BOLT-369 --> 的 [[!DNL Quick Checkout] 管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 现在在页脚中显示扩展版本。
 
 ## v1.1.0
 
