@@ -3,9 +3,9 @@ user-guide-title: '[!DNL Payment Services] 指南'
 user-guide-description: 本指南提供了有关安装和配置的详细信息 [!DNL Payment Services] , [!DNL Adobe Commerce] 或 [!DNL Magento Open Source] 存储。
 breadcrumb-title: '[!DNL Payment Services] 指南'
 index: true
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 1186b4e52f1d613332a7862c58f482c2591e29a8
 workflow-type: tm+mt
-source-wordcount: '71'
+source-wordcount: '73'
 ht-degree: 2%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 2%
 - 财务报告 {#reporting}
    - [订单付款状态报表](order-payment-status.md)
    - [派息报告](payouts.md)
+   - [可用数据](data.md)
 - 管理付款 {#manage}
    - [退款](refunds.md)
    - [空隙](voids.md)
