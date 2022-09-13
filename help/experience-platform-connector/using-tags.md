@@ -2,9 +2,9 @@
 title: 使用Adobe Experience Platform标记收集商务数据
 description: 了解如何使用Adobe Experience Platform标记收集商务数据。
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: 4af50842c883d3aef7bf50d6a68b82321b784591
+source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2504'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ _Experience Platform连接器数据流与标记_
 
 对于下面描述的每个Adobe Commerce事件，在标记中重复上述步骤。
 
-### 可用事件
+## 可用事件
 
 对于以下每个事件，请按照上述步骤将Adobe Commerce事件映射到您的XDM。
 
@@ -130,6 +130,8 @@ _Experience Platform连接器数据流与标记_
 - [“placeOrder”](#placeorder)
 
 ### signOut {#signout}
+
+购物者尝试注销时触发。
 
 #### 数据元素
 
@@ -158,6 +160,8 @@ _Experience Platform连接器数据流与标记_
 - **XDM数据**: `%sign-out%`
 
 ### signIn {#signin}
+
+购物者尝试登录时触发。
 
 #### 数据元素
 
@@ -216,6 +220,8 @@ _Experience Platform连接器数据流与标记_
 
 ### createAccount {#createaccount}
 
+购物者尝试创建帐户时触发。
+
 #### 数据元素
 
 创建以下数据元素：
@@ -272,6 +278,8 @@ _Experience Platform连接器数据流与标记_
 - **XDM数据**: `%create account%`
 
 ### editAccount {#editaccount}
+
+当购物者尝试编辑帐户时触发。
 
 #### 数据元素
 
@@ -330,6 +338,8 @@ _Experience Platform连接器数据流与标记_
 
 ### pageView {#pageview}
 
+加载任何页面时触发。
+
 #### 数据元素
 
 创建以下数据元素：
@@ -357,6 +367,8 @@ _Experience Platform连接器数据流与标记_
 
 ### productView {#productview}
 
+加载任何产品页面时触发。
+
 #### 数据元素
 
 创建以下数据元素：
@@ -374,6 +386,13 @@ _Experience Platform连接器数据流与标记_
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `productContext.sku`
+
+1. 产品图像URL:
+
+   - **名称**: `product image`
+   - **扩展**: `Adobe Client Data Layer`
+   - **数据元素类型**: `Data Layer Computed State`
+   - **[可选] 路径**: `productContext.mainImageUrl`
 
 1. 产品货币：
 
@@ -432,6 +451,8 @@ _Experience Platform连接器数据流与标记_
    - **总价**: **值** = `%product price%`
    - **字段组**: `productListItems` > `currencyCode`
    - **货币代码**: **值** = `%currency code%`
+   - **字段组**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **值** = `%product image%`
    - **字段组**: `commerce` > `productViews` > `value`
    - **值**: **值** = `1`
 
@@ -450,6 +471,8 @@ _Experience Platform连接器数据流与标记_
 - **XDM数据**: `%product view%`
 
 ### searchRequestSent {#searchrequestsent}
+
+由“键入时搜索”弹出窗口中的事件和搜索结果页面上的事件触发。
 
 #### 数据元素
 
@@ -554,6 +577,8 @@ _Experience Platform连接器数据流与标记_
 
 ### searchResponseReceived {#searchresponsereceived}
 
+在实时搜索返回“键入时搜索”弹出窗口或搜索结果页面的结果时触发。
+
 #### 数据元素
 
 创建以下数据元素：
@@ -608,6 +633,13 @@ _Experience Platform连接器数据流与标记_
    return suggestions;
    ```
 
+1. 产品图像URL:
+
+   - **名称**: `product image`
+   - **扩展**: `Adobe Client Data Layer`
+   - **数据元素类型**: `Data Layer Computed State`
+   - **[可选] 路径**: `productContext.mainImageUrl`
+
 1. 搜索响应：
 
    - **名称**: `search response`
@@ -618,6 +650,8 @@ _Experience Platform连接器数据流与标记_
    - **字段组**: `siteSearch` > `numberOfResults`
    - **值**: `%search result number of products%`
    - **字段组**: `productListItems`. 选择 **提供整个对象**.
+   - **字段组**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **值** = `%product image%`
    - **数据元素**: `%search result products%`
    - **字段组**: `searchResponse` > `value`
    - **值**: **值** = `1`
@@ -637,6 +671,8 @@ _Experience Platform连接器数据流与标记_
 - **XDM数据**: `%search response%`
 
 ### addToCart {#addtocart}
+
+在产品添加到购物车时或每次购物车中产品的数量增加时触发。
 
 #### 数据元素
 
@@ -669,6 +705,13 @@ _Experience Platform连接器数据流与标记_
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `productContext.pricing.specialPrice`
+
+1. 产品图像URL:
+
+   - **名称**: `product image`
+   - **扩展**: `Adobe Client Data Layer`
+   - **数据元素类型**: `Data Layer Computed State`
+   - **[可选] 路径**: `productContext.mainImageUrl`
 
 1. 产品正常价格：
 
@@ -719,6 +762,8 @@ _Experience Platform连接器数据流与标记_
    - **字段组**: `productListItems` > `priceTotal`
    - **总价**: **值** = `%product price%`
    - **字段组**: `productListItems` > `currencyCode`
+   - **字段组**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **值** = `%product image%`
    - **货币代码**: **值** = `%currency code%`
    - **字段组**: `commerce` > `cart` > `cartID`
    - **购物车ID**: **值** = `%cart id%`
@@ -741,6 +786,8 @@ _Experience Platform连接器数据流与标记_
 
 ### viewCart {#viewcart}
 
+加载任何购物车页面时触发。
+
 #### 数据元素
 
 创建以下数据元素：
@@ -752,12 +799,19 @@ _Experience Platform连接器数据流与标记_
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `storefrontInstanceContext`
 
-1. 购物车：
+1. 产品图像URL:
 
+   - **名称**: `product image`
+   - **扩展**: `Adobe Client Data Layer`
+   - **数据元素类型**: `Data Layer Computed State`
+   - **[可选] 路径**: `productContext.mainImageUrl`
+   1. 购物车：
    - **名称**: `cart`
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `shoppingCartContext`
+
+
 
 1. 购物车ID:
 
@@ -812,12 +866,14 @@ _Experience Platform连接器数据流与标记_
    - **数据元素类型**: `XDM object`
    - **字段组**: `productListItems`. 对于 `productListItems`，则可能有多个项目需要预先计算。 选择 **productListItems** > **填充整个数组**.
    - **数据元素**: `%product list items%`
+   - **字段组**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **值** = `%product image%`
    - **字段组**: `commerce` > `cart` > `cartID`
    - **购物车ID**: **值** = `%cart id%`
    - **字段组**: `commerce` > `productListViews` > `value`
    - **值**: **值** = `1`
 
-#### 规则 
+#### 规则
 
 - **名称**: `view cart`
 - **扩展**: `Adobe Client Data Layer`
@@ -832,6 +888,8 @@ _Experience Platform连接器数据流与标记_
 - **XDM数据**: `%view cart%`
 
 ### removeFromCart {#removefromcart}
+
+从购物车中删除产品时或每次购物车中产品数量减少时触发。
 
 #### 数据元素
 
@@ -936,6 +994,8 @@ _Experience Platform连接器数据流与标记_
 
 ### initiateCheckout {#initiatecheckout}
 
+购物者单击结帐按钮时触发。
+
 #### 数据元素
 
 创建以下数据元素：
@@ -946,6 +1006,13 @@ _Experience Platform连接器数据流与标记_
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `storefrontInstanceContext`
+
+1. 产品图像URL:
+
+   - **名称**: `product image`
+   - **扩展**: `Adobe Client Data Layer`
+   - **数据元素类型**: `Data Layer Computed State`
+   - **[可选] 路径**: `productContext.mainImageUrl`
 
 1. 购物车：
 
@@ -1007,6 +1074,8 @@ _Experience Platform连接器数据流与标记_
    - **数据元素类型**: `XDM object`
    - **字段组**: `productListItems`. 对于 `productListItems`，则可能有多个项目需要预先计算。 选择 **productListItems** > **填充整个数组**.
    - **数据元素**: `%product list items%`
+   - **字段组**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **值** = `%product image%`
    - **字段组**: `commerce` > `cart` > `cartID`
    - **购物车ID**: **值** = `%cart id%`
    - **字段组**: `commerce` > `checkouts` > `value`
@@ -1028,6 +1097,8 @@ _Experience Platform连接器数据流与标记_
 
 ### placeOrder {#placeorder}
 
+购物者下订单时触发。
+
 #### 数据元素
 
 创建以下数据元素：
@@ -1038,6 +1109,13 @@ _Experience Platform连接器数据流与标记_
    - **扩展**: `Adobe Client Data Layer`
    - **数据元素类型**: `Data Layer Computed State`
    - **[可选] 路径**: `storefrontInstanceContext`
+
+1. 产品图像URL:
+
+   - **名称**: `product image`
+   - **扩展**: `Adobe Client Data Layer`
+   - **数据元素类型**: `Data Layer Computed State`
+   - **[可选] 路径**: `productContext.mainImageUrl`
 
 1. 购物车：
 
@@ -1168,6 +1246,8 @@ _Experience Platform连接器数据流与标记_
    - **数据元素类型**: `XDM object`
    - **字段组**: `productListItems`. 对于 `productListItems`，则可能有多个项目需要预先计算。 选择 **productListItems** > **填充整个数组**.
    - **数据元素**: `%product list items%`
+   - **字段组**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **值** = `%product image%`
    - **字段组**: `commerce` > `order`
    - **唯一标识符**: **值** = `%commerce order%`
    - **字段组**: `commerce` > `shipping`
