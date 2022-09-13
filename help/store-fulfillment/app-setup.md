@@ -4,9 +4,9 @@ description: 设置 [!DNL Store Assist] 要管理端到端商店的在线购买�
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Store Assist应用程序需要两种类型的配置：
 
    - **从商店取消** — 指定是否可以从商店取消订单以及哪些角色具有取消权限
 
-   - **订单清理窗口** — 指定在重新库存之前，挑库单在计划装货时间之前在暂存状态中停留的时间（例如三天）。
+   - **订单清理窗口** — 指定 [预计提货提前期](enable-general.md#delivery-method-title-configuration) 在重新存储之前，已选定订单会保留在暂存环境中 — 例如，三天。 默认值为7天。 如果此配置处于打开状态，则此时间过期时订单将自动取消。 商家会收到取消电子邮件。
 
    - 自定义应用程序中的所有说明（挑选、暂存、分手）。
 

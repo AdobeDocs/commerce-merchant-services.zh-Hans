@@ -1,15 +1,15 @@
 ---
-title: “存储协助履行工作流”
-description: “了解商店辅助应用程序中提供的Pick、Stage、Hand-Off和Orders模块。 这些模块为BOPIS订单启用了端到端商店履行工作流。 Store Associates使用这些模块来管理和向客户交付商店提货单。”
+title: 存储协助履行工作流
+description: 了解商店辅助应用程序中提供的Pick、Stage、Hand-Off和Orders模块。 这些模块为BOPIS订单启用了端到端商店履行工作流。 Store Associates使用这些模块来管理和向客户交付商店提货单。
 role: User
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
+source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
-
 
 # 存储协助履行工作流
 
@@ -17,7 +17,7 @@ Store Assist应用程序为Store Associates提供四个模块，用于管理在�
 
 - **[挑选](#pick-module)** — 全面了解所有已订购项目和工具，以确保选取正确的项目和正确数量。 商店关联商可以同时选取一个或多个订单以提高效率。
 
-- **[阶段](#stage-module)** — 输入客户前往商店时订单的位置，以便Store Associates可以轻松找到它们以进行订单切换
+- **[阶段](#stage-module)** — 输入客户前往商店时订单的位置，以便Store Associates可以轻松找到它们以进行订单切换。
 
 - **[提交](#hand-off-module)** — 客户到达商店后获取实时通知，以最大程度地缩短等待时间并无缝切换订单
 
@@ -65,3 +65,5 @@ Store Assist应用程序为Store Associates提供四个模块，用于管理在�
 ## 订单模块
 
 “订单”模块显示所有现有订单及其状态。 当客户调用检查其订单时， Store Associates可以通过查找订单号或从“订单”模块中搜索来快速查找信息。
+
+Store Associates还可以从Store Assist应用程序的“订单”页面中取消订单。

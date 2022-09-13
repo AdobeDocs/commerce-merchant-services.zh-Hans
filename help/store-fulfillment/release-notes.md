@@ -2,10 +2,10 @@
 title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] 发行说明'
 description: “查看发行说明，了解有关 [!DNL Store Fulfillment by Walmart Commerce Technologies] 版本。”
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 5e7dcc48c65b2f3f75a33c6e556dcef882a80549
+source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 4%
+source-wordcount: '99'
+ht-degree: 5%
 
 ---
 
@@ -17,9 +17,10 @@ ht-degree: 4%
 ![修复的问题](../assets/fix.svg) 修复和改进功能
 ![已知问题](../assets/bug.svg) 已知问题
 
-## v1.1.0
-
-![修复的问题](../assets/fix.svg) <!-- Issue WM-x -->简化了 [签入体验配置](check-in-experience-setup.md) ，方法是添加默认的汽车制作和模型选择。 在以前的版本中，商家必须手动配置汽车的制造和模型选择。
+<!-- ## v1.1 -->
+<!--
+![Fixed issue](../assets/fix.svg)-->
+<!-- Simplified the [Check-in experience configuration](check-in-experience-setup.md) for the Store Assist app by adding default car make and model selections. In the previous version, merchants had to manually configure the car make and model selections.-->
 
 ## v1.0.0
 
