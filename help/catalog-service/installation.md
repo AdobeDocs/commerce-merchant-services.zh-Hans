@@ -1,13 +1,13 @@
 ---
-title: '"入门和安装"'
-description: “了解如何安装 [!DNL Catalog Service]"
-source-git-commit: 7f6955ffc52669ff3b95957642b3a115bf1eb741
+title: 入门和安装
+description: 了解如何安装 [!DNL Catalog Service]
+exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
+source-git-commit: 595d7644374b066b7608748cf09df1c41bf0eaee
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
-
 
 # 入门和安装
 
@@ -46,19 +46,19 @@ ht-degree: 0%
 
    ```json
    "require": {
-     "magento/magento-cloud-metapackage": ">=2.4.3 <2.4.4",
-     "magento/composer-root-update-plugin": "~1.1",
-     "magento/saas-export": "^101.3.1",
-     "magento/commerce-data-export": "^101.2.4",    
-     "magento/commerce-data-export-ee": "^101.2.4",
-     "magento/services-id": "^3.0.0",
-     "magento/services-connector": "1.2.1"
-   }
+    "magento/composer-root-update-plugin": "^2.0.2",
+    "magento/magento-cloud-metapackage": ">=2.4.5 <2.4.6",
+    "magento/saas-export": "^101.4.0",
+    "magento/commerce-data-export": "^101.3.1",
+    "magento/commerce-data-export-ee": "^101.3.1",
+    "magento/services-id": "^3.0.1",
+    "magento/services-connector": "1.2.1"
+    }
    ```
 
    <!-- What if the customer already has other services installed, and some of these lines are already present? Do they need to delete the duplications? What if the version numbers are different? -->
 
-1. 更新依赖项并安装扩展：
+1. 在本地测试新配置并更新依赖项：
 
    ```bash
    composer update
@@ -66,7 +66,7 @@ ht-degree: 0%
 
    命令会更新所有依赖项。
 
-1. 提交并推送更改。
+1. 提交并推送更改，以便 `composer.json` 和 `composer.lock`.
 
 ### 本地
 
@@ -110,4 +110,8 @@ ht-degree: 0%
 
 安装后 [!DNL Catalog Service]，则必须配置 [Commerce Services Connector](../landing/saas.md) 指定API密钥并选择SaaS数据空间。
 
-要确保目录导出正常运行，请确认 [cron作业](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) 和 [索引器](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) 运行，并且产品馈送索引器设置为按计划更新。
+要确保目录导出正常运行，请执行以下操作：
+
+- 确认 [cron作业](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) 正在运行。
+- 验证 [索引器](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) 正在运行。
+- 确保 `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`和 `Product Variant Feed` 索引器设置为 `Update by Schedule`.
