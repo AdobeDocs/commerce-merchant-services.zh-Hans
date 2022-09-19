@@ -2,9 +2,9 @@
 title: 安装 [!DNL Payment Services]
 description: 安装Payments Services扩展。
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: 43599d041899251f7716e215284b6eff9312943d
+source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 安装扩展
 
-您可以安装 [!DNL Payment Services] 扩展 [!DNL Adobe Commerce] 云基础架构和本地实例上，它们与MagentoID([马吉德](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions))，其中包含编辑器键。 [!DNL Magento] 开源客户使用内部部署说明。
+您可以安装 [!DNL Payment Services] 扩展 [!DNL Adobe Commerce] 云基础架构和内部实例上，这些实例已链接到您的商务帐户 [马吉德](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) 在注册过程中提供。 [!DNL Magento Open Source] 客户使用内部指令。
 
 在初始安装时，编辑器会使用这些键 [!DNL Adobe Commerce]，或者在以前未将编辑器键保存到 `auth.json` 文件。
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ### 内部部署和其他配置
 
-此方法用于安装 [!DNL Payment Services] 内部实例和的扩展 [!DNL Magento] 开源客户。
+此方法用于安装 [!DNL Payment Services] 内部实例和的扩展 [!DNL Magento Open Source] 客户。
 
 1. 要获取该扩展，请运行以下命令：
 
@@ -114,7 +114,7 @@ ht-degree: 0%
 Could not find a matching version of package magento/payment-services. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
 ```
 
-验证您的编辑器键是否已链接到在 [!DNL Payment Services] 注册。
+确认您的编辑器键已链接到 `MageID` 在 [!DNL Payment Services] 注册。
 
 要查看配置了哪些编辑器键：
 
@@ -130,7 +130,7 @@ Could not find a matching version of package magento/payment-services. Check the
    cat /path/to/auth.json
    ```
 
-1. 请参阅 [哪些键与您的MagentoID关联](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+1. 请参阅 [哪些键与您的商务帐户关联 `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
 
 ### 内存不足，PHP不能使用
 

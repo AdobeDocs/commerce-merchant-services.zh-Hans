@@ -1,7 +1,7 @@
 ---
-source-git-commit: f03ca23f659d08d48715a4bd9d4d32a53c4a3a95
+source-git-commit: bd428fcbd592de91054710a50bfea8d10905f734
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## 我们的承诺
 
-为了促进开放且友好的环境，我们作为参与者和维护者保证：无论年龄、体型、身体健全与否、民族、性别认同与表达（方式）、经验水平、国籍、个人形象、种族、宗教或性认同与性取向，参与者在我们的项目和社区中都免于骚扰。
+为了促进一个开放且友好的环境，参与者和维护者保证：无论年龄、体型、身体健全与否、民族、性别认同与表达（方式）、经验水平、国籍、个人形象、种族、宗教或性认同与取向，参与者在我们的项目和社区中都免于骚扰。
 
 ## 我们的标准
 
@@ -41,11 +41,11 @@ ht-degree: 0%
 
 ## 强制执行
 
-如要举报辱骂、骚扰或其他不可接受的行为事件，请通过Grp-opensourceoffice@adobe.com联系项目团队。 所有投诉都将接受审查和调查，并作出必要且适当的回应。 项目团队有义务为事件举报者保密。
+如要举报辱骂、骚扰或其他不可接受的行为事件，请通过Grp-opensourceoffice@adobe.com联系项目团队。 我们会对所有投诉进行审查和调查，并做出必要且适合具体情况的回应。 项目团队有义务为事件举报者保密。
 具体执行政策的进一步细节可能会单独发布。
 
 不善意遵守或执行本行为准则的项目维护者，可根据项目其他领导成员的决定，面临暂时或永久的处罚。
 
 ## 归因
 
-本行为准则根据 [参与者公约](https://contributor-covenant.org)，版本1.4，位于 [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+本行为准则根据 [参与者公约](https://www.contributor-covenant.org/)，版本1.4，位于 [https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/](https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/).

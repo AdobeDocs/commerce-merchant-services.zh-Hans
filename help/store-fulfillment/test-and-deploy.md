@@ -4,9 +4,9 @@ description: 测试计划以验证“商店完成”功能。 测试涵盖库存
 role: User, Admin
 level: Intermediate
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
 workflow-type: tm+mt
-source-wordcount: '2652'
+source-wordcount: '2657'
 ht-degree: 0%
 
 ---
@@ -96,12 +96,12 @@ ht-degree: 0%
 <tr>
 <td><strong>新订单推送、API同步 — 客户订单</strong></td>
 <td>客户提交商店提货单。</td>
-<td><ul><li>在“管理员订单”视图中， <strong>Adobe Commerce管理员用户</strong> 看到“订单同步”状态更新为 <code>Sent</code></li><li>订单详细信息日志包含该消息 <code>Order was sent to BOPIS solution for sync, it’s not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>在“管理员订单”视图中， <strong>Adobe Commerce管理员用户</strong> 看到“订单同步”状态更新为 <code>Sent</code></li><li>订单详细信息日志包含该消息 <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>新订单推送、API同步 — 管理员提交订单</strong></td>
 <td>安Adobe Commerce <strong>管理员</strong> 提交提货单。</td>
-<td><ul><li>在“管理员订单”视图中，订单同步状态将更新为 <code>Sent</code>.</li><li>订单详细信息日志包含该消息 <code>Order was sent to BOPIS solution for sync, it’s not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>在“管理员订单”视图中，订单同步状态将更新为 <code>Sent</code>.</li><li>订单详细信息日志包含该消息 <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>新订单推送、例外队列<strong></td>
@@ -161,7 +161,7 @@ ht-degree: 0%
 <li>收到订单退款电子邮件： <code>$x amount was refunded</code></li>
 <li>订单状态为 <code>Processing</code>.</li>
 <li>在Adobe Commerce中创建的贷项通知单（等到cron工作完成时再执行）。</li>
-<li>如果未选取某些项目，请确认 [!UICONTROL Ready for Pickup] 将显示包含“nilpick or refund”部分的电子邮件。 <code>DISPLAY COMMENT HISTORY</code> 显示 <code>Order is ready for pickup, but some items not available.</code>.</li>
+<li>如果未选取某些项目，请确认 [!UICONTROL Ready for Pickup] 将显示包含“零挑库或退款”部分的电子邮件。 <code>DISPLAY COMMENT HISTORY</code> 显示 <code>Order is ready for pickup, but some items not available.</code>.</li>
 <li><code>CUSTOMER NOTIFIED</code> 标志 <code>true</code>.</li>
 </ul>
 </td>
@@ -566,25 +566,25 @@ Adobe Commerce产品类型的测试方案可验证客户是否看到不同产品
 <tr>
 <td>
 <strong>单次挑选 — 快乐路径、曲边拾取</strong></td>
-<td>挑选单个和多数量的物料。 不吃尼尔鱼，也吃冰糖（有暂存）。
+<td>挑选单个和多数量的物料。 没有零挑库，并且进行分拣（具有暂存）。
 </td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>多顺序挑选 — 快乐路径、曲边拾取</strong></td>
-<td>单个和多数量项目。 不吃牛奶，吃牛奶（有暂存）</td>
+<td>单个和多数量项目。 没有无挑库，并且进行了分拣（具有暂存）</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>单笔订单领料 — 店内快捷路径领料</strong></td>
-<td>单个和多数量项目。 不吃牛，不吃牛，不吃牛（带暂存）</td>
+<td>单个和多数量项目。 无零挑库和店内提货（带暂存）</td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>多订单挑库 — 快乐路径、店内提货</strong></td>
-<td>挑选单个和多数量的物料。 不吃尼尔鱼，也吃冰糖（有暂存）。</td>
+<td>挑选单个和多数量的物料。 没有零挑库，并且进行分拣（具有暂存）。</td>
 <td></td>
 </tr>
 <tr>

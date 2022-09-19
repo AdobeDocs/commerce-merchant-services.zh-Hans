@@ -2,7 +2,7 @@
 title: 入门和安装
 description: 了解如何安装 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 595d7644374b066b7608748cf09df1c41bf0eaee
+source-git-commit: 8f7fa990b422e77c1b3c1d801faefac1d0ae8e01
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 您可以安装 [!DNL Catalog Service] 扩展，适用于云基础架构和本地实例上的Adobe Commerce。
 
-的 [!DNL Catalog Service] 随编辑器键一起安装，这些键链接到MagentoID([马吉德](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) 在注册过程中提供。 在初始安装时，编辑器会使用这些键 [!DNL Adobe Commerce]，或者在以前未将编辑器键保存到 `auth.json` 文件。
+的 [!DNL Catalog Service] 随编辑器密钥一起安装，这些密钥已链接到商务帐户 [马吉德](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) 在注册过程中提供。 在初始安装时，编辑器会使用这些键 [!DNL Adobe Commerce]，或者在以前未将编辑器键保存到 `auth.json` 文件。
 
 请参阅 [获取您的身份验证密钥](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 有关获取编辑器键的更多信息。
 

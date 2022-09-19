@@ -4,7 +4,7 @@ description: 安装后，您可以配置 [!DNL Payment Services] 在存储配置
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 6f13c39f915c382e99c747d9a88e16ed10bebaf3
+source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 0%
@@ -105,7 +105,7 @@ ht-degree: 0%
 | [!UICONTROL PayPal Pay Later Enabled] | 商店视图 | 在显示付款按钮的情况下，启用或禁用以后付款选项外观。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | 网站 | 启用或禁用调试模式。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons on product detail page] | 商店视图 | 启用或禁用 [!DNL PayPal Smart Buttons] 在产品详细信息页面上。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show buttons in mini cart preview] | 商店视图 | 启用或禁用 [!DNL PayPal Smart Buttons] 在小型图预览中。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show buttons in mini-cart preview] | 商店视图 | 启用或禁用 [!DNL PayPal Smart Buttons] 在mini-cart预览中。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons on cart page] | 商店视图 | 启用或禁用 [!DNL PayPal Smart Buttons] 在购物车页面上。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### [!DNL PayPal Smart Buttons] 样式选项

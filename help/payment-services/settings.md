@@ -4,9 +4,9 @@ description: 安装后，您可以配置 [!DNL Payment Services] 在家里。
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: ecfe1448a0272fe5401090b322f4b69dffd1a8fa
+source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ ht-degree: 0%
 1. 至 [设置付款操作](production.md#set-payment-services-as-payment-method)，切换 **[!UICONTROL Payment action]** to `Authorize` 或 `Authorize and Capture`.
 1. 使用切换选择器启用或禁用 [!DNL PayPal smart button] 显示功能：
    - **[!UICONTROL Show PayPal buttons on product detail page]**
-   - **[!UICONTROL Show PayPal buttons in mini cart preview]**
+   - **[!UICONTROL Show PayPal buttons in mini-cart preview]**
    - **[!UICONTROL Show PayPal buttons on cart page]**
    - **[!UICONTROL Show PayPal Pay Later button]**
    - **[!UICONTROL Show PayPal Pay Later message]**
@@ -124,7 +124,7 @@ ht-degree: 0%
 | [!UICONTROL Title] | 商店视图 | 在结帐期间，在“付款方法”视图中添加要显示为此付款选项标题的文本。 选项：文本字段 |
 | [!UICONTROL Payment Action] | 网站 | 的 [付款操作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;}。 选项： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show PayPal buttons on product detail page] | 商店视图 | 启用或禁用 [!DNL PayPal Smart Buttons] 在产品详细信息页面上。 选项： [!UICONTROL  Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal buttons in mini cart preview] | 商店视图 | 启用或禁用 [!DNL PayPal Smart Buttons] 在迷你购物车预览中。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons in mini-cart preview] | 商店视图 | 启用或禁用 [!DNL PayPal Smart Buttons] 在mini-cart预览中。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on cart page] | 商店视图 | 启用或禁用 [!DNL PayPal Smart Buttons] 在购物车页面上。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal Pay Later button] | 商店视图 | 在显示付款按钮的情况下，启用或禁用以后付款选项外观。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal Pay Later Message] | 网站 | 在购物车、产品页面、迷你购物车和结帐流程期间，启用或禁用“稍后付费”消息传送。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
@@ -140,7 +140,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   > 如果按钮样式配置为 `Horizontal` 而您的商店配置为显示多个PayPal智能按钮，则您可能只会在产品页面、结帐页面和迷你购物车上显示两个按钮，在购物车中显示一个按钮。
+   > 如果按钮样式配置为 `Horizontal` 您的商店配置为显示多个PayPal智能按钮，您可能只会看到产品页面、结帐页面和迷你购物车上显示两个按钮，购物车中显示一个按钮。
 
 1. 要在水平布局中启用标记线，请切换 **[!UICONTROL Show tagline]** 选择器。
 1. 修改 **[!UICONTROL Color]**，请选择所需的颜色选项。

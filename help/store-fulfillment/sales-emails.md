@@ -4,9 +4,9 @@ description: 配置事务型电子邮件模板，以便在“商店提货单”�
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ ht-degree: 0%
 </tr>
 <tr>
 <td><strong>发送订单以准备接收电子邮件复制方法</strong></td>
-<td>电子邮件“Carbon Copy”的方法发送给使用。</td>
+<td>要使用的电子邮件复制方法 — 碳复制。</td>
 <td>存储视图</td>
 <td>否</td>
 </tr>
@@ -136,7 +136,7 @@ ht-degree: 0%
 </tr>
 <tr>
 <td><strong>“发送”已被接收电子邮件复制方法</strong></td>
-<td>发送给使用的电子邮件“Carbon Copy”的方法。</td>
+<td>要使用的电子邮件复制方法 — 碳复制。</td>
 <td>存储视图</td>
 <td>否</td>
 </tr>
@@ -185,7 +185,7 @@ ht-degree: 0%
 </tr>
 <tr>
 <td><strong>发送订单延迟复制方法</strong></td>
-<td>发送给使用的电子邮件“Carbon Copy”的方法。</td>
+<td>要使用的电子邮件复制方法 — 碳复制。</td>
 <td>存储视图</td>
 <td>否</td>
 </tr>
@@ -236,7 +236,7 @@ ht-degree: 0%
 </tr>
 <tr>
 <td><strong>发送订单取消复制方法</strong></td>
-<td>发送给使用的电子邮件“Carbon Copy”的方法。</td>
+<td>要使用的电子邮件复制方法 — 碳复制。</td>
 <td>存储视图</td>
 <td>否</td>
 </tr>
@@ -292,7 +292,7 @@ ht-degree: 0%
 </tr>
 <tr>
 <td><strong>发送订单部分取消的复制方法</strong></td>
-<td>发送给使用的电子邮件“Carbon Copy”的方法。</td>
+<td>要使用的电子邮件复制方法 — 碳复制。</td>
 <td>存储视图</td>
 <td>否</td>
 </tr>

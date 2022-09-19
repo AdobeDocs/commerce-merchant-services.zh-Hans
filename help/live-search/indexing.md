@@ -1,17 +1,23 @@
 ---
-title: '"[!DNL Live Search] 索引"'
+title: "[!DNL Live Search] 索引"
 description: “了解如何 [!DNL Live Search] 索引产品属性。”
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 2835209ad881db388894c5b1da213312436d3550
+source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
 
 # 索引
 
-产品属性（元数据）可确定如何在目录中使用属性、属性在存储中的外观和行为，以及数据传输操作中包含的数据。 属性元数据的范围是 `website/store/store view`.
+产品属性（元数据）确定：
+
+* 如何在目录中使用属性
+* 它在商店中的外观和行为
+* 数据传输操作中包含的数据
+
+属性元数据的范围是 `website/store/store view`.
 
 的 [!DNL Live Search] API允许客户按具有 [storefront属性](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` 设置为 `Yes` 在Adobe Commerce管理员中。 启用后， `Search Weight` 和 `Visible in Advanced Search` 可以为属性设置。
 
@@ -61,7 +67,7 @@ When [!DNL Live Search] 已在载入期间配置并同步，则构建初始索�
 
 1. 更新的产品会从Adobe Commerce实例同步到目录服务。
 1. 索引服务会持续从目录服务中查找产品更新。 更新的产品在进入目录服务时会进行索引。
-1. 产品更新可能最多需要15分钟才能在 [!DNL Live Search].
+1. 产品更新最多可能需要15分钟，才能在 [!DNL Live Search].
 
 ## 客户端搜索
 

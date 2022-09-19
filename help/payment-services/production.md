@@ -2,9 +2,9 @@
 title: 启用 [!DNL Payment Services] 生产
 description: 通过启用 [!DNL Payment Services] 生产。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: a983cf30872544d72bd13c3f04f04a35eebcf85d
+source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. 单击 **[!UICONTROL Enable Payment Services]**.
 
-   如果尚未配置，则会显示此选项 [!DNL Payment Services] 作为一个或多个Magento网站的付款方法。
+   如果尚未配置，则会显示此选项 [!DNL Payment Services] 作为一个或多个网站的付款方式。
 
    将您定向到“主页”视图中的设置区域，并展开相关选项(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_)，您可以在其中启用 [!DNL Payment Services] 选项 [付款方法](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target=&quot;_blank&quot;}。
 

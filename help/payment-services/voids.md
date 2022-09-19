@@ -2,7 +2,7 @@
 title: 空隙
 description: 通过空格，您可以释放信用卡或借记卡帐户中的资金，这些资金被阻止或被授权存放以购买金额。
 exl-id: 029a7038-2812-46ce-b188-929a7a758d89
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
