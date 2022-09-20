@@ -2,9 +2,9 @@
 title: 安装和配置
 description: 了解如何安装、更新和卸载 [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: cfeb8b4f8e2dc1e9d2d4c0be7a7bc522488418bc
+source-git-commit: 09609fd0b5bd3da9e884115de001bc33832ad792
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,10 @@ composer require magento/module-page-builder-product-recommendations
 ```
 
 启用 [!DNL Product Recommendations] 在页面生成器中，您可以添加一个现有的活动 [推荐单元](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html) 到在页面生成器中创建的任何内容，如页面、块和动态块。
+
+>[!NOTE]
+>
+>[!DNL Page Builder] 只能为默认存储视图创建推荐单位。
 
 ### 添加可视相似度推荐类型 {#vissimsupport}
 

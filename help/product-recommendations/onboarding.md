@@ -1,9 +1,10 @@
 ---
 title: 入门
 description: 了解 [!DNL Product Recommendations].
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
+source-git-commit: 09609fd0b5bd3da9e884115de001bc33832ad792
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
@@ -32,6 +33,10 @@ ht-degree: 0%
 ### 页面生成器支持
 
 [!DNL Product Recommendations] 可以作为页面生成器内容类型添加到页面。 要将页面生成器支持添加到产品Recommendations，请参阅 [安装和配置](install-configure.md).
+
+>[!NOTE]
+>
+>[!DNL Page Builder] 只能为默认存储视图创建推荐单位。
 
 ### B2B支持 {#b2bsupport}
 
