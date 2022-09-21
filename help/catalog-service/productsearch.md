@@ -1,9 +1,9 @@
 ---
 title: productSearch查询
 description: “Adobe Commerce Catalog Service的‘productSearch’ GraphQL查询的参考指南。”
-source-git-commit: 7edfdd71c0900a6bdc7c064a29a6cce405a361ab
+source-git-commit: 49692cf4375ebb975b2cf132d21ac8debe609a90
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # productSearch查询
 
-Adobe Commerce目录服务 `productSearch` 查询可以使用LiveSearch返回有关指定为输入的SKU的详细信息。 尽管此查询与 [`productSearch` 查询](https://devdocs.magento.com//live-search/product-search.html), LiveSearch返回 `productView` 对象。 请参阅 [`productSearch` 查询](https://devdocs.magento.com//live-search/product-search.html) 参考信息主题。
+Adobe Commerce目录服务 `productSearch` 查询可以使用实时搜索返回有关指定为输入的SKU的详细信息。 尽管此查询与 [`productSearch` 查询](https://devdocs.magento.com//live-search/product-search.html)，实时搜索会返回 `productView` 对象。 请参阅 [`productSearch` 查询](https://devdocs.magento.com//live-search/product-search.html) 参考信息主题。
 
 ## 语法
 
@@ -32,7 +32,7 @@ productSearch(
 | 标题 | 描述 |
 |--- | ---|
 | `Magento-Customer-Group` | 对于店面客户，此值将在 `dataservices_customer_group` cookie。 |
-| `Magento-Environment-Id` | 此值显示在 **系统** > **Commerce Services Connector** > **SaaS标识符** > **数据空间ID** 或通过运行 `bin/magento config:show services_connector/services_id/environment_id` 命令。 |
+| `Magento-Environment-Id` | 此值可通过运行 `bin/magento config:show services_connector/services_id/environment_id` 命令。 请参阅 [商务服务](https://docs.magento.com/user-guide/configuration/services/saas.html) |
 | `Magento-Store-Code` | 分配给与活动存储视图关联的存储的代码。 例如， `main_website_store`. |
 | `Magento-Store-View-Code` | 分配给活动存储视图的代码。 例如， `default`. |
 | `Magento-Website-Code` | 分配给与活动商店视图关联的网站的代码。 例如， `base`. |
