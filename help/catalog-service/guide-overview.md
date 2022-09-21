@@ -1,13 +1,13 @@
 ---
-title: '"[!DNL Catalog Service] 指南概述”'
-description: '"[!DNL Catalog Service for Adobe Commerce] 提供了一种检索产品显示页面和产品列表页面内容的方法，其速度比本机Adobe Commerce GraphQL查询更快。”'
-source-git-commit: 7f6955ffc52669ff3b95957642b3a115bf1eb741
+title: '''[!DNL Catalog Service] 指南概述'
+description: '''[!DNL Catalog Service for Adobe Commerce] 提供了一种检索产品显示页面和产品列表页面内容的方法，其速度比本机Adobe Commerce GraphQL查询更快。'
+exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
+source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Catalog Service] 指南概述
 
@@ -20,8 +20,6 @@ ht-degree: 0%
 * Adobe [!DNL Commerce] 系统管理员安装和维护服务。 [!DNL Catalog Service] 没有标准管理员用户的管理员UI或功能。
 
 * 集成程序会生成GraphQL查询，并将它们集成到使用前端客户端的店面上。
-
-您可以在 [适用于Adobe Commerce的目录服务](https://devdocs.magento.com/catalog-service/index.html).
 
 ## 其他文档
 
