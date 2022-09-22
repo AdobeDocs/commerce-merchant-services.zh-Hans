@@ -1,9 +1,9 @@
 ---
 title: 产品查询
 description: “Adobe Commerce Catalog Service的‘products’ GraphQL查询的参考指南。”
-source-git-commit: 7edfdd71c0900a6bdc7c064a29a6cce405a361ab
+source-git-commit: d9b8c89f6d04aa9d569b450af2893b92938119ad
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1226'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 产品查询
 
-Adobe Commerce目录服务 `products` 查询会返回有关指定为输入的SKU的详细信息。 尽管此查询与 [`products` 查询](https://devdocs.magento.com//guides/v2.4/graphql/queries/products.html) 与核心Adobe Commerce和Magento Open Source一起提供，但存在一些差异。
+Adobe Commerce目录服务 `products` 查询会返回有关指定为输入的SKU的详细信息。 尽管此查询与 [`products` 查询](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) 与核心Adobe Commerce和Magento Open Source一起提供，但存在一些差异。
 
 目录服务查询需要一个或多个SKU值作为输入。 查询主要用于检索信息以呈现以下类型的内容：
 

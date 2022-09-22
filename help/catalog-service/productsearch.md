@@ -1,9 +1,9 @@
 ---
 title: productSearch查询
 description: “Adobe Commerce Catalog Service的‘productSearch’ GraphQL查询的参考指南。”
-source-git-commit: 49692cf4375ebb975b2cf132d21ac8debe609a90
+source-git-commit: d9b8c89f6d04aa9d569b450af2893b92938119ad
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # productSearch查询
 
-Adobe Commerce目录服务 `productSearch` 查询可以使用实时搜索返回有关指定为输入的SKU的详细信息。 尽管此查询与 [`productSearch` 查询](https://devdocs.magento.com//live-search/product-search.html)，实时搜索会返回 `productView` 对象。 请参阅 [`productSearch` 查询](https://devdocs.magento.com//live-search/product-search.html) 参考信息主题。
+Adobe Commerce目录服务 `productSearch` 查询可以使用实时搜索返回有关指定为输入的SKU的详细信息。 尽管此查询与 [`productSearch` 查询](https://devdocs.magento.com/live-search/product-search.html)，实时搜索会返回 `productView` 对象。 请参阅 [`productSearch` 查询](https://devdocs.magento.com/live-search/product-search.html) 参考信息主题。
 
 ## 语法
 
