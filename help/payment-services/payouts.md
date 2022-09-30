@@ -4,9 +4,9 @@ description: 使用“支付”报表可以完全透明地记录支付金额、�
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 27d280fb9f49715a455ff55279416f7df4ada56d
+source-git-commit: 0bd6137ec7cd5da04ae6a48f06cd5aec254b46ef
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -154,9 +154,9 @@ ht-degree: 0%
 | [!UICONTROL Code] | 表示信用(*CR*)或借项(*DR*) |
 | [!UICONTROL Reference ID] | 与此事件相关的原始交易ID |
 | [!UICONTROL Invoice] | 交易的发票ID（每张订单一张） |
-| [!UICONTROL Commerce order] | 商务订单ID <br> <br>查看相关 [订购信息](https://docs.magento.com/user-guide/sales/orders.html)，请单击ID。 |
-| [!UICONTROL Commerce trans] | 商务交易ID |
-| [!UICONTROL Pay method] | 信用卡类型 — *[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]* — 和关联的卡提供商(例如 *签证* 或 *万事达*) |
+| [!UICONTROL Commerce order] | 商务订单ID <br> <br>查看相关 [订购信息](https://docs.magento.com/user-guide/sales/orders.html){target=&quot;_blank&quot;}，单击ID。 |
+| [!UICONTROL Commerce trans] | 商务交易ID <br> <br>查看相关 [交易信息](https://docs.magento.com/user-guide/sales/transactions.html){target=&quot;_blank&quot;}，单击ID。 |
+| [!UICONTROL Pay method] | 信用卡类型 — *[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL APPLE_PAY]*, *[!UICONTROL CREDIT_CARD]* — 和关联的卡提供商(例如 *签证* 或 *万事达*) |
 | [!UICONTROL Trans amt] | 交易金额 |
 | [!UICONTROL Cur] | 交易金额的货币单位 |
 | [!UICONTROL Pending] | 尚未支付的金额 |

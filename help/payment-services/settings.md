@@ -4,9 +4,9 @@ description: 安装后，您可以配置 [!DNL Payment Services] 在家里。
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
+source-git-commit: 0bd6137ec7cd5da04ae6a48f06cd5aec254b46ef
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1236'
 ht-degree: 0%
 
 ---
@@ -169,3 +169,11 @@ ht-degree: 0%
 | [!UICONTROL Responsive Button Height] | 存储视图 | 定义付款按钮是否使用默认高度。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Height] | 存储视图 | 定义付款按钮的高度。 默认值：无 |
 | [!UICONTROL Label] | 存储视图 | 定义在付款按钮中显示的标签。 选项： [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
+
+## 使用多个PayPal帐户
+
+在Payment Services中，您可以在 **one** 网站级别上的商户帐户。 例如，如果您在多个国家/地区(使用不同的 [货币](https://docs.magento.com/user-guide/stores/currency.html))，或者希望将Adobe Commerce用于您业务的某些部分，但不是 *全部*，则可以设置您的商户帐户以使用多个PayPal帐户。
+
+请参阅 [网站、商店和查看范围](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) 有关网站、商店和商店视图层次结构的更多信息。
+
+您的销售代表可以创建新 [范围](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 用于您的商户帐户并载入附加的PayPal网站，以便您配置显示的任何PayPal按钮都将显示在您的网站上。 请联系您的销售代表，以获取有关在您的网站中使用多个PayPal帐户的帮助。
