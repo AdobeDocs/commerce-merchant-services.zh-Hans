@@ -4,7 +4,7 @@ description: 使用“支付”报表可以完全透明地记录支付金额、�
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 0bd6137ec7cd5da04ae6a48f06cd5aec254b46ef
+source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
 workflow-type: tm+mt
 source-wordcount: '1339'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] 表示 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供全面的报表，以便您能够清楚地了解商店的订单和付款情况。
 
-![财务报表视图](assets/reports-view-new.png)
+![财务报表视图](assets/report-view.png)
 
 有两种可用的“赔款”报告视图，让您能够查看有关所有赔款的深入信息：
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** 查看点数与借项以及随时间移动的平均值的数据可视化图表。
 
-![管理员中的支付数据可视化](assets/payouts-data.png)
+![管理员中的支付数据可视化](assets/payouts-report.png)
 
 单击 **[!UICONTROL View Report]** 导航到详细表格 [付款报表视图](#payouts-report-view).
 
