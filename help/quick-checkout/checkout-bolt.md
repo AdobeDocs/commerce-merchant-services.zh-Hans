@@ -1,10 +1,10 @@
 ---
-title: “Adobe Commerce中的结帐流程”
+title: “Bolt用户在Adobe Commerce中的结帐流程”
 description: 概述 [!DNL Quick Checkout] 在Adobe Commerce中为Bolt用户流量。
 exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
-source-git-commit: 4dd8008901dbdbfaf1de5b1aa166dc70dd02440f
+source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
