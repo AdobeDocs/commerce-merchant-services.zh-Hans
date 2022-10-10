@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: 文档
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 4fcab515a816c03320fa035df3e9f6dfdd8643a9
+source-git-commit: 8d36cd54e6e5ca2fe70afd0152c23fa73031aea0
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -87,10 +87,20 @@ Adobe提供服务集合，帮助商户支持其业务的关键组成部分。
 
 以下是对文档的最新更改：
 
-* *支付服务* — 添加了有关 [下载扩展](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#download-the-extension)，改进了 [连接到Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html)和 [添加了信息](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html) 连接到“连接服务”主题，以便用户确定其服务是否已连接（如果未连接，则应执行哪些操作）。
-* 现在可用！—[目录服务](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/overview.html) 对于Adobe Commerce
-* *实时搜索* — 在 [安装Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) 和 [入门概述](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) 有关新模块中引入的OpenSearch搜索引擎的主题(有关Adobe Commerce v2.4.6的可用性)。
-* *Experience Platform连接器* — 添加了主题 [关于使用标记](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/using-tags.html) 和主题 [关于如何上传购物者配置文件](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/profile.html) 介绍如何创建用户档案和使用AEP标记的主题。
-* *快速结帐* — 改进 [入门主题](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) 重新排序步骤并包含管理员UI中存在的最新产品更改。
-* *支付服务*—[Apple Pay现已可用](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) 在支付服务中。
-* *Experience Platform连接器* — 添加了 [有关更新XDM模式的主题](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/update-xdm.html) 具有特定于Adobe Commerce的字段名称。
+* **支付服务**<!-- Issue PAY-3483, PAY-3611, PAY-3655, PAY-3705, PAY-3742 -->
+   * *新建* 添加了 [可用数据主题](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html) 该文档说明了如何将财务报告数据用于外部对账。
+   * 修订了文档以包含 [新数据可视化视图](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#payouts-data-visualization-view) 在赔款报告中。
+   * 修订了“设置”主题以包含有关 [预览付款按钮在商店中的显示方式](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) 更改配置后，添加了 [启用/禁用信用卡和PayPal智能按钮以进行结账](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options).
+* **快速结帐**<!-- BOLT-406 -->
+   * *新建* 添加了 [关于管理面板的概述主题](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html).
+   * *新建* 添加了 [用户设置主题](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/user-roles-setup.html) 以指导用户配置角色和权限。
+
+<!-- 
+|   Service    |    Change   |   Type    |
+|  ---  |  ---  |  ---  |
+|  [**Payment Services**](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html)  |   Added an [Available data topic](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html) that explains how to use financial reporting data for external reconciliation purposes.    |    New   |
+|       |   Revised documentation to include the [new data visualization view](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#payouts-data-visualization-view) in Payouts reporting.    |    Update   |
+|       |   Revised the Settings topic to include information about [previewing how payment buttons will appear in a store](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) when the configuration is changed and how to [enable/disable credit card and PayPal smart buttons for checkout](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options).    |   Update    |
+|   [**Quick Checkout**](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html)    |    Added an [overview topic about the Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html).   |   New    |
+|       |   Added a [user setup topic](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/user-roles-setup.html) to guide the user in configuring roles and permissions.    |       |
+ -->
