@@ -1,10 +1,10 @@
 ---
 title: 事件
-description: 了解每个事件捕获并查看完整架构定义的哪些数据。
+description: 了解每个事件捕获的数据。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 589d22f488572411b6632ac37d7bc5b752f72e2d
+source-git-commit: aaaab3d11c15a69856711a41e889a5d0208aedd2
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1977'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,19 @@ ht-degree: 0%
 
 下面列出了安装Commerce Connector扩展时可用的Experience Platform事件。 这些事件收集的数据会发送到Adobe Experience Platform Edge。 您还可以创建 [自定义事件](custom-events.md) 来收集开箱即用未提供的其他数据。
 
-除了以下事件收集的数据之外，您还会 [附加数据](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) 由Adobe Experience Platform Web SDK提供。
+除了以下事件收集的数据之外，您还会 [其他数据](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) 由Adobe Experience Platform Web SDK提供。
 
 >[!NOTE]
 >
->所有事件都包括 `personID` 字段中，该字段是人员的唯一标识符。
+>所有店面事件都包括 `personID` 字段中，该字段是人员的唯一标识符。
 
 ## addToCart
 
-当产品添加到购物车或购物车中产品的数量增加时触发。 [完整模式](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/addToCartAEP.ts).
+当产品添加到购物车或购物车中产品的数量增加时触发。
+
+### XDM事件名称
+
+`commerce.productListAdds`
 
 ### 类型
 
@@ -34,10 +38,71 @@ ht-degree: 0%
 | 字段 | 描述 |
 |---|---|
 | `productListAdds` | 指示产品是否已添加到购物车。 值 `1` 表示已添加产品。 |
+| `productListItems` | 添加到购物车的一组产品 |
 | `SKU` | 库存单位。 产品的唯一标识符。 |
 | `name` | 产品的显示名称或人类可读的名称 |
-| `priceTotal` | 在应用所有折扣和税后，此订单的合计 |
-| `quantity` | 客户表示他们需要产品的件数 |
+| `priceTotal` | 产品行项目的总价格 |
+| `quantity` | 添加到购物车的产品件数 |
+| `discountAmount` | 指示应用的折扣金额 |
+| `currencyCode` | 的 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 产品的货币 |
+| `productImageUrl` | 产品的主图像URL |
+| `selectedOptions` | 用于可配置产品的字段。 `attribute` 标识可配置产品的属性，例如 `size` 或 `color` 和 `value` 标识属性的值，例如 `small` 或 `black`. |
+| `cartID` | 标识客户购物车的唯一ID |
+
+## openCart
+
+创建新购物车时触发，即将产品添加到空购物车时。
+
+### XDM事件名称
+
+`commerce.productListOpens`
+
+### 类型
+
+店面
+
+### 收集的数据
+
+下表描述了为此事件收集的数据。
+
+| 字段 | 描述 |
+|---|---|
+| `productListOpens` | 指示是否已创建购物车。 值 `1` 表示购物车已创建。 |
+| `productListItems` | 添加到购物车的一组产品 |
+| `SKU` | 库存单位。 产品的唯一标识符。 |
+| `name` | 产品的显示名称或人类可读的名称 |
+| `priceTotal` | 产品行项目的总价格 |
+| `quantity` | 添加到购物车的产品件数 |
+| `discountAmount` | 指示应用的折扣金额 |
+| `currencyCode` | 的 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 产品的货币 |
+| `productImageUrl` | 产品的主图像URL |
+| `selectedOptions` | 用于可配置产品的字段。 `attribute` 标识可配置产品的属性，例如 `size` 或 `color` 和 `value` 标识属性的值，例如 `small` 或 `black`. |
+| `cartID` | 标识客户购物车的唯一ID |
+
+## removeFromCart
+
+每次删除产品时或每次购物车中产品的数量减少时触发。
+
+### XDM事件名称
+
+`commerce.productListRemovals`
+
+### 类型
+
+店面
+
+### 收集的数据
+
+下表描述了为此事件收集的数据。
+
+| 字段 | 描述 |
+|---|---|
+| `productListRemovals` | 指示产品是否已从购物车中删除。 值 `1` 表示产品已从购物车中删除。 |
+| `productListItems` | 从购物车中删除的一组产品 |
+| `SKU` | 库存单位。 产品的唯一标识符。 |
+| `name` | 产品的显示名称或人类可读的名称 |
+| `priceTotal` | 产品行项目的总价格 |
+| `quantity` | 从购物车中删除的产品件数 |
 | `discountAmount` | 指示应用的折扣金额 |
 | `currencyCode` | 的 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 产品的货币 |
 | `productImageUrl` | 产品的主图像URL |
@@ -46,7 +111,11 @@ ht-degree: 0%
 
 ## shoppingCartView
 
-加载任何购物车页面时触发。 [完整模式](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/viewAEP.ts).
+加载任何购物车页面时触发。
+
+### XDM事件名称
+
+`commerce.productListViews`
 
 ### 类型
 
@@ -59,11 +128,11 @@ ht-degree: 0%
 | 字段 | 描述 |
 |---|---|
 | `productListViews` | 指示是否查看了产品列表 |
-| `productListItems` | 添加到购物车的一组产品 |
+| `productListItems` | 购物车中的一系列产品 |
 | `SKU` | 库存单位。 产品的唯一标识符。 |
 | `name` | 产品的显示名称或人类可读的名称 |
-| `priceTotal` | 在应用所有折扣和税后，此订单的合计 |
-| `quantity` | 客户表示他们需要产品的件数 |
+| `priceTotal` | 产品行项目的总价格 |
+| `quantity` | 购物车中的产品件数 |
 | `discountAmount` | 指示应用的折扣金额 |
 | `currencyCode` | 的 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 产品的货币 |
 | `productImageUrl` | 产品的主图像URL |
@@ -72,7 +141,11 @@ ht-degree: 0%
 
 ## pageView
 
-加载任何页面时触发。 [完整模式](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/page/viewAEP.ts).
+加载任何页面时触发。
+
+### XDM事件名称
+
+`web.webpagedetails.pageViews`
 
 ### 类型
 
@@ -88,7 +161,11 @@ ht-degree: 0%
 
 ## productPageView
 
-加载任何产品页面时触发。 [完整模式](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/viewAEP.ts).
+加载任何产品页面时触发。
+
+### XDM事件名称
+
+`commerce.productViews`
 
 ### 类型
 
@@ -101,10 +178,10 @@ ht-degree: 0%
 | 字段 | 描述 |
 |---|---|
 | `productViews` | 指示产品是否已查看 |
-| `productListItems` | 添加到购物车的一组产品 |
+| `productListItems` | 购物车中的一系列产品 |
 | `SKU` | 库存单位。 产品的唯一标识符。 |
 | `name` | 产品的显示名称或人类可读的名称 |
-| `priceTotal` | 在应用所有折扣和税后，此订单的合计 |
+| `priceTotal` | 产品行项目的总价格 |
 | `discountAmount` | 指示应用的折扣金额 |
 | `currencyCode` | 的 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 产品的货币 |
 | `productImageUrl` | 产品的主图像URL |
@@ -112,7 +189,11 @@ ht-degree: 0%
 
 ## startCheckout
 
-购物者单击结帐按钮时触发。 [完整模式](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/initiateCheckoutAEP.ts).
+购物者单击结帐按钮时触发。
+
+### XDM事件名称
+
+`commerce.checkouts`
 
 ### 类型
 
@@ -125,11 +206,11 @@ ht-degree: 0%
 | 字段 | 描述 |
 |---|---|
 | `checkouts` | 指示在结帐过程中是否发生操作 |
-| `productListItems` | 添加到购物车的一组产品 |
+| `productListItems` | 购物车中的一系列产品 |
 | `SKU` | 库存单位。 产品的唯一标识符。 |
 | `name` | 产品的显示名称或人类可读的名称 |
-| `priceTotal` | 在应用所有折扣和税后，此订单的合计 |
-| `quantity` | 客户表示他们需要产品的件数 |
+| `priceTotal` | 产品行项目的总价格 |
+| `quantity` | 购物车中的产品件数 |
 | `discountAmount` | 指示应用的折扣金额 |
 | `currencyCode` | 的 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 产品的货币 |
 | `productImageUrl` | 产品的主图像URL |
@@ -138,7 +219,11 @@ ht-degree: 0%
 
 ## completeCheckout
 
-购物者下订单时触发。 [完整模式](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/checkout/placeOrderAEP.ts).
+购物者下订单时触发。
+
+### XDM事件名称
+
+`commerce.order`
 
 ### 类型
 
@@ -163,11 +248,11 @@ ht-degree: 0%
 | `shippingMethod` | 客户选择的运输方法，如标准交货、快速交货、商店取货等 |
 | `shippingAmount` | 购物车中商品的总装运成本 |
 | `promotionID` | 促销活动的唯一标识符（如果有） |
-| `productListItems` | 添加到购物车的一组产品 |
+| `productListItems` | 购物车中的一系列产品 |
 | `SKU` | 库存单位。 产品的唯一标识符。 |
 | `name` | 产品的显示名称或人类可读的名称 |
-| `priceTotal` | 在应用所有折扣和税后，此订单的合计 |
-| `quantity` | 客户表示他们需要产品的件数 |
+| `priceTotal` | 产品行项目的总价格 |
+| `quantity` | 购物车中的产品件数 |
 | `discountAmount` | 指示应用的折扣金额 |
 | `currencyCode` | 的 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用于订单合计的货币代码。 |
 | `productImageUrl` | 产品的主图像URL |
@@ -175,11 +260,15 @@ ht-degree: 0%
 
 ## signIn
 
-购物者尝试登录时触发。 [完整模式](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signInAEP.ts).
+购物者尝试登录时触发。
 
 >[!NOTE]
 >
 > 此事件在尝试特定操作时触发。 它不表示操作成功。
+
+### XDM事件名称
+
+`userAccount.login`
 
 ### 类型
 
@@ -201,11 +290,15 @@ ht-degree: 0%
 
 ## signOut
 
-购物者尝试注销时触发。 [完整模式](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signOutAEP.ts).
+购物者尝试注销时触发。
 
 >[!NOTE]
 >
 > 此事件在尝试特定操作时触发。 它不表示操作成功。
+
+### XDM事件名称
+
+`userAccount.logout`
 
 ### 类型
 
@@ -223,11 +316,15 @@ ht-degree: 0%
 
 ## createAccount
 
-购物者尝试创建帐户时触发。 [完整模式](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/createAccountAEP.ts).
+购物者尝试创建帐户时触发。
 
 >[!NOTE]
 >
 > 此事件在尝试特定操作时触发。 它不表示操作成功。
+
+### XDM事件名称
+
+`userAccount.createProfile`
 
 ### 类型
 
@@ -250,11 +347,15 @@ ht-degree: 0%
 
 ## editAccount
 
-当购物者尝试编辑帐户时触发。 [完整模式](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/editAccountAEP.ts).
+当购物者尝试编辑帐户时触发。
 
 >[!NOTE]
 >
 > 此事件在尝试特定操作时触发。 它不表示操作成功。
+
+### XDM事件名称
+
+`userAccount.updateProfile`
 
 ### 类型
 
@@ -293,11 +394,13 @@ ht-degree: 0%
 - 导航到上一页
 - 导航到其他页面
 
-[完整模式](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchRequestSentAEP.ts).
-
 >[!NOTE]
 >
 >安装了B2B模块的Adobe Commerce Enterprise Edition不支持搜索事件。
+
+### XDM事件名称
+
+`searchRequest`
 
 ### 类型
 
@@ -323,11 +426,13 @@ ht-degree: 0%
 
 在实时搜索返回“键入时搜索”弹出窗口或搜索结果页面的结果时触发。
 
-[完整模式](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchResponseReceivedAEP.ts)
-
 >[!NOTE]
 >
 >安装了B2B模块的Adobe Commerce Enterprise Edition不支持搜索事件。
+
+### XDM事件名称
+
+`searchResponse`
 
 ### 类型
 
@@ -342,4 +447,4 @@ ht-degree: 0%
 | `searchResponse` | 指示是否收到搜索响应 |
 | `suggestions` | 字符串数组，其中包含目录中存在的与搜索查询类似的产品和类别的名称 |
 | `numberOfResults` | 返回的产品数 |
-| `productListItems` | 添加到购物车的一组产品。 包括 `SKU`（库存单位）及 `name` （显示名称或人类可读名称） |
+| `productListItems` | 购物车中的一系列产品。 包括 `SKU`（库存单位）及 `name` （显示名称或人类可读名称） |

@@ -2,9 +2,9 @@
 title: 指南概述
 description: 了解如何使用Adobe Commerce连接器将Adobe Experience Platform数据与Experience Platform集成。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
+source-git-commit: f5d1c39fe1b02d2a661b92f971fba5b3e836dd6a
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,10 @@ Experience Platform连接器显示在“商务管理员”下的 **系统** >服
 ### PWA Studio支持
 
 请参阅 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/) 文档，以了解有关如何在PWA Studio店面中使用Experience Platform连接器的信息。
+
+### AEM支持 {#aem-support}
+
+请参阅 [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html) 文档，了解如何使用CIF -AEM连接器将从呈现的产品页面到Experience Platform的storefront事件数据发送到Experience Platform。
 
 如果您需要信息或遇到本指南未涵盖的问题，请使用以下资源：
 
