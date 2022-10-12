@@ -4,9 +4,9 @@ description: 安装后，您可以配置 [!DNL Payment Services] 在家里。
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 785528d5940af28fa8bf6873d636b40d8e7bc05f
+source-git-commit: 6c14f062336926ead7e0ce285fb4251586698240
 workflow-type: tm+mt
-source-wordcount: '1594'
+source-wordcount: '1678'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,9 @@ ht-degree: 0%
 
 您可以自定义 [!DNL Payment Services] 中的有用设置，以满足您的需求 [!DNL Payment Services] 回家。
 
-配置 [!DNL Payment Services] 表示 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 单击 **[!UICONTROL Settings]**. 这些配置选项仅适用于在 _[!UICONTROL Payment mode]_字段_[!UICONTROL Settings]_ > _[!UICONTROL General]_.
+配置 [!DNL Payment Services] 表示 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 单击 **[!UICONTROL Settings]**. 这些配置选项仅适用于在 _[!UICONTROL Payment mode]_字段[_&#x200B;常规&#x200B;_配置选项](#general-configuration-options).
 
->[!IMPORTANT]
->
-> 有关多存储或旧版配置，请参阅 [在管理员中配置](configure-admin.md) 主题。
+有关多商店或旧版配置，请参阅 [在管理员中配置](configure-admin.md).
 
 ## 配置常规设置
 
@@ -106,7 +104,7 @@ ht-degree: 0%
 
    如果尝试在不保存更改的情况下离开此视图，则会显示一个模式窗口，提示您放弃更改、继续编辑或保存更改。
 
-1. 导航到 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** 单击 **[!UICONTROL Flush Cache]** 刷新所有无效的缓存。
+1. [刷新缓存](#flush-the-cache).
 
 #### 配置选项
 
@@ -141,13 +139,13 @@ ht-degree: 0%
       > 使用Apple Pay you [必须拥有Apple开发人员帐户](test-validate.md#test-in-sandbox-environment) （包括假信用卡和账单信息）以进行测试。 准备好在沙盒中使用Apple Pay时 *或* 生产模式，在完成任何 [测试和验证](test-validate.md)，请联系您的销售代表以为您的实时商店启用此功能。
 
       在您打开/关闭对付款按钮或PayPal稍后付款消息的可见性时，该配置的可视预览将显示在“设置”页面的底部。
-
+git
 1. 要启用调试模式，请将 **[!UICONTROL Debug Mode]** 选择器。
 1. 单击 **[!UICONTROL Save]**.
 
    如果尝试在不保存更改的情况下离开此视图，则会显示一个模式窗口，提示您放弃更改、继续编辑或保存更改。
 
-1. 导航到 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** 单击 **[!UICONTROL Flush Cache]** 刷新所有无效的缓存。
+1. [刷新缓存](#flush-the-cache).
 
 #### 配置选项
 
@@ -187,7 +185,7 @@ ht-degree: 0%
 
    如果尝试在不保存更改的情况下离开此视图，则会显示一个模式窗口，提示您放弃更改、继续编辑或保存更改。
 
-1. 导航到 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** 单击 **[!UICONTROL Flush Cache]** 刷新所有无效的缓存。
+1. [刷新缓存](#flush-the-cache).
 
 您可以配置 [!DNL PayPal Smart Buttons] 样式 [的旧版配置中](configure-admin.md#configure-paypal-smart-buttons) 或此处 [!DNL Payment Services Home]. 请参阅 [PayPal&#39;s Buttons风格指南](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) 以了解有关选项的更多信息。
 
@@ -203,6 +201,17 @@ ht-degree: 0%
 | [!UICONTROL Height] | 存储视图 | 定义付款按钮的高度。 默认值：无 |
 | [!UICONTROL Label] | 存储视图 | 定义在付款按钮中显示的标签。 选项： [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
 
+## 刷新缓存
+
+如果在 _设置_&#x200B;例如，切换Apple Pay、Venmo或PayPal PayLater按钮时，手动刷新缓存，以便您的商店显示最新配置。
+
+1. 在 _管理员_ 侧栏，转到 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**.
+1. 单击 **[!UICONTROL Flush Cache]** 刷新所有无效的缓存。
+
+如果“缓存管理”表中的任何缓存类型具有 `INVALIDATED` 状态，则您的存储可能不显示该项目的最新配置。 刷新缓存以更新您的存储以显示最新配置。
+
+为确保您的存储库定期显示正确的配置 [刷新缓存](https://docs.magento.com/user-guide/system/cache-management.html).
+
 ## 使用多个PayPal帐户
 
 在Payment Services中，您可以在 **one** 网站级别上的商户帐户。 例如，如果您在多个国家/地区(使用不同的 [货币](https://docs.magento.com/user-guide/stores/currency.html))，或者希望将Adobe Commerce用于您业务的某些部分，但不是 *全部*，则可以设置您的商户帐户以使用多个PayPal帐户。
@@ -210,3 +219,4 @@ ht-degree: 0%
 请参阅 [网站、商店和查看范围](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) 有关网站、商店和商店视图层次结构的更多信息。
 
 您的销售代表可以创建新 [范围](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 用于您的商户帐户并载入附加的PayPal网站，以便您配置显示的任何PayPal按钮都将显示在您的网站上。 请联系您的销售代表，以获取有关在您的网站中使用多个PayPal帐户的帮助。
+

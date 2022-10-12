@@ -4,9 +4,9 @@ description: 安装后，您可以配置 [!DNL Payment Services] 在存储配置
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
+source-git-commit: 2e9a611cf94bb83733c9cad1e04f4244f62d4272
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '780'
 ht-degree: 0%
 
 ---
@@ -16,8 +16,6 @@ ht-degree: 0%
 您可以自定义 [!DNL Payment Services] 使用管理员中的有用配置选项来满足您的需求。
 
 配置 [!DNL Payment Services] 表示 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 在“管理员”中，这些配置仅适用于在 _[!UICONTROL Method]_字段_[!UICONTROL General Configuration]_. 您在配置字段中所做的任何更改都与切换 _[!UICONTROL Method]_选择(selection) — 如果切换方法，则不会重置选择。
-
-请参阅 [[!UICONTROL General Configuration] 部分](#general-configuration) 以了解更多信息。
 
 ## 常规配置
 
@@ -38,6 +36,7 @@ ht-degree: 0%
    >您的 _[!UICONTROL Sandbox Merchant ID]_和_[!UICONTROL Production Merchant ID]_ 在您完成沙盒和/或生产的入门后，将自动生成并显示在其受人尊敬的字段中。 请勿删除或更改这些ID。
 
 1. 单击 **[!UICONTROL Save Config]** 以保存更改。
+1. 导航到 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**，然后单击 **[!UICONTROL Flush Cache]** 刷新所有无效的缓存。
 
 ### 配置选项
 
@@ -64,6 +63,7 @@ ht-degree: 0%
 1. 至 [设置付款操作](production.md#set-payment-services-as-payment-method)，选择 **[!UICONTROL Authorize]** 或 **授权和捕获**.
 1. 对于 **调试模式**，选择 `Yes` 启用调试模式(或 `No` 禁用)。
 1. 单击 **[!UICONTROL Save Config]** 以保存更改。
+1. 导航到 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**，然后单击 **[!UICONTROL Flush Cache]** 刷新所有无效的缓存。
 
 #### 配置选项
 
@@ -92,6 +92,7 @@ ht-degree: 0%
 1. 禁用 [稍后付费消息传送](payments-options.md#pay-later-button) （如果需要），选择 `No` 表示 **[!UICONTROL Display Pay Later Message]**.
 1. 要启用调试模式，请选择 `Yes` 对于 **[!UICONTROL Debug Mode]** (`No` 禁用)。
 1. 要保存更改，请单击 **[!UICONTROL Save Config]** .
+1. 导航到 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**，然后单击 **[!UICONTROL Flush Cache]** 刷新所有无效的缓存。
 
 ### 配置选项
 
@@ -119,3 +120,7 @@ ht-degree: 0%
 | [!UICONTROL Height] | 存储视图 | 定义PayPal智能按钮的高度。 默认值：无 |
 | [!UICONTROL Label] | 存储视图 | 定义显示在PayPal智能按钮中的标签。 选项： [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
 | [!UICONTROL Tagline] | 存储视图 | 启用标记。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+
+## 刷新缓存
+
+如果更改配置， [手动刷新缓存](/help/payment-services/settings.md#flush-the-cache) 以便您的商店显示最新的配置设置。
