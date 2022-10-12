@@ -2,9 +2,9 @@
 title: 发行说明
 description: 的最新发行信息 [!DNL Product Recommendations] 从Adobe Commerce。
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: 78f469dda853a6f46394d5969f879100cf22f8bb
+source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,10 @@ ht-degree: 0%
 
 * ![新建](../assets/new.svg)  — 已添加 [就绪指标](create.md) 以帮助您可视化每个推荐类型的培训进度。
 * ![新建](../assets/new.svg)  — 这是一个主要版本。 您必须 [编辑](install-configure.md#update) 根 `composer.json` 文件。 此版本还要求您在安装和配置产品Recommendations时提供两个API密钥： [生产密钥和沙盒密钥](../landing/saas.md).
+
+### 已知限制
+
+* 的 `websiteCode` 如果值包含下划线(_)，则会错误返回该值。
 
 ## magento/product-recommendations的3.3.7
 

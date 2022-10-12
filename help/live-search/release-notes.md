@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] 发行说明"
 description: “ [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 974c77fb427f85058bb2c59d8e3818cb7c148e04
+source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '931'
 ht-degree: 1%
 
 ---
@@ -37,6 +37,8 @@ ht-degree: 1%
 
 * ![错误](../assets/bug.svg)  — 建议来源于不能显示给客户群组的产品。
 * ![错误](../assets/bug.svg)  — 如果未将产品添加到“默认共享目录”，则不会显示产品。
+* ![错误](../assets/bug.svg)  — 即使产品配置了属性，并且在响应中返回“否”存储段，搜索适配器也不会呈现布尔产品属性的“否”存储段。
+* 虽然某些产品和查询可能返回非英语结果，但当前不支持多语言查询。
 * 具有实时搜索PWA Studio的B2B只有在PWA Studio添加对该B2B的支持后才可用。
 * 产品覆盖和产品属性信息源可能存在同步问题，需要管理员运行 `bin/magento indexer:reset` 和 `bin/magento indexer:reindex` 才能正确重新同步。
 * 如果启用或禁用“目录权限/共享目录/B2B”功能，则 `catalog_data_exporter_product_overrides` 索引器未更新，并被错误标记为 `valid`. 使用 `bin/magento saas:resync --feed=productOverrides` 以修复问题。
