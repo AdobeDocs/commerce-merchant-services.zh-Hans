@@ -2,7 +2,7 @@
 title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] for Adobe Commerce提供了一种方法，可比本机Adobe Commerce GraphQL查询更快地检索产品显示页面和产品列表页面的内容。'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: dfe3d9b8738ea68257831c445f1f0b2c8c8b6859
+source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
@@ -10,8 +10,6 @@ ht-degree: 0%
 ---
 
 # [!DNL Catalog Service] 对于Adobe Commerce
-
-{{catalog-service-beta}}
 
 的 [!DNL Catalog Service] for Adobe Commerce扩展提供了富视图模型（只读）目录数据，以快速、完全渲染与产品相关的店面体验，包括：
 
