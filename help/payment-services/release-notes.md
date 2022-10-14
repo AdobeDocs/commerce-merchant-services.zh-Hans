@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] 发行说明"
 description: 查看发行说明，了解有关 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
+source-git-commit: 77fbe32ec285bd6ab55100971459f685e19f8425
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1208'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,12 @@ _2021年6月28日_
 ![新建](../assets/new.svg)<!-- Issue PAY-2761 --> 您现在可以自定义 [订单付款状态报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 和 [派息报告](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 显示或隐藏列时，会显示或隐藏列。
 
 +++
+
+## v1.4.1
+
+_2022年10月14日_
+
+![新建](../assets/new.svg)<!-- Issue PAY-3766 --> 当客户的付款方式被拒绝时，显示的错误消息更具描述性。 它建议客户重新输入付款信息，然后重试，尝试其他付款方法，或联系其银行，了解拒绝的交易。
 
 ## v1.4.0
 
