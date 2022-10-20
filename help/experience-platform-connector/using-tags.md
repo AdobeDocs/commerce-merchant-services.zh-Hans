@@ -2,9 +2,9 @@
 title: 使用Adobe Experience Platform标记收集商务数据
 description: 了解如何使用Adobe Experience Platform标记收集商务数据。
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
+source-git-commit: f3c37c9c50c608f9f0ea4582fbcca2b99a3428b5
 workflow-type: tm+mt
-source-wordcount: '2504'
+source-wordcount: '2574'
 ht-degree: 0%
 
 ---
@@ -124,6 +124,7 @@ _Experience Platform连接器数据流与标记_
 - [&#39;searchRequestSent&#39;](#searchrequestsent)
 - [&#39;searchResponseReceived&#39;](#searchresponsereceived)
 - [“addToCart”](#addtocart)
+- [“openCart”](#opencart)
 - [“viewCart”](#viewcart)
 - [“removeFromCart”](#removefromcart)
 - [&#39;initiateCheckout&#39;](#initiatecheckout)
@@ -783,6 +784,39 @@ _Experience Platform连接器数据流与标记_
 - **操作类型**: `Send event`
 - **类型**: `commerce.productListAdds`
 - **XDM数据**: `%add to cart%`
+
+### openCart {#opencart}
+
+创建新购物车时触发，当产品添加到空购物车时会发生这种情况。
+
+#### 数据元素
+
+创建以下数据元素：
+
+1. 打开购物车：
+
+   - **名称**: `open cart`
+   - **扩展**: `Adobe Experience Platform Web SDK`
+   - **数据元素类型**: `XDM object`
+   - **字段组**: `commerce` > `productListOpens` > `value`
+   - **值**: **值** = `1`
+   - **字段组**: `commerce` > `cart` > `cartID`
+   - **购物车ID**: **值** = `%cart id%`
+   - **字段组**: `productListItems`. 对于 `productListItems`，则可以预计算多个项目。 选择 **productListItems** > **提供整个阵列**.
+
+#### 规则 
+
+- **名称**: `open cart`
+- **扩展**: `Adobe Client Data Layer`
+- **事件类型**: `Data Pushed`
+- **特定事件**: `open-cart`
+
+##### 操作
+
+- **扩展**: `Adobe Experience Platform Web SDK`
+- **操作类型**: `Send event`
+- **类型**: `commerce.productListOpens`
+- **XDM数据**: `%open cart%`
 
 ### viewCart {#viewcart}
 

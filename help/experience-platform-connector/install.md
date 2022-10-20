@@ -2,9 +2,9 @@
 title: 从Adobe Commerce安装和配置Adobe Experience Platform Connector
 description: 了解如何从Adobe Commerce安装、配置、更新和卸载Adobe Experience Platform Connector。
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
+source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Experience Platform连接器作为 [Adobe市场](https://marketplace.magento.com
    此元包包含以下模块和扩展：
 
    * `module-platform-connector-admin`  — 更新管理员UI，以便您能够为特定Adobe Commerce实例选择数据流ID
-   * `module-platform-connector`  — 设置 `ImsOrgId` 和 `datastreamId` 在Adobe Commerce Storefront Event SDK中
+   * `module-platform-connector`  — 设置 `Organization ID` 和 `datastreamId` 在Storefront Events SDK中
    * `data-services`  — 为店面事件提供属性上下文。 例如，发生结帐事件时，将包含有关购物车中有多少个项目的信息以及这些项目的产品属性数据。
    * `services-id`  — 将Adobe Commerce实例连接到 [Adobe Commerce SaaS](../landing/saas.md) 使用沙盒和生产API密钥和Adobe Experience Platform来检索IMS组织ID
 

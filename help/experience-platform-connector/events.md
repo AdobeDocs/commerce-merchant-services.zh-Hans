@@ -2,9 +2,9 @@
 title: 事件
 description: 了解每个事件捕获的数据。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: aaaab3d11c15a69856711a41e889a5d0208aedd2
+source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
 workflow-type: tm+mt
-source-wordcount: '1977'
+source-wordcount: '1987'
 ht-degree: 0%
 
 ---
@@ -447,4 +447,7 @@ ht-degree: 0%
 | `searchResponse` | 指示是否收到搜索响应 |
 | `suggestions` | 字符串数组，其中包含目录中存在的与搜索查询类似的产品和类别的名称 |
 | `numberOfResults` | 返回的产品数 |
-| `productListItems` | 购物车中的一系列产品。 包括 `SKU`（库存单位）及 `name` （显示名称或人类可读名称） |
+| `productListItems` | 购物车中的一系列产品。 |
+| `SKU` | 库存单位。 产品的唯一标识符。 |
+| `name` | 产品的显示名称或人类可读的名称 |
+| `productImageUrl` | 产品的主图像URL |

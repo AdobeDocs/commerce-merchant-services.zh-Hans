@@ -2,7 +2,7 @@
 title: 发行说明
 description: 的最新发行信息 [!DNL Product Recommendations] 从Adobe Commerce。
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
+source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## Adobe Commerce 2.3.x和2.4.x
 
-## 4.0.0 of magento/product-recommendations
+### 4.0.0 of magento/product-recommendations
 
 * ![新建](../assets/new.svg)  — 已添加 [就绪指标](create.md) 以帮助您可视化每个推荐类型的培训进度。
 * ![新建](../assets/new.svg)  — 这是一个主要版本。 您必须 [编辑](install-configure.md#update) 根 `composer.json` 文件。 此版本还要求您在安装和配置产品Recommendations时提供两个API密钥： [生产密钥和沙盒密钥](../landing/saas.md).
@@ -36,12 +36,12 @@ ht-degree: 0%
 
 * 的 `websiteCode` 如果值包含下划线(_)，则会错误返回该值。
 
-## magento/product-recommendations的3.3.7
+### magento/product-recommendations的3.3.7
 
 * ![新建](../assets/new.svg)  — 添加了PHP 8.1支持
 * ![新建](../assets/new.svg)  — 改进了图像大小调整，以便在参考显示模板中处理不同大小的图像时更一致
 
-## magento/product-recommendations的3.3.6
+### magento/product-recommendations的3.3.6
 
 * ![新建](../assets/new.svg)  — 已优化 [!DNL Product Recommendations] 元包，方法是明确列出依赖项
 
