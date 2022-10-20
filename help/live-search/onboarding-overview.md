@@ -2,9 +2,9 @@
 title: “入门概述”
 description: '"[!DNL Live Search] 入门流程、系统要求、边界和限制”'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 5a17c601f84c7e366801c17fad96c1e598b1adfe
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -38,14 +38,20 @@ ht-degree: 0%
 * 仅对Adobe Commerce数据库中的产品进行索引
 * 不为CMS页面编入索引
 
-### 同义词
-
-* [!DNL Live Search] 每个同义词最多可管理200个同义词 `Data Space ID`.
-
 ### 查询
 
 * [!DNL Live Search] 无权访问类别树的完整分类，这会导致某些分层导航搜索方案超出其覆盖范围。
 * [!DNL Live Search] 对查询使用唯一的GraphQL端点来支持智能分面和按类型搜索等功能。 尽管与 [MagentoGraphQL API](https://devdocs.magento.com/guides/v2.4/graphql)，则存在一些差异，某些字段当前可能不完全兼容。
+
+### 规则
+
+* 每个数据空间ID的最大规则数为50。
+* 每个规则的最大条件数为10。
+* 每个规则的最大事件数为25。
+
+### 同义词
+
+* [!DNL Live Search] 每个同义词最多可管理200个同义词 `Data Space ID`.
 
 ### PWA测试版
 
