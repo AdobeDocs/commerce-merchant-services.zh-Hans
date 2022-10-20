@@ -2,18 +2,14 @@
 title: 入门和安装
 description: 了解如何安装 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 41f42054a495fb815e6dcf0f2ef371bbd2c98701
+source-git-commit: 683b599e183f1269cdd6c3772d1b33c43cf1156e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
 
 # 入门和安装
-
-欢迎合作伙伴和客户开始使用 [!DNL Catalog Service] 适用于2022年8月9日发布的Adobe Commerce Beta版。 要参与，您必须阅读并同意我们的 [Adobe Commerce测试版计划术语](https://experiencecloudpanel.adobe.com/h/s/6eGskQlHvLSHztsNmKCWMy).
-
-签署协议后，请联系我们的团队 [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) 公共Slack渠道。 我们将提供与 [!DNL Catalog Service] 测试版。
 
 ## 先决条件
 
@@ -55,8 +51,6 @@ ht-degree: 0%
     "magento/services-connector": "1.2.1"
     }
    ```
-
-   <!-- What if the customer already has other services installed, and some of these lines are already present? Do they need to delete the duplications? What if the version numbers are different? -->
 
 1. 在本地测试新配置并更新依赖项：
 
