@@ -2,7 +2,7 @@
 user-guide-title: '"[!DNL Product Recommendations] 指南”'
 user-guide-description: 本指南提供了有关使用的详细说明 [!DNL Product Recommendations] 从Adobe Commerce。
 breadcrumb-title: '"[!DNL Product Recommendations] 指南”'
-source-git-commit: 81ab2e22b0ec81e97d27ee135c88b50731a3986d
+source-git-commit: 1dbb0dcf588c71f916755d1b06b41d3244201b7e
 workflow-type: tm+mt
 source-wordcount: '51'
 ht-degree: 3%
@@ -33,5 +33,5 @@ ht-degree: 3%
 - [!DNL Product Recommendations] 开发人员 {#developer}
    - [概述](development-overview.md)
    - [收集数据](events.md)
-   - [编辑](customize.md)
+   - [自定义](customize.md)
    - [处理Cookie限制](setting-cookie.md)
