@@ -2,10 +2,10 @@
 title: "[!DNL Live Search] 发行说明"
 description: “ [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
+source-git-commit: baa2587fc9d048d7a7915b9370b63ac6c2ff93d2
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 1%
+source-wordcount: '1114'
+ht-degree: 0%
 
 ---
 
@@ -16,6 +16,22 @@ ht-degree: 1%
 * ![新建](../assets/new.svg)  — 新增功能
 * ![修复](../assets/fix.svg)  — 修复和改进功能
 * ![错误](../assets/bug.svg)  — 已知问题
+
+## [!DNL Live Search] 2.0.4
+
+* 与Adobe Commerce(EE)兼容：2.4.x
+* 与Adobe Commerce for Cloud(ECE)兼容：2.4.x
+* 稳定性：稳定
+
+* ![新建](../assets/new.svg)  — 实时搜索现在支持通过管理员中的“显示无现货产品”设置进行过滤。 如果“显示缺货产品”设置为false， `inStock = true` 会添加到过滤器。
+* ![修复](../assets/fix.svg)  — 为了提高性能，已从“实时搜索”弹出窗口中删除“建议”块。 如果要替换该功能，数据仍会通过GraphQL进行传递。
+* ![修复](../assets/fix.svg) - `categories` 和 `categoryPath` 已更换 `categoryIds` ，以便进行类别筛选。 有关更多信息，请参阅 [productSearch](https://devdocs.magento.com/live-search/product-search.html#filter) 主题。
+* ![修复](../assets/fix.svg)  — 以前，与B2B公司绑定的用户在执行搜索时会收到错误的客户组代码。 现在，实时搜索会返回正确的值。
+* ![修复](../assets/fix.svg)  — 以前，在搜索不存在的术语时，实时搜索将返回错误。 该错误现已修复。
+
+商户必须升级实时搜索扩展版本>= 2.0.4才能访问这些功能。
+
+我们建议用户在推送到生产环境之前先进行升级和测试。 在验证其测试环境结果后，考虑在非高峰时间升级生产环境。
 
 ## [!DNL Live Search] 2.0.3
 
