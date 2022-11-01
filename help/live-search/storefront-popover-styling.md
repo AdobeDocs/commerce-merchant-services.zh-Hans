@@ -2,9 +2,9 @@
 title: “样式 [!DNL Popover] 元素”
 description: “关于自定义 [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: ba3d983372eb60d5cb42e503c3c26c693668a01e
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
@@ -40,9 +40,6 @@ ht-degree: 0%
 
 * `.livesearch.popover-container`
 * `.livesearch.view-all-footer`
-* `.livesearch.suggestions-container`
-* `.livesearch.suggestions-header`
-* `.livesearch.suggestion`
 * `.livesearch.products-container`
 * `.livesearch.product-result`
 * `.livesearch.product-name`
@@ -50,37 +47,30 @@ ht-degree: 0%
 
 ### 容器类选择器
 
-`.livesearch.popover-container`
+#### .livesearch.popover-container
 
 ![[!DNL Popover] 容器](assets/livesearch-popover-container.png)
 
-`.livesearch.view-all-footer`
+#### .livesearch.view-all-footer
 
 ![查看所有页脚](assets/livesearch-view-all-footer.png)
 
-### 建议类选择器
-
-`.livesearch.suggestions-container`
-![建议容器](assets/livesearch-suggestions-container.png)
-
-`.livesearch.suggestions-header`
-![建议标题](assets/livesearch-suggestions-header.png)
-
-`.livesearch.suggestion`
-![建议](assets/livesearch-suggestion.png)
-
 ### 产品类选择器
 
-`.livesearch.products-container`
+#### .livesearch.products-container
+
 ![产品容器](assets/livesearch-product-container.png)
 
-`.livesearch.product-result`
+#### .livesearch.product-result
+
 ![产品结果](assets/livesearch-product-result.png)
 
-`.livesearch.product-name`
+#### .livesearch.product-name
+
 ![产品名称](assets/livesearch-product-name.png)
 
-`.livesearch.product-price`
+#### .livesearch.product-price
+
 ![产品价格](assets/livesearch-product-price.png)
 
 ## 使用修改的主题 {#working-with-modified-theme}
