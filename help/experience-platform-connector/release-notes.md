@@ -2,7 +2,7 @@
 title: 发行说明
 description: 来自Adobe Commerce的Adobe Experience Platform Connector的最新发行信息。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: f3c37c9c50c608f9f0ea4582fbcca2b99a3428b5
+source-git-commit: b0f729a8035d89a8cd45b583df28dedfb36c19d4
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 3%
@@ -27,12 +27,14 @@ ht-degree: 3%
 
 以下发行说明介绍了与Experience Platform连接器使用的扩展相关的功能更改和修复。
 
-+++托管服务更新
++++支持的服务更新
 
 _2022年10月12日_
 
 * ![新建](../assets/new.svg)  — 添加了两个 [storefront事件](events.md): `openCart` 和 `removeFromCart` 到Adobe Commerce Storefront Events SDK和收集器
 * ![新建](../assets/new.svg)  — 添加了对 [AEM storefront](overview.md#aem-support)
+
++++
 
 ## 2.0.0
 
