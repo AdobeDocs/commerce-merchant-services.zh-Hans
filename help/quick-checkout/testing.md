@@ -2,9 +2,9 @@
 title: “测试 [!DNL Quick Checkout] (对于Adobe Commerce扩展)
 description: “测试和验证可确保 [!DNL Quick Checkout] 扩展可按预期工作。”
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -44,15 +44,15 @@ ht-degree: 0%
 从您的商店中成功完成结帐：
 
 1. 转到店面，并将所需物品放入购物车。
-2. 继续结帐。
-3. 输入与 [!DNL Bolt] 帐户。
-4. 输入发送到帐户电子邮件地址的一次性密码(OTP)。
-5. 选择环境功能板：
+1. 继续结帐。
+1. 输入与 [!DNL Bolt] 帐户。
+1. 输入发送到帐户电子邮件地址的一次性密码(OTP)。
+1. 选择环境功能板：
 
    - 沙盒
    - 生产
 
-6. 下订单。
+1. 下订单。
 
 下订单后，您可以在 _订单网格_ 视图：
 

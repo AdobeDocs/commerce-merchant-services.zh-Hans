@@ -2,9 +2,9 @@
 title: “在 [!DNL Quick Checkout] (对于Adobe Commerce扩展)
 description: “了解 [!DNL Quick Checkout] 可以为您的Adobe Commerce实例以及如何成功载入和设置扩展。”
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,9 @@ ht-degree: 0%
 
 1. 提供您的唯一API后验证凭据，并 [!DNL Publishable keys].
 
-![快速结帐](assets/quick-checkout-main-view.png)
+![快速结帐](assets/quick-checkout-main-view-react.png)
+
+请参阅 [设置](../quick-checkout/settings-quick-checkout.md) 主题，以详细了解 [!DNL Quick Checkout] (对于Adobe Commerce扩展)。
 
 >[!CAUTION]
 >
