@@ -2,10 +2,10 @@
 title: '[!DNL Quick Checkout] 发行说明'
 description: 查看发行说明，了解有关 [!DNL Quick Checkout] 版本。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
+source-git-commit: dd9131059030f687dfff44b379dc0e8ddbb9f32f
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 1%
+source-wordcount: '888'
+ht-degree: 0%
 
 ---
 
@@ -27,17 +27,39 @@ ht-degree: 1%
 
 +++管理面板更新
 
+_2022年11月2日_
+
+![新建](../assets/new.svg)<!-- Issue BOLT-293 --> 现在， [报告](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) 选项卡 [!DNL Quick Checkout] “管理员”面板显示商店结帐体验统计信息的图表和报告信息。
+
+![新建](../assets/new.svg)<!-- Issue BOLT-422 --> 的 [_概述_](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#reports-overview) “报告”主题部分显示有关商店结帐性能的详细信息，包括平均结帐时间、结帐期间创建的新帐户以及结帐放弃。
+
+![新建](../assets/new.svg)<!-- Issue BOLT-423 --> 的 [_趋势_](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#reports-trends) “报表”选项卡的部分显示了按帐户类型过滤的结账体验趋势，以及在结账期间创建的新帐户。
+
+![新建](../assets/new.svg)<!-- Issue BOLT-439 --> 的 **报表** 选项卡显示 [默认筛选器预设](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#filter-data) 可用于显示特定数据范围的数据。
+
+![新建](../assets/new.svg)<!-- Issue BOLT-433 --> 您现在可以看到 _无可用数据_ 请求不返回任何数据时对图表发出警告。
+
+![新建](../assets/new.svg)<!-- Issue BOLT-473 --> 改进了 [!DNL Quick Checkout] 管理员面板包括启用 [结账跟踪](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) 设置，以允许Adobe Commerce与Bolt共享报表信息。
+
 _2022年10月5日_
 
-![新建](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] 管理面板集成了 [由Gainsight提供支持的功能导览](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html).
+![新建](../assets/new.svg)<!-- Issue BOLT-379 --> 现在，当新商户 [!DNL Quick Checkout] 管理员面板 [由Gainsight提供支持的功能导览](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) 中。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-377 --> 的 **报表** 选项卡 [!DNL Quick Checkout] 管理面板包含即将提供的图表和报告信息的概要。
+![新建](../assets/new.svg)<!-- Issue BOLT-377 --> 的 **报表** 选项卡 [!DNL Quick Checkout] “管理员”面板显示图表和报表分析。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-377 --> 的 **报表** 选项卡 [!DNL Quick Checkout] “管理员”面板显示即将提供的图表和报表信息的过滤器日期范围。
+![新建](../assets/new.svg)<!-- Issue BOLT-377 --> 的 **报表** 选项卡 [!DNL Quick Checkout] “管理员”面板显示图表和报表分析的日期范围和过滤器预设。
 
-![修复的问题](../assets/fix.svg)<!-- Issue BOLT-369 --> [[!DNL Quick Checkout] 管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 现在，在页脚中显示react应用程序版本。
+![修复的问题](../assets/fix.svg)<!-- Issue BOLT-369 --> 现在， [[!DNL Quick Checkout] 管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 在页脚中显示应用程序版本。
 
 +++
+
+## v1.3.0
+
+_2022年11月2日_
+
+![新建](../assets/new.svg)<!-- Issue BOLT-293 --> 现在， [!DNL Quick Checkout] 包括启用 [结账跟踪](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) 设置，以允许Adobe Commerce与Bolt共享报表信息。
+
+![新建](../assets/new.svg)<!-- Issue BOLT-461 --> 您现在可以在 [!DNL Quick Checkout] 管理面板(如果 [结账跟踪](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) 配置被禁用。
 
 ## v1.2.0
 
@@ -51,7 +73,7 @@ _2022年9月8日_
 
 ![新建](../assets/new.svg)<!-- Issue BOLT-377 --> [!DNL Quick Checkout] 管理员面板现在包含包含特定部分(如 **概述**, **报表**&#x200B;和 **设置**.
 
-![新建](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] “管理员面板”添加了一个欢迎用小组件，该小组件提供了由Gainsight提供支持的功能导览。
+![新建](../assets/new.svg)<!-- Issue BOLT-379 --> 当新商户访问 [!DNL Quick Checkout] 首次显示欢迎小组件以进行功能浏览的“管理员”面板。
 
 ![新建](../assets/new.svg)<!-- Issue BOLT-378 --> [!DNL Quick Checkout] [管理面板视图](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) 合并 **配置** 步骤，当API和可发布密钥未在 [设置](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 中。
 
