@@ -1,7 +1,8 @@
 ---
 title: 自定义
 description: 了解如何自定义产品推荐。
-source-git-commit: 478c5bf7d7830d971c576ce50ff0bf3ffd4fe9e5
+exl-id: b1b8e770-45ec-4403-b79b-4f0a9f7bd959
+source-git-commit: a34c3c8a5caca1bbf611b2df650c562aeeab297b
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 0%
@@ -110,7 +111,7 @@ ht-degree: 0%
 
 例如，如果您的商店销售一些有机产品，则可能在那些将其指定为 `Organic = Yes`. 您可能需要在店面上访问此属性值，以便在这些产品出现在Recommendations中时对这些产品给予特殊的视觉处理。 同样，通过访问这些自定义产品属性值，您可以在网站的表示层标记产品或驱动自定义逻辑。
 
-![添加标记](assets/unit.png)
+![添加标记](assets/unit-custom.png)
 
 要确保在页面上呈现推荐单元时自定义产品属性可用，请将 `Used in Product Listing` 属性 `Yes` 在 [产品属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) 页面。
 
