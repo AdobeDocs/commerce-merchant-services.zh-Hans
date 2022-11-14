@@ -2,7 +2,7 @@
 title: “Adobe Commerce中的结帐流程”
 description: “概述 [!DNL Quick Checkout] 在Adobe Commerce流动。”
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 0%
@@ -47,4 +47,4 @@ ht-degree: 0%
 
 ## 获取帮助
 
-通过与Adobe Commerce支持部门联系 [Adobe Commerce帮助中心](https://support.magento.com/hc/en-us/articles/360000913794-Adobe-Commerce-Help-Center-User-Guide) 来寻求帮助。
+通过与Adobe Commerce支持部门联系 [Adobe Commerce帮助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) 来寻求帮助。

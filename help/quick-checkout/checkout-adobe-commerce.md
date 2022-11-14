@@ -2,9 +2,9 @@
 title: “Adobe Commerce用户的结帐流程”
 description: “概述 [!DNL Quick Checkout] 流量。”
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 如果购物者在结账前已登录Adobe Commerce，则 [!DNL Bolt] 在结账期间，OTP弹出窗口将不显示。
 
-如果您在以现有Adobe Commerce用户身份下订单时遇到问题，请参阅 [快速结帐问题疑难解答](https://support.magento.com/hc/en-us/articles/6909450342541) Adobe Commerce帮助中心中的文章。
+如果您在以现有Adobe Commerce用户身份下订单时遇到问题，请参阅 [快速结帐问题疑难解答](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) Adobe Commerce帮助中心中的文章。
 
 ## 新建 [!DNL Bolt] 帐户
 
