@@ -2,9 +2,9 @@
 title: 发行说明
 description: 的最新发行信息 [!DNL Product Recommendations] 从Adobe Commerce。
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
+source-git-commit: 944576fdacd7dbbb704f74ba06d34f64eac41122
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '967'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,6 @@ ht-degree: 0%
 
 发行说明包含以下更新 [!DNL Product Recommendations] 模块：
 
-* 自2021年3月起， [!DNL Product Recommendations] 现在支持 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/) 店面。
 * [!DNL Product Recommendations] 元包： `magento/product-recommendations`
 * 中的页面生成器支持 [!DNL Product Recommendations] （可选）模块： `magento/module-page-builder-product-recommendations`
 * 对的可视相似度推荐类型支持 [!DNL Product Recommendations] （可选）模块： `magento/module-visual-product-recommendations`
@@ -26,6 +25,10 @@ ht-degree: 0%
 请参阅开发人员文档，以 [了解产品兼容性](https://devdocs.magento.com/release/availability.html).
 
 ## Adobe Commerce 2.3.x和2.4.x
+
+### magento/product-recommendations的4.0.1
+
+* ![修复](../assets/fix.svg)  — 以前，产品Recommendations在将显示货币切换为非默认货币时会显示错误。 现在，切换货币的工作正常。
 
 ### 4.0.0 of magento/product-recommendations
 
