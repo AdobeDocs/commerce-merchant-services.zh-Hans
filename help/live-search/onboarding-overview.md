@@ -2,9 +2,9 @@
 title: “入门概述”
 description: '"[!DNL Live Search] 入门流程、系统要求、边界和限制”'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 5a17c601f84c7e366801c17fad96c1e598b1adfe
+source-git-commit: b4cdbc3b166a3aae5b4219196a86cb681744d435
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,9 @@ ht-degree: 0%
 
 ### 索引
 
-* 每个商店视图最多可为300个产品属性建立索引
-* 仅对Adobe Commerce数据库中的产品进行索引
-* 不为CMS页面编入索引
+* 每个商店视图最多可为300个产品属性建立索引。
+* 仅对Adobe Commerce数据库中的产品进行索引。
+* CMS页面未编入索引。
 
 ### 查询
 
@@ -45,13 +45,13 @@ ht-degree: 0%
 
 ### 规则
 
-* 每个数据空间ID的最大规则数为50。
+* 每个存储视图的最大规则数为50。
 * 每个规则的最大条件数为10。
 * 每个规则的最大事件数为25。
 
 ### 同义词
 
-* [!DNL Live Search] 每个同义词最多可管理200个同义词 `Data Space ID`.
+* [!DNL Live Search] 每个存储视图最多可管理200个同义词。
 
 ### PWA测试版
 
