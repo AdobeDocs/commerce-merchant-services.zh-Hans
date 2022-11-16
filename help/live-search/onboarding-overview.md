@@ -2,9 +2,9 @@
 title: “入门概述”
 description: '"[!DNL Live Search] 入门流程、系统要求、边界和限制”'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: b4cdbc3b166a3aae5b4219196a86cb681744d435
+source-git-commit: 8e541924d6a69f963e150057b82e682e1e5d3801
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
@@ -62,9 +62,6 @@ ht-degree: 0%
 ### 当前不支持
 
 * 的 [高级搜索](https://docs.magento.com/user-guide/catalog/search-advanced.html) 模块在 [!DNL Live Search] ，并且会删除店面页脚中的高级搜索链接。
-* [客户群组](https://docs.magento.com/user-guide/customers/customer-groups.html)
 * [自定义价格组](https://docs.magento.com/user-guide/catalog/product-price-group.html)
 * 使用的多个库存位置 [MCOM](https://docs.magento.com/user-guide/mcom.html) 或其他OMS扩展
-* [集成的B2B功能](https://business.adobe.com/products/magento/b2b-ecommerce.html)
 * 产品价格不包括 [增值税](https://docs.magento.com/user-guide/tax/vat.html) （增值税）。
-* 无现货产品会显示在搜索结果中，与 [股票期权](https://docs.magento.com/user-guide/catalog/inventory-options-global.html) 配置。
