@@ -2,9 +2,9 @@
 title: 入门和安装
 description: 了解如何安装 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: c740e75c9fe12b062683fa957d0c6623d8180e4f
+source-git-commit: ea4b386d7e378b30641e623cb190923dc50563d8
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,6 @@ ht-degree: 0%
    bin/magento cache:clean
    ```
 
-
 ## 目录服务和API网格
 
 的 [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 使开发人员能够使用AdobeIO将专用或第三方API及其他界面与Adobe产品集成。
@@ -103,7 +102,16 @@ ht-degree: 0%
 在AdobeIO上配置Mesh后，运行以下命令以连接新网格。
 
 ```bash
-aio api-mesh:source:install "CommerceCatalogServiceGraph"
+aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
+```
+
+where `variables.json` 是存储AdobeIO常用值的单独文件。
+例如，API密钥可以保存在文件中：
+
+```json
+{
+    "CATALOG_SERVICE_API_KEY":"your_api_key"
+}
 ```
 
 运行此命令后，目录服务应通过API网格运行。

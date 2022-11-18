@@ -2,10 +2,10 @@
 title: '[!DNL Catalog Service] 发行说明'
 description: 的最新发行信息 [!DNL Catalog Service] Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: c0d3d277bd9bb291de6eede811dc6b00255e5412
+source-git-commit: d84996bc76a44b39aeaee7f8b0ed4973fbe5de37
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,6 +16,21 @@ ht-degree: 1%
 * ![新建](../assets/new.svg) 新增功能
 * ![修复](../assets/fix.svg) 修复和改进功能
 * ![错误](../assets/bug.svg) 已知问题
+
+## V1.1版本
+
+发行日期：2022-11-18与Adobe Commerce(EE)兼容：2.4.x与Adobe Commerce for Cloud(ECE)兼容：2.4.x稳定性：正式发布
+
+![新建](../assets/new.svg) 目录服务现在支持Adobe [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/).
+![修复](../assets/fix.svg) 我们改进了API可扩展性和整体性能。
+
+### 已知限制
+
+尚不支持以下功能：
+
+* 分层定价
+* 从目录中删除变体后，不会收到任何更新
+* 动态属性有效负载的最大大小为9MB
 
 ## V1.0版本
 
