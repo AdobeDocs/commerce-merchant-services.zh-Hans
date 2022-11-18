@@ -2,9 +2,9 @@
 title: 付款选项
 description: 设置付款选项以自定义商店客户可用的方法。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: c7afa798096e07409fb36a3d08f7e5b2a5ce40db
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '1001'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,8 @@ ht-degree: 0%
 ## [!UICONTROL Credit Card Fields]
 
 [!UICONTROL Credit Card Fields] 为信用卡或借记卡付款方法提供简单且安全的结账。 当购物者使用信用卡字段签出时，他们会输入其名称、帐单地址以及信用卡或借记卡信息，以下单。 在购买会话期间，可安全地使用客户信息，以无缝指导客户完成结账流程。
+
+启用 [信用卡保险](#vaulting) 以便您的商店允许购物者保存（保存）其信用卡信息，以便稍后快速结帐。
 
 您可以配置 [!UICONTROL Credit Card Fields] 在存储配置或支付服务主页中。 请参阅 [设置](settings.md#credit-card-fields) 以了解更多信息。
 
@@ -104,6 +106,12 @@ ht-degree: 0%
 如果客户取消订单，则当前产品页面中的项目将添加到客户的购物车，并加入购物车中存在的任何其他项目。 此函数允许客户快速购买其当前正在查看的项目，同时保留之前在浏览产品时添加到购物车的任何其他项目。
 
 当客户从产品页面进入结账流程时，结账页面会得到简化，该视图仅显示与订单相关的数据和选项。
+
+## 信用卡保险
+
+购物者可以在网站级别（同一商户帐户内的任何商店）存储或“保存”他们的信用卡信息，供将来购买。
+
+请参阅 [信用卡保险](vaulting.md) 以了解更多信息。
 
 ## 安全性
 

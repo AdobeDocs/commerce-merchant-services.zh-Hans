@@ -2,9 +2,9 @@
 title: 安全性和合规性
 description: 查看您网站的安全性和合规性要求。
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,10 @@ ht-degree: 0%
 ### 信用卡字段
 
 使用信用卡字段，您的服务中不会传递PCI管制的数据。 您不必存储或维护该数据，这可大大减少PCI合规性问题。
+
+### 卡保险存储
+
+购物者 [金库 — 或“保存” — 其信用卡信息](vaulting.md) 对于您的商店中的未来购买，会与购物者共享最少的信用卡信息（最后四位数、卡的过期日期和卡品牌）。 信用卡信息与支付提供商一起存储。 当卡过期，或者他们不再需要保存的信息时，他们可以删除该令牌，以便支付提供商不再存储该信息。
 
 ### PayPal智能按钮
 

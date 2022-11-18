@@ -4,9 +4,9 @@ description: 了解如何安装和使用 [!DNL Payment Services] 作为您的全
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,7 @@ ht-degree: 0%
 * [**付款选项**](payments-options.md) — 设置付款选项，以自定义可供您的商店（或多商店）客户使用的方法。
 * **现金流量管理财务报告** — 同步 [付款详细信息](order-payment-status.md) 订购，以便对已处理的数量、付款余额和详细内容实现完全透明 [事务级报告](payouts.md) 进行财务对账。
 * **透明定价** — 定价清晰、前期；你看到的是你得到的。
+* **高效的结帐体验** — 消除快速、简单的结帐障碍，并创建忠诚的客户， [卡保险卡](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) 和 [即时购买](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (默认启用Adobe Commerce)功能。
 
 ## 可用性
 
