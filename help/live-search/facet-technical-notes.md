@@ -1,10 +1,10 @@
 ---
-title: '"Facet技术说明"'
+title: "Facet技术说明"
 description: “关于使用的技术说明 [!DNL Live Search] facet”。
 exl-id: 37982610-0ff7-48b7-b088-be7d2eff8a57
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '117'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Faceting是一种高性能的过滤方法，它使用可搜索的静态和动态属性值的多个维度作为搜索条件。
 
-[!DNL Live Search] 使用 `productSearch` 返回分面的查询以及特定于 [!DNL Live Search]. 请参阅 [`productSearch` 查询](https://devdocs.magento.com/live-search/product-search.html) ，以了解代码示例。
+[!DNL Live Search] 使用 `productSearch` 返回分面的查询以及特定于 [!DNL Live Search]. 请参阅 [`productSearch` 查询](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) ，以了解代码示例。
 
 ## 面聚合
 

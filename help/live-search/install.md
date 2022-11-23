@@ -2,9 +2,9 @@
 title: "安装 [!DNL Live Search]"
 description: “了解如何安装、更新和卸载 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: c4039dbf203198ea1218f4e1516a2690fb7c61c4
+source-git-commit: 11f961ea7e2e01d5d9efdaf2191f25f3a1dc8878
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1267'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Live Search作为Marketplace的扩展安装。 在 [!DNL Live Search] 模块（�
 
    您应该能够在 `cron` 运行产品和属性信息源，并将属性元数据导出到 [!DNL Live Search] 服务。
 
-1. 请至少等待一小时，数据才会被编入索引并同步。 然后，使用 [GraphQL操场](https://devdocs.magento.com/live-search/graphql-support.html) 使用默认查询验证以下内容：
+1. 请至少等待一小时，数据才会被编入索引并同步。 然后，使用 [GraphQL操场](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) 使用默认查询验证以下内容：
 
    * 返回的产品计数接近您对商店视图的预期值。
    * 返回Facet。

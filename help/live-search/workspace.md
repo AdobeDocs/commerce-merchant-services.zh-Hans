@@ -2,9 +2,9 @@
 title: 工作区
 description: 实时搜索工作区用于配置、管理和监视搜索性能。
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,6 @@ ht-degree: 0%
 | [分面](facets.md) | 高性能过滤，它使用多个属性值维度来优化搜索条件。 |
 | [同义词](synonyms.md) | 扩展搜索范围，以包含购物者可能用于查找与目录中的产品不同的产品的词语。 |
 | [规则](rules.md) | 使用可触发计划操作的逻辑规则来塑造搜索体验。 提升、埋藏、固定或隐藏产品以校准搜索结果以支持您的业务目标。 |
-| [GraphQL](https://devdocs.magento.com/live-search/graphql-support.html) | 登录到您商店管理员的开发人员可以使用实际的目录数据撰写和测试查询。 要了解更多信息，请转到 [GraphQL概述](https://devdocs.magento.com/guides/v2.4/graphql/index.html) 在 [!DNL Live Search] 开发人员文档。 |
+| [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) | 登录到您商店管理员的开发人员可以使用实际的目录数据撰写和测试查询。 要了解更多信息，请转到 [GraphQL概述](https://developer.adobe.com/commerce/webapi/graphql/) 在 [!DNL Live Search] 开发人员文档。 |
 | [反馈](feedback.md) | 将您的反馈直接发送到 [!DNL Live Search] 团队。 |
 | [设置](settings.md) | 确定如何按店面中的价格范围对价格方面值进行分组。 |

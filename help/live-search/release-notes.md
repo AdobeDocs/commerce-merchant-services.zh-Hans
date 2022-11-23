@@ -2,7 +2,7 @@
 title: "[!DNL Live Search] 发行说明"
 description: “ [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 8e541924d6a69f963e150057b82e682e1e5d3801
+source-git-commit: bece7022324da4b38d3cb9b375dc0e391ffb3a88
 workflow-type: tm+mt
 source-wordcount: '1191'
 ht-degree: 1%
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 * ![新建](../assets/new.svg)  — 实时搜索现在支持通过管理员中的“显示无现货产品”设置进行过滤。 如果“显示缺货产品”设置为false， `inStock = true` 会添加到过滤器。
 * ![修复](../assets/fix.svg)  — 为了提高性能，已从“实时搜索”弹出窗口中删除“建议”块。 如果要替换该功能，数据仍会通过GraphQL进行传递。
-* ![修复](../assets/fix.svg) - `categories` 和 `categoryPath` 已更换 `categoryIds` ，以便进行类别筛选。 有关更多信息，请参阅 [productSearch](https://devdocs.magento.com/live-search/product-search.html#filter) 主题。
+* ![修复](../assets/fix.svg) - `categories` 和 `categoryPath` 已更换 `categoryIds` ，以便进行类别筛选。 有关更多信息，请参阅 [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) 主题。
 * ![修复](../assets/fix.svg)  — 以前，与B2B公司绑定的用户在执行搜索时会收到错误的客户组代码。 现在，实时搜索会返回正确的值。
 * ![修复](../assets/fix.svg)  — 以前，在搜索不存在的术语时，实时搜索将返回错误。 该错误现已修复。
 
@@ -85,7 +85,7 @@ ht-degree: 1%
 * ![新建](../assets/new.svg)  — 测试版 [PWA](https://developer.adobe.com/commerce/pwa-studio/) 兼容性 [!DNL Live Search].
 * ![新建](../assets/new.svg) - [!DNL Live Search] 安装过程会更新高级过程更改。
 * ![修复](../assets/fix.svg) - [高级搜索](https://docs.magento.com/user-guide/catalog/search-advanced.html) 链接已从storefront footer中删除。
-* ![错误](../assets/bug.svg)  — 不支持以下产品属性 [MagentoGraphQL API](https://devdocs.magento.com/guides/v2.4/graphql) 与测试版PWA相关时： `description`, `name`, `short_description`
+* ![错误](../assets/bug.svg)  — 不支持以下产品属性 [MagentoGraphQL API](https://developer.adobe.com/commerce/webapi/graphql/) 与测试版PWA相关时： `description`, `name`, `short_description`
 * ![错误](../assets/bug.svg)  — 测试版PWA [!DNL Live Search] 不支持 [事件处理](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
 ## [!DNL Live Search] 1.3.1 {#131}
@@ -106,7 +106,7 @@ ht-degree: 1%
 
 * ![新建](../assets/new.svg) - [性能](performance.md) 报表功能板提供有关购物者使用的搜索词的分析。
 * ![新建](../assets/new.svg) - [!DNL Live Search] [Storefront事件SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) 通过事件发布和订阅服务以及量度，提供对常用数据层的访问。
-* ![修复](../assets/fix.svg) - [[!DNL Storefront Popover]](https://devdocs.magento.com/live-search/storefront-popover.html) 具有新 `active` 类 `.search-autocomplete` 可控制可见性的容器。
+* ![修复](../assets/fix.svg) - [[!DNL Storefront popover]](storefront-popover.md) 具有新 `active` 类 `.search-autocomplete` 可控制可见性的容器。
 * ![修复](../assets/fix.svg)  — 在店面， [搜索词](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) 页脚链接已删除，且其缓存已禁用 [!DNL Live Search] 安装。
 * ![错误](../assets/bug.svg) - Search适配器的修补程序处理重复产品。
 * ![错误](../assets/bug.svg) - [!DNL Live Search] 支持 [单源](https://docs.magento.com/user-guide/catalog/inventory-sources.html) 具有多个（虚拟）库存位置的（实际）库存位置 [股票](https://docs.magento.com/user-guide/catalog/inventory-stock.html). 当前不支持多个库存源。
