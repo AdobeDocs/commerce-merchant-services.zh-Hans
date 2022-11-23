@@ -2,7 +2,7 @@
 title: '[!DNL Catalog Service] 发行说明'
 description: 的最新发行信息 [!DNL Catalog Service] Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: d84996bc76a44b39aeaee7f8b0ed4973fbe5de37
+source-git-commit: 624c959119958f9fdd15d3d9559092c35d079c2c
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -28,9 +28,20 @@ ht-degree: 0%
 
 尚不支持以下功能：
 
+* 以固定价格捆绑产品
+* 从目录中删除变体后，不会收到任何更新。
+* 动态属性有效负载的最大大小为9MB。
+* 组产品价格。 可以使用简单的产品价格计算。
+* 在图像阵列中，只有第一个图像包含角色。
+* 颜色色板
+* 通过产品URL加载产品详细信息页面。
+
+使用GraphQL API可以解决以下限制：
+
+* 最低广告价格
 * 分层定价
-* 从目录中删除变体后，不会收到任何更新
-* 动态属性有效负载的最大大小为9MB
+* 可下载的产品和礼品卡
+* 类别(`categories` 和 `categoryList`)
 
 ## V1.0版本
 
