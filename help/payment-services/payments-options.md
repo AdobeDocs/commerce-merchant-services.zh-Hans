@@ -2,9 +2,9 @@
 title: 付款选项
 description: 设置付款选项以自定义商店客户可用的方法。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: e3270098edff3931b02a9803c8db4b3e9c75d636
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1002'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 要使用Apple Pay ，请联系您的销售代表以将其启用到实时商店。
+> 要使用Apple Pay，请联系您的销售代表或客户经理，为您的实时商店启用它。
 
 ### [!DNL Pay Later] 按钮
 
