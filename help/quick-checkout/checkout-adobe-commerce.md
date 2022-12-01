@@ -2,9 +2,9 @@
 title: “Adobe Commerce用户的结帐流程”
 description: “概述 [!DNL Quick Checkout] 流量。”
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 >
 > 仅当购物者位于结账页面时，才会显示“Bolt OTP”弹出窗口。 购物者可以通过关闭该弹出窗口来选择退出登录到Bolt。
 
-如果购物者在结账前已登录Adobe Commerce，则 [!DNL Bolt] 在结账期间，OTP弹出窗口将不显示。
+如果购物者在结账前已登录Adobe Commerce，则 [!DNL Bolt] OTP弹出窗口在结账期间不会显示，但会显示一条消息，建议购物者登录以访问其螺栓钱包。
 
 如果您在以现有Adobe Commerce用户身份下订单时遇到问题，请参阅 [快速结帐问题疑难解答](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) Adobe Commerce帮助中心中的文章。
 

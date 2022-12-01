@@ -2,9 +2,9 @@
 title: “在 [!DNL Quick Checkout] (对于Adobe Commerce扩展)
 description: “了解 [!DNL Quick Checkout] 可以为您的Adobe Commerce实例以及如何成功载入和设置扩展。”
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -132,11 +132,23 @@ ht-degree: 0%
 1. 将范围切换为 **主网站**.
 1. 单击 **配置回调URL** 按钮。 这将启用 [!DNL Bolt] 以确定购物者是否具有帐户。 如果出现，则会显示“OTP”弹出窗口。
 
->[!CAUTION]
->
-> 将范围切换到 **主网站** 确保设置正确的URL。 每个网站可以有多个域。
+   >[!CAUTION]
+   >
+   > 将范围切换到 **主网站** 确保设置正确的URL。 每个网站可以有多个域。
 
 请参阅 [网站、商店和查看范围](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings){target=&quot;_blank&quot;}主题，以了解有关Adobe Commerce中作用域的更多信息。
+
+## 配置服务设置
+
+![快速结帐](assets/service-settings.png)
+
+1. 已设置 **启用结帐跟踪** to `Yes`.
+
+   >[!CAUTION]
+   >
+   > 禁用此选项将影响报表，因为Adobe Commerce不允许与Bolt共享签出跟踪信息。
+
+1. 选择 **登录后下一阶段** 选项，以在客户登录后更改导航流程。 默认情况下，它将设置为 **支付** 页面。
 
 ## 获取帮助
 
