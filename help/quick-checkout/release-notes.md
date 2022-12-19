@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] 发行说明'
 description: 查看发行说明，了解有关 [!DNL Quick Checkout] 版本。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
+source-git-commit: 8b915cd0a8f25934675a2ae00ee2694b7facc1bd
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ ht-degree: 0%
 这些发行说明描述了在管理面板的常规版本控制功能版本之外发生和发布的功能更改和修复。
 
 +++管理面板更新
+
+_2022年12月14日_
+
+![修复的问题](../assets/fix.svg)<!-- Issue BOLT-524 --> 的 [!DNL Quick Checkout] 管理员面板现在可显示正确的总订单和更新的报表信息。
 
 _2022年11月30日_
 
