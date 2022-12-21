@@ -1,10 +1,10 @@
 ---
 title: '''[!DNL Catalog Service] 指南概述'
-description: '''[!DNL Catalog Service for Adobe Commerce] 提供了一种检索产品显示页面和产品列表页面内容的方法，其速度比本机Adobe Commerce GraphQL查询更快。'
+description: '''[!DNL Catalog Service for Adobe Commerce] 提供了一种检索产品显示页面和产品列表页面内容的方法，其速度比本机Adobe Commerce GraphQL查询的速度更快。'
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
-source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
+source-git-commit: fdc8482b22b11261265af52e3ab0c780a14c3342
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 * Adobe [!DNL Commerce] 系统管理员安装和维护服务。 [!DNL Catalog Service] 没有标准管理员用户的管理员UI或功能。
 
-* 集成程序会生成GraphQL查询，并将它们集成到使用前端客户端的店面上。
+* 集成商会构建GraphQL查询，并将它们集成到使用前端客户端的店面上。
 
 ## 其他文档
 
@@ -26,6 +26,12 @@ ht-degree: 0%
 | [Adobe Commerce 2.4用户指南](https://docs.magento.com/user-guide/) | 面向Adobe Commerce和Magento Open Source的以商户为中心的文档 |
 | [Adobe Commerce 2.4开发人员指南](https://devdocs.magento.com/) | 以开发人员为中心的文档，用于构建和自定义Adobe Commerce或Magento Open Source |
 
-## 获取帮助
+## 支持
 
-入门流程旨在指导您完成设置和启用 [!DNL Catalog Service] 功能。 请联系Adobe Commerce工程团队(位于 [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) 公共Slack渠道。
+的 [载入过程](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/installation.html) 旨在指导您完成设置和启用 [!DNL Catalog Service] 功能。
+
+如果您需要信息或遇到本指南未涵盖的问题，请使用以下资源：
+
+* [帮助中心](https://support.magento.com/hc/en-us/search#q=catalog%20service&amp;sort=relevancy)  — 请参阅与目录服务相关的疑难解答文章。
+* [支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket)  — 提交票证以接收其他帮助。
+* 加入Adobe Commerce工程团队和SaaS店面服务用户， [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) 公共Slack渠道为最新。
