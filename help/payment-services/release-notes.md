@@ -2,10 +2,10 @@
 title: "[!DNL Payment Services] 发行说明"
 description: 查看发行说明，了解有关 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 955dc08e6b67acc18380248b2ddf1b8f8c70ec03
+source-git-commit: 6d8ce56d8fd26d8dbfebc87a50512570e9f69b2b
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 0%
+source-wordcount: '1373'
+ht-degree: 1%
 
 ---
 
@@ -52,6 +52,14 @@ _2021年6月28日_
 ![新建](../assets/new.svg)<!-- Issue PAY-2761 --> 您现在可以自定义 [订单付款状态报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 和 [派息报告](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 显示或隐藏列时，会显示或隐藏列。
 
 +++
+
+## v1.5.2
+
+_2022年12月22日_
+
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-3992 --> 改进了在拒绝付款方法时付款服务中的开票。
+
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services现在可以正确显示PayPal智能按钮，其中 [Fire Checkout的](https://marketplace.magento.com/swissup-firecheckout.html)用于结帐页面的{target=_blank}自定义模板。
 
 ## v1.5.1
 
