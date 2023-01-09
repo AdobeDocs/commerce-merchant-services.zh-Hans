@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: 文档
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: bbc97eff4cd0c5b544df34061a1e156e72b91d18
+source-git-commit: 60848c4f34f7f894b6b2fa09e5d1462801ffb2ab
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
@@ -54,9 +54,9 @@ Adobe提供商务、集成和数据服务的集合，以帮助商户支持其业
   </td>
     </tr>
 <tr>
-    <td valign="top">
+    <td valign="top" width="200px">
        <img alt="存储履行" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>存储履行</strong></a> <br><em>(可用于Magento Open Source)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>存储履行</strong></a></br>
     <div>通过提供通过移动设备实现的全面履行工作流程，提供出众的在线购买、商店购物(BOPI)客户体验并最大限度地提高员工工作效率。</div>
   </td>
    </tr>

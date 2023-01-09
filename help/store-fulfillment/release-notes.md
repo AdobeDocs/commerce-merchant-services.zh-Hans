@@ -2,10 +2,10 @@
 title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] 发行说明'
 description: “查看发行说明，了解有关 [!DNL Store Fulfillment by Walmart Commerce Technologies] 版本。”
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
+source-git-commit: 60848c4f34f7f894b6b2fa09e5d1462801ffb2ab
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 5%
+source-wordcount: '187'
+ht-degree: 3%
 
 ---
 
@@ -17,10 +17,28 @@ ht-degree: 5%
 ![修复的问题](../assets/fix.svg) 修复和改进功能
 ![已知问题](../assets/bug.svg) 已知问题
 
-<!-- ## v1.1 -->
-<!--
-![Fixed issue](../assets/fix.svg)-->
-<!-- Simplified the [Check-in experience configuration](check-in-experience-setup.md) for the Store Assist app by adding default car make and model selections. In the previous version, merchants had to manually configure the car make and model selections.-->
+## v1.2.0
+
+与以下商务版本兼容：
+
+* Adobe Commerce(EE):2.4.x
+* Adobe Commerce for Cloud(ECE):2.4.x
+* 稳定性：稳定
+
+此版本包含以下更新：
+
+![新建](../assets/fix.svg) [!DNL Store Fulfillment] 现在 [兼容 [!DNL Adobe Commerce] 2.4.0 - 2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+
+
+## v1.1.0
+
+与以下商务版本兼容：
+
+* Adobe Commerce(EE):2.4.0 - 2.4.4
+* Adobe Commerce for Cloud(ECE):2.4.0 - 2.4.4
+* 稳定性：稳定
+
+![新建](../assets/fix.svg)<!-- WMTP-731 --> 简化了 [签入体验配置](check-in-experience-setup.md) ，方法是添加默认的汽车制作和模型选择。 在以前的版本中，商家必须手动配置汽车的制造和模型选择。
 
 ## v1.0.0
 
