@@ -2,9 +2,9 @@
 title: "添加规则"
 description: “了解如何创建 [!DNL Live Search] 规则。”
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: ed245e440f6db59d8eba66afeddb840420da0cf7
+source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 此处输入的信息显示在 [规则详细信息](rules-workspace.md) 的上界。
 
-1. 在 *详细信息*，输入 **名称** 规则。
+1. 在 *详细信息*，输入 **名称** 规则。 所有规则名称必须唯一。
 1. 输入摘要 **描述** 规则。
 1. 输入 **开始日期** 和 **结束日期** 使规则处于活动状态，或从日历中选择日期。
 
@@ -154,7 +154,7 @@ ht-degree: 0%
 
 | 字段 | 描述 |
 |--- |--- |
-| 名称 | 规则的名称。 |
+| 名称 | 规则的名称。 规则名称必须唯一。 |
 | 开始日期 | 规则的开始日期（如果已计划）。 |
 | 结束日期 | 规则的结束日期（如果已计划）。 |
 | 描述 | 规则的简要描述。 |

@@ -2,9 +2,9 @@
 user-guide-title: '"[!DNL Live Search] 指南”'
 user-guide-description: “本指南提供了有关使用 [!DNL Live Search] 来自Adobe Commerce。”
 breadcrumb-title: '"[!DNL Live Search] 指南”'
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
 workflow-type: tm+mt
-source-wordcount: '72'
+source-wordcount: '68'
 ht-degree: 2%
 
 ---
@@ -39,10 +39,8 @@ ht-degree: 2%
    - 规则 {#rules}
       - [概述](rules.md)
       - [规则工作区](rules-workspace.md)
-      - [规则组件](rule-components.md)
       - [添加规则](rules-add.md)
       - [管理规则](rules-manage.md)
-      - [技术说明](rule-technical-notes.md)
    - [设置](settings.md)
    - [索引](indexing.md)
 - [反馈](feedback.md)

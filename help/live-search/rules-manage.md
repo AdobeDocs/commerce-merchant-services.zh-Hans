@@ -2,9 +2,9 @@
 title: "管理规则"
 description: “了解如何管理现有 [!DNL Live Search] 规则。”
 exl-id: 1a2ca9f9-1cf2-446f-809b-03ca5c798b13
-source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
+source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '137'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 1. 在 *规则* ，在网格中查找要编辑的规则并单击 **更多** (...)选项。
 1. 单击 **编辑** 以访问规则编辑器。
 1. 根据需要更新条件、运算符和事件。
-1. 根据需要更新名称、开始和结束日期以及描述字段。
+1. 根据需要更新名称、开始和结束日期以及描述字段。 所有规则名称必须唯一。
 1. 测试规则。
 1. 发布更改。
 规则将添加到规则工作区的列表中。 尽管活动规则会立即生效，但在店面中缓存的查询结果可能需要长达15分钟才能刷新。
