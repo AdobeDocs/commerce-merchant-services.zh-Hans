@@ -2,7 +2,7 @@
 title: 设置测试沙盒
 description: 使用PayPal沙盒帐户 [!DNL Payment Services] 在测试模式下。
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: ab4a2f4d432f74cb48dc4b92468305c93088593a
+source-git-commit: 3596e3e156a834e39da2105e7ac79588d1edd408
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 0%
@@ -20,9 +20,9 @@ PayPal沙盒帐户允许您使用 [!DNL Payment Services] 在测试模式下。 
 要完成沙盒载入，请执行以下操作：
 
 1. 导航到 [PayPal开发人员帐户页面](https://developer.paypal.com/developer/accounts/).
-1. 单击 **[!UICONTROL Log in to Home]** 并使用您现有的PayPal开发人员门户生成的商业沙盒测试帐户登录，或单击 **注册** 创建帐户。
+1. 单击 **[!UICONTROL Log in to Dashboard]** 并使用您现有的PayPal开发人员门户生成的商业沙盒测试帐户登录，或单击 **注册** 创建帐户。
 1. 创建PayPal沙盒帐户：
-   1. 转到 _[!UICONTROL SANDBOX]_>**[!UICONTROL Accounts]**.
+   1. 转到 _[!UICONTROL Testing Tools]_>**[!UICONTROL Sandbox Accounts]**.
    1. 单击 **[!UICONTROL Create account]**.
 
       如果您在沙盒PayPal载入过程中创建了一个PayPal沙盒帐户，则必须 [重置载入沙盒](#reset-your-sandbox-account) 因为或您无法验证电子邮件。
