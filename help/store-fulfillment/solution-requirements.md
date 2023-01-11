@@ -4,9 +4,9 @@ description: 配置和入门要求 [!DNL Store Fulfillment solution].
 role: User, Admin
 level: Intermediate
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
-source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
+source-git-commit: 842d5b7182d54a1aa5a715662503801816a24c24
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '298'
 ht-degree: 2%
 
 ---
@@ -22,19 +22,19 @@ ht-degree: 2%
 - Adobe Commerce云基础架构(ECE)
 - Adobe Commerce本地(EE)
 
-“商店履行”解决方案与以下软件版本兼容。
+“商店履行”解决方案与 *软件兼容性* 表。
 
 **软件兼容性**
 
 | **软件** | **最低版本** | **最大版本** |
 |----------------|---------------------|---------------------|
-| Adobe Commerce | 2.4.0 | 2.4.4 |
+| Adobe Commerce | 2.4.0 | 2.4.5 |
 | 编辑器 | 1.x | 2.x |
 | MariaDB | 10.2 | 10.4 |
 | MySQL | 5.7 | 8.0 |
 | PHP | 7.4 | 8.1 |
 
-有关详细要求，请参阅Adobe Commerce [系统要求](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) （位于开发人员文档中）。
+有关详细要求，请参阅Adobe Commerce [系统要求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) 在 *Adobe Commerce安装指南*.
 
 ## 商店协助应用程序要求
 
@@ -52,7 +52,7 @@ ht-degree: 2%
 
 ## 业务要求
 
-您的企业必须满足以下最低标准才能实施商店完成解决方案。
+您的企业必须满足以下最低标准才能实施商店实施解决方案：
 
 - 仅限美国企业
 
