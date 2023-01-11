@@ -2,9 +2,9 @@
 title: 创建新推荐
 description: 了解如何创建产品推荐单元。
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 5fa08429a97c9ed59a339a0eca268f99c1023b7e
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ _推荐单元_
 
 1. 在 _管理员_ 侧栏，转到 **营销** > _促销活动_ > **产品Recommendations** 以显示 _产品Recommendations_ 工作区。
 
-1. 指定 [存储视图](https://docs.magento.com/user-guide/configuration/scope.html) 显示推荐的位置。
+1. 指定 [存储视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 显示推荐的位置。
 
    >[!NOTE]
    >
-   > 只能为默认存储视图创建页面生成器推荐单元。 要了解有关使用页面生成器创建产品推荐的更多信息，请参阅 [添加内容 — 产品Recommendations](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html).
+   > 只能为默认存储视图创建页面生成器推荐单元。 要了解有关使用页面生成器创建产品推荐的更多信息，请参阅 [添加内容 — 产品Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
 
 1. 单击 **创建推荐**.
 
@@ -37,7 +37,7 @@ _推荐单元_
    - 产品详细信息
    - 购物车
    - 确认
-   - [页面生成器](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html)
+   - [页面生成器](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
 
    对于每个页面类型，您最多可以创建五个活动推荐单元，对于页面生成器，最多可以创建25个活动推荐单元。 页面类型灰显。达到限制时。
 

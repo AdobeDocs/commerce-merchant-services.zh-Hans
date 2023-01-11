@@ -2,9 +2,9 @@
 title: "安装 [!DNL Live Search]"
 description: “了解如何安装、更新和卸载 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 11f961ea7e2e01d5d9efdaf2191f25f3a1dc8878
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1279'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Live Search作为Marketplace的扩展安装。 在 [!DNL Live Search] 模块（�
 
 执行以下操作：
 
-1. 确认 [cron作业](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) 和 [索引器](https://docs.magento.com/user-guide/system/index-management.html) 正在运行。
+1. 确认 [cron作业](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) 和 [索引器](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) 正在运行。
 
 1. 选择符合您要求的载入方法，然后按照说明操作。
 
@@ -68,7 +68,7 @@ Live Search作为Marketplace的扩展安装。 在 [!DNL Live Search] 模块（�
    >
    > 当数据已编入索引并同步时，搜索和类别浏览操作在店面中不可用。 根据目录的大小，该过程可能至少需要一小时的时间 `cron` 运行以同步数据 [!DNL Live Search] 服务。
 
-1. 确认以下 [索引器](https://docs.magento.com/user-guide/system/index-management.html) 设置为 `Update by Schedule`:
+1. 确认以下 [索引器](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) 设置为 `Update by Schedule`:
 
    * 产品信息源
    * 产品变体信息源
@@ -116,7 +116,7 @@ Live Search作为Marketplace的扩展安装。 在 [!DNL Live Search] 模块（�
 
    [!DNL Elasticsearch] 继续管理来自店面的搜索请求，而 [!DNL Live Search] 服务在后台同步目录数据和索引产品。
 
-1. 确认以下 [索引器](https://docs.magento.com/user-guide/system/index-management.html) 设置为 `Update by Schedule`:
+1. 确认以下 [索引器](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) 设置为 `Update by Schedule`:
 
    * 产品信息源
    * 产品变体信息源
@@ -128,7 +128,7 @@ Live Search作为Marketplace的扩展安装。 在 [!DNL Live Search] 模块（�
 
    您应该能够在 `cron` 运行产品和属性信息源，并将属性元数据导出到 [!DNL Live Search] 服务。
 
-1. 请至少等待一小时，数据才会被编入索引并同步。 然后，使用 [GraphQL操场](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) 使用默认查询验证以下内容：
+1. 请至少等待一小时，数据才会被编入索引并同步。 然后，使用 [GraphQL游乐场](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) 使用默认查询验证以下内容：
 
    * 返回的产品计数接近您对商店视图的预期值。
    * 返回Facet。
@@ -243,14 +243,14 @@ composer update magento/live-search --with-dependencies
 
 ## 卸载 [!DNL Live Search] {#uninstall}
 
-卸载 [!DNL Live Search]，请参阅 [卸载模块](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html).
+卸载 [!DNL Live Search]，请参阅 [卸载模块](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
 
 ## [!DNL Live Search] 软件包 {#packages}
 
 | 包 | 描述 |
 |--- |--- |
-| `module-live-search` | 允许商家为分面、同义词、查询规则等配置其搜索设置，并提供对只读GraphQL操场的访问，以测试来自 *管理员*. |
-| `module-live-search-adapter` | 将搜索请求从店面路由到 [!DNL Live Search] 服务，并在店面中呈现结果。 <br /> — 类别浏览 — 从店面路由请求 [顶部导航](https://docs.magento.com/user-guide/catalog/navigation-top.html) 到搜索服务。<br /> — 全局搜索 — 路由来自 [快速搜索](https://docs.magento.com/user-guide/catalog/search-quick.html) 的 [!DNL Live Search] 服务。 |
+| `module-live-search` | 允许商户为分面、同义词、查询规则等配置其搜索设置，并提供对只读GraphQL操场的访问，以测试来自 *管理员*. |
+| `module-live-search-adapter` | 将搜索请求从店面路由到 [!DNL Live Search] 服务，并在店面中呈现结果。 <br /> — 类别浏览 — 从店面路由请求 [顶部导航](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) 到搜索服务。<br /> — 全局搜索 — 路由来自 [快速搜索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 的 [!DNL Live Search] 服务。 |
 | `module-live-search-storefront-popover` | “键入时搜索”弹出窗口取代了标准快速搜索，并返回了热门搜索结果的数据和缩略图。 |
 
 ## [!DNL Live Search] 依赖 {#dependencies}

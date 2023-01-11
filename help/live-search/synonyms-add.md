@@ -1,10 +1,10 @@
 ---
-title: '"添加同义词"'
+title: "添加同义词"
 description: '"添加 [!DNL Live Search] 用于改进对搜索请求的响应的同义词。”'
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 ## 步骤1:添加同义词
 
 1. 在管理员中，转到 **营销** > SEO和搜索> **[!DNL Live Search]**.
-1. 对于多个商店，请设置 **范围** 到 [商店视图](https://docs.magento.com/user-guide/configuration/scope.html) 应用同义词设置时。
+1. 对于多个商店，请设置 **范围** 到 [商店视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 应用同义词设置时。
 1. 单击 **同义词** 选项卡。
 1. 单击 **添加同义词** 按钮。
 

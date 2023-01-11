@@ -2,9 +2,9 @@
 title: 简介 [!DNL Product Recommendations]
 description: '''[!DNL Product Recommendations] 是一款功能强大的营销工具，可用于提高转化率、增加收入和刺激购物者参与。”'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
-source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 产品推荐与产品关系
 
-鉴于在线购物的复杂性不断变化，对店面最有效的往往是多种关键技术的组合。 同时使用 [!DNL Product Recommendations] 和 [产品关系](https://docs.magento.com/user-guide/marketing/product-relationships.html) 在促销产品时为您提供了更大的灵活性。 您可以利用 [!DNL Product Recommendations] 由Adobe Sensei提供支持，可以智能地大规模自动化您的推荐。 然后，您可以利用 [相关产品规则](https://docs.magento.com/user-guide/marketing/product-related-rules.html) 当您必须手动干预并确保向目标购物者区段提供特定推荐，或者必须达到某些业务目标时。
+鉴于在线购物的复杂性不断变化，对店面最有效的往往是多种关键技术的组合。 同时使用 [!DNL Product Recommendations] 和 [产品关系](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html) 在促销产品时为您提供了更大的灵活性。 您可以利用 [!DNL Product Recommendations] 由Adobe Sensei提供支持，可以智能地大规模自动化您的推荐。 然后，您可以利用 [相关产品规则](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html) 当您必须手动干预并确保向目标购物者区段提供特定推荐，或者必须达到某些业务目标时。
 
 产品推荐允许您：
 

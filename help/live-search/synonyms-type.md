@@ -1,10 +1,10 @@
 ---
-title: '"同义词的类型"'
+title: "同义词的类型"
 description: “单向和双向 [!DNL Live Search] 同义词扩展了关键词的定义。”
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: cd1b40ffb350a87ea1317be82789f702922881b9
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -53,4 +53,4 @@ a，a，和，是，a，a，t，b，但是，对于，如果，in，in，i，是
 
 ### 关键词映射
 
-此技术使用可搜索的产品属性而不是同义词来在产品之间创建基于关键字的关联。 因此，映射的产品可能会显示在其他产品的搜索结果中。 要了解更多信息，请参阅 [搜索结果](https://docs.magento.com/user-guide/catalog/search-results.html).
+此技术使用可搜索的产品属性而不是同义词来在产品之间创建基于关键字的关联。 因此，映射的产品可能会显示在其他产品的搜索结果中。 要了解更多信息，请参阅 [搜索结果](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html).

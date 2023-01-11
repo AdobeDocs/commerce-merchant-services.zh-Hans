@@ -2,9 +2,9 @@
 title: “样式 [!DNL Popover] 元素”
 description: “关于自定义 [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: ba3d983372eb60d5cb42e503c3c26c693668a01e
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 .search-autocomplete          /* not visible */
 ```
 
-有关店面元素样式的更多信息，请参阅 [层叠样式表(CSS)](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/css-overview.html) 在 [Frontend开发人员指南](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html).
+有关店面元素样式的更多信息，请参阅 [层叠样式表(CSS)](https://developer.adobe.com/commerce/frontend-core/guide/css/) 在 [Frontend开发人员指南](https://developer.adobe.com/commerce/frontend-core/guide/).
 
 ## 类选择器
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 ## 使用修改的主题 {#working-with-modified-theme}
 
-的 [!DNL storefront popover] 可与自定义 [主题](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html) 会从 *卢马*. 的 `top.search` 块 `header-wrapper` 的 `Magento_Search` 不得修改模块。
+的 [!DNL storefront popover] 可与自定义 [主题](https://developer.adobe.com/commerce/frontend-core/guide/themes/) 会从 *卢马*. 的 `top.search` 块 `header-wrapper` 的 `Magento_Search` 不得修改模块。
 
 ```html
 <referenceContainer name="header-wrapper">
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 ## 禁用 [!DNL popover]
 
-禁用 [!DNL popover] 并恢复标准 [快速搜索](https://docs.magento.com/user-guide/catalog/search-quick.html) 功能中，输入以下命令：
+禁用 [!DNL popover] 并恢复标准 [快速搜索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 功能中，输入以下命令：
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover

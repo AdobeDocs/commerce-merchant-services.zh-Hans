@@ -2,7 +2,7 @@
 title: 入门和安装
 description: 了解如何安装 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: fd1c6c385efb2f0e632f74959e75b3b7240b7ada
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 0%
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 的 [!DNL Catalog Service] 随编辑器密钥一起安装，这些密钥已链接到商务帐户 [马吉德](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) 在注册过程中提供。 在初始安装时，编辑器会使用这些键 [!DNL Adobe Commerce]，或者在以前未将编辑器键保存到 `auth.json` 文件。
 
-请参阅 [获取您的身份验证密钥](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 有关获取编辑器键的更多信息。
+请参阅 [获取您的身份验证密钥](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) 有关获取编辑器键的更多信息。
 
 ### Adobe Commerce云基础架构
 

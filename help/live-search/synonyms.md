@@ -1,10 +1,10 @@
 ---
-title: '"同义词"'
+title: "同义词"
 description: '"[!DNL Live Search] 同义词会展开查询，其中包含与目录中的单词不同的单词。”'
 exl-id: f2b7c5fb-f009-4834-baff-06e8ed7be7e5
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '123'
 ht-degree: 0%
 
 ---
@@ -15,4 +15,4 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->对于Adobe Commerce安装， [!DNL Live Search] 已安装， [!DNL Live Search] 同义词取代了标准Adobe Commerce [搜索同义词](https://docs.magento.com/user-guide/marketing/search-synonyms.html) 功能，但两者都显示在 *SEO和搜索* 中。 如果您使用 [!DNL Live Search]，请按照此部分中的说明操作。
+>对于Adobe Commerce安装， [!DNL Live Search] 已安装， [!DNL Live Search] 同义词取代了标准Adobe Commerce [搜索同义词](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html#search-synonyms) 功能，但两者都显示在 *SEO和搜索* 中。 如果您使用 [!DNL Live Search]，请按照此部分中的说明操作。

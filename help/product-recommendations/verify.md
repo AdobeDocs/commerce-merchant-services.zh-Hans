@@ -2,9 +2,9 @@
 title: 验证事件集合
 description: 了解如何验证行为数据是否被发送到Adobe Commerce。
 exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
-source-git-commit: 7d9cef7a81196921b465ccf2dcd58d98b66d6598
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ _验证事件是否触发_
 
 1. 向下滚动直到您看到 **上下文数据 _n_**. 在&#x200B;**架构**.
 
-1. 验证 [SaaS数据空间ID](https://docs.magento.com/user-guide/configuration/services/saas.html) 设置正确。
+1. 验证 [SaaS数据空间ID](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) 设置正确。
 
 ![雪犁过滤器](assets/snowplow-filter.png)
 _雪犁过滤器_
@@ -62,8 +62,8 @@ _雪犁过滤器_
 
 ## 验证事件是否正确触发
 
-要验证用于量度的事件是否正确触发，请查找 `impression-render`, `view`和 `rec-click` Snowplough Analytics Debugger中的事件。 请参阅 [事件的完整列表](https://devdocs.magento.com/recommendations/events.html).
+要验证用于量度的事件是否正确触发，请查找 `impression-render`, `view`和 `rec-click` Snowplough Analytics Debugger中的事件。 请参阅 [事件的完整列表](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/events.html).
 
 >[!NOTE]
 >
-> 如果 [Cookie限制模式](https://docs.magento.com/user-guide/stores/compliance-cookie-restriction-mode.html) 启用，则Adobe Commerce在购物者同意之前不会收集行为数据。 如果禁用Cookie限制模式，则默认情况下会收集行为数据。
+> 如果 [Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) 启用，则Adobe Commerce在购物者同意之前不会收集行为数据。 如果禁用Cookie限制模式，则默认情况下会收集行为数据。

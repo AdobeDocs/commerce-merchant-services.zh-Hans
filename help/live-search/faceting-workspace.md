@@ -1,10 +1,10 @@
 ---
-title: '"分面工作区"'
+title: "分面工作区"
 description: “学习如何 [!DNL Live Search] 分面工作区。”
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 设置范围
 
-如果Adobe Commerce安装包含多个商店视图，请设置 **范围** 到 [商店视图](https://docs.magento.com/user-guide/configuration/scope.html) 应用facet设置的位置。
+如果Adobe Commerce安装包含多个商店视图，请设置 **范围** 到 [商店视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 应用facet设置的位置。
 
 ## 过滤列表
 

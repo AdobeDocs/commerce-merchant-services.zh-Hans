@@ -2,9 +2,9 @@
 title: 工作区
 description: 了解如何配置、管理和监控产品推荐性能。
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
-source-git-commit: 9f1f05475b2d8401ec33272e3f12e3cc7285478d
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ _Recommendations Workspace_
 
 ## 设置范围
 
-最初， [范围](https://docs.magento.com/user-guide/stores/websites-stores-views.html) 设置为 `Default Store View`. 如果您的Commerce安装包含多个商店视图，请设置 **范围** 到 [商店视图](https://docs.magento.com/user-guide/configuration/scope.html) 推荐的位置。
+最初， [范围](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) 设置为 `Default Store View`. 如果您的Commerce安装包含多个商店视图，请设置 **范围** 到 [商店视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 推荐的位置。
 
 ## 设置量度日期范围
 

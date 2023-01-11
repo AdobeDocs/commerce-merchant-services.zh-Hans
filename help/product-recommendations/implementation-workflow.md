@@ -1,9 +1,10 @@
 ---
 title: 实施工作流程
 description: 了解成功实施的步骤 [!DNL Product Recommendations] 在你的店面。
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: 766e1191-0330-4515-9331-e45318539dc9
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ ht-degree: 0%
 
    部署 [!DNL Product Recommendations] 需要两个主要 [数据源](type.md):目录和行为。 由于生产是捕获和分析购物者操作的唯一环境，因此尽早开始收集生产数据符合您的最佳利益。 [学习](behavioral-data.md) Adobe Sensei如何训练机器学习模型，从而提供更优质的推荐。 作为附加的好处，当您开始收集有关生产的行为数据时，您可以 [获取推荐](verify.md) 在非生产环境中运行时，会根据此生产数据生成数据。 然后，您可以测试和试验基于生产中收集的实际购物者数据计算的不同推荐。
 
-   要将数据收集部署到生产环境，您必须 [安装和配置](install-configure.md) the [!DNL Product Recommendations] 模块 [API密钥](https://docs.magento.com/user-guide/system/saas.html#apikey).
+   要将数据收集部署到生产环境，您必须 [安装和配置](install-configure.md) the [!DNL Product Recommendations] 模块 [API密钥](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html).
 
    >[!TIP]
    >
@@ -42,7 +43,7 @@ ht-degree: 0%
    >
    > 通过自定义模板，可以指定样式表、覆盖推荐单元在页面上显示的位置等。
 
-   请参阅 [自定义](https://devdocs.magento.com/recommendations/customize.html) ，以了解如何完成此步骤。
+   请参阅 [自定义](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/customize.html) ，以了解如何完成此步骤。
 
 1. **在非生产环境中测试推荐**
 

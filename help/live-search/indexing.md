@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] 索引"
 description: “了解如何 [!DNL Live Search] 索引产品属性。”
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 属性元数据的范围是 `website/store/store view`.
 
-的 [!DNL Live Search] API允许客户按具有 [storefront属性](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` 设置为 `Yes` 在Adobe Commerce管理员中。 启用后， `Search Weight` 和 `Visible in Advanced Search` 可以为属性设置。
+的 [!DNL Live Search] API允许客户按具有 [storefront属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` 设置为 `Yes` 在Adobe Commerce管理员中。 启用后， `Search Weight` 和 `Visible in Advanced Search` 可以为属性设置。
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ When [!DNL Live Search] 已在载入期间配置并同步，则构建初始索�
 
 ## 客户端搜索
 
-的 [!DNL Live Search] API允许客户通过设置 [storefront属性](https://docs.magento.com/user-guide/catalog/product-attributes.html), *用于在产品列表中排序* to `Yes`. 根据主题，此设置将导致将属性作为选项包含在 [排序依据](https://docs.magento.com/user-guide/catalog/navigation.html) 对目录页面进行分页控制。 最多可以通过 [!DNL Live Search]，使用 [店面属性](https://docs.magento.com/user-guide/stores/attributes-product.html) 可搜索和可过滤的ID。
+的 [!DNL Live Search] API允许客户通过设置 [storefront属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *用于在产品列表中排序* to `Yes`. 根据主题，此设置将导致将属性作为选项包含在 [排序依据](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) 对目录页面进行分页控制。 最多可以通过 [!DNL Live Search]，使用 [店面属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) 可搜索和可过滤的ID。
 索引元数据存储在索引管道中，并可由搜索服务访问。
 
 ![[!DNL Live Search] 索引元数据API图](assets/index-metadata-api.svg)

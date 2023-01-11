@@ -1,9 +1,10 @@
 ---
 title: 在暂存环境中测试
 description: 了解如何使用 [!DNL Product Recommendations] 用于测试目的。
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -35,7 +36,7 @@ Adobe Commerce允许您从生产环境中获取推荐，并在非生产环境中
 
 1. 部署 `magento/product-recommendations` 模块添加到非生产环境，其中目录数据与您的生产目录类似。
 
-1. 将其中一个非生产数据空间ID用于 [配置](https://docs.magento.com/user-guide/configuration/services/saas.html) 中。
+1. 将其中一个非生产数据空间ID用于 [配置](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) 中。
 
 1. 通过点击店面周围的数据来模拟实际购物者的行为（或创建自动化脚本），从而自行生成数据。 通过测试，您可以在非生产环境中生成行为事件。 这些事件用于生成支持推荐的产品相关性。 对于测试， [!DNL Commerce] 建议您与以下推荐类型进行交互：
 

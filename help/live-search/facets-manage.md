@@ -2,9 +2,9 @@
 title: “管理Facet”
 description: “了解如何管理现有 [!DNL Live Search] facet”。
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 1. 要编辑Facet标签，请执行以下操作之一：
 
-   * 对于 [!DNL Commerce] 店面，编辑 [属性标签](https://docs.magento.com/user-guide/stores/attributes-product.html).
+   * 对于 [!DNL Commerce] 店面，编辑 [属性标签](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
    * 对于无标题实施，请单击第一列中的值，然后根据需要编辑文本。
 
    ![编辑标签](assets/facet-edit-label.png)

@@ -2,9 +2,9 @@
 title: 工作区
 description: 实时搜索工作区用于配置、管理和监视搜索性能。
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 设置范围
 
-最初， [范围](https://docs.magento.com/user-guide/configuration/scope.html) 全部 [!DNL Live Search] 设置设置为 `Default Store View`. 如果 [!DNL Commerce] 安装包括多个存储视图，设置 **范围** 到 [商店视图](https://docs.magento.com/user-guide/stores/websites-stores-views.html) 应用facet设置的位置。
+最初， [范围](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 全部 [!DNL Live Search] 设置设置为 `Default Store View`. 如果 [!DNL Commerce] 安装包括多个存储视图，设置 **范围** 到 [商店视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) 应用facet设置的位置。
 
 ## 菜单选项
 

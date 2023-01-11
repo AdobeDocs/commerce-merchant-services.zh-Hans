@@ -2,16 +2,16 @@
 title: Commerce Services Connector
 description: 了解如何使用生产和沙盒API密钥将Adobe Commerce或Magento Open Source实例集成到服务中。
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 1e85c4daf0967bf6cec538fca55e2a206d15f732
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '853'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-某些Adobe Commerce和Magento Open Source功能由 [!DNL Commerce Services]  并部署为SaaS（软件即服务）。 要使用这些服务，您必须 [!DNL Commerce] 使用生产和沙盒API密钥的实例，并在 [配置](https://docs.magento.com/user-guide/configuration/services/saas.html). 您只需设置一次。
+某些Adobe Commerce和Magento Open Source功能由 [!DNL Commerce Services]  并部署为SaaS（软件即服务）。 要使用这些服务，您必须 [!DNL Commerce] 使用生产和沙盒API密钥的实例，并在 [配置](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). 您只需设置一次。
 
 ## 可用服务 {#availableservices}
 

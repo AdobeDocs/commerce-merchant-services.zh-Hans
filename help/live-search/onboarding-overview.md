@@ -2,9 +2,9 @@
 title: “入门概述”
 description: '"[!DNL Live Search] 入门流程、系统要求、边界和限制”'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 ### 查询
 
 * [!DNL Live Search] 无权访问类别树的完整分类，这会导致某些分层导航搜索方案超出其覆盖范围。
-* [!DNL Live Search] 对查询使用唯一的GraphQL端点来支持智能分面和按类型搜索等功能。 尽管与 [MagentoGraphQL API](https://developer.adobe.com/commerce/webapi/graphql/)，则存在一些差异，某些字段当前可能不完全兼容。
+* [!DNL Live Search] 使用唯一的GraphQL端点进行查询，以支持诸如智能分面和“按类型搜索”等功能。 尽管与 [MagentoGraphQL API](https://developer.adobe.com/commerce/webapi/graphql/)，则存在一些差异，某些字段当前可能不完全兼容。
 
 ### 规则
 
@@ -56,12 +56,12 @@ ht-degree: 0%
 ### PWA测试版
 
 * 与使用本机Commerce店面的Live Search相比，当前Live Search测试版PWA实施需要更多的处理时间才能返回搜索结果。
-* 测试版PWA [!DNL Live Search] 不支持 [事件处理](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
-* 与的测试版相关联使用时，GraphQL不支持以下产品属性 [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
+* 测试版PWA [!DNL Live Search] 不支持 [事件处理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
+* 在与的测试版相关联使用时，GraphQL不支持以下产品属性 [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
 
 ### 当前不支持
 
-* 的 [高级搜索](https://docs.magento.com/user-guide/catalog/search-advanced.html) 模块在 [!DNL Live Search] ，并且会删除店面页脚中的高级搜索链接。
-* [自定义价格组](https://docs.magento.com/user-guide/catalog/product-price-group.html)
-* 使用的多个库存位置 [MCOM](https://docs.magento.com/user-guide/mcom.html) 或其他OMS扩展
-* 产品价格不包括 [增值税](https://docs.magento.com/user-guide/tax/vat.html) （增值税）。
+* 的 [高级搜索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 模块在 [!DNL Live Search] ，并且会删除店面页脚中的高级搜索链接。
+* [自定义价格组](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-group.html)
+* 使用的多个库存位置 [MCOM](https://experienceleague.adobe.com/docs/commerce-admin/systems/integrations/mcom.html) 或其他OMS扩展
+* 产品价格不包括 [增值税](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) （增值税）。

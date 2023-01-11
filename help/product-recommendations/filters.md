@@ -1,9 +1,10 @@
 ---
 title: 筛选产品
 description: 定义包含或排除用作推荐的产品的条件。
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
@@ -41,7 +42,7 @@ Adobe Commerce会自动将不可配置的默认过滤器应用到推荐单位。
 
 ### 类别
 
-基于产品类别的过滤器使用直接类别分配及其子类别。 例如，为类别启用排除条件 `Gear` 排除分配给 `Gear` 及所有子类别，如 `Gear/Bags` 或 `Gear/Fitness Equipment`. 对于B2B商户，“类别”过滤器会粘贴到任何 [特定于客户的产品类别](https://docs.magento.com/user-guide/catalog/category-permissions.html) 您已配置。
+基于产品类别的过滤器使用直接类别分配及其子类别。 例如，为类别启用排除条件 `Gear` 排除分配给 `Gear` 及所有子类别，如 `Gear/Bags` 或 `Gear/Fitness Equipment`. 对于B2B商户，“类别”过滤器会粘贴到任何 [特定于客户的产品类别]https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html)。
 
 Adobe Commerce建议在将推荐部署到页面类型时使用以下类别过滤器配置：
 
@@ -67,11 +68,11 @@ Adobe Commerce建议在将推荐部署到页面类型时使用以下类别过滤
 
 ### 价格
 
-基于产品价格的过滤器使用最终价格进行比较。 最终价格包括向匿名购物者提供的任何折扣或特价。 对于B2B商户，显示的价格反映 [客户特定的组定价](https://docs.magento.com/user-guide/catalog/pricing-advanced.html#customer-group-price) 您已配置。
+基于产品价格的过滤器使用最终价格进行比较。 最终价格包括向匿名购物者提供的任何折扣或特价。 对于B2B商户，显示的价格反映 [客户特定的组定价](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) 您已配置。
 
 ### 库存状态
 
 以下排除过滤器可用于根据库存状态过滤出产品：
 
 - 无现货 — （仅限排除）排除无现货的产品。
-- 库存不足 — （仅限排除）排除库存不足的产品。 低库存状态基于 _仅X左阈值_ 值 [库存配置](https://docs.magento.com/user-guide/configuration/catalog/inventory.html).
+- 库存不足 — （仅限排除）排除库存不足的产品。 低库存状态基于 _仅X左阈值_ 值 [库存配置](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html).

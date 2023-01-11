@@ -1,9 +1,10 @@
 ---
 title: 版面和标签
 description: 了解您可以在网站的各个页面上的位置放置推荐，以及针对每种推荐类型常用标签的建议。
-source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
+exl-id: e1025138-49dc-4833-92bb-27e8e415d724
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -58,4 +59,4 @@ _搜索结果顶部的推荐_
 | 产品详细信息 | 主内容底部（默认） | 查看次数最多<br>购买次数最多<br>添加到购物车的次数最多<br>已查看此内容，已查看<br>已查看此内容，但已购买<br>买了这个，买了那个<br>更像这样<br>趋势<br>视觉相似度 |
 | 购物车 | 主内容底部（默认） | 查看次数最多<br>购买次数最多<br>添加到购物车的次数最多<br>已查看此内容，已查看<br>已查看此内容，但已购买<br>买了这个，买了那个<br>更像这样<br>趋势 |
 | 确认 | 主内容底部（默认） | 查看次数最多<br>购买次数最多<br>添加到购物车的次数最多<br>已查看此内容，已查看<br>已查看此内容，但已购买<br>买了这个，买了那个<br>更像这样<br>趋势 |
-| 页面生成器 | [拖放](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html#add-an-existing-recommendation-unit) 定位内容类型 | 查看次数最多<br>购买次数最多<br>添加到购物车的次数最多<br>建议您<br>趋势 |
+| 页面生成器 | [拖放](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) 定位内容类型 | 查看次数最多<br>购买次数最多<br>添加到购物车的次数最多<br>建议您<br>趋势 |

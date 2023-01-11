@@ -2,16 +2,16 @@
 title: “Facet”
 description: '"[!DNL Live Search] facet使用多个属性值维度作为搜索条件。”'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 40e7da1cb71bd3c977acb77714c2cab55b3b7bf8
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
 
 # Facet
 
-分面是一种高性能过滤方法，它使用多个属性值维度作为搜索条件。 多面搜索相似，但比标准“更智能” [分层导航](https://docs.magento.com/user-guide/catalog/navigation-layered.html). 可用过滤器的列表由 [可过滤属性](https://docs.magento.com/user-guide/catalog/navigation-layered-filterable-attributes.html) 搜索结果中返回的产品数量。
+分面是一种高性能过滤方法，它使用多个属性值维度作为搜索条件。 多面搜索相似，但比标准“更智能” [分层导航](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). 可用过滤器的列表由 [可过滤属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) 搜索结果中返回的产品数量。
 
 ![筛选的搜索结果](assets/storefront-search-results-run.png)
 
@@ -28,13 +28,13 @@ ht-degree: 0%
 
 | 设置 | 描述 |
 |--- |--- |
-| [类别显示设置](https://docs.magento.com/user-guide/catalog/categories-display-settings.html) | 锚点 —  `Yes` |
-| [属性属性](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [目录输入类型](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
+| [类别显示设置](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | 锚点 —  `Yes` |
+| [属性属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [目录输入类型](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
 | 属性店面属性 | 在搜索结果中使用分层导航 —  `Yes` |
 
 ## 默认属性值
 
-以下产品属性具有 [店面属性](https://docs.magento.com/user-guide/stores/attributes-product.html) 的 [!DNL Live Search] 和默认启用。
+以下产品属性具有 [店面属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) 的 [!DNL Live Search] 和默认启用。
 
 | 属性 | Storefront属性 | 属性 |
 |---|---|---|

@@ -2,9 +2,9 @@
 title: “Facet类型”
 description: '"[!DNL Live Search] facet是动态的，并在相关时显示在“过滤器”列表中。'
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 为 [!DNL Commerce] storefront由搜索适配器处理，该适配器将路由请求并在storefront中呈现结果。 全部 [!DNL Commerce] 无论分配给相应属性的输入类型如何，店面彩块化都会使用单选选项按字母顺序排序。 店面中可用的Facet会根据当前主题进行渲染，并反映对分层导航的呈现方式所做的任何自定义设置。
 
-相比之下， [无头](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/webapi-vision.html) 实施由API处理，并支持其他选项。 无标题彩块化可以按字母顺序或按计数排序，并且可以有单选或多选选项。
+相比之下， [无头](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/) 实施由API处理，并支持其他选项。 无标题彩块化可以按字母顺序或按计数排序，并且可以有单选或多选选项。
 
 ### 选择类型
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ### Facet标签
 
-对于 [!DNL Commerce] 店面，小面标签由 [*属性属性*](https://docs.magento.com/user-guide/stores/attribute-product-create.html). 对于具有多个视图的商店，可在 *管理标签*. 对于无头实施，会从 [分面工作区](faceting-workspace.md).
+对于 [!DNL Commerce] 店面，小面标签由 [*属性属性*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html). 对于具有多个视图的商店，可在 *管理标签*. 对于无头实施，会从 [分面工作区](faceting-workspace.md).
 
 ### 排序类型
 

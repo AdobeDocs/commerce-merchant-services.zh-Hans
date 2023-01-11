@@ -2,9 +2,9 @@
 title: "添加规则"
 description: “了解如何创建 [!DNL Live Search] 规则。”
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1290'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 ## 步骤1:添加规则
 
 1. 在管理员中，转到 **营销** > SEO和搜索> **实时搜索**.
-1. 设置 **范围** 识别 [商店视图](https://docs.magento.com/user-guide/configuration/scope.html) 当规则适用时。
+1. 设置 **范围** 识别 [商店视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 当规则适用时。
 1. 单击 **规则** 选项卡。
 1. 单击 **添加规则** 以启动规则编辑器。
 

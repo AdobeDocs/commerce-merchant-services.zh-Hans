@@ -2,9 +2,9 @@
 title: 发行说明
 description: 的最新发行信息 [!DNL Product Recommendations] 从Adobe Commerce。
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: 944576fdacd7dbbb704f74ba06d34f64eac41122
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 * ![新建](../assets/new.svg)  — 新增功能
 * ![修复](../assets/fix.svg)  — 修复和改进功能
 
-请参阅开发人员文档，以 [了解产品兼容性](https://devdocs.magento.com/release/availability.html).
+请参阅开发人员文档，以 [了解产品兼容性](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Adobe Commerce 2.3.x和2.4.x
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 ### magento/product-recommendations的3.3.5
 
 * ![新建](../assets/new.svg)  — 已添加 [B2B支持](onboarding.md#b2bsupport) 在产品中Recommendations
-* ![新建](../assets/new.svg)  — 向 [同步目录数据](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-catalog-sync.html) 到Commerce Services
+* ![新建](../assets/new.svg)  — 向 [同步目录数据](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) 到Commerce Services
 
 ### magento/product-recommendations的3.3.3
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 ### magento/product-recommendations的3.2.5
 
-* ![新建](../assets/new.svg)  — 将Magento服务重命名为 [商务服务](https://docs.magento.com/user-guide/system/saas.html) 并提高了管理员的可用性
+* ![新建](../assets/new.svg)  — 将Magento服务重命名为 [商务服务](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 并提高了管理员的可用性
 
 ### magento/product-recommendations的3.2.4
 
@@ -94,7 +94,7 @@ ht-degree: 0%
 ### magento/product-recommendations的3.2.2
 
 * ![新建](../assets/new.svg)  — 添加了 [预览推荐结果](create.md) 创建时。 这可能需要您将模块更新到最新版本。
-* ![新建](../assets/new.svg)  — 添加了 [监控和管理](https://docs.magento.com/user-guide/system/catalog-sync.html) 管理员的目录同步过程。
+* ![新建](../assets/new.svg)  — 添加了 [监控和管理](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) 管理员的目录同步过程。
 * ![新建](../assets/new.svg)  — 已添加 [过滤器](filters.md) 以控制在推荐中显示的产品。
 * ![新建](../assets/new.svg)  — 添加了 [视觉相似度](type.md#visualsim) 推荐类型。
 
@@ -104,7 +104,7 @@ ht-degree: 0%
 
 ### magento/product-recommendations的3.1.0
 
-* ![新建](../assets/new.svg)  — 添加了 [重新同步](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-catalog-sync.html) 通过命令行将目录添加到SaaS服务。
+* ![新建](../assets/new.svg)  — 添加了 [重新同步](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) 通过命令行将目录添加到SaaS服务。
 * ![新建](../assets/new.svg)  — 添加了对数据库表前缀的支持
 * ![修复](../assets/fix.svg)  — 删除了PHP 7.1支持
 
@@ -153,7 +153,7 @@ ht-degree: 0%
 
 ### 页面生成器的magento/module-page-builder-product-recommendations的1.0.3
 
-* ![新建](../assets/new.svg)  — 页面生成器支持。 通过页面生成器集成，您可以准确、细致地将推荐单元放置在页面生成器创作内容的任意位置。 您还可以设置标题和推荐单元本身的样式。 转到 [页面生成器](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html) 以了解更多信息。
+* ![新建](../assets/new.svg)  — 页面生成器支持。 通过页面生成器集成，您可以准确、细致地将推荐单元放置在页面生成器创作内容的任意位置。 您还可以设置标题和推荐单元本身的样式。 转到 [页面生成器](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) 以了解更多信息。
 
 ### magento/product-recommendations的2.0.0
 
@@ -164,4 +164,4 @@ ht-degree: 0%
 详细了解 [!DNL Product Recommendations] 和 [!DNL Product Recommendations] 开发：
 
 * [用户指南](overview.md)
-* [开发人员文档](https://devdocs.magento.com/recommendations/product-recs.html)
+* [开发人员文档](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html)

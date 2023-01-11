@@ -2,9 +2,9 @@
 title: 入门
 description: 了解 [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
@@ -40,4 +40,4 @@ ht-degree: 0%
 
 ### B2B支持 {#b2bsupport}
 
-B2B店面通常需要复杂的逻辑，以指示每个购物者或客户群的产品可见性和定价。 [!DNL Product Recommendations] now [支持](release-notes.md) 此功能通过 [类别权限](https://docs.magento.com/user-guide/catalog/category-permissions.html), [共享目录](https://docs.magento.com/user-guide/catalog/catalog-shared.html)和 [客户群特定定价](https://docs.magento.com/user-guide/catalog/pricing-advanced.html). 例如，如果您在零售客户区段中隐藏了某些类别，则该区段中的购物者将不会显示这些类别中产品的推荐。 此外，在为特定客户组和公司定义共享目录时，这些购物者仅会看到他们可以访问的产品的推荐。 所有推荐产品都会根据每个购物者的客户群组反映正确的客户群组特定价格。
+B2B店面通常需要复杂的逻辑，以指示每个购物者或客户群的产品可见性和定价。 [!DNL Product Recommendations] now [支持](release-notes.md) 此功能通过 [类别权限](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [共享目录](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)和 [客户群特定定价](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). 例如，如果您在零售客户区段中隐藏了某些类别，则该区段中的购物者将不会显示这些类别中产品的推荐。 此外，在为特定客户组和公司定义共享目录时，这些购物者仅会看到他们可以访问的产品的推荐。 所有推荐产品都会根据每个购物者的客户群组反映正确的客户群组特定价格。
