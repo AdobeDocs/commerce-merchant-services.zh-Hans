@@ -4,30 +4,32 @@ description: 配置常规设置以启用 [!DNL Store Fulfillment] 你的店。 �
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
+source-git-commit: 0cf5a99891fb6ec0b6e446aac05e64bc97d70e7c
 workflow-type: tm+mt
-source-wordcount: '2518'
+source-wordcount: '2543'
 ht-degree: 0%
 
 ---
 
 # 商店服务和销售配置
 
-配置[!DNL Store Fulfillment] 要启用扩展，请指定扩展设置、为Store Assist应用程序用户配置安全设置，以及设置用于提交方法的选项。
+配置 [!DNL Store Fulfillment] 从 [!DNL Commerce] 管理员可启用扩展、指定扩展设置、配置Store Assist应用程序用户的安全设置，以及设置用于交付方法的选项。
 
 >[!IMPORTANT]
 >
 >仅当您连接Adobe Commerce实例和 [!DNL Store Fulfillment] 应用程序。 请参阅 [连接商店履行](connect-set-up-service.md).
 
-从Adobe Commerce的管理员商店配置菜单中配置商店履行服务设置。
+## 管理商店履行服务设置
 
-通过选择 **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
+从 [!DNL Commerce Admin Store Configuration] 菜单。
 
-![用于商店履行的管理商店服务配置](assets/store-services-admin-sf-config.png)
+- 通过选择 **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
 
-通过选择 **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
+   ![用于商店履行的管理商店服务配置](assets/store-services-admin-sf-config.png)
 
-![用于商店履行的管理商店销售配置](assets/store-sales-admin-sf-deliver-config.png)
+- 通过选择 **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
+
+   ![用于商店履行的管理商店销售配置](assets/store-sales-admin-sf-deliver-config.png)
 
 ## 基本设置
 
@@ -55,7 +57,7 @@ ht-degree: 0%
 </tr>
 <tr>
 <td><strong>[!UICONTROL Displayed error message]</strong></td>
-<td>当客户选择店内提货但传送方法不可用时显示的消息。 您可以根据需要自定义默认文本。
+<td>当客户为无法用于店内装货的物料选择店内装货时显示的消息。 您可以根据需要自定义默认文本。
 </td>
 <td>存储视图</td>
 <td>否</td>
@@ -83,7 +85,7 @@ ht-degree: 0%
  <tbody>
 <tr>
 <td><strong>[!UICONTROL Enabled]</strong></td>
-<td>启用或禁用解决方案。 启用后，请配置和使用“商店履行”功能，并在Adobe Commerce商店与“商店履行”服务之间建立连接。 禁用后，所有“商店履行”功能都将被禁用，并且Adobe Commerce与“商店履行”服务之间没有通信。 无法处理或接收订单信息。</td>
+<td>启用或禁用解决方案。 启用后，请配置和使用“存储履行”功能，并在Adobe Commerce存储与 [!DNL Store Fulfillment] 服务。 禁用后，所有“商店履行”功能都将被禁用，并且Adobe Commerce与“商店履行”服务之间没有通信。 无法处理或接收订单信息。</td>
 <td>全球</td>
 <td>是</td>
 </tr>
@@ -98,52 +100,58 @@ ht-degree: 0%
 <td><strong>描述</strong></td>
 <td><strong>范围</strong></td>
 <td><strong>必需</strong></td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Environment]</strong></td>
-<td>选择 <i>沙盒</i> 或 <i>生产</i><br></br> 沙盒与测试中的履行服务通信。生产与实时环境进行通信。 使用 <strong>仅</strong> 在生产中。<br></br>您将为每个环境分配一组凭据，并能够在同一安装中管理这两组凭据。 <br></br>在验证连接之前保存凭据。</td>
+<td>选择 <i>[!UICONTROL Sandbox]</i> 或 <i>[!UICONTROL Production]</i><br></br>选择 [!UICONTROL Sandbox] 允许在测试环境中与履行服务进行通信。<br></br>选择 [!UICONTROL Production] 允许在实时环境中与履行服务进行通信。<br></br>系统会为您为每个环境提供一组凭据，并且可以在同一安装中管理这两个凭据集。 <br></br>在验证连接之前保存凭据。</td>
 <td>全球</td>
 <td>是</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL API Server URL]</strong></td>
-<td>指向Walmart Store Fulfilment API端点的URL。 这必须是在载入过程中提供给您的完全限定的URL。 存储履行客户会收到沙盒URL和生产URL。 请确保复制/粘贴完整的URL，包括尾随斜杠“/”。</td>
+<td>指向Walmart Store Fulfilment API端点的URL。 这必须是载入过程中提供的完全限定的URL。 存储履行客户会收到沙盒URL和生产URL。 添加值时，请确保复制并粘贴完整的URL，包括尾随斜杠“/”。</td>
 <td>全球</td>
 <td>是</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Token Auth Server URL]</strong></td>
-<td>指向Walmart Store Fulfilment Authentication端点的URL。 值必须是在载入过程中提供给您的完全限定的URL。 您将收到沙盒URL和生产URL。 请确保复制/粘贴完整的URL，包括尾随斜杠“/”。</td>
+<td>指向Walmart Store Fulfilment Authentication端点的URL。 值必须是在载入过程中提供的完全限定的URL。 您将收到沙盒URL和生产URL。 添加值时，请确保复制并粘贴完整的URL，包括尾随斜杠“/”。</td>
 <td>全球</td>
 <td>是</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Merchant Id]</strong></td>
-<td>在登入过程中为您提供的唯一商户（租户）ID。 您的ID用于传送订单并确保您的商家商店接收订单。</td>
+<td>您在载入过程中提供的唯一商户（租户）ID。 此ID用于传送订单，以确保您的商家商店收到订单。</td>
 <td>全球</td>
 <td>是</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Consumer Id]</strong></td>
-<td>您的唯一集成ID。 在载入过程中，会向您提供此信息。 它不会改变。 用于验证与履行服务的所有通信。</td>
+<td>在载入过程中提供的唯一集成ID。 此ID用于验证Adobe Commerce与存储履行服务之间的所有通信</td>
 <td>全球</td>
 <td>是</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Consumer Secret]</strong></td>
-<td>您的独特集成密钥。 在载入过程中，会向您提供此信息。 用于验证与履行服务的所有通信。</td>
+<td>载入过程中提供的唯一集成密钥。 此密钥用于验证Adobe Commerce与存储实现服务之间的所有通信。</td>
 <td>全球</td>
 <td>是</td>
-    </tr>
+</tr>
 </table>
 
-配置帐户凭据后，请选择 <strong>[!UICONTROL Validate Credentials]</strong> 首次验证并建立与履行web服务的连接。
+配置 [!UICONTROL Account Credentials]，选择 <strong>[!UICONTROL Validate Credentials]</strong> 首次验证并建立与存储实现服务的连接。
 
 ## 配置日志记录
 
-启用日志记录后，您的日志文件可以快速展开。 要防止生产环境中出现响应时间问题，请务必注意启用日志记录，并仅在需要时启用很短的时间。
+日志文件中提供了存储实现服务的日志 `var/log/walmart-bopis.log`.
 
-要求系统管理员配置您的环境以允许异常处理，以便可以通过防火墙或缓存捕获与API相关的异常。 您还可以要求系统管理员对此文件设置日志旋转以最小化大小。
+要求系统管理员配置您的环境以允许异常处理，以便可以通过防火墙或缓存捕获与API相关的异常。
+
+由于应用程序日志文件可以快速增长，因此仅在需要时为应用程序启用短时间的日志记录 — 例如，当对 [!DNL Commerce] 订单。 此配置可防止生产环境中由于大型日志文件而导致的响应时间问题。
+
+>[!TIP]
+>
+>对于Adobe Commerce本地安装，请要求系统管理员为 `var/log/walmart-bopis.log` 文件以最小化大小。 有关Adobe Commerce内部部署安装，请参阅 [日志旋转](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=en#server-settings) 在 _Adobe Commerce安装指南_. 有关云基础架构项目的Adobe Commerce，请参阅 [查看和管理日志](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
 
 <table>
 <thead>
@@ -157,7 +165,7 @@ ht-degree: 0%
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Debug Mode]</strong></td>
-<td>调试模式用于增加集成中已记录的活动。 禁用后，不会记录任何调试信息。 启用后，将记录所有调试信息。 所有记录的数据均可在文件中找到：'var/log/walmart-bopis.log'</td>
+<td>调试模式用于增加集成中已记录的活动。 禁用后，不会记录任何调试信息。 启用后，将记录所有调试信息 <br></br>可在文件中找到所有已记录的数据： <pre>var/log/walmart-bopis.log</pre>
 <td>全球</td>
 <td>否</td>
 </tr>
@@ -322,7 +330,7 @@ ht-degree: 0%
 </tr>
 <tr>
 <td><strong>[!UICONTROL Force Password Change]</strong></td>
-<td>确定是否需要更改用户密码。<br></br>“是”：要求用户在设置帐户后更改其密码。“否”：建议用户在设置帐户后更改密码。</td>
+<td><em>[!UICONTROL Yes]</em>:要求用户在设置帐户后更改其密码。<br></br><em>[!UICONTROL No]</em>:建议用户在设置帐户后更改密码。</td>
 <td>全球</td>
 <td>否</td>
 </tr>
@@ -370,18 +378,17 @@ ht-degree: 0%
 
 ## 投放方法
 
-通过扩展本机Adobe Commerce进行存储实现工作 [!DNL In-Store Delivery] 功能。
-安装扩展后，其他管理员配置选项可用于商店内交付方法。 通过选择 <strong>[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]</strong>.
-
-在“商店履行”设置中，您可以为店内提货单配置以下交货方法。
+通过扩展本机Adobe Commerce进行存储实现工作 [!DNL In-Store Delivery] 功能。 安装扩展后，您可以使用以下添加到管理员的扩展设置配置商店内交付方法。
 
 - **店内提货** — 结帐过程中店内交付的选件选项这是BOPIS订单的最常见交付方案。
 
-- **Curbside接收** — 提供选项，供客户在商店位置暂停，并由商店关联商将订单交付给他们。
+- **[!UICONTROL Curbside pick up]** — 提供选项，供客户在商店位置暂停，并由商店关联商将订单交付给他们。
+
+通过选择 <strong>[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]</strong>.
 
 >[!NOTE]
 >
->有关配置店内投放选项的其他信息，请参阅 [店内投放](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) (在Adobe Commerce用户指南中)。
+>有关配置店内投放选项的其他信息，请参阅 [店内投放](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) 在 _Adobe Commerce用户指南_.
 
 
 ### 投放方法配置
@@ -426,7 +433,7 @@ ht-degree: 0%
 </thead>
 <tbody><tr>
 <td><strong>主页投放标题</strong></td>
-<td>在产品、购物车和结帐区域中指定“主页递送”选项要显示的标题。 送货上门是指Adobe Commerce的标准送货功能 — 从仓库、承运人或直接到客户提供的送货地址。</br></br>此标签不影响所选装运承运人或其可用的装运方法标签。</td>
+<td>在产品、购物车和结帐区域中指定“主页递送”选项要显示的标题。 送货上门是指Adobe Commerce的标准送货功能 — 从仓库、承运人或直接到客户提供的送货地址。 </br></br>此标签不影响所选装运承运人的装运方法标签。</td>
 <td>存储视图</td>
 <td>否</td>
 </tr>
@@ -438,7 +445,7 @@ ht-degree: 0%
 </tr>
 <tr>
 <td><strong>存储拾取标题</strong></td>
-<td>向客户显示交货选项并提供店内装货时，将显示此标签。</br></br>您可以自定义此标签，该标签显示在产品、购物车和结帐区域。</td>
+<td>向客户显示交货选项并提供店内装货时，将显示此标签。 </br></br>您可以自定义此标签，该标签显示在产品、购物车和结帐区域。</td>
 <td>存储视图</td>
 <td>否</td>
 </tr>
@@ -462,25 +469,25 @@ ht-degree: 0%
 </tr>
 <tr>
 <td><strong>店内提取说明</strong></td>
-<td>在您的零售店准备好提货后，会通过电子邮件通知客户。 如果客户已选择 [!DNL In-Store Pickup] 在结帐过程中，您可以在此处自定义取货说明。</br></br>这是适用于所有零售商店位置的全局设置。 您还可以在零售商店位置级别自定义相关说明。</td>
+<td>在您的零售店准备好提货后，会通过电子邮件通知客户。 如果客户已选择 [!DNL In-Store Pickup] 在结帐过程中，您可以在此处自定义取货说明。 </br></br>这是适用于所有零售商店位置的全局设置。 您还可以在零售商店位置级别自定义相关说明。</td>
 <td>存储视图</td>
 <td>否</td>
 </tr>
 <tr>
 <td><strong>曲线拾取说明</strong></td>
-<td>指定要包含在客户电子邮件通知中的针对客户提货单的自定义订单提货说明。</br></br>这是适用于所有零售商店位置的全局设置。 您还可以在零售商店位置级别自定义相关说明。</td>
+<td>指定自定义订单提货指令，以在客户电子邮件通知中包含对策提货订单的提示。 </br></br>这是适用于所有零售商店位置的全局设置。 您还可以在零售商店位置级别自定义相关说明。</td>
 <td>存储视图</td>
 <td>否</td>
 </tr>
 <tr>
 <td><strong>预计提货提前期</strong></td>
-<td>在收到、履行并准备接收订单之前需要的分钟数。 在为“商店提货”交付选项选择零售商店位置时，会向客户显示此信息。</br></br>这是一个全局设置，适用于所有零售商店位置。 您还可以在零售商店位置级别自定义提前期。</td>
+<td>在收到、履行并准备接收订单之前需要的分钟数。 在为“商店提货”交付选项选择零售商店位置时，会向客户显示此信息。 这是一个全局设置，适用于所有零售商店位置。 您还可以在零售商店位置级别自定义提前期。</td>
 <td>存储视图</td>
 <td>否</td>
 </tr>
 <tr>
 <td><strong>预计提货时间标签</strong></td>
-<td>显示订单可供客户装货之前的预计时间。 当客户为商店提货交付选项选择零售商店位置时，会向客户显示此信息。</br></br>自定义此标签时，您可以使用代码 <code>%1</code> 插入 <strong>预计提货提前期</strong>。例如：</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>这是适用于所有零售商店位置的全局设置。 您还可以在零售商店位置级别自定义提前期。</br></br><code>Ready for Pickup in %1 minutes.</code></br></br></td>
+<td>显示订单可供客户装货之前的预计时间。 当客户为 [!DNL In-Store Pickup] 投放选项。 </br></br>自定义此标签时，您可以使用代码 <code>%1</code> 插入 <strong>预计提货提前期</strong>. 例如：</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>这是适用于所有零售商店位置的全局设置。 您还可以在零售商店位置级别自定义提前期。</br></br><code>Ready for Pickup in %1 minutes.</code></br></br></td>
 <td>存储视图</td>
 <td>否</td>
 <tr>
@@ -505,8 +512,8 @@ ht-degree: 0%
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>N-Stock</strong></td>
-<td>当客户使用零售商店货位时，系统会为每个位置显示当前物料的库存可用性。</br></br>您可以在此处自定义“现货”状态标签。</td>
+<td><strong>库存</strong></td>
+<td>当客户使用零售商店货位时，将显示每个位置的当前项目的库存可用性。 </br></br>您可以自定义 <em>[!UICONTROL in-stock]</em> 此处为状态标签。</br></br></td>
 <td>存储视图</td>
 <td>否</td>
 </tr>
@@ -518,7 +525,7 @@ ht-degree: 0%
 </tr>
 <tr>
 <td><strong>部分库存</strong></td>
-<td>当客户使用零售商店货位时，每个位置都会显示任何当前项目的库存可用性。</br></br>您可以在此处自定义“部分现货”状态标签。</td>
+<td>当客户使用零售商店货位时，每个位置都会显示任何当前项目的库存可用性。 </br></br>您可以自定义 <em>[!UICONTROL partially in-stock]</em> 此处为状态标签。</br></br></td>
 <td>存储视图</td>
 <td>否</td>
 </tr>
