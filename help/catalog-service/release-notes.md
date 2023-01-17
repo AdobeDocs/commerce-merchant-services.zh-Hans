@@ -2,7 +2,7 @@
 title: '[!DNL Catalog Service] 发行说明'
 description: 的最新发行信息 [!DNL Catalog Service] Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 624c959119958f9fdd15d3d9559092c35d079c2c
+source-git-commit: cfa0b505b0fb793bbc072f9f837551b7e67e9721
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -16,6 +16,34 @@ ht-degree: 0%
 * ![新建](../assets/new.svg) 新增功能
 * ![修复](../assets/fix.svg) 修复和改进功能
 * ![错误](../assets/bug.svg) 已知问题
+
+## V1.3版本
+
+发行日期：2023-1-17与Adobe Commerce(EE)兼容：2.4.x与Adobe Commerce for Cloud(ECE)兼容：2.4.x稳定性：正式发布
+
+![新建](../assets/new.svg) 简化并改进了入门体验。
+![新建](../assets/new.svg) 新的客户沙盒端点可用于预生产测试。
+![新建](../assets/new.svg) 添加了对虚拟产品的支持。
+![修复](../assets/fix.svg) API可扩展性和性能改进。
+
+### 已知限制
+
+尚不支持以下功能：
+
+* 以固定价格捆绑产品
+* 从目录中删除变体后，不会收到任何更新。
+* 动态属性有效负载的最大大小为9MB。
+* 组产品价格。 可以使用简单的产品价格计算。
+* 在图像阵列中，只有第一个图像包含角色。
+* 颜色色板
+* 通过产品URL加载产品详细信息页面。
+
+使用GraphQL API可以解决以下限制：
+
+* 最低广告价格
+* 分层定价
+* 可下载的产品和礼品卡
+* 类别(`categories` 和 `categoryList`)
 
 ## V1.1版本
 
