@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service] 发行说明'
 description: 的最新发行信息 [!DNL Catalog Service] Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: cfa0b505b0fb793bbc072f9f837551b7e67e9721
+source-git-commit: d377aac8fd42d8c9b1fc0ab6673a6965f50cf452
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 * 颜色色板
 * 通过产品URL加载产品详细信息页面。
 
-使用GraphQL API可以解决以下限制：
+使用核心GraphQL API可以解决以下限制：
 
 * 最低广告价格
 * 分层定价
