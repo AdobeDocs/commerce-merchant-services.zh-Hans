@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] 发行说明'
 description: 查看发行说明，了解有关 [!DNL Quick Checkout] 版本。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 8b915cd0a8f25934675a2ae00ee2694b7facc1bd
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1185'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,20 @@ _2022年10月5日_
 ![修复的问题](../assets/fix.svg)<!-- Issue BOLT-369 --> 现在， [[!DNL Quick Checkout] 管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 在页脚中显示应用程序版本。
 
 +++
+
+## v1.5.0
+
+_2023年1月18日_
+
+![新建](../assets/new.svg)<!-- Issue BOLT-522 --> 可以启用/禁用新配置以检测是否 [购物者](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-options/checkout-adobe-commerce.html) 可自动登录Bolt。
+
+![新建](../assets/new.svg)<!-- Issue BOLT-523 --> 可以启用/禁用新配置，以允许商家指定购物者是可以自动登录到两个网络，还是只登录到Bolt网络。
+
+![修复的问题](../assets/fix.svg)<!-- Issue BOLT-542 --> 改进了 [将卡或地址保存到Bolt帐户](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) 购物者提供电子邮件时。
+
+![修复的问题](../assets/fix.svg)<!-- Issue BOLT-550 --> 改进了 [自动登录](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#configure-service-settings) 当Bolt用户提供电子邮件时。
+
+![修复的问题](../assets/fix.svg)<!-- Issue BOLT-544 --> 的兼容性改进 [回调URL](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#check-shopper-valid-account) with [多站点](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html) 在博尔特。
 
 ## v1.4.0
 

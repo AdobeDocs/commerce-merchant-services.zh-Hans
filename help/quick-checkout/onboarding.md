@@ -2,9 +2,9 @@
 title: “在 [!DNL Quick Checkout] (对于Adobe Commerce扩展)
 description: “了解 [!DNL Quick Checkout] 可以为您的Adobe Commerce实例以及如何成功载入和设置扩展。”
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 ## 创建帐户 [!DNL Bolt]
 
-在配置 [!DNL Quick Checkout] 在Adobe Commerce管理员中，需要创建 [沙盒](https://merchant-sandbox.bolt.com/register?platform=magento2){target=&quot;_blank&quot;}和 [生产](https://merchant.bolt.com/register?platform=magento2){target=&quot;_blank&quot;}中的商户帐户 [!DNL Bolt]. 提供在中创建帐户所需的所有详细信息 [!DNL Bolt].
+在配置 [!DNL Quick Checkout] 在Adobe Commerce管理员中，需要创建 [沙盒](https://merchant-sandbox.bolt.com/register?platform=magento2){target="_blank"} and [production](https://merchant.bolt.com/register?platform=magento2){target="_blank"}  商户帐户 [!DNL Bolt]. 提供在中创建帐户所需的所有详细信息 [!DNL Bolt].
 
 请参阅 [测试和验证](../quick-checkout/testing.md) 主题以了解更多信息。
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
    ![快速结帐](assets/account-credentials.png)
 
-请参阅 [[!DNL Bolt] 环境详细信息](https://help.bolt.com/developers/references/environment-details/#about-keys){target=&quot;_blank&quot;}页，用于了解密钥和签名密钥 [!DNL Bolt] 对于 [!DNL Quick Checkout] 扩展。
+请参阅 [[!DNL Bolt] 环境详细信息](https://help.bolt.com/developers/references/environment-details/#about-keys){target="_blank"} 页面，从了解密钥和签名密钥 [!DNL Bolt] 对于 [!DNL Quick Checkout] 扩展。
 
 >[!CAUTION]
 >
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 ## 配置支付提供商
 
-要连接您的支付服务提供商，请按照 [处理器设置](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/){target=&quot;_blank&quot;}开发人员 [!DNL Bolt] 页面。
+要连接您的支付服务提供商，请按照 [处理器设置](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/){target="_blank"} 开发人员 [!DNL Bolt] 页面。
 
 ## 启用扩展
 
@@ -99,7 +99,7 @@ ht-degree: 0%
 
 1. 提供您的唯一API后验证凭据，并 [!DNL Publishable keys].
 
-![快速结帐](assets/quick-checkout-main-view-react.png)
+![快速结帐](assets/quick-checkout-main-view.png)
 
 请参阅 [设置](../quick-checkout/settings-quick-checkout.md) 主题，以详细了解 [!DNL Quick Checkout] (对于Adobe Commerce扩展)。
 
@@ -109,7 +109,7 @@ ht-degree: 0%
 
 ## 完整的管理员配置
 
-1. 在 _管理员_ 侧栏，导航到 **商店** > **配置** > **结帐** 访问常规的“结帐管理员配置”页面。
+1. 在 _管理员_ 侧栏，导航到 **商店** > **配置** > **结帐** 访问常规的“结帐管理员”配置页面。
 1. 在 _服务设置_ 部分，提供启用扩展所需的所有详细信息。
 1. 已设置 _付款活动_ 选项之一：
 
@@ -136,7 +136,7 @@ ht-degree: 0%
    >
    > 将范围切换到 **主网站** 确保设置正确的URL。 每个网站可以有多个域。
 
-请参阅 [网站、商店和查看范围](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings){target=&quot;_blank&quot;}主题，以了解有关Adobe Commerce中作用域的更多信息。
+请参阅 [网站、商店和查看范围](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings){target="_blank"} 主题，以了解有关Adobe Commerce中作用域的更多信息。
 
 ## 配置服务设置
 
@@ -149,6 +149,7 @@ ht-degree: 0%
    > 禁用此选项将影响报表，因为Adobe Commerce不允许与Bolt共享签出跟踪信息。
 
 1. 选择 **登录后下一阶段** 选项，以在客户登录后更改导航流程。 默认情况下，它将设置为 **支付** 页面。
+1. 定义是否 [!DNL Quick Checkout] 允许 **自动登录** 结帐期间。 默认情况下，启用此选项可自动登录到 [!DNL Bolt] 网络。
 
 ## 获取帮助
 

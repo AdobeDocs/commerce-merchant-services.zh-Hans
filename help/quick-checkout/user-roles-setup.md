@@ -1,13 +1,13 @@
 ---
-title: '"[!DNL Quick Checkout] 用户设置”'
-description: “设置用户角色和权限，以显示 [!DNL Quick Checkout] 管理面板。”
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+title: '[!DNL Quick Checkout] 用户设置'
+description: 设置用户角色和权限以显示 [!DNL Quick Checkout] 管理面板。
+exl-id: 76393840-8312-41bb-8447-412849815169
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Quick Checkout] 用户设置
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL System]** >权限> **[!UICONTROL User Roles]**.
 
-   ![用户角色](assets/user-roles.png)
+   ![用户角色](assets/user-roles-small.png)
 
 1. 在 _角色_ 查看，单击 **添加新角色**
 1. 选择 [!DNL Quick Checkout] 资源：

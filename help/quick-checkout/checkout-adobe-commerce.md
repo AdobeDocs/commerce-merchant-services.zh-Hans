@@ -2,9 +2,9 @@
 title: “Adobe Commerce用户的结帐流程”
 description: “概述 [!DNL Quick Checkout] 流量。”
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 如果 [!DNL Bolt] 帐户在结帐期间找到，购物者可以继续其 [!DNL Quick Checkout] 无缝结账体验：
 
-1. 输入发送到该密码的一次性密码(OTP) [!DNL Bolt] 帐户的电子邮件地址或移动设备，具体取决于 [中的用户首选项 [!DNL Bolt] 帐户](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}。
+1. 输入发送到该密码的一次性密码(OTP) [!DNL Bolt] 帐户的电子邮件地址或移动设备，具体取决于 [中的用户首选项 [!DNL Bolt] 帐户](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
 
 ![OTP弹出窗口](assets/pop-up.png)
 
@@ -39,6 +39,19 @@ ht-degree: 0%
 如果购物者在结账前已登录Adobe Commerce，则 [!DNL Bolt] OTP弹出窗口在结账期间不会显示，但会显示一条消息，建议购物者登录以访问其螺栓钱包。
 
 如果您在以现有Adobe Commerce用户身份下订单时遇到问题，请参阅 [快速结帐问题疑难解答](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) Adobe Commerce帮助中心中的文章。
+
+### 自动登录
+
+可以为 [!DNL Quick Checkout] 用户。 您可以启用配置，以在结帐期间自动登录用户。
+
+1. 在 _管理员_ 侧栏，导航到 **商店** > **配置** > **结帐** 访问常规的“结帐管理员”配置页面。
+1. 在 _服务设置_ 部分 [!DNL Quick Checkout]，提供设置自动登录所需的所有详细信息。
+
+请参阅 [[!DNL Quick Checkout] 配置服务设置](../quick-checkout/onboarding.md#configure-service-settings) 主题以了解更多信息。
+
+>[!NOTE]
+>
+> 首次登录时 **自动登录** 启用后，需要用户同意通过接受弹出窗口来授权。
 
 ## 新建 [!DNL Bolt] 帐户
 
