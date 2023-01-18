@@ -2,9 +2,9 @@
 title: 目录同步
 description: 了解如何从 [!DNL Commerce] 服务器到 [!DNL Commerce Services] 不断更新服务。
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: fe5bbceb7f443e7b177ecd4812b981d6e7fd0a6b
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '878'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,10 @@ Adobe Commerce和Magento Open Source使用索引器将目录数据编译为表�
 > 使用 _目录同步_ 仪表板或命令行界面中，您必须 [配置了API密钥和SaaS数据空间](saas.md).
 
 ## 访问目录同步功能板
+
+>[!NOTE]
+>
+> 的 _目录同步_ 仅当安装了产品Recommendations服务时，才可使用功能板。
 
 要访问“目录同步”功能板，请选择 **系统** > _数据传输_ > **目录同步**.
 
