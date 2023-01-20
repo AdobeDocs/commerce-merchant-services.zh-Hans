@@ -2,9 +2,9 @@
 title: 目录同步
 description: 了解如何从 [!DNL Commerce] 服务器到 [!DNL Commerce Services] 不断更新服务。
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: fe5bbceb7f443e7b177ecd4812b981d6e7fd0a6b
+source-git-commit: 853c55fbae3ccfb7abea8ce074127f2871d55688
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Adobe Commerce和Magento Open Source使用索引器将目录数据编译为表�
 
 >[!NOTE]
 >
-> 的 _目录同步_ 仅当安装了产品Recommendations服务时，才可使用功能板。
+> 的 _目录同步_ 仅当 _产品Recommendations_ 模块已安装并仅反映与该功能相关的数据预测。 支持其他商务服务，例如 _实时搜索_ 和 _目录服务_ 计划在将来。
 
 要访问“目录同步”功能板，请选择 **系统** > _数据传输_ > **目录同步**.
 
