@@ -2,9 +2,9 @@
 title: 入门和安装
 description: 了解如何安装 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 55c35e7775505ab9f6a61a458b6cd6fa4c7f1702
+source-git-commit: 3cf7959ece051c82a0f9ed1125571f223427923e
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,7 @@ bin/magento cache:clean
 
 安装目录服务后，必须配置 [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) 指定API密钥并选择SaaS数据空间。
 
-完成SaaS配置后，按照“目录同步”指南执行初始数据同步。
+SaaS配置完成后，按照 [目录同步](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) 的双曲余切值。
 
 要确保目录导出正常运行，请执行以下操作：
 
