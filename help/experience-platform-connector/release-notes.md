@@ -2,10 +2,10 @@
 title: 发行说明
 description: 来自Adobe Commerce的Adobe Experience Platform Connector的最新发行信息。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: f3d35772d75d1d0711d389a00023834720d63bd9
+source-git-commit: 975854dbdae32e5e51bb57593cf122627d01571f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '312'
+ht-degree: 2%
 
 ---
 
@@ -35,6 +35,13 @@ _2022年10月12日_
 * ![新建](../assets/new.svg)  — 添加了对 [AEM storefront](overview.md#aem-support)
 
 +++
+
+## 2.1.0
+
+_2023年1月17日_
+
+* ![新建](../assets/new.svg)  — 更新了 [Experience Platform连接器管理](connect-data.md) 以便您可以指定自己的AEP Web SDK(alloy)。 此外，还为注册了后台测试版计划的商家添加了一个选项，以便向 [后台事件数据](connect-data.md#data-collection) 到边缘。 这些事件包含 [订单状态信息](events.md#beta-order-status-events) 关于订单，例如订单被下达、取消、退还或发运。 如果您想参加后台测试版计划，请联系 [drios@adobe.com](mailto:drios@adobe.com).
+* ![修复](../assets/fix.svg) 已更改为使用 `identityMap` 而不是 `personID` 为推送到边缘的任何数据设置主标识时。
 
 ## 2.0.1
 

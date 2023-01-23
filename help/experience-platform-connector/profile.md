@@ -1,9 +1,10 @@
 ---
 title: 将购物者配置文件上传到Adobe Experience Platform
 description: 了解如何将购物者配置文件上传到Adobe Experience Platform。
-source-git-commit: 93133019f8004437ef85db32ff336bfd0e8c6fc2
+exl-id: fd0ee7fa-5274-4640-ba00-bcb2ec78f314
+source-git-commit: 9bf28159fdac3a7237956a536f6a522b4e2918fe
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -26,7 +27,7 @@ Adobe Commerce商户可以将客户用户档案数据上传到 [实时客户资�
 
 1. 确定客户数据的存储位置。 对于某些商户，此数据存储在Adobe Commerce中，可以 [导出](https://docs.magento.com/user-guide/system/data-export.html) 文件。 对于其他客户，它可能位于单独的客户关系管理(CRM)系统中。
 
-1. 在确定客户数据的存储位置后，找到相应的 [源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en) 基于客户数据的存储位置。 如果看不到相应的源连接器，请使用 [本地文件上传](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload.html) 连接器和从CSV文件导入购物者配置文件。
+1. 在确定客户数据的存储位置后，找到相应的 [源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html) 基于客户数据的存储位置。 如果看不到相应的源连接器，请使用 [本地文件上传](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload.html) 连接器和从CSV文件导入购物者配置文件。
 
    >[!NOTE]
    >

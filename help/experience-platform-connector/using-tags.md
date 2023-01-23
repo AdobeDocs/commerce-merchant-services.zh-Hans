@@ -2,16 +2,16 @@
 title: 使用Adobe Experience Platform标记收集商务数据
 description: 了解如何使用Adobe Experience Platform标记收集商务数据。
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: f3c37c9c50c608f9f0ea4582fbcca2b99a3428b5
+source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
 workflow-type: tm+mt
-source-wordcount: '2574'
+source-wordcount: '2522'
 ht-degree: 0%
 
 ---
 
 # 使用Adobe Experience Platform标记收集商务数据
 
-虽然您可以使用Experience Platform连接器发布和订阅店面事件，但某些商户可能已经使用数据收集解决方案，例如 [Adobe Experience Platform标记](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html?lang=en). 对于这些商户，Adobe Commerce在使用Adobe Commerce事件SDK的Experience Platform连接器中提供了仅发布选项。
+虽然您可以使用Experience Platform连接器发布和订阅店面事件，但某些商户可能已经使用数据收集解决方案，例如 [Adobe Experience Platform标记](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html). 对于这些商户，Adobe Commerce在使用Adobe Commerce事件SDK的Experience Platform连接器中提供了仅发布选项。
 
 ![Experience Platform连接器数据流](assets/tags-data-flow.png)
 _Experience Platform连接器数据流与标记_
@@ -32,7 +32,7 @@ _Experience Platform连接器数据流与标记_
 
 要将Commerce Storefront数据映射到Adobe Experience Platform，请在Adobe Experience Platform标记中配置并安装以下内容：
 
-1. [设置标记属性](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=en) 在Adobe Experience Platform数据收集中。
+1. [设置标记属性](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) 在Adobe Experience Platform数据收集中。
 
 1. 在 **创作**，选择 **扩展** ，然后安装和配置以下扩展：
 
@@ -130,7 +130,7 @@ _Experience Platform连接器数据流与标记_
 - [&#39;initiateCheckout&#39;](#initiatecheckout)
 - [“placeOrder”](#placeorder)
 
-### signOut {#signout}
+### signOut
 
 购物者尝试注销时触发。
 
@@ -160,7 +160,7 @@ _Experience Platform连接器数据流与标记_
 - **类型**: `userAccount.logout`
 - **XDM数据**: `%sign-out%`
 
-### signIn {#signin}
+### signIn
 
 购物者尝试登录时触发。
 
@@ -219,7 +219,7 @@ _Experience Platform连接器数据流与标记_
 - **类型**: `userAccount.login`
 - **XDM数据**: `%sign in%`
 
-### createAccount {#createaccount}
+### createAccount
 
 购物者尝试创建帐户时触发。
 
@@ -278,7 +278,7 @@ _Experience Platform连接器数据流与标记_
 - **类型**: `userAccount.createProfile`
 - **XDM数据**: `%create account%`
 
-### editAccount {#editaccount}
+### editAccount
 
 当购物者尝试编辑帐户时触发。
 
@@ -337,7 +337,7 @@ _Experience Platform连接器数据流与标记_
 - **类型**: `userAccount.updateProfile`
 - **XDM数据**: `%edit account%`
 
-### pageView {#pageview}
+### pageView
 
 加载任何页面时触发。
 
@@ -366,7 +366,7 @@ _Experience Platform连接器数据流与标记_
 - **类型**: `web.webPageDetails.pageViews`
 - **XDM数据**: `%page view%`
 
-### productView {#productview}
+### productView
 
 加载任何产品页面时触发。
 
@@ -471,7 +471,7 @@ _Experience Platform连接器数据流与标记_
 - **类型**: `commerce.productViews`
 - **XDM数据**: `%product view%`
 
-### searchRequestSent {#searchrequestsent}
+### searchRequestSent
 
 由“键入时搜索”弹出窗口中的事件和搜索结果页面上的事件触发。
 
@@ -576,7 +576,7 @@ _Experience Platform连接器数据流与标记_
 - **类型**: `searchRequest`
 - **XDM数据**: `%search request%`
 
-### searchResponseReceived {#searchresponsereceived}
+### searchResponseReceived
 
 在实时搜索返回“键入时搜索”弹出窗口或搜索结果页面的结果时触发。
 
@@ -671,7 +671,7 @@ _Experience Platform连接器数据流与标记_
 - **类型**: `searchResponse`
 - **XDM数据**: `%search response%`
 
-### addToCart {#addtocart}
+### addToCart
 
 在产品添加到购物车时或每次购物车中产品的数量增加时触发。
 
@@ -785,7 +785,7 @@ _Experience Platform连接器数据流与标记_
 - **类型**: `commerce.productListAdds`
 - **XDM数据**: `%add to cart%`
 
-### openCart {#opencart}
+### openCart
 
 创建新购物车时触发，当产品添加到空购物车时会发生这种情况。
 
@@ -818,7 +818,7 @@ _Experience Platform连接器数据流与标记_
 - **类型**: `commerce.productListOpens`
 - **XDM数据**: `%open cart%`
 
-### viewCart {#viewcart}
+### viewCart
 
 加载任何购物车页面时触发。
 
@@ -921,7 +921,7 @@ _Experience Platform连接器数据流与标记_
 - **类型**: `commerce.productListViews`
 - **XDM数据**: `%view cart%`
 
-### removeFromCart {#removefromcart}
+### removeFromCart
 
 从购物车中删除产品时或每次购物车中产品数量减少时触发。
 
@@ -1026,7 +1026,7 @@ _Experience Platform连接器数据流与标记_
 - **类型**: `commerce.productListRemovals`
 - **XDM数据**: `%remove from cart%`
 
-### initiateCheckout {#initiatecheckout}
+### initiateCheckout
 
 购物者单击结帐按钮时触发。
 
@@ -1129,13 +1129,20 @@ _Experience Platform连接器数据流与标记_
 - **类型**: `commerce.checkouts`
 - **XDM数据**: `%initiate checkout%`
 
-### placeOrder {#placeorder}
+### placeOrder
 
 购物者下订单时触发。
 
 #### 数据元素
 
 创建以下数据元素：
+
+1. 帐户电子邮件：
+
+   - **名称**: `account email`
+   - **扩展**: `Adobe Client Data Layer`
+   - **数据元素类型**: `Data Layer Computed State`
+   - **[可选] 路径**: `accountContext.emailAddress`
 
 1. 店面：
 
@@ -1290,6 +1297,9 @@ _Experience Platform连接器数据流与标记_
    - **促销ID**: **值** = `%promotion id%`
    - **字段组**: `commerce` > `purchases` > `value`
    - **值**: **值** = `1`
+   - **个人电子邮件地址**: **值** = `%account email%`
+   - **字段组**: `personalEmail` > `address`
+   - **地址**: **值** = `%account email%`
 
 #### 规则 
 
@@ -1307,19 +1317,16 @@ _Experience Platform连接器数据流与标记_
 
 ## 设置标识
 
-Experience Platform连接器配置文件根据 `personID` 和 `personalEmail` XDM体验事件中的身份字段。 
+Experience Platform连接器配置文件根据 `identityMap` 和 `personalEmail` XDM体验事件中的身份字段。 
 
 如果您之前的设置依赖于不同的字段，则可以继续使用这些字段。 要设置Experience Platform连接器配置文件标识字段，必须设置以下字段：
 
-- `personalEmail`  — 仅限帐户事件 — 对帐户事件执行上述步骤
-- `personID`  — 所有其他事件：
-
-   - 如果您已在捕获 `ECID` 在标记中，您可以 `personID` 在所有Adobe Experience Platform Web SDK规则中 `%ECID%`.
-   - 要捕获 `ECID` 在标记中，必须 **自定义代码** 按照以下规则对发送事件规则执行操作 [标记文档](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/accessing-the-ecid.html). 请参阅以下示例。
+- `personalEmail`  — 仅限帐户事件 — 按照上述步骤操作 [帐户事件](#createaccount)
+- `identityMap`  — 所有其他事件。 请参阅以下示例。
 
 ### 示例
 
-下图显示了如何配置 `pageView` 事件 `personID` 在Experience Platform连接器中：
+以下步骤显示如何配置 `pageView` 事件 `identityMap` 在Experience Platform连接器中：
 
 1. 使用ECID的自定义代码配置数据元素：
 
@@ -1328,13 +1335,24 @@ Experience Platform连接器配置文件根据 `personID` 和 `personalEmail` XD
 
 1. 添加ECID自定义代码：
 
-   ![在数据元素中设置ECID的代码](assets/code-to-set-ecid.png)
-   _在数据元素中设置ECID的代码_
+   ```javascript
+   return alloy("getIdentity").then((result) => {
+       var identityMap = {
+           ECID: [
+           {
+               id: ecid,
+               primary: true
+           }
+           ]
+       };
+     _satelite.setVar("identityMap", identityMap);
+   });
+   ```
 
-1. 将personID设置为ECID时，更新XDM架构：
+1. 使用更新XDM架构 `identityMap` 设置为ECID:
 
-   ![将personID设置为ECID](assets/set-personid-as-ecid.png)
-   _将personID设置为ECID_
+   ![将identityMap设置为ECID](assets/identity-map-data-element.png)
+   _将identityMap设置为ECID_
 
 1. 定义检索ECID的规则操作：
 
@@ -1343,7 +1361,7 @@ Experience Platform连接器配置文件根据 `personID` 和 `personalEmail` XD
 
 ## 设置同意
 
-Adobe Commerce和Experience Platform连接器数据收集同意默认启用。 选择退出通过 [`mg_dnt` cookie](https://docs.magento.com/user-guide/stores/cookie-reference.html). 如果您选择使用 `mg_dnt` 来管理同意。 的 [Adobe Experience Platform Web SDK文档](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=en) 还有几个用于管理同意的其他选项。
+Adobe Commerce和Experience Platform连接器数据收集同意默认启用。 选择退出通过 [`mg_dnt` cookie](https://docs.magento.com/user-guide/stores/cookie-reference.html). 如果您选择使用 `mg_dnt` 来管理同意。 的 [Adobe Experience Platform Web SDK文档](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) 还有几个用于管理同意的其他选项。
 
 1. 创建 **核心自定义代码** 数据元素(`%do not track cookie%`) `mg_dnt` cookie:
 

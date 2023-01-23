@@ -2,9 +2,9 @@
 title: 将字段组添加到XDM架构
 description: 了解如何将特定于Adobe Commerce的字段组添加到XDM模式。
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
-source-git-commit: f5d1c39fe1b02d2a661b92f971fba5b3e836dd6a
+source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
    - 个人联系详细信息
    - 商务详细信息
    - Adobe Analytics Experience Event Commerce(如果要将数据发送到Adobe Analytics)
-   - 人员标识符
+   - 身份映射
 
    >[!NOTE]
    >
@@ -32,4 +32,10 @@ ht-degree: 0%
 
    您的XDM架构现在包含特定于商务的字段组，以便从商务店面收集的数据 [事件](events.md) 表示在XDM中。
 
-1. [创建数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) 并选择包含特定于商务的字段组的XDM架构。
+1. [创建数据集](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) 基于您创建或更新的架构。
+
+   数据集是用于数据集合（通常是表）的存储和管理结构，其中包含架构（列）和字段（行）。 数据集还包含描述其存储数据各个方面的元数据。
+
+1. [创建数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) 并选择包含特定于商务的字段组和相应数据集的XDM架构。
+
+   数据流会将收集的数据转发到数据集。 数据基于所选架构在数据集中表示。
