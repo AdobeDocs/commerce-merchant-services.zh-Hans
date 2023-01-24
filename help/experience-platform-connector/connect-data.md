@@ -2,7 +2,7 @@
 title: 将商务数据连接到Adobe Experience Platform
 description: 了解如何将您的商务数据连接到Adobe Experience Platform。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: 710a18a63c84f0ae0a5aa3b3ad50fdfce0358db6
+source-git-commit: 18edfec6dbc66ef0e94e9f54ca1061386104d90c
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 0%
@@ -37,9 +37,9 @@ ht-degree: 0%
 >
 >对于已注册我们后台测试版计划的商户，您将看到一个用于启用后台活动的复选框。 如果您想参加后台测试版计划，请联系 [drios@adobe.com](mailto:drios@adobe.com).
 
-![测试版Experience Platform连接器配置](assets/epc-config-beta.png)
-
 在 **数据收集** 部分，可指定要收集和发送到Experience Platform边缘的数据类型。 默认情况下，只要AEP Web SDK和组织ID有效，就会自动发送店面事件。 请参阅事件主题以了解有关 [店面](events.md#storefront-events) 和 [后台办公室](events.md#beta-order-status-events) 事件。
+
+![测试版Experience Platform连接器配置](assets/epc-config-beta.png)
 
 >[!NOTE]
 >
