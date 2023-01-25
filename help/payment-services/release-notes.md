@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] 发行说明"
 description: 查看发行说明，了解有关 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: c26023b1b63362d42ab351e451168dd50ff962a2
+source-git-commit: 1b86831f04250a0a45c09842da0018e20c422e62
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1445'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 1%
 这些发行说明描述了在托管服务的常规版本控制功能版本之外发生和发布的功能更改和修复。
 
 +++托管服务更新
+
+_2023年1月25日_
+
+![已知问题](../assets/bug.svg)<!-- Issue PAY-4102 --> Payment Services的新安装无法配置Commerce Services，使Payment Services无法运行。 要解决此问题，请将您的Payment Services扩展更新到版本1.5.3。
 
 _2022年9月12日_
 
@@ -53,13 +57,19 @@ _2021年6月28日_
 
 +++
 
+## v1.5.3
+
+_2022年1月25日_
+
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-4102 --> 已修复不兼容的后向已知问题。 此版本将服务ID扩展版本锁定到最新的稳定版本，该版本可重新启用新的Payment Services安装以配置Commerce Services。
+
 ## v1.5.2
 
 _2022年12月22日_
 
 ![修复的问题](../assets/fix.svg)<!-- Issue PAY-3992 --> 改进了在拒绝付款方法时付款服务中的开票。
 
-![修复的问题](../assets/fix.svg)<!-- Issue PAY-3999 --> 对于使用 [Fire Checkout的](https://marketplace.magento.com/swissup-firecheckout.html)用于结帐页面的{target=_blank}自定义模板。 以前，小型车会间歇性地显示按钮。
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-3999 --> 对于使用 [Fire Checkout的](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} 结帐页面的自定义模板。 以前，小型车会间歇性地显示按钮。
 
 ## v1.5.1
 
