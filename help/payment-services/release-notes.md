@@ -1,11 +1,11 @@
 ---
-title: "[!DNL Payment Services] 发行说明"
+title: '"[!DNL Payment Services] 发行说明”'
 description: 查看发行说明，了解有关 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 275390c001e5b57ea7545af58643c97c26b98f25
+source-git-commit: 4bd3e4bb791ac3688206dd2d671bae5c47dfa7c8
 workflow-type: tm+mt
-source-wordcount: '1445'
-ht-degree: 1%
+source-wordcount: '1476'
+ht-degree: 0%
 
 ---
 
@@ -56,6 +56,12 @@ _2021年6月28日_
 ![新建](../assets/new.svg)<!-- Issue PAY-2761 --> 您现在可以自定义 [订单付款状态报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 和 [派息报告](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 显示或隐藏列时，会显示或隐藏列。
 
 +++
+
+## v1.5.4
+
+_2023年1月29日_
+
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-4110 --> 修复了导致购买者无法在产品页面、迷你购物车和购物车上使用智能按钮下订单的问题。 现在，购买者可以成功完成订单。
 
 ## v1.5.3
 
