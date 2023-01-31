@@ -4,9 +4,9 @@ description: 将实例与 [!DNL Payment Services] 功能。
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 ## 疑难解答
 
-* [故障诊断 [!DNL Payment Services] 安装](https://support.magento.com/hc/en-us/articles/4406603542541)
-* [PayPal沙盒帐户未验证](https://support.magento.com/hc/en-us/articles/4406954952461)
-* [延迟 [!DNL Payment Services] 报告数据](https://support.magento.com/hc/en-us/articles/4406114741517)
-* [在沙盒环境中处理付款时，测试信用卡失败并出现PayPal错误](https://support.magento.com/hc/en-us/articles/5201041963917)
+* [故障诊断 [!DNL Payment Services] 安装](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=en)
+* [PayPal沙盒帐户未验证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)
+* [延迟 [!DNL Payment Services] 报告数据](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)
+* [在沙盒环境中处理付款时，测试信用卡失败并出现PayPal错误](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=en)

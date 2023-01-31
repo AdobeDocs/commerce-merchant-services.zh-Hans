@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] 指南概述'
 description: '''[!DNL Catalog Service for Adobe Commerce] 提供了一种检索产品显示页面和产品列表页面内容的方法，其速度比本机Adobe Commerce GraphQL查询的速度更快。'
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,6 @@ ht-degree: 0%
 
 如果您需要信息或遇到本指南未涵盖的问题，请使用以下资源：
 
-* [帮助中心](https://support.magento.com/hc/en-us/search#q=catalog%20service&amp;sort=relevancy)  — 请参阅与目录服务相关的疑难解答文章。
-* [支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket)  — 提交票证以接收其他帮助。
+* [帮助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) ，以了解有关疑难解答的文章。
+* [支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)  — 提交票证以接收其他帮助。
 * 加入Adobe Commerce工程团队和SaaS店面服务用户， [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) 公共Slack渠道为最新。

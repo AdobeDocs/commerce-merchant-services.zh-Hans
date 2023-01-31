@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] 发行说明”'
 description: 查看发行说明，了解有关 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 4bd3e4bb791ac3688206dd2d671bae5c47dfa7c8
+source-git-commit: a9970d8ac1400a63ef60b289150556b70e71ef22
 workflow-type: tm+mt
-source-wordcount: '1476'
+source-wordcount: '1488'
 ht-degree: 0%
 
 ---
@@ -165,7 +165,7 @@ _2022年3月31日_
 
 ![修复的问题](../assets/fix.svg)<!-- Issue PAY-2561 --> 以前删除的产品不会显示在 _审阅顺序_ 页面。
 
-![已知问题](../assets/bug.svg)<!-- Issue PAY-2842 --> 测试信用卡交易记录 [可能因PayPal而失败](https://support.magento.com/hc/en-us/articles/5201041963917) 在沙盒环境中处理付款时。
+![已知问题](../assets/bug.svg)<!-- Issue PAY-2842 --> 测试信用卡交易记录 [可能因PayPal而失败](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html) 在沙盒环境中处理付款时。
 
 ## v1.0.0
 
@@ -187,8 +187,8 @@ _2021年11月29日_
 
 ![新建](../assets/new.svg)<!-- Issue PAY-1443 --> 您可以轻松 [自定义外观](payments-options.md) 的PayPal智能按钮和信用卡字段 [!DNL Payment Services] 扩展。
 
-![已知问题](../assets/bug.svg)<!-- Issue PAY-2473 --> 使用 [编辑器键不正确](https://support.magento.com/hc/en-us/articles/4406603542541) 在安装扩展期间，会阻止用户 [身份验证](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 正确 `MAGEID`.
+![已知问题](../assets/bug.svg)<!-- Issue PAY-2473 --> 使用 [编辑器键不正确](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) 在安装扩展期间，会阻止用户 [身份验证](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 正确 `MAGEID`.
 
-![已知问题](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] 报告 [不能立即同步](https://support.magento.com/hc/en-us/articles/4406114741517).
+![已知问题](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] 报告 [不能立即同步](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html).
 
-![已知问题](../assets/bug.svg)<!-- Issue PAY-2475 --> 您的 [PayPal沙盒帐户](https://support.magento.com/hc/en-us/articles/4406954952461) 表示 [!DNL Payment Services] 如果您在载入过程中创建该帐户，则无法验证。
+![已知问题](../assets/bug.svg)<!-- Issue PAY-2475 --> 您的 [PayPal沙盒帐户](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html) 表示 [!DNL Payment Services] 如果您在载入过程中创建该帐户，则无法验证。

@@ -4,9 +4,9 @@ description: 配置常规设置以启用 [!DNL Store Fulfillment] 你的店。 �
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 0cf5a99891fb6ec0b6e446aac05e64bc97d70e7c
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '2543'
+source-wordcount: '2541'
 ht-degree: 0%
 
 ---
@@ -151,7 +151,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->对于Adobe Commerce本地安装，请要求系统管理员为 `var/log/walmart-bopis.log` 文件以最小化大小。 有关Adobe Commerce内部部署安装，请参阅 [日志旋转](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=en#server-settings) 在 _Adobe Commerce安装指南_. 有关云基础架构项目的Adobe Commerce，请参阅 [查看和管理日志](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
+>对于Adobe Commerce本地安装，请要求系统管理员为 `var/log/walmart-bopis.log` 文件以最小化大小。 有关Adobe Commerce内部部署安装，请参阅 [日志旋转](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) 在 _Adobe Commerce安装指南_. 有关云基础架构项目的Adobe Commerce，请参阅 [查看和管理日志](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
 
 <table>
 <thead>

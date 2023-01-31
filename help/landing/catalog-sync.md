@@ -2,9 +2,9 @@
 title: 目录同步
 description: 了解如何从 [!DNL Commerce] 服务器到 [!DNL Commerce Services] 不断更新服务。
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: 853c55fbae3ccfb7abea8ce074127f2871d55688
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '909'
 ht-degree: 0%
 
 ---
@@ -96,11 +96,11 @@ Adobe Commerce和Magento Open Source使用索引器将目录数据编译为表�
 
 ### 同步未运行
 
-如果同步未按计划运行或未同步任何内容，请参阅 [知识库](https://support.magento.com/hc/en-us/articles/360042224851).
+如果同步未按计划运行或未同步任何内容，请参阅 [知识库](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html).
 
 ### 同步失败
 
-如果目录同步的状态为 **失败**，提交 [支持票证](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket).
+如果目录同步的状态为 **失败**，提交 [支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## 命令行界面 {#resynccmdline}
 

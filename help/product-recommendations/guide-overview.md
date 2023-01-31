@@ -4,9 +4,9 @@ description: 有关 [!DNL Product Recommendations] 适用于Adobe Commerce管理
 seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.
 exl-id: 7f5105ba-e764-4cb5-9b95-75810e934b47
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '214'
 ht-degree: 0%
 
 ---
@@ -38,5 +38,5 @@ ht-degree: 0%
 
 如果您需要信息或遇到本指南未涵盖的问题，请使用以下资源：
 
-* [帮助中心](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;} — 请参阅 [!DNL Product Recommendations] — 相关疑难解答文章。
-* [支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket){target=&quot;_blank&quot;} — 提交票证以接收其他帮助。
+* [帮助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-tickets){target="_blank"} — 查看 [!DNL Product Recommendations] — 相关疑难解答文章。
+* [支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} — 提交票证以接收其他帮助。

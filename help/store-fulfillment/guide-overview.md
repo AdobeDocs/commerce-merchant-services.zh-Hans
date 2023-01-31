@@ -4,9 +4,9 @@ description: “关于 [!DNL Store Fulfillment] 适用于Adobe Commerce管理员
 seo-title: Adobe Commerce Store Fulfillment Guide
 seo-description: Describes how to use [!DNL Store Fulfillment by Walmart Commerce Technologies] services with Adobe Commerce.
 exl-id: b4af273c-5176-4a67-a783-e0bb1740b3d8
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
@@ -38,5 +38,5 @@ ht-degree: 0%
 
 如果您需要信息或遇到本指南未涵盖的问题，请使用以下资源：
 
-* [帮助中心](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;} — 请参阅 [!DNL Store Fulfillment] — 相关疑难解答文章。
-* [支持票证](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target=&quot;_blank&quot;} — 提交票证以接收其他帮助。
+* [帮助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} — 查看 [!DNL Store Fulfillment] — 相关疑难解答文章。
+* [支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} — 提交票证以接收其他帮助。

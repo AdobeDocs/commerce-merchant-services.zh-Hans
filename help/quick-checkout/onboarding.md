@@ -2,9 +2,9 @@
 title: “在 [!DNL Quick Checkout] (对于Adobe Commerce扩展)
 description: “了解 [!DNL Quick Checkout] 可以为您的Adobe Commerce实例以及如何成功载入和设置扩展。”
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
@@ -155,6 +155,6 @@ ht-degree: 0%
 
 入门流程旨在指导您完成设置和启用 [!DNL Express Checkout] 功能。
 
-通过与Adobe Commerce支持部门联系 [Adobe Commerce帮助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en) 来寻求帮助。
+通过与Adobe Commerce支持部门联系 [Adobe Commerce帮助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) 来寻求帮助。
 
 请参阅 [测试和验证](../quick-checkout/testing.md) 主题以了解更多信息。
