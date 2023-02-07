@@ -2,9 +2,9 @@
 title: '"[!DNL Live Search] 指南概述”'
 description: '"[!DNL Live Search] Adobe Commerce提供了快速、超相关、直观的搜索体验。”'
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: 30acf619c8e46562fb83f2288c324feda0387e05
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Live Search有三个管理员区域：
 
 如果您需要信息或遇到本指南未涵盖的问题，请使用以下资源：
 
-[帮助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)  — 请参阅实时搜索相关疑难解答文章。
+[知识库](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html)  — 请参阅实时搜索相关疑难解答文章。
 [支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)  — 提交票证以接收其他帮助。
 
 在提交支持票证之前，请从命令行中运行以下命令，以检查当前安装的Live Search版本：

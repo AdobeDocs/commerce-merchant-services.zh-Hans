@@ -2,9 +2,9 @@
 title: 入门和安装
 description: 了解如何安装 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 3cf7959ece051c82a0f9ed1125571f223427923e
+source-git-commit: ce5e37c470bb93dc7bc2301ead0789adcf9ab995
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,8 @@ ht-degree: 0%
 ### 软件要求
 
 - Adobe Commerce 2.4.x
-- 8.1、7.4、7.3菲律宾比索
-- 编辑器：2.x，1.x
+- 8.1菲律宾比索
+- 编辑器：2.x
 
 ### 支持的平台
 
@@ -57,25 +57,11 @@ ht-degree: 0%
 
 1. 打开 `<Commerce_root>/composer.json` 文件，并按如下方式更新“需要”部分：
 
-   ```json
-   "require": {
-     "magento/module-saas-catalog": "^101.4.0",
-     "magento/module-saas-product-override": "^101.4.0",
-     "magento/module-saas-product-variant": "^101.4.0",
-     "magento/module-bundle-product-data-exporter": "^101.3.1",
-     "magento/module-catalog-data-exporter": "^101.3.1",
-     "magento/module-catalog-inventory-data-exporter": "^101.3.1",
-     "magento/module-catalog-url-rewrite-data-exporter": "^101.3.1",
-     "magento/module-configurable-product-data-exporter": "^101.3.1",
-     "magento/module-data-exporter": "^101.3.1",
-     "magento/module-parent-product-data-exporter": "^101.3.1",
-     "magento/module-product-override-data-exporter": "^101.3.1",
-     "magento/data-services": "^7.0.11",
-     "magento/services-id": "^3.0.1",
-     "magento/services-connector": "1.2.1",
-     "magento/module-catalog-service-installer": "1.0.1"
-   }
-   ```
+```json
+"require": {
+  "magento/catalog-service": "^1.0.2"
+}
+```
 
 1. 在本地测试新配置并更新依赖项：
 
@@ -95,21 +81,7 @@ composer update
 
 ```json
 "require": {
- "magento/module-saas-catalog": "^101.4.0",
- "magento/module-saas-product-override": "^101.4.0",
- "magento/module-saas-product-variant": "^101.4.0",
- "magento/module-bundle-product-data-exporter": "^101.3.1",
- "magento/module-catalog-data-exporter": "^101.3.1",
- "magento/module-catalog-inventory-data-exporter": "^101.3.1",
- "magento/module-catalog-url-rewrite-data-exporter": "^101.3.1",
- "magento/module-configurable-product-data-exporter": "^101.3.1",
- "magento/module-data-exporter": "^101.3.1",
- "magento/module-parent-product-data-exporter": "^101.3.1",
- "magento/module-product-override-data-exporter": "^101.3.1",
- "magento/data-services": "^7.0.11",
- "magento/services-id": "^3.0.1",
- "magento/services-connector": "1.2.1",
- "magento/module-catalog-service-installer": "1.0.1"
+    "magento/catalog-service": "^1.0.2"
 }
 ```
 

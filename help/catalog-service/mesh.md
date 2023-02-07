@@ -1,9 +1,9 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
 description: '''[!DNL API Mesh] for Adobe Commerce提供了一种通过通用GraphQL端点集成多个数据源的方法。'
-source-git-commit: 7b95be48c21e17cb6ba88d326fd061f7de2f8fb5
+source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
@@ -11,6 +11,8 @@ ht-degree: 0%
 # [!DNL Catalog Service and API Mesh]
 
 的 [适用于Adobe Developer App Builder的API网格](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 使开发人员能够使用AdobeIO将专用或第三方API及其他界面与Adobe产品集成。
+
+![目录架构图](assets/catalog-service-architecture-mesh.png)
 
 将API Mesh与目录服务结合使用的第一步是将API Mesh连接到实例。 请参阅 [创建网格](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 

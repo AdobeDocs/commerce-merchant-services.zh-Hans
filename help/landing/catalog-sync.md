@@ -2,9 +2,9 @@
 title: 目录同步
 description: 了解如何从 [!DNL Commerce] 服务器到 [!DNL Commerce Services] 不断更新服务。
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
@@ -108,7 +108,7 @@ Adobe Commerce和Magento Open Source使用索引器将目录数据编译为表�
 
 >[!NOTE]
 >
-> 从命令行触发数据重新同步时，可能需要长达一小时的时间才能更新数据。
+> 首次运行数据同步时，务必要运行 `productattributes` 首先输入，然后输入 `productoverrides`，运行之前 `products` 信息源。
 
 命令选项：
 
@@ -130,6 +130,8 @@ bin/magento saas:resync --feed <feed name> [no-reindex]
 - `variants` — 可配置产品的产品变体，如颜色和大小
 - `productattributes` — 产品属性，例如 `activity`, `gender`, `tops`, `bottoms`，等等
 - `productoverrides` — 特定于客户的定价和目录可见性规则，例如那些基于类别权限的规则
+
+从命令行触发数据重新同步时，可能需要长达一小时才能更新数据。
 
 ### 示例
 
