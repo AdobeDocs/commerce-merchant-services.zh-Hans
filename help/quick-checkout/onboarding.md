@@ -2,9 +2,9 @@
 title: “在 [!DNL Quick Checkout] (对于Adobe Commerce扩展)
 description: “了解 [!DNL Quick Checkout] 可以为您的Adobe Commerce实例以及如何成功载入和设置扩展。”
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -150,6 +150,10 @@ ht-degree: 0%
 
 1. 选择 **登录后下一阶段** 选项，以在客户登录后更改导航流程。 默认情况下，它将设置为 **支付** 页面。
 1. 定义是否 [!DNL Quick Checkout] 允许 **自动登录** 结帐期间。 默认情况下，启用此选项可自动登录到 [!DNL Bolt] 网络。
+
+   >[!NOTE]
+   >
+   > 请参阅 [Bolt的“启用自动登录”文档](https://help.bolt.com/products/embedded/direct-api/auto-login/) 以了解更多信息。
 
 ## 获取帮助
 

@@ -2,9 +2,9 @@
 title: “Adobe Commerce用户的结帐流程”
 description: “概述 [!DNL Quick Checkout] 流量。”
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '443'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,9 @@ ht-degree: 0%
 
 如果您在以现有Adobe Commerce用户身份下订单时遇到问题，请参阅 [快速结帐问题疑难解答](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) Adobe Commerce帮助中心中的文章。
 
-### 自动登录
+## 自动登录
+
+自动登录组件可检测购物者何时具有活动的Bolt会话，并自动将购物者登录。 这会跳过帐户检测和一次性密码(OTP)步骤，因为购物者在上一个会话中完成了这些步骤。
 
 可以为 [!DNL Quick Checkout] 用户。 您可以启用配置，以在结帐期间自动登录用户。
 
