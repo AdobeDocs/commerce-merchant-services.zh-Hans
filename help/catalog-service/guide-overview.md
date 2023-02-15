@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] 指南概述'
 description: '''[!DNL Catalog Service for Adobe Commerce] 提供了一种检索产品显示页面和产品列表页面内容的方法，其速度比本机Adobe Commerce GraphQL查询的速度更快。'
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: c1b95c2298f1a1039ede6b43b77097d299a34e12
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -16,8 +16,19 @@ ht-degree: 0%
 [!DNL Catalog Service] 具有两种类型的用户：
 
 * Adobe [!DNL Commerce] 系统管理员安装和维护服务。 [!DNL Catalog Service] 没有标准管理员用户的管理员UI或功能。
-
 * 集成商会构建GraphQL查询，并将它们集成到使用前端客户端的店面上。
+
+## 入门和安装视频
+
+查看目录服务的演练 [载入和安装](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/installation.html) 进程。
+
+第一部分：
+
+>[!VIDEO](https://video.tv.adobe.com/v/3415599)
+
+第2部分：
+
+>[!VIDEO](https://video.tv.adobe.com/v/3415600)
 
 ## 其他文档
 
