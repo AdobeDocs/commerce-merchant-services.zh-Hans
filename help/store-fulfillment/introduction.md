@@ -4,9 +4,9 @@ description: “了解如何 [!DNL Store Fulfillment for Adobe Commerce by Walma
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: 1157fe71dbef07f9db835a5a399f9304af550a86
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Store Fullment for Adobe Commerce by Walmart Commerce Technologies是一款与�
 
 * 与Luma主题完全兼容
 
-* 为无头店和维尼亚店面提供GraphQL支持
+* 与PWA和无头店面的部分兼容性
 
 * 支持Walmart Commerce Technologies的Store Assist应用程序。 此应用程序会将取货订单信息直接发送到选定商店位置的员工手持设备。 利用这些信息，客户可以在到达商店时快速、准确地选择、存放和切换项目。
 
