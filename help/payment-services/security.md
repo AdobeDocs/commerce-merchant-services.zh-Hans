@@ -2,9 +2,9 @@
 title: 安全性和合规性
 description: 查看您网站的安全性和合规性要求。
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '483'
 ht-degree: 0%
 
 ---
@@ -17,23 +17,37 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 包括对多项安全功能的支持。
 
-请参阅 [安全性](https://docs.magento.com/user-guide/stores/security.html)核心用户指南中的{target=&quot;_blank&quot;}，用于查看安全最佳实践，以及了解如何管理管理员会话和凭据、实施CAPTCHA和管理网站限制。
+请参阅 [安全性](https://docs.magento.com/user-guide/stores/security.html){target="_blank"} 在核心用户指南中，查看安全最佳实践，并了解如何管理管理员会话和凭据、实施CAPTCHA以及管理网站限制。
 
 ## PCI合规性
 
 支付卡行业(PCI)为接受通过互联网通过信用卡付款的企业制定了一套要求。 除了维护安全的环境外，处理客户信用卡信息的商家还负责满足一些标准准则。
 
-请参阅 [PCI合规指南](https://docs.magento.com/user-guide/stores/compliance-pci.html){target=&quot;_blank&quot;}以了解详细信息。
+请参阅 [PCI合规指南](https://docs.magento.com/user-guide/stores/compliance-pci.html){target="_blank"} 以了解更多信息。
 
-商户可以完成 [自我评估调查表](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target=&quot;_blank&quot;}，这是一个用于评估持卡人数据安全性的自验证工具。
+商户可以完成 [自我评估调查表](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"}，这是一种用于评估持卡人数据安全性的自验证工具。
 
 ### 信用卡字段
 
 使用信用卡字段，您的服务中不会传递PCI管制的数据。 您不必存储或维护该数据，这可大大减少PCI合规性问题。
 
+### 3DS
+
+PCI 3-D Secure(3DS)支持购买者在进行在线信用卡购买时使用其信用卡颁发者进行身份验证。 此额外的安全层有助于防止在线欺诈，是欧盟(EU)合规法规的一部分。
+
+[!UICONTROL Payment Services] 提供3DS功能，使商户能够遵守欧盟法规，并保护客户和商户免受其商店中的欺诈活动。
+
+如果您是欧盟或英国境内需要3DS合规的商家，则必须手动打开3DS( `Off` 默认情况下)in [设置](settings.md#credit-card-fields).
+
+商家/商店人员为买方下达的订单未配置3DS合规措施。
+
+请参阅 [设置中的3DS](settings.md#3ds) 以了解更多信息。
+
 ### 卡保险存储
 
 购物者 [金库 — 或“保存” — 其信用卡信息](vaulting.md) 对于您的商店中的未来购买，会与购物者共享最少的信用卡信息（最后四位数、卡的过期日期和卡品牌）。 信用卡信息与支付提供商一起存储。 当卡过期，或者他们不再需要保存的信息时，他们可以删除该令牌，以便支付提供商不再存储该信息。
+
+请参阅 [信用卡保险](vaulting.md) 以了解更多信息。
 
 ### PayPal智能按钮
 

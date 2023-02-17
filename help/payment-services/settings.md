@@ -4,9 +4,9 @@ description: 安装后，您可以配置 [!DNL Payment Services] 在家里。
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
 workflow-type: tm+mt
-source-wordcount: '1778'
+source-wordcount: '1825'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 ## 配置付款选项
 
-现在，您已为网站启用“付款服务”，接下来可以更改付款功能和店面显示的默认设置。
+现在，您已启用 [!UICONTROL Payment Services] 对于您的网站，您可以更改付款功能和店面显示的默认设置。
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
@@ -109,6 +109,7 @@ ht-degree: 0%
 1. 在 **[!UICONTROL Scope]** 下拉菜单中，您希望为其启用付款方法。
 1. 要更改结帐期间显示的付款方法名称，请编辑 **[!UICONTROL Checkout title]** 字段。
 1. 至 [设置付款操作](production.md#set-payment-services-as-payment-method)，切换 **[!UICONTROL Payment action]** to `Authorize` 或 `Authorize and Capture`.
+1. 启用 [3DS安全身份验证](security.md#3ds) (`Off` 默认情况下)切换 **[!UICONTROL 3DS Secure authentication]** 选择器 `Always` 或 `When required`.
 1. 要在结帐页面上启用或禁用信用卡字段，请切换 **[!UICONTROL Show on checkout page]** 选择器。
 1. 启用或禁用 [卡保险卡](#card-vaulting)，切换 **[!UICONTROL Vault enabled]** 选择器。
 1. 要启用或禁用调试模式，请在 **[!UICONTROL Debug Mode]** 选择器。
@@ -123,9 +124,10 @@ ht-degree: 0%
 | 字段 | 范围 | 描述 |
 |---|---|---|
 | [!UICONTROL Title] | 商店视图 | 在结帐期间，在“付款方法”视图中添加要显示为此付款选项标题的文本。 选项： [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | 网站 | 的 [付款操作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;}。 选项： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | 网站 | 的 [付款操作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定付款方式。 选项： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL 3DS Secure authentication] | 网站 | 启用或禁用 [3DS安全身份验证](security.md#3ds). 选项： [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | 网站 | 启用或禁用要在结帐页面上显示的信用卡字段。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | 网站 | 启用或禁用信用卡保险存储。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | 网站 | 启用或禁用 [信用卡保险](#card-vaulting). 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | 网站 | 启用或禁用调试模式。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### 付款按钮
@@ -165,7 +167,7 @@ ht-degree: 0%
 | 字段 | 范围 | 描述 |
 |---|---|---|
 | [!UICONTROL Title] | 商店视图 | 在结帐期间，在“付款方法”视图中添加要显示为此付款选项标题的文本。 选项：文本字段 |
-| [!UICONTROL Payment Action] | 网站 | 的 [付款操作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;}。 选项： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | 网站 | 的 [付款操作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定付款方式。 选项： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show PayPal buttons on checkout page] | 商店视图 | 启用或禁用 [!DNL PayPal Smart Buttons] 中。 选项： [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on product detail page] | 商店视图 | 启用或禁用 [!DNL PayPal Smart Buttons] 在产品详细信息页面上。 选项： [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons in mini-cart preview] | 商店视图 | 启用或禁用 [!DNL PayPal Smart Buttons] 在mini-cart预览中。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
@@ -231,12 +233,21 @@ ht-degree: 0%
 
 在 [信用卡字段设置](#credit-card-fields).
 
-请参阅 [信用卡保险](vaulting.md) 以了解有关保险存储的详细信息。
+请参阅 [信用卡保险](vaulting.md) 以了解更多信息。
+
+## 3DS
+
+3DS可保护客户和商户在其商店中免受欺诈活动的侵害，并支持遵守欧盟(EU)标准。
+
+在 [信用卡字段设置](#credit-card-fields).
+
+请参阅 [3DS安全性](security.md#3ds) 以了解更多信息。
 
 ## 使用多个PayPal帐户
 
-在Payment Services中，您可以在 **one** 网站级别上的商户帐户。 例如，如果您在多个国家/地区(使用不同的 [货币](https://docs.magento.com/user-guide/stores/currency.html))，或者希望将Adobe Commerce用于您业务的某些部分，但不是 _全部_，则可以设置您的商户帐户以使用多个PayPal帐户。
+在 [!UICONTROL Payment Services]，您可以在 **one** 网站级别上的商户帐户。 例如，如果您在多个国家/地区(使用不同的 [货币](https://docs.magento.com/user-guide/stores/currency.html))，或者希望将Adobe Commerce用于您业务的某些部分，但不是 _全部_，则可以设置您的商户帐户以使用多个PayPal帐户。
 
 请参阅 [网站、商店和查看范围](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) 有关网站、商店和商店视图层次结构的更多信息。
 
 您的销售代表可以创建新 [范围](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 用于您的商户帐户并载入附加的PayPal网站，以便您配置显示的任何PayPal按钮都将显示在您的网站上。 请联系您的销售代表，以获取有关在您的网站中使用多个PayPal帐户的帮助。
+

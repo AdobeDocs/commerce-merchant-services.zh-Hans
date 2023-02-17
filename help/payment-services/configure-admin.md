@@ -4,9 +4,9 @@ description: 安装后，您可以配置 [!DNL Payment Services] 在存储配置
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -61,9 +61,10 @@ ht-degree: 0%
 1. 在 _[!UICONTROL Payment Services]_部分，展开_[!UICONTROL Credit Card Fields]_ 中。
 1. 对于 **[!UICONTROL Title]**，输入文本（如果需要）以更改付款方法的名称，如在结帐期间所示。
 1. 至 [设置付款操作](production.md#set-payment-services-as-payment-method)，选择 **[!UICONTROL Authorize]** 或 **授权和捕获**.
-1. 对于 **[!UICONTROL Show on checkout page]**，选择 `Yes` 启用或禁用结帐页面上的信用卡字段。
+1. 对于 **[!UICONTROL Show on checkout page]**，选择 `Yes` 启用结帐页面上的信用卡字段。
 1. 对于 **[!UICONTROL Vault Enabled]**，选择 `Yes` 启用信用卡保险存储以进行结帐。
-1. 对于 **调试模式**，选择 `Yes` 启用调试模式(或 `No` 禁用)。
+1. 对于 **[!UICONTROL Debug Mode]**，选择 `Yes` 启用调试模式(或 `No` 禁用)。
+1. 启用 **[!UICONTROL 3DS Secure authentication]** (`Off` 默认)选择 `Always` 或 `When required`.
 1. 单击 **[!UICONTROL Save Config]** 以保存更改。
 1. 导航到 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**，然后单击 **[!UICONTROL Flush Cache]** 刷新所有无效的缓存。
 
@@ -72,7 +73,10 @@ ht-degree: 0%
 | 字段 | 范围 | 描述 |
 |---|---|---|
 | [!UICONTROL Title] | 商店视图 | 在结帐期间，在“付款方法”视图中添加要显示为此付款选项标题的文本。 选项： [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | 网站 | 的 [付款操作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;}。 选项： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | 网站 | 的 [付款操作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定付款方式。 选项： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Show on checkout page] | 网站 | 在结帐页面上启用或禁用信用卡字段。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault Enabled] | 网站 | 启用或禁用信用卡保险存储。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL 3DS Secure authentication] | 网站 | 启用或禁用 [3DS安全身份验证](security.md#3ds). 选项： [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | 网站 | 启用或禁用调试模式。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 
 ## [!DNL PayPal Smart Buttons]
@@ -101,7 +105,7 @@ ht-degree: 0%
 | 字段 | 范围 | 描述 |
 |---|---|---|
 | [!UICONTROL Title] | 商店视图 | 在结帐期间，在“付款方法”视图中添加要显示为此付款选项标题的文本。 选项：文本字段 |
-| [!UICONTROL Payment Action] | 网站 | 的 [付款操作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;}。 选项： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | 网站 | 的 [付款操作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定付款方式。 选项： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Display Pay Later Message] | 网站 | 在购物车、产品页面、迷你购物车和结帐流程期间，启用或禁用“稍后付费”消息传送。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Venmo Enabled] | 商店视图 | 在显示付款按钮的位置启用或禁用维恩莫付款选项。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Apple Pay Enabled] | 商店视图 | 在显示付款按钮的位置启用或禁用Apple付款选项。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
@@ -126,3 +130,4 @@ ht-degree: 0%
 ## 刷新缓存
 
 如果更改配置， [手动刷新缓存](/help/payment-services/settings.md#flush-the-cache) 以便您的商店显示最新的配置设置。
+
