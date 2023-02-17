@@ -4,9 +4,9 @@ description: 安装后，您可以配置 [!DNL Payment Services] 在存储配置
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
+source-git-commit: 482182dca95964e68f1637ff1cc7aad84b00e3eb
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '868'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,7 @@ ht-degree: 0%
 1. 至 [设置付款操作](production.md#set-payment-services-as-payment-method)，选择 **[!UICONTROL Authorize]** 或 **授权和捕获**.
 1. 对于 **[!UICONTROL Show on checkout page]**，选择 `Yes` 启用结帐页面上的信用卡字段。
 1. 对于 **[!UICONTROL Vault Enabled]**，选择 `Yes` 启用信用卡保险存储以进行结帐。
+1. 对于 **[!UICONTROL Vault Enabled in Admin]**，选择 `Yes` 使商家能够使用其拱形信用卡为客户创建订单。
 1. 对于 **[!UICONTROL Debug Mode]**，选择 `Yes` 启用调试模式(或 `No` 禁用)。
 1. 启用 **[!UICONTROL 3DS Secure authentication]** (`Off` 默认)选择 `Always` 或 `When required`.
 1. 单击 **[!UICONTROL Save Config]** 以保存更改。
@@ -73,9 +74,10 @@ ht-degree: 0%
 | 字段 | 范围 | 描述 |
 |---|---|---|
 | [!UICONTROL Title] | 商店视图 | 在结帐期间，在“付款方法”视图中添加要显示为此付款选项标题的文本。 选项： [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | 网站 | 的 [付款操作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定付款方式。 选项： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | 网站 | 的 [付款操作](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) 指定付款方式。 选项： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | 网站 | 在结帐页面上启用或禁用信用卡字段。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault Enabled] | 网站 | 启用或禁用信用卡保险存储。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | 商店视图 | 启用或禁用 [信用卡保险](vaulting.md). 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled in Admin] | 商店视图 | 启用或禁用 [商家完成管理员中客户的订单](vaulting.md) 使用拱形支付方法。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL 3DS Secure authentication] | 网站 | 启用或禁用 [3DS安全身份验证](security.md#3ds). 选项： [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | 网站 | 启用或禁用调试模式。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 

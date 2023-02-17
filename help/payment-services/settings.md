@@ -4,9 +4,9 @@ description: 安装后，您可以配置 [!DNL Payment Services] 在家里。
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
+source-git-commit: 482182dca95964e68f1637ff1cc7aad84b00e3eb
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -112,6 +112,7 @@ ht-degree: 0%
 1. 启用 [3DS安全身份验证](security.md#3ds) (`Off` 默认情况下)切换 **[!UICONTROL 3DS Secure authentication]** 选择器 `Always` 或 `When required`.
 1. 要在结帐页面上启用或禁用信用卡字段，请切换 **[!UICONTROL Show on checkout page]** 选择器。
 1. 启用或禁用 [卡保险卡](#card-vaulting)，切换 **[!UICONTROL Vault enabled]** 选择器。
+1. 启用或禁用 [管理员中的拱形付款方法](#card-vaulting) （对于在管理员中使用其拱形付款方法为客户完成订单的商户），请切换 **[!UICONTROL Show vaulted methods in Admin]** 选择器。
 1. 要启用或禁用调试模式，请在 **[!UICONTROL Debug Mode]** 选择器。
 1. 单击 **[!UICONTROL Save]**.
 
@@ -127,7 +128,8 @@ ht-degree: 0%
 | [!UICONTROL Payment Action] | 网站 | 的 [付款操作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定付款方式。 选项： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL 3DS Secure authentication] | 网站 | 启用或禁用 [3DS安全身份验证](security.md#3ds). 选项： [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | 网站 | 启用或禁用要在结帐页面上显示的信用卡字段。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | 网站 | 启用或禁用 [信用卡保险](#card-vaulting). 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | 商店视图 | 启用或禁用 [信用卡保险](vaulting.md). 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show vaulted payment methods in Admin] | 商店视图 | 允许或禁止商家在管理员中为客户完成订单的功能 [使用保险支付方法](vaulting.md). 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | 网站 | 启用或禁用调试模式。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### 付款按钮
@@ -230,6 +232,8 @@ ht-degree: 0%
 ## 卡保险存储
 
 您可以启用一些功能，让您的客户能够保存（或“保存”）其“我的帐户”中的信用卡信息，以便将来购买。
+
+您还可以在管理员中使用卡保险存储来为现有客户完成后续订单。
 
 在 [信用卡字段设置](#credit-card-fields).
 
