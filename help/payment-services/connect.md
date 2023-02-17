@@ -2,7 +2,7 @@
 title: 连接实例
 description: 使用API密钥和私钥连接您的商务实例，并在配置中指定数据空间。
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: a983cf30872544d72bd13c3f04f04a35eebcf85d
+source-git-commit: 5aba246ce2a7802954a90c08c7dac2247a71ff6d
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 0%
@@ -51,4 +51,4 @@ ht-degree: 0%
 
    系统会将您定向到管理员中的配置区域， **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**，以配置Commerce Services Connector。
 
-1. 要配置Commerce Services，请按照 [SaaS配置](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-commerce-services).
+1. 要配置Commerce Services，请按照 [SaaS配置](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#saasenv).
