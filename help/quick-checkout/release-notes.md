@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] 发行说明'
 description: 查看发行说明，了解有关 [!DNL Quick Checkout] 版本。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
+source-git-commit: d0d205b394a772ca84ffb561d0695bd79144f2c6
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1276'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,12 @@ _2022年10月5日_
 ![修复的问题](../assets/fix.svg)<!-- Issue BOLT-369 --> 现在， [[!DNL Quick Checkout] 管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 在页脚中显示应用程序版本。
 
 +++
+
+## v1.7.0
+
+_2023年2月22日_
+
+![修复的问题](../assets/fix.svg)<!-- Issue AC-8002 --> 改进了使用 [多运送](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/multishipping-settings.html) 方法。 此功能允许在结帐时显示付款方法 [!DNL Quick Checkout] 启用。
 
 ## v1.6.0
 
