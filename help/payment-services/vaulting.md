@@ -1,15 +1,15 @@
 ---
-title: 信用卡保险
+title: 信用卡保险存储
 description: 购物者可以保存（保存）其信用卡详细信息，以便将来购买。
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
-source-git-commit: fb0a8295772fc6e23f2910019e1beadd64d7ed70
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
 
-# 信用卡保险
+# 信用卡保险存储
 
 通过信用卡保险存储，将一次性客户转化为忠诚的购物者。 购物者可在结帐期间保存（或“保管库”）其信用卡凭据，以供以后购买相同或另一商户帐户的商品时使用。
 

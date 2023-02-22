@@ -4,9 +4,9 @@ description: 使用“订单付款状态”报表可查看订单的付款状态�
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: ddd9fa9b2a709858239c88477f19e8787a0b65c2
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,11 @@ ht-degree: 0%
 
 的 [!DNL Payment Services] 模块使用订单数据，并将其与其他来源（包括PayPal）的汇总付款数据合并，以提供有意义且非常有用的报表。
 
-订单数据将导出并保留在付款服务中。 当您 [更改或添加订单状态](https://docs.magento.com/user-guide/sales/order-status-custom.html){target=&quot;_blank&quot;}或 [编辑商店视图](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target=&quot;_blank&quot;}, [商店](https://docs.magento.com/user-guide/stores/store-information.html){target=&quot;_blank&quot;}或网站名称，该数据与付款数据相结合，并且订单付款状态报表填充了组合信息。
+订单数据将导出并保留在付款服务中。 当您 [更改或添加订单状态](https://docs.magento.com/user-guide/sales/order-status-custom.html){target="_blank"} or [edit a store view](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target="_blank"}, [store](https://docs.magento.com/user-guide/stores/store-information.html){target="_blank"}或网站名称，该数据将与付款数据组合，并且订单付款状态报表将填充组合信息。
 
 此过程中有两个步骤：
 
-1. 索引已更改数据 `ON SAVE` （每次订单信息或商店信息发生更改时）或 `BY SCHEDULE` （根据预配置的cron计划），具体取决于 [索引管理](https://docs.magento.com/user-guide/system/index-management.html)管理员中的{target=&quot;_blank&quot;}。
+1. 索引已更改数据 `ON SAVE` （每次订单信息或商店信息发生更改时）或 `BY SCHEDULE` （根据预配置的cron计划），具体取决于 [索引管理](https://docs.magento.com/user-guide/system/index-management.html){target="_blank"} 中。
 
    默认情况下，会进行数据索引 `ON SAVE`，这意味着每当某些内容在顺序、顺序状态、存储视图、存储区或网站中发生更改时，都会立即进行重新索引过程。
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 尽管默认情况下，在 `ON SAVE` 模式，建议在 `BY SCHEDULE` 模式。 的 `BY SCHEDULE` 索引在cron计划下运行1分钟，任何更改的数据都会在任何数据更改后的两分钟内显示在“订单状态”报表中。 此计划的重新索引有助于您减少存储上的任何压力，特别是当您有大量传入订单时，因为它是按计划进行的（不是在每个订单下达时）。
 
-可以更改索引模式 — `ON SAVE` 或 `BY SCHEDULE`—[在管理员中](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target=&quot;_blank&quot;}。
+可以更改索引模式 — `ON SAVE` 或 `BY SCHEDULE`—[在管理员中](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"}.
 
 要了解如何配置数据导出，请参阅 [命令行配置](configure-cli.md#configure-data-export).
 
@@ -181,10 +181,10 @@ These order payment status timeframes are currently available in [!DNL Payment S
 
 | 列 | 描述 |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | 商务订单ID<br> <br>查看相关 [订购信息](https://docs.magento.com/user-guide/sales/orders.html){target=&quot;_blank&quot;}，单击ID。 |
+| [!UICONTROL Order ID] | 商务订单ID<br> <br>查看相关 [订购信息](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}，请单击ID。 |
 | [!UICONTROL Order Date] | 订单日期时间戳 |
 | [!UICONTROL Authorized Date] | 付款授权的日期时间戳 |
-| [!UICONTROL Order Status] | 当前商务 [订单状态](https://docs.magento.com/user-guide/sales/order-status.html){target=&quot;_blank&quot;} |
+| [!UICONTROL Order Status] | 当前商务 [订单状态](https://docs.magento.com/user-guide/sales/order-status.html){target="_blank"} |
 | [!UICONTROL Invoiced] | 订单的发票状态 — *[!UICONTROL No]*, *[!UICONTROL Partial]*&#x200B;或 *[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | 订单的发运状态 — *[!UICONTROL No]*, *[!UICONTROL Partial]*&#x200B;或 *[!UICONTROL Yes]* |
 | [!UICONTROL Order Amt] | 订单总金额 |

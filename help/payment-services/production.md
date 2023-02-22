@@ -1,15 +1,15 @@
 ---
-title: 启用 [!DNL Payment Services] 生产
+title: 启用 [!DNL Payment Services] 用于生产
 description: 通过启用 [!DNL Payment Services] 生产。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# 启用 [!DNL Payment Services] 生产
+# 启用 [!DNL Payment Services] 用于生产
 
 您可以将服务投入生产并完成 [载入过程](onboard.md)，根据本主题中的步骤，在之后：
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 
    如果尚未配置，则会显示此选项 [!DNL Payment Services] 作为一个或多个网站的付款方式。
 
-   将您定向到“主页”视图中的设置区域，并展开相关选项(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_)，您可以在其中启用 [!DNL Payment Services] 选项 [付款方法](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target=&quot;_blank&quot;}。
+   将您定向到“主页”视图中的设置区域，并展开相关选项(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_)，您可以在其中启用 [!DNL Payment Services] 选项 [付款方法](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
 
 1. 在 _[!UICONTROL General Configuration]_，设置&#x200B;**[!UICONTROL Enable]**to `Yes`.
 1. 已设置 **[!UICONTROL Payment Action]**，用于 _[!UICONTROL Credit Card Fields]_和_[!UICONTROL PayPal Smart Buttons]_，更改为以下任一内容：
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 1. 单击 **[!UICONTROL Save]**.
 1. 单击 **[!UICONTROL Go to Payment Services]** 被引回 [!DNL Payment Services] 回家。
-1. [清除缓存](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}。
+1. [清除缓存](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    应在每次配置更改后完成清除。
 
@@ -107,7 +107,7 @@ A _生产商ID_ 会在 [配置](configure-admin.md). 请勿更改或更改此ID�
 1. 在主页上，单击 **[!UICONTROL Settings]** 的双曲余切值。 请参阅 [主页](payments-home.md) 以了解更多信息。
 1. 在 _[!UICONTROL General Configuration]_节集&#x200B;**[!UICONTROL Payment mode]**to `Production`.
 1. 单击 **[!UICONTROL Save]**.
-1. [清除缓存](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}。
+1. [清除缓存](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    >[!IMPORTANT]
    >

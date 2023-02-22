@@ -4,9 +4,9 @@ description: 安装后，您可以配置 [!DNL Payment Services] 使用命令行
 role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -47,11 +47,11 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >如果您未在命令中指定任何索引器，则所有索引器都将更新为相同的值。 如果要更改特定索引器，必须在命令中列出该索引器。
 
-要了解有关手动更改索引器模式的更多信息，请参阅 [配置索引器](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers)开发人员文档中的{target=&quot;_blank&quot;}。 要了解如何在管理员中更改它，请参阅 [索引管理](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode)核心用户指南中的{target=&quot;_blank&quot;}。
+要了解有关手动更改索引器模式的更多信息，请参阅 [配置索引器](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} in the developer documentation. To learn how to change it in the Admin, see [Index management](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} （在核心用户指南中）。
 
 ### 手动重新编入数据索引
 
-您可以手动重新编入数据索引，而无需等待数据自动发生。 请参阅 [重新索引](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target=&quot;_blank&quot;}(位于 [管理索引器](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target=&quot;_blank&quot;}以了解详细信息。
+您可以手动重新编入数据索引，而无需等待数据自动发生。 请参阅 [重新索引](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Manage the Indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} 以了解更多信息。
 
 When `BY SCHEDULE` 模式时，系统会跟踪已更改的实体，而cron作业会根据设置的计划更新这些实体的索引。 请参阅 [从命令行中运行cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) in [配置并运行cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html))，以了解如何使用cron作业手动触发索引。
 

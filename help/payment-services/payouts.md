@@ -1,17 +1,17 @@
 ---
-title: 派息报告
+title: 赔款报告
 description: 使用“支付”报表可以完全透明地记录支付金额、已处理数量以及财务对账的交易级别详细报告。
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: ddd9fa9b2a709858239c88477f19e8787a0b65c2
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# 派息报告
+# 赔款报告
 
 [!DNL Payment Services] 表示 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供全面的报表，以便您能够清楚地了解商店的订单和付款情况。
 
@@ -84,7 +84,7 @@ ht-degree: 0%
 
 ### 选择数据源
 
-在“支付”报表视图中，您可以选择数据源 — _[!UICONTROL Live]_或_[!UICONTROL Sandbox]_ — 要查看其报表结果。
+在“支付”报表视图中，您可以选择数据源 — _[!UICONTROL Live]_或_[!UICONTROL Sandbox]_ — 要查看其报告结果的。
 
 ![数据源选择](assets/datasource.png)
 
@@ -154,8 +154,8 @@ ht-degree: 0%
 | [!UICONTROL Code] | 表示信用(*CR*)或借项(*DR*) |
 | [!UICONTROL Reference ID] | 与此事件相关的原始交易ID |
 | [!UICONTROL Invoice] | 交易的发票ID（每张订单一张） |
-| [!UICONTROL Commerce order] | 商务订单ID <br> <br>查看相关 [订购信息](https://docs.magento.com/user-guide/sales/orders.html){target=&quot;_blank&quot;}，单击ID。 |
-| [!UICONTROL Commerce trans] | 商务交易ID <br> <br>查看相关 [交易信息](https://docs.magento.com/user-guide/sales/transactions.html){target=&quot;_blank&quot;}，单击ID。 |
+| [!UICONTROL Commerce order] | 商务订单ID <br> <br>查看相关 [订购信息](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}，请单击ID。 |
+| [!UICONTROL Commerce trans] | 商务交易ID <br> <br>查看相关 [交易信息](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}，请单击ID。 |
 | [!UICONTROL Pay method] | 信用卡类型 — *[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL APPLE_PAY]*, *[!UICONTROL CREDIT_CARD]* — 和关联的卡提供商(例如 *签证* 或 *万事达*) |
 | [!UICONTROL Trans amt] | 交易金额 |
 | [!UICONTROL Cur] | 交易金额的货币单位 |
@@ -184,19 +184,19 @@ ht-degree: 0%
 | ------------ | -------------------- |
 | [!UICONTROL PAYMENT] | 为订单在买方和卖方之间转移的货币 |
 | [!UICONTROL AUTH] | 授权和授权撤消交易 |
-| [!UICONTROL BONUS] | — |
+| [!UICONTROL BONUS] | -- |
 | [!UICONTROL CHARGEBACK] | 按存储容量使用计费和按存储容量使用计费费用冲销交易 |
-| [!UICONTROL CORRECTION] | — |
-| [!UICONTROL CURRENCY_CONVERSION] | — |
-| [!UICONTROL DEPOSIT] | — |
-| [!UICONTROL DISBURSEMENT] | — |
-| [!UICONTROL DISPUTE] | — |
+| [!UICONTROL CORRECTION] | -- |
+| [!UICONTROL CURRENCY_CONVERSION] | -- |
+| [!UICONTROL DEPOSIT] | -- |
+| [!UICONTROL DISBURSEMENT] | -- |
+| [!UICONTROL DISPUTE] | -- |
 | [!UICONTROL FEES] | 合作伙伴费用、支付费用和费用转回交易 |
-| [!UICONTROL HOLD] | — |
-| [!UICONTROL HOLD_RELEASE] | — |
-| [!UICONTROL INCENTIVES] | — |
-| [!UICONTROL OTHERS] | — |
+| [!UICONTROL HOLD] | -- |
+| [!UICONTROL HOLD_RELEASE] | -- |
+| [!UICONTROL INCENTIVES] | -- |
+| [!UICONTROL OTHERS] | -- |
 | [!UICONTROL RECOUP] | 从银行或亏损帐户中扣除 |
-| [!UICONTROL REFUND] | — |
-| [!UICONTROL REVERSAL] | — |
-| [!UICONTROL WITHDRAWAL] | — |
+| [!UICONTROL REFUND] | -- |
+| [!UICONTROL REVERSAL] | -- |
+| [!UICONTROL WITHDRAWAL] | -- |
