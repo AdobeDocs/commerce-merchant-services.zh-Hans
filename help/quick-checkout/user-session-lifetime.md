@@ -2,16 +2,16 @@
 title: 用户会话生命周期
 description: 管理员提供为 [!DNL Quick Checkout] 扩展。
 exl-id: 32cf5d70-9a50-49ca-8b40-5f04bc1e24b7
-source-git-commit: 2f14cd437be6d48e24e56b3b31a1c640357b27e3
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
 
 # 用户会话生命周期
 
-购物者会话的生命周期由多个因素决定，这些因素可以在您的Adobe Commerce管理员中进行配置。 请参阅 [配置Cookie生命周期](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/configure/customer-online-options.html){target=_blank}以了解详细信息。
+购物者会话的生命周期由多个因素决定，这些因素可以在您的Adobe Commerce管理员中进行配置。 请参阅 [配置Cookie生命周期](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/configure/customer-online-options.html){target=_blank} 以了解更多信息。
 
 Cookie的已配置生命周期可能会影响您的 [!DNL Quick Checkout] 如果：
 

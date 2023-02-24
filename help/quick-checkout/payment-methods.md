@@ -1,15 +1,15 @@
 ---
-title: '"付款方式"'
+title: "付款方式"
 description: “与 [!DNL Quick Checkout] 用于Adobe Commerce扩展。”
 exl-id: 7d151477-5932-4ec0-b729-dbda6b49e6da
-source-git-commit: a95d2ed92c69feba03d1b84d44abf08c1d1b4029
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 0%
 
 ---
 
-# [!DNL Quick Checkout] 兼容支付方法
+# [!DNL Quick Checkout] 兼容的支付方法
 
 一旦商户配置 [!DNL Quick Checkout]:
 

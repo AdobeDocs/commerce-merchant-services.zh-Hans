@@ -2,16 +2,16 @@
 title: '"[!DNL Quick Checkout] 先决条件'
 description: “验证您的系统是否满足使用 [!DNL Quick Checkout] 用于Adobe Commerce扩展。”
 exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
-source-git-commit: 696aa03404fe270f13835b451b56759675d49778
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '126'
 ht-degree: 1%
 
 ---
 
 # [!DNL Quick Checkout] 先决条件
 
-的 [!DNL Quick Checkout] 与两者兼容 [!DNL Magento Open Source] 和Adobe Commerce。 请参阅 [生命周期策略](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html){target=_blank}以了解有关受支持版本的更多信息。
+的 [!DNL Quick Checkout] 与两者兼容 [!DNL Magento Open Source] 和Adobe Commerce。 请参阅 [生命周期策略](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html){target=_blank} 以了解有关受支持版本的更多信息。
 
 请参阅 [载入](../quick-checkout/onboarding.md) 主题以了解更多信息。
 

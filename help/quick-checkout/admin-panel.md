@@ -2,14 +2,14 @@
 title: '''[!DNL Quick Checkout] (对于Adobe Commerce Admin Panel)'
 description: 了解 [!DNL Quick Checkout] 管理面板可帮助如何成功载入、设置和可视化扩展。
 exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%
 
 ---
 
-# 简介 [!DNL Quick Checkout] “管理员”面板
+# 简介 [!DNL Quick Checkout] 管理面板
 
 [!DNL Quick Checkout] 对于Adobe Commerce和Magento Open Source，将提供“管理员”面板视图，其中包含设置和使用该扩展所需的所有信息。
 
