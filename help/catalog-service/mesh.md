@@ -1,30 +1,30 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
 description: '''[!DNL API Mesh] for Adobe Commerce提供了一种通过通用GraphQL端点集成多个数据源的方法。'
-source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
+source-git-commit: bdceeeeb1ed58c4ffbc87bee24c1eb3754b1cde9
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service and API Mesh]
 
-的 [适用于Adobe Developer App Builder的API网格](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 使开发人员能够使用AdobeIO将专用或第三方API及其他界面与Adobe产品集成。
+的 [适用于Adobe Developer App Builder的API网格](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 使开发人员能够使用Adobe I/O Runtime将专用或第三方API及其他界面与Adobe产品集成。
 
 ![目录架构图](assets/catalog-service-architecture-mesh.png)
 
 将API Mesh与目录服务结合使用的第一步是将API Mesh连接到实例。 请参阅 [创建网格](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
-要完成设置，您需要 [AdobeIO CLI包](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) 已安装。
+要完成设置，请安装 [Adobe Developer CLI包](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 
-在AdobeIO上配置Mesh后，运行以下命令，该命令将 `CommerceCatalogServiceGraph` 来源。
+在Adobe I/O Runtime上配置Mesh后，运行以下命令，该命令将 `CommerceCatalogServiceGraph` 来源。
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 ```
 
-where `variables.json` 是存储AdobeIO常用值的单独文件。
+其中 `variables.json` 是一个单独的文件，用于存储Adobe I/O Runtime的常用值。
 例如，API密钥可以保存在文件中：
 
 ```json
@@ -40,7 +40,7 @@ where `variables.json` 是存储AdobeIO常用值的单独文件。
 API网格允许用户使用外部数据源来增强您的Adobe Commerce实例。 它还可用于配置现有商务数据以启用新功能。
 
 在此示例中，API Mesh用于在Adobe Commerce中启用层价格。
-替换 `name `, `endpoint` 和 `x-api-key` 值。
+替换 `name `, `endpoint`和 `x-api-key` 值。
 
 ```json
 {

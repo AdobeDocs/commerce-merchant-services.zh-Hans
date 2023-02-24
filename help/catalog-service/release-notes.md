@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service] 发行说明'
 description: 的最新发行信息 [!DNL Catalog Service] Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 67f9e5ce69930f3298427a103f9160f925d2ae0d
+source-git-commit: fd3f71a1b3d958f3aa79f0ba6603d30e16e70507
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -13,19 +13,20 @@ ht-degree: 0%
 
 以下发行说明介绍了 [!DNL Catalog Service] 包括：
 
-* ![新建](../assets/new.svg) 新增功能
-* ![修复](../assets/fix.svg) 修复和改进功能
-* ![错误](../assets/bug.svg) 已知问题
+![新建](../assets/new.svg) 新增功能
+![修复](../assets/fix.svg) 修复和改进功能
+![错误](../assets/bug.svg) 已知问题
 
-## V1.4版本
+## 当前主要版本
+
+### V1.4版本
 
 发行日期：2023-2-7与Adobe Commerce(EE)兼容：2.4.x与Adobe Commerce for Cloud(ECE)兼容：2.4.x稳定性：正式发布
 
 ![新建](../assets/new.svg) 发布了目录服务元包，以简化安装步骤。
 ![修复](../assets/fix.svg) API可扩展性和性能改进。
 
-
-### 已知限制
+#### 已知限制
 
 尚不支持以下功能：
 
@@ -44,7 +45,7 @@ ht-degree: 0%
 * 可下载的产品和礼品卡
 * 类别(`categories` 和 `categoryList`)
 
-## V1.3版本
+### V1.3版本
 
 发行日期：2023-1-17与Adobe Commerce(EE)兼容：2.4.x与Adobe Commerce for Cloud(ECE)兼容：2.4.x稳定性：正式发布
 
@@ -53,7 +54,7 @@ ht-degree: 0%
 ![新建](../assets/new.svg) 添加了对虚拟产品的支持。
 ![修复](../assets/fix.svg) API可扩展性和性能改进。
 
-### 已知限制
+#### 已知限制
 
 尚不支持以下功能：
 
@@ -72,14 +73,14 @@ ht-degree: 0%
 * 可下载的产品和礼品卡
 * 类别(`categories` 和 `categoryList`)
 
-## V1.1版本
+### V1.1版本
 
 发行日期：2022-11-18与Adobe Commerce(EE)兼容：2.4.x与Adobe Commerce for Cloud(ECE)兼容：2.4.x稳定性：正式发布
 
 ![新建](../assets/new.svg) 目录服务现在支持Adobe [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/).
 ![修复](../assets/fix.svg) 我们改进了API可扩展性和整体性能。
 
-### 已知限制
+#### 已知限制
 
 尚不支持以下功能：
 
@@ -98,7 +99,7 @@ ht-degree: 0%
 * 可下载的产品和礼品卡
 * 类别(`categories` 和 `categoryList`)
 
-## V1.0版本
+### V1.0版本
 
 发行日期：2022-10-04与Adobe Commerce(EE)兼容：2.4.x与Adobe Commerce for Cloud(ECE)兼容：2.4.x稳定性：正式发布
 
@@ -106,7 +107,7 @@ ht-degree: 0%
 ![新建](../assets/new.svg) 添加了B2B可见性覆盖。 现在可搜索产品，并可将其添加到特定客户群的购物车。
 ![修复](../assets/fix.svg) 服务现在更加稳定，性能也得到提高。
 
-### 已知限制
+#### 已知限制
 
 尚不支持以下功能：
 
@@ -118,7 +119,11 @@ ht-degree: 0%
 * 支持虚拟、可下载和礼品卡产品类型
 * 最低广告价格(MAP)
 
-## 0.3版本 — Beta+
+## 早期版本
+
++++测试版
+
+### 0.3版本 — Beta+
 
 发行日期：2022-09-12与Adobe Commerce(EE)兼容：2.4.x与Adobe Commerce for Cloud(ECE)兼容：2.4.x稳定性：Beta
 
@@ -127,7 +132,7 @@ ht-degree: 0%
 ![修复](../assets/fix.svg) 提高了服务的稳定性和性能
 ![新建](../assets/new.svg) 产品从目录中删除后，将收到更新
 
-### 已知限制
+#### 已知限制
 
 尚不支持以下功能：
 
@@ -136,7 +141,7 @@ ht-degree: 0%
 * 从目录中删除变体后，不会收到任何更新
 * B2B可见性覆盖：可搜索产品，或将产品添加到购物车中（针对特定客户群）
 
-## 测试版
+### 测试版
 
 发行日期：2022-08-09与Adobe Commerce(EE)兼容：2.4.x与Adobe Commerce for Cloud(ECE)兼容：2.4.x稳定性：Beta
 
@@ -150,10 +155,12 @@ ht-degree: 0%
 * 客户组价格和价格范围。 对于没有客户群组的购物者，它们会返回回退默认价格。
 * 使用特定于B2B客户的定价的产品类型。
 
-### 已知限制
+#### 已知限制
 
 * 不支持捆绑和分组产品。
 * 不支持层定价。
 * 在图像数组中，只有第一个图像包含角色。
 * 不会检索变体的图像。
 * 从目录中删除产品或变体时，未收到更新。
+
++++

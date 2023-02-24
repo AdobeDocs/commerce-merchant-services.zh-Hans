@@ -1,15 +1,15 @@
 ---
-title: 工作区
+title: '''[!DNL Product Recommendations] 工作区的'
 description: 了解如何配置、管理和监控产品推荐性能。
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 25d5321b6f29bab5d8cf329170f3644f35100438
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 0%
 
 ---
 
-# 工作区
+# [!DNL Product Recommendations] 工作区
 
 的 [!DNL Product Recommendations] 工作区会显示以前配置的推荐列表，其中包含可帮助您跟踪每个推荐成功与否的量度。 该列表可配置为计算最后一天、周或月的量度。 您可以使用这些量度根据推荐单元的查看或点击频率创建切实可行的分析，或分析推荐的效果。
 
