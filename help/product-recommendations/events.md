@@ -1,7 +1,8 @@
 ---
 title: 收集数据
 description: 了解事件如何收集产品推荐的数据。
-source-git-commit: 81ab2e22b0ec81e97d27ee135c88b50731a3986d
+exl-id: b827d88c-327f-4986-8239-8f1921d8383c
+source-git-commit: 0392077939436f0d2b1c37f403f5365c87f3215e
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
@@ -24,7 +25,7 @@ ht-degree: 0%
 
 的 [Adobe Commerce Storefront事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) 列出部署到店面的所有事件。 但是，该列表中存在特定于产品Recommendations的事件子集。 当购物者与店面上的推荐单位进行交互时，这些事件会收集数据，并为用来帮助您分析推荐效果的量度提供动力。
 
-| Event | 描述 | [用于量度？](workspace.md) |
+| 事件 | 描述 | [用于量度？](workspace.md) |
 | --- | --- | --- |
 | `impression-render` | 推荐单元呈现在页面上。 | 是 |
 | `rec-add-to-cart-click` | 客户单击 **添加到购物车** 按钮。 | 是，当 **添加到购物车** 按钮。 |
