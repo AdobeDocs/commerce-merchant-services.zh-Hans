@@ -3,15 +3,15 @@ title: 存储实现的配置概述
 description: 了解可用于自定义商店履行解决方案提供的扩展履行功能的管理员配置设置类型，以及有关完成配置的说明的链接。
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: c432791a-94a0-457d-9ed9-8937846ce4f4
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%
 
 ---
 
-
-# 存储实现的配置概述
+# 商店履行的配置概述
 
 在Adobe Commerce管理员中，由Walmart Commerce Technologies划分的“商店履行服务”的配置设置按类型进行分类。
 

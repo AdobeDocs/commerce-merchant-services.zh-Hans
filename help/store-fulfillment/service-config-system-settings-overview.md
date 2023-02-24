@@ -3,7 +3,7 @@ title: 系统配置概述
 description: 了解“商店履行”解决方案可用的“管理员”配置设置类别及其配置方式。
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -38,3 +38,4 @@ ht-degree: 0%
 - **必需** 值指示是否必须在字段中设置值
 
 有关技术参考，您还可以找到每个字段的内部配置路径。
+

@@ -4,14 +4,14 @@ description: 配置常规设置以启用 [!DNL Store Fulfillment] 你的店。 �
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '2541'
 ht-degree: 0%
 
 ---
 
-# 商店服务和销售配置
+# 存储服务和销售配置
 
 配置 [!DNL Store Fulfillment] 从 [!DNL Commerce] 管理员可启用扩展、指定扩展设置、配置Store Assist应用程序用户的安全设置，以及设置用于交付方法的选项。
 
@@ -530,3 +530,4 @@ ht-degree: 0%
 <td>否</td>
 </tr>
 </tbody></table>
+

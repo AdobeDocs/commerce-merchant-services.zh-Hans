@@ -1,18 +1,18 @@
 ---
-title: 销售电子邮件
+title: 销售电子邮件模板
 description: 配置事务型电子邮件模板，以便在“商店提货单”的履行过程中与客户和商店管理员通信。
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1202'
 ht-degree: 0%
 
 ---
 
 
-# 销售电子邮件
+# 销售电子邮件模板
 
 存储履行提供了一组扩展的事务型电子邮件模板，用于支持订单和履行工作流。 它们提供跨渠道的一致、自动通信和消息传送 — 通知客户和存储管理员订单状态更改、店内提货单说明等。
 

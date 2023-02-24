@@ -1,10 +1,10 @@
 ---
 title: 签入体验设置
-description: 配置在客户完成“提货单”表单时，可为他们策划提货客户提供的“提货车”和“模型”选项。
+description: 配置在客户完成“提货单”表单时可用于策划提货客户的车型和型号选择。
 role: User, Admin
 level: Intermediate
 exl-id: 341b96cd-bb83-4d07-965c-b09fab24dc81
-source-git-commit: 5e7dcc48c65b2f3f75a33c6e556dcef882a80549
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 0%

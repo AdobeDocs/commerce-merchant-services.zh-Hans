@@ -1,9 +1,10 @@
 ---
 title: 商户商店配置
-description: '设置可增强Inventory management源作为商户商店。 '
+description: 设置可增强Inventory management源作为商户商店。
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+exl-id: 7c3444d0-5ecb-4ac1-aa81-e48eea290f5d
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '1209'
 ht-degree: 0%
@@ -141,10 +142,3 @@ ht-degree: 0%
 | **[!UICONTROL Is Car Make a Mandatory Field?]**</br>`Extension Attribute: car_make_mandatory` | 指定在签入期间是否需要客户进行车辆识别。</br></br>如果启用，系统会提示客户在到达时指定其车辆的型号。 如果禁用，客户可以跳过此输入。 | 全球 | 否 |
 | **[!UICONTROL Use Additional Information]**</br> `Extension Attribute: use_additional_information` | 指定在签入期间是否支持从客户收集其他信息。 | 全球 | 否 |
 | **[!UICONTROL Is Additional Information a Mandatory Field?]**</br>`Extension Attribute: additional_information_mandatory` | 指定在签入期间是否需要客户的其他信息。 </br></br>如果启用，系统会提示客户在到达时输入其他信息。 如果禁用，客户可以跳过此输入。 | 全球 | 否 |
-
-
-
-
-
-
-

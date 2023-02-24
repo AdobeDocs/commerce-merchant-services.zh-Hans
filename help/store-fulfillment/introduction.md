@@ -4,7 +4,7 @@ description: “了解如何 [!DNL Store Fulfillment for Adobe Commerce by Walma
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 1157fe71dbef07f9db835a5a399f9304af550a86
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 0%
@@ -78,4 +78,5 @@ Store Fullment for Adobe Commerce by Walmart Commerce Technologies是一款与�
 >[!TIP]
 >
 > 要快速演示“商店履行”解决方案，请参阅 [存储履行概述](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) 可用 _Adobe Commerce视频和Tutorials_.
+
 

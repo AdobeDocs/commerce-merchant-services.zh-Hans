@@ -4,16 +4,16 @@ description: 配置和入门要求 [!DNL Store Fulfillment solution].
 role: User, Admin
 level: Intermediate
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
-source-git-commit: 842d5b7182d54a1aa5a715662503801816a24c24
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '307'
 ht-degree: 2%
 
 ---
 
-# Adobe Commerce的存储实施要求
+# Adobe Commerce的存储实现要求
 
-您必须满足以下技术和业务要求才能安装并启用适用于Adobe Commerce的商店实施解决方案。
+以下部分详细介绍了安装和启用Adobe Commerce商店完成解决方案的技术和业务需求。
 
 ## 平台和软件版本要求
 
@@ -47,8 +47,8 @@ ht-degree: 2%
 
 **最低硬件要求**
 
-- 1GB RAM
-- 600MB可用磁盘空间
+- 1 GB RAM
+- 600 MB可用磁盘空间
 
 ## 业务要求
 
@@ -56,7 +56,7 @@ ht-degree: 2%
 
 - 仅限美国企业
 
-- B2C零售商、销售D2C的CPG制造商，或销售D2C或面向小型企业的分销商
+- 企业对消费者(B2C)零售商、消费者包装产品(CPG)制造商直接向消费者销售(D2C)，或直接向消费者或小型企业销售的分销商
 
 - 至少一个实体商店或仓库
 

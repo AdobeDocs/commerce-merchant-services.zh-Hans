@@ -3,16 +3,17 @@ title: 连接商店履行解决方案
 description: 通过创建和授权Adobe Commerce集成，并将存储履行帐户凭据添加到Adobe Commerce服务配置，在Adobe Commerce与存储履行解决方案之间建立连接。
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
 
 # 连接商店履行解决方案
 
-通过配置管理员所需的身份验证凭据和连接数据，在Adobe Commerce和存储履行服务之间建立连接。
+通过向Adobe Commerce管理员添加所需的身份验证凭据和连接数据，将应用商店履行服务与Adobe Commerce连接。
 
 - **[配置 [!DNL Commerce integration settings]](#create-the-commerce-integration)** — 为存储履行服务创建Adobe Commerce集成，并生成访问令牌以验证来自存储履行服务器的传入请求。
 
@@ -59,7 +60,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->帐户创建过程可能需要一些时间才能完成。 等待凭据时， [查看amd ，为“商店履行”解决方案配置其他设置](service-config-settings-overview.md).
+>帐户创建过程可能需要一些时间才能完成。 等待凭据时， [查看并配置商店履行解决方案的其他设置](service-config-settings-overview.md).
 
 ### 添加凭据以连接到存储履行
 
@@ -76,11 +77,3 @@ ht-degree: 0%
 >[!NOTE]
 >
 >如果凭据无效，请验证您为每个环境输入了正确的值并重新验证。 如果在连接时仍然遇到问题，请联系您的客服专员。
-
-
-
-
-
-
-
-

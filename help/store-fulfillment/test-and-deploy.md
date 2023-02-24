@@ -4,9 +4,9 @@ description: 测试计划以验证“商店完成”功能。 测试涵盖库存
 role: User, Admin
 level: Intermediate
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '2657'
+source-wordcount: '2660'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ ht-degree: 0%
 <tr>
 <td><strong>更新现有的装箱库存来源</strong></td>
 <td>保存对现有装货库存来源的更新。</td>
-<td>实时同步操作会在5分钟内将详细信息发送到WalmartGIF</td>
+<td>实时同步操作会在5分钟内将详细信息发送至WalmartGIF</td>
 </tr>
 <tr>
 <td><strong>装货货源</br><code>Is Synced</code> 状态</br><code>Is Synced</code></strong></td>
@@ -277,7 +277,7 @@ ht-degree: 0%
 <ol>
 <li>下订单。</li>
 <li>等待顺序同步。</li>
-<li>确认已创建发票（如果授权并捕获），并收到发票电子邮件。</li>
+<li>如果配置了授权和捕获选项，请验证是否已创建发票，以及客户是否收到了发票电子邮件。</li>
 <li>选择所有带Postman的产品。</li>
 <li>签到。</li>
 <li>下药。</li>
@@ -566,39 +566,39 @@ Adobe Commerce产品类型的测试方案可验证客户是否看到不同产品
 <tr>
 <td>
 <strong>单次挑选 — 快乐路径、曲边拾取</strong></td>
-<td>挑选单个和多数量的物料。 没有零挑库，并且进行分拣（具有暂存）。
+<td>挑选单个和多数量的物料。 没有无挑库和卷边装货（带暂存）。
 </td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>多顺序挑选 — 快乐路径、曲边拾取</strong></td>
-<td>单个和多数量项目。 没有无挑库，并且进行了分拣（具有暂存）</td>
+<td>单个和多数量项目。 无零挑库和卷边装货（带暂存）</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>单笔订单领料 — 店内快捷路径领料</strong></td>
-<td>单个和多数量项目。 无零挑库和店内提货（带暂存）</td>
+<td>单个和多数量项目。 无零挑库和店内装货（带暂存）</td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>多订单挑库 — 快乐路径、店内提货</strong></td>
-<td>挑选单个和多数量的物料。 没有零挑库，并且进行分拣（具有暂存）。</td>
+<td>挑选单个和多数量的物料。 没有无挑库和卷边装货（带暂存）。</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>单笔订单挑库 — 不快乐路径，店内提货</strong></td>
-<td>挑选具有部分和零件的单个和多数量物料，然后在库内挑库（带暂存）</td>
+<td>挑选具有部分和零件的单件和多件物料，并在商店内提货（带暂存）</td>
 </td>
 <td></td>
 </tr>
 <td><strong>多订单挑库 — 不快乐的路径曲边拾取</strong></td>
-<td>挑选具有部分和零件的单个和多数量物料，然后在库内挑库（带暂存）</td>
+<td>挑选具有部分和零件的单件和多件物料，并在商店内提货（带暂存）</td>
 <td></td>
 </tr>
 <td><strong>单笔订单挑库 — 不快乐的路径，弯边提货</strong></td>
-<td>挑选具有部分和零件的单件和多件物料，并进行边挑边（带暂存）</strong></td>
+<td>挑选具有部分和零件的单件和多件物料，并进行卷边装货（带暂存）</strong></td>
 </td>
 <td></td>
 </tr>

@@ -1,12 +1,12 @@
 ---
-user-guide-title: '"[!DNL Store FulFillment Guide]"'
+user-guide-title: "[!DNL Store FulFillment Guide]"
 user-guide-description: 有关为Adobe Commerce存储安装、配置和使用存储实施的详细信息。
 breadcrumb-title: 用于Adobe Commerce的商店履行
 index: true
-source-git-commit: 27ed666954f445eb99e0bf370d1155924bfb8ad3
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 2%
+source-wordcount: '84'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 - [指南概述](guide-overview.md)
 - [简介 [!DNL Store Fulfillment]](introduction.md)
-- [存储辅助工作流](store-assist-modules.md)
+- [存储协助工作流](store-assist-modules.md)
 - [要求](solution-requirements.md)
 - [发行说明](release-notes.md)
 - 板载存储履行 {#onboarding}
@@ -26,7 +26,7 @@ ht-degree: 2%
 - [配置概述](service-config-settings-overview.md)
 - 存储配置 {#store-configuration}
    - [常规配置](enable-general.md)
-   - [销售电子邮件](sales-emails.md)
+   - [销售电子邮件模板](sales-emails.md)
    - [商户商店（来源）](merchant-store-configuration.md)
    - [产品库存管理](product-stock.md)
    - [Inventory management源传输](inventory-stock-transfer.md)
@@ -37,5 +37,4 @@ ht-degree: 2%
    - [签入体验设置](check-in-experience-setup.md)
    - [用户设置](user-setup.md)
    - [应用程序设置](app-setup.md)
-
 
