@@ -4,9 +4,9 @@ description: 配置常规设置以启用 [!DNL Store Fulfillment] 你的店。 �
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
 workflow-type: tm+mt
-source-wordcount: '2541'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ ht-degree: 0%
 <tr>
 <td><strong>[!UICONTROL Enabled]</strong></td>
 <td>启用或禁用解决方案。 启用后，请配置和使用“存储履行”功能，并在Adobe Commerce存储与 [!DNL Store Fulfillment] 服务。 禁用后，所有“商店履行”功能都将被禁用，并且Adobe Commerce与“商店履行”服务之间没有通信。 无法处理或接收订单信息。</td>
-<td>全球</td>
+<td>网站</td>
 <td>是</td>
 </tr>
 </tbody>
