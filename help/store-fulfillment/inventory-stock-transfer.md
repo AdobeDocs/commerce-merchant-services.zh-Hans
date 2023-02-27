@@ -4,9 +4,9 @@ description: “配置 [!DNL Store Fulfillment solution] Adobe Commerce·Invento
 role: User, Admin
 level: Intermediate
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 # Inventory management源传输
 
 的 [!DNL Store Fulfillment] 解决方案使用本机Adobe Commerce Inventory management。 默认情况下， [!DNL Commerce] 配置会将所有web库存分配给默认库存，而默认库存则无法分配其他来源。 由于网站只能分配一只股票，因此商家必须配置一只新股票，并选择性地将其默认来源库存转移到分配给相应范围的来源。 然后，可将源分配给新库存。
+
+>[!IMPORTANT]
+>
+>商户必须维护组和捆绑产品类型中包含的所有产品的默认来源。 这些产品需要满足库存物料最小数量阈值的库存数量，并且库存状态为 [!UICONTROL In Stock].
 
 这些配置更改可帮助您完成以下三项任务：
 

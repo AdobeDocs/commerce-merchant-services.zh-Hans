@@ -4,9 +4,9 @@ description: 通过创建和授权Adobe Commerce集成，并将存储履行帐�
 role: User, Admin
 level: Intermediate
 exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 通过向Adobe Commerce管理员添加所需的身份验证凭据和连接数据，将应用商店履行服务与Adobe Commerce连接。
 
-- **[配置 [!DNL Commerce integration settings]](#create-the-commerce-integration)** — 为存储履行服务创建Adobe Commerce集成，并生成访问令牌以验证来自存储履行服务器的传入请求。
+- **[配置 [!DNL Commerce integration settings]](#create-an-adobe-commerce-integration)** — 为存储履行服务创建Adobe Commerce集成，并生成访问令牌以验证来自存储履行服务器的传入请求。
 
 - **[为存储履行服务配置帐户凭据](#configure-store-fulfillment-account-credentials)** — 添加凭据将Adobe Commerce连接到您的商店履行帐户。
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 创建Adobe Commerce集成
 
-要将Adobe Commerce与商店履行服务集成，您需要创建商务集成并生成访问令牌，以用于验证来自商店履行服务器的请求。
+要将Adobe Commerce与商店履行服务集成，您需要创建商务集成并生成访问令牌，以用于验证来自商店履行服务器的请求。 您还必须更新Adobe Commerce [!UICONTROL Consumer Settings] 防止 `The consumer isn't authorized to access %resources.` 从Adobe Commerce请求到 [!DNL Store Fulfillment] 服务。
 
 1. 从管理员中，创建用于商店履行的集成。
 
@@ -41,10 +41,16 @@ ht-degree: 0%
 
 1. 与您的客户经理合作，完成商店履行端的配置并授权集成。
 
+1. 启用Adobe Commerce [!UICONTROL Consumer Settings] 选项 [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens].
 
->[!NOTE]
+   - 从管理员中，转到 **[!UICONTROL Stores]** >  [!UICONTROL Configuration] > **[!UICONTROL Services]** >  **[!UICONTROL OAuth]** > **[!UICONTROL Consumer Settings]**
+
+   - 设置 [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens] 选项 **[!UICONTROL Yes]**.
+
+>[!IMPORTANT]
 >
->有关详细说明，请参阅 [集成](https://docs.magento.com/user-guide/system/integrations.html) 在 _Adobe Commerce用户指南_.
+> 集成令牌是特定于环境的。 如果恢复环境的数据库时使用来自其他环境的源数据（例如从暂存环境恢复生产数据），请排除 `oauth_token` 表，以便在还原操作期间不会覆盖集成令牌详细信息。
+
 
 ## 配置存储履行帐户凭据
 

@@ -4,9 +4,9 @@ description: 配置常规设置以启用 [!DNL Store Fulfillment] 你的店。 �
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2440'
 ht-degree: 0%
 
 ---
@@ -337,39 +337,6 @@ ht-degree: 0%
 <tr>
 <td><strong>[!UICONTROL Password Lifetime]</strong></td>
 <td>在所需密码更改前密码保持有效的天数。 将留空以禁用此选项。</td>
-<td>全球</td>
-<td>否</td>
-</tr>
-</tbody>
-</table>
-
-### 双重身份验证
-
-<table>
-<thead>
-<tr>
-<td><strong>字段</strong></td>
-<td><strong>描述</strong></td>
-<td><strong>范围</strong></td>
-<td><strong>必需</strong></td>
-</tr>
- </thead>
- <tbody>
-<tr>
-<td><strong>[!UICONTROL APP User 2FA]</strong></td>
-<td>启用或禁用存储关联的双重身份验证。 当启用时，提示存储关联提供由验证提供者生成的一次性密码。</td>
-<td>全球</td>
-<td>否</td>
-</tr>
-<tr>
-<td><strong>[!UICONTROL APP 2FA Policy]</strong></td>
-<td>设置双重身份验证的实施策略。<br></br><strong>[!UICONTROL Optional]</strong>:如果未设置提供程序，则存储关联可以绕过双重身份验证。<br></br><strong>[!UICONTROL Mandatory]</strong>:需要存储关联才能完成双重身份验证。</td>
-<td>全球</td>
-<td>否</td>
-</tr>
-<tr>
-<td><strong>[!UICONTROL 2FA Providers]</strong></td>
-<td>选择一个或多个身份验证提供商服务以提供商店关联。 要设置双重身份验证和身份验证，商店关联商必须从其移动设备上安装的可用提供商之一安装身份验证应用程序。</td>
 <td>全球</td>
 <td>否</td>
 </tr>
