@@ -2,9 +2,9 @@
 title: 入门
 description: 了解 [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -27,16 +27,14 @@ ht-degree: 0%
 
 ### 支持的平台
 
-- Adobe Commerce on prem(EE):2.4.x
+- Adobe Commerce本地(EE):2.4.x
 - Adobe Commerce on Cloud(ECE):2.4.x
 
 ### 页面生成器支持
 
 [!DNL Product Recommendations] 可以作为页面生成器内容类型添加到页面。 要将页面生成器支持添加到产品Recommendations，请参阅 [安装和配置](install-configure.md).
 
->[!NOTE]
->
->[!DNL Page Builder] 只能为默认存储视图创建推荐单位。
+请参阅 [[!DNL Page Builder] 集成](page-builder.md) 有关如何添加 [!DNL Product Recommendations] into [!DNL Page Builder] 内容。
 
 ### B2B支持 {#b2bsupport}
 

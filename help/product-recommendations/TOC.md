@@ -2,10 +2,10 @@
 user-guide-title: '"[!DNL Product Recommendations] 指南”'
 user-guide-description: 本指南提供了有关使用的详细说明 [!DNL Product Recommendations] 从Adobe Commerce。
 breadcrumb-title: '"[!DNL Product Recommendations] 指南”'
-source-git-commit: 1dbb0dcf588c71f916755d1b06b41d3244201b7e
+source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
-source-wordcount: '51'
-ht-degree: 3%
+source-wordcount: '54'
+ht-degree: 0%
 
 ---
 
@@ -23,6 +23,7 @@ ht-degree: 3%
    - [设置](settings.md)
    - [验证](verify.md)
    - [暂存环境](staging-environment.md)
+   - [页面生成器集成](page-builder.md)
 - [!DNL Product Recommendations] 管理员 {#admin}
    - [工作区](workspace.md)
    - [创建](create.md)
