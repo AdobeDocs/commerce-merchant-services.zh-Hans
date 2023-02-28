@@ -1,11 +1,11 @@
 ---
-user-guide-title: Adobe Commerce 的服务
-user-guide-description: 为 Adobe Commerce 和 Magento Open Source 提供扩展功能的托管服务的文档和资源。
-title: Adobe Commerce 的服务
+user-guide-title: Adobe Commerce服务
+user-guide-description: 托管服务的文档和资源，可为Adobe Commerce和Magento Open Source提供扩展功能。
+title: Adobe Commerce服务
 source-git-commit: cc7636dd6bb5dff0d1223279bd22b50df9758253
 workflow-type: tm+mt
 source-wordcount: '106'
-ht-degree: 23%
+ht-degree: 0%
 
 ---
 
