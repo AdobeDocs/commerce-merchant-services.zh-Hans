@@ -4,26 +4,26 @@ description: 安装后，您可以配置 [!DNL Payment Services] 在家里。
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 482182dca95964e68f1637ff1cc7aad84b00e3eb
+source-git-commit: 7bd9212a4c215b4f39051ded0e95b2b7e96fb46f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1898'
 ht-degree: 0%
 
 ---
 
 # 设置
 
-您可以自定义 [!DNL Payment Services] 中的有用设置，以满足您的需求 [!DNL Payment Services] 回家。
+您可以自定义 [!DNL Payment Services] 有用的设置，满足您的需求 [!DNL Payment Services] 主页。
 
-配置 [!DNL Payment Services] 表示 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 单击 **[!UICONTROL Settings]**. 这些配置选项仅适用于在 _[!UICONTROL Payment mode]_字段[_&#x200B;常规&#x200B;_配置选项](#configure-general-settings).
+配置 [!DNL Payment Services] 对象 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 点击 **[!UICONTROL Settings]**. 这些配置选项仅适用于在中设置的环境。 _[!UICONTROL Payment mode]_字段[_&#x200B;常规&#x200B;_配置选项](#configure-general-settings).
 
-有关多商店或旧版配置，请参阅 [在管理员中配置](configure-admin.md).
+有关多存储或旧版配置，请参阅 [在管理员中配置](configure-admin.md).
 
 ## 配置常规设置
 
-的 [!UICONTROL General] 通过设置，可以启用或禁用“付款服务”作为您的付款方法，并向客户交易添加信息，以标记网站或为网站添加前缀或添加带有自定义信息的商店视图。
+此 [!UICONTROL General] 通过设置，您可以启用或禁用“支付服务”作为您的支付方式，并向客户交易添加信息，以使用自定义信息标记或加盖网站或商店视图的前缀。
 
-### 启用支付服务
+### 启用付款服务
 
 您可以启用 [!DNL Payment Services] ，并启用沙盒测试或实时支付。
 
@@ -31,92 +31,92 @@ ht-degree: 0%
 
    ![主页视图](assets/payment-services-menu-small.png)
 
-1. 单击 **[!UICONTROL Settings]**. 请参阅 [简介 [!DNL Payment Services] 主页](payments-home.md) 以了解更多信息。
+1. 单击 **[!UICONTROL Settings]**. 参见 [简介 [!DNL Payment Services] 主页](payments-home.md) 了解更多信息。
 
-   的 _[!UICONTROL General]_部分包括用于启用的设置 [!DNL Payment Services] 付款方式。
+   此 _[!UICONTROL General]_部分包含用于启用的设置 [!DNL Payment Services] 作为付款方式。
 
-1. 启用 [!DNL Payment Services] 作为您店的付款方式， _[!UICONTROL General]_部分，切换&#x200B;**[!UICONTROL Enable Payment Services as payment method]**to `Yes`.
+1. 启用 [!DNL Payment Services] 作为您商店的付款方式，在 _[!UICONTROL General]_部分，切换&#x200B;**[!UICONTROL Enable Payment Services as payment method]**到 `Yes`.
 
-1. 如果您仍在测试 [!DNL Payment Services] 为您的商店设置 **付款模式** to `Sandbox`. 如果您已准备好启用实时付款，请将其设置为 `Production`.
+1. 如果您仍在测试 [!DNL Payment Services] 对于您的商店，设置 **付款方式** 到 `Sandbox`. 如果您已准备好启用实时支付，请将其设置为 `Production`.
 
    >[!NOTE]
    >
-   >您的 _[!UICONTROL Sandbox Merchant ID]_和_[!UICONTROL Production Merchant ID]_ 在沙盒和/或生产入门后，将自动生成并显示在其受人尊敬的字段中。
+   >您的 _[!UICONTROL Sandbox Merchant ID]_和_[!UICONTROL Production Merchant ID]_ 当您完成沙盒和/或生产载入时，会自动生成并出现在他们的相应字段中。
 
 1. 单击 **[!UICONTROL Save]**.
 
-   如果尝试在不保存更改的情况下离开此视图，则会显示一个模式窗口，提示您放弃更改、继续编辑或保存更改。
+   如果您尝试离开此视图而不保存更改，则会出现一个模式窗口，提示您放弃更改、继续编辑或保存更改。
 
-1. 导航到 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** 单击 **[!UICONTROL Flush Cache]** 刷新所有无效的缓存。
+1. 导航到 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** 并单击 **[!UICONTROL Flush Cache]** 以刷新所有无效缓存。
 
-您现在可以继续更改 [付款选项](#configure-payment-options) 功能和店面显示。
+您现在可以继续更改默认设置 [付款选项](#configure-payment-options) 功能和店面显示器。
 
 ### 添加软描述符
 
-您可以添加 [!UICONTROL Soft Descriptor] 到您的网站或单个存储视图配置。 在客户交易银行对帐单上显示软描述符。 例如，如果您有多个商店/品牌/目录，则可以通过向 [!UICONTROL Soft Descriptor] 字段。
+您可以添加 [!UICONTROL Soft Descriptor] 到您的网站或单个商店视图配置。 客户交易银行对帐单上显示软描述符。 例如，如果您有多个商店/品牌/目录，则可以通过将自定义文本添加到 [!UICONTROL Soft Descriptor] 字段。
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
    ![主页视图](assets/payment-services-menu-small.png)
 
-1. 单击 **[!UICONTROL Settings]**. 请参阅 [简介 [!DNL Payment Services] 主页](payments-home.md) 以了解更多信息。
-1. 在 **[!UICONTROL Scope]** 下拉菜单，您要为其创建软描述符。 对于初始设置，请将其保留为 **[!UICONTROL Default]** 来设置默认值。
+1. 单击 **[!UICONTROL Settings]**. 参见 [简介 [!DNL Payment Services] 主页](payments-home.md) 了解更多信息。
+1. 选择网站或商店视图，在 **[!UICONTROL Scope]** 下拉菜单，您要为其创建软描述符。 对于初始设置，请将其保留为 **[!UICONTROL Default]** 以设置默认值。
 1. 在文本字段中添加自定义文本（最多22个字符），替换 `Custom descriptor`.
 1. 单击 **[!UICONTROL Save]**.
-1. 要为网站或存储视图创建除配置的默认设置之外的软描述符，请执行以下操作：
-   1. 在 **[!UICONTROL Scope]** 下拉菜单，您要为其创建软描述符。
-   1. 切换 _关闭_ **[!UICONTROL Use website]** (或 **[!UICONTROL Use default]**，取决于您选择的范围)。
+1. 要创建除为网站或商店视图配置的默认描述符以外的软描述符，请执行以下操作：
+   1. 选择网站或商店视图，在 **[!UICONTROL Scope]** 下拉菜单，您要为其创建软描述符。
+   1. 切换 _关闭_ **[!UICONTROL Use website]** (或 **[!UICONTROL Use default]**，具体取决于您选择的范围)。
    1. 在文本字段中添加自定义文本。
    1. 单击 **[!UICONTROL Save]**.
-1. 为网站或存储启用查看默认软描述符 _或_ 用于父网站的软描述符：
-   1. 在 **[!UICONTROL Scope]** 下拉菜单中，您希望为其启用现有软描述符。
-   1. 切换 _on_ **[!UICONTROL Use website]** (或 **[!UICONTROL Use default]**，具体取决于您选择的范围)。
+1. 要为网站或商店启用查看默认软描述符，请执行以下操作 _或_ 用于父网站的软描述符：
+   1. 选择网站或商店视图，在 **[!UICONTROL Scope]** 下拉菜单，您要为其启用现有的软描述符。
+   1. 切换 _日期_ **[!UICONTROL Use website]** (或 **[!UICONTROL Use default]**，具体取决于您选择的范围)。
    1. 单击 **[!UICONTROL Save]**.
 
-   如果尝试在不保存更改的情况下离开此视图，则会显示一个模式窗口，提示您放弃更改、继续编辑或保存更改。
+   如果您尝试离开此视图而不保存更改，则会出现一个模式窗口，提示您放弃更改、继续编辑或保存更改。
 
 ### 配置选项
 
 | 字段 | 范围 | 描述 |
 |---|---|---|
-| [!UICONTROL Enable] | 网站 | 启用或禁用 [!DNL Payment Services] 的URL。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Enable] | 网站 | 启用或禁用 [!DNL Payment Services] （对于您的网站）。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Payment mode] | 商店视图 | 为存储设置方法或环境。 选项： [!UICONTROL Sandbox] / [!UICONTROL Production] |
-| [!UICONTROL Sandbox Merchant ID] | 商店视图 | 您的沙盒商户ID，在沙盒载入期间自动生成。 |
-| [!UICONTROL Production Merchant ID] | 商店视图 | 您的生产商户ID，在沙盒载入期间自动生成。 |
-| [!UICONTROL Soft Descriptor] | 网站或商店视图 | 向网站和商店视图添加软描述符，以向客户交易添加信息，从而描绘品牌、商店或产品线。 的 [!UICONTROL Use website] 切换会应用在网站级别添加的任何软描述符。 的 [!UICONTROL Use default] 切换会应用作为默认添加的任何软描述符。 |
+| [!UICONTROL Sandbox Merchant ID] | 商店视图 | 您的沙盒商家ID，在沙盒载入期间自动生成。 |
+| [!UICONTROL Production Merchant ID] | 商店视图 | 您的生产商家ID，在沙盒载入期间自动生成。 |
+| [!UICONTROL Soft Descriptor] | 网站或商店视图 | 向您的网站和商店视图添加软描述符，以将信息添加到客户交易，其中描述品牌、商店或产品线。 此 [!UICONTROL Use website] 切换可应用在网站级别添加的任何软描述符。 此 [!UICONTROL Use default] 切换可应用添加为默认设置的任何软描述符。 |
 
 ## 配置付款选项
 
-现在，您已启用 [!UICONTROL Payment Services] 对于您的网站，您可以更改付款功能和店面显示的默认设置。
+现在您已启用 [!UICONTROL Payment Services] 对于您的网站，您可以更改付款功能和店面显示的默认设置。
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
    ![主页视图](assets/payment-services-menu-small.png)
 
-1. 单击 **[!UICONTROL Settings]**. 请参阅 [简介 [!DNL Payment Services] 主页](payments-home.md) 以了解更多信息。
-1. 为配置付款选项 [信用卡](#credit-card-fields), [付款按钮](#payment-buttons)和 [按钮样式](#button-style)，具体取决于以下部分。
+1. 单击 **[!UICONTROL Settings]**. 参见 [简介 [!DNL Payment Services] 主页](payments-home.md) 了解更多信息。
+1. 配置付款选项 [信用卡](#credit-card-fields)， [付款按钮](#payment-buttons)、和 [按钮样式](#button-style)，请参见以下部分。
 
 ### 信用卡字段
 
-的 _[!UICONTROL Credit Card Fields]_设置为信用卡或借记卡付款方法提供简单且安全的结账选项。
+此 _[!UICONTROL Credit Card Fields]_这些设置为信用卡或借记卡支付方法提供了一个简单且安全的结账选项。
 
-请参阅 [付款选项](payments-options.md#credit-card-fields) 以了解更多信息。
+参见 [支付选项](payments-options.md#credit-card-fields) 了解更多信息。
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
    ![主页视图](assets/payment-services-menu-small.png)
 
-1. 在 **[!UICONTROL Scope]** 下拉菜单中，您希望为其启用付款方法。
-1. 要更改结帐期间显示的付款方法名称，请编辑 **[!UICONTROL Checkout title]** 字段。
-1. 至 [设置付款操作](production.md#set-payment-services-as-payment-method)，切换 **[!UICONTROL Payment action]** to `Authorize` 或 `Authorize and Capture`.
-1. 启用 [3DS安全身份验证](security.md#3ds) (`Off` 默认情况下)切换 **[!UICONTROL 3DS Secure authentication]** 选择器 `Always` 或 `When required`.
-1. 要在结帐页面上启用或禁用信用卡字段，请切换 **[!UICONTROL Show on checkout page]** 选择器。
-1. 启用或禁用 [卡保险卡](#card-vaulting)，切换 **[!UICONTROL Vault enabled]** 选择器。
-1. 启用或禁用 [管理员中的拱形付款方法](#card-vaulting) （对于在管理员中使用其拱形付款方法为客户完成订单的商户），请切换 **[!UICONTROL Show vaulted methods in Admin]** 选择器。
-1. 要启用或禁用调试模式，请在 **[!UICONTROL Debug Mode]** 选择器。
+1. 选择商店视图，在 **[!UICONTROL Scope]** 下拉菜单，您要为其启用付款方式。
+1. 要更改结账时显示的付款方式名称，请编辑 **[!UICONTROL Checkout title]** 字段。
+1. 至 [设置付款活动](production.md#set-payment-services-as-payment-method)，切换 **[!UICONTROL Payment action]** 到 `Authorize` 或 `Authorize and Capture`.
+1. 启用 [3DS安全身份验证](security.md#3ds) (`Off` 默认情况下)切换 **[!UICONTROL 3DS Secure authentication]** 选择器到 `Always` 或 `When required`.
+1. 要启用或禁用结账页面上的信用卡字段，请切换 **[!UICONTROL Show on checkout page]** 选择器。
+1. 启用或禁用 [信息卡保险存储](#card-vaulting)，切换 **[!UICONTROL Vault enabled]** 选择器。
+1. 启用或禁用 [管理员中的保险存储支付方法](#card-vaulting) （对于要在管理员中使用保管库支付方法完成客户订单的商家），请切换 **[!UICONTROL Show vaulted methods in Admin]** 选择器。
+1. 要启用或禁用调试模式，请切换 **[!UICONTROL Debug Mode]** 选择器。
 1. 单击 **[!UICONTROL Save]**.
 
-   如果尝试在不保存更改的情况下离开此视图，则会显示一个模式窗口，提示您放弃更改、继续编辑或保存更改。
+   如果您尝试离开此视图而不保存更改，则会出现一个模式窗口，提示您放弃更改、继续编辑或保存更改。
 
 1. [刷新缓存](#flush-the-cache).
 
@@ -124,23 +124,23 @@ ht-degree: 0%
 
 | 字段 | 范围 | 描述 |
 |---|---|---|
-| [!UICONTROL Title] | 商店视图 | 在结帐期间，在“付款方法”视图中添加要显示为此付款选项标题的文本。 选项： [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | 网站 | 的 [付款操作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定付款方式。 选项： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Title] | 商店视图 | 在结帐期间，在“付款方式”视图中添加用于显示此付款选项的标题的文本。 选项： [!UICONTROL text field] |
+| [!UICONTROL Payment Action] | 网站 | 此 [付款操作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定付款方式的。 选项： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL 3DS Secure authentication] | 网站 | 启用或禁用 [3DS安全身份验证](security.md#3ds). 选项： [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | 网站 | 启用或禁用要在结帐页面上显示的信用卡字段。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | 商店视图 | 启用或禁用 [信用卡保险](vaulting.md). 选项： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show vaulted payment methods in Admin] | 商店视图 | 允许或禁止商家在管理员中为客户完成订单的功能 [使用保险支付方法](vaulting.md). 选项： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Debug Mode] | 网站 | 启用或禁用调试模式。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | 商店视图 | 启用或禁用 [信用卡保险存储](vaulting.md). 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show vaulted payment methods in Admin] | 商店视图 | 启用或禁用商家在管理员中完成客户订单的功能 [使用电子仓库支付方式](vaulting.md). 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Debug Mode] | 网站 | 启用或禁用“调试模式”。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### 付款按钮
 
-的 [!DNL PayPal Smart Buttons] 付款选项可为您的客户提供简单、快速且安全的结账流程。 请参阅 [付款选项](payments-options.md#paypal-smart-buttons) 以了解更多信息。
+此 [!DNL PayPal Smart Buttons] 支付选项为您的客户提供简单、快速和安全的结账过程。 参见 [支付选项](payments-options.md#paypal-smart-buttons) 了解更多信息。
 
 您可以启用和配置PayPal智能按钮付款选项：
 
-1. 在 **[!UICONTROL Scope]** 下拉菜单中，您希望为其启用付款方法。
-1. 要更改结帐期间显示的付款方法名称，请编辑 **[!UICONTROL Checkout Title]** 字段。
-1. 至 [设置付款操作](production.md#set-payment-services-as-payment-method)，切换 **[!UICONTROL Payment action]** to `Authorize` 或 `Authorize and Capture`.
+1. 选择商店视图，在 **[!UICONTROL Scope]** 下拉菜单，您要为其启用付款方式。
+1. 要更改结帐期间显示的付款方式名称，请编辑 **[!UICONTROL Checkout Title]** 字段。
+1. 至 [设置付款活动](production.md#set-payment-services-as-payment-method)，切换 **[!UICONTROL Payment action]** 到 `Authorize` 或 `Authorize and Capture`.
 1. 使用切换选择器启用或禁用 [!DNL PayPal smart button] 显示功能：
    - **[!UICONTROL Show PayPal buttons on product checkout page]**
    - **[!UICONTROL Show PayPal buttons on product detail page]**
@@ -153,14 +153,14 @@ ht-degree: 0%
 
       >[!NOTE]
       >
-      > 使用Apple Pay you [必须拥有Apple开发人员帐户](test-validate.md#test-in-sandbox-environment) （包括假信用卡和账单信息）以进行测试。 准备好在沙盒中使用Apple Pay时 _或_ 生产模式，在完成任何 [测试和验证](test-validate.md)，请联系您的销售代表以为您的实时商店启用此功能。
+      > 要使用Apple为您付款，请执行以下操作 [必须具有Apple sandbox tester帐户](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) （包含虚假信用卡和账单信息）进行测试。 当您准备好在沙盒中使用Apple Pay时 _或_ 生产模式，完成任意 [测试和验证](test-validate.md#test-in-sandbox-environment)，请联系您的销售代表以便为您的实时商店启用该功能。
 
-      在您打开/关闭对付款按钮或PayPal稍后付款消息的可见性时，该配置的可视预览将显示在“设置”页面的底部。
+      当您打开/关闭付款按钮或PayPal Pay Later消息的可见性时，“设置”页面底部会显示该配置的可视预览。
 
-1. 要启用调试模式，请将 **[!UICONTROL Debug Mode]** 选择器。
+1. 要启用调试模式，请切换 **[!UICONTROL Debug Mode]** 选择器。
 1. 单击 **[!UICONTROL Save]**.
 
-   如果尝试在不保存更改的情况下离开此视图，则会显示一个模式窗口，提示您放弃更改、继续编辑或保存更改。
+   如果您尝试离开此视图而不保存更改，则会出现一个模式窗口，提示您放弃更改、继续编辑或保存更改。
 
 1. [刷新缓存](#flush-the-cache).
 
@@ -168,90 +168,90 @@ ht-degree: 0%
 
 | 字段 | 范围 | 描述 |
 |---|---|---|
-| [!UICONTROL Title] | 商店视图 | 在结帐期间，在“付款方法”视图中添加要显示为此付款选项标题的文本。 选项：文本字段 |
-| [!UICONTROL Payment Action] | 网站 | 的 [付款操作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定付款方式。 选项： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
-| [!UICONTROL Show PayPal buttons on checkout page] | 商店视图 | 启用或禁用 [!DNL PayPal Smart Buttons] 中。 选项： [!UICONTROL  Yes] / [!UICONTROL No] |
+| [!UICONTROL Title] | 商店视图 | 在结帐期间，在“付款方式”视图中添加要作为此付款选项的标题显示的文本。 选项：文本字段 |
+| [!UICONTROL Payment Action] | 网站 | 此 [付款操作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定付款方式的。 选项： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Show PayPal buttons on checkout page] | 商店视图 | 启用或禁用 [!DNL PayPal Smart Buttons] 在结帐页面上。 选项： [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on product detail page] | 商店视图 | 启用或禁用 [!DNL PayPal Smart Buttons] 在产品详细信息页面上。 选项： [!UICONTROL  Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal buttons in mini-cart preview] | 商店视图 | 启用或禁用 [!DNL PayPal Smart Buttons] 在mini-cart预览中。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons in mini-cart preview] | 商店视图 | 启用或禁用 [!DNL PayPal Smart Buttons] 在迷你购物车预览中。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on cart page] | 商店视图 | 启用或禁用 [!DNL PayPal Smart Buttons] 在购物车页面上。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal Pay Later button] | 商店视图 | 在显示付款按钮的情况下，启用或禁用以后付款选项外观。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal Pay Later Message] | 网站 | 在购物车、产品页面、迷你购物车和结帐流程期间，启用或禁用“稍后付费”消息传送。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show Venmo button] | 商店视图 | 在显示付款按钮的位置启用或禁用维恩莫付款选项。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show Apple Pay button] | 商店视图 | 在显示付款按钮的位置启用或禁用Apple付款选项。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Debug Mode] | 网站 | 启用或禁用调试模式。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal Pay Later button] | 商店视图 | 启用或禁用显示付款按钮的稍后付款选项外观。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal Pay Later Message] | 网站 | 在购物车、产品页面、迷你购物车和结帐流程中启用或禁用“稍后付费”消息。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show Venmo button] | 商店视图 | 启用或禁用显示付款按钮的Venmo付款选项。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show Apple Pay button] | 商店视图 | 启用或禁用显示付款按钮的Apple支付付款选项。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Debug Mode] | 网站 | 启用或禁用“调试模式”。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### 按钮样式
 
-您还可以配置 _[!UICONTROL Button style]_PayPal智能按钮的选项：
+您还可以配置 _[!UICONTROL Button style]_paypal智能按钮的选项：
 
 1. 要更改 **[!UICONTROL Layout]**，选择 `Vertical` 或 `Horizontal`.
 
    >[!NOTE]
    >
-   > 如果按钮样式配置为 `Horizontal` 您的商店配置为显示多个PayPal智能按钮，您可能只会看到产品页面、结帐页面和迷你购物车上显示两个按钮，购物车中显示一个按钮。
+   > 如果按钮样式配置为 `Horizontal` 而且您的商店配置为显示多个PayPal智能按钮，您只能看到产品页面、结帐页面和迷你购物车上显示的两个按钮，以及购物车中显示的一个按钮。
 
-1. 要在水平布局中启用标记线，请切换 **[!UICONTROL Show tagline]** 选择器。
-1. 修改 **[!UICONTROL Color]**，请选择所需的颜色选项。
-1. 修改 **[!UICONTROL Shape]**，选择 `Pill` 或 `Rectangle`.
+1. 要在水平布局中启用标语，请切换 **[!UICONTROL Show tagline]** 选择器。
+1. 要修改 **[!UICONTROL Color]**&#x200B;中，选择所需的颜色选项。
+1. 要修改 **[!UICONTROL Shape]**，选择 `Pill` 或 `Rectangle`.
 1. 要启用按钮高度选择器，请切换 **[!UICONTROL Responsive button height]** 选择器。
-1. 修改 **[!UICONTROL Label]**，请选择所需的标签选项。
+1. 要修改 **[!UICONTROL Label]**&#x200B;中，选择所需的标签选项。
 
-   当您更改布局、颜色、形状、高度和标签的配置选项时，该配置的可视预览将显示在“设置”页面的底部。
+   当您更改布局、颜色、形状、高度和标签的配置选项时，“设置”页面底部会显示该配置的可视预览。
 
 1. 单击 **[!UICONTROL Save]**.
 
-   如果尝试在不保存更改的情况下离开此视图，则会显示一个模式窗口，提示您放弃更改、继续编辑或保存更改。
+   如果您尝试离开此视图而不保存更改，则会出现一个模式窗口，提示您放弃更改、继续编辑或保存更改。
 
 1. [刷新缓存](#flush-the-cache).
 
-您可以配置 [!DNL PayPal Smart Buttons] 样式 [的旧版配置中](configure-admin.md#configure-paypal-smart-buttons) 或此处 [!DNL Payment Services Home]. 请参阅 [PayPal&#39;s Buttons风格指南](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) 以了解有关选项的更多信息。
+您可以配置 [!DNL PayPal Smart Buttons] 样式 [在Admin的旧版配置中](configure-admin.md#configure-paypal-smart-buttons) 或此处输入 [!DNL Payment Services Home]. 参见 [PayPal按钮样式指南](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) 以了解有关选项的详细信息。
 
 #### 配置选项
 
 | 字段 | 范围 | 描述 |
 |--- |--- |--- |
-| [!UICONTROL Layout] | 存储视图 | 为付款按钮定义布局样式。 选项： [!UICONTROL Vertical] / [!UICONTROL Horizontal] |
-| [!UICONTROL Tagline] | 存储视图 | 启用/禁用标记。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Color] | 存储视图 | 定义付款按钮的颜色。 选项： [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |
-| [!UICONTROL Shape] | 存储视图 | 定义付款按钮的形状。 选项： [!UICONTROL Rectangular] / [!UICONTROL Pill] |
-| [!UICONTROL Responsive Button Height] | 存储视图 | 定义付款按钮是否使用默认高度。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Height] | 存储视图 | 定义付款按钮的高度。 默认值：无 |
-| [!UICONTROL Label] | 存储视图 | 定义在付款按钮中显示的标签。 选项： [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
+| [!UICONTROL Layout] | 商店视图 | 定义付款按钮的布局样式。 选项： [!UICONTROL Vertical] / [!UICONTROL Horizontal] |
+| [!UICONTROL Tagline] | 商店视图 | 启用/禁用标语。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Color] | 商店视图 | 定义付款按钮的颜色。 选项： [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |
+| [!UICONTROL Shape] | 商店视图 | 定义付款按钮的形状。 选项： [!UICONTROL Rectangular] / [!UICONTROL Pill] |
+| [!UICONTROL Responsive Button Height] | 商店视图 | 定义付款按钮是否使用默认高度。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Height] | 商店视图 | 定义付款按钮的高度。 默认值：无 |
+| [!UICONTROL Label] | 商店视图 | 定义付款按钮中显示的标签。 选项： [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
 
 ## 刷新缓存
 
-如果在 _设置_&#x200B;例如，切换Apple Pay、Venmo或PayPal PayLater按钮时，手动刷新缓存，以便您的商店显示最新配置。
+如果您在中更改配置 _设置_&#x200B;例如，切换Apple Pay、Venmo或PayPal PayLater按钮，手动刷新缓存，以便您的商店显示最新配置。
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**.
-1. 单击 **[!UICONTROL Flush Cache]** 刷新所有无效的缓存。
+1. 单击 **[!UICONTROL Flush Cache]** 以刷新所有无效缓存。
 
-如果“缓存管理”表中的任何缓存类型具有 `INVALIDATED` 状态，则您的存储可能不显示该项目的最新配置。 刷新缓存以更新您的存储以显示最新配置。
+如果“高速缓存管理”表中的任何高速缓存类型具有 `INVALIDATED` 状态，您的存储可能未显示该项目的最新配置。 刷新缓存以更新存储以显示最新配置。
 
-为确保您的存储库定期显示正确的配置 [刷新缓存](https://docs.magento.com/user-guide/system/cache-management.html).
+为确保您的存储显示正确的配置，请定期 [刷新缓存](https://docs.magento.com/user-guide/system/cache-management.html).
 
-## 卡保险存储
+## 信息卡保险存储
 
-您可以启用一些功能，让您的客户能够保存（或“保存”）其“我的帐户”中的信用卡信息，以便将来购买。
+您可以启用一些功能，使客户能够保存其“我的帐户”中的信用卡信息（或“保存”），以便将来购买。
 
-您还可以在管理员中使用卡保险存储来为现有客户完成后续订单。
+您还可以在“管理员”中使用卡保险存储来完成现有客户的后续订单。
 
-在 [信用卡字段设置](#credit-card-fields).
+启用或禁用中的信息卡保险存储 [信用卡字段设置](#credit-card-fields).
 
-请参阅 [信用卡保险](vaulting.md) 以了解更多信息。
+参见 [信用卡保险存储](vaulting.md) 了解更多信息。
 
 ## 3DS
 
-3DS可保护客户和商户在其商店中免受欺诈活动的侵害，并支持遵守欧盟(EU)标准。
+3DS可保护客户和商户免受其商店中的欺诈行为，并使之符合欧盟(EU)标准。
 
-在 [信用卡字段设置](#credit-card-fields).
+在中启用或禁用3DS [信用卡字段设置](#credit-card-fields).
 
-请参阅 [3DS安全性](security.md#3ds) 以了解更多信息。
+参见 [3DS安全性](security.md#3ds) 了解更多信息。
 
 ## 使用多个PayPal帐户
 
-在 [!UICONTROL Payment Services]，您可以在 **one** 网站级别上的商户帐户。 例如，如果您在多个国家/地区(使用不同的 [货币](https://docs.magento.com/user-guide/stores/currency.html))，或者希望将Adobe Commerce用于您业务的某些部分，但不是 _全部_，则可以设置您的商户帐户以使用多个PayPal帐户。
+In [!UICONTROL Payment Services]，您可以在以下位置使用多个PayPal帐户： **一** 网站级别的商家帐户。 例如，如果您在多个国家/地区(这些国家/地区使用不同的 [货币](https://docs.magento.com/user-guide/stores/currency.html))或希望将Adobe Commerce用于部分业务，但不想使用 _所有_，您可以将商家帐户设置为使用多个PayPal帐户。
 
-请参阅 [网站、商店和查看范围](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) 有关网站、商店和商店视图层次结构的更多信息。
+参见 [站点、存储和查看范围](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) 有关网站、商店和商店视图的层次结构的更多信息。
 
-您的销售代表可以创建新 [范围](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 用于您的商户帐户并载入附加的PayPal网站，以便您配置显示的任何PayPal按钮都将显示在您的网站上。 请联系您的销售代表，以获取有关在您的网站中使用多个PayPal帐户的帮助。
+您的销售代表可以创建一个新的 [范围](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) ，并使用PayPal登录其他网站，以便您配置的任何PayPal按钮都将显示在您的网站上。 请与您的销售代表联系，以获得有关为网站使用多个PayPal帐户的帮助。
 
