@@ -1,41 +1,48 @@
 ---
-title: '[!DNL Catalog Service] 发行说明'
-description: 的最新发行信息 [!DNL Catalog Service] Adobe Commerce。
+title: ‘[!DNL Catalog Service] 发行说明
+description: 的最新发行信息 [!DNL Catalog Service] 适用于Adobe Commerce的。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: fd3f71a1b3d958f3aa79f0ba6603d30e16e70507
+source-git-commit: 2767de477e274c1855d21d6e678cc6139ff4faa4
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service] 发行说明
 
-以下发行说明介绍了 [!DNL Catalog Service] 包括：
+以下发行说明介绍了最新版本的 [!DNL Catalog Service] 并包括：
 
-![新建](../assets/new.svg) 新增功能
+![新](../assets/new.svg) 新增功能
 ![修复](../assets/fix.svg) 修复和改进功能
 ![错误](../assets/bug.svg) 已知问题
 
 ## 当前主要版本
 
+### V1.5发布
+
+发行日期： 2023-3-6与Adobe Commerce (EE)兼容：2.4.4+与Adobe Commerce for Cloud (ECE)兼容：2.4.4+稳定性：正式发布
+
+![新](../assets/new.svg) 已添加 [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL功能。
+![修复](../assets/fix.svg) 改进了性能和API可扩展性。
+
 ### V1.4版本
 
-发行日期：2023-2-7与Adobe Commerce(EE)兼容：2.4.x与Adobe Commerce for Cloud(ECE)兼容：2.4.x稳定性：正式发布
+发行日期： 2023-2-7与Adobe Commerce (EE)兼容：2.4.x与Adobe Commerce for Cloud (ECE)兼容：2.4.x稳定性：正式发布
 
-![新建](../assets/new.svg) 发布了目录服务元包，以简化安装步骤。
+![新](../assets/new.svg) 已发布目录服务元包以简化安装步骤。
 ![修复](../assets/fix.svg) API可扩展性和性能改进。
 
 #### 已知限制
 
 尚不支持以下功能：
 
-* 以固定价格捆绑产品
-* 从目录中删除变体后，不会收到任何更新。
+* 捆绑固定价格的产品
+* 从目录中删除变体时，未收到更新。
 * 动态属性有效负载的最大大小为9MB。
-* 组产品价格。 可以使用简单的产品价格计算。
-* 在图像阵列中，只有第一个图像包含角色。
-* 颜色色板
+* 组产品价格。 可以通过简单的产品价格计算。
+* 在图像数组中，只有第一个图像包含角色。
+* 色板
 * 通过产品URL加载产品详细信息页面。
 
 使用核心GraphQL API可以解决以下限制：
@@ -45,122 +52,55 @@ ht-degree: 0%
 * 可下载的产品和礼品卡
 * 类别(`categories` 和 `categoryList`)
 
-### V1.3版本
+### V1.3发布
 
-发行日期：2023-1-17与Adobe Commerce(EE)兼容：2.4.x与Adobe Commerce for Cloud(ECE)兼容：2.4.x稳定性：正式发布
+发行日期： 2023-1-17与Adobe Commerce (EE)兼容： 2.4.x与Adobe Commerce for Cloud (ECE)兼容： 2.4.x稳定性：正式发布
 
-![新建](../assets/new.svg) 简化并改进了入门体验。
-![新建](../assets/new.svg) 新的客户沙盒端点可用于预生产测试。
-![新建](../assets/new.svg) 添加了对虚拟产品的支持。
+![新](../assets/new.svg) 简化并改进了载入体验。
+![新](../assets/new.svg) 新的客户沙盒端点可用于生产前测试。
+![新](../assets/new.svg) 为虚拟产品添加了支持。
 ![修复](../assets/fix.svg) API可扩展性和性能改进。
-
-#### 已知限制
-
-尚不支持以下功能：
-
-* 以固定价格捆绑产品
-* 从目录中删除变体后，不会收到任何更新。
-* 动态属性有效负载的最大大小为9MB。
-* 组产品价格。 可以使用简单的产品价格计算。
-* 在图像阵列中，只有第一个图像包含角色。
-* 颜色色板
-* 通过产品URL加载产品详细信息页面。
-
-使用核心GraphQL API可以解决以下限制：
-
-* 最低广告价格
-* 分层定价
-* 可下载的产品和礼品卡
-* 类别(`categories` 和 `categoryList`)
 
 ### V1.1版本
 
-发行日期：2022-11-18与Adobe Commerce(EE)兼容：2.4.x与Adobe Commerce for Cloud(ECE)兼容：2.4.x稳定性：正式发布
+发行日期： 2022-11-18与Adobe Commerce (EE)兼容：2.4.x与Adobe Commerce for Cloud (ECE)兼容：2.4.x稳定性：正式发布
 
-![新建](../assets/new.svg) 目录服务现在支持Adobe [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/).
+![新](../assets/new.svg) 目录服务现在支持Adobe [API网格](https://developer.adobe.com/graphql-mesh-gateway/).
 ![修复](../assets/fix.svg) 我们改进了API可扩展性和整体性能。
 
-#### 已知限制
+### V1.0发布
 
-尚不支持以下功能：
+发行日期： 2022-10-04与Adobe Commerce (EE)兼容：2.4.x与Adobe Commerce for Cloud (ECE)兼容：2.4.x稳定性：正式发布
 
-* 以固定价格捆绑产品
-* 从目录中删除变体后，不会收到任何更新。
-* 动态属性有效负载的最大大小为9MB。
-* 组产品价格。 可以使用简单的产品价格计算。
-* 在图像阵列中，只有第一个图像包含角色。
-* 颜色色板
-* 通过产品URL加载产品详细信息页面。
+![新](../assets/new.svg) 现在支持捆绑和分组的产品。
+![新](../assets/new.svg) 添加了B2B可见性覆盖。 产品现在可搜索，并可添加到特定客户组的购物车中。
+![修复](../assets/fix.svg) 服务现在更加稳定，性能也有所提高。
 
-使用GraphQL API可以解决以下限制：
-
-* 最低广告价格
-* 分层定价
-* 可下载的产品和礼品卡
-* 类别(`categories` 和 `categoryList`)
-
-### V1.0版本
-
-发行日期：2022-10-04与Adobe Commerce(EE)兼容：2.4.x与Adobe Commerce for Cloud(ECE)兼容：2.4.x稳定性：正式发布
-
-![新建](../assets/new.svg) 现在支持捆绑和分组的产品。
-![新建](../assets/new.svg) 添加了B2B可见性覆盖。 现在可搜索产品，并可将其添加到特定客户群的购物车。
-![修复](../assets/fix.svg) 服务现在更加稳定，性能也得到提高。
-
-#### 已知限制
-
-尚不支持以下功能：
-
-* 分层定价
-* 从目录中删除变体时，未收到更新
-* 动态属性有效负载的最大大小为&lt;9MB
-* 捆绑产品的固定价格
-* 分组产品的总价
-* 支持虚拟、可下载和礼品卡产品类型
-* 最低广告价格(MAP)
-
-## 早期版本
+## 以前的版本
 
 +++测试版
 
 ### 0.3版本 — Beta+
 
-发行日期：2022-09-12与Adobe Commerce(EE)兼容：2.4.x与Adobe Commerce for Cloud(ECE)兼容：2.4.x稳定性：Beta
+发行日期：2022-09-12与Adobe Commerce (EE)兼容：2.4.x与Adobe Commerce for Cloud (ECE)兼容：2.4.x稳定性：测试版
 
-![新建](../assets/new.svg) 变体支持的图像：产品图像会根据选定的选项返回
-![新建](../assets/new.svg) 价格支持的作用：仅允许特定客户群组成员查看产品价格
+![新](../assets/new.svg) 变体支持的图像：根据选定的选项返回产品图像
+![新](../assets/new.svg) 价格支持的角色：仅允许特定客户组的成员查看产品价格
 ![修复](../assets/fix.svg) 提高了服务的稳定性和性能
-![新建](../assets/new.svg) 产品从目录中删除后，将收到更新
-
-#### 已知限制
-
-尚不支持以下功能：
-
-* 分层定价
-* 捆绑和分组产品
-* 从目录中删除变体后，不会收到任何更新
-* B2B可见性覆盖：可搜索产品，或将产品添加到购物车中（针对特定客户群）
+![新](../assets/new.svg) 从目录中删除产品时会收到更新
 
 ### 测试版
 
-发行日期：2022-08-09与Adobe Commerce(EE)兼容：2.4.x与Adobe Commerce for Cloud(ECE)兼容：2.4.x稳定性：Beta
+发行日期：2022-08-09与Adobe Commerce (EE)兼容：2.4.x与Adobe Commerce for Cloud (ECE)兼容：2.4.x稳定性：测试版
 
-![新建](../assets/new.svg) 的 `products` 和 `refineProduct` 查询会返回以下数据：
+![新](../assets/new.svg) 此 `products` 和 `refineProduct` 查询返回以下数据：
 
-* 预定义（系统）产品属性。
-* 动态产品属性，并按角色（产品显示页面/产品列表页面）对其进行筛选。
+* 预定义的（系统）产品属性。
+* 动态产品属性，并按角色（产品显示页面/产品列表页面）筛选这些属性。
 * 产品选项。
-* 产品图像并按角色(PDP/PLP)进行过滤。
-* 简单产品的特定价格和可配置产品的价格范围。
-* 客户组价格和价格范围。 对于没有客户群组的购物者，它们会返回回退默认价格。
-* 使用特定于B2B客户的定价的产品类型。
-
-#### 已知限制
-
-* 不支持捆绑和分组产品。
-* 不支持层定价。
-* 在图像数组中，只有第一个图像包含角色。
-* 不会检索变体的图像。
-* 从目录中删除产品或变体时，未收到更新。
+* 产品图像并按角色(PDP/PLP)筛选它们。
+* 简单产品的特定价格以及可配置产品的价格范围。
+* 客户组价格及价格范围。 它们向没有客户群体的购物者返还后备默认价格。
+* 使用B2B客户特定定价的产品类型。
 
 +++
