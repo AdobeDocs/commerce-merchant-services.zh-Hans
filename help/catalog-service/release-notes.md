@@ -2,9 +2,9 @@
 title: ‘[!DNL Catalog Service] 发行说明
 description: 的最新发行信息 [!DNL Catalog Service] 适用于Adobe Commerce的。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
+source-git-commit: 40cf5c5dc6242b5efe3822b9c574fe5b219cfcd8
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,9 @@ ht-degree: 0%
 
 ### V1.5发布
 
-发行日期： 2023-3-6与Adobe Commerce (EE)兼容：2.4.4+与Adobe Commerce for Cloud (ECE)兼容：2.4.4+稳定性：正式发布
+_2023年3月6日_
+
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
 
 ![新](../assets/new.svg) 已添加 [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL功能。
 ![修复](../assets/fix.svg) 改进了性能和API可扩展性。
@@ -46,14 +48,18 @@ ht-degree: 0%
 
 ### V1.4版本
 
-发行日期： 2023-2-7与Adobe Commerce (EE)兼容：2.4.x与Adobe Commerce for Cloud (ECE)兼容：2.4.x稳定性：正式发布
+_2023年2月7日_
+
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
 
 ![新](../assets/new.svg) 已发布目录服务元包以简化安装步骤。
 ![修复](../assets/fix.svg) API可扩展性和性能改进。
 
 ### V1.3发布
 
-发行日期： 2023-1-17与Adobe Commerce (EE)兼容： 2.4.x与Adobe Commerce for Cloud (ECE)兼容： 2.4.x稳定性：正式发布
+_2023年1月17日_
+
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
 
 ![新](../assets/new.svg) 简化并改进了载入体验。
 ![新](../assets/new.svg) 新的客户沙盒端点可用于生产前测试。
@@ -62,14 +68,18 @@ ht-degree: 0%
 
 ### V1.1版本
 
-发行日期： 2022-11-18与Adobe Commerce (EE)兼容：2.4.x与Adobe Commerce for Cloud (ECE)兼容：2.4.x稳定性：正式发布
+_2022年11月18日_
+
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
 
 ![新](../assets/new.svg) 目录服务现在支持Adobe [API网格](https://developer.adobe.com/graphql-mesh-gateway/).
 ![修复](../assets/fix.svg) 我们改进了API可扩展性和整体性能。
 
 ### V1.0发布
 
-发行日期： 2022-10-04与Adobe Commerce (EE)兼容：2.4.x与Adobe Commerce for Cloud (ECE)兼容：2.4.x稳定性：正式发布
+_2022年10月4日_
+
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
 
 ![新](../assets/new.svg) 现在支持捆绑和分组的产品。
 ![新](../assets/new.svg) 添加了B2B可见性覆盖。 产品现在可搜索，并可添加到特定客户组的购物车中。
@@ -81,7 +91,9 @@ ht-degree: 0%
 
 ### 0.3版本 — Beta+
 
-发行日期：2022-09-12与Adobe Commerce (EE)兼容：2.4.x与Adobe Commerce for Cloud (ECE)兼容：2.4.x稳定性：测试版
+_2022年9月12日_
+
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
 
 ![新](../assets/new.svg) 变体支持的图像：根据选定的选项返回产品图像
 ![新](../assets/new.svg) 价格支持的角色：仅允许特定客户组的成员查看产品价格
@@ -90,7 +102,9 @@ ht-degree: 0%
 
 ### 测试版
 
-发行日期：2022-08-09与Adobe Commerce (EE)兼容：2.4.x与Adobe Commerce for Cloud (ECE)兼容：2.4.x稳定性：测试版
+_2022年8月9日_
+
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
 
 ![新](../assets/new.svg) 此 `products` 和 `refineProduct` 查询返回以下数据：
 
