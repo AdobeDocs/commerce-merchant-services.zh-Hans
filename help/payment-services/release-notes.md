@@ -2,9 +2,9 @@
 title: ”[!DNL Payment Services] 发行说明”
 description: 查看发行说明，了解关于 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 39bd0763b7aa6f853d0bff80c8122e899c1c58d8
+source-git-commit: e076864a117be007eeb8003d9d6a472b704996ba
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1758'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,26 @@ _2021年6月28日_
 ![新](../assets/new.svg)<!-- Issue PAY-2761 --> 您现在可以自定义以下位置显示的数据： [订单付款状态报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 和 [付款报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 使用“列设置”控件显示或隐藏列。
 
 +++
+
+## v2.0.0
+
+_2023年3月10日_
+
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+
+![新](../assets/new.svg)<!-- Issue PAY-4152 --> 添加了对PHP 8.2和Adobe Commerce 2.4.6的支持。与PHP 7.x不兼容。
+
+## v1.6.1
+
+_2023年3月10日_
+
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+
+![修复](../assets/fix.svg)<!-- Issue PAY-4226 --> 修复了阻止新Payment Services商家在Admin中使用结账的问题。 Payment Services以前使用Commerce客户ID，而新客户不存在该ID。
+
+![修复](../assets/fix.svg)<!-- Issue PAY-4205 --> 修复了在使用结帐时，导致指定的送货地址状态被默认税务设置中的状态替换的问题 [PayPal选项](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#paypal-smart-buttons). 现在，客户可以将他们的订单发往商户税务设置中配置为默认状态以外的其他状态。
+
+![修复](../assets/fix.svg)<!-- Issue PAY-4202 --> 修复了阻止客户使用卡保险存储完成购买或删除商店的保险存储付款方法的问题 [使用 `Authorize and Capture` 付款操作](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method). 以前，当客户尝试使用或修改其保险存储信用卡时，出现“Provider Vault ID未找到”错误。
 
 ## v1.6.0
 
