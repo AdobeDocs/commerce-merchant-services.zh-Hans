@@ -2,9 +2,9 @@
 title: 入门
 description: 了解中的要求和支持平台 [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
+source-git-commit: fbc7feb29f3633eddbf521f41fc35a10a63dc564
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 要求
 
-- Adobe Commerce 2.3.x、2.4.4+
+- Adobe Commerce 2.4.4+
 - PHP 8.1、8.2
 - Composer 2
 
