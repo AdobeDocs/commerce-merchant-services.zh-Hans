@@ -3,7 +3,7 @@ title: 产品列表页面小组件
 description: “启用并设置样式 [!DNL Live Search Product Listing Page Widget]”
 source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---

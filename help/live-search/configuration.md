@@ -3,7 +3,7 @@ title: “Commerce配置设置和 [!DNL Live Search] ”
 description: “介绍Adobe Commerce配置设置， [!DNL Live Search] 可以阅读。”
 source-git-commit: 10edbb6127405d45c06d4c8ffc89d92a6ca061c3
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
