@@ -2,9 +2,9 @@
 title: 自定义
 description: 了解如何自定义产品推荐。
 exl-id: b1b8e770-45ec-4403-b79b-4f0a9f7bd959
-source-git-commit: a34c3c8a5caca1bbf611b2df650c562aeeab297b
+source-git-commit: acfaa1d72265e42b973677a7e014ba4b350ec56b
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 0%
    >
    >文件名位于 `layout` 如果您的存储使用第三方扩展，则目录可能会不同。
 
-1. 让我们修改 `catalog_product_view.xml` 文件，以便推荐单元显示在产品详细信息页面上的产品图像之后。 在自定义此XML文件之前，让我们先看看该文件，并了解需要修改的部分：
+1. 修改 `catalog_product_view.xml` 文件，以便推荐单元显示在产品详细信息页面上的产品图像之后。 在自定义此XML文件之前，请查看该文件并了解需要修改的部分：
 
    ```xml
    <?xml version="1.0"?>
@@ -81,7 +81,7 @@ ht-degree: 0%
 
 1. 让我们通过指定其他内容块来修改此文件。
 
-   您将更改引用块 `name` 从 `main.content` to `product.info.media`.
+   更改引用块 `name` 从 `main.content` to `product.info.media`.
 
    ```xml
    <?xml version="1.0"?>

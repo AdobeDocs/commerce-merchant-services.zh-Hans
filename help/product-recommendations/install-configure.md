@@ -2,9 +2,9 @@
 title: 安装和配置
 description: 了解如何安装、更新和卸载 [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 安装 [!DNL Product Recommendations] {#install}
 
-因为 [!DNL Product Recommendations] 模块是独立的元数据包，更新的发布频率高于Adobe Commerce。 要确保您是最新的错误修复和功能，请参阅 [发行说明](release-notes.md).
+因为 [!DNL Product Recommendations] 模块是独立的元数据包，更新的发布频率高于Adobe Commerce。 要确保您已了解最新的错误修复和功能，请参阅 [发行说明](release-notes.md).
 
 安装 `magento/product-recommendations` 具有编辑器的模块：
 
@@ -98,7 +98,7 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 >[!NOTE]
 >
-> 在产品Recommendations的3.x.x版本中，您只需要一个API密钥。 在4.x.x及更高版本中，您必须提供生产公共和专用API密钥，以及沙盒公共和专用API密钥。 如果不提供两对API密钥，您将无法在管理员中访问产品Recommendations功能。 但是，数据收集将继续在您的店面中，现有推荐将继续显示给您的购物者。
+> 在产品Recommendations的3.x.x版本中，您只需要一个API密钥。 在4.x.x及更高版本中，您必须提供生产公共和专用API密钥，以及沙盒公共和专用API密钥。 如果不提供两对API密钥，则无法访问“管理员”中的产品Recommendations功能。 但是，数据收集将继续在您的店面中，现有推荐将继续显示给您的购物者。
 
 ## 卸载 [!DNL Product Recommendations] {#uninstall}
 
