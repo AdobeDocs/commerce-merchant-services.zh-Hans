@@ -2,10 +2,10 @@
 title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] 发行说明'
 description: “查看发行说明，了解有关 [!DNL Store Fulfillment by Walmart Commerce Technologies] 版本。”
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 258820e9591f3f47e74c4c9497376fd34512334a
+source-git-commit: 9ce6a5443a930d616eeceeb1f9883cfb5496bc3a
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 1%
+source-wordcount: '190'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,8 @@ ht-degree: 1%
 
 ## v1.3.0
 
-发行日期：2023-02-27与Adobe Commerce(EE)兼容：2.4.x与Adobe Commerce(ECE)兼容：2.4.x稳定性：正式发布
+*2023年2月27日*
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}<br>Adobe Commerce版本2.4.0 - 2.4.5
 
 此版本包含以下更新：
 
@@ -27,7 +28,8 @@ ht-degree: 1%
 
 ## v1.2.0
 
-发行日期：2022-09-27与Adobe Commerce(EE)兼容：2.4.x与Adobe Commerce(ECE)兼容：2.4.x稳定性：正式发布
+*2022年9月27日*
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}<br>Adobe Commerce版本2.4.0 - 2.4.5
 
 此版本包含以下更新：
 
@@ -36,13 +38,19 @@ ht-degree: 1%
 
 ## v1.1.0
 
-发行日期：2022-07-15与Adobe Commerce(EE)兼容：2.4.0 - 2.4.4与Adobe Commerce（欧洲经委会）兼容：2.4.0 - 2.4.4稳定性：正式发布
+*2022年7月15日*
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}<br>Adobe Commerce版本2.4.0 - 2.4.4
+
+稳定性：正式发布
 
 ![新建](../assets/fix.svg)<!-- WMTP-731 --> 简化了 [签入体验配置](check-in-experience-setup.md) ，方法是添加默认的汽车制作和模型选择。 在以前的版本中，商家必须手动配置汽车的制造和模型选择。
 
 ## v1.0.0
 
-发行日期：2022-03-04与Adobe Commerce(EE)兼容：2.4.0 - 2.4.4与Adobe Commerce（欧洲经委会）兼容：2.4.0 - 2.4.4稳定性：正式发布
+*2022年3月4日*
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}<br>Adobe Commerce版本2.4.0 - 2.4.4
+
+稳定性：正式发布
 
 ## 商店辅助应用程序
 
