@@ -2,9 +2,9 @@
 title: 使用Adobe Experience Platform标记收集商务数据
 description: 了解如何使用Adobe Experience Platform标记收集商务数据。
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
+source-git-commit: bd4090c1b1ec417545e041a7c89f46019c07abea
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2535'
 ht-degree: 0%
 
 ---
@@ -559,6 +559,8 @@ _Experience Platform连接器数据流与标记_
    - **值**:尚未可用
    - **字段组**: `siteSearch` > `sort`. 选择 **提供整个对象**.
    - **字段组**: `siteSearch` > `filter`. 选择 **提供整个对象**.
+   - **字段组**: `searchRequest` > `id`
+   - **唯一标识符**: **值** = `%search request ID%`
    - **字段组**: `searchRequest` > `value`
    - **值**: **值** = `1`
 
@@ -654,6 +656,8 @@ _Experience Platform连接器数据流与标记_
    - **字段组**: `productListItems` > `ProductImageUrl`
    - **ProductImageUrl**: **值** = `%product image%`
    - **数据元素**: `%search result products%`
+   - **字段组**: `searchResponse` > `id`
+   - **唯一标识符**: **值** = `%search response ID%`
    - **字段组**: `searchResponse` > `value`
    - **值**: **值** = `1`
 
@@ -1361,7 +1365,7 @@ Experience Platform连接器配置文件根据 `identityMap` 和 `personalEmail`
 
 ## 设置同意
 
-Adobe Commerce和Experience Platform连接器数据收集同意默认启用。 选择退出通过 [`mg_dnt` cookie](https://docs.magento.com/user-guide/stores/cookie-reference.html). 如果您选择使用 `mg_dnt` 来管理同意。 的 [Adobe Experience Platform Web SDK文档](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) 还有几个用于管理同意的其他选项。
+Adobe Commerce和Experience Platform连接器数据收集同意默认启用。 选择退出通过 [`mg_dnt` cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). 如果您选择使用 `mg_dnt` 来管理同意。 的 [Adobe Experience Platform Web SDK文档](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) 还有几个用于管理同意的其他选项。
 
 1. 创建 **核心自定义代码** 数据元素(`%do not track cookie%`) `mg_dnt` cookie:
 

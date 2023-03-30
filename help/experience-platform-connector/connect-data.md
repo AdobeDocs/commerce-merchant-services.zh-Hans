@@ -2,9 +2,9 @@
 title: 将商务数据连接到Adobe Experience Platform
 description: 了解如何将您的商务数据连接到Adobe Experience Platform。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: 18edfec6dbc66ef0e94e9f54ca1061386104d90c
+source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -33,13 +33,9 @@ ht-degree: 0%
 
 ## 数据收集
 
->[!NOTE]
->
->对于已注册我们后台测试版计划的商户，您将看到一个用于启用后台活动的复选框。 如果您想参加后台测试版计划，请联系 [drios@adobe.com](mailto:drios@adobe.com).
+在 **数据收集** 部分，可指定要收集和发送到Experience Platform边缘的数据类型。 默认情况下，只要AEP Web SDK和组织ID有效，就会自动发送店面事件。 请参阅事件主题以了解有关 [店面](events.md#storefront-events) 和 [后台办公室](events.md#back-office-events) 事件。
 
-在 **数据收集** 部分，可指定要收集和发送到Experience Platform边缘的数据类型。 默认情况下，只要AEP Web SDK和组织ID有效，就会自动发送店面事件。 请参阅事件主题以了解有关 [店面](events.md#storefront-events) 和 [后台办公室](events.md#beta-order-status-events) 事件。
-
-![测试版Experience Platform连接器配置](assets/epc-config-beta.png)
+![Experience Platform连接器配置](assets/epc-config-dc.png)
 
 >[!NOTE]
 >
@@ -64,7 +60,7 @@ ht-degree: 0%
 | AEP Web SDK是否已部署到您的站点 | 如果您已将自己的AEP Web SDK部署到您的网站，请选中此复选框 |
 | AEP Web SDK名称（全局） | 如果您已经将Experience PlatformWeb SDK部署到您的站点，请在此字段中指定该SDK的名称。 这允许Storefront事件收集器和Storefront事件SDK使用您的Experience PlatformWeb SDK，而不是Experience Platform连接器部署的版本。 如果您尚未将Experience PlatformWeb SDK部署到您的站点，请将此字段留空，Experience Platform连接器将为您部署一个。 |
 | 店面事件 | 默认情况下，只要组织ID和数据流ID有效，就会选中此选项。 Storefront事件在购物者浏览您的网站时收集匿名化行为数据。 |
-| 后台事件（测试版） | 如果选中，则事件有效负载包含匿名化的订单状态信息，例如，订单是否被下达、取消、退还或发运。 |
+| 后台事件 | 如果选中，则事件有效负载包含匿名化的订单状态信息，例如，订单是否被下达、取消、退还或发运。 |
 | 数据流ID（网站） | 允许数据从Adobe Experience Platform流到其他AdobeDX产品的ID。 此ID必须与您特定Adobe Commerce实例中的特定网站关联。 如果您指定自己的Experience PlatformWeb SDK，请不要在此字段中指定数据流ID。 Experience Platform连接器使用与该SDK关联的数据流ID，并忽略此字段中指定的任何数据流ID（如果有）。 |
 
 安装了Experience Platform连接器扩展、创建了Adobe Commerce和Adobe Experience Platform之间的链接，并指定了数据流ID后，商务数据开始流向Adobe Experience Platform边缘和其他AdobeDX产品。
@@ -73,7 +69,7 @@ ht-degree: 0%
 >
 > 数据从边缘流向其他AdobeDX产品所花费的时间可能会有所不同。
 
-## 边缘商务数据
+## 验证数据是否被发送到Experience Platform
 
 将商务数据发送到Adobe Experience Platform边缘时，您可以构建如下报表：
 

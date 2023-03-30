@@ -2,9 +2,9 @@
 title: 发行说明
 description: 来自Adobe Commerce的Adobe Experience Platform Connector的最新发行信息。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 57d0d0604e871a0d8a76bfd2c006250b55f0eeb1
+source-git-commit: 735fd14fad22826b04320644e120d296de19a211
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '391'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 请参阅 [即将发行的版本](https://experienceleague.adobe.com/docs/commerce-operations/release/schedule.html) 了解发行计划和支持。
 
-请参阅 [可用性](https://experienceleague.adobe.com/docs/commerce-operations/release/availability.html) 以了解产品兼容性。
+请参阅开发人员文档，以 [了解产品兼容性](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## 支持的服务更新
 
@@ -29,12 +29,24 @@ ht-degree: 1%
 
 +++支持的服务更新
 
+_2023年3月30日_
+
+* ![新建](../assets/new.svg)  — 添加了一个名为 `data-services-b2b` 包括 [申请列表事件](events.md#b2b-events) 对于B2B商户
+* ![新建](../assets/new.svg)  — 添加了 `uniqueIdentifier` 字段 [搜索](events.md#search-events) 事件。 此新字段允许商家交叉引用哪些搜索请求与哪些搜索响应相对应。
+
 _2022年10月12日_
 
 * ![新建](../assets/new.svg)  — 添加了两个 [storefront事件](events.md): `openCart` 和 `removeFromCart` 到Adobe Commerce Storefront Events SDK和收集器
 * ![新建](../assets/new.svg)  — 添加了对 [AEM storefront](overview.md#aem-support)
 
 +++
+
+## 2.2.0
+
+_2023年3月30日_
+
+* ![新建](../assets/new.svg)  — 捆绑 `commerce-data-export` 和 `saas-export` 依赖关系 `experience-platform-connector` 扩展。 以前，您必须单独安装这些依赖项。 这些依赖项以及商户配置支持服务器端处理 [后台事件](events.md#back-office-events).
+* ![新建](../assets/new.svg)  — 添加了名为 [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
 
 ## 2.1.1
 
@@ -46,7 +58,7 @@ _2023年2月28日_
 
 _2023年1月17日_
 
-* ![新建](../assets/new.svg)  — 更新了 [Experience Platform连接器管理](connect-data.md) 以便您可以指定自己的AEP Web SDK(alloy)。 此外，还为注册了后台测试版计划的商家添加了一个选项，以便向 [后台事件数据](connect-data.md#data-collection) 到边缘。 这些事件包含 [订单状态信息](events.md#beta-order-status-events) 关于订单，例如订单被下达、取消、退还或发运。 如果您想参加后台测试版计划，请联系 [drios@adobe.com](mailto:drios@adobe.com).
+* ![新建](../assets/new.svg)  — 更新了 [Experience Platform连接器管理](connect-data.md) 以便您可以指定自己的AEP Web SDK(alloy)。 此外，还为注册了后台测试版计划的商家添加了一个选项，以便向 [后台事件数据](connect-data.md#data-collection) 到边缘。 这些事件包含 [订单状态信息](events.md#beta-order-status-events) 关于订单，例如订单被下达、取消、退还或发运。
 * ![修复](../assets/fix.svg) 已更改为使用 `identityMap` 而不是 `personID` 为推送到边缘的任何数据设置主标识时。
 
 ## 2.0.1
