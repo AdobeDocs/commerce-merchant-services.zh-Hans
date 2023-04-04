@@ -1,9 +1,9 @@
 ---
 title: '''[!DNL Page Builder] 集成”'
 description: “了解如何使用 [!DNL Product Recommendations] 页面生成器中的单位。
-source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
+source-git-commit: 59ec1a212fbc9ef48658b29cace083e3fb645185
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -11,6 +11,10 @@ ht-degree: 0%
 # [!DNL Page Builder] 集成
 
 产品Recommendations可以集成在您在网站上部署的任何页面生成器内容中。
+
+>[!NOTE]
+>
+> 本机页面生成器页面上最多可以有25个推荐单位。 非本机页面生成器页面最多可以具有5个推荐单元。 请参阅 [创建新推荐](create.md) 以了解更多信息。
 
 ## 将产品Recommendations与页面生成器内容结合使用
 
