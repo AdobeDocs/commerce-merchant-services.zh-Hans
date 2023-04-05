@@ -2,9 +2,9 @@
 title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] 发行说明'
 description: “查看发行说明，了解有关 [!DNL Store Fulfillment by Walmart Commerce Technologies] 版本。”
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 9ce6a5443a930d616eeceeb1f9883cfb5496bc3a
+source-git-commit: 8cc951721b43df393d58bd55338cf026261db752
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '178'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,8 @@ ht-degree: 2%
 ## v1.3.0
 
 *2023年2月27日*
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}<br>Adobe Commerce版本2.4.0 - 2.4.5
+
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
 
 此版本包含以下更新：
 
@@ -29,7 +30,8 @@ ht-degree: 2%
 ## v1.2.0
 
 *2022年9月27日*
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}<br>Adobe Commerce版本2.4.0 - 2.4.5
+
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
 
 此版本包含以下更新：
 
@@ -39,7 +41,8 @@ ht-degree: 2%
 ## v1.1.0
 
 *2022年7月15日*
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}<br>Adobe Commerce版本2.4.0 - 2.4.4
+
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
 
 稳定性：正式发布
 
@@ -48,7 +51,8 @@ ht-degree: 2%
 ## v1.0.0
 
 *2022年3月4日*
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}<br>Adobe Commerce版本2.4.0 - 2.4.4
+
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
 
 稳定性：正式发布
 
