@@ -2,9 +2,9 @@
 title: 事件
 description: 了解每个事件捕获的数据。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
+source-git-commit: 8e5fb65363b2fa39f44da86d7ba0cc5459b18768
 workflow-type: tm+mt
-source-wordcount: '4039'
+source-wordcount: '4100'
 ht-degree: 0%
 
 ---
@@ -338,7 +338,7 @@ ht-degree: 0%
 | 字段 | 描述 |
 |---|---|
 | `searchRequest` | 指示是否发送了搜索请求 |
-| `uniqueIdentifier` | 此特定搜索请求的唯一ID |
+| `id` | 此特定搜索请求的唯一ID |
 | `filter` | 指示是否应用了任何过滤器来限制搜索结果 |
 | `attribute` （过滤器） | 用于确定是否将项目包含在搜索结果中的项目 |
 | `value` | 用于确定搜索结果中包含哪些项目的属性值 |
@@ -365,7 +365,7 @@ ht-degree: 0%
 | 字段 | 描述 |
 |---|---|
 | `searchResponse` | 指示是否收到搜索响应 |
-| `uniqueIdentifier` | 此特定搜索响应的唯一ID |
+| `id` | 此特定搜索响应的唯一ID |
 | `suggestions` | 字符串数组，其中包含目录中存在的与搜索查询类似的产品和类别的名称 |
 | `numberOfResults` | 返回的产品数 |
 | `productListItems` | 购物车中的一系列产品。 |
@@ -391,8 +391,10 @@ B2B事件包含 [申请列表](https://experienceleague.adobe.com/docs/commerce-
 
 | 字段 | 描述 |
 |---|---|
-| `requisitionListOpens` | 值 `1` 表示已打开申请列表 |
-| `requisitionList` | 包括 `ID` , `name`和 `description` 申请清单 |
+| `requisitionList` | 客户创建的申请列表的属性 |
+| `ID` | 申请列表的唯一标识符 |
+| `name` | 客户指定的申请列表名称 |
+| `description` | 客户指定的申请列表描述 |
 
 ### addToRequisitionList
 
@@ -410,8 +412,10 @@ B2B事件包含 [申请列表](https://experienceleague.adobe.com/docs/commerce-
 
 | 字段 | 描述 |
 |---|---|
-| `requisitionListAdds` | 值 `1` 表示产品已添加到申请列表 |
-| `requisitionList` | 包括 `ID`,  `name`和 `description` 申请清单 |
+| `requisitionList` | 客户创建的申请列表的属性 |
+| `ID` | 申请列表的唯一标识符 |
+| `name` | 客户指定的申请列表名称 |
+| `description` | 客户指定的申请列表描述 |
 | `productListItems` | 已添加到申请列表的产品数组 |
 | `name` | 产品的显示名称或人类可读的名称 |
 | `SKU` | 库存单位。 产品的唯一标识符。 |
@@ -419,6 +423,7 @@ B2B事件包含 [申请列表](https://experienceleague.adobe.com/docs/commerce-
 | `priceTotal` | 产品行项目的总价格 |
 | `discountAmount` | 指示应用的折扣金额 |
 | `currencyCode` | 的 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用于此付款项的货币代码 |
+| `selectedOptions` | 用于可配置产品的字段。 `attribute` 标识可配置产品的属性，例如 `size` 或 `color` 和 `value` 标识属性的值，例如 `small` 或 `black`. |
 
 ### removeFromRequisitionList
 
@@ -432,8 +437,10 @@ B2B事件包含 [申请列表](https://experienceleague.adobe.com/docs/commerce-
 
 | 字段 | 描述 |
 |---|---|
-| `requisitionListRemovals` | 值 `1` 表示产品已从申请列表中删除 |
-| `requisitionList` | 包括 `ID`和 `description` 申请清单 |
+| `requisitionList` | 客户创建的申请列表的属性 |
+| `ID` | 申请列表的唯一标识符 |
+| `name` | 客户指定的申请列表名称 |
+| `description` | 客户指定的申请列表描述 |
 | `productListItems` | 已添加到申请列表的产品数组 |
 | `name` | 产品的显示名称或人类可读的名称 |
 | `SKU` | 库存单位。 产品的唯一标识符。 |
