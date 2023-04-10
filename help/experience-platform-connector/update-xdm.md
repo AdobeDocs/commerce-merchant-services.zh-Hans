@@ -2,9 +2,9 @@
 title: 将字段组添加到XDM架构
 description: 了解如何将特定于Adobe Commerce的字段组添加到XDM模式。
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
-source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
+source-git-commit: 90356cc593653cf4583da86bc29d69112fc948ba
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
    - 引用键
    - 个人联系详细信息
    - 商务详细信息
-   - Adobe Analytics Experience Event Commerce(如果要将数据发送到Adobe Analytics)
+   - Adobe Analytics ExperienceEvent Commerce(如果要将数据发送到Adobe Analytics)
    - 身份映射
 
    >[!NOTE]
