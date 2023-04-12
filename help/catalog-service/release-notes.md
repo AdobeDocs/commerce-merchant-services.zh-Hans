@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service] 发行说明'
 description: 的最新发行信息 [!DNL Catalog Service] Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: c65717c449793dccfed101e1411b22c69fba308d
+source-git-commit: 47163a83d3c79abe7718121492970e34ffbf3643
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -19,21 +19,20 @@ ht-degree: 0%
 
 ## 当前主要版本
 
-### V1.6版本
+### V1.7版本
 
-_2023年3月28日_
+_2023年4月12日_
 
 [!BADGE 兼容性]{type=Informative tooltip="兼容性"}
 
-![新建](../assets/new.svg) 向 [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) 查询。
-![新建](../assets/new.svg) 添加了 `entityId` 使用 [API Mesh](mesh.md).
+![新建](../assets/new.svg) 目录服务现在可以清理已删除的产品变体。
+![修复](../assets/fix.svg) 基础架构的可扩展性和性能改进。
 
 #### 已知限制
 
 尚不支持以下功能：
 
 * 以固定价格捆绑产品
-* 从目录中删除变体后，不会收到任何更新。
 * 动态属性有效负载的最大大小为9 MB。
 * 组产品价格。 可以使用简单的产品价格计算。
 * 在图像阵列中，只有第一个图像包含角色。
@@ -43,6 +42,15 @@ _2023年3月28日_
 * 最低广告价格
 * [分层定价](mesh.md)
 * 可下载的产品和礼品卡
+
+### V1.6版本
+
+_2023年3月28日_
+
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+
+![新建](../assets/new.svg) 向 [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) 查询。
+![新建](../assets/new.svg) 添加了 `entityId` 使用 [API Mesh](mesh.md).
 
 ### V1.5版本
 
