@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] for Adobe Commerce提供了一种比本机Adobe Commerce GraphQL查询更快检索产品显示页面和产品列表页面内容的方法。'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
+source-git-commit: 86e6fdb653278f3e70640155d697897a2ea1b674
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,8 @@ ht-degree: 0%
 的 [!DNL Catalog Service] 使用 [GraphQL](https://graphql.org/) 请求和接收产品数据。 GraphQL是一种查询语言，前端客户端使用它与在后端(如Adobe Commerce)上定义的应用程序编程接口(API)通信。 GraphQL是一种流行的通信方法，因为它重量轻，允许系统集成商指定每个响应的内容和顺序。
 
 Adobe Commerce有两个GraphQL系统。 核心GraphQL系统提供了各种查询（读取操作）和突变（写入操作），允许购物者与多种类型的页面进行交互，包括产品、客户帐户、购物车、结账等。 但是，返回产品信息的查询不会针对速度进行优化。 服务GraphQL系统只能对产品和相关信息执行查询。 这些查询比类似的核心查询更具性能。
+
+目录服务客户可以使用 [SaaS价格索引器](../price-index/index.md)，可提供更快的价格更新和同步时间。
 
 ## 架构
 
@@ -66,6 +68,10 @@ Adobe Commerce有两个GraphQL系统。 核心GraphQL系统提供了各种查询
 简单产品表示具有价格的基本销售单位。 目录服务计算折扣前的常规价格以及折扣后的最终价格。 定价计算可以包括固定产品税。 它们会排除个性化促销活动。
 
 复杂产品没有固定价格。 Catalog Service而是会返回链接示例的价格。 例如，商家最初可以为可配置产品的所有变体分配相同的价格。 如果某些尺寸或颜色不受欢迎，商家可以降低这些变体的价格。 因此，复杂（可配置）产品的价格首先显示一个价格范围，反映了标准变体和不受欢迎的变体的价格。 购物者为所有可用选项选择了值后，店面会显示单个价格。
+
+>[!NOTE]
+>
+> 商务客户 [!DNL Catalog Service] 可以利用他们网站上更快的价格更新和同步时间 [SaaS价格索引器](../price-index/index.md).
 
 ## 实施
 
