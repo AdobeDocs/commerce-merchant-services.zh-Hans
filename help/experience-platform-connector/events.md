@@ -2,9 +2,9 @@
 title: 事件
 description: 了解每个事件捕获的数据。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: e31c550416d29f7733c7da7f8895749487965e5d
+source-git-commit: ddacfc053f83be750c63ba376519169b38f7f478
 workflow-type: tm+mt
-source-wordcount: '4592'
+source-wordcount: '4596'
 ht-degree: 0%
 
 ---
@@ -236,10 +236,11 @@ ht-degree: 0%
 
 | 字段 | 描述 |
 |---|---|
-| `eventType` | 此时间系列记录的主事件类型，例如： `userAccount.login` |
 | `person` | 个人行为者、联系人或所有者 |
 | `accountID` | 捕获用户帐户ID |
-| `personalEmailID` | 指定个人电子邮件的唯一标识符 |
+| `accountType` | 捕获用户帐户类型，例如 `Personal` 或 `Company`（如果适用） |
+| `personalEmailID` | 例如，技术地址 `name@domain.com` RFC2822及后续标准中通常定义的 |
+| `personalEmail` | 捕获联系人详细信息 — 电子邮件和关联信息 |
 | `address` | 例如，技术地址 `name@domain.com` RFC2822及后续标准中通常定义的 |
 | `userAccount` | 指示任何忠诚度详细信息、首选项、登录流程和其他帐户首选项 |
 | `login` | 指示访客是否尝试登录 |
@@ -260,7 +261,6 @@ ht-degree: 0%
 
 | 字段 | 描述 |
 |---|---|
-| `eventType` | 此时间系列记录的主事件类型，例如： `userAccount.logout` |
 | `userAccount` | 指示任何忠诚度详细信息、首选项、登录流程和其他帐户首选项 |
 | `logout` | 指示访客是否尝试注销 |
 
@@ -280,11 +280,11 @@ ht-degree: 0%
 
 | 字段 | 描述 |
 |---|---|
-| `eventType` | 此时间系列记录的主事件类型，例如： `account.createProfile` |
 | `person` | 个人行为者、联系人或所有者 |
 | `accountID` | 捕获用户帐户ID |
 | `accountType` | 捕获用户帐户类型，例如 `Personal` 或 `Company`（如果适用） |
-| `personalEmailID` | 指定个人电子邮件的唯一标识符 |
+| `personalEmailID` | 例如，技术地址 `name@domain.com` RFC2822及后续标准中通常定义的 |
+| `personalEmail` | 捕获联系人详细信息 — 电子邮件和关联信息 |
 | `address` | 例如，技术地址 `name@domain.com` RFC2822及后续标准中通常定义的 |
 | `userAccount` | 指示任何忠诚度详细信息、首选项、登录流程和其他帐户首选项 |
 | `createProfile` | 指示用户是否已创建帐户配置文件 |
@@ -305,12 +305,11 @@ ht-degree: 0%
 
 | 字段 | 描述 |
 |---|---|
-| `eventType` | 此时间系列记录的主事件类型，例如： `account.updateProfile` |
 | `person` | 个人行为者、联系人或所有者 |
 | `accountID` | 捕获用户帐户ID |
 | `accountType` | 捕获用户帐户类型，例如 `Personal` 或 `Company`（如果适用） |
-| `personalEmailID` | 指定个人电子邮件的唯一标识符 |
-| `personalEmail` | 指定个人电子邮件地址 |
+| `personalEmailID` | 例如，技术地址 `name@domain.com` RFC2822及后续标准中通常定义的 |
+| `personalEmail` | 捕获联系人详细信息 — 电子邮件和关联信息 |
 | `address` | 例如，技术地址 `name@domain.com` RFC2822及后续标准中通常定义的 |
 | `userAccount` | 指示任何忠诚度详细信息、首选项、登录流程和其他帐户首选项 |
 | `updateProfile` | 指示用户是否已更新其帐户配置文件 |
