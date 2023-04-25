@@ -2,7 +2,7 @@
 title: 安全性和合规性
 description: 查看您网站的安全性和合规性要求。
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: bfce1cb702d634647022a92669d704dd82fe41e6
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -38,6 +38,10 @@ PCI 3-D Secure(3DS)支持购买者在进行在线信用卡购买时使用其信�
 [!UICONTROL Payment Services] 提供3DS功能，使商户能够遵守欧盟法规，并保护客户和商户免受其商店中的欺诈活动。
 
 如果您是欧盟或英国境内需要3DS合规的商家，则必须手动打开3DS( `Off` 默认情况下)in [设置](settings.md#credit-card-fields).
+
+>[!NOTE]
+>
+>3DS要求适用于业务和持卡人银行位于 [欧洲经济区](https://www.efta.int/eea) (EEA)和英国。 美国商户不需要3DS，但可以根据需要为其交易启用3DS。
 
 商家/商店人员为买方下达的订单未配置3DS合规措施。
 
