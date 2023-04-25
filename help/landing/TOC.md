@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce服务
 user-guide-description: 托管服务的文档和资源，可为Adobe Commerce和Magento Open Source提供扩展功能。
 title: Adobe Commerce服务
-source-git-commit: cc7636dd6bb5dff0d1223279bd22b50df9758253
+source-git-commit: 2a3bd519eb4bb581d8394bed4e22305ea6878052
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,9 @@ ht-degree: 0%
 # Adobe Commerce文档服务 {#user-guides}
 
 - [概述](home.md)
+- 发行信息 {#release-information}
+   - [发行说明](/help/landing/release-notes-all.md)
+   - [文档的新增功能](/help/landing/whats-new.md)
 - 商务服务 {#commerce-services}
    - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html)
    - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/guide-overview.html)
@@ -26,6 +29,3 @@ ht-degree: 0%
    - [服务连接器](/help/landing/saas.md)
 - 数据服务 {#data-services}
    - [目录同步](/help/landing/catalog-sync.md)
-- 发行信息 {#release-information}
-   - [发行说明](/help/landing/release-notes-all.md)
-   - [文档的新增功能](/help/landing/whats-new.md)

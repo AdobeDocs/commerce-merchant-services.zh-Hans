@@ -4,9 +4,9 @@ description: 所有商务服务的发行说明集合
 seo-title: Adobe Commerce Services release notes
 seo-description: See a collated list of all release notes for Adobe Commerce Services and related data and integration services.
 exl-id: 2d0d2663-275d-4471-b47c-95a40b328b2b
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: ba0a3c10ffb90ca2d6e77367d4292600c37b2489
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,8 @@ ht-degree: 0%
 <table>
   <tbody>
     <tr>
-      <td><strong>Adobe Commerce服务</strong>
-        <p>了解对创新商务服务的最新改进，这些服务可作为Adobe Commerce扩展和Magento Open Source扩展使用。</p>
+      <td><strong>商务服务</strong>
+        <p>了解对作为扩展提供的创新商务服务的最新改进。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">AmazonSales Channel</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">目录服务</a></li>
@@ -31,11 +31,16 @@ ht-degree: 0%
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html">存储履行</a></li>
           </ul>
         </td>
-      <td><strong>数据和集成服务</strong>
-        <p>了解数据和集成服务的最新改进，这些改进使我们的Commerce Services能够与其他服务连接，并且扩展和产品的Adobe范围更广。</p>
+      <td><strong>集成服务</strong>
+        <p>了解集成服务的最新改进，这些改进使我们的Commerce Services能够与其他服务以及Adobe扩展和产品连接。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">Experience Platform连接器</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html">服务连接器</a></li>
+          </ul>
+      </td>
+      <td><strong>数据服务</strong>
+        <p>了解数据服务的最新改进，使我们的商务服务能够管理产品数据。</p>
+          <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html">目录同步</a></li>
           </ul>
       </td>
