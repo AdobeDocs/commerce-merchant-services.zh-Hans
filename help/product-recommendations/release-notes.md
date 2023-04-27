@@ -2,9 +2,9 @@
 title: '[!DNL Product Recommendations] 发行说明'
 description: 的最新发行信息 [!DNL Product Recommendations] 从Adobe Commerce。
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: 5b6a3c2dc15d41e5245cbf62ed736022f48281fa
+source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '1102'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,12 @@ ht-degree: 0%
 * 中的页面生成器支持 [!DNL Product Recommendations] （可选）模块： `magento/module-page-builder-product-recommendations`
 * 对的可视相似度推荐类型支持 [!DNL Product Recommendations] （可选）模块： `magento/module-visual-product-recommendations`
 
+对当前主要发布的版本提供支持。 提供了早期版本的发行说明供参考。
 发行说明包括：
 
 ![新建](../assets/new.svg) 新增功能
 ![修复](../assets/fix.svg) 修复和改进功能
+![错误](../assets/bug.svg) 已知问题
 
 请参阅开发人员文档，以 [了解产品兼容性](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 

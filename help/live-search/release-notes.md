@@ -2,16 +2,18 @@
 title: '[!DNL Live Search] 发行说明'
 description: “ [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 6371d737ef9591e4ad647650c9c9974dbd8b4555
+source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1241'
 ht-degree: 0%
 
 ---
 
 # [!DNL Live Search] 发行说明
 
-以下发行说明介绍了 [!DNL Live Search] 包括：
+以下发行说明介绍了 [!DNL Live Search].
+对当前主要发布的版本提供支持。 提供了早期版本的发行说明供参考。
+更新包括：
 
 ![新建](../assets/new.svg) 新增功能
 ![修复](../assets/fix.svg) 修复和改进功能

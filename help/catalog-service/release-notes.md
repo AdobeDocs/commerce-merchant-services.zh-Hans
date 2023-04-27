@@ -2,16 +2,18 @@
 title: '[!DNL Catalog Service] 发行说明'
 description: 的最新发行信息 [!DNL Catalog Service] Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: f310f840e286859070002ab0e23eda3787c89f36
+source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service] 发行说明
 
-以下发行说明介绍了 [!DNL Catalog Service] 包括：
+以下发行说明介绍了 [!DNL Catalog Service].
+对当前主要发布的版本提供支持。 提供了早期版本的发行说明供参考。
+更新包括：
 
 ![新建](../assets/new.svg) 新增功能
 ![修复](../assets/fix.svg) 修复和改进功能
