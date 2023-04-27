@@ -2,9 +2,9 @@
 title: 从Adobe Commerce安装和配置Adobe Experience Platform Connector
 description: 了解如何从Adobe Commerce安装、配置、更新和卸载Adobe Experience Platform Connector。
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
+source-git-commit: 898d49cbeb4711862a47693a0d608b74730dc845
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,12 @@ ht-degree: 0%
 
 ## 安装扩展
 
-Experience Platform连接器扩展从服务器的命令行安装，并作为 [服务](../landing/saas.md). 完成该过程后， **Experience Platform连接器** 在 **系统** 菜单下 **服务** 在商务中 _管理员_.
+Experience Platform连接器扩展可从 [Adobe市场](https://marketplace.magento.com/magento-experience-platform-connector.html). 当您从服务器的命令行安装此扩展时，它将作为 [服务](../landing/saas.md). 完成该过程后， **Experience Platform连接器** 和 **Commerce Services Connector** 显示在 **系统** 菜单下 **服务** 在商务中 _管理员_.
 
-Experience Platform连接器作为 [Adobe市场](https://marketplace.magento.com/magento-experience-platform-connector.html).
+>[!NOTE]
+>
+>![B2B for Adobe Commerce](../assets/b2b.svg) 对于B2B商户，您必须安装一个单独的扩展。 此扩展添加了对B2B特定事件的支持。 [了解更多](#install-the-b2b-extension).
 
-![B2B for Adobe Commerce](../assets/b2b.svg) 对于B2B商户，您必须安装一个单独的扩展。 此扩展添加了对B2B特定事件的支持。 [了解更多](#install-the-b2b-extension).
 
 1. 要下载 `experience-platform-connector` 包中，从命令行中运行以下命令：
 
@@ -80,11 +81,11 @@ composer update magento/experience-platform-connector-b2b --with-dependencies
    composer update magento/experience-platform-connector –-with-dependencies
    ```
 
-或者，对于B2B商户：
+   或者，对于B2B商户：
 
-```bash
-composer update magento/experience-platform-connector-b2b --with-dependencies
-```
+   ```bash
+   composer update magento/experience-platform-connector-b2b --with-dependencies
+   ```
 
 ## 卸载Experience Platform连接器 {#uninstall}
 
