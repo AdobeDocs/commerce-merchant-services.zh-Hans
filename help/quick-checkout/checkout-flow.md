@@ -2,9 +2,9 @@
 title: “Adobe Commerce中的结帐流程”
 description: “概述 [!DNL Quick Checkout] 在Adobe Commerce流动。”
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+source-git-commit: f790732804e110aad298689c0ddf74547ff17618
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 1. 出现提示时，输入与 [!DNL Bolt] 帐户。
 1. 输入发送到该密码的一次性密码(OTP) [!DNL Bolt] 帐户的电子邮件地址或电话号码。
 
-![OTP弹出窗口](assets/pop-up.png)
+![OTP弹出窗口](assets/new-logo-otp-email.png)
 
 1. 登录后 [!DNL Bolt] 帐户，结帐详细信息会自动填写：
 

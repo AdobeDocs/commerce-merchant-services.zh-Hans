@@ -2,7 +2,7 @@
 title: '[!DNL Quick Checkout] 发行说明'
 description: 查看发行说明，了解有关 [!DNL Quick Checkout] 版本。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 90cd508d7eb6033864d66c87fbc90eabd5ea304b
+source-git-commit: f790732804e110aad298689c0ddf74547ff17618
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -26,6 +26,14 @@ ht-degree: 0%
 这些发行说明描述了在管理面板的常规版本控制功能版本之外发生和发布的功能更改和修复。
 
 +++管理面板更新
+
+_2023年4月25日_
+
+![修复的问题](../assets/fix.svg)<!-- Issue BOLT-452 --> 的 [!DNL Quick Checkout] **浏览** 按钮现在可在鼠标悬停时显示可单击的手形光标。
+
+_2023年4月19日_
+
+![修复的问题](../assets/fix.svg)<!-- Issue BOLT-596 --> 的 [!DNL Quick Checkout] 现在，在将日期解析为ISO 8601格式时，报表页面可正确显示新帐户图表。
 
 _2022年12月14日_
 
