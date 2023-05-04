@@ -2,9 +2,9 @@
 title: 收集数据
 description: 了解事件如何收集产品推荐的数据。
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,13 @@ ht-degree: 0%
 
 如果您的店面是通过PWA Studio实施的，请参阅 [PWA文档](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). 如果您使用自定义前端技术（如React或Vue JS），请参阅用户指南，以了解如何在 [无头](headless.md) 环境。
 
+## 注意事项
+
 广告阻止程序和隐私设置可能会阻止 `magento/product-recommendations` 模块来捕获事件，并可能导致参与和收入 [量度](workspace.md) 少报。
+
+事件不会捕获在商家网站上发生的每笔交易。 活动旨在为商家提供网站上正在发生的事件的一般概念。
+
+无头实施必须实施事件才能为产品Recommendations功能板提供动力。
 
 >[!NOTE]
 >

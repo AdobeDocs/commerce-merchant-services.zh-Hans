@@ -2,9 +2,9 @@
 title: 无头
 description: 了解如何集成 [!DNL Product Recommendations] 在无头店里。
 exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: 521ea4fc2cce809fc12d3958e37089f3e34e1068
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,13 @@ ht-degree: 0%
 
 您可以集成 [!DNL Product Recommendations] 在无头店面中使用 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) 或自定义前端技术，如React或Vue JS。
 
+自定义和无头集成程序应参考这些Luma和PWA说明，作为建议的实施。 在无头解决方案中实施产品Recommendations的方法有很多，本文档并未涵盖所有方案。 集成商必须负责其实施的事件、设计和测试。
+
 [!DNL Product Recommendations] 要求 [行为和目录数据](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html) 操作。 目录数据同步过程在无标题实施中保持不变，但行为数据收集需要进行更改。
+
+>[!NOTE]
+>
+>无头实例必须实施事件才能为产品Recommendations功能板提供动力。
 
 集成 [!DNL Product Recommendations] 在无头店，您必须：
 
