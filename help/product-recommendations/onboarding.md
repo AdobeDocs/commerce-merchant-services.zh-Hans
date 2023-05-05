@@ -2,9 +2,9 @@
 title: 入门
 description: 了解 [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
+source-git-commit: 209bdf9c69ff81481d6df7cb8e8832deef13c9f4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -43,3 +43,7 @@ ht-degree: 0%
 ### B2B支持 {#b2bsupport}
 
 B2B店面通常需要复杂的逻辑，以指示每个购物者或客户群的产品可见性和定价。 [!DNL Product Recommendations] now [支持](release-notes.md) 此功能通过 [类别权限](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [共享目录](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)和 [客户群特定定价](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). 例如，如果您在零售客户区段中隐藏了某些类别，则该区段中的购物者将不会显示这些类别中产品的推荐。 此外，在为特定客户组和公司定义共享目录时，这些购物者仅会看到他们可以访问的产品的推荐。 所有推荐产品都会根据每个购物者的客户群组反映正确的客户群组特定价格。
+
+>[!NOTE]
+>
+>商户可使用 [目录服务](../catalog-service/overview.md) Storefront API，但Adobe支持团队无法进行任何自定义。

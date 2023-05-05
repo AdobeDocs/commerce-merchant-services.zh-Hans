@@ -4,9 +4,9 @@ description: 使用SaaS价格索引提高性能
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
+source-git-commit: 209bdf9c69ff81481d6df7cb8e8832deef13c9f4
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,14 @@ ht-degree: 0%
 SaaS价格索引可加快在提交价格更改后在SaaS客户的网站上反映价格更改所花费的时间。 此可选模块允许具有大型、复杂目录或具有多个网站或客户群的商家更快速、持续地处理价格变化。
 
 管道的最大瓶颈是：计算繁琐的流程（如索引和价格计算）已从PHP核心移至Adobe的云基础架构。 这使商家能够快速扩展资源以加快价格指数化时间，并以更快的速度反映对网站所做的这些更改。
+
+到SaaS服务的核心索引数据流如下所示：
+
+![默认数据流](assets/old_way.png)
+
+通过SaaS价格索引，流程是：
+
+![SaaS价格索引数据流](assets/new_way.png)
 
 所有符合要求的商家都可以从这些改进中受益，但获得最大收益的商家是客户：
 
