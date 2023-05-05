@@ -2,9 +2,9 @@
 title: 将商务数据连接到Adobe Experience Platform
 description: 了解如何将您的商务数据连接到Adobe Experience Platform。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: dead0b8dae69476c196652abd43c4966a38c4141
+source-git-commit: 386d5e4245401695d7123a87b7dfb703f1f849e9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 - Commerce Services Connector
 - Experience Platform连接器
 
-要将Adobe Commerce实例连接到Adobe Experience Platform，您必须配置两个连接器，从Commerce Services连接器开始，然后使用Experience Platform连接器完成。
+要将Adobe Commerce实例连接到Adobe Experience Platform，必须配置两个连接器，从Commerce Services连接器开始，然后使用Experience Platform连接器完成。
 
 ## 更新Commerce Services连接器
 
@@ -56,7 +56,11 @@ ht-degree: 0%
 
 ## 数据收集
 
-在 **数据收集** 部分，选择要发送到Experience Platform边缘的storefront和/或back office data。 要确保Adobe Commerce实例可以开始数据收集，请查看 [先决条件](overview.md#prerequisites).
+在此部分中，您指定要发送到Experience Platform边缘的数据类型。 数据类型有两种：客户端和服务器端。
+
+客户端数据是在店面上捕获的数据。 这包括购物者交互，例如 `View Page`, `View Product`, `Add to Cart`和 [申请列表](events.md#b2b-events) 信息（面向B2B商户）。 服务器端数据或后台数据是在商务服务器中捕获的数据。 这包括有关订单状态的信息，例如订单是否已下达、取消、退还、发运或完成。
+
+在 **数据收集** 部分，选择要发送到Experience Platform边缘的数据类型。 要确保Adobe Commerce实例可以开始数据收集，请查看 [先决条件](overview.md#prerequisites).
 
 请参阅事件主题以了解有关 [店面](events.md#storefront-events) 和 [后台办公室](events.md#back-office-events) 事件。
 
@@ -110,11 +114,32 @@ ht-degree: 0%
 | 后台事件 | 如果选中，则事件有效负载包含匿名化的订单状态信息，例如，订单是否被下达、取消、退还或发运。 |
 | 数据流ID（网站） | 允许数据从Adobe Experience Platform流到其他AdobeDX产品的ID。 此ID必须与您特定Adobe Commerce实例中的特定网站关联。 如果您指定自己的Experience PlatformWeb SDK，请不要在此字段中指定数据流ID。 Experience Platform连接器使用与该SDK关联的数据流ID，并忽略此字段中指定的任何数据流ID（如果有）。 |
 
-## 验证数据是否被发送到Experience Platform
+>[!NOTE]
+>
+>入门后，店面数据开始流向Experience Platform边缘。 后台数据需要大约5分钟才能显示在边缘。 随后的更新将根据cron计划显示在边缘。
 
-入门后，店面数据开始流向Experience Platform边缘。 后台数据在载入后大约需要5分钟才能显示在边缘。 随后的更新将根据cron计划显示在边缘。
+## 确认收集事件数据
 
-将商务数据发送到Experience Platform边缘时，您可以构建如下报表：
+要确认正在从您的商务商店收集数据，请使用 [Adobe Experience Platform debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) 来检查您的商务网站。 确认正在收集数据后，您可以运行一个查询来验证您的店面和后台事件数据是否显示在边缘，该查询会返回 [创建的数据集](overview.md#prerequisites).
 
-![Adobe Experience Platform中的商务数据](assets/aem-data-1.png)
-_Adobe Experience Platform中的商务数据_
+1. 选择 **查询** 在Experience Platform的左侧导航中，单击 [!UICONTROL Create Query].
+
+   ![查询编辑器](assets/query-editor.png)
+
+1. 在查询编辑器打开时，输入一个查询以从数据集中选择数据。
+
+   ![创建查询](assets/create-query.png)
+
+   例如，您的查询可能如下所示：
+
+   ```sql
+   SELECT * from `your_dataset_name` ORDER by TIMESTAMP DESC
+   ```
+
+1. 运行查询后，结果将显示在 **结果** 选项卡 **控制台** 选项卡。 此视图显示查询的表格输出。
+
+   ![查询编辑器](assets/query-results.png)
+
+在本例中，您会看到 [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview)，等等。 此视图允许您验证商务数据是否到达边缘。
+
+如果结果不是您预期的结果，请打开数据集并查找任何失败的批量导入。 详细了解 [批量导入疑难解答](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).

@@ -2,9 +2,9 @@
 title: 指南概述
 description: 了解如何使用Adobe Commerce连接器将Adobe Experience Platform数据与Experience Platform集成。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 22823b662eefa953fcca6ae78f6c37ee8abff3d1
+source-git-commit: 0d5bbe7d4e2070173930df66c4f159d65c7383ea
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -31,11 +31,12 @@ Experience Platform连接器显示在“商务管理员”下的 **系统** >服
 ## 入门步骤
 
 1. [安装](install.md) Experience Platform连接器扩展。
-1. [登录](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) Adobe帐户和 [视图](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) 您的组织ID。 组织ID是与您配置的Experience Cloud公司关联的ID。 此ID是由24个字符组成的字母数字字符串，其后跟（且必须包括） `@AdobeOrg`.
-1. [连接](connect-data.md) 您的Adobe Commerce实例到Adobe Experience Platform。
+1. [登录](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) Adobe帐户和 [查看以确认](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) 您的组织ID。 组织ID是与您配置的Experience Cloud公司关联的ID。 此ID是由24个字符组成的字母数字字符串，其后跟（且必须包括） `@AdobeOrg`.
 1. [创建或更新](update-xdm.md) 您的XDM架构，其中包含特定于商务的字段组。
-1. [创建数据集](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) 基于您创建或更新的架构。
+1. [创建数据集](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) 基于您创建或更新的架构。 此数据集将包含您发送的商务数据。
 1. [创建数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) 并选择包含特定于商务的字段组的XDM架构。
+1. [连接到Commerce Services](../landing/saas.md).
+1. [连接到Adobe Experience Platform](connect-data.md).
 
 ## 受众
 
