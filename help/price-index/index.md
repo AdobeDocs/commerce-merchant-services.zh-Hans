@@ -4,9 +4,9 @@ description: 使用SaaS价格索引提高性能
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 7b2d90eb809eada732ed5d3ad4e038bd9733c440
+source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```
 
-使用Luma和Adobe Commerce Core GraphQL的客户可以安装提供Luma兼容性的模块，并禁用PHP核心价格索引器：
+使用Luma和Adobe Commerce Core GraphQL的客户可以安装一个模块，以提供Luma和核心GraphQL兼容性，并禁用PHP核心价格索引器：
 
 ```
 adobe-commerce/catalog-adapter
@@ -68,16 +68,6 @@ adobe-commerce/catalog-adapter
 
 目前，SaaS价格索引支持简单、分组、虚拟、可配置和捆绑动态产品类型。
 即将支持可下载、礼品卡和捆绑固定产品类型。
-
-SaaS价格指数支持基价：
-
-* 最低/最高正常价格
-* 最低/最高最终价格
-* 特价
-* 客户群价格
-* 目录规则价格
-
-选择使用新的定价信息源后，您可以联系 [支持](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) 来帮助您撤消。
 
 新信息源应与 `resync` [CLI命令](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). 否则，数据将在标准同步过程中刷新。 获取有关 [目录同步](../landing/catalog-sync.md) 进程。
 
