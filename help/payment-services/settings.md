@@ -4,9 +4,9 @@ description: 安装后，您可以配置 [!DNL Payment Services] 在家里。
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: fac3efb74cdfdb855a3706d84cdca2dcde959940
+source-git-commit: f14b4a1abe9c0f85dc9f070467f94819c1fe89e6
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1909'
 ht-degree: 0%
 
 ---
@@ -153,7 +153,7 @@ ht-degree: 0%
 
       >[!NOTE]
       >
-      > 使用Apple Pay you [必须具有Apple沙盒测试人员帐户](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) （包括假信用卡和账单信息）以进行测试。 准备好在沙盒中使用Apple Pay时 _或_ 生产模式，在完成任何 [测试和验证](test-validate.md#test-in-sandbox-environment)，请联系您的销售代表以为您的实时商店启用此功能。
+      > 使用Apple Pay you [必须具有Apple沙盒测试人员帐户](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) （包括假信用卡和账单信息）以进行测试。 准备好在沙盒中使用Apple Pay时 _或_ 生产模式，在完成任何 [测试和验证](test-validate.md#test-in-sandbox-environment)，完成 [自注册 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_注册实时域_ 部分)和 [为您的商店配置 [!DNL Payment Services]](settings.md#payment-buttons).
 
       在您打开/关闭对付款按钮或PayPal稍后付款消息的可见性时，该配置的可视预览将显示在“设置”页面的底部。
 

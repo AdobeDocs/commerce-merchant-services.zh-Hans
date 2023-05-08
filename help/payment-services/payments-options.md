@@ -2,7 +2,7 @@
 title: 付款选项
 description: 设置付款选项以自定义商店客户可用的方法。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: fac3efb74cdfdb855a3706d84cdca2dcde959940
+source-git-commit: 9bc392f2ae12269ded6174b830562444d6827f5f
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 要使用Apple Pay，请联系您的销售代表或Adobe客户团队，为您的实时商店启用它。
+> 使用 [!DNL Apple Pay] 为您的商店，完成 [自注册 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_注册实时域_ 部分)和 [为您的商店配置 [!DNL Payment Services]](settings.md#payment-buttons).
 
 ### [!DNL Pay Later] 按钮
 
