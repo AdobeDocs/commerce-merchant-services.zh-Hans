@@ -1,6 +1,6 @@
 ---
-title: 发行说明
-description: 来自Adobe Commerce的Adobe Experience Platform Connector的最新发行信息。
+title: 發行說明
+description: Adobe CommerceAdobe Experience Platform聯結器的最新發行資訊。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 source-git-commit: 22823b662eefa953fcca6ae78f6c37ee8abff3d1
 workflow-type: tm+mt
@@ -9,35 +9,35 @@ ht-degree: 1%
 
 ---
 
-# 发行说明
+# 發行說明
 
-以下发行说明包含对Experience Platform连接器的更新，其中包括：
+這些發行說明包含Experience Platform聯結器的更新，並包括：
 
-* ![新建](../assets/new.svg)  — 新增功能
-* ![修复](../assets/fix.svg)  — 修复和改进功能
-* ![错误](../assets/bug.svg)  — 已知问题
+* ![新增](../assets/new.svg)  — 新功能
+* ![修正](../assets/fix.svg)  — 修正和改良
+* ![錯誤](../assets/bug.svg)  — 已知問題
 
-有关与Experience Platform连接器使用的扩展相关的功能更改和修复，请参阅 **支持的服务更新**.
+有關Experience Platform聯結器使用的擴充功能的變更和修正，請參閱 **支援的服務更新**.
 
-请参阅 [即将发行的版本](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) 了解发行计划和支持。
+另請參閱 [即將發行的版本](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) 瞭解發行排程和支援。
 
-请参阅开发人员文档，以 [了解产品兼容性](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+請參閱開發人員檔案，以 [瞭解產品相容性](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
-## 支持的服务更新
+## 支援的服務更新
 
-以下发行说明介绍了与Experience Platform连接器使用的扩展相关的功能更改和修复。
+這些發行說明說明說明說明與Experience Platform聯結器使用的擴充功能相關的功能變更和修正。
 
-+++支持的服务更新
++++支援的服務更新
 
 _2023年3月30日_
 
-* ![新建](../assets/new.svg)  — 添加了一个名为 `data-services-b2b` 包括 [申请列表事件](events.md#b2b-events) 对于B2B商户
-* ![新建](../assets/new.svg)  — 添加了 `uniqueIdentifier` 字段 [搜索](events.md#search-events) 事件。 此新字段允许商家交叉引用哪些搜索请求与哪些搜索响应相对应。
+* ![新增](../assets/new.svg)  — 新增名為的新擴充功能 `data-services-b2b` 包括 [請購單清單事件](events.md#b2b-events) 適用於B2B商家
+* ![新增](../assets/new.svg)  — 新增 `uniqueIdentifier` 欄位至 [搜尋](events.md#search-events) 事件。 此新欄位可讓商家交叉參考與哪些搜尋回應相對應的搜尋請求。
 
 _2022年10月12日_
 
-* ![新建](../assets/new.svg)  — 添加了两个 [storefront事件](events.md): `openCart` 和 `removeFromCart` 到Adobe Commerce Storefront Events SDK和收集器
-* ![新建](../assets/new.svg)  — 添加了对 [AEM storefront](overview.md#aem-support)
+* ![新增](../assets/new.svg)  — 新增兩個 [店面活動](events.md)： `openCart` 和 `removeFromCart` 前往Adobe Commerce店面事件SDK和收集器
+* ![新增](../assets/new.svg)  — 新增對 [AEM店面](overview.md#aem-support)
 
 +++
 
@@ -45,49 +45,49 @@ _2022年10月12日_
 
 _2023年3月30日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-* ![新建](../assets/new.svg)  — 捆绑 `commerce-data-export` 和 `saas-export` 依赖关系 `experience-platform-connector` 扩展。 以前，您必须单独安装这些依赖项。 这些依赖项以及商户配置支持服务器端处理 [后台事件](events.md#back-office-events).
-* ![新建](../assets/new.svg)  — 添加了名为 [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
+* ![新增](../assets/new.svg)  — 套件式 `commerce-data-export` 和 `saas-export` 與的相依性 `experience-platform-connector` 副檔名。 之前，您必須個別安裝這些相依性。 這些相依性及商家設定可讓伺服器端處理 [後台活動](events.md#back-office-events).
+* ![新增](../assets/new.svg)  — 已新增名為的新後台事件 [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
 
 ## 2.1.1
 
 _2023年2月28日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-* ![新建](../assets/new.svg)  — 为所有Experience Platform连接器模块添加了对PHP 8.2的支持
+* ![新增](../assets/new.svg)  — 新增所有Experience Platform聯結器模組的PHP 8.2支援
 
 ## 2.1.0
 
 _2023年1月17日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-* ![新建](../assets/new.svg)  — 更新了 [Experience Platform连接器管理](connect-data.md) 以便您可以指定自己的AEP Web SDK(alloy)。
-* ![修复](../assets/fix.svg) 已更改为使用 `identityMap` 而不是 `personID` 为推送到边缘的任何数据设置主标识时。
+* ![新增](../assets/new.svg)  — 已更新 [Experience Platform聯結器管理員](connect-data.md) 以便您指定自己的AEP Web SDK (alloy)。
+* ![修正](../assets/fix.svg) 變更為使用 `identityMap` 而非 `personID` 為推播至邊緣的任何資料設定主要身分時。
 
 ## 2.0.1
 
 _2022年11月10日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-* ![修复的问题](../assets/fix.svg)  — 现在，仅在成功加载Storefront事件收集器和Storefront事件SDK后，才设置Adobe Experience Platform上下文。
+* ![已修正的問題](../assets/fix.svg)  — 現在，Adobe Experience Platform內容只有在Storefront事件收集器和店面事件SDK成功載入後才會設定。
 
 ## 2.0.0
 
 _2022年10月12日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-* ![新建](../assets/new.svg)  — 添加了在以下情况下指定您自己的AEP Web SDK的功能： [连接](connect-data.md) 您的Adobe Commerce实例到Experience Platform
-* ![修复](../assets/fix.svg)  — 更新了数据流范围要求，以便数据流ID的范围必须限于网站，而不是storeview
+* ![新增](../assets/new.svg)  — 新增在下列情況下指定您自己的AEP Web SDK的功能 [正在連線](connect-data.md) 將您的Adobe Commerce執行個體傳送至Experience Platform
+* ![修正](../assets/fix.svg)  — 更新資料串流範圍要求，以便資料串流ID的範圍必須限定於網站而非儲存檢閱
 
 ## 1.0.0
 
 _2022年8月9日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-* ![新建](../assets/new.svg)  — 正式发布
+* ![新增](../assets/new.svg)  — 正式發行

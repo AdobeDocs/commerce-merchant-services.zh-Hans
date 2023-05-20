@@ -1,6 +1,6 @@
 ---
-title: “样式 [!DNL Popover] 元素”
-description: “关于自定义 [!DNL Live Search storefront popover]"
+title: 「樣式 [!DNL Popover] 元素」
+description: 「關於自訂的技術說明 [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
 source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
@@ -9,9 +9,9 @@ ht-degree: 0%
 
 ---
 
-# 样式 [!DNL Popover] 元素
+# 樣式 [!DNL Popover] 元素
 
-的 [[!DNL storefront popover]](storefront-popover.md) 始终显示产品 `name` 和 `price`，且无法配置字段的选择。 但是， [!DNL popover] 元素可以使用CSS类设置样式。 例如，以下声明会更改 [!DNL popover] 容器和页脚。
+此 [[!DNL storefront popover]](storefront-popover.md) 一律顯示產品 `name` 和 `price`，且無法設定欄位的選取範圍。 不過， [!DNL popover] 可以使用CSS類別來設定元素的樣式。 例如，下列宣告會變更 [!DNL popover] 容器和頁尾。
 
 ```css
 .livesearch.popover-container {
@@ -23,20 +23,20 @@ ht-degree: 0%
 }
 ```
 
-## 容器可见性
+## 容器可見性
 
-的父组件 `.livesearch.popover-container` is `.search-autocomplete`.  的 `.active` 类表示容器的可见性。 的 `.active` 当 [!DNL popover] 打开。
+的父元件 `.livesearch.popover-container` 是 `.search-autocomplete`.  此 `.active` class表示容器的可見性。 此 `.active` 類別是有條件新增的，當 [!DNL popover] 「 」已開啟。
 
 ```css
 .search-autocomplete.active   /* visible */
 .search-autocomplete          /* not visible */
 ```
 
-有关店面元素样式的更多信息，请参阅 [层叠样式表(CSS)](https://developer.adobe.com/commerce/frontend-core/guide/css/) 在 [Frontend开发人员指南](https://developer.adobe.com/commerce/frontend-core/guide/).
+如需有關樣式化店面元素的詳細資訊，請參閱 [階層式樣式表(CSS)](https://developer.adobe.com/commerce/frontend-core/guide/css/) 在 [前端開發人員指南](https://developer.adobe.com/commerce/frontend-core/guide/).
 
-## 类选择器
+## 類別選取器
 
-以下类选择器可用于设置 [!DNL popover].
+下列類別選取器可用來設定容器和產品元素在 [!DNL popover].
 
 * `.livesearch.popover-container`
 * `.livesearch.view-all-footer`
@@ -45,7 +45,7 @@ ht-degree: 0%
 * `.livesearch.product-name`
 * `.livesearch.product-price`
 
-### 容器类选择器
+### 容器類別選取器
 
 #### .livesearch.popover-container
 
@@ -53,29 +53,29 @@ ht-degree: 0%
 
 #### .livesearch.view-all-footer
 
-![查看所有页脚](assets/livesearch-view-all-footer.png)
+![檢視所有頁尾](assets/livesearch-view-all-footer.png)
 
-### 产品类选择器
+### 產品類別選擇器
 
 #### .livesearch.products-container
 
-![产品容器](assets/livesearch-product-container.png)
+![產品容器](assets/livesearch-product-container.png)
 
 #### .livesearch.product-result
 
-![产品结果](assets/livesearch-product-result.png)
+![產品結果](assets/livesearch-product-result.png)
 
 #### .livesearch.product-name
 
-![产品名称](assets/livesearch-product-name.png)
+![產品名稱](assets/livesearch-product-name.png)
 
 #### .livesearch.product-price
 
-![产品价格](assets/livesearch-product-price.png)
+![產品價格](assets/livesearch-product-price.png)
 
-## 使用修改的主题 {#working-with-modified-theme}
+## 使用修改的主題 {#working-with-modified-theme}
 
-的 [!DNL storefront popover] 可与自定义 [主题](https://developer.adobe.com/commerce/frontend-core/guide/themes/) 会从 *卢马*. 的 `top.search` 块 `header-wrapper` 的 `Magento_Search` 不得修改模块。
+此 [!DNL storefront popover] 可與自訂的 [主題](https://developer.adobe.com/commerce/frontend-core/guide/themes/) 會繼承以下專案的必要檔案： *Luma*. 此 `top.search` 中的區塊 `header-wrapper` 的 `Magento_Search` 模組不可修改。
 
 ```html
 <referenceContainer name="header-wrapper">
@@ -87,9 +87,9 @@ ht-degree: 0%
 </referenceContainer>
 ```
 
-## 禁用 [!DNL popover]
+## 停用 [!DNL popover]
 
-禁用 [!DNL popover] 并恢复标准 [快速搜索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 功能中，输入以下命令：
+若要停用 [!DNL popover] 並還原標準 [快速搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 功能，輸入下列命令：
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover

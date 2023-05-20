@@ -1,6 +1,6 @@
 ---
 title: 事件
-description: 了解每个事件捕获的数据。
+description: 瞭解每個事件會擷取哪些資料。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 source-git-commit: ddacfc053f83be750c63ba376519169b38f7f478
 workflow-type: tm+mt
@@ -9,545 +9,545 @@ ht-degree: 0%
 
 ---
 
-# Experience Platform连接器事件
+# Experience Platform聯結器事件
 
-下面列出了安装Commerce Connector扩展时可用的Experience Platform事件。 这些事件收集的数据会发送到Adobe Experience Platform Edge。 您还可以创建 [自定义事件](custom-events.md) 来收集开箱即用未提供的其他数据。
+以下列出您在安裝Experience Platform聯結器擴充功能時可用的Commerce事件。 這些事件收集的資料會傳送至Adobe Experience Platform Edge。 您也可以建立 [自訂事件](custom-events.md) 以收集未立即提供的其他資料。
 
-除了以下事件收集的数据之外，您还会 [其他数据](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) 由Adobe Experience Platform Web SDK提供。
+除了下列事件收集的資料外，您也會收到 [其他資料](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) 由Adobe Experience Platform Web SDK提供。
 
-## 店面事件
+## 店面活動
 
-店面事件在购物者浏览您的网站时从他们那里收集匿名化行为数据。 这些事件收集的数据可用于创建针对特定购物者集的促销活动和促销活动。
+店面活動會收集購物者瀏覽您網站時的匿名行為資料。 這些事件收集到的資料可用來建立針對特定購物者的促銷活動和行銷活動。
 
 >[!NOTE]
 >
->所有店面事件都包括 [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) 字段，其中包括购物者的电子邮件地址（如果可用）和ECID。 通过在每个事件中包含此用户档案数据，您无需从Adobe Commerce中单独导入用户帐户。
+>所有店面活動都包括 [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) 欄位，包含購物者的電子郵件地址（若有）和ECID。 將這個設定檔資料納入每個事件，您就不需要從Adobe Commerce匯入個別的使用者帳戶。
 
 ### addToCart
 
-| 描述 | XDM事件名称 |
+| 說明 | XDM事件名稱 |
 |---|---|
-| 当产品添加到购物车或购物车中产品的数量增加时触发。 | `commerce.productListAdds` |
+| 當產品新增到購物車或購物車中的產品數量增加時觸發。 | `commerce.productListAdds` |
 
-#### 从addToCart收集的数据
+#### 從addToCart收集的資料
 
-下表描述了为此事件收集的数据。
+下表說明為此事件收集的資料。
 
-| 字段 | 描述 |
+| 欄位 | 說明 |
 |---|---|
-| `productListAdds` | 指示产品是否已添加到购物车。 值 `1` 表示已添加产品。 |
-| `productListItems` | 添加到购物车的一组产品 |
-| `SKU` | 库存单位。 产品的唯一标识符。 |
-| `name` | 产品的显示名称或人类可读的名称 |
-| `priceTotal` | 产品行项目的总价格 |
-| `quantity` | 添加到购物车的产品件数 |
-| `discountAmount` | 指示应用的折扣金额 |
-| `currencyCode` | 的 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 产品的货币 |
-| `productImageUrl` | 产品的主图像URL |
-| `selectedOptions` | 用于可配置产品的字段。 `attribute` 标识可配置产品的属性，例如 `size` 或 `color` 和 `value` 标识属性的值，例如 `small` 或 `black`. |
-| `cartID` | 标识客户购物车的唯一ID |
+| `productListAdds` | 表示是否已將產品新增至購物車。 值 `1` 表示已新增產品。 |
+| `productListItems` | 加入購物車的一系列產品 |
+| `SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `name` | 產品的顯示名稱或人類看得懂的名稱 |
+| `priceTotal` | 產品明細專案的總價 |
+| `quantity` | 加入購物車的產品單位數 |
+| `discountAmount` | 表示已套用的折扣金額 |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 產品的貨幣 |
+| `productImageUrl` | 產品的主要影像URL |
+| `selectedOptions` | 用於可設定產品的欄位。 `attribute` 會識別可設定產品的屬性，例如 `size` 或 `color` 和 `value` 會識別屬性的值，例如 `small` 或 `black`. |
+| `cartID` | 識別客戶購物車的唯一ID |
 
 ### openCart
 
-| 描述 | XDM事件名称 |
+| 說明 | XDM事件名稱 |
 |---|---|
-| 创建新购物车时触发，即将产品添加到空购物车时。 | `commerce.productListOpens` |
+| 建立新購物車時觸發，亦即當產品新增至空白購物車時觸發。 | `commerce.productListOpens` |
 
-#### 从openCart收集的数据
+#### 從openCart收集的資料
 
-下表描述了为此事件收集的数据。
+下表說明為此事件收集的資料。
 
-| 字段 | 描述 |
+| 欄位 | 說明 |
 |---|---|
-| `productListOpens` | 指示是否已创建购物车。 值 `1` 表示购物车已创建。 |
-| `productListItems` | 添加到购物车的一组产品 |
-| `SKU` | 库存单位。 产品的唯一标识符。 |
-| `name` | 产品的显示名称或人类可读的名称 |
-| `priceTotal` | 产品行项目的总价格 |
-| `quantity` | 添加到购物车的产品件数 |
-| `discountAmount` | 指示应用的折扣金额 |
-| `currencyCode` | 的 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 产品的货币 |
-| `productImageUrl` | 产品的主图像URL |
-| `selectedOptions` | 用于可配置产品的字段。 `attribute` 标识可配置产品的属性，例如 `size` 或 `color` 和 `value` 标识属性的值，例如 `small` 或 `black`. |
-| `cartID` | 标识客户购物车的唯一ID |
+| `productListOpens` | 指出是否已建立購物車。 值 `1` 表示已建立購物車。 |
+| `productListItems` | 加入購物車的一系列產品 |
+| `SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `name` | 產品的顯示名稱或人類看得懂的名稱 |
+| `priceTotal` | 產品明細專案的總價 |
+| `quantity` | 加入購物車的產品單位數 |
+| `discountAmount` | 表示已套用的折扣金額 |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 產品的貨幣 |
+| `productImageUrl` | 產品的主要影像URL |
+| `selectedOptions` | 用於可設定產品的欄位。 `attribute` 會識別可設定產品的屬性，例如 `size` 或 `color` 和 `value` 會識別屬性的值，例如 `small` 或 `black`. |
+| `cartID` | 識別客戶購物車的唯一ID |
 
 ### removeFromCart
 
-| 描述 | XDM事件名称 |
+| 說明 | XDM事件名稱 |
 |---|---|
-| 每次删除产品时或每次购物车中产品的数量减少时触发。 | `commerce.productListRemovals` |
+| 每次移除產品或購物車中的產品數量減少時觸發。 | `commerce.productListRemovals` |
 
-#### 从removeFromCart收集的数据
+#### 從removeFromCart收集的資料
 
-下表描述了为此事件收集的数据。
+下表說明為此事件收集的資料。
 
-| 字段 | 描述 |
+| 欄位 | 說明 |
 |---|---|
-| `productListRemovals` | 指示产品是否已从购物车中删除。 值 `1` 表示产品已从购物车中删除。 |
-| `productListItems` | 从购物车中删除的一组产品 |
-| `SKU` | 库存单位。 产品的唯一标识符。 |
-| `name` | 产品的显示名称或人类可读的名称 |
-| `priceTotal` | 产品行项目的总价格 |
-| `quantity` | 从购物车中删除的产品件数 |
-| `discountAmount` | 指示应用的折扣金额 |
-| `currencyCode` | 的 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 产品的货币 |
-| `productImageUrl` | 产品的主图像URL |
-| `selectedOptions` | 用于可配置产品的字段。 `attribute` 标识可配置产品的属性，例如 `size` 或 `color` 和 `value` 标识属性的值，例如 `small` 或 `black`. |
-| `cartID` | 标识客户购物车的唯一ID |
+| `productListRemovals` | 表示產品是否已從購物車中移除。 值 `1` 表示產品已從購物車中移除。 |
+| `productListItems` | 從購物車移除的一系列產品 |
+| `SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `name` | 產品的顯示名稱或人類看得懂的名稱 |
+| `priceTotal` | 產品明細專案的總價 |
+| `quantity` | 從購物車中移除的產品單位數 |
+| `discountAmount` | 表示已套用的折扣金額 |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 產品的貨幣 |
+| `productImageUrl` | 產品的主要影像URL |
+| `selectedOptions` | 用於可設定產品的欄位。 `attribute` 會識別可設定產品的屬性，例如 `size` 或 `color` 和 `value` 會識別屬性的值，例如 `small` 或 `black`. |
+| `cartID` | 識別客戶購物車的唯一ID |
 
 ### shoppingCartView
 
-| 描述 | XDM事件名称 |
+| 說明 | XDM事件名稱 |
 |---|---|
-| 加载任何购物车页面时触发。 | `commerce.productListViews` |
+| 任何購物車頁面載入時觸發。 | `commerce.productListViews` |
 
-#### 从shoppingCartView收集的数据
+#### 從shoppingCartView收集的資料
 
-下表描述了为此事件收集的数据。
+下表說明為此事件收集的資料。
 
-| 字段 | 描述 |
+| 欄位 | 說明 |
 |---|---|
-| `productListViews` | 指示是否查看了产品列表 |
-| `productListItems` | 购物车中的一系列产品 |
-| `SKU` | 库存单位。 产品的唯一标识符。 |
-| `name` | 产品的显示名称或人类可读的名称 |
-| `priceTotal` | 产品行项目的总价格 |
-| `quantity` | 购物车中的产品件数 |
-| `discountAmount` | 指示应用的折扣金额 |
-| `currencyCode` | 的 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 产品的货币 |
-| `productImageUrl` | 产品的主图像URL |
-| `selectedOptions` | 用于可配置产品的字段。 `attribute` 标识可配置产品的属性，例如 `size` 或 `color` 和 `value` 标识属性的值，例如 `small` 或 `black`. |
-| `cartID` | 标识客户购物车的唯一ID |
+| `productListViews` | 顯示是否檢視過產品清單 |
+| `productListItems` | 購物車中的一系列產品 |
+| `SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `name` | 產品的顯示名稱或人類看得懂的名稱 |
+| `priceTotal` | 產品明細專案的總價 |
+| `quantity` | 購物車中的產品單位數 |
+| `discountAmount` | 表示已套用的折扣金額 |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 產品的貨幣 |
+| `productImageUrl` | 產品的主要影像URL |
+| `selectedOptions` | 用於可設定產品的欄位。 `attribute` 會識別可設定產品的屬性，例如 `size` 或 `color` 和 `value` 會識別屬性的值，例如 `small` 或 `black`. |
+| `cartID` | 識別客戶購物車的唯一ID |
 
 ### pageView
 
-| 描述 | XDM事件名称 |
+| 說明 | XDM事件名稱 |
 |---|---|
-| 加载任何页面时触发。 | `web.webpagedetails.pageViews` |
+| 任何頁面載入時觸發。 | `web.webpagedetails.pageViews` |
 
-#### 从pageView收集的数据
+#### 從pageView收集的資料
 
-下表描述了为此事件收集的数据。
+下表說明為此事件收集的資料。
 
-| 字段 | 描述 |
+| 欄位 | 說明 |
 |---|---|
-| `pageViews` | 指示是否已加载页面。 A `value` of `1` 表示页面已加载。 |
+| `pageViews` | 指出頁面是否已載入。 A `value` 之 `1` 表示頁面已載入。 |
 
 ### productPageView
 
-| 描述 | XDM事件名称 |
+| 說明 | XDM事件名稱 |
 |---|---|
-| 加载任何产品页面时触发。 | `commerce.productViews` |
+| 任何產品頁面載入時觸發。 | `commerce.productViews` |
 
-#### 从productPageView收集的数据
+#### 從productPageView收集的資料
 
-下表描述了为此事件收集的数据。
+下表說明為此事件收集的資料。
 
-| 字段 | 描述 |
+| 欄位 | 說明 |
 |---|---|
-| `productViews` | 指示产品是否已查看 |
-| `productListItems` | 购物车中的一系列产品 |
-| `SKU` | 库存单位。 产品的唯一标识符。 |
-| `name` | 产品的显示名称或人类可读的名称 |
-| `priceTotal` | 产品行项目的总价格 |
-| `discountAmount` | 指示应用的折扣金额 |
-| `currencyCode` | 的 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 产品的货币 |
-| `productImageUrl` | 产品的主图像URL |
-| `selectedOptions` | 用于可配置产品的字段。 `attribute` 标识可配置产品的属性，例如 `size` 或 `color` 和 `value` 标识属性的值，例如 `small` 或 `black`. |
+| `productViews` | 顯示是否檢視過產品 |
+| `productListItems` | 購物車中的一系列產品 |
+| `SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `name` | 產品的顯示名稱或人類看得懂的名稱 |
+| `priceTotal` | 產品明細專案的總價 |
+| `discountAmount` | 表示已套用的折扣金額 |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 產品的貨幣 |
+| `productImageUrl` | 產品的主要影像URL |
+| `selectedOptions` | 用於可設定產品的欄位。 `attribute` 會識別可設定產品的屬性，例如 `size` 或 `color` 和 `value` 會識別屬性的值，例如 `small` 或 `black`. |
 
 ### startCheckout
 
-| 描述 | XDM事件名称 |
+| 說明 | XDM事件名稱 |
 |---|---|
-| 购物者单击结帐按钮时触发。 | `commerce.checkouts` |
+| 購物者按一下結帳按鈕時觸發。 | `commerce.checkouts` |
 
-#### 从startCheckout收集的数据
+#### 從startCheckout收集的資料
 
-下表描述了为此事件收集的数据。
+下表說明為此事件收集的資料。
 
-| 字段 | 描述 |
+| 欄位 | 說明 |
 |---|---|
-| `checkouts` | 指示在结帐过程中是否发生操作 |
-| `productListItems` | 购物车中的一系列产品 |
-| `SKU` | 库存单位。 产品的唯一标识符。 |
-| `name` | 产品的显示名称或人类可读的名称 |
-| `priceTotal` | 产品行项目的总价格 |
-| `quantity` | 购物车中的产品件数 |
-| `discountAmount` | 指示应用的折扣金额 |
-| `currencyCode` | 的 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 产品的货币 |
-| `productImageUrl` | 产品的主图像URL |
-| `selectedOptions` | 用于可配置产品的字段。 `attribute` 标识可配置产品的属性，例如 `size` 或 `color` 和 `value` 标识属性的值，例如 `small` 或 `black`. |
-| `cartID` | 标识客户购物车的唯一ID |
+| `checkouts` | 表示在結帳過程中是否發生動作 |
+| `productListItems` | 購物車中的一系列產品 |
+| `SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `name` | 產品的顯示名稱或人類看得懂的名稱 |
+| `priceTotal` | 產品明細專案的總價 |
+| `quantity` | 購物車中的產品單位數 |
+| `discountAmount` | 表示已套用的折扣金額 |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 產品的貨幣 |
+| `productImageUrl` | 產品的主要影像URL |
+| `selectedOptions` | 用於可設定產品的欄位。 `attribute` 會識別可設定產品的屬性，例如 `size` 或 `color` 和 `value` 會識別屬性的值，例如 `small` 或 `black`. |
+| `cartID` | 識別客戶購物車的唯一ID |
 
 ### completeCheckout
 
-| 描述 | XDM事件名称 |
+| 說明 | XDM事件名稱 |
 |---|---|
-| 购物者下订单时触发。 | `commerce.order` |
+| 購物者下訂單時觸發。 | `commerce.order` |
 
-#### 从completeCheckout收集的数据
+#### 從completeCheckout收集的資料
 
-下表描述了为此事件收集的数据。
+下表說明為此事件收集的資料。
 
-| 字段 | 描述 |
+| 欄位 | 說明 |
 |---|---|
-| `purchases` | 指示是否接受了订单 |
-| `order` | 包含有关一个或多个产品的已下单的信息 |
-| `purchaseID` | 卖方为此采购或合同分配的唯一标识符。 无法保证ID是唯一的。 |
-| `orderType` | 指示已下单的类型，如“结帐”或“即时购买” |
-| `payments` | 此订单的付款列表 |
-| `currencyCode` | 的 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用于此付款项的货币代码。 例如， `USD` 或 `EUR`. |
-| `paymentAmount` | 付款的价值 |
-| `paymentType` | 此订单的付款方式。 选项包括： `cash`, `credit_card`, `debit_card`, `gift_card`, `check`, `paypal`, `wire_transfer`, `credit_card_reference`, `other` |
-| `transactionID` | 此付款项的唯一交易记录标识符 |
-| `shipping` | 一个或多个产品的装运详细信息。 |
-| `shippingMethod` | 客户选择的运输方法，如标准交货、快速交货、商店取货等 |
-| `shippingAmount` | 购物车中商品的总装运成本 |
-| `promotionID` | 促销活动的唯一标识符（如果有） |
-| `personalEmail` | 指定个人电子邮件地址 |
-| `address` | 例如，技术地址 `name@domain.com` RFC2822及后续标准中通常定义的 |
-| `productListItems` | 购物车中的一系列产品 |
-| `SKU` | 库存单位。 产品的唯一标识符。 |
-| `name` | 产品的显示名称或人类可读的名称 |
-| `priceTotal` | 产品行项目的总价格 |
-| `quantity` | 购物车中的产品件数 |
-| `discountAmount` | 指示应用的折扣金额 |
-| `currencyCode` | 的 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用于订单合计的货币代码。 |
-| `productImageUrl` | 产品的主图像URL |
-| `selectedOptions` | 用于可配置产品的字段。 `attribute` 标识可配置产品的属性，例如 `size` 或 `color` 和 `value` 标识属性的值，例如 `small` 或 `black`. |
+| `purchases` | 表示是否已接受訂單 |
+| `order` | 包含一或多個產品已下訂單的相關資訊 |
+| `purchaseID` | 賣家為此購買或合約所指派的唯一識別碼。 無法保證ID是唯一的。 |
+| `orderType` | 指示已下訂單的型別，例如「結帳」或「立即購買」 |
+| `payments` | 此訂單的付款清單 |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用於此付款專案的幣別代碼。 例如， `USD` 或 `EUR`. |
+| `paymentAmount` | 付款值 |
+| `paymentType` | 此訂單的付款方式。 選項包括： `cash`， `credit_card`， `debit_card`， `gift_card`， `check`， `paypal`， `wire_transfer`， `credit_card_reference`， `other` |
+| `transactionID` | 此付款專案的唯一交易識別碼 |
+| `shipping` | 一或多個產品的送貨詳細資料。 |
+| `shippingMethod` | 客戶選擇的配送方式，例如標準配送、加急配送、到店取貨等 |
+| `shippingAmount` | 購物車中專案的總送貨成本 |
+| `promotionID` | 促銷的唯一識別碼（若有） |
+| `personalEmail` | 指定個人電子郵件地址 |
+| `address` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義 |
+| `productListItems` | 購物車中的一系列產品 |
+| `SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `name` | 產品的顯示名稱或人類看得懂的名稱 |
+| `priceTotal` | 產品明細專案的總價 |
+| `quantity` | 購物車中的產品單位數 |
+| `discountAmount` | 表示已套用的折扣金額 |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用於訂單總計的貨幣代碼。 |
+| `productImageUrl` | 產品的主要影像URL |
+| `selectedOptions` | 用於可設定產品的欄位。 `attribute` 會識別可設定產品的屬性，例如 `size` 或 `color` 和 `value` 會識別屬性的值，例如 `small` 或 `black`. |
 
-## 用户档案事件
+## 設定檔事件
 
-用户档案事件包括帐户信息，例如 `signIn`, `signOut`, `createAccount`和 `editAccount`. 此数据用于帮助填充更好地定义区段或执行营销活动所需的关键客户详细信息，例如，您希望定位居住在纽约的购物者。
+設定檔事件包含帳戶資訊，例如 `signIn`， `signOut`， `createAccount`、和 `editAccount`. 此資料用於協助填入重要客戶詳細資訊，這些詳細資訊是更好定義區段或執行行銷活動所需的資訊，例如，如果您想要鎖定居住在紐約的購物者。
 
-### signIn
+### 登入
 
-| 描述 | XDM事件名称 |
+| 說明 | XDM事件名稱 |
 |---|---|
-| 购物者尝试登录时触发。 | `userAccount.login` |
+| 購物者嘗試登入時觸發。 | `userAccount.login` |
 
 >[!NOTE]
 >
-> 此事件在尝试特定操作时触发。 它不表示操作成功。
+> 嘗試特定動作時會觸發此事件。 這並不表示動作成功。
 
-#### 从signIn收集的数据
+#### 從登入收集的資料
 
-下表描述了为此事件收集的数据。
+下表說明為此事件收集的資料。
 
-| 字段 | 描述 |
+| 欄位 | 說明 |
 |---|---|
-| `person` | 个人行为者、联系人或所有者 |
-| `accountID` | 捕获用户帐户ID |
-| `accountType` | 捕获用户帐户类型，例如 `Personal` 或 `Company`（如果适用） |
-| `personalEmailID` | 例如，技术地址 `name@domain.com` RFC2822及后续标准中通常定义的 |
-| `personalEmail` | 捕获联系人详细信息 — 电子邮件和关联信息 |
-| `address` | 例如，技术地址 `name@domain.com` RFC2822及后续标准中通常定义的 |
-| `userAccount` | 指示任何忠诚度详细信息、首选项、登录流程和其他帐户首选项 |
-| `login` | 指示访客是否尝试登录 |
+| `person` | 個別執行者、連絡人或擁有者 |
+| `accountID` | 擷取使用者帳戶ID |
+| `accountType` | 擷取使用者帳戶型別，例如 `Personal` 或 `Company`，如適用 |
+| `personalEmailID` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義 |
+| `personalEmail` | 擷取連絡人詳細資料 — 電子郵件和相關資訊 |
+| `address` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義 |
+| `userAccount` | 表示任何忠誠度詳細資料、偏好設定、登入程式和其他帳戶偏好設定 |
+| `login` | 顯示訪客是否嘗試登入 |
 
-### signOut
+### 登出
 
-| 描述 | XDM事件名称 |
+| 說明 | XDM事件名稱 |
 |---|---|
-| 购物者尝试注销时触发。 | `userAccount.logout` |
+| 購物者嘗試登出時觸發。 | `userAccount.logout` |
 
 >[!NOTE]
 >
-> 此事件在尝试特定操作时触发。 它不表示操作成功。
+> 嘗試特定動作時會觸發此事件。 這並不表示動作成功。
 
-#### 从signOut收集的数据
+#### 從登出收集的資料
 
-下表描述了为此事件收集的数据。
+下表說明為此事件收集的資料。
 
-| 字段 | 描述 |
+| 欄位 | 說明 |
 |---|---|
-| `userAccount` | 指示任何忠诚度详细信息、首选项、登录流程和其他帐户首选项 |
-| `logout` | 指示访客是否尝试注销 |
+| `userAccount` | 表示任何忠誠度詳細資料、偏好設定、登入程式和其他帳戶偏好設定 |
+| `logout` | 顯示訪客是否嘗試登出 |
 
 ### createAccount
 
-| 描述 | XDM事件名称 |
+| 說明 | XDM事件名稱 |
 |---|---|
-| 购物者尝试创建帐户时触发。 | `userAccount.createProfile` |
+| 購物者嘗試建立帳戶時觸發。 | `userAccount.createProfile` |
 
 >[!NOTE]
 >
-> 此事件在尝试特定操作时触发。 它不表示操作成功。
+> 嘗試特定動作時會觸發此事件。 這並不表示動作成功。
 
-#### 从createAccount收集的数据
+#### 從createAccount收集的資料
 
-下表描述了为此事件收集的数据。
+下表說明為此事件收集的資料。
 
-| 字段 | 描述 |
+| 欄位 | 說明 |
 |---|---|
-| `person` | 个人行为者、联系人或所有者 |
-| `accountID` | 捕获用户帐户ID |
-| `accountType` | 捕获用户帐户类型，例如 `Personal` 或 `Company`（如果适用） |
-| `personalEmailID` | 例如，技术地址 `name@domain.com` RFC2822及后续标准中通常定义的 |
-| `personalEmail` | 捕获联系人详细信息 — 电子邮件和关联信息 |
-| `address` | 例如，技术地址 `name@domain.com` RFC2822及后续标准中通常定义的 |
-| `userAccount` | 指示任何忠诚度详细信息、首选项、登录流程和其他帐户首选项 |
-| `createProfile` | 指示用户是否已创建帐户配置文件 |
+| `person` | 個別執行者、連絡人或擁有者 |
+| `accountID` | 擷取使用者帳戶ID |
+| `accountType` | 擷取使用者帳戶型別，例如 `Personal` 或 `Company`，如適用 |
+| `personalEmailID` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義 |
+| `personalEmail` | 擷取連絡人詳細資料 — 電子郵件和相關資訊 |
+| `address` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義 |
+| `userAccount` | 表示任何忠誠度詳細資料、偏好設定、登入程式和其他帳戶偏好設定 |
+| `createProfile` | 顯示使用者是否已建立帳戶設定檔 |
 
 ### editAccount
 
-| 描述 | XDM事件名称 |
+| 說明 | XDM事件名稱 |
 |---|---|
-| 当购物者尝试编辑帐户时触发。 | `userAccount.updateProfile` |
+| 購物者嘗試編輯帳戶時觸發。 | `userAccount.updateProfile` |
 
 >[!NOTE]
 >
-> 此事件在尝试特定操作时触发。 它不表示操作成功。
+> 嘗試特定動作時會觸發此事件。 這並不表示動作成功。
 
-#### 从editAccount收集的数据
+#### 從editAccount收集的資料
 
-下表描述了为此事件收集的数据。
+下表說明為此事件收集的資料。
 
-| 字段 | 描述 |
+| 欄位 | 說明 |
 |---|---|
-| `person` | 个人行为者、联系人或所有者 |
-| `accountID` | 捕获用户帐户ID |
-| `accountType` | 捕获用户帐户类型，例如 `Personal` 或 `Company`（如果适用） |
-| `personalEmailID` | 例如，技术地址 `name@domain.com` RFC2822及后续标准中通常定义的 |
-| `personalEmail` | 捕获联系人详细信息 — 电子邮件和关联信息 |
-| `address` | 例如，技术地址 `name@domain.com` RFC2822及后续标准中通常定义的 |
-| `userAccount` | 指示任何忠诚度详细信息、首选项、登录流程和其他帐户首选项 |
-| `updateProfile` | 指示用户是否已更新其帐户配置文件 |
+| `person` | 個別執行者、連絡人或擁有者 |
+| `accountID` | 擷取使用者帳戶ID |
+| `accountType` | 擷取使用者帳戶型別，例如 `Personal` 或 `Company`，如適用 |
+| `personalEmailID` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義 |
+| `personalEmail` | 擷取連絡人詳細資料 — 電子郵件和相關資訊 |
+| `address` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義 |
+| `userAccount` | 表示任何忠誠度詳細資料、偏好設定、登入程式和其他帳戶偏好設定 |
+| `updateProfile` | 顯示使用者是否已更新其帳戶設定檔 |
 
-## 搜索事件
+## 搜尋事件
 
-搜索事件提供与购物者意图相关的数据。 对购物者意图的洞察有助于商家了解购物者如何搜索商品、他们点击的内容，以及最终购买或放弃的内容。 例如，如果您要定位那些在您的热门产品中搜索但从不购买该产品的现有购物者，则可以如何使用此数据。
+搜尋事件會提供與購物者意圖相關的資料。 深入瞭解購物者的意圖，有助於商戶瞭解購物者如何搜尋商品、點選什麼，以及最終購買或放棄。 如何使用此資料的範例是，如果您想要鎖定搜尋您最暢銷產品但從未購買產品的現有購物者。
 
-使用 `uniqueIdentifier` 字段 `searchRequestSent` 和 `searchResponseReceived` 事件以交叉引用搜索请求到相应的搜索响应。
+使用 `uniqueIdentifier` 在下列兩個欄位中找到： `searchRequestSent` 和 `searchResponseReceived` 將搜尋要求交叉參照至對應搜尋回應的事件。
 
 ### searchRequestSent
 
-| 描述 | XDM事件名称 |
+| 說明 | XDM事件名稱 |
 |---|---|
-| 在“键入时搜索”弹出窗口中，由以下事件触发：<br><br>按Enter键，单击 _查看全部_<br><br>&#x200B;由搜索结果页面上的以下事件触发：<br><br>选择过滤器，更改排序顺序(_排序依据_)、更改排序方向（升序或降序）、更改每页结果数(_每页显示数_)、导航到下一页、导航到上一页、导航到其他页面 | `searchRequest` |
+| 由「依輸入搜尋」彈出視窗中的下列事件觸發：<br><br>按Enter，按一下 _檢視全部_<br><br>&#x200B;由搜尋結果頁面上的下列事件觸發：<br><br>選取篩選器，變更排序順序(_排序方式_)、變更排序方向（遞增或遞減）、變更每頁結果數(_每頁顯示#_)、導覽至下一頁、導覽至上一頁、導覽至其他頁面 | `searchRequest` |
 
 >[!NOTE]
 >
->安装了B2B模块的Adobe Commerce Enterprise Edition不支持搜索事件。
+>已安裝B2B模組的Adobe Commerce Enterprise Edition不支援搜尋事件。
 
-#### 从searchRequestSent收集的数据
+#### 從searchRequestSent收集的資料
 
-下表描述了为此事件收集的数据。
+下表說明為此事件收集的資料。
 
-| 字段 | 描述 |
+| 欄位 | 說明 |
 |---|---|
-| `searchRequest` | 指示是否发送了搜索请求 |
-| `id` | 此特定搜索请求的唯一ID |
-| `filter` | 指示是否应用了任何过滤器来限制搜索结果 |
-| `attribute` （过滤器） | 用于确定是否将项目包含在搜索结果中的项目 |
-| `value` | 用于确定搜索结果中包含哪些项目的属性值 |
-| `isRange` | 如果为true，则值表示可接受值范围的端点 |
-| `sort` | 指示应如何对搜索结果排序 |
-| `attribute` （排序） | 用于对搜索结果中的项目进行排序的属性 |
-| `order` | 返回搜索结果的顺序 |
-| `query` | 搜索的词 |
+| `searchRequest` | 顯示是否已傳送搜尋要求 |
+| `id` | 此特定搜尋請求的唯一ID |
+| `filter` | 顯示是否套用任何篩選器來限制搜尋結果 |
+| `attribute` （篩選） | 用於確定是否將其包含在搜尋結果中的專案面向 |
+| `value` | 用於確定搜尋結果中包含哪些專案的屬性值 |
+| `isRange` | 為true時，值表示可接受值範圍的端點 |
+| `sort` | 指出搜尋結果的排序方式 |
+| `attribute` （排序） | 用於對搜尋結果中的專案進行排序的屬性 |
+| `order` | 傳回搜尋結果的順序 |
+| `query` | 搜尋的字詞 |
 
 ### searchResponseReceived
 
-| 描述 | XDM事件名称 |
+| 說明 | XDM事件名稱 |
 |---|---|
-| 在实时搜索返回“键入时搜索”弹出窗口或搜索结果页面的结果时触发。 | `searchResponse` |
+| 當「即時搜尋」傳回「輸入時搜尋」彈出視窗或搜尋結果頁面結果時觸發。 | `searchResponse` |
 
 >[!NOTE]
 >
->安装了B2B模块的Adobe Commerce Enterprise Edition不支持搜索事件。
+>已安裝B2B模組的Adobe Commerce Enterprise Edition不支援搜尋事件。
 
-#### 从searchResponseReceived收集的数据
+#### 從searchResponseReceived收集的資料
 
-下表描述了为此事件收集的数据。
+下表說明為此事件收集的資料。
 
-| 字段 | 描述 |
+| 欄位 | 說明 |
 |---|---|
-| `searchResponse` | 指示是否收到搜索响应 |
-| `id` | 此特定搜索响应的唯一ID |
-| `suggestions` | 字符串数组，其中包含目录中存在的与搜索查询类似的产品和类别的名称 |
-| `numberOfResults` | 返回的产品数 |
-| `productListItems` | 购物车中的一系列产品。 |
-| `SKU` | 库存单位。 产品的唯一标识符。 |
-| `name` | 产品的显示名称或人类可读的名称 |
-| `productImageUrl` | 产品的主图像URL |
+| `searchResponse` | 表示是否已收到搜尋回應 |
+| `id` | 此特定搜尋回應的唯一ID |
+| `suggestions` | 字串陣列，其中包含存在於目錄中且與搜尋查詢類似的產品和類別名稱 |
+| `numberOfResults` | 傳回的產品數 |
+| `productListItems` | 購物車中的一系列產品。 |
+| `SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `name` | 產品的顯示名稱或人類看得懂的名稱 |
+| `productImageUrl` | 產品的主要影像URL |
 
 ## B2B事件
 
-![B2B for Adobe Commerce](../assets/b2b.svg) 对于B2B商户，您必须 [安装](install.md#install-the-b2b-extension) the `experience-platform-connector-b2b` 扩展来启用这些事件。
+![Adobe Commerce的B2B](../assets/b2b.svg) 針對B2B商家，您必須 [安裝](install.md#install-the-b2b-extension) 此 `experience-platform-connector-b2b` 擴充功能以啟用這些事件。
 
-B2B事件包含 [申请列表](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) 信息，例如是否创建、添加或删除了申请列表。 通过跟踪特定于申请列表的事件，您可以查看客户经常购买的产品，并根据这些数据创建促销活动。
+B2B事件包含 [請購單清單](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) 資訊，例如，是否建立、新增或從中刪除請購單清單。 透過追蹤請購單清單的特定事件，您可以檢視客戶經常購買哪些產品，並根據該資料建立行銷活動。
 
 ### createRequisitionList
 
-| 描述 | XDM事件名称 |
+| 說明 | XDM事件名稱 |
 |---|---|
-| 购物者创建新申请列表时触发。 | `commerce.requisitionListOpens` |
+| 當購物者建立新的請購單清單時觸發。 | `commerce.requisitionListOpens` |
 
-#### 从createRequisitionList收集的数据
+#### 從createRequisitionList收集的資料
 
-下表描述了为此事件收集的数据。
+下表說明為此事件收集的資料。
 
-| 字段 | 描述 |
+| 欄位 | 說明 |
 |---|---|
-| `requisitionList` | 客户创建的申请列表的属性 |
-| `ID` | 申请列表的唯一标识符 |
-| `name` | 客户指定的申请列表名称 |
-| `description` | 客户指定的申请列表描述 |
+| `requisitionList` | 客戶建立的請購單屬性 |
+| `ID` | 請購單清單的唯一識別碼 |
+| `name` | 客戶指定的請購單清單名稱 |
+| `description` | 客戶指定的請購單清單摘要 |
 
 ### addToRequisitionList
 
-| 描述 | XDM事件名称 |
+| 說明 | XDM事件名稱 |
 |---|---|
-| 当购物者将产品添加到现有请求列表或在创建新列表时触发。 | `commerce.requisitionListAdds` |
+| 購物者將產品新增至現有請購單清單或建立新清單時觸發。 | `commerce.requisitionListAdds` |
 
 >[!NOTE]
 >
->`addToRequisitionList` 类别视图页面或可配置产品不支持此功能。 产品查看页面和简单产品均支持此功能。
+>`addToRequisitionList` 類別檢視頁面或可設定產品不支援。 產品檢視頁面和簡單產品都支援此功能。
 
-#### 从addToRequisitionList收集的数据
+#### 從addToRequisitionList收集的資料
 
-下表描述了为此事件收集的数据。
+下表說明為此事件收集的資料。
 
-| 字段 | 描述 |
+| 欄位 | 說明 |
 |---|---|
-| `requisitionList` | 客户创建的申请列表的属性 |
-| `ID` | 申请列表的唯一标识符 |
-| `name` | 客户指定的申请列表名称 |
-| `description` | 客户指定的申请列表描述 |
-| `productListItems` | 已添加到申请列表的产品数组 |
-| `name` | 产品的显示名称或人类可读的名称 |
-| `SKU` | 库存单位。 产品的唯一标识符。 |
-| `quantity` | 添加的产品件数 |
-| `priceTotal` | 产品行项目的总价格 |
-| `discountAmount` | 指示应用的折扣金额 |
-| `currencyCode` | 的 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用于此付款项的货币代码 |
-| `selectedOptions` | 用于可配置产品的字段。 `attribute` 标识可配置产品的属性，例如 `size` 或 `color` 和 `value` 标识属性的值，例如 `small` 或 `black`. |
+| `requisitionList` | 客戶建立的請購單屬性 |
+| `ID` | 請購單清單的唯一識別碼 |
+| `name` | 客戶指定的請購單清單名稱 |
+| `description` | 客戶指定的請購單清單摘要 |
+| `productListItems` | 已新增至請購單清單的產品陣列 |
+| `name` | 產品的顯示名稱或人類看得懂的名稱 |
+| `SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `quantity` | 新增的產品單位數 |
+| `priceTotal` | 產品明細專案的總價 |
+| `discountAmount` | 表示已套用的折扣金額 |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用於此付款專案的幣別代碼 |
+| `selectedOptions` | 用於可設定產品的欄位。 `attribute` 會識別可設定產品的屬性，例如 `size` 或 `color` 和 `value` 會識別屬性的值，例如 `small` 或 `black`. |
 
 ### removeFromRequisitionList
 
-| 描述 | XDM事件名称 |
+| 說明 | XDM事件名稱 |
 |---|---|
-| 当购物者从申请列表中删除产品时触发。 | `commerce.requisitionListRemovals` |
+| 當購物者從請購單清單移除產品時觸發。 | `commerce.requisitionListRemovals` |
 
-#### 从removeFromRequisitionList收集的数据
+#### 從removeFromRequisitionList收集的資料
 
-下表描述了为此事件收集的数据。
+下表說明為此事件收集的資料。
 
-| 字段 | 描述 |
+| 欄位 | 說明 |
 |---|---|
-| `requisitionList` | 客户创建的申请列表的属性 |
-| `ID` | 申请列表的唯一标识符 |
-| `name` | 客户指定的申请列表名称 |
-| `description` | 客户指定的申请列表描述 |
-| `productListItems` | 已添加到申请列表的产品数组 |
-| `name` | 产品的显示名称或人类可读的名称 |
-| `SKU` | 库存单位。 产品的唯一标识符。 |
-| `quantity` | 添加的产品件数 |
-| `priceTotal` | 产品行项目的总价格 |
-| `discountAmount` | 指示应用的折扣金额 |
-| `currencyCode` | 的 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用于此付款项的货币代码 |
-| `selectedOptions` | 用于可配置产品的字段。 `attribute` 标识可配置产品的属性，例如 `size` 或 `color` 和 `value` 标识属性的值，例如 `small` 或 `black`. |
+| `requisitionList` | 客戶建立的請購單屬性 |
+| `ID` | 請購單清單的唯一識別碼 |
+| `name` | 客戶指定的請購單清單名稱 |
+| `description` | 客戶指定的請購單清單摘要 |
+| `productListItems` | 已新增至請購單清單的產品陣列 |
+| `name` | 產品的顯示名稱或人類看得懂的名稱 |
+| `SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `quantity` | 新增的產品單位數 |
+| `priceTotal` | 產品明細專案的總價 |
+| `discountAmount` | 表示已套用的折扣金額 |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用於此付款專案的幣別代碼 |
+| `selectedOptions` | 用於可設定產品的欄位。 `attribute` 會識別可設定產品的屬性，例如 `size` 或 `color` 和 `value` 會識別屬性的值，例如 `small` 或 `black`. |
 
-## 后台活动
+## 後台活動
 
-后台事件包含有关订单状态的信息，例如，订单是否被下达、取消、退还、发运或完成。 这些服务器端事件收集的数据显示购物者订单的360视图。 此视图可帮助商家在开发营销活动时更好地定位或分析整个订单状态。 例如，您可以发现某些产品类别中在一年中不同时间表现良好的趋势。 例如，在寒冷月份卖得更好的冬装，或者一些购物者多年来感兴趣的特定产品颜色。 此外，订单状态数据还可帮助您通过了解购物者基于先前订单进行转化的倾向来计算客户生命周期值。
+後台事件包含有關訂單狀態的資訊，例如訂單是否已下達、取消、退款、已出貨或完成。 這些伺服器端事件收集的資料會顯示購物者訂單的360度檢視。 此檢視可協助商家在開發行銷活動時，更妥善地鎖定目標或分析整個訂單狀態。 例如，您可以在一年中不同時間表現良好的特定產品類別中找出趨勢。 例如，在較冷的月份銷售較佳的冬季服裝，或多年來消費者感興趣的某些產品顏色。 此外，訂單狀態資料可協助您瞭解購物者根據先前訂單的轉換傾向，進而計算期限客戶值。
 
 >[!NOTE]
 >
->所有后台活动都包括 [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) 字段，提供购物者的电子邮件地址。 通过在每个事件中包含此用户档案数据，您无需从Adobe Commerce中单独导入用户帐户。
+>所有後台活動都包括 [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) 欄位，提供購物者的電子郵件地址。 將這個設定檔資料納入每個事件，您就不需要從Adobe Commerce匯入個別的使用者帳戶。
 
 ### orderPlaced
 
-| 描述 | XDM事件名称 |
+| 說明 | XDM事件名稱 |
 |---|---|
-| 购物者下订单时触发。 | `commerce.backofficeOrderPlaced` |
+| 購物者下訂單時觸發。 | `commerce.backofficeOrderPlaced` |
 
-#### 从orderPlaced收集的数据
+#### 從orderPlaced收集的資料
 
-下表描述了为此事件收集的数据。
+下表說明為此事件收集的資料。
 
-| 字段 | 描述 |
+| 欄位 | 說明 |
 |---|---|
-| `address` | 例如，技术地址 `name@domain.com` RFC2822及后续标准中通常定义的 |
-| `productListItems` | 订单中的产品数组 |
-| `id` | 此产品条目的行项目标识符。 产品本身通过 `product` 字段。 |
-| `name` | 产品的显示名称或人类可读的名称 |
-| `SKU` | 库存单位。 产品的唯一标识符。 |
-| `quantity` | 购物车中的产品件数 |
-| `priceTotal` | 产品行项目的总价格 |
-| `discountAmount` | 指示应用的折扣金额 |
-| `order` | 包含有关订单的信息 |
-| `purchaseID` | 卖方为此采购或合同分配的唯一标识符。 无法保证ID是唯一的 |
-| `priceTotal` | 在应用所有折扣和税后，此订单的总价 |
-| `currencyCode` | 用于订单合计的ISO 4217货币代码 |
-| `purchaseOrderNumber` | 购买者为此购买或合同分配的唯一标识符 |
-| `payments` | 此订单的付款列表 |
-| `paymentType` | 此订单的付款方式。 枚举后，允许自定义值。 |
-| `currencyCode` | 的 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用于此付款项的货币代码 |
-| `paymentAmount` | 付款的价值 |
-| `taxAmount` | 买方作为最终付款的一部分支付的税额 |
-| `createdDate` | 在商务系统中创建新订单的时间和日期。 例如， `2022-10-15T20:20:39+00:00` |
-| `shipping` | 一个或多个产品的装运详细信息 |
-| `shippingMethod` | 客户选择的运输方法，如标准交货、快速交货、商店取货等 |
-| `shippingAmount` | 客户为装运所需支付的金额。 |
-| `address` | 实物送货地址 |
-| `street1` | 主要街道级别信息、公寓号、街道号和街道名称 |
-| `street2` | 街道级别信息的其他字段 |
-| `city` | 城市名称 |
-| `state` | 州的名称。 这是自由格式字段。 |
-| `postalCode` | 位置的邮政编码。 邮政编码并非适用于所有国家/地区。 在某些国家/地区，此代码将仅包含部分邮政编码。 |
-| `country` | 政府管理领土的名称。 除 `xdm:countryCode`，这是一个自由格式字段，可使用任何语言提供国家/地区名称。 |
-| `billingAddress` | 帐单邮政地址 |
-| `street1` | 主要街道级别信息、公寓号、街道号和街道名称 |
-| `street2` | 街道级别信息的其他字段 |
-| `city` | 城市名称 |
-| `state` | 州的名称。 这是自由格式字段。 |
-| `postalCode` | 位置的邮政编码。 邮政编码并非适用于所有国家/地区。 在某些国家/地区，此代码将仅包含部分邮政编码。 |
-| `country` | 政府管理领土的名称。 除 `xdm:countryCode`，这是一个自由格式字段，可使用任何语言提供国家/地区名称。 |
-| `personalEmail` | 个人电子邮件地址 |
-| `address` | 技术地址，例如RFC2822及后续标准中通常定义的“name@domain.com” |
+| `address` | 技術地址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義 |
+| `productListItems` | 訂單中的一系列產品 |
+| `id` | 此產品專案的明細專案識別碼。 產品本身可透過以下方式識別 `product` 欄位。 |
+| `name` | 產品的顯示名稱或人類看得懂的名稱 |
+| `SKU` | 庫存單位。 產品的唯一識別碼。 |
+| `quantity` | 購物車中的產品單位數 |
+| `priceTotal` | 產品明細專案的總價 |
+| `discountAmount` | 表示已套用的折扣金額 |
+| `order` | 包含訂單的相關資訊 |
+| `purchaseID` | 賣家為此購買或合約所指派的唯一識別碼。 無法保證ID是唯一的 |
+| `priceTotal` | 此訂單套用所有折扣和稅金後的總價 |
+| `currencyCode` | 用於訂單總額的ISO 4217貨幣代碼 |
+| `purchaseOrderNumber` | 購買者為此購買或合約所指派的唯一識別碼 |
+| `payments` | 此訂單的付款清單 |
+| `paymentType` | 此訂單的付款方式。 列舉，允許自訂值。 |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用於此付款專案的幣別代碼 |
+| `paymentAmount` | 付款值 |
+| `taxAmount` | 買方支付作為最終付款一部分的稅捐金額 |
+| `createdDate` | 在商務系統中建立新訂單的時間和日期。 例如， `2022-10-15T20:20:39+00:00` |
+| `shipping` | 一或多個產品的送貨詳細資料 |
+| `shippingMethod` | 客戶選擇的配送方式，例如標準配送、加急配送、到店取貨等 |
+| `shippingAmount` | 客戶必須支付的運費金額。 |
+| `address` | 實際送貨地址 |
+| `street1` | 主要街道層級資訊、公寓號碼、街道號碼和街道名稱 |
+| `street2` | 街道層級資訊的其他欄位 |
+| `city` | 城市名稱 |
+| `state` | 狀態名稱。 此為自由格式的欄位。 |
+| `postalCode` | 地點的郵遞區號。 郵遞區號並非適用於所有國家/地區。 在某些國家/地區，這僅包含部分郵遞區號。 |
+| `country` | 政府管理地區的名稱。 除了 `xdm:countryCode`，這是自由格式的欄位，可以有任何語言的國家/地區名稱。 |
+| `billingAddress` | 帳單郵寄地址 |
+| `street1` | 主要街道層級資訊、公寓號碼、街道號碼和街道名稱 |
+| `street2` | 街道層級資訊的其他欄位 |
+| `city` | 城市名稱 |
+| `state` | 狀態名稱。 此為自由格式的欄位。 |
+| `postalCode` | 地點的郵遞區號。 郵遞區號並非適用於所有國家/地區。 在某些國家/地區，這僅包含部分郵遞區號。 |
+| `country` | 政府管理地區的名稱。 除了 `xdm:countryCode`，這是自由格式的欄位，可以有任何語言的國家/地區名稱。 |
+| `personalEmail` | 個人電子郵件地址 |
+| `address` | 技術位址，例如，RFC2822和後續標準中通常定義的「name@domain.com」 |
 
 ### orderItemsShipped
 
-| 描述 | XDM事件名称 |
+| 說明 | XDM事件名稱 |
 |---|---|
-| 订单发运时触发。 | `commerce.backofficeOrderItemsShipped` |
+| 在訂單出貨時觸發。 | `commerce.backofficeOrderItemsShipped` |
 
-#### 从orderItemsShipped收集的数据
+#### 從orderItemsShipped收集的資料
 
-下表描述了为此事件收集的数据。
-|字段|描述| |—|—| |`address`|例如技术地址， `name@domain.com` RFC2822及后续标准中通常定义的| |`productListItems`|订单中的产品数组| |`id`|此产品条目的行项目标识符。 产品本身通过 `product` 字段。| |`name`|产品的显示名称或人类可读名称| |`SKU`|库存单位。 产品的唯一标识符。| |`quantity`|购物车中的产品件数| |`priceTotal`|产品行项目的总价| |`discountAmount`|指示应用的折扣金额| |`order`|包含有关订单的信息| |`purchaseID`|卖方为此采购或合同分配的唯一标识符。 无法保证ID是唯一的| |`priceTotal`|已应用所有折扣和税后此订单的总价| |`currencyCode`|用于订单合计的ISO 4217货币代码| |`purchaseOrderNumber`|购买者为此购买或合同分配的唯一标识符| |`payments`|此订单的付款清单| |`paymentType`|此订单的付款方式。 枚举后，允许自定义值。| |`currencyCode`| [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用于此付款项的货币代码| |`paymentAmount`|付款的价值| |`lastUpdatedDate`|在商务系统中上次更新特定订单记录的时间| |`shipping`|一个或多个产品的装运详细信息| |`shippingMethod`|客户选择的装运方法，如标准交货、快速交货、在店取货等| |`trackingNumber`|装运承运人为订单物料发运提供的跟踪编号| |`trackingURL`|用于跟踪订单物料发运状态的URL| |`shipDate`|从订单发运一个或多个项目的日期| |`address`|实际送货地址| |`street1`|主要街道级别信息、公寓号、街道号和街道名称| |`street2`|街道级别信息的其他字段| |`city`|城市名称| |`state`|状态的名称。 这是自由格式字段。| |`postalCode`|位置的邮政编码。 邮政编码并非适用于所有国家/地区。 在某些国家/地区，此代码将仅包含部分邮政编码。| |`country`|政府管理领土的名称。 除 `xdm:countryCode`，这是一个自由格式字段，可使用任何语言提供国家/地区名称。| |`shippingAmount`|客户为装运所需支付的金额。| |`billingAddress`|帐单邮政地址| |`street1`|主要街道级别信息、公寓号、街道号和街道名称| |`street2`|街道级别信息的其他字段| |`city`|城市名称| |`state`|状态的名称。 这是自由格式字段。| |`postalCode`|位置的邮政编码。 邮政编码并非适用于所有国家/地区。 在某些国家/地区，此代码将仅包含部分邮政编码。| |`country`|政府管理领土的名称。 除 `xdm:countryCode`，这是一个自由格式字段，可使用任何语言提供国家/地区名称。| |`personalEmail`|个人电子邮件地址| |`address`|技术地址，例如RFC2822及后续标准中通常定义的“name@domain.com”|
+下表說明為此事件收集的資料。
+|欄位|說明| |—|—| |`address`|技術位址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義| |`productListItems`|訂單中的一系列產品| |`id`|此產品專案的明細專案識別碼。 產品本身可透過以下方式識別 `product` 欄位。| |`name`|產品的顯示名稱或人類看得懂的名稱| |`SKU`|庫存單位。 產品的唯一識別碼。| |`quantity`|購物車中的產品件數| |`priceTotal`|產品明細專案的總價| |`discountAmount`|指示已套用的折扣金額| |`order`|包含訂單的相關資訊| |`purchaseID`|賣家為此購買或合約所指派的唯一識別碼。 無法保證ID是唯一的| |`priceTotal`|此訂單套用所有折扣和稅金後的總價| |`currencyCode`|用於訂單總額的ISO 4217貨幣代碼| |`purchaseOrderNumber`|購買者為此購買或合約指派的唯一識別碼| |`payments`|此訂單的付款清單| |`paymentType`|此訂單的付款方式。 列舉，允許自訂值。| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用於此付款專案的貨幣代碼| |`paymentAmount`|付款值| |`lastUpdatedDate`|在商務系統中上次更新特定訂單記錄的時間| |`shipping`|一或多個產品的送貨詳細資料| |`shippingMethod`|客戶選擇的送貨方式，例如標準配送、加速配送、到店取貨等| |`trackingNumber`|出貨承運人為訂單料號出貨提供的追蹤編號| |`trackingURL`|追蹤訂單專案運送狀態的URL| |`shipDate`|訂單中一或多個專案出貨的日期| |`address`|實際運送地址| |`street1`|主要街道層級資訊、公寓號碼、街道號碼和街道名稱| |`street2`|街道層級資訊的其他欄位| |`city`|城市名稱| |`state`|狀態名稱。 此為自由格式的欄位。| |`postalCode`|地點的郵遞區號。 郵遞區號並非適用於所有國家/地區。 在某些國家/地區，這僅包含部分郵遞區號。| |`country`|政府管理地區的名稱。 除了 `xdm:countryCode`，這是自由格式的欄位，可以有任何語言的國家/地區名稱。| |`shippingAmount`|客戶必須支付的運費金額。| |`billingAddress`|帳單郵寄地址| |`street1`|主要街道層級資訊、公寓號碼、街道號碼和街道名稱| |`street2`|街道層級資訊的其他欄位| |`city`|城市名稱| |`state`|狀態名稱。 此為自由格式的欄位。| |`postalCode`|地點的郵遞區號。 郵遞區號並非適用於所有國家/地區。 在某些國家/地區，這僅包含部分郵遞區號。| |`country`|政府管理地區的名稱。 除了 `xdm:countryCode`，這是自由格式的欄位，可以有任何語言的國家/地區名稱。| |`personalEmail`|個人電子郵件地址| |`address`|技術位址，例如，「name@domain.com」，通常定義於RFC2822和後續標準|
 
-### orderCancelled
+### orderCanceled
 
-| 描述 | XDM事件名称 |
+| 說明 | XDM事件名稱 |
 |---|---|
-| 购物者取消订单时触发。 | `commerce.backofficeOrderCancelled` |
+| 購物者取消訂單時觸發。 | `commerce.backofficeOrderCancelled` |
 
-#### 从orderCancelled收集的数据
+#### 從orderCanceled收集的資料
 
-下表描述了为此事件收集的数据。
-|字段|描述| |—|—| |`address`|例如技术地址， `name@domain.com` RFC2822及后续标准中通常定义的| |`productListItems`|订单中的产品数组| |`id`|此产品条目的行项目标识符。 产品本身通过 `product` 字段。| |`name`|产品的显示名称或人类可读名称| |`SKU`|库存单位。 产品的唯一标识符。| |`quantity`|购物车中的产品件数| |`priceTotal`|产品行项目的总价| |`discountAmount`|指示应用的折扣金额| |`order`|包含有关订单的信息| |`purchaseID`|卖方为此采购或合同分配的唯一标识符。 无法保证ID是唯一的| |`purchaseOrderNumber`|购买者为此购买或合同分配的唯一标识符| |`cancelDate`|购物者取消订单的日期和时间| |`lastUpdatedDate`|在商务系统中上次更新特定订单记录的时间| |`personalEmail`|个人电子邮件地址| |`address`|技术地址，例如RFC2822及后续标准中通常定义的“name@domain.com”|
+下表說明為此事件收集的資料。
+|欄位|說明| |—|—| |`address`|技術位址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義| |`productListItems`|訂單中的一系列產品| |`id`|此產品專案的明細專案識別碼。 產品本身可透過以下方式識別 `product` 欄位。| |`name`|產品的顯示名稱或人類看得懂的名稱| |`SKU`|庫存單位。 產品的唯一識別碼。| |`quantity`|購物車中的產品件數| |`priceTotal`|產品明細專案的總價| |`discountAmount`|指示已套用的折扣金額| |`order`|包含訂單的相關資訊| |`purchaseID`|賣家為此購買或合約所指派的唯一識別碼。 無法保證ID是唯一的| |`purchaseOrderNumber`|購買者為此購買或合約指派的唯一識別碼| |`cancelDate`|購物者取消訂單的日期和時間| |`lastUpdatedDate`|在商務系統中上次更新特定訂單記錄的時間| |`personalEmail`|個人電子郵件地址| |`address`|技術位址，例如，「name@domain.com」，通常定義於RFC2822和後續標準|
 
 ### creditMemoIssued
 
-| 描述 | XDM事件名称 |
+| 說明 | XDM事件名稱 |
 |---|---|
-| 当购物者按顺序返回项目时触发。 | `commerce.backofficeCreditMemoIssued` |
+| 購物者傳回訂單中的專案時觸發。 | `commerce.backofficeCreditMemoIssued` |
 
-#### 从creditMemoIssuled收集的数据
+#### 從已核發的銷退折讓單收集的資料
 
-下表描述了为此事件收集的数据。
-|字段|描述| |—|—| |`address`|例如技术地址， `name@domain.com` RFC2822及后续标准中通常定义的| |`productListItems`|订单中的产品数组| |`id`|此产品条目的行项目标识符。 产品本身通过 `product` 字段。| |`name`|产品的显示名称或人类可读名称| |`SKU`|库存单位。 产品的唯一标识符。| |`quantity`|购物车中的产品件数| |`priceTotal`|产品行项目的总价| |`discountAmount`|指示应用的折扣金额| |`order`|包含有关订单的信息| |`purchaseID`|卖方为此采购或合同分配的唯一标识符。 无法保证ID是唯一的| |`purchaseOrderNumber`|购买者为此购买或合同分配的唯一标识符| |`lastUpdatedDate`|在商务系统中上次更新特定订单记录的时间| |`personalEmail`|个人电子邮件地址| |`address`|技术地址，例如RFC2822及后续标准中通常定义的“name@domain.com”|
+下表說明為此事件收集的資料。
+|欄位|說明| |—|—| |`address`|技術位址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義| |`productListItems`|訂單中的一系列產品| |`id`|此產品專案的明細專案識別碼。 產品本身可透過以下方式識別 `product` 欄位。| |`name`|產品的顯示名稱或人類看得懂的名稱| |`SKU`|庫存單位。 產品的唯一識別碼。| |`quantity`|購物車中的產品件數| |`priceTotal`|產品明細專案的總價| |`discountAmount`|指示已套用的折扣金額| |`order`|包含訂單的相關資訊| |`purchaseID`|賣家為此購買或合約所指派的唯一識別碼。 無法保證ID是唯一的| |`purchaseOrderNumber`|購買者為此購買或合約指派的唯一識別碼| |`lastUpdatedDate`|在商務系統中上次更新特定訂單記錄的時間| |`personalEmail`|個人電子郵件地址| |`address`|技術位址，例如，「name@domain.com」，通常定義於RFC2822和後續標準|
 
 ### orderShipmentCompleted
 
-| 描述 | XDM事件名称 |
+| 說明 | XDM事件名稱 |
 |---|---|
-| 当购物者按顺序返回项目时触发。 | `commerce.backofficeOrderShipmentCompleted` |
+| 購物者傳回訂單中的專案時觸發。 | `commerce.backofficeOrderShipmentCompleted` |
 
-#### 从orderShimpentCompleted收集的数据
+#### 從orderShipmentCompleted收集的資料
 
-下表描述了为此事件收集的数据。
-|字段|描述| |—|—| |`address`|例如技术地址， `name@domain.com` RFC2822及后续标准中通常定义的| |`productListItems`|订单中的产品数组| |`id`|此产品条目的行项目标识符。 产品本身通过 `product` 字段。| |`name`|产品的显示名称或人类可读名称| |`SKU`|库存单位。 产品的唯一标识符。| |`quantity`|购物车中的产品件数| |`priceTotal`|产品行项目的总价| |`discountAmount`|指示应用的折扣金额| |`order`|包含有关订单的信息| |`purchaseID`|卖方为此采购或合同分配的唯一标识符。 无法保证ID是唯一的| |`priceTotal`|已应用所有折扣和税后此订单的总价| |`currencyCode`|用于订单合计的ISO 4217货币代码| |`purchaseOrderNumber`|购买者为此购买或合同分配的唯一标识符| |`taxAmount`|买方作为最终付款的一部分支付的税额。| |`createdDate`|在商务系统中创建新订单的时间和日期。 例如， `2022-10-15T20:20:39+00:00`| |`payments`|此订单的付款清单| |`paymentType`|此订单的付款方式。 枚举后，允许自定义值。| |`currencyCode`| [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用于此付款项的货币代码| |`paymentAmount`|付款的价值| |`shipping`|一个或多个产品的装运详细信息| |`shippingMethod`|客户选择的装运方法，如标准交货、快速交货、在店取货等| |`address`|实际送货地址| |`street1`|主要街道级别信息、公寓号、街道号和街道名称| |`street2`|街道级别信息的其他字段| |`city`|城市名称| |`state`|状态的名称。 这是自由格式字段。| |`postalCode`|位置的邮政编码。 邮政编码并非适用于所有国家/地区。 在某些国家/地区，此代码将仅包含部分邮政编码。| |`country`|政府管理领土的名称。 除 `xdm:countryCode`，这是一个自由格式字段，可使用任何语言提供国家/地区名称。| |`shippingAmount`|客户为装运所需支付的金额。| |`address`|例如技术地址， `name@domain.com` RFC2822及后续标准中通常定义的| |`billingAddress`|帐单邮政地址| |`street1`|主要街道级别信息、公寓号、街道号和街道名称| |`street2`|街道级别信息的其他字段| |`city`|城市名称| |`state`|状态的名称。 这是自由格式字段。| |`postalCode`|位置的邮政编码。 邮政编码并非适用于所有国家/地区。 在某些国家/地区，此数据仅包含部分邮政编码。| |`country`|政府管理领土的名称。 除 `xdm:countryCode`，这是一个自由格式字段，可使用任何语言提供国家/地区名称。| |`personalEmail`|个人电子邮件地址| |`address`|技术地址，例如RFC2822及后续标准中通常定义的“name@domain.com”|
+下表說明為此事件收集的資料。
+|欄位|說明| |—|—| |`address`|技術位址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義| |`productListItems`|訂單中的一系列產品| |`id`|此產品專案的明細專案識別碼。 產品本身可透過以下方式識別 `product` 欄位。| |`name`|產品的顯示名稱或人類看得懂的名稱| |`SKU`|庫存單位。 產品的唯一識別碼。| |`quantity`|購物車中的產品件數| |`priceTotal`|產品明細專案的總價| |`discountAmount`|指示已套用的折扣金額| |`order`|包含訂單的相關資訊| |`purchaseID`|賣家為此購買或合約所指派的唯一識別碼。 無法保證ID是唯一的| |`priceTotal`|此訂單套用所有折扣和稅金後的總價| |`currencyCode`|用於訂單總額的ISO 4217貨幣代碼| |`purchaseOrderNumber`|購買者為此購買或合約指派的唯一識別碼| |`taxAmount`|買方支付作為最終付款一部分的稅捐金額。| |`createdDate`|在商務系統中建立新訂單的時間和日期。 例如， `2022-10-15T20:20:39+00:00`| |`payments`|此訂單的付款清單| |`paymentType`|此訂單的付款方式。 列舉，允許自訂值。| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用於此付款專案的貨幣代碼| |`paymentAmount`|付款值| |`shipping`|一或多個產品的送貨詳細資料| |`shippingMethod`|客戶選擇的送貨方式，例如標準配送、加速配送、到店取貨等| |`address`|實際運送地址| |`street1`|主要街道層級資訊、公寓號碼、街道號碼和街道名稱| |`street2`|街道層級資訊的其他欄位| |`city`|城市名稱| |`state`|狀態名稱。 此為自由格式的欄位。| |`postalCode`|地點的郵遞區號。 郵遞區號並非適用於所有國家/地區。 在某些國家/地區，這僅包含部分郵遞區號。| |`country`|政府管理地區的名稱。 除了 `xdm:countryCode`，這是自由格式的欄位，可以有任何語言的國家/地區名稱。| |`shippingAmount`|客戶必須支付的運費金額。| |`address`|技術位址，例如， `name@domain.com` 如RFC2822和後續標準中一般定義| |`billingAddress`|帳單郵寄地址| |`street1`|主要街道層級資訊、公寓號碼、街道號碼和街道名稱| |`street2`|街道層級資訊的其他欄位| |`city`|城市名稱| |`state`|狀態名稱。 此為自由格式的欄位。| |`postalCode`|地點的郵遞區號。 郵遞區號並非適用於所有國家/地區。 在某些國家/地區，此資料僅包含郵遞區號的一部分。| |`country`|政府管理地區的名稱。 除了 `xdm:countryCode`，這是自由格式的欄位，可以有任何語言的國家/地區名稱。| |`personalEmail`|個人電子郵件地址| |`address`|技術位址，例如，「name@domain.com」，通常定義於RFC2822和後續標準|

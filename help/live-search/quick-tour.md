@@ -1,6 +1,6 @@
 ---
-title: “快速浏览”
-description: “快速浏览 [!DNL Live Search] "
+title: 「快速導覽」
+description: 「快速瀏覽 [!DNL Live Search] 從店面。」
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
 source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
@@ -9,32 +9,32 @@ ht-degree: 0%
 
 ---
 
-# 快速浏览
+# 快速導覽
 
-注重速度、相关性和易用性， [!DNL Live Search] 对购物者和商人而言，这是改变游戏规则的因素。 请一起快速浏览 [!DNL Live Search] 从店面。
+注重速度、關聯性和易用性， [!DNL Live Search] 對購物者和商家來說都是一個遊戲規則的改變者。 請跟隨並快速導覽 [!DNL Live Search] 從店面。
 
-## 在键入时搜索
+## 依輸入內容搜尋
 
-[!DNL Live Search] 在 [弹出窗口](storefront-popover.md) 当购物者在 [搜索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 框中。 的 [产品详细信息](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) 当购物者单击推荐或特色产品时，会显示页面。 A _查看全部_ 弹出窗口页脚中的链接会显示搜索结果页面。
+[!DNL Live Search] 以建議的產品和排名在前的搜尋結果的縮圖影像回應 [彈出視窗](storefront-popover.md) 購物者鍵入查詢至 [搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 方塊。 此 [產品詳細資料](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) 當購物者點選建議或精選產品時，頁面就會顯示。 A _檢視全部_ 彈出視窗頁尾中的連結會顯示搜尋結果頁面。
 
-[!DNL Live Search] 对于包含两个或更多字符的查询，返回“按键入搜索”结果。 对于部分匹配，每个词的最大字符数为20。 查询中的字符数不可配置。 弹出窗口中包含以下字段： `name`, `sku`和 `category_ids`.
+[!DNL Live Search] 針對兩個或多個字元的查詢傳回「鍵入時搜尋」結果。 若為部分相符，每個字的字元數上限為20。 查詢中的字元數無法設定。 彈出視窗中包含下列欄位： `name`， `sku`、和 `category_ids`.
 
-![店面示例 — 在键入时搜索](assets/storefront-search-as-you-type.png)
+![店面範例 — 鍵入時進行搜尋](assets/storefront-search-as-you-type.png)
 
-## 查看所有搜索结果
+## 檢視所有搜尋結果
 
-要列出“键入时搜索”查询返回的所有产品，请单击 _查看全部_ 中。
+若要列出「鍵入時搜尋」查詢傳回的所有產品，請按一下 _檢視全部_ 在彈出視窗的頁尾中。
 
-![店面 — 价格彩块化示例](assets/storefront-view-all-search-results.png)
+![店面範例 — 價格層面](assets/storefront-view-all-search-results.png)
 
-## 筛选的Facet搜索
+## 使用Facet篩選的搜尋
 
-过滤的搜索使用多个属性值维度，或 [facet](facets.md)，作为搜索标准。 过滤器的选择由商家定义，并根据返回的产品进行更改，最常用的方面固定到列表顶部。
+篩選搜尋會使用屬性值的多個維度，或 [Facet](facets.md)，作為搜尋條件。 篩選器的選擇由商家定義，並會根據傳回的產品而變更，而最常用的Facet會釘選至清單頂端。
 
-## 同义词
+## 同義字
 
-[同义词](synonyms.md) 通过包含购物者可能使用与目录中不同的词语来扩展访问范围并锐化查询的焦点。 您可以微调同义词词典，以保持购物者的参与度和购买路径。
+[同義字](synonyms.md) 透過包含購物者可能使用與目錄不同的字詞，來擴大觸及面並聚焦查詢。 您可以微調同義字詞典，讓購物者持續參與並順利購買。
 
-## 促销规则
+## 銷售規則
 
-促销 [规则](rules.md) 使用可添加逻辑和事件以进行搜索的if-then语句来塑造购物体验。 您可以轻松地提升或埋藏产品以用于促销、季或其他时段。
+銷售 [規則](rules.md) 使用if-then陳述式塑造購物體驗，這些陳述式會新增邏輯和事件以進行搜尋。 您可以針對促銷活動、季節或其他時段，輕鬆提升或隱藏產品。

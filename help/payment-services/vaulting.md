@@ -1,6 +1,6 @@
 ---
-title: 信用卡保险存储
-description: 购物者可以保存（保存）其信用卡详细信息，以便将来购买。
+title: 信用卡存放
+description: 購物者可以儲存信用卡詳細資料，以便日後購買。
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
@@ -9,39 +9,39 @@ ht-degree: 0%
 
 ---
 
-# 信用卡保险存储
+# 信用卡存放
 
-通过信用卡保险存储，将一次性客户转化为忠诚的购物者。 购物者可在结帐期间保存（或“保管库”）其信用卡凭据，以供以后购买相同或另一商户帐户的商品时使用。
+透過信用卡保險存放，將一次性客戶轉換為忠實購物者。 購物者可以在結帳時儲存（或「儲存庫」）他們的信用卡憑證，以便用於日後購買相同或另一個商店的相同商家帳戶。
 
-![保管信用卡供以后使用](assets/save-card-for-later.png)
+![儲存信用卡以供日後使用](assets/save-card-for-later.png)
 
-购物者使用存储的令牌，使用其保存的信用卡信息完成将来的结账。
+購物者會使用儲存的代號，以其儲存的信用卡資訊完成未來的結帳。
 
-![将存储的凭据用于将来的购买](assets/use-stored-card.png)
+![使用儲存的認證供日後購買](assets/use-stored-card.png)
 
-他们还可以轻松地从 [存储的付款方法](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) 在他们的账户里。
+他們也可以輕鬆地從中刪除其存放的信用卡 [儲存的付款方法](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) （在他們的我的帳戶中）。
 
-![我的帐户中存储的付款方法](assets/stored-payment-methods.png)
+![我的帳戶中儲存的付款方法](assets/stored-payment-methods.png)
 
-## 启用保险存储
+## 啟用存放區
 
-您可以为客户启用信用卡保险存储 _和_ 管理员中的商户 — 用于 [!DNL Payment Services] [设置](settings.md#card-vaulting).
+您可以為客戶啟用信用卡保險存放 _和_ Admin中的商家 — 適用於您位於以下位置的商店： [!DNL Payment Services] [設定](settings.md#card-vaulting).
 
-## 在管理员中使用保险存储
+## 在管理員中使用存放區
 
-如果客户拥有以前保险存卡，则商家可以在管理员中使用其保险存付方式为该客户创建后续订单。
+如果客戶具有先前存放的信用卡，則商家可以使用其存放的付款方式，在「管理員」中建立該客戶的後續訂單。
 
-仅当客户通过之前完成的付款在系统中存储了现有帐户和有效令牌时，才能在管理员中使用拱形卡。
+如果客戶同時擁有現有帳戶，且系統中儲存了先前完成付款的有效權杖，您只能在「管理員」中使用存放卡。
 
-要在管理员中为使用保险卡的客户创建订单，请执行以下操作：
+若要在「管理員」中使用客戶的保管式信用卡建立訂單，請執行下列步驟：
 
-1. [创建订单并添加产品](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
-1. 在 _[!UICONTROL Payment & Shipping Information]_，选择&#x200B;**[!UICONTROL Stored Cards]**付款方式。
-1. 选择所需的拱形信用卡付款方法。
-1. 完成订单的任何其他必要步骤后， [提交](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
+1. [建立訂單並新增產品](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
+1. 在 _[!UICONTROL Payment & Shipping Information]_，選取&#x200B;**[!UICONTROL Stored Cards]**作為付款方式。
+1. 選取所需的儲存型信用卡付款方式。
+1. 完成訂單的其他必要步驟後， [提交](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
 
-   ![在“管理员”中为客户使用拱形信用卡](assets/admin-vaultedcard.png)
+   ![在管理中使用客戶的儲存信用卡](assets/admin-vaultedcard.png)
 
 ## 安全性
 
-与购物者共享的信用卡信息最少；他们只能看到其保险卡的最后四位数字、过期日期和品牌。 信用卡信息与支付提供商一起存储以满足 [PCI](security.md#PCI-compliance) 合规标准。
+最少的信用卡資訊會與購物者共用；他們只能看到其存放的信用卡的最後4位數、到期日和品牌。 信用卡資訊會與付款提供者儲存以滿足 [PCI](security.md#PCI-compliance) 法規遵循標準。

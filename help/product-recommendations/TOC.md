@@ -1,7 +1,7 @@
 ---
-user-guide-title: '"[!DNL Product Recommendations] 指南”'
-user-guide-description: 本指南提供了有关使用的详细说明 [!DNL Product Recommendations] 从Adobe Commerce。
-breadcrumb-title: '"[!DNL Product Recommendations] 指南”'
+user-guide-title: '"[!DNL Product Recommendations] 指南」'
+user-guide-description: 本指南提供詳細的使用說明 [!DNL Product Recommendations] 來自Adobe Commerce。
+breadcrumb-title: '"[!DNL Product Recommendations] 指南」'
 source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
 source-wordcount: '54'
@@ -9,30 +9,30 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Product Recommendations] （商务） {#product-recommendations}
+# [!DNL Product Recommendations] 適用於商務 {#product-recommendations}
 
 - [指南概述](guide-overview.md)
-- [简介 [!DNL Product Recommendations]](overview.md)
-- [发行说明](release-notes.md)
-- 入门 {#getting-started}
-   - [入门](onboarding.md)
-   - [实施工作流程](implementation-workflow.md)
-   - [行为数据](behavioral-data.md)
-   - [无头](headless.md)
-   - [安装](install-configure.md)
-   - [设置](settings.md)
-   - [验证](verify.md)
-   - [暂存环境](staging-environment.md)
-   - [页面生成器集成](page-builder.md)
-- [!DNL Product Recommendations] 管理员 {#admin}
-   - [工作区](workspace.md)
-   - [创建](create.md)
-   - [编辑](edit.md)
-   - [推荐类型](type.md)
-   - [过滤器](filters.md)
-   - [版面和标签](placement.md)
-- [!DNL Product Recommendations] 开发人员 {#developer}
-   - [概述](development-overview.md)
-   - [收集数据](events.md)
-   - [自定义](customize.md)
-   - [处理Cookie限制](setting-cookie.md)
+- [簡介 [!DNL Product Recommendations]](overview.md)
+- [發行說明](release-notes.md)
+- 開始使用 {#getting-started}
+   - [入門](onboarding.md)
+   - [實作工作流程](implementation-workflow.md)
+   - [行為資料](behavioral-data.md)
+   - [Headless](headless.md)
+   - [安裝](install-configure.md)
+   - [設定](settings.md)
+   - [驗證](verify.md)
+   - [中繼環境](staging-environment.md)
+   - [Page Builder整合](page-builder.md)
+- [!DNL Product Recommendations] 管理員 {#admin}
+   - [Workspace](workspace.md)
+   - [建立](create.md)
+   - [編輯](edit.md)
+   - [建議型別](type.md)
+   - [篩選器](filters.md)
+   - [位置與標籤](placement.md)
+- [!DNL Product Recommendations] 開發人員 {#developer}
+   - [概觀](development-overview.md)
+   - [收集資料](events.md)
+   - [自訂](customize.md)
+   - [處理Cookie限制](setting-cookie.md)

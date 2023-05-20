@@ -1,6 +1,6 @@
 ---
-title: 设置
-description: 了解如何更改 [!DNL Product Recommendations] 数据以及如何启用可视化推荐。
+title: 設定
+description: 瞭解如何變更的來源 [!DNL Product Recommendations] 資料以及如何啟用視覺化建議。
 exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
 source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
@@ -9,53 +9,53 @@ ht-degree: 0%
 
 ---
 
-# 设置
+# 設定
 
-当您 [配置SaaS数据空间](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) 对于Recommendations,SaaS数据空间会收集目录数据和存储前端行为数据。 [Adobe Sensei](https://www.adobe.com/sensei.html) 分析该数据并计算用于提供产品Recommendations的产品关联。
+當您 [設定SaaS資料空間](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) 對於Recommendations，SaaS資料空間會收集目錄資料和店面行為資料。 [Adobe Sensei](https://www.adobe.com/sensei.html) 會分析該資料，並計算用於提供產品Recommendations的產品關聯。
 
-用于测试或暂存的非生产环境通常没有店面行为数据的数量或质量，无法提供符合实际的产品推荐。 只能在生产环境中捕获大规模的实际购物者行为。 为了解决此问题，Adobe Commerce允许您将生产环境中的产品推荐与其他非生产SaaS数据空间结合使用。 通过在非生产环境中使用实际的店面数据，您可以预览购物者看到的推荐，并试验不同的推荐类型和位置。 来自不同SaaS数据空间的Recommendations可由购物者预览，但不能单击。
+測試或測試的非生產環境通常沒有店面行為資料的數量或品質，無法提供逼真的產品建議。 實際購物者行為規模只能在生產環境中擷取。 為解決此問題，Adobe Commerce可讓您將生產環境中的產品推薦與其他非生產SaaS資料空間搭配使用。 在非生產環境中使用實際的店面資料可讓您預覽購物者看到的建議，並實驗不同的建議型別和放置位置。 購物者可以預覽不同SaaS資料空間的Recommendations，但無法點選。
 
-## 选择推荐来源
+## 選擇建議來源
 
-要更改产品推荐数据的来源，请选择包含要使用的行为数据的SaaS数据空间。 在开始之前，请确保：
+若要變更產品建議資料的來源，請搭配您要使用的行為資料選擇SaaS資料空間。 開始之前，請確定：
 
-- Storefront数据收集必须为 [已配置和已启用](install-configure.md) ，以及 [已验证](verify.md) 行为数据正被发送到Adobe Commerce。
-- 非生产环境目录应与生产目录基本相同。 使用相似的目录可确保产品推荐单元的返回与生产中的产品推荐单元相似。
+- 店面資料收集必須 [已設定並啟用](install-configure.md) 為您的生產環境和 [已驗證](verify.md) 行為資料正在傳送至Adobe Commerce。
+- 您的非生產環境目錄應該與生產目錄基本相同。 使用類似的目錄可確保產品推薦單位會非常接近生產時的推薦單位。
 
-1. 登录到非生产型Adobe Commerce环境的管理员。
+1. 登入非生產Adobe Commerce環境的管理員。
 
-1. 在 _管理员_ 侧栏，转到 **营销** > _促销活动_ > **产品Recommendations**.
+1. 於 _管理員_ 側欄，前往 **行銷** > _促銷活動_ > **產品Recommendations**.
 
-1. 单击 **设置**.
+1. 按一下 **設定**.
 
-   ![产品推荐设置](assets/settings.png)
-   _设置_
+   ![產品推薦設定](assets/settings.png)
+   _設定_
 
-1. 在 _Recommendations源_ 部分，启用 **从其他SaaS数据空间获取推荐** 选项。 的 _Recommendations源_ 部分仅在非生产环境中显示。
+1. 在 _Recommendations來源_ 區段，啟用 **從不同的SaaS資料空間擷取建議** 選項。 此 _Recommendations來源_ 區段只會出現在非生產環境中。
 
-   列表 _可用的SaaS数据空间_ 中。
+   清單 _可用的SaaS資料空間_ 出現。
 
-   ![产品推荐设置](assets/settings-select-saas.png)
-   _设置_
+   ![產品推薦設定](assets/settings-select-saas.png)
+   _設定_
 
-1. 选择包含您要使用的购物者数据的SaaS数据空间。
+1. 選取具有您要使用的購物者資料的SaaS資料空間。
 
-1. 单击 **保存更改**.
+1. 按一下 **儲存變更**.
 
-   Adobe Commerce现在会从选定的数据空间中提取推荐。
+   Adobe Commerce現在會從選取的資料空間擷取建議。
 
    >[!NOTE]
    >
-   > 虽然您可以查看从非生产店面的其他SaaS数据空间获取的推荐，但您无法单击推荐。
+   > 雖然您可以檢視從非生產存放區上的其他SaaS資料空間擷取的建議，但您無法按一下建議。
 
-### 配置新的SaaS数据空间
+### 設定新的SaaS資料空間
 
-1. 在Recommendations源部分中，单击 **编辑配置**.
+1. 在Recommendations來源區段中，按一下 **編輯設定**.
 
-1. 按照配置新 [[!DNL Commerce] 服务](/help/landing/saas.md).
+1. 依照指示設定新的 [[!DNL Commerce] 服務](/help/landing/saas.md).
 
-## 启用可视化推荐
+## 啟用視覺建議
 
-如果 [可视化产品Recommendations](install-configure.md) 模块安装后，必须启用Visual Recommendations才能使用 [视觉相似度](type.md#visualsim) 推荐类型。
+如果 [視覺產品Recommendations](install-configure.md) 模組已安裝，您必須啟用Visual Recommendations才能使用 [視覺相似度](type.md#visualsim) 建議型別。
 
-在 _可视化Recommendations_ 部分，设置 **启用可视化Recommendations** 到活动位置。
+在 _Visual Recommendations_ 部分，設定 **啟用Visual Recommendations** 至使用中位置。

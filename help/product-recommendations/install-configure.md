@@ -1,6 +1,6 @@
 ---
-title: 安装和配置
-description: 了解如何安装、更新和卸载 [!DNL Product Recommendations].
+title: 安裝與設定
+description: 瞭解如何安裝、更新和解除安裝 [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
@@ -9,62 +9,62 @@ ht-degree: 0%
 
 ---
 
-# 安装和配置
+# 安裝與設定
 
-部署 [!DNL Product Recommendations] 要求您安装模块并配置 [Commerce Services Connector](../landing/saas.md). 随着更新的发布，您可以轻松地使用最新版本更新安装。
+部署 [!DNL Product Recommendations] 至您的店面，管理員要求您安裝模組並設定 [商務服務聯結器](../landing/saas.md). 發佈更新時，您可以輕鬆地將安裝更新為最新版本。
 
-- [安装](#install)
-- [配置](#configure)
+- [安裝](#install)
+- [設定](#configure)
 - [更新](#update)
-- [卸载](#uninstall)
+- [解除安裝](#uninstall)
 
-## 安装 [!DNL Product Recommendations] {#install}
+## 安裝 [!DNL Product Recommendations] {#install}
 
-因为 [!DNL Product Recommendations] 模块是独立的元数据包，更新的发布频率高于Adobe Commerce。 要确保您已了解最新的错误修复和功能，请参阅 [发行说明](release-notes.md).
+因為 [!DNL Product Recommendations] 模組是獨立的中繼套件，比Adobe Commerce更常發行更新。 為確保您及時瞭解最新的錯誤修正和功能，請參閱 [發行說明](release-notes.md).
 
-安装 `magento/product-recommendations` 具有编辑器的模块：
+安裝 `magento/product-recommendations` 使用撰寫器的模組：
 
 ```bash
 composer require magento/product-recommendations
 ```
 
-### 添加页面生成器支持 {#pbsupport}
+### 新增頁面產生器支援 {#pbsupport}
 
-[!DNL Product Recommendations] for Page Builder是一个可选模块，单独安装。 使用 [!DNL Product Recommendations] 在页面生成器中，通过运行以下命令来安装模块：
+[!DNL Product Recommendations] for Page Builder是選用的模組，需另行安裝。 使用 [!DNL Product Recommendations] 使用Page Builder，執行下列命令以安裝模組：
 
 ```bash
 composer require magento/module-page-builder-product-recommendations
 ```
 
-启用 [!DNL Product Recommendations] 在页面生成器中，您可以添加一个现有的活动 [推荐单元](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) 到在页面生成器中创建的任何内容，如页面、块和动态块。
+透過啟用 [!DNL Product Recommendations] 在Page Builder中，您可以新增現有的作用中 [推薦單位](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) 至在「頁面產生器」中建立的任何內容，例如頁面、區塊和動態區塊。
 
-请参阅 [使用 [!DNL Product Recommendations] 包含页面生成器内容](page-builder.md) 以获取更多说明。
+另請參閱 [使用 [!DNL Product Recommendations] 使用頁面產生器內容](page-builder.md) 以取得進一步指示。
 
-### 添加可视相似度推荐类型 {#vissimsupport}
+### 新增視覺相似度建議型別 {#vissimsupport}
 
-的 _视觉相似度_ 推荐类型允许您将推荐单元部署到产品详细信息页面，该页面显示的产品 [视觉相似](type.md#visualsim) 到要查看的产品。 当产品的图像和视觉方面是购物体验的重要部分时，此推荐类型非常有用。 安装 _视觉相似度_ 通过运行以下命令键入推荐类型：
+此 _視覺相似度_ 建議型別可讓您將建議單位部署至產品詳細資料頁面，該頁面顯示符合以下條件的產品 [視覺類似](type.md#visualsim) 至正在檢視的產品。 當產品的影像和視覺方面是購物體驗的重要部分時，此建議型別最有用。 安裝 _視覺相似度_ 建議型別，方法是執行下列命令：
 
 ```bash
 composer require magento/module-visual-product-recommendations
 ```
 
-## 配置 [!DNL Product Recommendations] {#configure}
+## 設定 [!DNL Product Recommendations] {#configure}
 
-安装 `magento/product-recommendations` 模块中，必须配置 [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) 指定API密钥并选择SaaS数据空间。
+安裝之後 `magento/product-recommendations` 模組，您必須設定 [商務服務聯結器](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) 指定API金鑰並選取SaaS資料空間。
 
-要确保目录导出正常运行，请确认 [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) 工作和 [索引器](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) 正在运行， `Product Feed` 索引器设置为 `Update by Schedule`.
+若要確保目錄匯出正確執行，請確認 [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) 工作與 [索引子](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) 正在執行，而且 `Product Feed` 索引器已設定為 `Update by Schedule`.
 
-当您通过API密钥成功链接到Commerce Services并指定SaaS数据空间时，将开始目录同步。 然后，您可以 [验证](verify.md) 行为数据被发送到您的店面。
+當您透過API金鑰成功連結至Commerce Services並指定SaaS資料空間時，目錄同步就會開始。 然後，您可以 [驗證](verify.md) 行為資料正在傳送至您的店面。
 
-## 更新 [!DNL Product Recommendations] 安装 {#update}
+## 更新您的 [!DNL Product Recommendations] 安裝 {#update}
 
-和Adobe Commerce一样， [!DNL Product Recommendations] 使用编辑器进行安装和更新。 要更新 `magento/product-recommendations` 模块，运行以下命令：
+和所有Adobe Commerce一樣， [!DNL Product Recommendations] 使用Composer進行安裝和更新。 若要更新 `magento/product-recommendations` 模組，執行以下命令：
 
 ```bash
 composer update magento/product-recommendations --with-dependencies
 ```
 
-要更新到主版本（如从3.0更新到4.0），必须编辑根 `composer.json` 文件。 (请参阅 [发行说明](release-notes.md) ) 例如，让我们打开主 `composer.json` 文件和搜索 `magento/product-recommendations` 模块：
+若要更新為主要版本，例如從3.0到4.0，您必須編輯根目錄 `composer.json` 專案的檔案。 (請參閱 [發行說明](release-notes.md) 以取得最新版本的相關資訊。) 例如，讓我們開啟 `composer.json` 檔案並搜尋 `magento/product-recommendations` 模組：
 
 ```json
 "require": {
@@ -74,7 +74,7 @@ composer update magento/product-recommendations --with-dependencies
 }
 ```
 
-让我们从 `3.0` to `4.0`:
+讓我們從以下連結主要版本： `3.0` 至 `4.0`：
 
 ```json
 "require": {
@@ -84,13 +84,13 @@ composer update magento/product-recommendations --with-dependencies
 }
 ```
 
-保存 `composer.json` 文件和运行：
+儲存 `composer.json` 檔案並執行：
 
 ```bash
 composer update magento/product-recommendations --with-dependencies
 ```
 
-或者，如果您安装了 `magento/module-visual-product-recommendations` 和 `magento/module-page-builder-product-recommendations` 模块：
+或者，如果您已安裝 `magento/module-visual-product-recommendations` 和 `magento/module-page-builder-product-recommendations` 模組：
 
 ```bash
 composer update --with-dependencies magento/product-recommendations magento/module-visual-product-recommendations magento/module-page-builder-product-recommendations
@@ -98,8 +98,8 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 >[!NOTE]
 >
-> 在产品Recommendations的3.x.x版本中，您只需要一个API密钥。 在4.x.x及更高版本中，您必须提供生产公共和专用API密钥，以及沙盒公共和专用API密钥。 如果不提供两对API密钥，则无法访问“管理员”中的产品Recommendations功能。 但是，数据收集将继续在您的店面中，现有推荐将继续显示给您的购物者。
+> 在產品Recommendations 3.x.x版中，您只需要單一API金鑰。 在4.x.x版及更新版本中，您必須提供生產用公開和私人API金鑰，以及沙箱公開和私人API金鑰。 如果您未提供這兩對API金鑰，則無法存取「管理員」中的產品Recommendations功能。 不過，資料收集會在您的店面繼續，而現有的建議將繼續向您的購物者顯示。
 
-## 卸载 [!DNL Product Recommendations] {#uninstall}
+## 解除安裝 [!DNL Product Recommendations] {#uninstall}
 
-如有必要，您可以 [卸载](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) 产品 — 推荐模块。
+如有需要，您可以 [解除安裝](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) 產品recommendations模組。

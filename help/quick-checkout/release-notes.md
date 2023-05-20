@@ -1,6 +1,6 @@
 ---
-title: '[!DNL Quick Checkout] 发行说明'
-description: 查看发行说明，了解有关 [!DNL Quick Checkout] 版本。
+title: '''[!DNL Quick Checkout] 發行說明'
+description: 如需瞭解所有資訊，請參閱發行說明 [!DNL Quick Checkout] 發行版本。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
 source-git-commit: d58193b622a1851259b2191ea54ac6b59029dd64
 workflow-type: tm+mt
@@ -9,67 +9,67 @@ ht-degree: 0%
 
 ---
 
-# 发行说明
+# 發行說明
 
-以下发行说明介绍了 [!DNL Quick Checkout] 包括：
+以下版本說明說明的首次發行 [!DNL Quick Checkout] 並包含：
 
-![新建](../assets/new.svg) 新增功能
-![修复的问题](../assets/fix.svg) 修复和改进功能
-![已知问题](../assets/bug.svg) 已知问题
+![新增](../assets/new.svg) 新功能
+![已修正的問題](../assets/fix.svg) 修正和改良
+![已知問題](../assets/bug.svg) 已知問題
 
-请参阅 [即将发行的版本](https://devdocs.magento.com/release/) 了解发行计划和支持。
+另請參閱 [即將發行的版本](https://devdocs.magento.com/release/) 瞭解發行排程和支援。
 
-请参阅 [可用性](https://devdocs.magento.com/release/availability.html) ，以了解有关产品兼容性的信息。
+另請參閱 [可用性](https://devdocs.magento.com/release/availability.html) 在開發人員檔案中瞭解產品相容性。
 
 ## 管理面板更新
 
-这些发行说明描述了在管理面板的常规版本控制功能版本之外发生和发布的功能更改和修复。
+這些版本注意事項說明發生的功能變更和修正，這些變更和修正是在Admin面板的定期版本化功能發行之外發行的。
 
 +++管理面板更新
 
 _2023年4月25日_
 
-![修复的问题](../assets/fix.svg)<!-- Issue BOLT-452 --> 的 [!DNL Quick Checkout] **浏览** 按钮现在可在鼠标悬停时显示可单击的手形光标。
+![已修正的問題](../assets/fix.svg)<!-- Issue BOLT-452 --> 此 [!DNL Quick Checkout] **進行導覽** 按鈕現在會在游標暫留在上方時顯示可點按的手遊標。
 
 _2023年4月19日_
 
-![修复的问题](../assets/fix.svg)<!-- Issue BOLT-596 --> 的 [!DNL Quick Checkout] 现在，在将日期解析为ISO 8601格式时，报表页面可正确显示新帐户图表。
+![已修正的問題](../assets/fix.svg)<!-- Issue BOLT-596 --> 此 [!DNL Quick Checkout] 現在，當將日期剖析為ISO 8601格式時，「報告」頁面可正確顯示「新帳戶」圖表。
 
 _2022年12月14日_
 
-![修复的问题](../assets/fix.svg)<!-- Issue BOLT-524 --> 的 [!DNL Quick Checkout] 管理员面板现在可显示正确的总订单和更新的报表信息。
+![已修正的問題](../assets/fix.svg)<!-- Issue BOLT-524 --> 此 [!DNL Quick Checkout] 「管理員」面板現在會顯示正確的總訂單和更新的報表資訊。
 
 _2022年11月30日_
 
-![新建](../assets/new.svg)<!-- Issue BOLT-502 --> 现在， [报告](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) 选项卡具有新的“去年”预设。
+![新增](../assets/new.svg)<!-- Issue BOLT-502 --> 現在， [報告](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) tab有新的「去年」預設集。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-471 --> 改进了 [!DNL Quick Checkout] 管理面板在 [工具提示](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html).
+![新增](../assets/new.svg)<!-- Issue BOLT-471 --> 改善的使用者體驗 [!DNL Quick Checkout] 管理面板顯示更多資訊於 [工具提示](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html).
 
-![修复的问题](../assets/fix.svg)<!-- Issue BOLT-514 --> 改进了 [!DNL Quick Checkout] “管理员”面板显示正确的订单总数、颜色一致性以及所有图表的正确图例。
+![已修正的問題](../assets/fix.svg)<!-- Issue BOLT-514 --> 改善的使用者體驗 [!DNL Quick Checkout] 「管理」面板為所有圖表顯示正確的總訂單數、顏色一致性和正確圖例。
 
 _2022年11月2日_
 
-![新建](../assets/new.svg)<!-- Issue BOLT-293 --> 现在， [报告](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) 选项卡 [!DNL Quick Checkout] “管理员”面板显示商店结帐体验统计信息的图表和报告信息。
+![新增](../assets/new.svg)<!-- Issue BOLT-293 --> 現在， [報告](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) 索引標籤中的 [!DNL Quick Checkout] 「管理員」面板會顯示商店結帳體驗統計資料的圖表和報告資訊。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-422 --> 的 [_概述_](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#reports-overview) “报告”主题部分显示有关商店结帐性能的详细信息，包括平均结帐时间、结帐期间创建的新帐户以及结帐放弃。
+![新增](../assets/new.svg)<!-- Issue BOLT-422 --> 此 [_概觀_](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#reports-overview) 「報表」主題區段的區段會顯示有關您商店結帳效能的詳細資訊，包括平均結帳時間、結帳期間建立的新帳戶以及結帳放棄。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-423 --> 的 [_趋势_](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#reports-trends) “报表”选项卡的部分显示了按帐户类型过滤的结账体验趋势，以及在结账期间创建的新帐户。
+![新增](../assets/new.svg)<!-- Issue BOLT-423 --> 此 [_趨勢_](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#reports-trends) 「報表」標籤的部分會顯示依帳戶型別篩選的結帳體驗趨勢，以及在結帳期間建立的新帳戶。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-439 --> 的 **报表** 选项卡显示 [默认筛选器预设](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#filter-data) 可用于显示特定数据范围的数据。
+![新增](../assets/new.svg)<!-- Issue BOLT-439 --> 此 **報表** 標籤顯示 [預設篩選預設集](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#filter-data) 可用來顯示特定資料範圍的URL。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-433 --> 您现在可以看到 _无可用数据_ 请求不返回任何数据时对图表发出警告。
+![新增](../assets/new.svg)<!-- Issue BOLT-433 --> 您現在可以看到 _無可用資料_ 請求未傳回任何資料時圖表警告。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-473 --> 改进了 [!DNL Quick Checkout] 管理员面板包括启用 [结账跟踪](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) 设置，以允许Adobe Commerce与Bolt共享报表信息。
+![新增](../assets/new.svg)<!-- Issue BOLT-473 --> 來自的使用者體驗改善 [!DNL Quick Checkout] 「管理」面板包含啟用 [結帳追蹤](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) 可讓Adobe Commerce與Bolt共用報表資訊的設定。
 
 _2022年10月5日_
 
-![新建](../assets/new.svg)<!-- Issue BOLT-379 --> 现在，当新商户 [!DNL Quick Checkout] 管理员面板 [由Gainsight提供支持的功能导览](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) 中。
+![新增](../assets/new.svg)<!-- Issue BOLT-379 --> 現在，當新商家存取 [!DNL Quick Checkout] 第一次使用「管理」面板的 [功能導覽，由Gainsight提供技術支援](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) 出現。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-377 --> 的 **报表** 选项卡 [!DNL Quick Checkout] “管理员”面板显示图表和报表分析。
+![新增](../assets/new.svg)<!-- Issue BOLT-377 --> 此 **報表** 索引標籤中的 [!DNL Quick Checkout] 「管理員」面板會顯示圖表和報告分析。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-377 --> 的 **报表** 选项卡 [!DNL Quick Checkout] “管理员”面板显示图表和报表分析的日期范围和过滤器预设。
+![新增](../assets/new.svg)<!-- Issue BOLT-377 --> 此 **報表** 索引標籤中的 [!DNL Quick Checkout] 「管理」面板會顯示圖表和報告分析的日期範圍和篩選預設集。
 
-![修复的问题](../assets/fix.svg)<!-- Issue BOLT-369 --> 现在， [[!DNL Quick Checkout] 管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 在页脚中显示应用程序版本。
+![已修正的問題](../assets/fix.svg)<!-- Issue BOLT-369 --> 現在， [[!DNL Quick Checkout] 管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 在頁尾中顯示應用程式版本。
 
 +++
 
@@ -77,126 +77,126 @@ _2022年10月5日_
 
 _2023年2月24日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新建](../assets/new.svg)<!-- Issue BOLT-520 --> 正式发布 — [[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) 现在已预安装在Adobe Commerce Cloud版本2.4.6及更高版本中。
+![新增](../assets/new.svg)<!-- Issue BOLT-520 --> 正式發行版本 — [[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) 現已預先安裝在Adobe Commerce Cloud 2.4.6版及更新版本中。
 
-![修复的问题](../assets/fix.svg)<!-- Issue BOLT-592 --> 改进了在 [管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/create-order-admin.html) 使用 [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/stored-payment-methods.html) 付款方式。 此功能允许客户在结帐时，通过Braintree方式下订单 [!DNL Quick Checkout] 启用。
+![已修正的問題](../assets/fix.svg)<!-- Issue BOLT-592 --> 在中下訂單時的使用者體驗改善 [管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/create-order-admin.html) 使用 [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/stored-payment-methods.html) 作為付款方式。 此功能可讓客戶在結帳時以Braintree作為付款方式下訂單 [!DNL Quick Checkout] 已啟用。
 
 ## v1.7.0
 
 _2023年2月22日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![修复的问题](../assets/fix.svg)<!-- Issue AC-8002 --> 改进了使用 [多运送](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/multishipping-settings.html) 方法。 此功能允许在结帐时显示付款方法 [!DNL Quick Checkout] 启用。
+![已修正的問題](../assets/fix.svg)<!-- Issue AC-8002 --> 使用下訂單時的使用者體驗改善 [多送貨](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/multishipping-settings.html) 方法。 此功能可在結帳時顯示付款方法 [!DNL Quick Checkout] 已啟用。
 
 ## v1.6.0
 
 _2023年2月9日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![修复的问题](../assets/fix.svg)<!-- Issue BOLT-567 --> 改进了 [下订单](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) 使用 [店内投放](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery.html) 方法 [!DNL Quick Checkout] 已禁用。
+![已修正的問題](../assets/fix.svg)<!-- Issue BOLT-567 --> 改善使用者體驗的時機 [下訂單](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) 使用 [店內傳遞](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery.html) 具有的方法 [!DNL Quick Checkout] 已停用。
 
-![修复的问题](../assets/fix.svg)<!-- Issue BOLT-569 --> 改进了注销功能，让购物者能够 [注销螺栓网络](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/user-session-lifetime.html).
+![已修正的問題](../assets/fix.svg)<!-- Issue BOLT-569 --> 改善登出功能，讓購物者 [登出Bolt網路](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/user-session-lifetime.html).
 
 ## v1.5.0
 
 _2023年1月18日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新建](../assets/new.svg)<!-- Issue BOLT-522 --> 可以启用/禁用新配置以检测是否 [购物者](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-options/checkout-adobe-commerce.html) 可自动登录Bolt。
+![新增](../assets/new.svg)<!-- Issue BOLT-522 --> 可以啟用/停用新設定以偵測 [購物者](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-options/checkout-adobe-commerce.html) 可自動登入Bolt。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-523 --> 可以启用/禁用新配置，以允许商家指定购物者是可以自动登录到两个网络，还是只登录到Bolt网络。
+![新增](../assets/new.svg)<!-- Issue BOLT-523 --> 可以啟用/停用新設定，以允許商家指定購物者是否可以自動登入兩個網路，或僅是Bolt網路。
 
-![修复的问题](../assets/fix.svg)<!-- Issue BOLT-542 --> 改进了 [将卡或地址保存到Bolt帐户](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) 购物者提供电子邮件时。
+![已修正的問題](../assets/fix.svg)<!-- Issue BOLT-542 --> 改善使用者體驗的時機 [將卡片或地址儲存至Bolt帳戶](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) 購物者提供電子郵件時。
 
-![修复的问题](../assets/fix.svg)<!-- Issue BOLT-550 --> 改进了 [自动登录](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#configure-service-settings) 当Bolt用户提供电子邮件时。
+![已修正的問題](../assets/fix.svg)<!-- Issue BOLT-550 --> 中的使用者體驗改善 [自動登入](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#configure-service-settings) 當Bolt使用者提供電子郵件時。
 
-![修复的问题](../assets/fix.svg)<!-- Issue BOLT-544 --> 的兼容性改进 [回调URL](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#check-shopper-valid-account) with [多站点](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html) 在博尔特。
+![已修正的問題](../assets/fix.svg)<!-- Issue BOLT-544 --> 相容性改善 [回撥URL](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#check-shopper-valid-account) 替換為 [多網站](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html) 在Bolt中。
 
 ## v1.4.0
 
 _2022年11月30日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新建](../assets/new.svg)<!-- Issue BOLT-513 --> 现在，当Adobe Commerce客户在结账过程中登录到商店，并且拥有Bolt帐户时，将显示一个用于登录购物者Bolt帐户的选项。
+![新增](../assets/new.svg)<!-- Issue BOLT-513 --> 現在，當Adobe Commerce客戶在結帳過程中登入商店，並擁有Bolt帳戶時，系統會顯示登入購物者的Bolt帳戶的選項。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-512 --> 新配置可自动检测已登录的购物者是否也可以登录Bolt。
+![新增](../assets/new.svg)<!-- Issue BOLT-512 --> 新的設定會自動偵測登入的購物者是否也能登入Bolt。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-480 --> 中的新配置 [!DNL Quick Checkout] 使用“管理面板”，可将默认的导航流程更改为 **装运** Bolt客户登录后的页面。 默认情况下，它配置为 **支付** 页面。
+![新增](../assets/new.svg)<!-- Issue BOLT-480 --> 中的新設定 [!DNL Quick Checkout] 「管理面板」可讓您將預設導覽流程變更為 **送貨** Bolt客戶登入後頁面。 依預設，它會設定為 **付款** 頁面。
 
 ## v1.3.0
 
 _2022年11月2日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新建](../assets/new.svg)<!-- Issue BOLT-293 --> 现在， [!DNL Quick Checkout] 包括启用 [结账跟踪](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) 设置，以允许Adobe Commerce与Bolt共享报表信息。
+![新增](../assets/new.svg)<!-- Issue BOLT-293 --> 現在， [!DNL Quick Checkout] 包括啟用 [結帳追蹤](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) 可讓Adobe Commerce與Bolt共用報表資訊的設定。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-461 --> 您现在可以在 [!DNL Quick Checkout] 管理面板(如果 [结账跟踪](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) 配置被禁用。
+![新增](../assets/new.svg)<!-- Issue BOLT-461 --> 您現在可以在中看到警告訊息 [!DNL Quick Checkout] 管理員面板，如果 [結帳追蹤](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) 設定已停用。
 
 ## v1.2.0
 
 _2022年9月8日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新建](../assets/new.svg)<!-- Issue BOLT-341 --> 正式发布 — [[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) 现在与Adobe Commerce版本2.4.5兼容。
+![新增](../assets/new.svg)<!-- Issue BOLT-341 --> 正式發行版本 — [[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) 現在與Adobe Commerce 2.4.5版相容。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-328 --> [!DNL Quick Checkout] 对于Adobe Commerce和Magento Open Source，提供了 [管理面板视图](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) 以及设置和使用扩展所需的所有必要信息。
+![新增](../assets/new.svg)<!-- Issue BOLT-328 --> [!DNL Quick Checkout] 對於Adobe Commerce，Magento Open Source提供 [管理面板檢視](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) 提供設定及使用擴充功能所需的所有資訊。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-364 --> 管理员用户 [可以设置用户角色和权限](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/user-roles-setup.html) 允许其他用户查看 [!DNL Quick Checkout] 管理面板。
+![新增](../assets/new.svg)<!-- Issue BOLT-364 --> 管理員使用者 [可以設定使用者角色和許可權](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/user-roles-setup.html) 以允許其他使用者檢視 [!DNL Quick Checkout] 管理面板。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-377 --> [!DNL Quick Checkout] 管理员面板现在包含包含特定部分(如 **概述**, **报表**&#x200B;和 **设置**.
+![新增](../assets/new.svg)<!-- Issue BOLT-377 --> [!DNL Quick Checkout] 「管理」面板現在包含頁面標頭，其中包含特定區段，例如 **概觀**， **報表**、和 **設定**.
 
-![新建](../assets/new.svg)<!-- Issue BOLT-379 --> 当新商户访问 [!DNL Quick Checkout] 首次显示欢迎小组件以进行功能浏览的“管理员”面板。
+![新增](../assets/new.svg)<!-- Issue BOLT-379 --> 當新商家存取 [!DNL Quick Checkout] 首次出現提供功能導覽的歡迎Widget的「管理」面板。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-378 --> [!DNL Quick Checkout] [管理面板视图](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) 合并 **配置** 步骤，当API和可发布密钥未在 [设置](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 中。
+![新增](../assets/new.svg)<!-- Issue BOLT-378 --> [!DNL Quick Checkout] [管理面板檢視](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) 納入 **設定** 中未提供API和可發佈金鑰時顯示的步驟 [設定](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 檢視。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-380 --> [!DNL Quick Checkout] [管理面板视图](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) 合并 **资源** 部分进行更改。
+![新增](../assets/new.svg)<!-- Issue BOLT-380 --> [!DNL Quick Checkout] [管理面板檢視](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) 納入 **資源** 區段會根據上線階段而改變。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-381 --> [!DNL Quick Checkout] [管理面板视图](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) 包括 **帮助和支持** 中。
+![新增](../assets/new.svg)<!-- Issue BOLT-381 --> [!DNL Quick Checkout] [管理面板檢視](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) 包含 **說明與支援** 區段。
 
-![修复的问题](../assets/fix.svg)<!-- Issue BOLT-369 --> 的 [[!DNL Quick Checkout] 管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 现在在页脚中显示扩展版本。
+![已修正的問題](../assets/fix.svg)<!-- Issue BOLT-369 --> 此 [[!DNL Quick Checkout] 管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 現在會在頁尾中顯示擴充功能版本。
 
 ## v1.1.0
 
 _2022年8月12日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![修复的问题](../assets/fix.svg)<!-- Issue BOLT-375 --> 改进了 [[!DNL Quick Checkout] 管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 现在，仅包含启用扩展后可见和已验证的参数。
+![已修正的問題](../assets/fix.svg)<!-- Issue BOLT-375 --> 中的使用者體驗改善 [[!DNL Quick Checkout] 管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 現在僅包含啟用擴充功能時可見及驗證的引數。
 
-![修复的问题](../assets/fix.svg)<!-- Issue BOLT-349 --> 改进了Bolt Wallet现有送货地址的兼容性。
+![已修正的問題](../assets/fix.svg)<!-- Issue BOLT-349 --> 改善現有送貨地址與Bolt公事包的相容性。
 
 ## v1.0.0
 
 _2022年8月9日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新建](../assets/new.svg)<!-- Issue BOLT-341 --> 正式发布 — [[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) 现在与Adobe Commerce版本2.4.1到2.4.4兼容。
+![新增](../assets/new.svg)<!-- Issue BOLT-341 --> 正式發行版本 — [[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) 現在相容於Adobe Commerce 2.4.1至2.4.4版。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-340 --> 的 [!DNL Quick Checkout] 对于Adobe Commerce，可以为Adobe Commerce安装 [云基础架构](install.md#adobe-commerce-on-cloud-infrastructure) 或 [本地](install.md#on-premises) 实例。 这些方法需要使用命令行接口。
+![新增](../assets/new.svg)<!-- Issue BOLT-340 --> 此 [!DNL Quick Checkout] 適用於Adobe Commerce的，可安裝用於Adobe Commerce的 [在雲端基礎結構上](install.md#adobe-commerce-on-cloud-infrastructure) 或 [內部部署](install.md#on-premises) 執行個體。 這些方法需要使用命令列介面。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-1 --> 的 [!DNL Quick Checkout] 对于Adobe Commerce，为 [一键式结账体验](overview.md) ，用户无需填写字段。
+![新增](../assets/new.svg)<!-- Issue BOLT-1 --> 此 [!DNL Quick Checkout] (適用於Adobe Commerce)提供最佳化的店面，允許 [一鍵式結帳體驗](overview.md) 消費者不需要填寫欄位。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-1 --> 的 [!DNL Quick Checkout] for Adobe Commerce自动识别其网络中的每位购物者 [一键式购买](checkout-flow.md) 直接访问您的网站。
+![新增](../assets/new.svg)<!-- Issue BOLT-1 --> 此 [!DNL Quick Checkout] (適用於Adobe Commerce)會自動辨識其網路中的每個購物者， [一鍵式購買](checkout-flow.md) 直接在您的網站上。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-1 --> 的 [!DNL Quick Checkout] 对于Adobe Commerce，允许购物者同时 [已登录Adobe Commerce和Bolt网络](checkout-flow.md/#quick-checkout-use-cases) 更好 `one-click checkout` 体验。
+![新增](../assets/new.svg)<!-- Issue BOLT-1 --> 此 [!DNL Quick Checkout] for Adobe Commerce可讓購物者同時 [同時登入Adobe Commerce和Bolt網路](checkout-flow.md/#quick-checkout-use-cases) 提供更優異的 `one-click checkout` 體驗。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-218 --> [!DNL Quick Checkout] 对于Adobe Commerce支持 [沙盒帐户](testing.md#testing-in-sandbox) 允许商家在测试模式下评估扩展。
+![新增](../assets/new.svg)<!-- Issue BOLT-218 --> [!DNL Quick Checkout] 適用於Adobe Commerce的 [沙箱帳戶](testing.md#testing-in-sandbox) 可讓商家在測試模式中評估擴充功能。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-780 --> 购物者可通过 [[!DNL Quick Checkout]](checkout-page.md) 扩展或通过 [手动订单创建](create-order-admin.md).
+![新增](../assets/new.svg)<!-- Issue BOLT-780 --> 您的購物者可透過 [[!DNL Quick Checkout]](checkout-page.md) 擴充功能或透過 [手動建立訂單](create-order-admin.md).
 
-![新建](../assets/new.svg)<!-- Issue BOLT-666 --> 商户可以配置 [!DNL Quick Checkout] 基本付款操作(例如 [`Authorize and Capture` 或 `Authorize` ](onboarding.md#complete-admin-configuration)，或在沙盒和生产环境之间切换。
+![新增](../assets/new.svg)<!-- Issue BOLT-666 --> 商戶可設定 [!DNL Quick Checkout] 具有基本付款動作，例如 [`Authorize and Capture` 或 `Authorize` ](onboarding.md#complete-admin-configuration)，或在沙箱和生產環境之間切換。
 
-![新建](../assets/new.svg)<!-- Issue BOLT-288 --> 自定义 [用户会话生命周期](user-session-lifetime.md) 表示 [!DNL Quick Checkout] Adobe Commerce。
+![新增](../assets/new.svg)<!-- Issue BOLT-288 --> 自訂 [使用者工作階段期限](user-session-lifetime.md) 的 [!DNL Quick Checkout] 適用於Adobe Commerce。
 
-![修复的问题](../assets/fix.svg)<!-- Issue BOLT-375 --> 改进了 [[!DNL Quick Checkout] 管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 允许您在提供所有必需参数时保存配置。
+![已修正的問題](../assets/fix.svg)<!-- Issue BOLT-375 --> 中的使用者體驗改善 [[!DNL Quick Checkout] 管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 可讓您在提供所有必要引數時儲存設定。
 
-![已知问题](../assets/bug.svg)<!-- Issue BOLT-342 --> 常用 [疑难解答](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) 安装过程中出现的问题 [!DNL Quick Checkout].
+![已知問題](../assets/bug.svg)<!-- Issue BOLT-342 --> 通用 [疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) 安裝期間的問題 [!DNL Quick Checkout].

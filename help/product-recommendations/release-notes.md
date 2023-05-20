@@ -1,6 +1,6 @@
 ---
-title: '[!DNL Product Recommendations] 发行说明'
-description: 的最新发行信息 [!DNL Product Recommendations] 从Adobe Commerce。
+title: '''[!DNL Product Recommendations] 發行說明'
+description: 的最新版本資訊 [!DNL Product Recommendations] 來自Adobe Commerce。
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
 workflow-type: tm+mt
@@ -9,236 +9,236 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Product Recommendations] 发行说明
+# [!DNL Product Recommendations] 發行說明
 
-发行说明包含以下更新 [!DNL Product Recommendations] 模块：
+發行說明包含下列專案的更新 [!DNL Product Recommendations] 模組：
 
-* [!DNL Product Recommendations] 元包： `magento/product-recommendations`
-* 中的页面生成器支持 [!DNL Product Recommendations] （可选）模块： `magento/module-page-builder-product-recommendations`
-* 对的可视相似度推荐类型支持 [!DNL Product Recommendations] （可选）模块： `magento/module-visual-product-recommendations`
+* [!DNL Product Recommendations] 中繼套件： `magento/product-recommendations`
+* 中的頁面產生器支援 [!DNL Product Recommendations] （選用）模組： `magento/module-page-builder-product-recommendations`
+* 的視覺相似度推薦型別支援 [!DNL Product Recommendations] （選用）模組： `magento/module-visual-product-recommendations`
 
-对当前主要发布的版本提供支持。 提供了早期版本的发行说明供参考。
-发行说明包括：
+提供目前主要發行版本的支援。 舊版的發行說明僅供參考。
+發行說明包括：
 
-![新建](../assets/new.svg) 新增功能
-![修复](../assets/fix.svg) 修复和改进功能
-![错误](../assets/bug.svg) 已知问题
+![新增](../assets/new.svg) 新功能
+![修正](../assets/fix.svg) 修正和改良
+![錯誤](../assets/bug.svg) 已知問題
 
-请参阅开发人员文档，以 [了解产品兼容性](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+請參閱開發人員檔案，以 [瞭解產品相容性](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
-## 当前主要版本
+## 目前的主要版本
 
 _2023年4月25日_
 
-![新建](../assets/new.svg) 产品Recommendations客户现在可以利用 [SaaS价格索引](../price-index/index.md).
+![新增](../assets/new.svg) Recommendations客戶現在可以利用的產品 [SaaS價格索引](../price-index/index.md).
 
-### magento/product-recommendations的5.0.0
+### 5.0.0的magento/product-recommendations
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新建](../assets/new.svg) 更新了产品Recommendations以支持Adobe Commerce 2.4.6。
-![新建](../assets/new.svg) 这是一个主要版本。 [编辑](install-configure.md#update) 根 `composer.json` 文件。
-
-#### 已知限制
-
-* 的 `websiteCode` 如果值包含下划线(_)，则会错误返回该值。
-
-### 早期版本
-
-+++4.0.1及之前版本
-
-### magento/product-recommendations的4.0.1
-
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
-
-![修复](../assets/fix.svg) 以前，产品Recommendations在将显示货币切换为非默认货币时会显示错误。 现在，切换货币的工作正常。
-
-### 4.0.0 of magento/product-recommendations
-
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
-
-![新建](../assets/new.svg) 添加了 [就绪指标](create.md) 以帮助您可视化每个推荐类型的培训进度。
-![新建](../assets/new.svg) 这是一个主要版本。 [编辑](install-configure.md#update) 根 `composer.json` 文件。 此版本还要求您在安装和配置产品Recommendations时提供两个API密钥： [生产密钥和沙盒密钥](../landing/saas.md).
+![新增](../assets/new.svg) 更新產品Recommendations以支援Adobe Commerce 2.4.6。
+![新增](../assets/new.svg) 此為主要版本發行版本。 [編輯](install-configure.md#update) 根 `composer.json` 專案的檔案。
 
 #### 已知限制
 
-* 的 `websiteCode` 如果值包含下划线(_)，则会错误返回该值。
+* 此 `websiteCode` 如果值包含底線(_)，則傳回的值不正確。
 
-### magento/product-recommendations的3.3.7
+### 舊版
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
++++4.0.1和舊版
 
-![新建](../assets/new.svg) 添加了对PHP 8.1的支持
-![新建](../assets/new.svg) 改进了图像大小调整，以便在参考显示模板中更一致地处理图像大小调整
+### 4.0.1版magento/product-recommendations
 
-### magento/product-recommendations的3.3.6
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+![修正](../assets/fix.svg) 以前，當顯示貨幣切換為非預設貨幣時，產品Recommendations會顯示錯誤。 現在切換貨幣可正常運作。
 
-![新建](../assets/new.svg) 已优化 [!DNL Product Recommendations] 元包，方法是明确列出依赖项
+### 4.0.0的magento/product-recommendations
 
-### magento/product-recommendations的3.3.5
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+![新增](../assets/new.svg) 已新增 [整備程度指標](create.md) 協助您視覺化每個建議型別的培訓進度。
+![新增](../assets/new.svg) 此為主要版本發行版本。 [編輯](install-configure.md#update) 根 `composer.json` 專案的檔案。 此版本也要求您在安裝和設定Product Recommendations時提供兩個API金鑰： [生產金鑰和沙箱金鑰](../landing/saas.md).
 
-![新建](../assets/new.svg) 添加了 [B2B支持](onboarding.md#b2bsupport) 在产品中Recommendations
-![新建](../assets/new.svg) 向 [同步目录数据](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) 到Commerce Services
+#### 已知限制
 
-### magento/product-recommendations的3.3.3
+* 此 `websiteCode` 如果值包含底線(_)，則傳回的值不正確。
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+### 3.3.7的magento/product-recommendations
 
-![新建](../assets/new.svg) 新增 [推荐类型](type.md):转化（查看到购物车）、转化（查看到购买）和最近查看。 在 `magento/product-recommendations` 模块3.2.2及更高版本。
-![修复](../assets/fix.svg) 修复了Fastly的Web应用程序防火墙(WAF)错误地阻止Cookie的问题
-![修复](../assets/fix.svg) 修复了分配给非默认“商店视图”的产品未在 _Recommendations产品预览_ 面板
-![修复](../assets/fix.svg) 修复了页面生成器中的某些推荐单元名称阻止推荐单元在店面上显示的问题
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-### magento/product-recommendations的3.3.2
+![新增](../assets/new.svg) 新增PHP 8.1支援
+![新增](../assets/new.svg) 改善影像調整大小，使參考顯示範本中的影像大小調整更一致
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+### 3.3.6的magento/product-recommendations
 
-![修复](../assets/fix.svg) 修复了B2B支持缺失的依赖项
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-### magento/product-recommendations的3.3.1
+![新增](../assets/new.svg) 已最佳化 [!DNL Product Recommendations] 透過明確列出相依性進行中繼包
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+### 3.3.5的magento/product-recommendations
 
-![新建](../assets/new.svg) 添加了对B2B客户群定价的支持。 当您设置 [价格筛选](filters.md) 在推荐单元上，已登录的B2B客户将看到所显示产品的客户组定价集。
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-### magento/product-recommendations的3.3.0
+![新增](../assets/new.svg) 已新增 [B2B支援](onboarding.md#b2bsupport) 在產品Recommendations中
+![新增](../assets/new.svg) 已將新摘要新增至 [同步目錄資料](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) 至商務服務（透過命令列）
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+### 3.3.3的magento/product-recommendations
 
-![新建](../assets/new.svg) 增加了对Adobe客户端数据层的支持，以标准化跨Adobe Commerce功能和服务的行为数据收集。 请参阅 [readme](https://github.com/adobe/magento-storefront-event-collector/blob/main/README.md) 以了解更多。
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-### magento/product-recommendations的3.2.6
+![新增](../assets/new.svg) 已新增 [建議型別](type.md)：轉換（檢視到購物車）、轉換（檢視到購買）和最近檢視。 這些新建議型別可在 `magento/product-recommendations` 模組3.2.2和更新版本。
+![修正](../assets/fix.svg) 修正Fastly的Web應用程式防火牆(WAF)無法正確封鎖Cookie的問題
+![修正](../assets/fix.svg) 修正指派給非預設存放區檢視的產品未顯示於 _Recommendations產品預覽_ 建立該特定存放區檢視的建議時的面板
+![修正](../assets/fix.svg) 修正Page Builder中某些建議單位名稱無法顯示於店面的問題
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+### 3.3.2版magento/product-recommendations
 
-![修复](../assets/fix.svg) 修复了JavaScript模式错误
-![修复](../assets/fix.svg) 修复了Fastly的Web应用程序防火墙(WAF)错误地阻止Cookie的问题
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-### magento/product-recommendations的3.2.5
+![修正](../assets/fix.svg) 修正B2B支援的遺失相依性
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+### 3.3.1的magento/product-recommendations
 
-![新建](../assets/new.svg) 将Magento服务重命名为 [商务服务](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 并提高了管理员的可用性
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-### magento/product-recommendations的3.2.4
+![新增](../assets/new.svg) 新增B2B客戶群組定價支援。 當您設定 [價格篩選](filters.md) 在建議單位上，登入的B2B客戶會看到所顯示產品的客戶群組訂價集。
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+### 3.3.0的magento/product-recommendations
 
-![修复](../assets/fix.svg) 修复了在索引产品属性时出现的“无法检索可配置产品选项数据”错误
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-### magento/product-recommendations的3.2.3
+![新增](../assets/new.svg) 新增對Adobe Client Data Layer的支援，以標準化跨Adobe Commerce功能與服務的行為資料收集。 請參閱 [讀我檔案](https://github.com/adobe/magento-storefront-event-collector/blob/main/README.md) 以深入瞭解。
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+### 3.2.6的magento/product-recommendations
 
-![修复](../assets/fix.svg) 修复了“无法检索可配置产品选项数据”在目录同步期间出现的错误
-![修复](../assets/fix.svg) 修复了在启用“将存储代码添加到URL”配置时，存储代码设置不正确的问题
-![修复](../assets/fix.svg) 改进了对管理面板配置更改的检测，以确保这些更改反映在目录同步数据中
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-### magento/product-recommendations的3.2.2
+![修正](../assets/fix.svg) 修正JavaScript強制回應錯誤
+![修正](../assets/fix.svg) 修正Fastly的Web應用程式防火牆(WAF)無法正確封鎖Cookie的問題
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+### 3.2.5的magento/product-recommendations
 
-![新建](../assets/new.svg) 添加了 [预览推荐结果](create.md) 创建时。 这可能需要您将模块更新到最新版本。
-![新建](../assets/new.svg) 添加了 [监控和管理](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) 管理员的目录同步过程。
-![新建](../assets/new.svg) 添加了 [过滤器](filters.md) 以控制在推荐中显示的产品。
-![新建](../assets/new.svg) 添加了 [视觉相似度](type.md#visualsim) 推荐类型。
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-### 页面生成器的magento/module-page-builder-product-recommendations的1.2.1
+![新增](../assets/new.svg) 將Magento服務重新命名為 [Commerce服務](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 並改善管理員的可用性
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+### 3.2.4的magento/product-recommendations
 
-![新建](../assets/new.svg) 添加了对3.2.0及更高版本 `magento/product-recommendations` 模块
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-### magento/product-recommendations的3.1.0
+![修正](../assets/fix.svg) 修正索引產品屬性時「無法擷取可設定的產品選項資料」錯誤
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+### 3.2.3的magento/product-recommendations
 
-![新建](../assets/new.svg) 添加了 [重新同步](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) 通过命令行将目录添加到SaaS服务。
-![新建](../assets/new.svg) 添加了对数据库表前缀的支持
-![修复](../assets/fix.svg) 删除了PHP 7.1支持
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-### magento/product-recommendations的3.0.8
+![修正](../assets/fix.svg) 修正目錄同步期間的「無法擷取可設定的產品選項資料」錯誤
+![修正](../assets/fix.svg) 修正啟用「將存放區代碼新增至URL」設定時，存放區代碼未正確設定的問題
+![修正](../assets/fix.svg) 改善對Admin Panel設定變更的偵測功能，以確保這些變更會反映在目錄同步處理資料中
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+### 3.2.2的magento/product-recommendations
 
-![修复](../assets/fix.svg) 修复了在配置模块之前为数据收集发送事件，导致流量无效的问题
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-### magento/product-recommendations的3.0.6
+![新增](../assets/new.svg) 新增以下功能： [預覽推薦結果](create.md) 建立時。 這可能需要您將模組更新至最新版本。
+![新增](../assets/new.svg) 新增以下功能： [監視和管理](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) 管理員的目錄同步程式。
+![新增](../assets/new.svg) 已新增 [篩選器](filters.md) 控制要在建議中顯示的產品。
+![新增](../assets/new.svg) 已新增 [視覺相似度](type.md#visualsim) 建議型別。
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+### 1.2.1 magento/module-page-builder-product-recommendations for Page Builder
 
-![新建](../assets/new.svg) **（测试版）** 包括对新 [视觉相似度](type.md#visualsim) 推荐类型。
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
+
+![新增](../assets/new.svg) 新增對3.2.0+版本的 `magento/product-recommendations` 模組
+
+### 3.1.0的magento/product-recommendations
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
+
+![新增](../assets/new.svg) 新增以下功能： [重新同步](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) 透過命令列將目錄傳送至SaaS服務。
+![新增](../assets/new.svg) 新增支援資料庫表格首碼
+![修正](../assets/fix.svg) 移除PHP 7.1支援
+
+### 3.0.8個magento/product-recommendations
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
+
+![修正](../assets/fix.svg) 修正設定模組前，針對資料收集傳送事件，造成流量無效的問題
+
+### 3.0.6版magento/product-recommendations
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
+
+![新增](../assets/new.svg) **(Beta)** 包含對新增功能的支援 [視覺相似度](type.md#visualsim) 建議型別。
 
 ### 1.0.0 magento/module-visual-product-recommendations
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新建](../assets/new.svg) **（测试版）** [视觉相似度](type.md#visualsim). 使用 _视觉相似度_ 推荐类型中，您可以将推荐单元部署到产品详细信息页面，该页面显示与所查看产品视觉上相似的产品。
+![新增](../assets/new.svg) **(Beta)** [視覺相似度](type.md#visualsim). 使用 _視覺相似度_ 建議型別，您可以將建議單位部署至產品詳細資料頁面，該頁面顯示視覺上類似正在檢視之產品的產品。
 
-### magento/product-recommendations的3.0.5
+### 3.0.5個magento/product-recommendations
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![修复](../assets/fix.svg) 修复了在目录导出过程中可能发生的“无法检索产品选项数据”错误。
-![修复](../assets/fix.svg) 中的货币符号 _收入_ 列 _产品Recommendations_ 功能板现在可正确反映已配置的基本货币。
+![修正](../assets/fix.svg) 修正在目錄匯出期間可能發生的「無法擷取產品選項資料」錯誤。
+![修正](../assets/fix.svg) 中的貨幣符號 _收入_ 上的欄 _產品Recommendations_ 儀表板現在可正確反映設定的基本貨幣。
 
-### magento/product-recommendations的3.0.4
+### 3.0.4個magento/product-recommendations
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![修复](../assets/fix.svg) 添加了对Adobe Commerce 2.4.0的支持
+![修正](../assets/fix.svg) 新增對Adobe Commerce 2.4.0的支援
 
-### magento/product-recommendations的3.0.3
+### 3.0.3個magento/product-recommendations
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![修复](../assets/fix.svg) 改进了店面模板中的符号实现
+![修正](../assets/fix.svg) 改善店面範本中的符號實作
 
-### 页面生成器的magento/module-page-builder-product-recommendations的1.0.4
+### 1.0.4 magento/module-page-builder-product-recommendations for Page Builder
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新建](../assets/new.svg) 在编辑页面生成器内容类型时添加了产品推荐名称
+![新增](../assets/new.svg) 在編輯Page Builder內容型別時新增產品推薦名稱
 
 ### 3.0.2 magento/product-recommendations
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新建](../assets/new.svg) 在页面生成器中选择推荐单位时，在网格上添加了状态列
-![修复](../assets/fix.svg) 修复了产品和图像URL中的http/https协议不正确的问题
+![新增](../assets/new.svg) 在Page Builder中選取「建議單位」時，在網格上新增狀態列
+![修正](../assets/fix.svg) 修正產品和影像URL中http/https通訊協定不正確的問題
 
-### magento/product-recommendations的3.0.1
+### 3.0.1的magento/product-recommendations
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-这是一个主要版本。 [编辑](install-configure.md#update) 您项目的根composer.json文件。
+此為主要版本發行版本。 [編輯](install-configure.md#update) 您專案的根composer.json檔案。
 
-![新建](../assets/new.svg) 获取 [!DNL Product Recommendations] 从备用SaaS数据空间。 这允许您在其他非生产环境中使用在产品环境中计算的产品推荐。 [切换SaaS数据空间](settings.md) 对此功能的进一步描述。
+![新增](../assets/new.svg) 擷取 [!DNL Product Recommendations] 來自替代SaaS資料空間。 這可讓您在其他非生產環境中使用產品環境中計算的產品推薦。 [切換SaaS資料空間](settings.md) 進一步說明此功能。
 
-![修复](../assets/fix.svg) 修复了使用uBlock Origin的购物者禁止结帐的问题
-![修复](../assets/fix.svg) 修复了发送无关的添加到购物车事件的问题
+![修正](../assets/fix.svg) 修正使用uBlock Origin禁止購物者結帳的問題
+![修正](../assets/fix.svg) 修正傳送無關的購物車加值專案事件的問題
 
-### 页面生成器的magento/module-page-builder-product-recommendations的1.0.3
+### 1.0.3 magento/module-page-builder-product-recommendations for Page Builder
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新建](../assets/new.svg) 页面生成器支持。 通过页面生成器集成，您可以准确、细致地将推荐单元放置在页面生成器创作内容的任意位置。 您还可以设置标题和推荐单元本身的样式。 转到 [页面生成器](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) 以了解更多信息。
+![新增](../assets/new.svg) Page Builder支援。 透過Page Builder整合，您可以準確且詳細地將Recommendation單位放置在Page Builder編寫內容上的任何位置。 您也可以設定標題與建議單位本身的樣式。 前往 [頁面產生器](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) 以取得詳細資訊。
 
-### magento/product-recommendations的2.0.0
+### 2.0.0個magento/product-recommendations
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新建](../assets/new.svg) 正式发布！
+![新增](../assets/new.svg) 正式發行！
 
 +++
 
-## 文档
+## 檔案
 
-详细了解 [!DNL Product Recommendations] 和 [!DNL Product Recommendations] 开发：
+若要深入瞭解 [!DNL Product Recommendations] 和 [!DNL Product Recommendations] 開發：
 
-* [用户指南](overview.md)
-* [开发人员文档](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html)
+* [使用手冊](overview.md)
+* [開發人員檔案](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html)

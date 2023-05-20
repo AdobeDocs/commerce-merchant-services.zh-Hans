@@ -1,6 +1,6 @@
 ---
-title: '[!DNL Catalog Service] 发行说明'
-description: 的最新发行信息 [!DNL Catalog Service] Adobe Commerce。
+title: '''[!DNL Catalog Service] 發行說明'
+description: 的最新版本資訊 [!DNL Catalog Service] 適用於Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
 workflow-type: tm+mt
@@ -9,132 +9,132 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Catalog Service] 发行说明
+# [!DNL Catalog Service] 發行說明
 
-以下发行说明介绍了 [!DNL Catalog Service].
-对当前主要发布的版本提供支持。 提供了早期版本的发行说明供参考。
+以下版本說明說明最新版本的 [!DNL Catalog Service].
+提供目前主要發行版本的支援。 舊版的發行說明僅供參考。
 更新包括：
 
-![新建](../assets/new.svg) 新增功能
-![修复](../assets/fix.svg) 修复和改进功能
-![错误](../assets/bug.svg) 已知问题
+![新增](../assets/new.svg) 新功能
+![修正](../assets/fix.svg) 修正和改良
+![錯誤](../assets/bug.svg) 已知問題
 
-## 当前主要版本
+## 目前的主要版本
 
 _2023年4月25日_
 
-![新建](../assets/new.svg) 目录服务客户现在可以利用新的 [SaaS价格索引器](../price-index/index.md).
+![新增](../assets/new.svg) 目錄服務客戶現在可以利用新的 [SaaS價格索引器](../price-index/index.md).
 
 ### V1.7版本
 
 _2023年4月12日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新建](../assets/new.svg) 目录服务现在可以清理已删除的产品变体。
-![修复](../assets/fix.svg) 基础架构的可扩展性和性能改进。
+![新增](../assets/new.svg) 目錄服務現在會清除已刪除的產品變體。
+![修正](../assets/fix.svg) 基礎建設擴充性與效能的改善。
 
 #### 已知限制
 
-尚不支持以下功能：
+尚未支援這些功能：
 
-* 以固定价格捆绑产品
-* 动态属性有效负载的最大大小为9 MB。
-* 组产品价格。 可以使用简单的产品价格计算。
-* 在图像阵列中，只有第一个图像包含角色。
+* 以固定價格捆綁產品
+* 動態屬性承載的大小上限為9 MB。
+* 群組產品價格。 可使用簡單產品價格計算。
+* 在影像陣列中，只有第一個影像包含角色。
 
-使用API Mesh和核心GraphQL API可以解决以下限制：
+下列限制可使用API網格和核心GraphQL API來解決：
 
-* 最低广告价格
-* [分层定价](mesh.md)
-* 可下载的产品和礼品卡
+* 最低廣告價格
+* [層級定價](mesh.md)
+* 可下載的產品和禮品卡
 
 ### V1.6版本
 
 _2023年3月28日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新建](../assets/new.svg) 向 [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) 查询。
-![新建](../assets/new.svg) 添加了 `entityId` 使用 [API Mesh](mesh.md).
+![新增](../assets/new.svg) 將色票新增至 [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) 查詢。
+![新增](../assets/new.svg) 新增取得 `entityId` 使用 [API網格](mesh.md).
 
 ### V1.5版本
 
 _2023年3月6日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新建](../assets/new.svg) 添加了 [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL功能。
-![修复](../assets/fix.svg) 提高了性能和API可扩展性。
+![新增](../assets/new.svg) 已新增 [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL功能。
+![修正](../assets/fix.svg) 改善效能和API擴充性。
 
 ### V1.4版本
 
 _2023年2月7日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新建](../assets/new.svg) 发布了目录服务元包，以简化安装步骤。
-![修复](../assets/fix.svg) API可扩展性和性能改进。
+![新增](../assets/new.svg) 已發佈目錄服務中繼資料以簡化安裝步驟。
+![修正](../assets/fix.svg) API擴充性和效能的改善。
 
 ### V1.3版本
 
 _2023年1月17日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新建](../assets/new.svg) 简化并改进了入门体验。
-![新建](../assets/new.svg) 新的客户沙盒端点可用于预生产测试。
-![新建](../assets/new.svg) 添加了对虚拟产品的支持。
-![修复](../assets/fix.svg) API可扩展性和性能改进。
+![新增](../assets/new.svg) 簡化並改善入門體驗。
+![新增](../assets/new.svg) 新的客戶沙箱端點可用於生產前測試。
+![新增](../assets/new.svg) 新增對虛擬產品的支援。
+![修正](../assets/fix.svg) API擴充性和效能的改善。
 
 ### V1.1版本
 
 _2022年11月18日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新建](../assets/new.svg) 目录服务现在支持Adobe [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/).
-![修复](../assets/fix.svg) 提高了API可扩展性和整体性能。
+![新增](../assets/new.svg) 目錄服務現在支援Adobe的 [API網格](https://developer.adobe.com/graphql-mesh-gateway/).
+![修正](../assets/fix.svg) 改善API擴充性和整體效能。
 
 ### V1.0版本
 
 _2022年10月4日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新建](../assets/new.svg) 现在支持捆绑和分组的产品。
-![新建](../assets/new.svg) 添加了B2B可见性覆盖。 现在可搜索产品，并可将其添加到特定客户群的购物车。
-![修复](../assets/fix.svg) 服务现在更加稳定，性能也得到提高。
+![新增](../assets/new.svg) 現在支援套件和分組的產品。
+![新增](../assets/new.svg) 新增B2B可見性覆寫。 產品現在可供搜尋，並可新增至特定客戶群組的購物車。
+![修正](../assets/fix.svg) 服務現在更穩定，效能也有所提升。
 
-## 早期版本
+## 舊版
 
-+++测试版
++++Beta版
 
-### 0.3版本 — Beta+
+### 0.3版 — Beta+
 
 _2022年9月12日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新建](../assets/new.svg) 变体支持的图像：产品图像会根据选定的选项返回
-![新建](../assets/new.svg) 价格支持的作用：仅允许特定客户群组成员查看产品价格
-![修复](../assets/fix.svg) 提高了服务的稳定性和性能
-![新建](../assets/new.svg) 产品从目录中删除后，将收到更新
+![新增](../assets/new.svg) 變體支援的影像：根據選取的選項傳回產品影像
+![新增](../assets/new.svg) 價格支援的角色：僅允許特定客戶群組的成員檢視產品價格
+![修正](../assets/fix.svg) 改善服務的穩定性和效能
+![新增](../assets/new.svg) 從目錄中刪除產品時收到更新
 
-### 测试版
+### 測試版
 
 _2022年8月9日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新建](../assets/new.svg) 的 `products` 和 `refineProduct` 查询会返回以下数据：
+![新增](../assets/new.svg) 此 `products` 和 `refineProduct` 查詢會傳回下列資料：
 
-* 预定义（系统）产品属性。
-* 动态产品属性，并按角色（产品显示页面/产品列表页面）对其进行筛选。
-* 产品选项。
-* 产品图像并按角色(PDP/PLP)进行过滤。
-* 简单产品的特定价格和可配置产品的价格范围。
-* 客户组价格和价格范围。 对于没有客户群组的购物者，它们会返回回退默认价格。
-* 使用特定于B2B客户的定价的产品类型。
+* 預先定義的（系統）產品屬性。
+* 動態產品屬性，並依角色（產品顯示頁面/產品清單頁面）篩選。
+* 產品選項。
+* 產品影像並依角色(PDP/PLP)篩選。
+* 簡單產品的特定價格，以及可設定產品的價格範圍。
+* 客戶群組價格和價格範圍。 它們會針對沒有客戶群組的購物者傳回遞補預設價格。
+* 使用B2B客戶特定定價的產品型別。
 
 +++

@@ -1,7 +1,7 @@
 ---
-user-guide-title: 《SaaS价格索引器指南》
-user-guide-description: 本指南提供了使用SaaS价格索引器的详细说明。
-breadcrumb-title: 《Saas价格索引员指南》
+user-guide-title: 「SaaS價格索引器指南」
+user-guide-description: 「本指南提供使用SaaS價格指數器的詳細指示。」
+breadcrumb-title: 「Saas價格索引器指南」
 hide: true
 source-git-commit: abce6ab1d1110ce905ccb45a8bfa327b6b7da12c
 workflow-type: tm+mt
@@ -10,8 +10,8 @@ ht-degree: 0%
 
 ---
 
-# Saas Price Indexer {#price-indexer}
+# Saas價格索引器 {#price-indexer}
 
 - [指南概述](index.md)
-- [安装](installation.md)
+- [安裝](installation.md)
 

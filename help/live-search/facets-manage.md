@@ -1,6 +1,6 @@
 ---
-title: “管理Facet”
-description: “了解如何管理现有 [!DNL Live Search] 多方面。”
+title: 「管理Facet」
+description: 「瞭解如何管理現有 [!DNL Live Search] 多面向。」
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
 source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
@@ -11,78 +11,78 @@ ht-degree: 0%
 
 # 管理Facet
 
-按照以下说明更新现有Facet的属性或更改其在店面中的呈现方式。
+請依照這些指示更新現有Facet的屬性，或變更其在店面中的呈現方式。
 
-## 配置价格方面分组
+## 設定價格方面群組
 
-请参阅 [设置](settings.md) 以配置价格分面间隔和分组。
+請參閱 [設定](settings.md) 若要設定價格多面向間隔與群組，請執行下列步驟：
 
-## 编辑facet
+## 編輯facet
 
-1. 查找要编辑的Facet。
-1. 如果列表中包含多个Facet，请设置 *筛选条件* 更改为以下任一项：
+1. 尋找您要編輯的Facet。
+1. 如果清單中有許多面向，請設定 *篩選依據* 變更為下列其中一項：
 
-   * 已固定
-   * 动态
+   * 已釘選
+   * 動態
 
-   要了解更多信息，请转到 [Facet类型](facets-type.md).
+   若要深入瞭解，請前往 [Facet型別](facets-type.md).
 
-   ![筛选Facet](assets/facets-filter-by-cropped.png)
+   ![篩選Facet](assets/facets-filter-by-cropped.png)
 
-1. 要编辑Facet属性，请单击 **更多** (...)选项。
-1. 单击 **编辑**
+1. 若要編輯多面屬性，請按一下 **更多** (...)選項。
+1. 按一下 **編輯**
 
-   ![编辑选项](assets/facet-edit-menu.png)
+   ![編輯選項](assets/facet-edit-menu.png)
 
-1. 要编辑Facet标签，请执行下列操作之一：
+1. 若要編輯Facet標籤，請執行下列任一項動作：
 
-   * 对于 [!DNL Commerce] 店面，编辑 [属性标签](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
-   * 对于Headless实施，请单击第一列中的值，然后根据需要编辑文本。
+   * 對於 [!DNL Commerce] 店面，編輯 [屬性標籤](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
+   * 針對Headless實作，請按一下第一欄中的值，然後視需要編輯文字。
 
-   ![编辑标签](assets/facet-edit-label.png)
+   ![編輯標籤](assets/facet-edit-label.png)
 
-1. （仅限Headless）要更改用于对Facet值进行排序的方法，请单击 *排序类型* 列并选择以下选项之一：
+1. （僅限Headless）若要變更用於排序Facet值的方法，請按一下 *排序型別* 欄並選擇下列其中一項：
 
-   * 按字母顺序
-   * 计数
+   * 按字母順序
+   * 計數
 
-   ![编辑计数](assets/facets-edit-count.png)
+   ![編輯計數](assets/facets-edit-count.png)
 
-1. 在 **最大值** 列，设置要在店面中显示的Facet筛选值的最大数量（从0到10）。
-1. 完成后，单击 **保存**.
-您的更改在发布之后才会显示在店面。
+1. 在 **最大值** 欄，設定在店面中顯示的多面篩選值數目上限（從0到10）。
+1. 完成後，按一下 **儲存**.
+您的變更要等到發佈後才顯示在店面上。
 
-## 固定/取消固定方面
+## 釘選/取消釘選面向
 
-单击此图钉后颜色会改变，并且此图钉用于将小平面移动到 *固定的Facet* 或 *动态Facet* 部分。
+圖釘在按一下時會改變顏色，並可用來將多面移動到 *釘選Facet* 或 *動態Facet* 區段。
 
-1. 将Facet固定到 *筛选器* 列表，在 *动态Facet* 列表并单击灰色图钉(![插针选择器](assets/btn-pin-gray.png))。
-销钉变为蓝色，小平面移动到 *固定的Facet* 部分。
-1. 要取消固定Facet，请在 *固定的Facet* 列表并单击蓝色图钉(![插针选择器](assets/btn-pin-blue.png))。
-销钉变为灰色，小平面移动到 *动态Facet* 部分。
+1. 將多面釘選到頂端 *篩選器* 清單中，尋找 *動態Facet* 清單並按一下灰色圖釘(![圖釘選擇器](assets/btn-pin-gray.png))。
+圖釘會變成藍色，而多面會移至 *釘選Facet* 區段。
+1. 若要取消釘選多面，請在 *釘選Facet* 清單並按一下藍色圖釘(![圖釘選擇器](assets/btn-pin-blue.png))。
+圖釘會變成灰色，而多面會移至 *動態Facet* 區段。
 
-   ![固定和动态Facet](assets/facets-pinned-unpinned.png)
+   ![釘選和動態Facet](assets/facets-pinned-unpinned.png)
 
-## 移动固定方面
+## 移動釘選面向
 
 >[!NOTE]
 >
->仅在Headless实施中支持固定彩块化的排序。 如果需要排序的Facet，请使用 [!DNL Live Search] PLP小组件。
+>釘選Facet的排序僅在Headless實作中受支援。 如果需要排序的Facet，請使用 [!DNL Live Search] PLP Widget.
 
-通过将行移动到不同的位置，可以更改固定小平面的顺序。 钉住刻面具有 *移动* 图标(![移动选择器](assets/btn-move.png))的行首位置。 与固定Facet不同，动态Facet无法移动。
+將列移動到不同位置可以變更釘選多面的順序。 釘選Facet具有 *移動* 圖示(![移動選擇器](assets/btn-move.png))開頭的「 」。 與釘選Facet不同，動態Facet無法移動。
 
-1. 在中查找方面 *固定的Facet* 列表的部分。
-1. 使用 **移动** (![移动选择器](assets/btn-move.png))图标以将行拖到中的新位置 *固定的Facet* 部分。
-发布更改后，重新排序的Facet将显示在店面中 *筛选器* 列表。
+1. 在中尋找面向 *釘選Facet* 區段。
+1. 使用 **移動** (![移動選擇器](assets/btn-move.png))圖示以將列拖曳至中的新位置 *釘選Facet* 區段。
+發佈變更後，重新排序的Facet會出現在店面 *篩選器* 清單。
 
-## 删除方面
+## 刪除面向
 
-1. 在列表中查找方面并单击 **更多** (...)选项。
-1. 单击 **删除**.
-1. 提示确认时，单击 **删除方面**.
-发布更改后，将从店面中删除方面。
+1. 在清單中尋找Facet並按一下 **更多** (...)選項。
+1. 按一下 **刪除**.
+1. 提示確認時，按一下 **刪除面向**.
+變更發佈後，Facet會從店面中移除。
 
-## 发布更改
+## 發佈變更
 
-1. 要用更改更新店面，请单击 **发布更改**.
-1. 请等待大约15分钟，以便更新显示在您的存储中。
+1. 若要使用您的變更更新店面，請按一下 **發佈變更**.
+1. 請等候約15分鐘，讓更新出現在您的商店中。

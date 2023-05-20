@@ -1,7 +1,7 @@
 ---
-user-guide-title: Adobe Experience Platform Connector for Adobe Commerce
-user-guide-description: 本指南提供了有关使用Adobe Experience Platform Connector for Adobe Commerce的详细说明。
-breadcrumb-title: Adobe Experience Platform Connector for Adobe Commerce
+user-guide-title: Adobe Commerce的Adobe Experience Platform Connector
+user-guide-description: 本指南提供使用Adobe Commerce適用的Adobe Experience Platform聯結器的詳細指示。
+breadcrumb-title: Adobe Commerce的Adobe Experience Platform Connector
 source-git-commit: 092f2f4ab9d34466d66fe5b726bfff67a1309c6f
 workflow-type: tm+mt
 source-wordcount: '66'
@@ -9,15 +9,15 @@ ht-degree: 0%
 
 ---
 
-# Adobe Experience Platform Connector for Adobe Commerce {#experience-platform-connector}
+# Adobe Commerce的Adobe Experience Platform Connector {#experience-platform-connector}
 
 - [指南概述](overview.md)
-- [发行说明](release-notes.md)
-- 基础 {#fundamentals}
-   - [安装Experience Platform连接器](install.md)
-   - [配置Experience Platform连接器](connect-data.md)
-   - [将字段组添加到XDM架构](update-xdm.md)
-- 捕获数据 {#event-forwarding}
+- [發行說明](release-notes.md)
+- 基礎知識 {#fundamentals}
+   - [安裝Experience Platform聯結器](install.md)
+   - [設定Experience Platform聯結器](connect-data.md)
+   - [新增欄位群組至XDM結構描述](update-xdm.md)
+- 擷取資料 {#event-forwarding}
    - [事件](events.md)
-   - [自定义事件](custom-events.md)
-   - [使用Adobe Experience Platform标记](using-tags.md)
+   - [自訂事件](custom-events.md)
+   - [使用Adobe Experience Platform標籤](using-tags.md)

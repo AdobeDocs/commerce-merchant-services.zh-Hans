@@ -1,6 +1,6 @@
 ---
-title: "添加Facet"
-description: “了解如何添加可过滤的产品属性作为 [!DNL Live Search] 多方面。”
+title: "新增Facet"
+description: 「瞭解如何將可篩選的產品屬性新增為 [!DNL Live Search] 多面向。」
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
 source-git-commit: 10edbb6127405d45c06d4c8ffc89d92a6ca061c3
 workflow-type: tm+mt
@@ -9,68 +9,68 @@ ht-degree: 0%
 
 ---
 
-# 添加Facet
+# 新增Facet
 
-任何可过滤的产品属性都可以用作facet。 此 *添加Facet* 面板会列出当前彩块化，并可轻松地将其他产品属性分配为Facet。 在此三步流程中，选择某个属性作为Facet，根据需要编辑属性，并将更改发布到店面。
+任何可篩選的產品屬性都可以當作Facet使用。 此 *新增facet* 面板會列出目前的Facet，並可讓您輕鬆將其他產品屬性指派為Facet。 在這三個步驟的流程中，系統會選擇屬性當作Facet使用，視需要編輯屬性，並將變更發佈至店面。
 
-![彩块化工作区](assets/facets-add.png)
+![多面向工作區](assets/facets-add.png)
 
-## 步骤1：添加方面
+## 步驟1：新增面向
 
-1. 在“管理员”中，转到 **营销** > SEO和搜索> **[!DNL Live Search]**.
-1. 在 *彩块化* 选项卡，单击 **添加Facet**.
-1. 在 *添加Facet* 列表，每个可用属性都有一个单独的 ![“添加”按钮](assets/btn-add.png). 完成以下任一操作：
+1. 在Admin中，前往 **行銷** > SEO與搜尋> **[!DNL Live Search]**.
+1. 於 *多面向* 標籤，按一下 **新增facet**.
+1. 在 *新增facet* 清單，每個可用屬性都有個別的 ![新增按鈕](assets/btn-add.png). 完成下列任一項作業：
 
-   * 在 *彩块化属性* 列表中，选择要用作Facet的产品属性，然后单击 **添加**.
-   * 要查找特定的产品属性，请在 *搜索* 盒子。 然后，单击 **添加**.
+   * 在 *多面向屬性* 清單中，選擇要用作Facet的產品屬性，然後按一下 **新增**.
+   * 若要尋找特定的產品屬性，請在「 」中輸入屬性名稱的前幾個字元 *搜尋* 方塊。 然後，按一下 **新增**.
 
-      要配置价格分面间隔和分组，请参阅 [设置](settings.md). 要了解更多信息，请转到 [Facet类型](facets-type.md).
-刻面将添加到页面底部 *动态Facet* 列表和 *发布更改* 按钮将变为可用。
+      若要設定價格多面向間隔與群組，請參閱 [設定](settings.md). 若要深入瞭解，請前往 [Facet型別](facets-type.md).
+多面會新增至 *動態Facet* 清單和 *發佈變更* 按鈕變為可用。
 
-1. 如果找不到要添加的Facet，请转到 **商店** >属性> **产品** 并验证属性是否具有 [必需属性](facets.md) 将用作Facet。 如有必要，请更新属性的以下店面属性：
+1. 如果找不到您要新增的Facet，請前往 **商店** >屬性> **產品** 並確認屬性具有 [必要屬性](facets.md) 用作Facet。 如有必要，請更新屬性的下列店面屬性：
 
-   * 在搜索中使用 —  `Yes`
-   * 在搜索结果分层导航中使用 —  `Yes`
-   * 在分层导航中使用 —  `Filterable (with results)`
+   * 用於搜尋 —  `Yes`
+   * 用於搜尋結果分層導覽 —  `Yes`
+   * 用於分層導覽 —  `Filterable (with results)`
 
-1. 出现提示时，刷新缓存。
+1. 出現提示時，請重新整理快取。
 
-   下次与同步目录时，Facet将在店面中变得可用 [!DNL Live Search]. 如果Facet在两个小时后不可用，请参阅 [同步目录数据](install.md#synchronize-catalog-data).
+   下次與目錄同步時，多面向便可在店面中使用 [!DNL Live Search]. 如果兩小時後無法使用Facet，請參閱 [同步目錄資料](install.md#synchronize-catalog-data).
 
-## 步骤2：编辑Facet属性（可选）
+## 步驟2：編輯Facet屬性（選用）
 
-1. 要编辑Facet属性，请单击 **更多** (![更多选择器](assets/btn-more.png))选项。
-1. 在菜单上，单击 **编辑**. 然后，根据需要调整以下属性。
+1. 若要編輯多面屬性，請按一下 **更多** (![更多選擇器](assets/btn-more.png))選項。
+1. 在功能表中，按一下 **編輯**. 然後，視需要調整以下屬性。
 
-   * 标签 — ([Headless](facets-type.md) （仅限）输入要使用的Facet标签。
-   * 排序类型 — Facet按字母顺序对所有 [!DNL Commerce] 店面。 对于Headless实施，Facet可以按字母顺序或计数排序。 选项：按字母顺序、计数（仅限Headless）
-   * 最大值 — 输入店面中显示的最大Facet值数。 有效条目： 0 - 30；默认值： 8
+   * 標籤 — ([Headless](facets-type.md) 僅限)輸入您要使用的Facet標籤。
+   * 排序型別 — Facet會依字母順序排序 [!DNL Commerce] 店面。 針對Headless實作，Facet可依字母順序或計數排序。 選項：字母順序、計數（僅限Headless）
+   * 最大值 — 輸入店面中顯示的Facet值數目上限。 有效專案： 0 - 30；預設： 8
 
-1. 完成后，单击 **保存**.
+1. 完成後，按一下 **儲存**.
 
-   ![彩块化工作区](assets/facet-edit.png)
+   ![多面向工作區](assets/facet-edit.png)
 
-1. 将Facet固定到 *筛选器* 列表中，单击灰色图钉(![插针选择器](assets/btn-pin-gray.png))。
-1. 要更改固定小平面的顺序，请单击 **移动** (![移动选择器](assets/btn-move.png))图标并将行拖到中的新位置 *固定的Facet* 部分。
+1. 將多面釘選到頂端 *篩選器* 清單中，按一下灰色圖釘(![圖釘選擇器](assets/btn-pin-gray.png))。
+1. 若要變更釘選多面的順序，請按一下 **移動** (![移動選擇器](assets/btn-move.png))圖示並將列拖曳至中的新位置 *釘選Facet* 區段。
 
-## 步骤3：发布更改
+## 步驟3：發佈變更
 
-1. Facet完成后，单击 **发布更改**.
-1. 等待Facet出现在商店中。
-如果Facet在两个小时后不可用，请参阅 [验证导出](install.md#synchronize-catalog-data) 安装说明中的。
+1. 多面完成後，按一下 **發佈變更**.
+1. 等候多面向出現在存放區中。
+如果兩小時後無法使用Facet，請參閱 [驗證匯出](install.md#synchronize-catalog-data) 安裝說明中的。
 
-## 字段描述
+## 欄位說明
 
-| 字段 | 描述 |
+| 欄位 | 說明 |
 |--- |--- |
-| 标签 | ([Headless](facets-type.md) 仅限) [Facet标签](facets-type.md) 可编辑店面中可见的内容，以便与您的品牌保持一致。 |
-| 排序类型 | 用于 [sort](facets-type.md) 彩块化。 全部 [!DNL Commerce] storefronts仅按字母顺序对facet进行排序。 Headless实施还可以按以下方式排序 `Count`. 选项：<br />按字母顺序 — 按字母顺序对Facet进行排序。<br />计数 — （仅限Headless）根据找到的匹配数对Facet进行排序。 |
-| 最大值 | 可在店面中针对每个方面显示的最大值数。 表示一组值的多面均匀分布。 有效条目： 0 - 30；默认值： 8 |
+| 標籤 | ([Headless](facets-type.md) 僅限) [Facet標籤](facets-type.md) 可編輯店面中顯示的內容，以與您的品牌保持一致。 |
+| 排序型別 | 用於 [sort](facets-type.md) 多面向。 全部 [!DNL Commerce] 店面僅依字母順序排序Facet。 Headless實作也可依以下方式排序： `Count`. 選項：<br />按字母順序 — 依字母順序排序多面向。<br />計數 — （僅限Headless）根據找到的相符專案數來排序Facet。 |
+| 最大值 | 可在店面中針對各面向顯示的值數目上限。 代表值範圍的多面會平均分佈。 有效專案： 0 - 30；預設： 8 |
 
-### 控件
+### 控制項
 
-| 控制 | 描述 |
+| 控制 | 說明 |
 |--- |--- |
-| ![插针选择器](assets/btn-pin-blue.png) | 将小平面固定或取消固定到 *筛选器* 列表。 |
-| ![更多选择器](assets/btn-more.png) | 显示一个菜单，其中包含可应用于选定Facet的其他操作。 选项：编辑、删除 |
-| ![移动选择器](assets/btn-move.png) | 使用 *移动* 图标以将固定小平面拖到中的其他位置 *固定的Facet* 部分。 |
+| ![圖釘選擇器](assets/btn-pin-blue.png) | 將多面釘選或取消釘選至頂端 *篩選器* 清單。 |
+| ![更多選擇器](assets/btn-more.png) | 顯示可套用至所選Facet的其他動作功能表。 選項：編輯、刪除 |
+| ![移動選擇器](assets/btn-move.png) | 使用 *移動* 圖示將釘選多面拖曳至 *釘選Facet* 區段。 |

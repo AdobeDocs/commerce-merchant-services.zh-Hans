@@ -1,32 +1,32 @@
 ---
 title: 退款
-description: 为 [!DNL Payment Services] 在贷项通知单流程中对管理员中的订单执行操作。
+description: 建立退款對象 [!DNL Payment Services] 「管理員」中的訂單，作為銷退折讓單處理的一部分。
 exl-id: 2b3721a1-9c9d-4e3f-ab7d-5bd61573dcb4
 source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
 
 # 退款
 
-退款 [!DNL Payment Services] 在“管理员”中创建订单，作为贷项通知单流程的一部分。 贷项通知单是一份单据，用于显示应付给客户的全额或部分退款金额，这些退款可用于购买或直接退还给客户。 贷项通知单只能为 [已开票](https://docs.magento.com/user-guide/sales/invoice-create.html){target=&quot;_blank&quot;}。
+退款 [!DNL Payment Services] 訂單是在「管理員」中建立的，作為銷退折讓單處理的一部分。 銷退折讓單是一種檔案，可顯示全部或部分退款應付給客戶的金額，這些金額可用於購買或直接退款給客戶。 只能針對下列訂單發出銷退折讓單： [已開發票](https://docs.magento.com/user-guide/sales/invoice-create.html){target="_blank"}.
 
-请参阅 [贷项通知单](https://docs.magento.com/user-guide/sales/credit-memos.html)我们的核心用户指南中的{target=&quot;_blank&quot;}，以了解更多信息以及如何签发和打印贷项通知单。
+另請參閱 [銷退折讓單](https://docs.magento.com/user-guide/sales/credit-memos.html){target="_blank"} 請參閱我們的核心使用指南，以取得詳細資訊，並瞭解如何核發及列印銷退折讓單。
 
-对于通过PayPal或信用卡处理的订单，您可以：
+對於使用PayPal或信用卡處理的訂單，您可以：
 
-* 退还订单的全部金额
-* 退回部分订单金额（或多个部分金额）
-* 退款金额小于特定订单项目的价值
+* 退還訂單的全部金額
+* 退回訂單的部分金額（或多個部分金額）
+* 退回小於特定訂單料號值的金額
 
-请参阅 [发出贷项通知单](https://docs.magento.com/user-guide/sales/credit-memo-create.html)有关详细信息，请参阅核心用户指南中的{target=&quot;_blank&quot;}。
+另請參閱 [核發銷退折讓單](https://docs.magento.com/user-guide/sales/credit-memo-create.html){target="_blank"} 詳細資訊，請參閱我們的核心使用手冊。
 
 >[!NOTE]
 >
->如果您尝试为订单部分退款的金额超过剩余订单金额（原始金额减去现有退款总额），或者您为金额大于完整订单金额的金额发出退款，则PayPal或信用卡处理订单会出错。
+>如果您嘗試對超過剩餘訂單金額（原始金額減去現有退款總額）的訂單進行部份退款，或是您核發的退款金額大於全部訂單金額，PayPal或信用卡處理的訂單就會發生錯誤。
 
-的 [!UICONTROL Payment Action] 在 [!UICONTROL Payment Settings] 配置 —  `Authorize` 或 `Authorize and Capture` — 确定 [基本退款工作流](https://docs.magento.com/user-guide/sales/credit-memos.html#refund-workflow){target=&quot;_blank&quot;}。
+此 [!UICONTROL Payment Action] 在您的 [!UICONTROL Payment Settings] 組態 — 任一 `Authorize` 或 `Authorize and Capture` — 決定 [基本退款工作流程](https://docs.magento.com/user-guide/sales/credit-memos.html#refund-workflow){target="_blank"} 訂購。
 
-请参阅 [付款活动设置部分](https://docs.magento.com/user-guide/sales/credit-memo-create.html#payment-action-setting){target=&quot;_blank&quot;}，共 _发出贷项通知单_ 以了解更多信息。
+請參閱 [付款動作設定區段](https://docs.magento.com/user-guide/sales/credit-memo-create.html#payment-action-setting){target="_blank"} 之 _核發銷退折讓單_ 以取得詳細資訊。

@@ -1,6 +1,6 @@
 ---
-title: 测试和部署存储实现
-description: 测试计划以验证“商店完成”功能。 测试涵盖库存同步API、取消订单的端到端履行工作流、商店履行应用程序用户管理以及客户签入体验。
+title: 測試並部署商店履行
+description: 測試計畫，以驗證「商店履行」功能。 測試包含「存貨同步API」、已取消訂單的端對端履行工作流程、「商店履行」應用程式使用者管理，以及「客戶簽到」體驗。
 role: User, Admin
 level: Intermediate
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
@@ -11,430 +11,430 @@ ht-degree: 0%
 
 ---
 
-# 测试和部署用于Adobe Commerce的商店实施
+# 測試並部署Adobe Commerce的商店履行
 
-在开发环境中完成载入过程后，您可以启动该过程以测试并将商店履行解决方案部署到生产环境。
+在開發環境中完成入門流程後，您可以開始該流程，以測試並將Store Fulfillment解決方案部署到生產環境。
 
-**先决条件**
+**必要條件**
 
-在测试或同步任何信息、存储或订购之前，请确认您已完成以下任务：
+在測試或同步任何資訊、商店或訂單之前，請確認您已完成下列工作：
 
-- 已完成 [常规配置](enable-general.md) ，用于商店履行服务。
+- 已完成 [一般設定](enable-general.md) 用於「商店履行」服務。
 
-- [添加并验证沙盒和生产环境的帐户凭据和连接详细信息](connect-set-up-service.md#configure-store-fulfillment-account-credentials)
+- [新增並驗證您的沙箱和生產環境的帳戶憑證和連線詳細資料](connect-set-up-service.md#configure-store-fulfillment-account-credentials)
 
-- 确认 [Adobe Commerce集成](connect-set-up-service.md#configure-store-fulfillment-account-credentials) “商店履行”解决方案可用且已授权。
+- 確認 [Adobe Commerce整合](connect-set-up-service.md#configure-store-fulfillment-account-credentials) 適用於Store Fulfillment解決方案，現可提供並獲授權。
 
-## 准备测试
+## 準備測試
 
-必须先完成连接配置，然后才能创建任何测试订单或执行集成测试。 在测试之前，还必须验证存储数据是否已同步。
+必須先完成連線設定，然後才能建立任何測試訂單或執行整合測試。 在測試之前，您也必須確認您的存放區資料已同步。
 
-1. 同步存储履行源。
+1. 同步化商店履行來源。
 
-   - 转到 **[!UICONTROL Stores > Sources]**.
+   - 前往 **[!UICONTROL Stores > Sources]**.
 
-   - 选择 **[!UICONTROL Synchronize Store Fulfillment Sources]**.
+   - 選取 **[!UICONTROL Synchronize Store Fulfillment Sources]**.
 
-1. 在存储网格中，验证存储是否标记为 `Synced` 在创建测试订单之前。
+1. 從商店格線，確認商店已標示為 `Synced` 建立測試訂單之前。
 
-## 示例测试计划
+## 範例測試計畫
 
-零售商在部署的配置和测试阶段期间验证商店完成解决方案的基本功能。 此示例测试计划为测试提供了一个起点。 根据您的要求添加其他方案。
+零售商會在部署的設定和測試階段驗證Store Fulfillment解決方案的基本功能。 此範例測試計畫提供測試的起點。 根據您的需求新增其他案例。
 
 >[!NOTE]
 >
->完成“商店完成”解决方案的初始入门或更新现有安装后，在部署到生产之前，请始终在非生产环境中测试应用程序。
+>完成Store Fulfillment解決方案的初始入門或更新現有安裝後，在部署到生產環境之前，請務必在非生產環境中測試應用程式。
 
-此示例测试计划涵盖以下功能区域：
+此範例測試計畫涵蓋下列功能區域：
 
-| 功能区 | 函数 | 角色 |
+| 功能區域 | 函式 | 角色 |
 |-------------------------------------|------------------------------------------|----------------------------------|
-| 库存和订单同步 | 库存API同步 | Adobe Commerce管理员 |
-| 端到端 | 订单取消工作流 | 客户、管理员、商店关联 |
-| 管理员 | 商店履行应用程序权限 | 管理员 |
-| Adobe Commerce弗朗滕 | 产品类型 | 客户，管理员 |
-| 前端结账</br>签入表单 | 签入体验 | 客户，管理员 |
-| 商店辅助应用程序 | 订购</br>挑选</br>阶段</br>和切换 | 存储关联 |
+| 存貨與訂單同步化 | 詳細目錄API同步 | Adobe Commerce管理員 |
+| 端對端 | 訂單取消工作流程 | 客戶、管理員、商店關聯 |
+| 管理員 | Store Fulfillment應用程式許可權 | 管理員 |
+| Adobe Commerce前端 | 產品型別 | 客戶、管理員 |
+| 前端結帳</br>簽入表單 | 簽入體驗 | 客戶、管理員 |
+| 商店協助應用程式 | 訂購</br>選取</br>階段</br>和移交 | 存放區關聯 |
 
-### 库存API同步
+### 詳細目錄API同步
 
-测试计划的此部分涵盖库存和订单同步，以验证在Adobe Commerce和商店履行解决方案之间是否正确同步了对挑库来源和库存的更新。
+測試計畫的這個區段涵蓋存貨與訂單同步化，以確認取貨來源與存貨的更新在Adobe Commerce與「商店履行」解決方案之間已正確同步。
 
-**功能区**:库存和订单同步</br>
-**角色：** 管理员</br>
-**测试类型：** 全部积极
+**功能區域**：存貨與訂單同步化</br>
+**角色：** 管理員</br>
+**測試型別：** 全部正面
 
 <table>
 <thead>
 <tr>
-<th>函数</th>
-<th>测试方案</th>
-<th>预期结果</th>
+<th>函式</th>
+<th>測試案例</th>
+<th>預期結果</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>添加装货货源</strong></td>
-<td>保存新的装货库存来源。</td>
-<td>实时同步会在5分钟内将源详细信息发送到WalmartGIF服务。</td>
+<td><strong>新增取貨庫存來源</strong></td>
+<td>儲存新的撿料庫存來源。</td>
+<td>即時同步會在5分鐘內將來源詳細資料傳送至WalmartGIF服務。</td>
 </tr>
 <tr>
-<td><strong>更新现有的装箱库存来源</strong></td>
-<td>保存对现有装货库存来源的更新。</td>
-<td>实时同步操作会在5分钟内将详细信息发送至WalmartGIF</td>
+<td><strong>更新現有的取貨存量來源</strong></td>
+<td>將更新儲存至現有的取貨庫存來源。</td>
+<td>即時同步作業會在5分鐘內將詳細資料傳送至WalmartGIF</td>
 </tr>
 <tr>
-<td><strong>装货货源</br><code>Is Synced</code> 状态</br><code>Is Synced</code></strong></td>
-<td>保存对现有装货库存来源的更新。</td>
-<td>成功操作后， <code>Is Synced</code> “管理源”页面的列从 <code>No</code> to <code>Yes</code>.</td>
+<td><strong>取貨庫存來源</br><code>Is Synced</code> 狀態</br><code>Is Synced</code></strong></td>
+<td>將更新儲存至現有的取貨庫存來源。</td>
+<td>成功操作後， <code>Is Synced</code> 「管理來源」頁面更新的資料欄 <code>No</code> 至 <code>Yes</code>.</td>
 </tr>
 <tr>
-<td><strong>修改的库存预订流程</strong></td>
-<td>为产品创建并提交新订单。</td>
-<td>产品的可售量相应地减少。</td>
+<td><strong>已修改的庫存預留程式</strong></td>
+<td>建立並提交產品的新訂單。</td>
+<td>產品的可銷售數量會相應減少。</td>
 </tr>
 <tr>
-<td><strong>新订单推送、API同步 — 客户订单</strong></td>
-<td>客户提交商店提货单。</td>
-<td><ul><li>在“管理员订单”视图中， <strong>Adobe Commerce管理员用户</strong> 看到“订单同步”状态更新为 <code>Sent</code></li><li>订单详细信息日志包含该消息 <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
+<td><strong>新訂單推送、API同步 — 客戶訂單</strong></td>
+<td>客戶提交商店取貨訂單。</td>
+<td><ul><li>在「管理訂單」檢視中， <strong>Adobe Commerce管理員使用者</strong> 訂單同步狀態已更新至 <code>Sent</code></li><li>訂單詳細資訊記錄包含訊息 <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
-<td><strong>新订单推送、API同步 — 管理员提交订单</strong></td>
-<td>安Adobe Commerce <strong>管理员</strong> 提交提货单。</td>
-<td><ul><li>在“管理员订单”视图中，订单同步状态将更新为 <code>Sent</code>.</li><li>订单详细信息日志包含该消息 <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
+<td><strong>新訂單推送、API同步 — 管理員提交訂單</strong></td>
+<td>Adobe Commerce <strong>管理員</strong> 提交取貨單。</td>
+<td><ul><li>在「管理訂單」檢視中，「訂單同步」狀態會更新為 <code>Sent</code>.</li><li>訂單詳細資訊記錄包含訊息 <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
-<td><strong>新订单推送、例外队列<strong></td>
-<td>在Adobe Commerce管理员中确定一些虚拟和可下载的产品，这些产品可通过Adobe Commerce完成，而无需与履行服务(FaaS)进行交互。</td>
-<td>这些产品在导出中会被正确删除或标记，以防止与FaaS发生下游冲突。</td>
+<td><strong>新訂單推送，例外狀況佇列<strong></td>
+<td>識別Adobe Commerce Admin中可透過Adobe Commerce完成的多項虛擬及可下載產品，不需與Fulfillment服務(FaaS)互動。</td>
+<td>這些產品在匯出時會適當地移除或標幟，以防止下游與FaaS衝突。</td>
 </tr>
 </tbody>
 </table>
 
-### 订单取消工作流
+### 訂單取消工作流程
 
-测试计划的此部分包含用于测试通过Adobe Commerce取消的订单的端到端工作流的方案。
+測試計畫的這個部分包含測試透過Adobe Commerce取消的訂單的端對端工作流程的情況。
 
-**功能区域：** Adobe Commerce管理员</br>
-**角色：** 端到端（管理员、商店关联、客户）</br>
-**测试结果类型：** 所有情况均为正数
+**功能區域：** Adobe Commerce管理員</br>
+**角色：** 端對端（管理員、商店夥伴、客戶）</br>
+**測試結果型別：** 所有情境皆為正數
 
 <table style="table-layout:fixed">
 <tr>
-<th>函数</th>
-<th>方案</th>
-<th>预期结果</th>
+<th>函式</th>
+<th>情境</th>
+<th>預期結果</th>
 </tr>
 <tr>
-<td><strong>完全取消订单</strong></td>
+<td><strong>完整訂單取消</strong></td>
 <td><ol>
-<li>下单。</li>
-<li>等待顺序同步。</li>
-<li>验证发票电子邮件的发票创建（如果授权并捕获）接收。</li>
-<li>使用“发票”视图中的所有已订购产品创建贷项通知单。</li>
+<li>下訂單。</li>
+<li>等候順序同步完成。</li>
+<li>驗證商業發票電子郵件的收據建立（若已授權並擷取）。</li>
+<li>從「商業發票」檢視建立包含所有已訂購產品的「銷退折讓單」。</li>
 </ol>
 </td>
 <td>
 <ul>
-<li>订单历史记录更新为 <code>We refunded $X online. Transaction ID: transactionID</code> 和 <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
-<li>订单状态为 <code>Closed</code>. （我们已设置PAYMENT REVIEW。）</li>
-<li>在Adobe Commerce创建的贷项通知单。 （等到cron工作。）</li>
-<li>如果已选取所有项目，则准备接收电子邮件 <code>DISPLAY COMMENT HISTORY</code> 显示 <code>Order is ready for pickup</code> (<code>CUSTOMER NOTIFIED</code> 标志 <code>true</code>.)</li>
-<li>如果未选取所有项目，则会显示取消电子邮件和显示评论历史记录 <code>Order has been canceled - all items were not available</code></li>
-<li><code>CUSTOMER NOTIFIED</code> 标志 <code>true</code>.)</li>
+<li>訂單歷史記錄已更新 <code>We refunded $X online. Transaction ID: transactionID</code> 和 <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
+<li>訂單狀態為 <code>Closed</code>. （我們已設定「立即付款稽核」。）</li>
+<li>在Adobe Commerce中建立的銷退折讓單。 （等到cron運作為止。）</li>
+<li>若已撿料所有料號，則準備好接收電子郵件 <code>DISPLAY COMMENT HISTORY</code> 顯示 <code>Order is ready for pickup</code> (<code>CUSTOMER NOTIFIED</code> 標幟為 <code>true</code>.)</li>
+<li>如果所有料號均未撿料，則會顯示取消電子郵件與顯示註解歷史記錄 <code>Order has been canceled - all items were not available</code></li>
+<li><code>CUSTOMER NOTIFIED</code> 標幟為 <code>true</code>.)</li>
 </ul>
 </td>
 </tr>
-<tr><td><strong>部分订单取消<strong></td>
+<tr><td><strong>部分訂單取消<strong></td>
 <td>
 <ol>
-<li>订购至少两个产品。</li>
-<li>等待顺序同步。</li>
-<li>检查发票是否已创建（如果授权并捕获），并收到发票电子邮件。</li>
-<li>等待两小时进行交易结算。</li>
-<li>从“发票”视图中创建仅包含部分已订购产品的贷项通知单。</li>
+<li>訂購至少兩種產品。</li>
+<li>等候順序同步完成。</li>
+<li>檢查是否已建立發票（如果授權並擷取）以及是否收到發票電子郵件。</li>
+<li>等候兩小時進行交易結算。</li>
+<li>從「商業發票」檢視建立僅含部分訂購產品的「銷退折讓單」。</li>
 </td>
 <td>
 <ul>
-<li>订单历史记录更新： <code>We refunded $X online. Transaction ID: transactionID</code></li>
-<li>订单历史记录更新： <code>Order notified as partly canceled at: Date and Hour</code></li>
-<li>收到订单退款电子邮件： <code>$x amount was refunded</code></li>
-<li>订单状态为 <code>Processing</code>.</li>
-<li>在Adobe Commerce中创建的贷项通知单（等到cron工作完成时再执行）。</li>
-<li>如果未选取某些项目，请确认 [!UICONTROL Ready for Pickup] 将显示包含“零挑库或退款”部分的电子邮件。 <code>DISPLAY COMMENT HISTORY</code> 显示 <code>Order is ready for pickup, but some items not available.</code>.</li>
-<li><code>CUSTOMER NOTIFIED</code> 标志 <code>true</code>.</li>
+<li>訂單歷史記錄更新： <code>We refunded $X online. Transaction ID: transactionID</code></li>
+<li>訂單歷史記錄更新： <code>Order notified as partly canceled at: Date and Hour</code></li>
+<li>收到訂單退款電子郵件： <code>$x amount was refunded</code></li>
+<li>訂單狀態為 <code>Processing</code>.</li>
+<li>在Adobe Commerce中建立的銷退折讓單（等到cron運作為止）。</li>
+<li>如果未撿料某些料號，請確認 [!UICONTROL Ready for Pickup] 顯示nil pick or refust區段的電子郵件。 <code>DISPLAY COMMENT HISTORY</code> 顯示 <code>Order is ready for pickup, but some items not available.</code>.</li>
+<li><code>CUSTOMER NOTIFIED</code> 標幟為 <code>true</code>.</li>
 </ul>
 </td>
 </tr>
-<td><strong>准备接收</br></br>完全取消</br>（所有产品均设置为已挑库，数量为0）</br></strong></td>
+<td><strong>準備取車</br></br>完全取消</br>（所有產品都設定為0數量挑庫）</br></strong></td>
 <td>
 <ol>
-<li>下订单。</li>
-<li>等待顺序同步。</li>
-<li>检查发票是否已创建（如果授权并捕获），并收到发票电子邮件。</li>
-<li>转到Postman，并在所有产品均设置为的情况下运行“准备提货”请求 <code>picked</code> with <code>0 qty</code>.</li>
+<li>下訂單。</li>
+<li>等候順序同步完成。</li>
+<li>檢查是否已建立發票（如果授權並擷取）以及是否收到發票電子郵件。</li>
+<li>前往Postman並執行「準備好取貨」請求，將所有產品設定為 <code>picked</code> 替換為 <code>0 qty</code>.</li>
 </ol>
 </td>
 <td>
 <ul>
-<li>订单历史记录已更新： <code>We refunded $X offline</code></li>
-<li>订单状态为 <code>CLOSED</code>.
-<li>将创建贷项通知单。 （等到cron工作。）</li>
-<li>收到退款电子邮件： <code>$x amount was refunded</code></li>
-<li>已发送订单取消电子邮件。</li>
+<li>已更新訂單歷史記錄： <code>We refunded $X offline</code></li>
+<li>訂單狀態為 <code>CLOSED</code>.
+<li>已建立銷退折讓單。 （等到cron運作為止。）</li>
+<li>已收到退款電子郵件： <code>$x amount was refunded</code></li>
+<li>訂單取消電子郵件已傳送。</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>准备提货 — 部分取消</strong></br></br><strong>(有些产品被挑选，有些产品被挑选 <code>0 qty</code>)</strong>
+<td><strong>準備取貨 — 部分取消</strong></br></br><strong>(部分產品已撿料，部分產品則使用下列方式撿料 <code>0 qty</code>)</strong>
 </td>
 <td>
 <ol>
-<li>下订单。</li>
-<li>等待顺序同步。</li>
-<li>检查发票是否已创建（如果授权并捕获），并收到发票电子邮件。</li>
-<li>转到Postman并运行“准备装货”请求，其中部分产品设置为已挑库，其中0个数量，其余部分已挑库。</li>
+<li>下訂單。</li>
+<li>等候順序同步完成。</li>
+<li>檢查是否已建立發票（如果授權並擷取）以及是否收到發票電子郵件。</li>
+<li>移至Postman，執行「準備取貨」請求，將部份產品設定為「已撿料」且數量為0，其餘則已撿料。</li>
 </ol>
 </td>
 <td>
 <ul>
-<li><code>Your order is ready for pickup</code> with [!UICONTROL Ready for Pickup Items] 和 [!UICONTROL Canceled Items] 表格。 </li>
-<li>订单状态为“准备装货”。 </li>
-<li>订单历史记录已更新： <code>We refunded $X offline.</code>
-<li>订单历史记录已更新： <code>Order notified as partly canceled at: Date and hour</code>
-<li>收到退款电子邮件： <code>$x amount was refunded</code>
-<li>将创建贷项通知单。 （等到cron工作。）</li>
+<li><code>Your order is ready for pickup</code> 替換為 [!UICONTROL Ready for Pickup Items] 和 [!UICONTROL Canceled Items] 表格。 </li>
+<li>訂單狀態為準備取貨。 </li>
+<li>已更新訂單歷史記錄： <code>We refunded $X offline.</code>
+<li>已更新訂單歷史記錄： <code>Order notified as partly canceled at: Date and hour</code>
+<li>已收到退款電子郵件： <code>$x amount was refunded</code>
+<li>已建立銷退折讓單。 （等到cron運作為止。）</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>准备提货 — 部分取消</br></br>有些产品被挑选，有些产品被挑选 <code>0 qty</code>)</strong>
+<td><strong>準備取貨 — 部分取消</br></br>部分產品已撿料，部分產品則使用下列方式撿料 <code>0 qty</code>)</strong>
 </td>
 <td><ol>
-<li>下订单。</li>
-<li>等待顺序同步。</li>
-<li>检查发票是否已创建（如果授权并捕获），并收到发票电子邮件。</li>
-<li>转到Postman并运行“准备装货”请求，其中部分产品设置为已挑库，其中0个数量，其余部分已挑库。</li>
+<li>下訂單。</li>
+<li>等候順序同步完成。</li>
+<li>檢查是否已建立發票（如果授權並擷取）以及是否收到發票電子郵件。</li>
+<li>移至Postman，執行「準備取貨」請求，將部份產品設定為「已撿料」且數量為0，其餘則已撿料。</li>
 </ol>
 </td>
 <td><ul>
-<li><code>Your order is ready for pickup</code> with [!UICONTROL Ready for Pickup Items] 和 [!UICONTROL Canceled Items] 表格。 </li>
-<li>订单状态为“准备装货”。 </li>
-<li>订单历史记录已更新： <code>We refunded $X offline.</code>
-<li>订单历史记录已更新： <code>Order notified as partly canceled at: Date and hour</code>
-<li>收到退款电子邮件： <code>$x amount was refunded</code>
-<li>将创建贷项通知单。 （等到cron工作。）</li>
+<li><code>Your order is ready for pickup</code> 替換為 [!UICONTROL Ready for Pickup Items] 和 [!UICONTROL Canceled Items] 表格。 </li>
+<li>訂單狀態為準備取貨。 </li>
+<li>已更新訂單歷史記錄： <code>We refunded $X offline.</code>
+<li>已更新訂單歷史記錄： <code>Order notified as partly canceled at: Date and hour</code>
+<li>已收到退款電子郵件： <code>$x amount was refunded</code>
+<li>已建立銷退折讓單。 （等到cron運作為止。）</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>分配（分配期间） </br></br>完全取消（所有产品均设置为拒绝）</strong>
+<td><strong>分配（分配期間） </br></br>完全取消（將所有產品設定為已拒絕）</strong>
 </td>
 <td>
 <ol>
-<li>下订单。</li>
-<li>等待顺序同步。</li>
-<li>检查发票是否已创建（如果授权并捕获），并收到发票电子邮件。</li>
-<li>转到Postman并运行“准备提货”请求，并将所有产品都设置为已挑库。</li>
-<li>打开您的邮箱，找到准备接收电子邮件。 然后，单击**[!UICONTROL Confirm Arrival]**。</li>
-<li>签到。</li>
-<li>转到Postman，并运行Sprifated请求以将所有产品设置为已拒绝。</li>
+<li>下訂單。</li>
+<li>等候順序同步完成。</li>
+<li>檢查是否已建立發票（如果授權並擷取）以及是否收到發票電子郵件。</li>
+<li>前往Postman並執行「準備好取貨」請求，將所有產品設定為「已取貨」。</li>
+<li>開啟您的信箱，找到「準備好取貨」電子郵件。 然後，按一下**[!UICONTROL Confirm Arrival]**。</li>
+<li>簽入。</li>
+<li>前往Postman並執行Dispensed要求，將所有產品設定為已拒絕。</li>
 </ol>
 <td><ul>
-<li>订单历史记录已更新： <code>We refunded $X offline.</code></li>
-<li>收到退款电子邮件： <code>$x amount was refunded</code></li>
-<li>状态设置为 <code>CLOSED</code>.</li>
-<li>已创建贷项通知单。 （等到cron工作。）</li>
+<li>已更新訂單歷史記錄： <code>We refunded $X offline.</code></li>
+<li>已收到退款電子郵件： <code>$x amount was refunded</code></li>
+<li>狀態已設定為 <code>CLOSED</code>.</li>
+<li>已建立銷退折讓單。 （等到cron運作為止。）</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>分配（分配期间）</br></br>部分取消</br>(一些产品分发；有些会被拒绝。)</strong>
+<td><strong>分配（分配期間）</br></br>部分取消</br>（部分產品已分發，部分已拒絕。）</strong>
 </br></td>
 <td>
 <ol>
-<li>下订单。</li>
-<li>等待顺序同步。</li>
-<li>检查发票是否已创建（如果授权并捕获），并收到发票电子邮件。</li>
-<li>转到Postman，并在所有产品均设置为已选中的情况下运行“准备提货”请求。</li>
-<li>打开您的邮箱。 查找准备接收电子邮件，然后选择 <code>Confirm Arrival</code>.</li>
-<li>签到。</li>
-<li>转到Postman，并运行“已分配”请求，其中一些产品设置为已分配，另一些设置为已拒绝</li>
+<li>下訂單。</li>
+<li>等候順序同步完成。</li>
+<li>檢查是否已建立發票（如果授權並擷取）以及是否收到發票電子郵件。</li>
+<li>前往Postman，執行「準備好取貨」請求，並將所有產品設定為「已取貨」。</li>
+<li>開啟您的信箱。 找到「準備好取車」電子郵件，然後選取 <code>Confirm Arrival</code>.</li>
+<li>簽入。</li>
+<li>前往Postman，執行Dispensed請求，並將部分產品設定為dispensed，並將部分產品設定為rejected</li>
 </ol>
 </td>
 <td>
-<li>订单历史记录已更新： <code>We refunded $X offline</code></li>
+<li>已更新訂單歷史記錄： <code>We refunded $X offline</code></li>
 <li><code>Order notified as partly canceled at: Date and Hour</code>
-<li>收到退款电子邮件： <code>$x amount was refunded</code>
-<li>订单状态设置为 <code>Ready for pickup Dispensed</code>
-<li>已创建贷项通知单。 （等到cron工作。）</li>
+<li>已收到退款電子郵件： <code>$x amount was refunded</code>
+<li>訂單狀態設定為 <code>Ready for pickup Dispensed</code>
+<li>已建立銷退折讓單。 （等到cron運作為止。）</li>
 </td>
 </tr>
 <tr>
-<td> <strong>退回后的新RMA（完整）</strong>
+<td> <strong>回訪後新增RMA （完整）</strong>
 </td>
 <td>
 <ol>
-<li>下订单。</li>
-<li>等待顺序同步。</li>
-<li>如果配置了授权和捕获选项，请验证是否已创建发票，以及客户是否收到了发票电子邮件。</li>
-<li>选择所有带Postman的产品。</li>
-<li>签到。</li>
-<li>下药。</li>
-<li>转到订单，然后选择<strong>[!UICONTROL Create returns]=
-<li>创建RMA。</li>
+<li>下訂單。</li>
+<li>等候順序同步完成。</li>
+<li>如果已設定授權與擷取選項，請確認已建立商業發票，且客戶已收到商業發票電子郵件。</li>
+<li>選擇所有具有Postman的產品。</li>
+<li>簽入。</li>
+<li>進行分配。</li>
+<li>前往訂單，然後選取<strong>[!UICONTROL Create returns]=
+<li>建立RMA。</li>
 </ol>
 </td>
 <td>
 <ul>
-<li>RMA已创建，显示在 <strong>[!UICONTROL Returns]</b> 选项卡。</li>
-<li>客户收到RMA确认电子邮件。</li>
+<li>已建立RMA，並顯示在 <strong>[!UICONTROL Returns]</b> 索引標籤上的「訂單」檢視。</li>
+<li>客戶已收到RMA確認電子郵件。</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>退回后新RMA — 部分</strong>
+<td><strong>返回後新增RMA — 部分</strong>
 </td>
 <td>
 <ol>
-<li>下订单。</li>
-<li>等待顺序同步。</li>
-<li>检查发票是否已创建（如果授权并捕获），并收到发票电子邮件。</li>
-<li>选择所有带Postman的产品。</li>
-<li>签到。</li>
-<li>下药。</li>
-<li>按顺序，然后选择  <strong>[!UICONTROL Create returns]</strong></li>
-<li>使用部分订购产品创建RMA。</li>
+<li>下訂單。</li>
+<li>等候順序同步完成。</li>
+<li>檢查是否已建立發票（如果授權並擷取）以及是否收到發票電子郵件。</li>
+<li>選擇所有具有Postman的產品。</li>
+<li>簽入。</li>
+<li>進行分配。</li>
+<li>移至順序，然後選取  <strong>[!UICONTROL Create returns]</strong></li>
+<li>使用部分訂購產品建立RMA。</li>
 </ol>
 <td>
 <ul>
-<li>RMA创建并显示在 <strong>[!UICONTROL Returns]</strong> 选项卡。</li>
-<li>客户收到了RMA确认电子邮件。</li>
-<li>创建RMA后，获取RMA授权：从管理员中，转到 <strong>[!UICONTROL Sales > Returns]</strong>. 选择您创建并授权的RMA。</li>
-<li>确认客户收到RMA授权确认电子邮件。</li>
-<li>检查退款是否已添加到交易记录和订单历史记录中。</li>
+<li>RMA已建立並顯示在下列 <strong>[!UICONTROL Returns]</strong> 索引標籤上的「訂單」檢視。</li>
+<li>客戶已收到RMA確認電子郵件。</li>
+<li>建立RMA之後，取得RMA授權：從管理員，前往 <strong>[!UICONTROL Sales > Returns]</strong>. 選取您建立並授權的RMA。</li>
+<li>確認客戶已收到RMA授權確認電子郵件。</li>
+<li>檢查退款是否已新增至交易與訂單歷史記錄。</li>
 </ul>
 </td>
 </tr>
 </table>
 
 
-### 商店履行应用程序权限
+### Store Fulfillment應用程式許可權
 
-测试计划的此部分涵盖商店实施应用程序用户的帐户管理。
+測試計畫的這個區段涵蓋「商店履行」應用程式使用者的帳戶管理。
 
-- 确认存储关联可以使用从Adobe Commerce管理员创建的新用户帐户进行身份验证。
-- 确认已成功应用对现有帐户的更新。
+- 確認商店關聯可使用從Adobe Commerce管理員建立的新使用者帳戶進行驗證。
+- 確認已成功套用現有帳戶的更新。
 
-**功能区域：** Adobe Commerce管理员</br>
-**角色：** 管理员、商店关联</br>
-**测试类型：** 全部积极
+**功能區域：** Adobe Commerce管理員</br>
+**角色：** 管理員、商店關聯</br>
+**測試型別：** 全部正面
 
 <table style="table-layout:auto">
 <tr>
-<th>函数</th>
-<th>方案</th>
-<th>预期结果</th>
+<th>函式</th>
+<th>情境</th>
+<th>預期結果</th>
 </tr>
 <tr>
-<td><strong>用户帐户管理 — 创建帐户</strong></br></br>
+<td><strong>使用者帳戶管理 — 建立帳戶</strong></br></br>
 </td>
 <td>
 <ol>
-<li><strong>管理员</strong>  — 登录Adobe Commerce管理员</li>
-<li>转到 <strong>[!UICONTROL System] &gt;商店履行应用程序权限&gt;所有商店履行应用程序用户</strong></li>
-<li><strong>添加新用户。</strong></li>
+<li><strong>管理員</strong>  — 登入Adobe Commerce Admin</li>
+<li>前往 <strong>[!UICONTROL System] &gt;商店履行應用程式許可權&gt;所有商店履行應用程式使用者</strong></li>
+<li><strong>新增使用者。</strong></li>
 </ol>
 <td>
 <ul>
-<li>帐户已成功创建。</li>
-<li>新用户帐户显示在 [!UICONTROL Store Fulfillment Users] 功能板。</li>
-<li><strong>存储关联</strong> 使用新的用户帐户登录到Store Assist应用程序。</li>
+<li>已成功建立帳戶。</li>
+<li>新使用者帳戶會顯示在 [!UICONTROL Store Fulfillment Users] 儀表板。</li>
+<li><strong>存放區關聯</strong> 使用新的使用者帳戶登入「商店協助」應用程式。</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>用户帐户管理 — 更新现有用户帐户</strong>
+<td><strong>使用者帳戶管理 — 更新現有的使用者帳戶</strong>
 </td>
 <td>
 <ol>
-<li>使用管理员用户帐户登录Adobe Commerce管理员。</li>
-<li>转到 <strong>[!UICONTROL System] &gt;商店履行应用程序权限&gt;所有商店履行应用程序用户</strong>.</li>
-<li>在用户帐户列表中，通过选择 <strong>[!UICONTROL Edit]</strong>.
-<li>通过更改 <strong>[!UICONTROL Is Active]</strong> to <strong>否</strong>.</li>
+<li>使用管理員使用者帳戶登入Adobe Commerce管理員。</li>
+<li>前往 <strong>[!UICONTROL System] &gt;商店履行應用程式許可權&gt;所有商店履行應用程式使用者</strong>.</li>
+<li>在「使用者帳戶」清單中，選取以開啟現有的作用中使用者帳戶 <strong>[!UICONTROL Edit]</strong>.
+<li>透過變更停用帳戶 <strong>[!UICONTROL Is Active]</strong> 至 <strong>否</strong>.</li>
 </ol>
 </td>
 <td>
 <ul>
-<li>在 <strong>[!UICONTROL Store Fulfillment App Users]</strong> 功能板中，已更新帐户的状态更改为 <strong>[!UICONTROL Inactive]</strong>.</li>
-<li>存储关联无法使用不活动的帐户凭据登录到存储协助应用程序。</li>
+<li>於 <strong>[!UICONTROL Store Fulfillment App Users]</strong> 儀表板，已更新帳戶的狀態已變更為 <strong>[!UICONTROL Inactive]</strong>.</li>
+<li>Store Associate無法使用非作用中帳戶認證登入Store Assist應用程式。</li>
 </ul>
 </td>
 </tr>
 </table>
 
-## Adobe Commerce产品类型
+## Adobe Commerce產品型別
 
-Adobe Commerce产品类型的测试方案可验证客户是否看到不同产品类型的正确产品、库存和交付方法信息：
+Adobe Commerce產品型別的測試案例會驗證客戶是否看到不同產品型別的正確產品、庫存和傳遞方法資訊：
 
 - [!UICONTROL Configurable]
 - [!UICONTROL Grouped]
 - [!UICONTROL Virtual]
-- [!UICONTROL Bundle products] 在Adobe Commerce店。
+- [!UICONTROL Bundle products] 在Adobe Commerce店面。
 
-**功能区域：** Adobe Commerce弗朗滕</br>
-**角色：** 应用商店辅助用户（商店关联）</br>
-**测试类型：** 全部积极
+**功能區域：** Adobe Commerce前端</br>
+**角色：** 商店協助應用程式使用者（商店關聯）</br>
+**測試型別：** 全部正面
 
 <table style="table-layout:auto">
 <tr>
-<th>函数</th>
-<th>方案</th>
-<th>评论</th>
+<th>函式</th>
+<th>情境</th>
+<th>註解</th>
 </tr>
 <tr>
-<td><strong>可配置产品</strong>
+<td><strong>可設定的產品</strong>
 </td>
 <td>
 <ul>
-<li>确认用户只能看到那些可配置的选项（已启用源、已分配库存以及存货中有某些物料），请检查子产品。</li>
-<li>确认在选择其他商店时，不可用的选项显示为交叉。</li>
-<li>确认如果用户选择不同的存储区，则可配置选项将被取消选中。</li>
-<li>确认如果可配置产品已在购物车中，并且用户选择了不同的商店，则产品显示为无现货。</li>
+<li>確認使用者只能看到這些可設定的選項，包括已啟用的來源、已指定庫存以及庫存中有某些專案 — 檢查子產品。</li>
+<li>確認選取其他存放區時，不可用的選項會顯示為已劃出。</li>
+<li>確認如果使用者選取不同的商店，可設定的選項會取消選取。</li>
+<li>確認如果可設定的產品已經在購物車中，且使用者選擇不同的商店，則產品顯示為無庫存。</li>
 </ul>
 </td>
 <td></td>
 </td>
 </tr>
 <tr>
-<td><strong>分组产品</strong>
+<td><strong>群組的產品</strong>
 </td>
 <td>
 <ul>
-<li>验证投放方法和 [!UICONTROL Add to cart] 按钮，则当所有子产品都具有
-<code>qty</code> 设置为 <code>0</code>.</li>
-<li>确认在至少有一个子产品具有 <code>qty</code> 设置为 <code>0.</code></li>
-<li>验证 [!UICONTROL Store Pickup Delivery] 方法仅对具有 [!UICONTROL Available for Store Pickup] 已启用。 （检查子产品。）</li>
+<li>確認傳遞方法和 [!UICONTROL Add to cart] 當所有子產品都具備以下條件時，按鈕將針對客戶停用
+<code>qty</code> 設定為 <code>0</code>.</li>
+<li>確認至少有一個子產品具備下列條件時，客戶已啟用傳遞方法 <code>qty</code> 設定為 <code>0.</code></li>
+<li>確認 [!UICONTROL Store Pickup Delivery] 方法僅對具有「 」的產品可見及作用 [!UICONTROL Available for Store Pickup] 已啟用。 （檢查子產品。）</li>
 </ul>
 </td>
 <td></td>
 </tr>
 <tr>
-<td><strong>虚拟产品</strong>
+<td><strong>虛擬產品</strong>
 </td>
 <td>
-验证虚拟产品是否未提供  [!UICONTROL In-store Pickup] 投放方法。
+確認虛擬產品不提供  [!UICONTROL In-store Pickup] 傳遞方法。
 <td></td>
 </td>
 </tr>
 <tr>
-<td><strong>捆绑产品</strong>
+<td><strong>套裝產品</strong>
 </td>
 <td>
 <ul>
-<li>验证是否至少有一个子产品具有 [!UICONTROL Available for Store Pickup] 禁用后，客户无法使用“商店提货”交付选项。</li>
-<li>验证是否至少有一个子产品具有 [!UICONTROL Available for Home Delivery] 禁用后，“主页交付”选项将不可用于客户。</li>
-<li>验证捆绑包中至少有一个子产品无现货，该捆绑包（父产品）还显示为 [!UICONTROL Out of stock].</li>
+<li>確認至少有一個子產品具有 [!UICONTROL Available for Store Pickup] 停用，客戶無法使用「商店取貨」交貨選項。</li>
+<li>確認至少有一個子產品具有 [!UICONTROL Available for Home Delivery] 停用，「首頁傳送」選項不適用於客戶。</li>
+<li>驗證套件組合中是否有至少一個子產品無庫存，套件組合（父產品）亦顯示為 [!UICONTROL Out of stock].</li>
 </ul>
 </td>
 <td></td>
@@ -442,194 +442,194 @@ Adobe Commerce产品类型的测试方案可验证客户是否看到不同产品
 <tbody>
 </table>
 
-## 签入体验
+## 簽入體驗
 
-测试计划的此部分涵盖下列功能的“商店代理货位的签入体验”订单：
+測試計畫的這個區段涵蓋下列功能的「商店取貨單的簽到體驗」：
 
-- 替代拾取联系人 — 验证添加 [!UICONTROL Alternate Pickup Contact] 和选择 [!UICONTROL Preferred Contact] 在商店提货单上。
+- 替代取車聯絡人 — 確認新增 [!UICONTROL Alternate Pickup Contact] 並選取 [!UICONTROL Preferred Contact] 在商店取貨單上。
 
-- 签入表单 — 验证提交存货提货单签入请求的工作流。
+- 簽入表單 — 驗證提交「商店取貨」訂單的簽入請求的工作流程。
 
-**功能区：** 购物车结帐、存货提货单的签入表</br>
-**角色：** 管理员、客户、商店关联</br>
-**测试类型：** 全部积极
+**功能區域：** 購物車結帳、商店取貨訂單的簽到表單</br>
+**角色：** 管理員、客戶、商店關聯</br>
+**測試型別：** 全部正面
 
-### 替代装货联系人
+### 替代取車連絡人
 
 
-**功能区域：** 购物车结账</br>
-**角色：** 客户</br>
-**测试类型：** 全部积极
+**功能區域：** 購物車結帳</br>
+**角色：** 客戶</br>
+**測試型別：** 全部正面
 
 <table style="table-layout:auto">
 <tr>
-<th>函数</th>
-<th>方案</th>
-<th>预期结果</th>
+<th>函式</th>
+<th>情境</th>
+<th>預期結果</th>
 </tr>
 <tr>
-<td><strong>替代装货联系人</br>
-签入</br><strong>
+<td><strong>替代取車連絡人</br>
+簽入</br><strong>
 </td>
 <td>
-客户使用店内装货选项提交订单。</td>
-<td>在结账过程中，客户会看到 [!UICONTROL Alternate Pickup Contact] 发运步骤中的选项。
+客戶提交具有「店內取貨」選項的訂單。</td>
+<td>在結帳過程中，客戶會看到 [!UICONTROL Alternate Pickup Contact] 「送貨」步驟上的選項。
 </td>
 </tr>
 <tr>
-<td><strong>备用装货首选联系人，签到</strong>
+<td><strong>備用取車偏好連絡人，簽到</strong>
 <td>
-客户使用店内装货选项提交订单。 在结帐期间，客户会添加 [!UICONTROL Alternate Pickup Contact].</td>
-<td>在结账过程中，客户会看到 [!UICONTROL Preferred Contact] 选项。</td>
+客戶提交具有「店內取貨」選項的訂單。 結帳期間，客戶新增 [!UICONTROL Alternate Pickup Contact].</td>
+<td>在結帳過程中，客戶會看到 [!UICONTROL Preferred Contact] 運送步驟上的選項。</td>
 </td>
 </tr>
 <tr>
-<td><strong>备用提货联系人详细信息，签入</strong>
+<td><strong>備用取貨聯絡人詳細資料，入庫</strong>
 </td>
 <td>
-客户使用店内装货选项提交订单。 在结帐期间，客户会选择 [!UICONTROL Alternate Pickup Contact] 中，单击“Target Workbench”。
+客戶提交具有「店內取貨」選項的訂單。 結帳時，客戶選取 [!UICONTROL Alternate Pickup Contact] 在送貨步驟中。
 </td>
-<td>客户将看到用于输入联系人详细信息的输入选项： [!UICONTROL First name], [!UICONTROL Last name], [!UICONTROL Phone]和 [!UICONTROL Email].</td>
+<td>客戶會看到輸入選項來輸入聯絡人詳細資訊： [!UICONTROL First name]， [!UICONTROL Last name]， [!UICONTROL Phone]、和 [!UICONTROL Email].</td>
 </tr>
 <tr>
-<td><strong>备用提货，签到电子邮件</strong>
+<td><strong>備用接送、簽到電子郵件</strong>
 </td>
-<td>客户使用店内装货选项提交订单。 在结帐期间，客户会选择 [!UICONTROL Alternate Pickup Contact] 在发运步骤中，添加联系人详细信息并提交订单。</td>
-<td>客户和备用联系人都会收到订单的签到电子邮件。</td>
+<td>客戶提交具有「店內取貨」選項的訂單。 結帳時，客戶選取 [!UICONTROL Alternate Pickup Contact] 在送貨步驟中，新增聯絡人詳細資料並提交訂單。</td>
+<td>客戶與替代連絡人都會收到訂單的「簽到電子郵件」。</td>
 </tr>
-<td><strong>备用装货、订单详细信息</strong></td>
-<td>客户使用店内装货选项提交订单。 在结帐期间，客户会选择 [!UICONTROL Alternate Pickup Contact] 在发运步骤中，添加联系人详细信息并提交订单。</td>
-<td>管理员会看到有关已保存订单的其他联系信息。</td>
+<td><strong>替代取貨、訂單明細</strong></td>
+<td>客戶提交具有「店內取貨」選項的訂單。 結帳時，客戶選取 [!UICONTROL Alternate Pickup Contact] 在送貨步驟中，新增聯絡人詳細資料並提交訂單。</td>
+<td>管理員會看到已儲存訂單上的其他連絡資訊。</td>
 </tr>
 <tr>
-<td><strong>替代装货联系人、存储关联订单视图</strong>
+<td><strong>替代取貨連絡人、商店相關訂單檢視表</strong>
 </td>
-<td>客户使用店内装货选项提交订单。 在结帐期间，客户会选择 [!UICONTROL Alternate Pickup Contact] 在发运步骤中，添加联系人详细信息并提交订单。</td>
-<td>Store Associate可以在FaaS/ChaaS中查看有关订单的其他联系信息。</td>
+<td>客戶提交具有「店內取貨」選項的訂單。 結帳時，客戶選取 [!UICONTROL Alternate Pickup Contact] 在送貨步驟中，新增聯絡人詳細資料並提交訂單。</td>
+<td>Store Associate可在FaaS/ChaaS中檢視訂單的其他聯絡資訊。</td>
 </td>
 </tr>
 </tbody>
 </table>
 
-### 签入表单
+### 簽入表單
 
 
-**功能区域：** 签入表单</br>
-**角色：** 客户</br>
-**测试类型：** 全部积极
+**功能區域：** 簽入表單</br>
+**角色：** 客戶</br>
+**測試型別：** 全部正面
 
 <table style="table-layout:auto">
 <tr>
-<th>函数</th>
-<th>方案</th>
-<th>预期结果</th>
+<th>函式</th>
+<th>情境</th>
+<th>預期結果</th>
 </tr>
 <tr>
-<td><strong>签入操作 — 提交请求</strong>
+<td><strong>簽入動作 — 提交請求</strong>
 </td>
-<td>在签入表单中，客户填写所有必填字段并提交请求。</td>
-<td>客户会收到成功响应。</td>
+<td>在簽入表單上，客戶完成所有必填欄位，並提交請求。</td>
+<td>客戶會收到成功回應。</td>
 </tr>
 <tr>
-<td><strong>签入操作 — 查看请求详细信息</strong></td>
-<td>客户成功提交签入请求。</td>
-<td>订单状态在FaaS系统中更新，并且商店关联可以在FaaS中查看签入请求详细信息。
+<td><strong>簽入動作 — 檢視請求詳細資訊</strong></td>
+<td>客戶成功提交簽到要求。</td>
+<td>訂單狀態會在FaaS系統中更新，而「商店關聯」可在FaaS中檢視簽入請求詳細資訊。
 </td>
 </tr>
 <tr>
-<td><strong>签入操作 — 仅提交一次请求</strong></td>
-<td>在提交订单的签入请求后，客户将再次选择要签入的链接。</td>
-<td>在“签入”窗体中，客户看不到用于编辑或重新提交表单的选项。</td>
+<td><strong>簽入動作 — 僅提交請求一次</strong></td>
+<td>在提交訂單的簽入請求後，客戶會選取要第二次簽入的連結。</td>
+<td>在「入庫」表單中，客戶看不到編輯或重新提交表單的選項。</td>
 </tr>
 <tr>
-<td><strong>签入操作 — 确认到达</strong></td>
-<td>在FaaS中标记了店内取货订单，准备取货。 客户收到“准备提货”电子邮件，并选择 [!UICONTROL Confirm Arrival].</td>
-<td>客户将看到订单的签入表单。</td>
+<td><strong>簽入動作 — 確認到達</strong></td>
+<td>店內取貨訂單已標示為可在FaaS中取貨。 客戶會收到「準備好取貨」電子郵件，並選擇 [!UICONTROL Confirm Arrival].</td>
+<td>客戶看到訂單的「簽到」表單。</td>
 </tr>
 </tbody>
 </table>
 
-## 商店辅助应用程序
+## 商店協助應用程式
 
-测试计划的此部分涵盖应用商店辅助应用程序中测试顺序、选择和切换工作流的方案。
+測試計畫的這個區段涵蓋Store Assist應用程式中測試訂單、挑選和移交工作流程的情況。
 
-**功能区域：** 商店辅助应用程序</br>
-**角色：** 存储关联</br>
-**测试类型：** 全部积极
+**功能區域：** 商店協助應用程式</br>
+**角色：** 存放區關聯</br>
+**測試型別：** 全部正面
 
 <table style="table-layout:auto">
 <tr>
-<th>函数</th>
-<th>方案</th>
-<th>预期结果</th>
+<th>函式</th>
+<th>情境</th>
+<th>預期結果</th>
 </tr>
 <tr>
 <td>
-<strong>单次挑选 — 快乐路径、曲边拾取</strong></td>
-<td>挑选单个和多数量的物料。 没有无挑库和卷边装货（带暂存）。
+<strong>單一訂單撿料 — 快樂路徑、路邊撿料</strong></td>
+<td>挑選單一和多數量料號。 無nil pick和路邊取貨（含分段）。
 </td>
-<td>
-</td>
-</tr>
-<tr>
-<td><strong>多顺序挑选 — 快乐路径、曲边拾取</strong></td>
-<td>单个和多数量项目。 无零挑库和卷边装货（带暂存）</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>单笔订单领料 — 店内快捷路径领料</strong></td>
-<td>单个和多数量项目。 无零挑库和店内装货（带暂存）</td>
 <td>
 </td>
 </tr>
 <tr>
-<td><strong>多订单挑库 — 快乐路径、店内提货</strong></td>
-<td>挑选单个和多数量的物料。 没有无挑库和卷边装货（带暂存）。</td>
+<td><strong>多訂單撿料 — 快樂路徑、路邊撿料</strong></td>
+<td>單一和多數量料號。 無nil pick和路邊取貨（含預備）</td>
 <td></td>
 </tr>
 <tr>
-<td><strong>单笔订单挑库 — 不快乐路径，店内提货</strong></td>
-<td>挑选具有部分和零件的单件和多件物料，并在商店内提货（带暂存）</td>
+<td><strong>單次取貨 — 店內取貨的快樂路徑</strong></td>
+<td>單一和多數量料號。 無nil pick，和店內取貨（含分段）</td>
+<td>
+</td>
+</tr>
+<tr>
+<td><strong>多訂單撿料 — 快樂路徑、店內撿料</strong></td>
+<td>挑選單一和多數量料號。 無nil pick和路邊取貨（含分段）。</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>單一訂單撿料 — 路徑不愉快，店內撿料</strong></td>
+<td>撿料單一與多重數量料號，具有部份與零撿料與店內撿料（含暫存）</td>
 </td>
 <td></td>
 </tr>
-<td><strong>多订单挑库 — 不快乐的路径曲边拾取</strong></td>
-<td>挑选具有部分和零件的单件和多件物料，并在商店内提货（带暂存）</td>
+<td><strong>多訂單撿料 — 不滿意的路邊撿料</strong></td>
+<td>撿料單一與多重數量料號，具有部份與零撿料與店內撿料（含暫存）</td>
 <td></td>
 </tr>
-<td><strong>单笔订单挑库 — 不快乐的路径，弯边提货</strong></td>
-<td>挑选具有部分和零件的单件和多件物料，并进行卷边装货（带暂存）</strong></td>
+<td><strong>單一訂單撿料 — 路徑不愉快，路邊撿料</strong></td>
+<td>撿料單一與多重數量料號，具有部份與撿料與路邊撿料（含暫存）</strong></td>
 </td>
 <td></td>
 </tr>
-<tr><td><strong>已下订单 — 挑库前取消</strong></td>
+<tr><td><strong>已下訂單 — 撿料前已取消</strong></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td><strong>下单 — 切换前取消</strong></td>
+<td><strong>下訂單 — 移交前已取消</strong></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td><strong>下订单 — 在订单模块中搜索</strong></td>
+<td><strong>已下訂單 — 依訂單模組搜尋</strong></td>
 <td></td>
 <td></td>
 </tr>
-<tr><td><strong>下单 — 搜索和手动签入以进行切换</strong></td>
+<tr><td><strong>下訂單 — 搜尋和手動簽入以進行移交</strong></td>
 <td></td>
 <td></td>
 </tr>
-<tr><td><strong>已下订单 — 所有项目均未选取或未由选取器标记</strong></td>
+<tr><td><strong>已下訂單 — 所有料號未撿料或撿料器未標示為可用</strong></td>
 <td></td>
 <td></td></tr>
-<tr><td><strong>通过捆绑项目下单 — 挑库和切换</strong></td>
+<tr><td><strong>使用套件組合專案下訂單 — 撿料和移交</strong></td>
 <td></td>
 <td></td></tr>
-<tr><td><strong>下单 — 提交拒绝</strong></td>
+<tr><td><strong>已下訂單 — 已拒絕的交出</strong></td>
 <td></td>
 <td></td></tr>
-<tr><td><strong>下单 — 将所有物品拒绝交出</strong></td>
+<tr><td><strong>已下訂單 — 交出並拒絕所有料號</strong></td>
 <td></td>
 <td></td></tr>
 </tbody>
@@ -637,10 +637,10 @@ Adobe Commerce产品类型的测试方案可验证客户是否看到不同产品
 
 ## 部署
 
-在验证解决方案已配置并测试到您的规范后，您便可以从暂存环境部署到生产环境。
+在您確認解決方案已設定完畢，並依照您的規格完成測試後，您就可以準備從測試版部署至生產版。
 
-部署和测试因您的基础架构和功能而异。
+部署和測試會依您的基礎結構和功能而異。
 
 >[!TIP]
 >
->有关云基础架构项目的Adobe Commerce部署准则、检查列表和最佳实践，请参阅 [部署您的商店](https://devdocs.magento.com/cloud/live/stage-prod-live.html) ，位于Adobe Commerce开发人员文档中。
+>如需雲端基礎結構專案的部署准則、檢查清單和Adobe Commerce最佳實務，請參閱 [部署您的存放區](https://devdocs.magento.com/cloud/live/stage-prod-live.html) (位於Adobe Commerce開發人員檔案中)。

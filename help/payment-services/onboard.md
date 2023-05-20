@@ -1,6 +1,6 @@
 ---
-title: 板载 [!DNL Payment Services]
-description: 将实例与 [!DNL Payment Services] 功能。
+title: 上線 [!DNL Payment Services]
+description: 連線您的執行個體 [!DNL Payment Services] 功能，完成一些入門步驟。
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
@@ -11,52 +11,52 @@ ht-degree: 0%
 
 ---
 
-# 板载 [!DNL Payment Services]
+# 上線 [!DNL Payment Services]
 
-开始使用 [!DNL Payment Services] 表示 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source]，则必须完成一些入门步骤，以便将实例与付款功能连接。
+若要開始使用 [!DNL Payment Services] 的 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source]，您必須完成一些入門步驟，才能將執行個體與支付功能連線。
 
-## 载入流程
+## 上線流程
 
-![载入流程](assets/onboarding-diagram.svg)
+![上線流程](assets/onboarding-diagram.svg)
 
-此载入流程图显示了载入的一般流程 [!DNL Payment Services].
+此上線流程圖顯示上線的一般流程 [!DNL Payment Services].
 
-在您完成沙盒或实时支付入门后，即可从访问财务报告 [!DNL Payment Services] 中。
+在您完成沙箱或即時付款上線後，可從以下位置存取financial reporting： [!DNL Payment Services] 在Admin中。
 
-如果载入并启用了沙盒和实时支付，则可以从 [!DNL Payment Services] 回家。
+如果沙箱和即時支付都已上線並啟用，您可以從以下位置輕鬆地在這些模式之間切換： [!DNL Payment Services] 首頁。
 
-## 先决条件
+## 必要條件
 
-为了使用 [!DNL Payment Services]，则您必须在实例中使用以下内容：
+為了使用 [!DNL Payment Services]，您的執行個體必須具備下列可用專案：
 
-* 服务连接器模块
-* 服务ID模块
-* API密钥
+* 服務聯結器模組
+* 服務識別碼模組
+* API金鑰
 
-服务连接器和服务ID模块在 [安装 [!DNL Payment Services]](install.md). 安装完成后，您可以在配置设置(**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**)**[!UICONTROL Services]**—**[!UICONTROL Commerce Services Connector]**.
+服務聯結器與服務ID模組會在以下期間自動安裝： [安裝 [!DNL Payment Services]](install.md). 安裝完成後，您可以在組態設定中看到新區段(**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**)時，選擇此選項&#x200B;**[!UICONTROL Services]**—**[!UICONTROL Commerce Services Connector]**.
 
-要了解如何创建或访问API密钥，请参阅 [API凭据](#obtain-api-credentials).
+若要瞭解如何建立或存取您的API金鑰，請參閱 [API認證](#obtain-api-credentials).
 
-## 入门步骤
+## 入門步驟
 
-1. [安装 [!DNL Payment Services] 扩展](install.md#get-payment-services).
-1. [获取API凭据](connect.md#obtain-api-credentials).
-1. [连接实例](connect.md#configure-commerce-services) 到Commerce Services。 每个Commerce实例只能完成一次此连接。
-1. [设置沙盒服务](sandbox.md#enable-sandbox-testing) (或者，继续 [启用实时支付](sandbox.md#enable-live-payments) 如果您已在其他环境中测试了功能)，则使用测试PayPal付款处理帐户。
-1. [已设置 [!DNL Payment Services] 作为付款方式](production.md#set-payment-services-as-payment-method)，以开始处理测试付款。
-1. [请求付款权利](production.md#request-payments-entitlement-from-adobe) 启用实时载入。
-1. [完整的商户登入](production.md#complete-merchant-onboarding) 为您的商务网站启用实时付款。
-1. [获取 [!DNL Payment Services] 商户ID](production.md#configure-pricing-tier) 并将其交给销售部，以配置正确的定价层。
-1. [启用 [!DNL Payment Services] 处于实时模式](production.md#enable-live-payments) 开始处理实时支付。
-1. 测试支付，在 [沙盒](sandbox.md#test-in-sandbox-environment) 和 [生产](production.md#test-in-production) 环境。
+1. [安裝 [!DNL Payment Services] 擴充功能](install.md#get-payment-services).
+1. [取得API認證](connect.md#obtain-api-credentials).
+1. [連線您的執行個體](connect.md#configure-commerce-services) 至Commerce服務。 每個Commerce執行個體只能完成此連線一次。
+1. [設定沙箱服務](sandbox.md#enable-sandbox-testing) (或者，您也可以繼續前往 [啟用即時付款](sandbox.md#enable-live-payments) 如果您已在其他環境中測試功能)，請使用測試PayPal付款處理帳戶。
+1. [設定 [!DNL Payment Services] 作為您的付款方式](production.md#set-payment-services-as-payment-method)，以開始處理測試付款。
+1. [要求付款權益](production.md#request-payments-entitlement-from-adobe) 以啟用即時上線。
+1. [完成商戶上線](production.md#complete-merchant-onboarding) 啟用您的Commerce網站的即時付款。
+1. [取得您的 [!DNL Payment Services] 商家ID](production.md#configure-pricing-tier) 然後交給銷售人員設定正確的定價層級。
+1. [啟用 [!DNL Payment Services] 在即時模式中](production.md#enable-live-payments) 以開始處理即時付款。
+1. 測試付款，兩者皆有 [沙箱](sandbox.md#test-in-sandbox-environment) 和 [生產](production.md#test-in-production) 環境。
 
 >[!NOTE]
 >
->如果您未在管理员（步骤3）中配置Commerce Services，则无法设置沙盒或实时支付。
+>如果您未在管理員（步驟3）中設定Commerce Services，則無法設定沙箱或即時付款。
 
-## 疑难解答
+## 疑難排除
 
-* [故障诊断 [!DNL Payment Services] 安装](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=en)
-* [PayPal沙盒帐户未验证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)
-* [延迟 [!DNL Payment Services] 报告数据](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)
-* [在沙盒环境中处理付款时，测试信用卡失败并出现PayPal错误](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=en)
+* [疑難排解 [!DNL Payment Services] 安裝](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=en)
+* [未驗證PayPal沙箱帳戶](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)
+* [已延遲 [!DNL Payment Services] 報告資料](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)
+* [在沙箱環境中處理付款時，測試信用卡無法透過PayPal](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=en)

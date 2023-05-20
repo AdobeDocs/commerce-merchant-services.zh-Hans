@@ -1,6 +1,6 @@
 ---
-title: 常规配置
-description: 配置常规设置以启用 [!DNL Store Fulfillment] 你的店。 配置全局扩展设置、用于日志记录的系统设置、数据同步和安全性。 提供关键数据以启用Adobe Commerce与商店履行服务之间的集成。
+title: 一般設定
+description: 設定一般設定以啟用 [!DNL Store Fulfillment] ，為您的商店提供。 設定全域擴充功能設定、記錄、資料同步和安全性的系統設定。 提供重要資料，以啟用Adobe Commerce與Store Fulfillment服務之間的整合。
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
@@ -11,55 +11,55 @@ ht-degree: 0%
 
 ---
 
-# 存储服务和销售配置
+# 商店服務與銷售組態
 
-配置 [!DNL Store Fulfillment] 从 [!DNL Commerce] 管理员可启用扩展、指定扩展设置、配置Store Assist应用程序用户的安全设置，以及设置用于交付方法的选项。
+設定 [!DNL Store Fulfillment] 從 [!DNL Commerce] 管理員可啟用擴充功能、指定擴充功能設定、設定「商店協助」應用程式使用者的安全性設定，以及設定傳送方法的選項。
 
 >[!IMPORTANT]
 >
->仅当您连接Adobe Commerce实例和 [!DNL Store Fulfillment] 应用程序。 请参阅 [连接商店履行](connect-set-up-service.md).
+>Store Fulfillment服務設定只會在您連線Adobe Commerce執行個體和 [!DNL Store Fulfillment] 應用程式。 另請參閱 [Connect Store履行](connect-set-up-service.md).
 
-## 管理商店履行服务设置
+## 管理商店履行服務設定
 
-从 [!DNL Commerce Admin Store Configuration] 菜单。
+從管理商店履行服務的設定 [!DNL Commerce Admin Store Configuration] 功能表。
 
-- 通过选择 **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
+- 啟用擴充功能、設定全域設定，並選取「 」，指定「商店協助」應用程式使用者連線和帳戶的安全性選項 **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
 
-   ![用于商店履行的管理商店服务配置](assets/store-services-admin-sf-config.png)
+   ![Store Fulfillment的Admin Store服務設定](assets/store-services-admin-sf-config.png)
 
-- 通过选择 **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
+- 透過選取「 」來設定傳送方法 **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
 
-   ![用于商店履行的管理商店销售配置](assets/store-sales-admin-sf-deliver-config.png)
+   ![Store Fulfillment的管理商店銷售設定](assets/store-sales-admin-sf-deliver-config.png)
 
-## 基本设置
+## 基本設定
 
 <table>
 <thead>
 <tr>
-<td><strong>字段</strong></td>
-<td><strong>描述</strong></td>
-<td><strong>范围</strong></td>
-<td><strong>必需</strong></td>
+<td><strong>欄位</strong></td>
+<td><strong>說明</strong></td>
+<td><strong>範圍</strong></td>
+<td><strong>必填</strong></td>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Price]</strong></td>
-<td>您向客户收取的店内装货价格。 默认为零。</td>
-<td>网站</td>
+<td>您向客戶收取店內取貨的價格。 預設為零。</td>
+<td>網站</td>
 <td>否</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Search Radius]</strong></td>
-<td>购物者在店面结账中搜索商店取货位置时使用的半径（以公里为单位）。 搜索结果仅返回位于指定搜索半径内的存储。</td>
-<td>网站</td>
+<td>購物者在店面結帳中搜尋商店取貨位置時使用的半徑（以公里為單位）。 搜尋結果只會傳回位於指定搜尋半徑內的存放區。</td>
+<td>網站</td>
 <td>否</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Displayed error message]</strong></td>
-<td>当客户为无法用于店内装货的物料选择店内装货时显示的消息。 您可以根据需要自定义默认文本。
+<td>當客戶針對無法用於店內取貨的料號選擇店內取貨時顯示的訊息。 您可以視需要自訂預設文字。
 </td>
-<td>存储视图</td>
+<td>存放區檢視</td>
 <td>否</td>
 </tr>
 </tbody>
@@ -67,433 +67,433 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->的 [!UICONTROL Search Radius] 仅当您配置了 [存储位置和映射设置](store-location-map-provider-setup.md) Adobe Commerce。
+>此 [!UICONTROL Search Radius] 設定僅在您已設定 [存放區位置和對應設定](store-location-map-provider-setup.md) 適用於Adobe Commerce。
 
-## 启用“商店履行”解决方案
+## 啟用「商店履行」解決方案
 
-启用 [!DNL Store Fulfillment] 解决方案，将店内和库边拾取功能添加到Adobe Commerce店面的购物和结账体验。
+啟用 [!DNL Store Fulfillment] 此解決方案可將店內和路邊取貨功能新增至Adobe Commerce店面的購物和結帳體驗。
 
 <table>
 <thead>
 <tr>
-<td><strong>字段</strong></td>
-<td><strong>描述</strong></td>
-<td><strong>范围</strong></td>
-<td><strong>必需</strong></td>
+<td><strong>欄位</strong></td>
+<td><strong>說明</strong></td>
+<td><strong>範圍</strong></td>
+<td><strong>必填</strong></td>
 </tr>
  </thead>
  <tbody>
 <tr>
 <td><strong>[!UICONTROL Enabled]</strong></td>
-<td>启用或禁用解决方案。 启用后，请配置和使用“存储履行”功能，并在Adobe Commerce存储与 [!DNL Store Fulfillment] 服务。 禁用后，所有“商店履行”功能都将被禁用，并且Adobe Commerce与“商店履行”服务之间没有通信。 无法处理或接收订单信息。</td>
-<td>网站</td>
+<td>啟用或停用解決方案。 啟用後，請設定並使用「商店履行」功能，建立Adobe Commerce商店與 [!DNL Store Fulfillment] 服務。 停用後，所有「商店履行」功能都會停用，並且Adobe Commerce和「商店履行」服務之間不會通訊。 無法處理或接收訂單資訊。</td>
+<td>網站</td>
 <td>是</td>
 </tr>
 </tbody>
 </table>
 
-## 添加帐户凭据
+## 新增帳戶認證
 
 <table>
 <tr>
-<td><strong>字段</strong></td>
-<td><strong>描述</strong></td>
-<td><strong>范围</strong></td>
-<td><strong>必需</strong></td>
+<td><strong>欄位</strong></td>
+<td><strong>說明</strong></td>
+<td><strong>範圍</strong></td>
+<td><strong>必填</strong></td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Environment]</strong></td>
-<td>选择 <i>[!UICONTROL Sandbox]</i> 或 <i>[!UICONTROL Production]</i><br></br>选择 [!UICONTROL Sandbox] 允许在测试环境中与履行服务进行通信。<br></br>选择 [!UICONTROL Production] 允许在实时环境中与履行服务进行通信。<br></br>系统会为您为每个环境提供一组凭据，并且可以在同一安装中管理这两个凭据集。 <br></br>在验证连接之前保存凭据。</td>
-<td>全球</td>
+<td>選取 <i>[!UICONTROL Sandbox]</i> 或 <i>[!UICONTROL Production]</i><br></br>選取 [!UICONTROL Sandbox] 在測試環境中啟用與履行服務的通訊。<br></br>選取 [!UICONTROL Production] 可在即時環境中與履行服務通訊。<br></br>您會獲得每個環境的一組認證，並且可以在同一個安裝中管理這兩個組。 <br></br>驗證連線之前，請先儲存認證。</td>
+<td>全域</td>
 <td>是</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL API Server URL]</strong></td>
-<td>指向Walmart Store Fulfilment API端点的URL。 这必须是载入过程中提供的完全限定的URL。 存储履行客户会收到沙盒URL和生产URL。 添加值时，请确保复制并粘贴完整的URL，包括尾随斜杠“/”。</td>
-<td>全球</td>
+<td>Walmart商店履行API端點的URL。 這必須是上線流程期間提供的完整URL。 Store Fulfillment客戶會同時收到沙箱和生產URL。 新增值時，請務必複製並貼上完整URL，包括結尾斜線"/"。</td>
+<td>全域</td>
 <td>是</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Token Auth Server URL]</strong></td>
-<td>指向Walmart Store Fulfilment Authentication端点的URL。 值必须是在载入过程中提供的完全限定的URL。 您将收到沙盒URL和生产URL。 添加值时，请确保复制并粘贴完整的URL，包括尾随斜杠“/”。</td>
-<td>全球</td>
+<td>Walmart Store Fulfillment驗證端點的URL。 該值必須是上線流程期間提供的完全合格URL。 您會同時收到沙箱和生產URL。 新增值時，請務必複製並貼上完整URL，包括結尾斜線"/"。</td>
+<td>全域</td>
 <td>是</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Merchant Id]</strong></td>
-<td>您在载入过程中提供的唯一商户（租户）ID。 此ID用于传送订单，以确保您的商家商店收到订单。</td>
-<td>全球</td>
+<td>您在入門流程期間提供的唯一商家（租使用者） ID。 此ID可用來遞送訂單，以確保您的商家商店能收到訂單。</td>
+<td>全域</td>
 <td>是</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Consumer Id]</strong></td>
-<td>在载入过程中提供的唯一集成ID。 此ID用于验证Adobe Commerce与存储履行服务之间的所有通信</td>
-<td>全球</td>
+<td>上線流程期間提供的唯一整合ID。 此ID用於驗證Adobe Commerce與商店履行服務之間的所有通訊</td>
+<td>全域</td>
 <td>是</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Consumer Secret]</strong></td>
-<td>载入过程中提供的唯一集成密钥。 此密钥用于验证Adobe Commerce与存储实现服务之间的所有通信。</td>
-<td>全球</td>
+<td>上線流程期間提供的唯一整合金鑰。 此金鑰用於驗證Adobe Commerce與商店履行服務之間的所有通訊。</td>
+<td>全域</td>
 <td>是</td>
 </tr>
 </table>
 
-配置 [!UICONTROL Account Credentials]，选择 <strong>[!UICONTROL Validate Credentials]</strong> 首次验证并建立与存储实现服务的连接。
+在您設定 [!UICONTROL Account Credentials]，選取 <strong>[!UICONTROL Validate Credentials]</strong> 第一次驗證及建立與商店履行服務的連線。
 
-## 配置日志记录
+## 設定記錄
 
-日志文件中提供了存储实现服务的日志 `var/log/walmart-bopis.log`.
+記錄檔中提供存放區履行服務的記錄 `var/log/walmart-bopis.log`.
 
-要求系统管理员配置您的环境以允许异常处理，以便可以通过防火墙或缓存捕获与API相关的异常。
+要求系統管理員設定您的環境以允許例外狀況處理，以便透過防火牆或快取擷取與API相關的例外狀況。
 
-由于应用程序日志文件可以快速增长，因此仅在需要时为应用程序启用短时间的日志记录 — 例如，当对 [!DNL Commerce] 订单。 此配置可防止生产环境中由于大型日志文件而导致的响应时间问题。
+因為應用程式記錄檔可以快速成長，所以只在需要時為應用程式啟用短時間記錄，例如在疑難排解商店履行問題時 [!DNL Commerce] 訂購。 此設定可防止因大型記錄檔而導致生產環境中的回應時間問題。
 
 >[!TIP]
 >
->对于Adobe Commerce本地安装，请要求系统管理员为 `var/log/walmart-bopis.log` 文件以最小化大小。 有关Adobe Commerce内部部署安装，请参阅 [日志旋转](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) 在 _Adobe Commerce安装指南_. 有关云基础架构项目的Adobe Commerce，请参阅 [查看和管理日志](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
+>若為Adobe Commerce內部部署安裝，請要求您的系統管理員為 `var/log/walmart-bopis.log` 檔案以最小化大小。 如需Adobe Commerce內部部署安裝資訊，請參閱 [記錄輪換](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) 在 _Adobe Commerce安裝指南_. 如需雲端基礎結構專案的Adobe Commerce，請參閱 [檢視和管理記錄檔](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
 
 <table>
 <thead>
 <tr>
-<td><strong>字段</strong></td>
-<td><strong>描述</strong></td>
-<td><strong>范围</strong></td>
-<td><strong>必需</strong></td>
+<td><strong>欄位</strong></td>
+<td><strong>說明</strong></td>
+<td><strong>範圍</strong></td>
+<td><strong>必填</strong></td>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Debug Mode]</strong></td>
-<td>调试模式用于增加集成中已记录的活动。 禁用后，不会记录任何调试信息。 启用后，将记录所有调试信息 <br></br>可在文件中找到所有已记录的数据： <pre>var/log/walmart-bopis.log</pre>
-<td>全球</td>
+<td>「除錯模式」用於增加整合中的記錄活動。 停用時，不會記錄任何偵錯資訊。 啟用時，會記錄所有偵錯資訊 <br></br>所有記錄資料都可以在檔案中找到： <pre>var/log/walmart-bopis.log</pre>
+<td>全域</td>
 <td>否</td>
 </tr>
 </tbody>
 </table>
 
-## 管理订单同步
+## 管理訂單同步
 
-配置设置以管理订单同步的错误处理，在订单领料期间用于条形码扫描的目录属性，以及配置商店履行队列的订单批大小。
+設定設定以管理訂單同步處理的錯誤處理、在訂單撿料期間用於條碼掃描的目錄屬性，以及設定商店履行佇列的訂單批次大小。
 
-您可以在管理员(
+您可以從「管理員」(
 <strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong>)。
 
-### 同步错误管理
+### 同步化錯誤管理
 
 <table>
 <tr>
-<td><strong>字段</strong></td>
-<td><strong>描述</strong></td>
-<td><strong>范围</strong></td>
-<td><strong>必需</strong></td>
+<td><strong>欄位</strong></td>
+<td><strong>說明</strong></td>
+<td><strong>範圍</strong></td>
+<td><strong>必填</strong></td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Retry Critical Error]</strong></td>
-<td>指定在发生严重错误后对记录同步操作的重试尝试。<br></br>每当集成无法从履行服务获得正面响应时，都会出现严重错误。 当服务关闭或发送的订单数据出错时，可能会发生这种情况。<br></br>达到重试阈值后，该项目将保留在队列中，但不会再次处理。 查看 <strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong> 在管理员中管理。 要对持续出现故障的项目进行故障诊断，请联系您的客户经理。</td>
-<td>全球</td>
+<td>指定發生嚴重錯誤後，記錄同步化作業的重試次數。<br></br>只要整合無法從履行服務取得正面回應，就會發生嚴重錯誤。 當服務停用或傳送的訂單資料發生錯誤時，就可能發生這種情況。<br></br>當達到重試臨界值時，專案會保留在佇列中，但不會再次處理。 檢視所有發生錯誤的專案，從 <strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong> Admin管理。 若要疑難排解持續失敗的專案，請聯絡您的客戶經理。</td>
+<td>全域</td>
 <td>否</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Enable Error Notification Email]</strong></td>
-<td>启用错误通知，以在 [!UICONTROL Retry Critical Error Threshold] 达到订单。 通知包含有关该错误的所有可用详细信息。</td>
-<td>全球</td>
+<td>啟用錯誤通知，以便在以下情況時收到電子郵件： [!UICONTROL Retry Critical Error Threshold] 已達訂單要求。 通知包含有關錯誤的任何可用詳細資訊。</td>
+<td>全域</td>
 <td>否</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Send Error Notification Email To]</strong></td>
-<td>错误通知的收件人电子邮件地址列表（以逗号分隔）。</td>
-<td>全球</td>
+<td>以逗號分隔的錯誤通知收件者電子郵件地址清單。</td>
+<td>全域</td>
 <td>否</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Order Sync Exception Email Template]</strong></td>
-<td>指定用于通知收件人订单同步错误的电子邮件模板。 提供了默认模板。 它不支持自定义。</td>
-<td>存储视图</td>
+<td>指定用來通知收件者有關訂單同步化錯誤的電子郵件範本。 會提供預設範本。 不支援自訂。</td>
+<td>存放區檢視</td>
 <td>否</td>
 </tr>
 </table>
 
-### 订单同步
+### 訂單同步
 
 <table>
 <thead>
 <tr>
-<td><strong>字段</strong></td>
-<td><strong>描述</strong></td>
-<td><strong>范围</strong></td>
-<td><strong>必需</strong></td>
+<td><strong>欄位</strong></td>
+<td><strong>說明</strong></td>
+<td><strong>範圍</strong></td>
+<td><strong>必填</strong></td>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Barcode Source]</strong></td>
-<td>目录属性，用于存储商位置中相应项目的可扫描代码。<br></br>如果您现有的商家位置只有一个，则可能使用UPC代码，而电子商务渠道则会按SKU标识产品。 如果这是您的方案，请选择包含UPC代码的目录属性。<br></br>此设置可确保发送到您的商店列表项目的订单具有正确的标识符，以便商店关联人员能够在挑库过程中准确扫描项目。<br></br>如果您不确定，请在发运和领料部门与您的履行联系人联系，以确定应发送的属性。 如果当前未将Adobe Commerce产品属性包含在数据库中，您可能需要向该属性集中添加相应的属性。</td>
-<td>网站</td>
+<td>目錄屬性，儲存商戶地點中對應料號的可掃描程式碼。<br></br>如果您只有一個現有的商家地點，您可能會使用UPC代碼，而您的電子商務管道會依SKU識別產品。 如果這是您的案例，請選取包含UPC程式碼的目錄屬性。<br></br>此設定可確保傳送至您商店的訂單清單料號具有正確的識別碼，以便商店關聯者可以在撿料處理期間準確地掃描料號。<br></br>如果您不確定，請洽詢「出貨與撿料」部門中的履行聯營公司，以決定應該傳送哪個屬性。 如果屬性目前未包含在資料庫中，您可能需要將適當的屬性新增至Adobe Commerce產品屬性集。</td>
+<td>網站</td>
 <td>是</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Barcode Type]</strong></td>
-<td>目录属性，用于存储商位置中相应项目的条形码源。<br></br>此设置可确保发送到您的商店列表项目的订单具有正确的标识符，以便商店关联人员能够在挑库过程中准确扫描项目。 这些选项包括 — SKU、UPC、GTIN、UPCA、EAN13、UPCE0、DISA、UAB、CODABAR、Price Embedded UPC。<br></br>如果不确定，请选择与 [!UICONTROL Barcode Source] 属性。 商店关联仍然可以手动匹配其挑库列表中的项目。</td>
-<td>网站</td>
+<td>將對應料號的條碼來源儲存在商家地點的目錄屬性。<br></br>此設定可確保傳送至您商店的訂單會列出具有正確識別碼的料號，以便商店關聯者可以在撿料處理期間準確地掃描料號。 選項包括 — SKU、UPC、GTIN、UPCA、EAN13、UPCE0、DISA、UAB、CODABAR、Price Embedded UPC。<br></br>如果您不確定，請選取與 [!UICONTROL Barcode Source] 屬性。 商店關聯者仍然可以從其挑選清單手動比對專案。</td>
+<td>網站</td>
 <td>是</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Max Number of Items]</strong></td>
-<td>一次要从商店履行队列发送的最大项目数。<br></br>BOPIS订单会定期分批发送到履行服务。 利用此设置，可控制批的大小。<br></br>默认值为100项。 根据您的订单量和容量，您可能需要向上或向下调整此值。</td>
-<td>全球</td>
+<td>一次要從商店履行佇列傳送的專案數上限。<br></br>BOPIS訂單會定期批次傳送至履行服務。 此設定可讓您控制批次的大小。<br></br>預設值為100個專案。 根據您的訂單數量與容量，您可能需要調整此值。</td>
+<td>全域</td>
 <td>否</td>
 </tr>
 </tbody>
 </table>
 
-## 启用“商店履行”发运选项
+## 啟用「商店履行」出貨選項
 
-配置“商店履行”发运选项，以确定Adobe Commerce商店的店内提货和家庭送货选项的可用性。
+設定「商店履行」送貨選項，判斷Adobe Commerce商店店內取貨與送貨選項的可用性。
 
-### 收货方商店
+### 送貨地點商店
 
 <table>
 <thead>
 <tr>
-<td><strong>字段</strong></td>
-<td><strong>描述</strong></td>
-<td><strong>范围</strong></td>
-<td><strong>必需</strong></td>
+<td><strong>欄位</strong></td>
+<td><strong>說明</strong></td>
+<td><strong>範圍</strong></td>
+<td><strong>必填</strong></td>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship To Store]</strong></td>
-<td>收货地点设置基于您现有的收货地点功能。 如果您使用Inventory management，或者如果可以通过商店到商店的库存转移来接受并履行在商家地点没有库存的订单，则将此选项设置为“是”。<br></br>如果您不支持“收货地点”选项或不希望提供该选项，请将设置为“否”。 禁用后，目录中商店的库存为零的项目，或该位置下方的项目 [!DNL Out of Stock Threshold]，不提供店内提货选项。<br></br>这是一个全球性设置，可以按商户位置进行调整。</td>
-<td>全球</td>
+<td>「送貨至商店」設定是以您現有的送貨至商店功能為基礎。 如果您使用Inventory management，或您可以透過庫存轉存存來接受並履行無存貨之商家地點的訂單，請將此選項設為「是」。<br></br>如果您不支援送貨至商店選項，或不想提供此選項，請設為「否」。 停用時，目錄中的商戶商店存貨為零的料號，或位於該地點以下的料號 [!DNL Out of Stock Threshold]，不提供店內見面交收選項。<br></br>此為全域設定，可根據商家位置進行調整。</td>
+<td>全域</td>
 <td>否</td>
 </tr>
 </tbody>
 </table>
 
-### 从商店发货
+### 出貨地點商店
 
 <table>
 <thead>
 <tr>
-<td><strong>字段</strong></td>
-<td><strong>描述</strong></td>
-<td><strong>范围</strong></td>
-<td><strong>必需</strong></td>
+<td><strong>欄位</strong></td>
+<td><strong>說明</strong></td>
+<td><strong>範圍</strong></td>
+<td><strong>必填</strong></td>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship From Store]</strong></td>
-<td>在您的商户商店中启用或禁用“家庭送货”选项。 启用后，您的商家商店位置将与与您网站关联的库存中其他分配来源一起被考虑。<br></br>在标准Inventory management服务中， [!DNL Ship from Store] is选项是固有的，无法禁用。 使用“商店履行”解决方案，您可以打开或关闭该解决方案。<br></br>这是全局设置。 您还可以根据商家位置和产品调整此设置。</td>
-<td>全球</td>
+<td>啟用或停用商戶商店中的「首頁傳送」選項。 啟用後，您的商家商店位置會與您網站相關庫存中的其他指派來源一起列入彙總考量。<br></br>在標準Inventory management服務中， [!DNL Ship from Store] 是固有選項，無法停用。 使用Store Fulfillment解決方案，您可以開啟或關閉它。<br></br>這是全域設定。 您也可以根據商家位置和產品調整此設定。</td>
+<td>全域</td>
 <td>否</td>
 </tr>
 </tbody>
 </table>
 
 
-## 管理商店履行应用程序使用帐户和权限
+## 管理Store Fulfillment應用程式使用帳戶和許可權
 
-配置商店履行应用程序用户帐户和密码安全性以及双重身份验证的设置。
+設定Store Fulfillment App使用者帳戶和密碼安全性及雙因素驗證的設定。
 
-### App Security
+### 應用程式安全性
 
 <table>
 <thead>
 <tr>
-<td><strong>字段</strong></td>
-<td><strong>描述</strong></td>
-<td><strong>范围</strong></td>
-<td><strong>必需</strong></td>
+<td><strong>欄位</strong></td>
+<td><strong>說明</strong></td>
+<td><strong>範圍</strong></td>
+<td><strong>必填</strong></td>
 </tr>
  </thead>
  <tbody>
 <tr>
 <td><strong>[!UICONTROL User Session Lifetime]</strong></td>
-<td>存储关联用户会话在自动注销之前保持活动状态的时间范围（以秒为单位）。 有效值介于60到31536000之间。</td>
-<td>全球</td>
+<td>存放區相關使用者工作階段在自動登出前保持作用中狀態的時間範圍（以秒為單位）。 有效值的範圍介於60到31536000之間。</td>
+<td>全域</td>
 <td>否</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Maximum Login Failures to Lockout Account]</strong></td>
-<td>指定在将存储关联锁定到其帐户之外之前允许的失败登录尝试次数。<br></br>要禁用帐户锁定，请将值设置为0。</td>
-<td>全球</td>
+<td>指定在鎖定存放區關聯的帳戶之前，允許的登入嘗試失敗次數。<br></br>若要停用帳戶鎖定，請將值設為0。</td>
+<td>全域</td>
 <td>否</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Lockout Time (minutes)]</strong></td>
-<td>登录失败后锁定帐户的分钟数。</td>
-<td>全球</td>
+<td>登入失敗後鎖定帳戶的分鐘數。</td>
+<td>全域</td>
 <td>否</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Force Password Change]</strong></td>
-<td><em>[!UICONTROL Yes]</em>:要求用户在设置帐户后更改其密码。<br></br><em>[!UICONTROL No]</em>:建议用户在设置帐户后更改密码。</td>
-<td>全球</td>
+<td><em>[!UICONTROL Yes]</em>：要求使用者在設定帳戶後變更密碼。<br></br><em>[!UICONTROL No]</em>：建議使用者在設定帳戶後變更密碼。</td>
+<td>全域</td>
 <td>否</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Password Lifetime]</strong></td>
-<td>在所需密码更改前密码保持有效的天数。 将留空以禁用此选项。</td>
-<td>全球</td>
+<td>在變更必要密碼之前，密碼保持有效的天數。 留空將停用此選項。</td>
+<td>全域</td>
 <td>否</td>
 </tr>
 </tbody>
 </table>
 
-## 投放方法
+## 傳遞方法
 
-通过扩展本机Adobe Commerce进行存储实现工作 [!DNL In-Store Delivery] 功能。 安装扩展后，您可以使用以下添加到管理员的扩展设置配置商店内交付方法。
+Store Fulfillment的運作方式是擴充原生Adobe Commerce [!DNL In-Store Delivery] 功能。 安裝擴充功能後，您可以使用新增至管理員的下列擴充設定，來設定店內傳送方法。
 
-- **店内提货** — 结帐过程中店内交付的选件选项这是BOPIS订单的最常见交付方案。
+- **店內取貨** — 結帳過程中店內交貨的選件選項這是BOPIS訂單最常見的交貨案例。
 
-- **[!UICONTROL Curbside pick up]** — 提供选项，供客户在商店位置暂停，并由商店关联商将订单交付给他们。
+- **[!UICONTROL Curbside pick up]** — 提供選項，讓客戶將訂單暫留在商店位置，並由商店關聯人傳送給他們。
 
-通过选择 <strong>[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]</strong>.
+透過選取「 」，從管理員設定這些設定 <strong>[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]</strong>.
 
 >[!NOTE]
 >
->有关配置店内投放选项的其他信息，请参阅 [店内投放](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) 在 _Adobe Commerce用户指南_.
+>如需設定存放區內傳送選項的其他資訊，請參閱 [店內傳遞](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) 在 _Adobe Commerce使用手冊_.
 
 
-### 投放方法配置
+### 傳遞方法設定
 
-使用店内交货方法，客户可以在结帐期间选择一个来源作为提货地点。
+使用店內送貨方式時，客戶可選取來源以在結帳期間作為取貨地點。
 
 <table>
 <thead>
 <tr>
-<td><strong>字段</strong></td>
-<td><strong>描述</strong></td>
-<td><strong>范围</strong></td>
-<td><strong>必需</strong></td>
+<td><strong>欄位</strong></td>
+<td><strong>說明</strong></td>
+<td><strong>範圍</strong></td>
+<td><strong>必填</strong></td>
 </tr>
  </thead>
  <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable In-Store Pickup]</strong></td>
-<td>对于选择商店提货的客户，在结帐期间可启用或禁用店内提货选项。 禁用店内提取后，不显示选项。<br></br>此全局设置适用于所有零售商店位置。 启用后，您可以在零售商店位置有选择地禁用该功能。</td>
-<td>网站</td>
+<td>啟用或停用結帳時可供選擇商店取貨的客戶使用的店內取貨選項。 停用店內取貨時，不會顯示選項。<br></br>此全域設定適用於所有零售商店位置。 啟用後，您可以選擇性地在零售商店位置將其停用。</td>
+<td>網站</td>
 <td>否</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Enable Curbside Pickup]</strong></td>
-<td>在结帐过程中，为选择商店提货的客户启用或禁用购物车提货选项。<br></br>此全局设置适用于所有零售商店位置。 启用后，您可以在零售商店位置有选择地禁用该功能。</td>
-<td>网站</td>
+<td>在選擇商店取貨的客戶結帳程式期間，啟用或停用路邊取貨選項。<br></br>此全域設定適用於所有零售商店位置。 啟用後，您可以選擇性地在零售商店位置將其停用。</td>
+<td>網站</td>
 <td>否</td>
 </tr>
 </tbody>
 </table>
 
-### 投放方法标题配置
+### 傳遞方法標題設定
 
 <table>
 <thead>
 <tr>
-<th><strong>字段</strong></th>
-<th><strong>描述</strong></th>
-<th><strong>范围</strong></th>
-<th><strong>必需</strong></th>
+<th><strong>欄位</strong></th>
+<th><strong>說明</strong></th>
+<th><strong>範圍</strong></th>
+<th><strong>必填</strong></th>
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>主页投放标题</strong></td>
-<td>在产品、购物车和结帐区域中指定“主页递送”选项要显示的标题。 送货上门是指Adobe Commerce的标准送货功能 — 从仓库、承运人或直接到客户提供的送货地址。 </br></br>此标签不影响所选装运承运人的装运方法标签。</td>
-<td>存储视图</td>
+<td><strong>首頁傳遞標題</strong></td>
+<td>指定產品、購物車和結帳區域中「首頁傳送」選項顯示的標題。 住家運送是指Adobe Commerce的標準運送功能，從倉儲、由承運商運送或直接到客戶提供的運送地址。 </br></br>此標籤不會影響所選出貨承運人的出貨方式標籤。</td>
+<td>存放區檢視</td>
 <td>否</td>
 </tr>
 <tr>
-<td><strong>主页投放描述</strong></td>
-<td>一个可选描述，每当向客户显示主页投放标题时，该描述都会显示。 大多数情况下，描述是用于传达您的投放承诺的静态消息。 一些示例：</br><code>Same-day shipping on orders by 4</code></br></br><code>Ships within 2 business days</code></td>
-<td>存储视图</td>
+<td><strong>首頁傳遞說明</strong></td>
+<td>選擇性的說明，每當向客戶顯示首頁傳送標題時都會顯示。 大多數情況下，說明會是靜態訊息，用於傳達您的傳送承諾。 部分範例：</br><code>Same-day shipping on orders by 4</code></br></br><code>Ships within 2 business days</code></td>
+<td>存放區檢視</td>
 <td>否</td>
 </tr>
 <tr>
-<td><strong>存储拾取标题</strong></td>
-<td>向客户显示交货选项并提供店内装货时，将显示此标签。 </br></br>您可以自定义此标签，该标签显示在产品、购物车和结帐区域。</td>
-<td>存储视图</td>
+<td><strong>商店取貨標題</strong></td>
+<td>當客戶看到交貨選項並且店內取貨可用時，即會顯示此標籤。 </br></br>您可以自訂此標籤，此標籤會顯示在產品、購物車和結帳區域中。</td>
+<td>存放區檢視</td>
 <td>否</td>
 </tr>
-<td><strong>存储装货说明</strong></td>
-<td>只要显示“商店提货标题”，您就可以选择包含描述。 此静态消息有助于改善与商店取货体验相关的客户通信。 一些示例：</br></br><code>Get it today for free!</code></br></br><code>Ready for pickup in an hour!</code></td>
-<td>存储视图</td>
-<td>否</td>
-</tr>
-<tr>
-<td><strong>店内提货标题</strong></td>
-<td>启用“店内提货”后，此标题将作为“商店提货”交付选项显示给客户。 您可以自定义其标签。</td>
-<td>存储视图</td>
+<td><strong>商店取貨說明</strong></td>
+<td>無論在何處顯示「商店見面交收標題」，您都可以選擇加入說明。 此靜態訊息有助於改善與商店取貨體驗相關的客戶通訊。 部分範例：</br></br><code>Get it today for free!</code></br></br><code>Ready for pickup in an hour!</code></td>
+<td>存放區檢視</td>
 <td>否</td>
 </tr>
 <tr>
-<tr>
-<td><strong>曲边拾取标题</strong></td>
-<td>启用“库边提货”后，该选项会以“商店提货”交货选项的类型显示给客户。 您可以在此处自定义其标签。</td>
-<td>存储视图</td>
+<td><strong>店內取貨標題</strong></td>
+<td>啟用「店內取貨」時，此標題會以「店內取貨」交貨選項的形式顯示給客戶。 您可以自訂其標籤。</td>
+<td>存放區檢視</td>
 <td>否</td>
 </tr>
 <tr>
-<td><strong>店内提取说明</strong></td>
-<td>在您的零售店准备好提货后，会通过电子邮件通知客户。 如果客户已选择 [!DNL In-Store Pickup] 在结帐过程中，您可以在此处自定义取货说明。 </br></br>这是适用于所有零售商店位置的全局设置。 您还可以在零售商店位置级别自定义相关说明。</td>
-<td>存储视图</td>
+<tr>
+<td><strong>路邊取車標題</strong></td>
+<td>啟用「路邊取貨」時，選項會以「商店取貨」交貨選項的型態顯示給客戶。 您可以在這裡自訂其標籤。</td>
+<td>存放區檢視</td>
 <td>否</td>
 </tr>
 <tr>
-<td><strong>曲线拾取说明</strong></td>
-<td>指定自定义订单提货指令，以在客户电子邮件通知中包含对策提货订单的提示。 </br></br>这是适用于所有零售商店位置的全局设置。 您还可以在零售商店位置级别自定义相关说明。</td>
-<td>存储视图</td>
+<td><strong>店內取貨指示</strong></td>
+<td>當訂單已準備好到您的零售商店取貨時，客戶會收到電子郵件通知。 如果客戶已選取 [!DNL In-Store Pickup] 結帳期間，您可以在這裡自訂取車指示。 </br></br>此為全域設定，適用於所有零售商店位置。 您也可以自訂零售商店地點層級的指示。</td>
+<td>存放區檢視</td>
 <td>否</td>
 </tr>
 <tr>
-<td><strong>预计提货提前期</strong></td>
-<td>在收到、履行并准备接收订单之前需要的分钟数。 在为“商店提货”交付选项选择零售商店位置时，会向客户显示此信息。 这是一个全局设置，适用于所有零售商店位置。 您还可以在零售商店位置级别自定义提前期。</td>
-<td>存储视图</td>
+<td><strong>路邊取車指示</strong></td>
+<td>指定自訂的訂單取貨指示，以包含在路邊取貨訂單的客戶電子郵件通知中。 </br></br>此為全域設定，適用於所有零售商店位置。 您也可以自訂零售商店地點層級的指示。</td>
+<td>存放區檢視</td>
 <td>否</td>
 </tr>
 <tr>
-<td><strong>预计提货时间标签</strong></td>
-<td>显示订单可供客户装货之前的预计时间。 当客户为 [!DNL In-Store Pickup] 投放选项。 </br></br>自定义此标签时，您可以使用代码 <code>%1</code> 插入 <strong>预计提货提前期</strong>. 例如：</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>这是适用于所有零售商店位置的全局设置。 您还可以在零售商店位置级别自定义提前期。</br></br><code>Ready for Pickup in %1 minutes.</code></br></br></td>
-<td>存储视图</td>
+<td><strong>預估取貨前置時間</strong></td>
+<td>訂單已接收、完成及準備提取之前所需的分鐘數。 選擇商店取貨遞送選項的零售商店地點時，此資訊會顯示給客戶。 此為全域設定，適用於所有零售商店位置。 您也可以在零售商店地點層級自訂前置時間。</td>
+<td>存放區檢視</td>
+<td>否</td>
+</tr>
+<tr>
+<td><strong>預估取車時間標籤</strong></td>
+<td>顯示訂單可供客戶取貨之前的估計時間。 當客戶為選取零售商店位置時，此資訊就會顯示給客戶。 [!DNL In-Store Pickup] 傳送選項。 </br></br>自訂此標籤時，您可以使用程式碼 <code>%1</code> 插入您的 <strong>預估取貨前置時間</strong>. 例如：</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>此為全域設定，適用於所有零售商店位置。 您也可以在零售商店地點層級自訂前置時間。</br></br><code>Ready for Pickup in %1 minutes.</code></br></br></td>
+<td>存放區檢視</td>
 <td>否</td>
 <tr>
-<td><strong>提货时间免责声明</strong></td>
-<td>在工具提示中产品页面上显示的内容，其中列出了存储时间、假日、意外关闭等</td>
-<td>存储视图
+<td><strong>取車時間免責宣告</strong></td>
+<td>工具提示中產品頁面上顯示的內容，其中列出商店時間、假日、非預期關閉等</td>
+<td>存放區檢視
 </td>
 <td>否
 </td>
 </tr>
 </tbody></table>
 
-### 库存可用性标题配置
+### Stock可用性標題設定
 
 <table>
 <thead>
 <tr>
-<th><strong>字段</strong></th>
-<th><strong>描述</strong></th>
-<th><strong>范围</strong></th>
-<th><strong>必需</strong></th>
+<th><strong>欄位</strong></th>
+<th><strong>說明</strong></th>
+<th><strong>範圍</strong></th>
+<th><strong>必填</strong></th>
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>库存</strong></td>
-<td>当客户使用零售商店货位时，将显示每个位置的当前项目的库存可用性。 </br></br>您可以自定义 <em>[!UICONTROL in-stock]</em> 此处为状态标签。</br></br></td>
-<td>存储视图</td>
+<td><strong>有貨</strong></td>
+<td>當客戶使用零售商店儲位時，會顯示每個地點的目前料號庫存可用性。 </br></br>您可以自訂 <em>[!UICONTROL in-stock]</em> 此處為狀態標籤。</br></br></td>
+<td>存放區檢視</td>
 <td>否</td>
 </tr>
 <tr>
-<td><strong>缺货</strong></td>
-<td>当客户使用零售商店货位时，每个位置都会显示任何当前项目的库存可用性。</td>
-<td>存储视图</td>
+<td><strong>無庫存</strong></td>
+<td>當客戶使用零售商店儲位時，會顯示每個地點任何目前料號的庫存可用性。</td>
+<td>存放區檢視</td>
 <td>否</td>
 </tr>
 <tr>
-<td><strong>部分库存</strong></td>
-<td>当客户使用零售商店货位时，每个位置都会显示任何当前项目的库存可用性。 </br></br>您可以自定义 <em>[!UICONTROL partially in-stock]</em> 此处为状态标签。</br></br></td>
-<td>存储视图</td>
+<td><strong>部分有貨</strong></td>
+<td>當客戶使用零售商店儲位時，會針對每個地點顯示任何目前料號的庫存可用性。 </br></br>您可以自訂 <em>[!UICONTROL partially in-stock]</em> 此處為狀態標籤。</br></br></td>
+<td>存放區檢視</td>
 <td>否</td>
 </tr>
 </tbody></table>

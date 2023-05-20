@@ -1,6 +1,6 @@
 ---
-title: '"[!DNL Quick Checkout] (针对Adobe Commerce开发人员信息)'
-description: '"[!DNL Quick Checkout] 开发人员信息。”'
+title: '"[!DNL Quick Checkout] 適用於Adobe Commerce開發人員資訊」'
+description: '"[!DNL Quick Checkout] 開發人員資訊。」'
 exl-id: 8926eda4-b4de-4938-a86c-b095616f61f6
 source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
@@ -9,25 +9,25 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Quick Checkout] 开发人员信息
+# [!DNL Quick Checkout] 開發人員資訊
 
-本主题包含面向与Adobe Commerce密切合作的开发人员的信息，以及 [!DNL Magento Open Source] 代码，并希望了解有关 [!DNL Quick Checkout] 扩展。
+本主題包含與Adobe Commerce緊密合作的開發人員適用的資訊，以及 [!DNL Magento Open Source] 程式碼並想要瞭解有關的詳細資訊 [!DNL Quick Checkout] 副檔名。
 
-## 扩展点
+## 延伸點
 
-使用扩展点自定义 [!DNL Quick Checkout].
+使用擴充功能點來自訂 [!DNL Quick Checkout].
 
-通过使用扩展点，您可以进行自定义，而无需实际更改应用程序代码中的核心组件。
+透過使用擴充點，您可以進行自訂，而無需實際變更應用程式程式碼中的核心元件。
 
-## 发运详细信息步骤
+## 送貨詳細資料步驟
 
-使用登录后，可以使用扩展点自定义自动步骤导航 [!DNL Bolt].
+擴充點可用於在登入後自訂自動步驟導覽 [!DNL Bolt].
 
-购物者登录时使用 [!DNL Bolt]，则会预填所有有效信息，并将其重定向到付款详细信息步骤以下订单。 请参阅 [结账流程](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-flow.html) 主题以了解更多信息。
+一旦購物者登入 [!DNL Bolt]，系統會預先填寫所有有效資訊，並重新導向至付款詳細資料步驟來下訂單。 請參閱 [結帳流程](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-flow.html) 主題以取得詳細資訊。
 
-此扩展点允许阻止导航到付款步骤，并且当有扩展要求购物者对送货步骤执行其他操作时，此扩展点非常有用。 请参阅下面的示例，了解如何将扩展点与混合使用在一起：
+此擴充點可防止導覽至付款步驟，而且當有擴充功能需要購物者對出貨步驟執行其他動作時，此擴充功能會很有用。 請參閱以下範例，瞭解如何搭配mixin使用擴充點：
 
-1. 在 `require-config.js` 位于 `app/code/Vendor/ModuleName/view/frontend/`.
+1. 在中註冊新的mixin `require-config.js` 檔案位於 `app/code/Vendor/ModuleName/view/frontend/`.
 
    ```js
    var config = {
@@ -41,7 +41,7 @@ ht-degree: 0%
    };
    ```
 
-1. 在 `can-navigate-to-payment.js` 位于 `app/code/Vendor/ModuleName/view/frontend/web/js/model/`.
+1. 在中延伸模型 `can-navigate-to-payment.js` 檔案位於 `app/code/Vendor/ModuleName/view/frontend/web/js/model/`.
 
    ```js
    define([
@@ -60,6 +60,6 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> 对于德国(DE)中希望继续执行“送货详细信息”步骤的购物者，此示例为一个示例。
+> 這是德國購物者(DE)希望停留在「運送詳細資料」步驟的範例。
 
-检查 [[!DNL Bolt] 开发人员帮助](https://help.bolt.com/developers/) 有关 [!DNL Bolt] 适用于开发人员。
+Check [[!DNL Bolt] 開發人員說明](https://help.bolt.com/developers/) 有關下列專案的詳細資訊： [!DNL Bolt] 適用於開發人員。

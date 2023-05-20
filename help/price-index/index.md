@@ -1,58 +1,58 @@
 ---
-title: SaaS价格索引
-description: 使用SaaS价格索引提高性能
+title: SaaS價格索引
+description: 使用SaaS價格索引來改善效能
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
 source-git-commit: 209bdf9c69ff81481d6df7cb8e8832deef13c9f4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
 
-# SaaS价格索引
+# SaaS價格索引
 
-SaaS价格索引可加快在提交价格更改后在SaaS客户的网站上反映价格更改所花费的时间。 此可选模块允许具有大型、复杂目录或具有多个网站或客户群的商家更快速、持续地处理价格变化。
+SaaS價格指數加快價格變更提交後反映在SaaS客戶網站上的時間。 此選用模組可讓擁有大型複雜目錄或擁有多個網站或客戶群組的商戶，更快速且持續地處理價格變更。
 
-管道的最大瓶颈是：计算繁琐的流程（如索引和价格计算）已从PHP核心移至Adobe的云基础架构。 这使商家能够快速扩展资源以加快价格指数化时间，并以更快的速度反映对网站所做的这些更改。
+此管道的最大瓶頸：大量運算處理（例如指數化和價格計算）已從PHP核心移至Adobe的雲端基礎結構。 這可讓商家快速擴充資源，以縮短價格指數化時間，並以更快的速度將這些變更反映至網站。
 
-到SaaS服务的核心索引数据流如下所示：
+核心索引資料流向SaaS服務的形式如下：
 
-![默认数据流](assets/old_way.png)
+![預設資料流程](assets/old_way.png)
 
-通过SaaS价格索引，流程是：
+使用SaaS價格指數時，流程為：
 
-![SaaS价格索引数据流](assets/new_way.png)
+![SaaS價格指數資料流程](assets/new_way.png)
 
-所有符合要求的商家都可以从这些改进中受益，但获得最大收益的商家是客户：
+所有符合要求的商戶都能受益於這些改善，但將獲得最大收益的客戶如下：
 
-* 价格不断变化：需要反复更改价格以实现策略目标的商户，例如频繁促销、季节性折扣或库存折扣。
-* 多个网站和/或客户群组：具有跨多个网站（域/品牌）和/或客户群组的共享产品目录的商户。
-* 网站或客户群组中的大量独特价格：具有广泛共享产品目录的商户，这些目录包含网站或客户群中的独特价格，例如具有预先协商价格的B2B商户、具有不同定价策略的品牌。
+* 價格持續變動：商家需要重複變更價格以符合策略目標，例如頻繁促銷、季節性折扣或存貨減價。
+* 多個網站和/或客戶群組：在多個網站（網域/品牌）和/或客戶群組中擁有共用產品目錄的商家。
+* 跨網站或客戶群組的大量不重複價格：具有廣泛共用產品目錄的商家，其中包含跨網站或客戶群組的不重複價格，例如具有預先議價的B2B商家、具有不同定價策略的品牌。
 
-如果您有依赖PHP核心价格索引器的第三方应用程序，请阅读相关文档并咨询扩展提供商，然后再进行任何更改。
+如果您有依賴PHP核心價格索引器的第三方應用程式，請先閱讀檔案並諮詢擴充功能提供者，然後再進行任何變更。
 
-使用Adobe Commerce服务的客户可免费获取SaaS价格索引。
+使用Adobe Commerce服務的客戶可免費使用SaaS價格索引。
 
-本小指南介绍了SaaS价格索引的工作方式以及如何启用它。
+本迷你指南說明SaaS價格索引的運作方式以及如何啟用。
 
-## 系统要求
+## 系統需求
 
-要使用SaaS价格索引，您需要：
+若要使用SaaS價格索引，您需要：
 
 * Adobe Commerce 2.4.4+
-* 至少安装了以下SaaS服务之一：
+* 至少已安裝下列其中一個SaaS服務：
 
-   * [目录服务](../catalog-service/overview.md)
-   * [实时搜索](../live-search/guide-overview.md)
-   * [产品Recommendations](../product-recommendations/guide-overview.md)
+   * [目錄服務](../catalog-service/overview.md)
+   * [即時搜尋](../live-search/guide-overview.md)
+   * [產品Recommendations](../product-recommendations/guide-overview.md)
 
-## 模块
+## 模組
 
-SaaS价格索引使用一组模块来提供功能。 所需模块的列表可能会略有不同，具体取决于存储设置。
+SaaS價格索引使用一組模組來提供功能。 視商店設定而定，所需模組的清單可能會稍有不同。
 
-这些模块将新信息源添加到管理员。 这些信息源将向SaaS索引器传输价格计算所需的数据，并忽略PHP核心价格索引器。
+這些模組會將新摘要新增至管理員。 這些摘要會將價格計算所需的資料轉移到SaaS索引器，並忽略PHP核心價格索引器。
 
 ```
 magento/module-saas-price
@@ -61,58 +61,58 @@ magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```
 
-使用Luma和Adobe Commerce Core GraphQL的客户可以安装一个模块，以提供Luma和核心GraphQL兼容性，并禁用PHP核心价格索引器：
+使用Luma和Adobe Commerce Core GraphQL的客戶可以安裝模組，以提供Luma和Core GraphQL相容性，並停用PHP核心價格索引器：
 
 ```
 adobe-commerce/catalog-adapter
 ```
 
-的 `catalog-adapter` 仅与2.4.5兼容。对2.4.4和2.4.6的支持将在不久的将来发布。
-如果第三方扩展或任何其他原因需要，可以重新启用PHP核心价格索引器。
+此 `catalog-adapter` 僅與2.4.5相容。2.4.4和2.4.6的支援將在不久的未來發行。
+如有第三方擴充功能或任何其他原因，可重新啟用PHP核心價格索引器。
 
-## 注意事项
+## 注意事項
 
-根据产品类型、价格复杂性和目录大小等因素，SaaS价格索引可能是您商店的正确解决方案。 阅读以下限制并确定这是否是适合您网站的良好解决方案。
+根據產品型別、價格複雜性和目錄大小等因素，SaaS價格指數可能是您商店的正確解決方案。 請閱讀下列限制，並判斷此解決方案是否適合您的網站。
 
-目前，SaaS价格索引支持简单、分组、虚拟、可配置和捆绑动态产品类型。
-即将支持可下载、礼品卡和捆绑固定产品类型。
+目前，SaaS價格索引支援簡單、分組、虛擬、可設定和捆綁式動態產品型別。
+即將支援可下載、禮品卡和套裝固定產品型別。
 
-新信息源应与 `resync` [CLI命令](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). 否则，数据将在标准同步过程中刷新。 获取有关 [目录同步](../landing/catalog-sync.md) 进程。
+新的摘要應手動與 `resync` [CLI命令](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). 否則，資料會在標準同步程式中重新整理。 取得更多關於 [目錄同步](../landing/catalog-sync.md) 程式。
 
-## 使用方案
+## 使用案例
 
-### 没有扩展依赖项的Luma
+### 沒有擴充功能相依性的Luma
 
-* Luma或Abode Commerce Core GraphQL商家，已安装所需服务(实时搜索、产品Recommendations、目录服务)
-* 没有依赖PHP核心价格索引器的第三方扩展
-* 销售简单、可配置、分组、虚拟和捆绑的动态产品
+* 已安裝必要服務(即時搜尋、產品Recommendations、目錄服務)的Luma或Abode Commerce核心GraphQL商家
+* 沒有依賴PHP核心價格索引器的協力廠商擴充功能
+* 銷售簡單、可設定、分組、虛擬和套裝的動態產品
 
-1. 启用新信息源。
-1. 安装目录适配器。
+1. 啟用新摘要。
+1. 安裝目錄介面卡。
 
-### 具有PHP核心价格索引器依赖关系的Luma和Adobe Commerce Core GraphQl
+### 具有PHP核心價格索引器相依性的Luma和Abode Commerce核心GraphQl
 
-* 已安装受支持服务(实时搜索、产品Recommendations、目录服务)的Luma或Abode Commerce核心GraphQL商家
-* 依赖PHP核心价格索引器的第三方扩展
-* 销售简单、可配置、分组、虚拟和捆绑的动态产品
+* 已安裝受支援服務(即時搜尋、產品Recommendations、目錄服務)的Luma或Abode Commerce核心GraphQL商家
+* 透過依賴PHP核心價格索引器的第三方擴充功能
+* 銷售簡單、可設定、分組、虛擬和套裝的動態產品
 
-1. 启用新信息源
-1. 安装目录适配器。
-1. 重新启用PHP核心价格索引器。
-1. 在 `catalog-adapter` 模块。
+1. 啟用新的摘要
+1. 安裝目錄介面卡。
+1. 重新啟用PHP核心價格索引器。
+1. 在中使用新的摘要和Luma相容性代碼 `catalog-adapter` 模組。
 
-### 无头商人
+### Headless商家
 
-* 安装了受支持服务(实时搜索、产品Recommendations、目录服务)的无头商家
-* 不依赖PHP核心价格指数公司
-* 销售简单、可配置、分组、虚拟和捆绑的动态产品
+* 已安裝支援服務(即時搜尋、產品Recommendations、目錄服務)的Headless商家
+* 不依賴PHP核心價格索引器
+* 銷售簡單、可設定、分組、虛擬和套裝的動態產品
 
-1. 启用新信息源
-1. 安装目录适配器，这将禁用PHP核心价格索引器。
+1. 啟用新摘要
+1. 安裝目錄配接器，這會停用PHP核心價格索引器。
 
-### Luma/Core GraphQL/Headless中不支持的产品类型
+### Luma/核心GraphQL/Headless與不支援的產品型別
 
-* 卢马/无头商户
-* 销售礼品卡、可下载或捆绑固定产品
+* Luma/Headless商人
+* 銷售禮品卡、可下載或捆綁固定產品
 
-如果当前不支持的产品类型，请等待完全支持产品类型。
+若使用目前不支援的產品型別，請等待完整的產品型別支援。

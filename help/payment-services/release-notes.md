@@ -1,6 +1,6 @@
 ---
-title: ”[!DNL Payment Services] 发行说明”
-description: 查看发行说明，了解关于 [!DNL Payment Services] 版本。
+title: '"[!DNL Payment Services] 發行說明」'
+description: 如需瞭解所有資訊，請參閱發行說明 [!DNL Payment Services] 發行版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 source-git-commit: e076864a117be007eeb8003d9d6a472b704996ba
 workflow-type: tm+mt
@@ -9,51 +9,51 @@ ht-degree: 0%
 
 ---
 
-# 发行说明
+# 發行說明
 
-以下发行说明介绍了 [!DNL Payment Services] 并包括：
+以下版本說明說明的首次發行 [!DNL Payment Services] 並包含：
 
-![新](../assets/new.svg) 新增功能
-![已修复的问题](../assets/fix.svg) 修复和改进功能
-![已知问题](../assets/bug.svg) 已知问题
+![新增](../assets/new.svg) 新功能
+![已修正的問題](../assets/fix.svg) 修正和改良
+![已知問題](../assets/bug.svg) 已知問題
 
-有关在常规版本化功能版本之外发布的功能更改和修复，请参阅托管服务更新部分。
+如需在定期版本化功能發行之外發行的功能變更和修正，請參閱託管服務更新區段。
 
-参见 [即将发行的版本](https://devdocs.magento.com/release/) 了解发布时间表和支持。
+另請參閱 [即將發行的版本](https://devdocs.magento.com/release/) 瞭解發行排程和支援。
 
-参见 [可用性](https://devdocs.magento.com/release/availability.html) ，了解有关产品兼容性的信息。
+另請參閱 [可用性](https://devdocs.magento.com/release/availability.html) 在開發人員檔案中瞭解產品相容性。
 
-## 托管服务更新
+## 託管服務更新
 
-这些发行说明描述了在托管服务的常规版本化功能发行之外发生的功能更改和修复。
+這些發行說明說明說明所發生的功能變更和修正，且這些變更和修正是在託管服務的定期版本化功能發行之外發行的。
 
-+++托管服务更新
++++託管服務更新
 
 _2023年1月25日_
 
-![已知问题](../assets/bug.svg)<!-- Issue PAY-4102 --> Payment Services的新安装无法配置Commerce Services，导致Payment Services无法运行。 要解决此问题，请将您的支付服务扩展更新到1.5.3版。
+![已知問題](../assets/bug.svg)<!-- Issue PAY-4102 --> Payment Services的新安裝無法設定Commerce Services，導致Payment Services無法運作。 若要修正此問題，請將Payment Services擴充功能更新至1.5.3版。
 
 _2022年9月12日_
 
-![新](../assets/new.svg)<!-- Issue PAY-3705 --> 此 `increment_id` 现在可用于调节外部ERP系统中的付款。 它会传播到 [`custom_id` _和_ `invoice_id`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html#reconcile-with-erp-system)，在PayPal webhook和付款的商家活动详细信息中均可见。
+![新增](../assets/new.svg)<!-- Issue PAY-3705 --> 此 `increment_id` 現在可用於調節外部ERP系統中的付款。 它會傳播至 [`custom_id` _和_ `invoice_id`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html#reconcile-with-erp-system)，可在PayPal webhook和商家活動詳細資訊中看到付款。
 
 _2022年8月31日_
 
-![已修复的问题](../assets/fix.svg)<!-- Issue PAY-3629 --> 当新商家首次访问支付服务主页时，页面现在会立即加载以显示内容，而不是要求页面刷新。
+![已修正的問題](../assets/fix.svg)<!-- Issue PAY-3629 --> 當新商家首次存取支付服務首頁時，頁面現在會立即載入以顯示內容，而不需要重新整理頁面。
 
 _2021年8月9日_
 
-![新](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay现已作为PayPal智能按钮提供。 此 [付款选项](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) 允许客户在其iOS或macOS设备上使用Touch ID功能来选择Apple Pay。 Apple Pay使用存储在设备上的信用卡和借记卡付款凭据处理付款。
+![新增](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay現在以PayPal智慧型按鈕的形式提供。 此 [付款選項](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) 讓客戶能使用其iOS或macOS裝置上的Touch ID功能，選取Apple Pay。 Apple Pay會使用儲存在裝置上的信用卡和扣帳卡付款憑證來處理付款。
 
 _2021年6月28日_
 
-![新](../assets/new.svg)<!-- Issue PAY-1720 --> 有关商店订单的争议现在可在 [订单付款状态报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). 您可以直接从导航到PayPal解决中心，对争议采取行动 [!DNL Payment Services].
+![新增](../assets/new.svg)<!-- Issue PAY-1720 --> 商店訂單的糾紛現在可在 [訂單付款狀態報表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). 您可以直接導覽至PayPal解決中心，從以下網址對爭議採取行動： [!DNL Payment Services].
 
-![新](../assets/new.svg)<!-- Issue PAY-2854 --> 来自以下各项的用户体验改进： [!DNL Payment Services] 主页包含在当前继承级别修改配置的功能，并改进了标题和导航的显示。
+![新增](../assets/new.svg)<!-- Issue PAY-2854 --> 來自以下專案的使用者體驗改善： [!DNL Payment Services] 首頁包含修改目前繼承層級設定的能力，並改善標題和導覽的顯示。
 
-![新](../assets/new.svg)<!-- Issue PAY-2854 --> 现在，当您从沙盒模式切换到生产模式时，以及当您尝试从包含尚未保存的更新的视图导航离开时，您会看到警告。
+![新增](../assets/new.svg)<!-- Issue PAY-2854 --> 現在，當您從沙箱模式切換到生產模式時，以及當您嘗試離開具有尚未儲存的更新的檢視時，您會看到警告。
 
-![新](../assets/new.svg)<!-- Issue PAY-2761 --> 您现在可以自定义以下位置显示的数据： [订单付款状态报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 和 [付款报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 使用“列设置”控件显示或隐藏列。
+![新增](../assets/new.svg)<!-- Issue PAY-2761 --> 您現在可以自訂以下專案中所顯示的資料： [訂單付款狀態報表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 和 [付款報表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 使用「欄」設定控制項來顯示或隱藏欄。
 
 +++
 
@@ -61,188 +61,188 @@ _2021年6月28日_
 
 _2023年3月10日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新](../assets/new.svg)<!-- Issue PAY-4152 --> 添加了对PHP 8.2和Adobe Commerce 2.4.6的支持。与PHP 7.x不兼容。
+![新增](../assets/new.svg)<!-- Issue PAY-4152 --> 新增對PHP 8.2和Adobe Commerce 2.4.6的支援。與PHP 7.x不相容。
 
 ## v1.6.1
 
 _2023年3月10日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![修复](../assets/fix.svg)<!-- Issue PAY-4226 --> 修复了阻止新Payment Services商家在Admin中使用结账的问题。 Payment Services以前使用Commerce客户ID，而新客户不存在该ID。
+![修正](../assets/fix.svg)<!-- Issue PAY-4226 --> 修正新Payment Services商戶無法在「管理員」中使用結帳功能的問題。 Payment Services先前使用Commerce客戶ID，而新客戶沒有此ID。
 
-![修复](../assets/fix.svg)<!-- Issue PAY-4205 --> 修复了在使用结帐时，导致指定的送货地址状态被默认税务设置中的状态替换的问题 [PayPal选项](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#paypal-smart-buttons). 现在，客户可以将他们的订单发往商户税务设置中配置为默认状态以外的其他状态。
+![修正](../assets/fix.svg)<!-- Issue PAY-4205 --> 修正在使用「 」結帳時，導致指定的送貨地址狀態被預設稅捐設定中的狀態取代的問題 [PayPal選項](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#paypal-smart-buttons). 現在，客戶可以將他們的訂單運送至商戶稅捐設定中設定為預設狀態以外的其他狀態。
 
-![修复](../assets/fix.svg)<!-- Issue PAY-4202 --> 修复了阻止客户使用卡保险存储完成购买或删除商店的保险存储付款方法的问题 [使用 `Authorize and Capture` 付款操作](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method). 以前，当客户尝试使用或修改其保险存储信用卡时，出现“Provider Vault ID未找到”错误。
+![修正](../assets/fix.svg)<!-- Issue PAY-4202 --> 修正客戶無法使用卡儲存庫完成購買或刪除商店的儲存庫付款方式的問題 [使用 `Authorize and Capture` 付款動作](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method). 以前，當客戶嘗試使用或修改其存放的信用卡時，會出現「找不到提供者儲存庫ID」錯誤。
 
 ## v1.6.0
 
 _2023年2月17日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新](../assets/new.svg)<!-- Issue PAY-3540 --> 已添加 [PCI 3DS合规性功能，适用于在欧盟(EU)和英国进行交易的商家](security.md#3ds). 此附加安全层要求购买者使用其信用卡发行商进行身份验证，有助于防止在线欺诈，并且是欧盟(EU)合规条例的必备要求。
+![新增](../assets/new.svg)<!-- Issue PAY-3540 --> 已新增 [PCI 3DS法規遵循功能，適用於在歐盟(EU)和英國進行交易的商家](security.md#3ds). 此額外的安全性層級要求購買者必須向其信用卡發行者進行驗證，有助於防止線上詐騙，並且是歐盟(EU)法規要求的一部分。
 
-![新](../assets/new.svg)<!-- Issue PAY-3609 --> 添加了以下功能 [在管理员中启用信息卡保险存储](vaulting.md#use-vaulting-in-the-admin). 这样，商家便可以使用其保险存储支付方式在管理员中为客户创建订单。
+![新增](../assets/new.svg)<!-- Issue PAY-3609 --> 新增以下功能： [在「管理員」中啟用資訊卡儲存庫](vaulting.md#use-vaulting-in-the-admin). 這可讓商戶使用其存放的付款方式，在「管理員」中建立客戶的訂單。
 
 ## v1.5.4
 
 _2023年1月29日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![已修复的问题](../assets/fix.svg)<!-- Issue PAY-4110 --> 修复了阻止购买者使用产品页面、迷你购物车和购物车上的智能按钮下订单的问题。 买家现在可以成功完成订单。
+![已修正的問題](../assets/fix.svg)<!-- Issue PAY-4110 --> 修正買家無法使用產品頁面、迷你購物車和購物車上的智慧按鈕下單的問題。 買家現在可以成功完成訂單。
 
 ## v1.5.3
 
 _2023年1月25日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![已修复的问题](../assets/fix.svg)<!-- Issue PAY-4102 --> 发布了对向后不兼容的已知问题的修复。 此版本将服务ID扩展版本锁定到最新稳定版本，从而重新启用新的支付服务安装以配置Commerce Services。
+![已修正的問題](../assets/fix.svg)<!-- Issue PAY-4102 --> 已發行修正回溯不相容的已知問題。 此版本會將服務ID擴充功能版本鎖定至最新穩定版本，這會重新啟用新的付款服務安裝以設定Commerce Services。
 
 ## v1.5.2
 
 _2022年12月22日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![已修复的问题](../assets/fix.svg)<!-- Issue PAY-3992 --> 改进了当付款方式被拒绝时Payment Services中的开票功能。
+![已修正的問題](../assets/fix.svg)<!-- Issue PAY-3992 --> 改善付款方式遭拒絕時，Payment Services中的開立商業發票作業。
 
-![已修复的问题](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services现在可以使用为商家正确显示PayPal智能按钮 [Fire Checkout的](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} 签出页面的自定义模板。 以前，迷你图会间歇性地显示按钮。
+![已修正的問題](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services現在可正確顯示商戶使用的PayPal智慧按鈕 [引發結帳](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} 簽出頁面的自訂範本。 之前，迷你圖會間歇性地顯示按鈕。
 
 ## v1.5.1
 
 _2022年11月23日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新](../assets/new.svg)<!-- Issue PAY-3923 --> Payment Services现在在用户代理标头中包含版本号，以便能够跟踪、筛选或弃用未使用的端点。
+![新增](../assets/new.svg)<!-- Issue PAY-3923 --> Payment Services現在會在使用者代理程式標題中包含版本號碼，以便能夠追蹤、篩選或淘汰未使用的端點。
 
-![已修复的问题](../assets/fix.svg)<!-- Issue PAY-3968 --> 现在，当使用智能按钮从产品页面下订单时，Payment Services可正确显示订单数据。
+![已修正的問題](../assets/fix.svg)<!-- Issue PAY-3968 --> 現在，當使用智慧按鈕從產品頁面下訂單時，Payment Services可正確顯示訂單資料。
 
 ## v1.5.0
 
 _2022年11月18日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新](../assets/new.svg)<!-- Issue PAY-3880 --> 购物者现在可以 [在结账时保存其信用卡信息](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) 用于以后为同一商店或同一商家帐户内的其他商店进行的购买。
+![新增](../assets/new.svg)<!-- Issue PAY-3880 --> 購物者現在可以 [在結帳時儲存其信用卡資訊](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) 用於相同商家帳戶內相同或其他商店的後續購買。
 
-![新](../assets/new.svg)<!-- Issue PAY-3950 --> 商家现在可以启用 [即时购买商务功能](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) ，以便购物者可以(使用 [保险存储信用卡信息](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html))以加快结帐速度。
+![新增](../assets/new.svg)<!-- Issue PAY-3950 --> 商戶現在可以啟用 [立即購買商務功能](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) ，讓購物者可以(使用 [存放的信用卡資訊](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html))以加快結帳速度。
 
 ## v1.4.1
 
 _2022年10月14日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![修复](../assets/fix.svg)<!-- Issue PAY-3766 --> 当客户的付款方式被拒绝时，显示的错误消息更具描述性。 它建议客户重新输入付款信息，然后重试，尝试另一种付款方式，或就拒绝的交易联系其银行。
+![修正](../assets/fix.svg)<!-- Issue PAY-3766 --> 當客戶的付款方式遭到拒絕時，顯示的錯誤訊息更具描述性。 它建議客戶重新輸入付款資訊，然後再試一次、嘗試其他付款方式，或就拒絕的交易聯絡其銀行。
 
 ## v1.4.0
 
 _2022年9月30日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新](../assets/new.svg)<!-- Issue PAY-784 --> Payment Services现在包括设置商家帐户以 [使用多个PayPal商业帐户](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-paypal-accounts). 这使商家能够使用不同的货币在多个国家/地区经营您的商店，或者将Adobe Commerce用于您的部分业务。
+![新增](../assets/new.svg)<!-- Issue PAY-784 --> Payment Services現在包含設定商家帳戶的功能，以 [使用多個PayPal企業帳戶](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-paypal-accounts). 這可讓商家使用不同貨幣在多個國家經營您的商店，或是將Adobe Commerce用於您的一部分業務。
 
-![新](../assets/new.svg)<!-- Issue PAY-3231 --> 商家可以 [添加 [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) 显示在客户交易银行对帐单上的网站或单个商店视图配置，以描述品牌、商店或产品线。
+![新增](../assets/new.svg)<!-- Issue PAY-3231 --> 商戶可以 [新增 [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) 至客戶交易銀行對帳單上顯示的網站或個別商店檢視設定，以描述品牌、商店或產品線。
 
-![新](../assets/new.svg)<!-- Issue PAY-3707 --> [启用或禁用信用卡字段和PayPal智能按钮](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) 用于在“付款服务”设置中结帐。
+![新增](../assets/new.svg)<!-- Issue PAY-3707 --> [啟用或停用信用卡欄位和PayPal智慧按鈕](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) 以在「付款服務」設定中結帳。
 
-![已修复的问题](../assets/fix.svg)<!-- Issue PAY-3546 --> 客户点击时 **[!UICONTROL Edit cart]**，页面将重定向到购物车页面并显示更新的项目，而不是显示空购物车。
+![已修正的問題](../assets/fix.svg)<!-- Issue PAY-3546 --> 客戶點按時 **[!UICONTROL Edit cart]**，頁面會重新導向至購物車頁面並顯示更新後的專案，而非顯示空白購物車。
 
 ## v1.3.1
 
 _2022年9月6日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![已修复的问题](../assets/fix.svg)<!-- Issue PAY-3663 --> 现在，当商户的商店捕获使用非全局货币授权的订单时，捕获进程完成，并且不显示错误。
+![已修正的問題](../assets/fix.svg)<!-- Issue PAY-3663 --> 現在，當商戶的商店擷取以非全域貨幣授權的訂單時，擷取處理作業會完成，且不會顯示錯誤。
 
 ## v1.3.0
 
 _2022年8月9日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新](../assets/new.svg)<!-- Issue PAY-XX --> 正式发布版 — [!DNL Payment Services] 为现在 [兼容 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 版本2.4.0到2.4.5](https://devdocs.magento.com/release/availability.html#compatibility).
+![新增](../assets/new.svg)<!-- Issue PAY-XX --> 正式發行版本 — [!DNL Payment Services] 為現在 [相容於 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 版本2.4.0至2.4.5](https://devdocs.magento.com/release/availability.html#compatibility).
 
-![已修复的问题](../assets/fix.svg)<!-- Issue PAY-x --> Apple Pay现在与移动和桌面上的Safari浏览器v15.5兼容。
+![已修正的問題](../assets/fix.svg)<!-- Issue PAY-x --> Apple Pay現在相容於行動裝置和桌上型電腦上的Safari瀏覽器v15.5。
 
 ## v1.2.0
 
 _2022年6月29日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![已知问题](../assets/bug.svg)<!-- Issue PAY-x --> Apple Pay与移动和桌面上的Safari浏览器v15.5不兼容。 使用Safari版本15.5时，您无法使用Apple Pay完成结账。
+![已知問題](../assets/bug.svg)<!-- Issue PAY-x --> Apple Pay與行動裝置和桌上型電腦上的Safari瀏覽器v15.5不相容。 使用Safari 15.5版時，您無法使用Apple Pay完成結帳。
 
-![已修复的问题](../assets/fix.svg)<!-- Issue PAY-3264 --> 以前，当登录用户为其帐户选择默认地址以外的其他账单/送货地址时，签出失败。 我们修复了此问题，现在发送所选的帐单/送货地址（而不是默认保存的地址）并成功完成结帐。
+![已修正的問題](../assets/fix.svg)<!-- Issue PAY-3264 --> 先前，當登入使用者為其帳戶選取了預設地址以外的其他帳單/運送地址時，結帳失敗。 我們已修正此問題，現在會傳送選取的帳單/運送地址（而不是預設儲存的地址）並成功完成結帳。
 
-![已修复的问题](../assets/fix.svg)<!-- Issue PAY-3314 --> 如果禁用PayPal智能结帐按钮，则不会显示错误。
+![已修正的問題](../assets/fix.svg)<!-- Issue PAY-3314 --> 如果您停用PayPal智慧型結帳按鈕，則不會顯示任何錯誤。
 
-![已修复的问题](../assets/fix.svg)<!-- Issue PAY-3330 --> 当访客用户输入包含短划线的电话号码时，在结账过程中付款不再失败。
+![已修正的問題](../assets/fix.svg)<!-- Issue PAY-3330 --> 當訪客使用者輸入包含破折號的電話號碼時，結帳期間付款不再失敗。
 
-![已修复的问题](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> 当Commerce Services凭据无效时， [!DNL Payment Services] 主页现在将显示在管理员中。 出现凭据错误，提醒您凭据无效。
+![已修正的問題](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> 當Commerce Services認證無效時， [!DNL Payment Services] 首頁現在會顯示在管理員中。 會出現認證錯誤，提醒您認證無效。
 
-![已知问题](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] 当前与不兼容 `commerce-data-export` v101.20及更高版本，这会使其与 [[!DNL Channel manager] 扩展](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
+![已知問題](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] 目前與不相容 `commerce-data-export` v101.20及更高版本，因此與 [[!DNL Channel manager] 擴充功能](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
 
 ## v1.1.0
 
 _2022年3月31日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新](../assets/new.svg)<!-- Issue PAY-2127 --> 正式发布版 — [!DNL Payment Services] 为现在 [兼容 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 版本2.4.0到2.4.4](https://devdocs.magento.com/release/availability.html#compatibility).
+![新增](../assets/new.svg)<!-- Issue PAY-2127 --> 正式發行版本 — [!DNL Payment Services] 為現在 [相容於 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 版本2.4.0至2.4.4](https://devdocs.magento.com/release/availability.html#compatibility).
 
-![新](../assets/new.svg)<!-- Issue PAY-2682 --> 此 [!DNL Payment Services] 扩展 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 现在向加拿大商人提供。 商家可以在以下任意位置查看支付配置 [法语](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr#carte-de-cr%C3%A9dit-et-devises-accept%C3%A9es) 或 [英语](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#accepted-credit-cards-and-currencies).
+![新增](../assets/new.svg)<!-- Issue PAY-2682 --> 此 [!DNL Payment Services] 擴充功能 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 現在適用於加拿大商家。 商戶可以在以下任一位置檢視付款設定： [法文](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr#carte-de-cr%C3%A9dit-et-devises-accept%C3%A9es) 或 [英文](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#accepted-credit-cards-and-currencies).
 
-![新](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] 支持 [加元(CAD)](overview.md#accepted-credit-cards-and-currencies) 用于信用卡和PayPal交易。
+![新增](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] 支援 [加幣(CAD)](overview.md#accepted-credit-cards-and-currencies) 用於信用卡和PayPal交易。
 
-![新](../assets/new.svg)<!-- Issue PAY-2680 --> 商家可以 [板载 [!DNL Payment Services]](onboard.md) 英语或法语的扩展。
+![新增](../assets/new.svg)<!-- Issue PAY-2680 --> 商戶可以 [板載 [!DNL Payment Services]](onboard.md) 英文或法文擴充功能。
 
-![新](../assets/new.svg)<!-- Issue PAY-2678 --> 商家现在可以查看财务报表，包括 [订单付款状态](order-payment-status.md) 和 [支付报表](payouts.md)，加元(CAD)。
+![新增](../assets/new.svg)<!-- Issue PAY-2678 --> 商戶現在可以檢視財務報表，包括 [訂單付款狀態](order-payment-status.md) 和 [支付報表](payouts.md)，加幣(CAD)。
 
-![已修复的问题](../assets/fix.svg)<!-- Issue PAY-2710 --> [!DNL Payment Services] 现在与 [PHP 8.1](https://www.php.net/releases/8.1/en.php).
+![已修正的問題](../assets/fix.svg)<!-- Issue PAY-2710 --> [!DNL Payment Services] 現在相容於 [PHP 8.1](https://www.php.net/releases/8.1/en.php).
 
-![已修复的问题](../assets/fix.svg)<!-- Issue PAY-3017 --> 改进了沙盒模式警报，以显示具有多个存储的正确警报。
+![已修正的問題](../assets/fix.svg)<!-- Issue PAY-3017 --> 改善沙箱模式警報，以在多個存放區中顯示適當的警報。
 
-![已修复的问题](../assets/fix.svg)<!-- Issue PAY-2742 --> 您现在可以在商店视图级别启用和禁用可用的付款方法，例如Venmo。 以前，您只能为每个网站配置支付方式。
+![已修正的問題](../assets/fix.svg)<!-- Issue PAY-2742 --> 您現在可以在商店檢視層級啟用和停用可用的付款方法，例如Venmo。 之前，您只能為每個網站設定付款方法。
 
-![已修复的问题](../assets/fix.svg)<!-- Issue PAY-2277 --> 您现在可以选择性地执行以下操作 [启用或禁用单个PayPal智能按钮](settings.md#payment-buttons).
+![已修正的問題](../assets/fix.svg)<!-- Issue PAY-2277 --> 您現在可以選擇性 [啟用或停用個別PayPal智慧按鈕](settings.md#payment-buttons).
 
-![已修复的问题](../assets/fix.svg)<!-- Issue PAY-2561 --> 之前删除的产品不会出现在上的购物车中 _查看订单_ 页面。
+![已修正的問題](../assets/fix.svg)<!-- Issue PAY-2561 --> 先前移除的產品不會出現在的購物車中 _檢閱訂單_ 頁面。
 
-![已知问题](../assets/bug.svg)<!-- Issue PAY-2842 --> 测试信用卡交易记录 [可能无法通过PayPal](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html) 在沙盒环境中处理付款时。
+![已知問題](../assets/bug.svg)<!-- Issue PAY-2842 --> 測試信用卡交易 [可能因PayPal失敗](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html) 在沙箱環境中處理付款時。
 
 ## v1.0.0
 
 _2021年11月29日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"}
 
-![新](../assets/new.svg)<!-- Issue PAY-2127 --> 正式发布版 — [[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) 现在与 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 版本2.4.0到2.4.3 - p1.
+![新增](../assets/new.svg)<!-- Issue PAY-2127 --> 正式發行版本 — [[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) 現在相容於 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 版本2.4.0至2.4.3-p1。
 
-![新](../assets/new.svg)<!-- Issue PAY-124 --> 此 [!DNL Payment Services] 扩展 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 可以为以下任一对象安装 [[!DNL Adobe Commerce] 在云基础架构上](install.md#adobe-commerce-on-cloud-infrastructure) 或 [内部部署](install.md#on-premises) 实例。 这些方法需要使用命令行接口。
+![新增](../assets/new.svg)<!-- Issue PAY-124 --> 此 [!DNL Payment Services] 擴充功能 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 可以安裝為 [[!DNL Adobe Commerce] 在雲端基礎結構上](install.md#adobe-commerce-on-cloud-infrastructure) 或 [內部部署](install.md#on-premises) 執行個體。 這些方法需要使用命令列介面。
 
-![新](../assets/new.svg)<!-- Issue PAY-1986 --> [!DNL Payment Services] 支持 [沙盒帐户](sandbox.md) 这允许商家在测试模式下评估扩展。
+![新增](../assets/new.svg)<!-- Issue PAY-1986 --> [!DNL Payment Services] 支援 [沙箱帳戶](sandbox.md) 可讓商家在測試模式中評估擴充功能。
 
-![新](../assets/new.svg)<!-- Issue PAY-666 --> 商家可以 [配置支付服务](settings.md) 具有基本支付行为的扩展，例如利用 [`Authorize and Capture`](production.md#set-payment-services-as-payment-method) 在沙盒或生产环境之间切换。
+![新增](../assets/new.svg)<!-- Issue PAY-666 --> 商戶可以 [設定付款服務](settings.md) 具有基本付款行為的延伸模組，例如利用 [`Authorize and Capture`](production.md#set-payment-services-as-payment-method) 在沙箱或生產環境之間切換。
 
-![新](../assets/new.svg)<!-- Issue PAY-780 --> 您的购物者可以使用 [!DNL Payment Services] 或通过 [手动订单创建](create-order.md).
+![新增](../assets/new.svg)<!-- Issue PAY-780 --> 您的購物者可以結帳使用 [!DNL Payment Services] 或透過 [手動建立訂單](create-order.md).
 
-![新](../assets/new.svg)<!-- Issue PAY-1856 --> 全面的报告，通过 [订单付款状态](order-payment-status.md) 和 [支付报表](payouts.md)，可用于 [!DNL Payment Services] 让您清楚地了解商店的订单和相关付款。
+![新增](../assets/new.svg)<!-- Issue PAY-1856 --> 完整的報告，透過 [訂單付款狀態](order-payment-status.md) 和 [支付報表](payouts.md)，可用於 [!DNL Payment Services] 讓您清楚瞭解商店的訂單與相關付款。
 
-![新](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] 支持基于总处理量的灵活的分层定价，适用于任何商家。
+![新增](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] 根據總處理量，支援彈性的分層定價，適用於任何商家。
 
-![新](../assets/new.svg)<!-- Issue PAY-1443 --> 您可以轻松地 [自定义外观](payments-options.md) 的PayPal智能按钮和信用卡字段 [!DNL Payment Services] 扩展。
+![新增](../assets/new.svg)<!-- Issue PAY-1443 --> 您可以輕鬆地 [自訂外觀](payments-options.md) 的PayPal智慧按鈕和信用卡欄位 [!DNL Payment Services] 副檔名。
 
-![已知问题](../assets/bug.svg)<!-- Issue PAY-2473 --> 使用 [不正确的编辑器键](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) 在安装扩展期间，阻止用户 [身份验证](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 使用正确的 `MAGEID`.
+![已知問題](../assets/bug.svg)<!-- Issue PAY-2473 --> 使用 [不正確的撰寫器索引鍵](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) 在安裝擴充功能期間，防止使用者在任何 [驗證](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 使用正確的 `MAGEID`.
 
-![已知问题](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] 报告 [不能立即同步](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html).
+![已知問題](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] 報告 [可能不會立即同步](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html).
 
-![已知问题](../assets/bug.svg)<!-- Issue PAY-2475 --> 您的 [PayPal沙盒帐户](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html) 对象 [!DNL Payment Services] 如果您在新用户引导期间创建该帐户，则无法验证。
+![已知問題](../assets/bug.svg)<!-- Issue PAY-2475 --> 您的 [PayPal沙箱帳戶](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html) 的 [!DNL Payment Services] 如果您在上線期間建立該帳戶，則無法驗證。

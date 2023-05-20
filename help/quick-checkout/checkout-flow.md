@@ -1,54 +1,54 @@
 ---
-title: “Adobe Commerce中的结帐流程”
-description: “概述 [!DNL Quick Checkout] 在Adobe Commerce流动。”
+title: 「Adobe Commerce中的結帳流程」
+description: 「概述 [!DNL Quick Checkout] Adobe Commerce中的流量。」
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
 source-git-commit: f790732804e110aad298689c0ddf74547ff17618
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '217'
 ht-degree: 0%
 
 ---
 
 # [!DNL Quick Checkout] 流量
 
-本节概述了使用 [!DNL Quick Checkout] (对于Adobe Commerce扩展)。
+本節提供使用的一般簽出體驗的概觀。 [!DNL Quick Checkout] 適用於Adobe Commerce擴充功能。
 
-成功 [!DNL Quick Checkout] 流程包含以下步骤：
+成功 [!DNL Quick Checkout] 流程包含下列步驟：
 
-1. 打开店面，并在购物车中添加商品。
-1. 继续结帐。
+1. 開啟您的店面，並在購物車中新增商品。
+1. 繼續結帳。
 
-![结帐](assets/proceed-checkout.png)
+![簽出](assets/proceed-checkout.png)
 
 >[!NOTE]
 >
-> 您可以为商家启用自动登录。 请参阅 [Bolt的启用自动登录主题](https://help.bolt.com/products/embedded/direct-api/auto-login/) 以了解更多信息。
+> 您可以為商家啟用自動登入。 另請參閱 [Bolt的啟用自動登入主題](https://help.bolt.com/products/embedded/direct-api/auto-login/) 以取得詳細資訊。
 
-1. 出现提示时，输入与 [!DNL Bolt] 帐户。
-1. 输入发送到该密码的一次性密码(OTP) [!DNL Bolt] 帐户的电子邮件地址或电话号码。
+1. 出現提示時，輸入與關聯的電子郵件地址 [!DNL Bolt] 帳戶。
+1. 輸入傳送至該的一次性密碼(OTP) [!DNL Bolt] 帳戶的電子郵件地址或電話號碼。
 
-![OTP弹出窗口](assets/new-logo-otp-email.png)
+![OTP快顯視窗](assets/new-logo-otp-email.png)
 
-1. 登录后 [!DNL Bolt] 帐户，结帐详细信息会自动填写：
+1. 使用登入後 [!DNL Bolt] 帳戶，簽出詳細資料會自動填入：
 
-   - 装运信息
-   - 付款方法
+   - 送貨資訊
+   - 付款方式
 
    >[!NOTE]
    >
-   > 即使您的结账详细信息已自动填写，您也可以使用现有的钱包信息（地址或信用卡信息）。
+   > 即使您的結帳詳細資料已自動填寫，您也可以使用現有的錢包資訊（地址或信用卡資訊）。
 
-1. 下单。
+1. 下訂單。
 
-的 [!DNL Quick Checkout] 与标准的其他Adobe Commerce结账选项(例如 [礼品卡](https://docs.magento.com/user-guide/catalog/product-gift-card.html) 或 [折扣代码](https://docs.magento.com/user-guide/marketing/price-rules-cart-coupon.html).
+此 [!DNL Quick Checkout] 與標準其他Adobe Commerce簽出選項相容，例如 [禮品卡](https://docs.magento.com/user-guide/catalog/product-gift-card.html) 或 [折扣代碼](https://docs.magento.com/user-guide/marketing/price-rules-cart-coupon.html).
 
-## [!DNL Quick Checkout] 用例
+## [!DNL Quick Checkout] 使用案例
 
-的 [!DNL Quick Checkout] 允许在结帐流程期间使用多个用例：
+此 [!DNL Quick Checkout] 允許在結帳流程期間進行多個使用案例：
 
-- [来宾用户](../quick-checkout/checkout-bolt.md) 注册或新 [!DNL Bolt] 帐户。
-- 现有 [Adobe Commerce用户](../quick-checkout/checkout-adobe-commerce.md) 注册（无） [!DNL Bolt] 帐户。
+- [訪客使用者](../quick-checkout/checkout-bolt.md) 具有已註冊或新的 [!DNL Bolt] 帳戶。
+- 現有 [Adobe Commerce使用者](../quick-checkout/checkout-adobe-commerce.md) 無論是否具有已註冊的 [!DNL Bolt] 帳戶。
 
-## 获取帮助
+## 取得協助
 
-通过与Adobe Commerce支持部门联系 [Adobe Commerce帮助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) 来寻求帮助。
+請聯絡Adobe Commerce支援，透過 [Adobe Commerce說明中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) 以取得任何協助。

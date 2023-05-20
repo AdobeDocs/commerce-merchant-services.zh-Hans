@@ -1,7 +1,7 @@
 ---
-user-guide-title: '"[!DNL Live Search] 指南”'
-user-guide-description: “本指南提供了有关使用 [!DNL Live Search] 来自Adobe Commerce。”
-breadcrumb-title: '"[!DNL Live Search] 指南”'
+user-guide-title: '"[!DNL Live Search] 指南」'
+user-guide-description: 「本指南提供詳細的使用說明 [!DNL Live Search] 來自Adobe Commerce。」
+breadcrumb-title: '"[!DNL Live Search] 指南」'
 source-git-commit: e763eb8e283319b30b19dbb13284e9616196ae48
 workflow-type: tm+mt
 source-wordcount: '96'
@@ -9,42 +9,42 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] （商务） {#live-search}
+# [!DNL Live Search] 適用於商務 {#live-search}
 
 - [指南概述](guide-overview.md)
-- [简介 [!DNL Live Search]](overview.md)
-- [发行说明](release-notes.md)
-- 板载实时搜索 {#onboard}
-   - [入门概述](onboarding-overview.md)
-   - [安装 [!DNL Live Search]](install.md)
+- [簡介 [!DNL Live Search]](overview.md)
+- [發行說明](release-notes.md)
+- 上線即時搜尋 {#onboard}
+   - [入門概述](onboarding-overview.md)
+   - [安裝 [!DNL Live Search]](install.md)
 - [!DNL Live Search] 店面 {#live-search-storefront}
-   - [产品列表页面小组件](plp-styling.md)
-   - [快速浏览](quick-tour.md)
+   - [產品清單頁面Widget](plp-styling.md)
+   - [快速導覽](quick-tour.md)
    - [店面 [!DNL Popover]](storefront-popover.md)
-   - [样式 [!DNL Popover] 元素](storefront-popover-styling.md)
-- [!DNL Live Search] 管理员{#live-search-admin}
-   - [工作区](workspace.md)
-   - [性能](performance.md)
+   - [樣式 [!DNL Popover] 元素](storefront-popover-styling.md)
+- [!DNL Live Search] 管理員{#live-search-admin}
+   - [Workspace](workspace.md)
+   - [效能](performance.md)
    - Facet {#facets}
-      - [概述](facets.md)
-      - [分面工作区](faceting-workspace.md)
-      - [Facet类型](facets-type.md)
-      - [添加Facet](facets-add.md)
+      - [概觀](facets.md)
+      - [多面向工作區](faceting-workspace.md)
+      - [Facet型別](facets-type.md)
+      - [新增Facet](facets-add.md)
       - [管理Facet](facets-manage.md)
-      - [技术说明](facet-technical-notes.md)
-   - 同义词 {#synonyms}
-      - [概述](synonyms.md)
-      - [同义词的类型](synonyms-type.md)
-      - [添加同义词](synonyms-add.md)
-      - [管理同义词](synonyms-manage.md)
-   - 规则 {#rules}
-      - [概述](rules.md)
-      - [规则工作区](rules-workspace.md)
-      - [添加规则](rules-add.md)
-      - [管理规则](rules-manage.md)
-   - [商务配置设置](configuration.md)
-   - [设置](settings.md)
+      - [技術說明](facet-technical-notes.md)
+   - 同義字 {#synonyms}
+      - [概觀](synonyms.md)
+      - [同義字的型別](synonyms-type.md)
+      - [新增同義字](synonyms-add.md)
+      - [管理同義字](synonyms-manage.md)
+   - 規則 {#rules}
+      - [概觀](rules.md)
+      - [規則工作區](rules-workspace.md)
+      - [新增規則](rules-add.md)
+      - [管理規則](rules-manage.md)
+   - [Commerce組態設定](configuration.md)
+   - [設定](settings.md)
    - [索引](indexing.md)
-- GraphQL查询 {#graphql}
-   - [attributeMetadata](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/attribute-metadata/)
+- GraphQL查詢 {#graphql}
+   - [attributedata](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/attribute-metadata/)
    - [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)

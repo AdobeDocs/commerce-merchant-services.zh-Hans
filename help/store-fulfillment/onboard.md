@@ -1,6 +1,6 @@
 ---
-title: 商店履行服务入门概述
-description: '''[!DNL Live Search] 载入流程、系统要求、边界和限制。'
+title: Store Fulfillment Services入門概述
+description: '''[!DNL Live Search] 上線流程、系統需求、界限和限制。'
 role: User, Admin
 level: Intermediate
 exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
@@ -11,44 +11,44 @@ ht-degree: 0%
 
 ---
 
-# 商店履行入门概述
+# Store Fulfillment入門概述
 
-开始使用 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 通过设置、配置和启用以下组件：
+開始使用 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 藉由設定、設定和啟用下列元件：
 
-- **存储履行扩展** — 在您的Adobe Commerce实例上安装和配置此第三方扩展。 安装后，您可以从管理员配置和管理商店履行解决方案以支持 [!DNL buys online, pickup in store] (BOPIS)方案。
+- **Store Fulfillment擴充功能** — 在您的Adobe Commerce執行個體上安裝並設定此協力廠商擴充功能。 安裝後，您可以從管理員設定和管理Store Fulfillment解決方案以支援 [!DNL buys online, pickup in store] (BOPIS)情境在商務店面。
 
-   ![[!DNL Store Fulfillment Service] 管理视图中的配置](assets/store-fulfillment-admin-home.png)
+   ![[!DNL Store Fulfillment Service] 在「管理員」檢視中進行設定](assets/store-fulfillment-admin-home.png)
 
-- **存储履行帐户** — 在启用过程中，客户经理会创建您的商店履行帐户，并向您提供帐户信息和凭据。 需要这些凭据才能启用Adobe Commerce与存储履行解决方案之间的连接。
+- **存放區履行帳戶** — 在啟用過程中，客戶經理會建立您的Store Fulfillment帳戶，並提供您帳戶資訊和認證。 需要這些憑證才能啟用Adobe Commerce與Store Fulfillment解決方案之間的連線。
 
-- **商店辅助应用程序** — 提供与端对端商店履行工作流程关联的商店，以从移动设备管理BOPIS订单。 Store Associates可以下载和安装沃尔玛的 [!DNL Store Assist] 适用于iOS和Android™设备。 应用程序载入过程由沃尔玛商务技术客户中心作为单独的过程进行管理。 但是， [某些应用程序配置设置](user-setup.md) 已从Adobe Commerce管理员完成。
+- **商店協助應用程式** — 提供商店關聯與端對端商店履行工作流程，以管理來自行動裝置的BOPIS訂單。 Store Associates可以下載及安裝沃爾瑪的 [!DNL Store Assist] 適用於iOS和Android™裝置。 應用程式上線程式由Walmart Commerce Technologies客戶中心作為獨立程式管理。 不過， [部分應用程式組態設定](user-setup.md) 是從Adobe Commerce管理員完成。
 
-   | 商店辅助应用程序 — 快速入门视图 | 商店辅助应用程序 — 模块视图 |
+   | 商店協助應用程式 — 開始使用檢視 | 商店協助應用程式 — 模組檢視 |
    |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-   | ![[!DNL Store Assist App Getting Started] 在移动设备上查看](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] 在移动设备上](assets/store-assist-orders-small.png) |
+   | ![[!DNL Store Assist App Getting Started] 在行動裝置上檢視](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] 在行動裝置上](assets/store-assist-orders-small.png) |
 
-## 配置步骤
+## 布建步驟
 
-- **注册[!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]** — 填写注册表 [business.adobe.com](https://business.adobe.com/resources/store-fulfillment.html)，或联系您的Adobe Commerce客户经理以获取帮助。
+- **註冊[!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]** — 在上完成登錄檔單 [business.adobe.com](https://business.adobe.com/resources/store-fulfillment.html)，或聯絡Adobe Commerce客戶經理以尋求協助。
 
-- **启动存储履行的配置请求** — 填写由您的客户经理提供的入帐表，以提供开始配置过程所需的信息。
+- **啟動Store Fulfillment布建請求** — 完成客戶經理提供的錄取表單，提供開始布建程式所需的資訊。
 
-- **获取您的商店履行帐户凭据** — 在为您创建商店履行帐户后，您将收到将商店履行解决方案与Adobe Commerce集成所需的凭据。
+- **取得您的「商店履行」帳戶認證** — 為您建立Store Fulfillment帳戶後，您會收到將Store Fulfillment解決方案與Adobe Commerce整合所需的認證。
 
-- **[下载源代码以安装 [!DNL Store Fulfillment] 扩展](install.md)**
+- **[下載原始程式碼以安裝 [!DNL Store Fulfillment] 擴充功能](install.md)**
 
-## 入门步骤
+## 入門步驟
 
-1. [安装适用于Adobe Commerce的商店实施扩展](install.md).
+1. [安裝Adobe Commerce的Store Fulfillment擴充功能](install.md).
 
-1. 从管理员那里， [启用解决方案](enable-general.md).
+1. 從管理員， [啟用解決方案](enable-general.md).
 
-1. [从Adobe Commerce管理员中配置商店履行扩展](service-config-settings-overview.md).
+1. [從Adobe Commerce管理員設定Store Fulfillment擴充功能](service-config-settings-overview.md).
 
-1. [连接 [!DNL Store Fulfillment] 服务，使用提供给您的商店履行凭据](connect-set-up-service.md).
+1. [連線 [!DNL Store Fulfillment] 使用提供給您的Store Fulfillment憑證提供服務](connect-set-up-service.md).
 
-1. [为Store Assist应用程序创建用户和角色](user-setup.md).
+1. [為Store Assist應用程式建立使用者和角色](user-setup.md).
 
-1. [下载Walmart&#39;s [!DNL Store Assist] 应用程序。 该应用程序在Apple应用程序(iOS)和Google Play(Android™)上均可用](app-setup.md) 商店。
+1. [下載沃爾瑪的 [!DNL Store Assist] 應用程式至您所需的裝置。 Apple應用程式(iOS)和Google Play (Android™)皆提供此應用程式](app-setup.md) 商店。
 
-成功安装、配置、完成载入，并有权访问 [!DNL Store Assist] 应用程序，您 [开始创建订单并进行测试](test-and-deploy.md).
+在您成功安裝、設定、完成上線並存取後， [!DNL Store Assist] 應用程式，您可以 [開始建立訂單並進行測試](test-and-deploy.md).

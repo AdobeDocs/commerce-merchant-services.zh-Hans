@@ -1,6 +1,6 @@
 ---
-title: 财务报告
-description: '"[!DNL Payment Services] 提供全面的报告，以便您能够清楚地了解商店的订单和付款情况。”'
+title: Financial Reporting
+description: '"[!DNL Payment Services] 提供完整的報告，讓您清楚瞭解商店的訂購與付款。」'
 role: User
 feature: Payments
 level: Intermediate
@@ -11,10 +11,10 @@ ht-degree: 0%
 
 ---
 
-# 财务报告
+# Financial Reporting
 
-[!DNL Payment Services] 表示 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供全面的报表，以便您能够清楚地了解商店的订单和付款情况。
+[!DNL Payment Services] 的 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供您完整的報告，讓您清楚瞭解商店的訂購與付款。
 
-![财务报表视图](assets/reports-view.png)
+![財務報告檢視](assets/reports-view.png)
 
-现金流管理报告（付款和订单付款状态）将付款详细信息与订单信息同步，以使您完全透明地了解已处理的数量、付款余额和财务对账的事务处理级别的详细报告。
+現金流量管理報表（付款與訂單付款狀態）將付款詳細資料與訂單資訊同步化，讓您完全透明地瞭解已處理數量、付款餘額以及財務調節的交易層次詳細報表。

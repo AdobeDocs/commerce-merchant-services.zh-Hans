@@ -1,7 +1,7 @@
 ---
-user-guide-title: '"[!DNL Quick Checkout] for Adobe Commerce'
-user-guide-description: “了解 [!DNL Quick Checkout] 可以为您的Adobe Commerce实例以及如何成功载入和设置扩展。”
-breadcrumb-title: Merchant Services指南
+user-guide-title: '"[!DNL Quick Checkout] 適用於Adobe Commerce」'
+user-guide-description: 「瞭解如何 [!DNL Quick Checkout] 可能會讓您的Adobe Commerce執行個體受益，並瞭解如何成功入門和設定擴充功能。」
+breadcrumb-title: 商家服務指南
 source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
 source-wordcount: '76'
@@ -10,29 +10,29 @@ ht-degree: 0%
 ---
 
 
-# [!DNL Quick Checkout] 对于Adobe Commerce {#quick-checkout}
+# [!DNL Quick Checkout] 適用於Adobe Commerce {#quick-checkout}
 
-- [简介 [!DNL Quick Checkout]](overview.md)
-- [发行说明](release-notes.md)
-- 板载 [!DNL Quick Checkout] {#getting-started}
-   - [先决条件](prerequisites.md)
-   - [安装](install.md)
-   - [入门](onboarding.md)
-   - [设置](settings-quick-checkout.md)
-   - [!DNL Quick Checkout] “管理员”面板 {#quick-checkout-admin-panel}
-      - [配置管理面板](admin-panel.md)
-      - [用户设置](user-roles-setup.md)
-   - [!DNL Quick Checkout] 报告 {#quick-checkout-reporting}
-      - [报表](reports.md)
-- 测试和验证 {#test-validate}
-   - [测试](testing.md)
-   - [开发人员信息](developer.md)
-- 结帐 {#manage-checkout}
-   - [结帐页面](checkout-page.md)
-   - 结帐选项 {#checkout-options}
-      - [结帐流程](checkout-flow.md)
-      - [螺栓用户结帐](checkout-bolt.md)
-      - [Adobe Commerce用户结账](checkout-adobe-commerce.md)
+- [簡介 [!DNL Quick Checkout]](overview.md)
+- [發行說明](release-notes.md)
+- 上線 [!DNL Quick Checkout] {#getting-started}
+   - [必要條件](prerequisites.md)
+   - [安裝](install.md)
+   - [入門](onboarding.md)
+   - [設定](settings-quick-checkout.md)
+   - [!DNL Quick Checkout] 管理面板 {#quick-checkout-admin-panel}
+      - [設定管理面板](admin-panel.md)
+      - [使用者設定](user-roles-setup.md)
+   - [!DNL Quick Checkout] 報告 {#quick-checkout-reporting}
+      - [報表](reports.md)
+- 測試與驗證 {#test-validate}
+   - [測試](testing.md)
+   - [開發人員資訊](developer.md)
+- 簽出 {#manage-checkout}
+   - [結帳頁面](checkout-page.md)
+   - 簽出選項 {#checkout-options}
+      - [結帳流程](checkout-flow.md)
+      - [Bolt使用者簽出](checkout-bolt.md)
+      - [Adobe Commerce使用者結帳](checkout-adobe-commerce.md)
    - [付款方法](payment-methods.md)
-- [用户会话生命周期](user-session-lifetime.md)
-- [在管理员中创建订单](create-order-admin.md)
+- [使用者工作階段期限](user-session-lifetime.md)
+- [在管理員中建立訂單](create-order-admin.md)

@@ -1,6 +1,6 @@
 ---
-title: SaaS价格索引安装
-description: 安装SaaS价格索引
+title: SaaS價格索引安裝
+description: 安裝SaaS價格索引
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
 exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
@@ -11,25 +11,25 @@ ht-degree: 0%
 
 ---
 
-# SaaS价格索引安装
+# SaaS價格索引安裝
 
-设置SaaS价格索引需要安装新模块并运行CLI命令。 管理员需要命令行访问权限才能完成此安装。
+設定SaaS價格索引需要安裝新模組並執行CLI命令。 管理員需要命令列存取權才能完成此安裝。
 
-## 先决条件
+## 必要條件
 
 * Adobe Commerce 2.4.4+
-* 至少安装了以下SaaS服务之一：
+* 至少已安裝下列其中一個SaaS服務：
 
-   * [目录服务](../catalog-service/overview.md)
-   * [实时搜索](../live-search/guide-overview.md)
-   * [产品Recommendations](../product-recommendations/guide-overview.md)
+   * [目錄服務](../catalog-service/overview.md)
+   * [即時搜尋](../live-search/guide-overview.md)
+   * [產品Recommendations](../product-recommendations/guide-overview.md)
 
-## 安装所需模块
+## 安裝必要的模組
 
-根据您的设置，安装过程可能会略有不同。
-有一些扩展会添加新馈送和支持代码，还有一些扩展会删除默认价格馈送。
+視您的設定而定，安裝程式可能會稍有不同。
+有些擴充功能會新增摘要和支援程式碼，有些擴充功能會移除預設價格摘要。
 
-1. 将以下模块添加到 `composer.json` 文件：
+1. 將下列模組新增至 `composer.json` 檔案：
 
    ```json
    "magento/module-saas-price": "102.2.0",
@@ -38,26 +38,26 @@ ht-degree: 0%
    "magento/module-bundle-product-override-data-exporter": "102.2.0",
    ```
 
-1. 运行升级命令：
+1. 執行升級命令：
 
    ```bash
    bin/magento setup:upgrade
    ```
 
-升级后，提供了三个新信息源：
+升級之後，提供三個新摘要：
 
-* `prices`  — 负责向服务提供价格数据
-* `scopesCustomerGroup`  — 负责将客户组交付到服务
-* `scopesWebsite`  — 负责将网站、商店组和商店视图交付到服务
+* `prices`  — 負責將價格資料遞送至服務
+* `scopesCustomerGroup`  — 負責將客戶群組交付至服務
+* `scopesWebsite`  — 負責將網站、商店群組和商店檢視傳送至服務
 
 
-1. 将新馈送配置为“按计划更新”模式：
+1. 將新摘要設定為「依排程更新」模式：
 
    ```bash
    bin/magento indexer:set-mode schedule catalog_data_exporter_product_prices scopes_customergroup_data_exporter scopes_website_data_exporter
    ```
 
-1. 重新编入新馈送的索引：
+1. 重新索引新的摘要：
 
    ```bash
    bin/magento saas:resync --feed=scopesCustomerGroup
@@ -65,18 +65,18 @@ ht-degree: 0%
    bin/magento saas:resync --feed=prices
    ```
 
-根据需要手动运行上述索引器。 否则，数据将在标准同步过程中刷新。 有关 [目录同步](../landing/catalog-sync.md) 服务。
+視需要手動執行上述索引器。 否則，資料會在標準同步程式中重新整理。 深入瞭解 [目錄同步](../landing/catalog-sync.md) 服務。
 
-Luma和Adobe Commerce Core GraphQL用户可以安装 `catalog-adapter` 提供Luma与Core GraphQl兼容性并禁用PHP核心价格索引器的模块。
-使用 `catalog-adapter` 模块， [!DNL Live Search] 和 [!DNL Catalog Service] 必须先安装和配置。 关注 [安装 [!DNL Live Search]](../live-search/install.md) 和 [目录服务安装](../catalog-service/installation.md) 说明。
+Luma和Adobe Commerce Core GraphQL使用者可以安裝 `catalog-adapter` 提供Luma和核心GraphQl相容性並停用PHP核心價格索引器的模組。
+若要使用 `catalog-adapter` 模組， [!DNL Live Search] 和 [!DNL Catalog Service] 必須先安裝及設定。 請遵循 [安裝 [!DNL Live Search]](../live-search/install.md) 和 [目錄服務安裝](../catalog-service/installation.md) 指示後再繼續。
 
-要配置Live Search和Catalog Adapter，请按照 [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html?lang=en) 说明。
+若要設定「即時搜尋和目錄轉接器」，請依照 [商務服務聯結器](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html?lang=en) 指示。
 
 ```bash
 composer require adobe-commerce/catalog-adapter
 ```
 
-如果需要，可使用以下命令重新启用PHP核心价格索引器：
+如有需要，可以使用以下指令重新啟用PHP核心價格索引器：
 
 ```bash
 bin/magento module:disable Magento_PriceIndexerDisabler

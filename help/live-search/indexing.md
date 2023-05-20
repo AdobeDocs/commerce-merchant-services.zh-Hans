@@ -1,6 +1,6 @@
 ---
-title: "[!DNL Live Search] 索引"
-description: “了解如何 [!DNL Live Search] 索引产品属性。”
+title: '"[!DNL Live Search] 索引」'
+description: 「瞭解如何 [!DNL Live Search] 索引產品屬性屬性。」
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
 source-git-commit: f310f840e286859070002ab0e23eda3787c89f36
 workflow-type: tm+mt
@@ -11,82 +11,82 @@ ht-degree: 0%
 
 # 索引
 
-产品属性（元数据）确定：
+產品屬性屬性（中繼資料）會決定：
 
-* 如何在目录中使用属性
-* 它在商店中的外观和行为
-* 数据传输操作中包含的数据
+* 如何在目錄中使用屬性
+* 它在商店中的外觀和行為
+* 資料傳輸作業中包含的資料
 
-属性元数据的范围是 `website/store/store view`.
+屬性中繼資料的範圍是 `website/store/store view`.
 
-的 [!DNL Live Search] API允许客户按具有 [storefront属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` 设置为 `Yes` 在Adobe Commerce管理员中。 启用后， `Search Weight` 和 `Visible in Advanced Search` 可以为属性设置。
+此 [!DNL Live Search] API可讓使用者端依任何具有下列屬性的產品屬性排序： [店面屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` 設定為 `Yes` (在Adobe Commerce管理員中)。 啟用時， `Search Weight` 和 `Visible in Advanced Search` 可以為屬性設定。
 
-[!DNL Live Search] 不会将已删除的产品或设置为 `Not Visible Individually`.
+[!DNL Live Search] 不會為已刪除的產品或設為的產品建立索引 `Not Visible Individually`.
 
 >[!NOTE]
 >
-> 商务客户 [!DNL Live Search] 可以利用他们网站上更快的价格更新和同步时间 [SaaS价格索引器](../price-index/index.md).
+> 商務客戶，具有 [!DNL Live Search] 可透過以下優勢，利用網站更快速的價格更新及同步化時間： [SaaS價格索引器](../price-index/index.md).
 
 ## 索引管道
 
-客户端从店面调用搜索服务以检索（可过滤、可排序）索引元数据。 仅可搜索的产品属性 *在分层导航中使用* 属性设置为 `Filterable (with results)` 和 *用于在产品列表中排序* 设置为 `Yes` 可由搜索服务调用。
-要构建动态查询，搜索服务需要知道哪些属性可搜索及其权重。 [!DNL Live Search] 遵循Adobe Commerce搜索权重（1-10，其中10为最高优先级）。 可在架构中找到与目录服务同步和共享的数据列表，该架构在中定义：
+使用者端從店面呼叫搜尋服務以擷取（可篩選、可排序）索引中繼資料。 只有具備以下條件的可搜尋產品屬性： *用於分層導覽* 屬性設定為 `Filterable (with results)` 和 *用於產品清單中的排序* 設定為 `Yes` 可由search service呼叫。
+若要建構動態查詢，搜尋服務需要知道哪些屬性可搜尋及其權重。 [!DNL Live Search] 接受Adobe Commerce搜尋權重（1-10，其中10是最高優先順序）。 在結構描述中可以找到與目錄服務同步和共用的資料清單，其定義如下：
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 
-![[!DNL Live Search] 索引客户端搜索图](assets/indexing-pipeline.svg)
+![[!DNL Live Search] 索引使用者端搜尋圖表](assets/indexing-pipeline.svg)
 
-1. 检查商户 [!DNL Live Search] 权利。
-1. 获取包含属性元数据更改的存储视图。
-1. 存储索引属性。
-1. 重新索引搜索索引。
+1. 檢查商家 [!DNL Live Search] 權利。
+1. 取得含屬性中繼資料變更的商店檢視。
+1. 儲存索引屬性。
+1. 重新索引搜尋索引。
 
 ### 完整索引
 
-When [!DNL Live Search] 已在载入期间配置并同步，则构建初始索引可能最多需要八小时。 该过程在 `cron` 提交馈送并完成运行。
+時間 [!DNL Live Search] 已設定並在上線期間進行同步，最多可能需要8小時才能建立初始索引。 此程式開始於 `cron` 提交摘要並完成執行。
 
-以下事件会触发完全同步和索引生成：
+以下事件會觸發完全同步和索引建置：
 
-* 入门 [目录数据同步](install.md#synchronize-catalog-data)
-* 对属性元数据的更改
+* 入門 [目錄資料同步](install.md#synchronize-catalog-data)
+* 屬性中繼資料的變更
 
-例如，更改 `Use in Search` 属性 `color` 属性来源 `No` to `Yes` 将属性元数据更改为 `searchable=true`、和会触发完全同步并重新编入索引。 以下属性元数据会在发生更改时触发完全同步并重新索引：
+例如，變更 `Use in Search` 的屬性 `color` 屬性來源 `No` 至 `Yes` 將屬性中繼資料變更為 `searchable=true`，並觸發完全同步和重新索引。 下列屬性中繼資料在變更時會觸發完全同步和重新索引：
 
 * `filterableInSearch`
 * `searchable`
 * `sortable`
 * `visibleInSearch`
 
-### 流产品更新
+### 串流產品更新
 
-在 [载入](install.md#synchronize-catalog-data)，系统会持续同步以下增量产品更新并将其重新索引：
+建立初始索引後，於 [入門](install.md#synchronize-catalog-data)，系統會持續同步及重新索引下列增量產品更新：
 
-* 已向目录中添加新产品
-* 产品属性值的更改
+* 新增至目錄的新產品
+* 產品屬性值的變更
 
-例如，向 `color` 属性作为流产品更新进行处理。
-流更新工作流：
+例如，將新的色票值新增至 `color` 屬性會以串流產品更新的形式處理。
+串流更新工作流程：
 
-1. 更新的产品会从Adobe Commerce实例同步到目录服务。
-1. 索引服务会持续从目录服务中查找产品更新。 更新的产品在进入目录服务时会进行索引。
-1. 产品更新最多可能需要15分钟，才能在 [!DNL Live Search].
+1. 更新的產品會從Adobe Commerce執行個體同步至目錄服務。
+1. 索引服務不斷從目錄服務尋找產品更新。 更新的產品到達目錄服務時會建立索引。
+1. 產品更新可能最多需要15分鐘才能在中提供 [!DNL Live Search].
 
-## 客户端搜索
+## 使用者端搜尋
 
-的 [!DNL Live Search] API允许客户通过设置 [storefront属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *用于在产品列表中排序* to `Yes`. 根据主题，此设置将导致将属性作为选项包含在 [排序依据](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) 对目录页面进行分页控制。 最多可以通过 [!DNL Live Search]，使用 [店面属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) 可搜索和可过滤的ID。
-索引元数据存储在索引管道中，并可由搜索服务访问。
+此 [!DNL Live Search] API可讓使用者端透過設定 [店面屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html)， *用於產品清單中的排序* 至 `Yes`. 根據主題，此設定會導致屬性包含在 [排序方式](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) 目錄頁面上的分頁控制項。 索引最多可包含300個產品屬性 [!DNL Live Search]，搭配 [店面屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) 可搜尋和可篩選的區段。
+索引中繼資料儲存在索引管道中，可供搜尋服務存取。
 
-![[!DNL Live Search] 索引元数据API图](assets/index-metadata-api.svg)
+![[!DNL Live Search] 索引中繼資料API圖表](assets/index-metadata-api.svg)
 
-### 可排序的属性工作流
+### 可排序的屬性工作流程
 
-1. 客户端调用搜索服务。
-1. 搜索服务调用搜索管理服务。
-1. 搜索服务调用索引管道。
+1. 使用者端呼叫搜尋服務。
+1. 搜尋服務會呼叫搜尋管理服務。
+1. Search Service呼叫索引管道。
 
-## 已为所有产品编入索引
+## 已針對所有產品建立索引
 
-此列表中字段的顺序反映了导出产品数据中列的典型顺序。
+此清單中的欄位順序反映了匯出產品資料中欄的一般順序。
 
 * `environment_id`
 * `website_code`
@@ -113,6 +113,6 @@ When [!DNL Live Search] 已在载入期间配置并同步，则构建初始索�
 * `in_stock`
 * `low_stock`
 
-以下字段已针对所有可配置产品编入索引：
+下列欄位會針對所有可設定的產品編制索引：
 
 * `childrenSkus`

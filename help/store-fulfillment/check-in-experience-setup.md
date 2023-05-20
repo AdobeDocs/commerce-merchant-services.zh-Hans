@@ -1,6 +1,6 @@
 ---
-title: 签入体验设置
-description: 配置在客户完成“提货单”表单时可用于策划提货客户的车型和型号选择。
+title: 簽入體驗設定
+description: 設定路邊取貨客戶完成「取貨訂單」表單時，可使用的汽車製造及模型選項。
 role: User, Admin
 level: Intermediate
 exl-id: 341b96cd-bb83-4d07-965c-b09fab24dc81
@@ -11,24 +11,24 @@ ht-degree: 0%
 
 ---
 
-# 签入体验设置
+# 簽入體驗設定
 
-当客户到达货柜时，他们会使用“货柜订单”来签入并提供有关其位置、汽车制造和汽车型号的信息。 此信息通过Store Assist应用程序发送到Store Assites，以便他们能够快速提交货物提货单。
+當客戶抵達路邊取貨地點時，他們會使用「取貨訂單」表單來辦理入住手續，並提供其地點、汽車製造及車型的相關資訊。 這項資訊會透過Store Assist應用程式傳送給Store Associates，以便他們能夠快速送出路邊取貨訂單。
 
-![[!DNL Check-In Experience Car Make] 和 [!DNL Model] 组织端拾取的设置](assets/checkin-system-settings-car-options.png)
+![[!DNL Check-In Experience Car Make] 和 [!DNL Model] 路邊取車設定](assets/checkin-system-settings-car-options.png)
 
 >[!NOTE]
 >
->您可以从 [“存储配置”菜单](merchant-store-configuration.md#configure-check-in-experience-interface-options). 例如，您可以指定要显示的输入字段以及它们是必填字段还是可选字段。
+>您可從「取貨單」表單介面設定 [存放區設定功能表](merchant-store-configuration.md#configure-check-in-experience-interface-options). 例如，您可以指定要顯示哪些輸入欄位，以及這些欄位是必要欄位還是選用欄位。
 
 
-## 配置车牌和颜色选择
+## 設定汽車造型和顏色選擇
 
-管理员用户可以从Adobe Commerce系统设置中管理“装车表”上提供的车牌和型号选择：
+管理員使用者可以從Adobe Commerce系統設定中管理取車單上可用的汽車品牌和車型選擇：
 
-- **[!UICONTROL System]>签入>汽车制造**
-- **[!UICONTROL System]>签入>汽车颜色**
+- **[!UICONTROL System]>入住>汽車製造**
+- **[!UICONTROL System]>入庫>車輛顏色**
 
 ![[!DNL Check-In Experience system configuration for curbside pickup]](assets/check-in-experience-system-config.png)
 
-默认配置包括针对美国市场的众多常用汽车产品和颜色。 [!DNL Commerce] 管理员用户可以管理配置以添加或编辑可用选项。
+預設設定包含美國市場常見汽車製造及顏色的詳細清單。 [!DNL Commerce] 管理員使用者可以管理設定，以新增或編輯可用選項。

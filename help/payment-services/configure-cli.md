@@ -1,43 +1,43 @@
 ---
-title: 命令行配置
-description: 安装后，您可以配置 [!DNL Payment Services] 使用命令行界面(CLI)。
+title: 命令列設定
+description: 安裝後，您可以設定 [!DNL Payment Services] 使用命令列介面(CLI)。
 role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
 source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
 
-# 命令行配置
+# 命令列設定
 
-安装后 [!DNL Payment Services]，则可以轻松地通过 [家里](payments-home.md) 或通过命令行界面(CLI)。
+安裝之後 [!DNL Payment Services]，您可從以下位置輕鬆進行設定： [在首頁內](payments-home.md) 或透過命令列介面(CLI)。
 
-## 配置数据导出
+## 設定資料匯出
 
-[!DNL Payment Services] 将导出的订单数据合并为 [!DNL Magento Open Source] 和 [!DNL Adobe Commerce] 来自支付提供商的汇总付款数据，以创建有用的报表。 的 [!DNL Payment Services] 扩展使用索引器来有效地收集报表的所有必需数据。
+[!DNL Payment Services] 結合匯出的訂單資料 [!DNL Magento Open Source] 和 [!DNL Adobe Commerce] 付款提供者的彙總付款資料，以建立有用的報表。 此 [!DNL Payment Services] 擴充功能會使用索引器來有效率地收集報表的所有必要資料。
 
-了解 [!DNL Payment Services] 报表，请参阅 [订单付款状态报表](order-payment-status.md#data-used-in-the-report).
+若要瞭解中使用的資料 [!DNL Payment Services] 報表，請參閱 [訂單付款狀態報表](order-payment-status.md#data-used-in-the-report).
 
-### 配置CRON [!DNL Magento Open Source]
+### 設定cron on [!DNL Magento Open Source]
 
-如果您想使用 `BY SCHEDULE` 索引模式打开 [!DNL Magento Open Source]，则必须配置cron。 请参阅 [配置并运行cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
+如果您想使用 `BY SCHEDULE` 索引模式開啟 [!DNL Magento Open Source]，您必須設定cron。 另請參閱 [設定並執行cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
 
-### 设置索引器
+### 設定索引子
 
-订单数据在支付服务中使用两种索引模式之一导出并保留。`ON SAVE` （默认）或 `BY SCHEDULE` （推荐）。
+使用兩種索引模式之一，匯出訂單資料並保留在付款服務中 — `ON SAVE` （預設）或 `BY SCHEDULE` （建議使用）。
 
-以下索引适用于 [!DNL Payment Services]:
+下列索引適用於 [!DNL Payment Services]：
 
-| 代码 | 名称 | 描述 |
+| 程式碼 | 名稱 | 說明 |
 |    ---    |  ---  |  ---  |
-| `sales_order_data_exporter` | 销售订单馈送 | 构建订单数据索引 |
-| `sales_order_status_data_exporter` | 销售订单状态信息源 | 生成销售订单状态数据索引 |
-| `store_data_exporter` | 存储馈送 | 生成存储数据索引 |
+| `sales_order_data_exporter` | 銷售訂單摘要 | 建立訂單資料的索引 |
+| `sales_order_status_data_exporter` | 銷售訂單狀態摘要 | 建立銷售訂單狀態資料的索引 |
+| `store_data_exporter` | 商店摘要 | 建立存放區資料的索引 |
 
-要更改所有三个索引器的索引模式，请运行：
+若要變更所有三個索引器的索引模式，請執行：
 
 ```bash
 bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_status_data_exporter store_data_exporter
@@ -45,46 +45,46 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 
 >[!TIP]
 >
->如果您未在命令中指定任何索引器，则所有索引器都将更新为相同的值。 如果要更改特定索引器，必须在命令中列出该索引器。
+>如果您未在命令中指定任何索引子，所有索引子都會更新為相同的值。 如果要變更特定的索引子，必須在指令中列出它。
 
-要了解有关手动更改索引器模式的更多信息，请参阅 [配置索引器](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} in the developer documentation. To learn how to change it in the Admin, see [Index management](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} （在核心用户指南中）。
+若要進一步瞭解手動變更索引器的模式，請參閱 [設定索引子](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} in the developer documentation. To learn how to change it in the Admin, see [Index management](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} 在核心使用手冊中。
 
-### 手动重新编入数据索引
+### 手動重新索引資料
 
-您可以手动重新编入数据索引，而无需等待数据自动发生。 请参阅 [重新索引](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Manage the Indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} 以了解更多信息。
+您可以手動重新索引資料，而不必等待資料自動發生。 另請參閱 [重新索引](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Manage the Indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} 以取得詳細資訊。
 
-When `BY SCHEDULE` 模式时，系统会跟踪已更改的实体，而cron作业会根据设置的计划更新这些实体的索引。 请参阅 [从命令行中运行cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) in [配置并运行cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html))，以了解如何使用cron作业手动触发索引。
+時間 `BY SCHEDULE` 模式已設定，系統會追蹤已變更的實體，而cron作業會根據設定的排程更新這些實體的索引。 另請參閱 [從命令列執行cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) 在 [設定並執行cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html))，瞭解如何使用cron工作手動觸發索引化。
 
-### 将重新索引的数据发送到支付服务
+### 將重新索引的資料傳送至付款服務
 
-在数据编入索引后，该数据将自动发送到 [!DNL Payment Services]. 您还可以使用以下命令手动触发发送索引数据的过程：
+資料編制索引後，會自動傳送至 [!DNL Payment Services]. 您也可以使用此命令手動觸發傳送索引資料的程式：
 
 ```bash
 bin/magento saas:resync --feed [feedName]
 ```
 
-使用以下命令选项：
+使用下列命令選項：
 
-| 命令 | 描述 |
+| 命令 | 說明 |
 |  ---  |  ---  |
-| `bin/magento saas:resync --feed [feedName]` | 执行指定馈送的重新索引，并将其发送到相应的服务 |
-| `bin/magento saas:resync --no-reindex` | 跳过索引并从索引发送未同步的数据 |
+| `bin/magento saas:resync --feed [feedName]` | 執行指定摘要的重新索引，並將其傳送至對應的服務 |
+| `bin/magento saas:resync --no-reindex` | 略過索引化並從索引傳送未同步的資料 |
 
-的 `--feed` 参数允许您指定要发送的馈送：
+此 `--feed` 引數可讓您指定要傳送的摘要：
 
-| 信息源 | 描述 |
+| 摘要 | 說明 |
 |  ---  |  ---  |
-| `paymentServicesOrdersProduction` | 生产模式下的订单馈送 |
-| `paymentServicesOrdersSandbox` | 沙盒模式下的订单馈送 |
-| `paymentServicesOrderStatusesProduction` | 生产模式下的订单状态 |
-| `paymentServicesOrderStatusesSandbox` | 在沙盒模式下对状态进行排序 |
-| `paymentServicesStoresProduction` | 在生产模式下存储 |
-| `paymentServicesStoresSandbox` | 在沙盒模式下存储 |
+| `paymentServicesOrdersProduction` | 生產模式下的訂單摘要 |
+| `paymentServicesOrdersSandbox` | 沙箱模式下的訂單摘要 |
+| `paymentServicesOrderStatusesProduction` | 生產模式下的訂單狀態 |
+| `paymentServicesOrderStatusesSandbox` | 在沙箱模式中的訂單狀態 |
+| `paymentServicesStoresProduction` | 以生產模式儲存 |
+| `paymentServicesStoresSandbox` | 以沙箱模式儲存 |
 
-报表所需的所有数据都会发送到 [!DNL Payment Services] 自动。 您还可以手动触发向发送CRON数据的过程 [!DNL Payment Services].
+報告所需的所有資料都會傳送到 [!DNL Payment Services] 如果已設定並安裝cron，則會自動進行。 您也可以手動觸發cron資料傳送至的程式 [!DNL Payment Services].
 
 ```bash
 bin/magento cron:run --group payment_services_data_export
 ```
 
-要了解有关重新索引和索引器的更多信息，请参阅 [管理索引器](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) 开发人员文档中的主题。
+若要進一步瞭解重新索引和索引器，請參閱 [管理索引器](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) 開發人員檔案中的主題。

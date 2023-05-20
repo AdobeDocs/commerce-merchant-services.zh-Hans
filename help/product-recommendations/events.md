@@ -1,6 +1,6 @@
 ---
-title: 收集数据
-description: 了解事件如何收集产品推荐的数据。
+title: 收集資料
+description: 瞭解事件如何收集產品建議的資料。
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
 workflow-type: tm+mt
@@ -9,39 +9,39 @@ ht-degree: 0%
 
 ---
 
-# 收集数据
+# 收集資料
 
-安装和配置基于SaaS的Adobe Commerce功能(例如 [产品Recommendations](install-configure.md) 或 [实时搜索](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html)，则模块会将行为数据收集部署到您的店面。 此机制从购物者那里收集匿名化行为数据，并为产品推荐提供支持。 例如， `view` 事件用于计算 `Viewed this, viewed that` 推荐类型和 `place-order` 事件用于计算 `Bought this, bought that` 推荐类型。
+安裝及設定SaaS型Adobe Commerce功能時，例如 [產品Recommendations](install-configure.md) 或 [即時搜尋](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html)，模組會將行為資料收集部署至您的店面。 此機制會從購物者收集匿名行為資料，並提供產品建議。 例如， `view` 事件是用來計算 `Viewed this, viewed that` 建議型別，以及 `place-order` 事件是用來計算 `Bought this, bought that` 建議型別。
 
 >[!NOTE]
 >
->为产品推荐目的收集的数据不包括个人身份信息(PII)。 所有用户标识符（如Cookie ID和IP地址）都严格匿名化。 [了解更多](https://www.adobe.com/privacy/experience-cloud.html).
+>為產品推薦目的收集的資料不包括個人識別資訊(PII)。 所有使用者識別碼（例如Cookie ID和IP位址）都需嚴格匿名處理。 [瞭解更多](https://www.adobe.com/privacy/experience-cloud.html).
 
-以下事件并非特定于产品Recommendations，而是返回结果所必需的：
+以下事件並非產品Recommendations特有，而是傳回結果的必要事件：
 
 - `view`
 - `add-to-cart`
 - `place-order`
 
-的 [Adobe Commerce Storefront事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) 列出部署到店面的所有事件。 但是，该列表中存在特定于产品Recommendations的事件子集。 当购物者与店面上的推荐单位进行交互时，这些事件会收集数据，并为用来帮助您分析推荐效果的量度提供动力。
+此 [Adobe Commerce店面事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) 列出部署至店面的所有事件。 但是，從該清單中，有一個產品Recommendations專屬的事件子集。 當購物者與店面的推薦單位互動時，這些活動會收集資料，並支援用於協助您分析建議執行成效的量度。
 
-| 事件 | 描述 | [用于量度？](workspace.md) |
+| 事件 | 說明 | [用於量度？](workspace.md) |
 | --- | --- | --- |
-| `impression-render` | 推荐单元呈现在页面上。 | 是 |
-| `rec-add-to-cart-click` | 客户单击 **添加到购物车** 按钮。 | 是，当 **添加到购物车** 按钮。 |
-| `rec-click` | 客户在推荐单位中单击产品。 | 是 |
-| `view` | 推荐单元可在页面上查看，例如通过滚动到视图中。 | 是 |
+| `impression-render` | 建議單位會呈現在頁面上。 | 是 |
+| `rec-add-to-cart-click` | 客戶按一下 **加入購物車** 建議單位中專案的按鈕。 | 是，當 **加入購物車** 「建議」範本中會顯示按鈕。 |
+| `rec-click` | 客戶按一下建議單位中的產品。 | 是 |
+| `view` | 建議單位可在頁面上檢視，例如透過捲動至檢視。 | 是 |
 
-如果您的店面是通过PWA Studio实施的，请参阅 [PWA文档](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). 如果您使用自定义前端技术（如React或Vue JS），请参阅用户指南，以了解如何在 [无头](headless.md) 环境。
+如果您的店面是透過PWA Studio實作，請參閱 [PWA檔案](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). 如果您使用自訂前端技術（例如React或Vue JS），請參閱使用手冊以瞭解如何在中整合產品Recommendations [headless](headless.md) 環境。
 
-## 注意事项
+## 注意事項
 
-广告阻止程序和隐私设置可能会阻止 `magento/product-recommendations` 模块来捕获事件，并可能导致参与和收入 [量度](workspace.md) 少报。
+廣告封鎖程式和隱私權設定可防止 `magento/product-recommendations` 擷取事件中的模組，而此模組可能會導致參與和收入 [量度](workspace.md) 將被低報。
 
-事件不会捕获在商家网站上发生的每笔交易。 活动旨在为商家提供网站上正在发生的事件的一般概念。
+事件不會擷取商家網站上發生的每個交易。 事件旨在讓商家大致瞭解網站上發生的事件。
 
-无头实施必须实施事件才能为产品Recommendations功能板提供动力。
+Headless實作必須實作事件功能，才能支援產品Recommendations儀表板。
 
 >[!NOTE]
 >
->如果 [Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) 启用，则在购物者同意使用cookie之前，Adobe Commerce不会收集行为数据。 如果禁用Cookie限制模式，则Adobe Commerce会默认收集行为数据。
+>若 [Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) 啟用，在購物者同意使用Cookie之前，Adobe Commerce不會收集行為資料。 如果「Cookie限制模式」已停用，Adobe Commerce會依預設收集行為資料。

@@ -1,6 +1,6 @@
 ---
-title: 无头
-description: 了解如何集成 [!DNL Product Recommendations] 在无头店里。
+title: Headless
+description: 瞭解如何整合 [!DNL Product Recommendations] 在headless店面。
 exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
 source-git-commit: 521ea4fc2cce809fc12d3958e37089f3e34e1068
 workflow-type: tm+mt
@@ -9,49 +9,49 @@ ht-degree: 0%
 
 ---
 
-# 无头
+# Headless
 
-您可以集成 [!DNL Product Recommendations] 在无头店面中使用 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) 或自定义前端技术，如React或Vue JS。
+您可以整合 [!DNL Product Recommendations] 在headless店面，使用 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) 或自訂前端技術，例如React或Vue JS。
 
-自定义和无头集成程序应参考这些Luma和PWA说明，作为建议的实施。 在无头解决方案中实施产品Recommendations的方法有很多，本文档并未涵盖所有方案。 集成商必须负责其实施的事件、设计和测试。
+自訂和Headless整合經銷商應參考這些Luma和PWA指示，作為建議的實作。 有許多方式可將產品Recommendations實作至Headless解決方案，本檔案並未涵蓋所有案例。 整合經銷商必須涵蓋其實作的事件、設計和測試。
 
-[!DNL Product Recommendations] 要求 [行为和目录数据](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html) 操作。 目录数据同步过程在无标题实施中保持不变，但行为数据收集需要进行更改。
+[!DNL Product Recommendations] 需要 [行為和目錄資料](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html) 以運作。 Headless實作中的目錄資料同步程式維持不變，但行為資料收集需要變更。
 
 >[!NOTE]
 >
->无头实例必须实施事件才能为产品Recommendations功能板提供动力。
+>Headless執行個體必須實作事件功能，才能支援產品Recommendations儀表板。
 
-集成 [!DNL Product Recommendations] 在无头店，您必须：
+若要整合 [!DNL Product Recommendations] 在headless店面，您必須：
 
-1. 将行为数据发送到Adobe Sensei以分析和计算产品推荐结果。 您还可以发送其他数据以启用产品推荐 [量度报告](workspace.md).
+1. 將行為資料傳送至Adobe Sensei，以分析和計算產品推薦結果。 您也可以傳送其他資料以啟用產品推薦 [量度報告](workspace.md).
 
-1. 获取产品推荐结果并在页面上渲染这些结果。
+1. 擷取產品推薦結果並在頁面上呈現這些結果。
 
-您可以按照以下工作流中所述，使用可用的SDK执行这两个操作。
+您可以使用可用的SDK來執行這兩個動作，如下列工作流程所述。
 
-1. [安装](install-configure.md) the [!DNL Product Recommendations] 模块。
+1. [安裝](install-configure.md) 此 [!DNL Product Recommendations] 模組。
 
-1. 安装和使用 [Adobe Commerce Storefront Event SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) 来发火 [行为事件](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/events.html).
+1. 安裝及使用 [Adobe Commerce店面活動SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) 以引發 [行為事件](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/events.html).
 
-   需要返回的最小事件数 [!DNL Product Recommendations] 结果：
+   要傳回的最小必要事件 [!DNL Product Recommendations] 結果：
 
-   | 事件 | 类别 |
+   | 事件 | 類別 |
    |--- | ---|
-   | `view` | 产品 |
-   | `add-to-cart` | 产品 |
-   | `place-order` | 结账 |
+   | `view` | product |
+   | `add-to-cart` | product |
+   | `place-order` | 簽出 |
 
-   启用 [量度报告](workspace.md)，则需要以下其他事件：
+   若要啟用 [量度報告](workspace.md)，則需要下列其他事件：
 
-   | 事件 | 类别 |
+   | 事件 | 類別 |
    |--- | ---|
-   | `impression-render` | 推荐单元 |
-   | `view` | 推荐单元 |
-   | `rec-click` | 推荐单元 |
-   | `rec-add-to-cart-click` | recommendations-unit（如果推荐模板中存在“添加到购物车”按钮） |
+   | `impression-render` | recommendation-unit |
+   | `view` | recommendation-unit |
+   | `rec-click` | recommendation-unit |
+   | `rec-add-to-cart-click` | recommendation-unit （如果「加入購物車」按鈕出現在建議範本中） |
 
-1. 触发事件时，使用 [Adobe Commerce Storefront事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) 来处理事件，并将其发送到Adobe Sensei。
+1. 觸發事件時，請使用 [Adobe Commerce店面事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) 以處理事件並傳送至Adobe Sensei。
 
-1. 收集行为数据后，您可以 [创建](create.md) [!DNL Product Recommendations] 中。
+1. 收集行為資料後，您可以 [建立](create.md) [!DNL Product Recommendations] 在Admin中。
 
-1. 使用 [Recommendations SDK](https://developer.adobe.com/commerce/services/product-recommendations/) 以获取店面上的推荐单位。 SDK会返回在页面上呈现推荐单元所必需的产品数据。
+1. 使用 [RECOMMENDATIONS SDK](https://developer.adobe.com/commerce/services/product-recommendations/) 以擷取店面上的推薦單位。 SDK會傳回必要的產品資料以轉譯頁面上的推薦單位。

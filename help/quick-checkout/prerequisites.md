@@ -1,6 +1,6 @@
 ---
-title: '"[!DNL Quick Checkout] 先决条件'
-description: “验证您的系统是否满足使用 [!DNL Quick Checkout] 用于Adobe Commerce扩展。”
+title: '"[!DNL Quick Checkout] 必要條件」'
+description: 「確認您的系統符合使用 [!DNL Quick Checkout] 適用於Adobe Commerce擴充功能。」
 exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
 source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
@@ -9,25 +9,25 @@ ht-degree: 1%
 
 ---
 
-# [!DNL Quick Checkout] 先决条件
+# [!DNL Quick Checkout] 必要條件
 
-的 [!DNL Quick Checkout] 与两者兼容 [!DNL Magento Open Source] 和Adobe Commerce。 请参阅 [生命周期策略](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html){target=_blank} 以了解有关受支持版本的更多信息。
+此 [!DNL Quick Checkout] 與兩者都相容 [!DNL Magento Open Source] 和Adobe Commerce。 另請參閱 [生命週期原則](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html){target=_blank} 以取得有關支援版本的詳細資訊。
 
-请参阅 [载入](../quick-checkout/onboarding.md) 主题以了解更多信息。
+請參閱 [入門](../quick-checkout/onboarding.md) 主題以取得詳細資訊。
 
-## 兼容性限制
+## 相容性限制
 
-[!DNL Quick Checkout] 现有兼容性问题：
+[!DNL Quick Checkout] 現有的相容性問題：
 
-| **问题** | **约束** |
+| **問題** | **限制** |
 |----------------|-----------------|
-| 仅美国 | 此功能仅适用于美国客户 |
-| 仅美元 | USD是唯一兼容的货币 |
-| [!DNL Amazon Pay] | [!DNL Quick Checkout] 与不兼容 [!DNL Amazon Pay] |
-| PWA | 仅支持Luma店面 |
-| [!DNL 3D Secure] | [!DNL 3D Secure] 不支持 |
-| B2B | 不支持B2B |
-| ISPU | [!DNL In-Store Pickup] 不支持(ISPU)功能 |
-| 多运送 | 不支持多运送 |
+| 僅限美國 | 此功能僅適用於美國客戶 |
+| 僅限美元 | USD是唯一相容貨幣 |
+| [!DNL Amazon Pay] | [!DNL Quick Checkout] 與不相容 [!DNL Amazon Pay] |
+| PWA | 僅支援Luma店面 |
+| [!DNL 3D Secure] | [!DNL 3D Secure] 不受支援 |
+| B2B | 不支援B2B |
+| ISPU | [!DNL In-Store Pickup] 不支援(ISPU)功能 |
+| 多送貨 | 不支援多重送貨 |
 
-请参阅 [[!DNL Bolt] 限制](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/#limitations) 有关兼容性限制的详细信息主题 [!DNL Bolt] 和 [!DNL Quick Checkout] 扩展。
+請參閱 [[!DNL Bolt] 限制](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/#limitations) 主題以取得相容性限制的詳細資訊 [!DNL Bolt] 和 [!DNL Quick Checkout] 副檔名。

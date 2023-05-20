@@ -1,6 +1,6 @@
 ---
-title: 安装 [!DNL Payment Services]
-description: 安装Payments Services扩展。
+title: 安裝 [!DNL Payment Services]
+description: 安裝Payments Services擴充功能。
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 source-git-commit: 4d6c9a3017575e9adbf5dc11cf0717511592dbcf
 workflow-type: tm+mt
@@ -9,140 +9,140 @@ ht-degree: 0%
 
 ---
 
-# 安装 [!DNL Payment Services]
+# 安裝 [!DNL Payment Services]
 
-下载并安装 [!DNL Payment Services] 扩展 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 是使用的先决步骤 [!DNL Payment Services].
+下載和安裝 [!DNL Payment Services] 擴充功能 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 使用的先決條件步驟 [!DNL Payment Services].
 
-![[!DNL Payment Services] 扩展管理员视图](assets/admin-view.png)
+![[!DNL Payment Services] 擴充功能管理檢視](assets/admin-view.png)
 
-## 下载扩展
+## 下載擴充功能
 
-必须先从下载扩展 [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) 安装之前。
+您必須先從下載擴充功能 [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) 安裝之前。
 
-1. 导航到 [Commerce Marketplace中的Payment Services扩展](https://marketplace.magento.com/magento-payment-services.html).
-1. 要选择版本和版本，请切换 **[!UICONTROL Edition]** 和 **[!UICONTROL Your store version]** 选项。
-1. 单击 **[!UICONTROL Add to Cart]**.
-1. 完成结帐并单击 **[!UICONTROL Place Order]**.
-1. 查看与您的Marketplace下载相关的电子邮件，以获取订单确认和详细信息。
+1. 導覽至 [Commerce Marketplace中的支付服務擴充功能](https://marketplace.magento.com/magento-payment-services.html).
+1. 若要選擇版本和版本，請切換 **[!UICONTROL Edition]** 和 **[!UICONTROL Your store version]** 至您偏好的選取專案。
+1. 按一下 **[!UICONTROL Add to Cart]**.
+1. 完成結帳並按一下 **[!UICONTROL Place Order]**.
+1. 檢查與您的Marketplace下載相關聯的電子郵件，以取得訂單確認和詳細資訊。
 
-## 安装扩展
+## 安裝擴充功能
 
-您可以安装 [!DNL Payment Services] 扩展 [!DNL Adobe Commerce] 云基础架构和内部实例上，这些实例已链接到您的商务帐户 [马吉德](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) 在注册过程中提供。 [!DNL Magento Open Source] 客户使用内部指令。
+您可以安裝 [!DNL Payment Services] 兩者的副檔名 [!DNL Adobe Commerce] 連結至您的Commerce帳戶的雲端基礎結構和內部部署執行個體上 [mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) 在註冊程式中提供。 [!DNL Magento Open Source] 客戶使用內部部署指示。
 
-在初始安装时，编辑器会使用这些键 [!DNL Adobe Commerce]，或者在以前未将编辑器键保存到 `auth.json` 文件。
+Composer會在初始安裝期間使用這些金鑰 [!DNL Adobe Commerce]，或先前未將撰寫器索引鍵儲存至的情況 `auth.json` 檔案。
 
-请参阅 [获取您的身份验证密钥](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 有关获取编辑器键的更多信息。
+另請參閱 [取得您的驗證金鑰](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 以取得有關取得撰寫器金鑰的詳細資訊。
 
-请参阅 [安装扩展](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/extensions.html) 有关下载和安装扩展之前应考虑的事项的更多信息。
+另請參閱 [安裝擴充功能](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/extensions.html) 如需在下載和安裝擴充功能之前需考量的詳細資訊。
 
-### [!DNL Adobe Commerce] 云基础架构
+### [!DNL Adobe Commerce] 在雲端基礎結構上
 
-此方法用于安装 [!DNL Payment Services] 扩展。
+此方法用於安裝 [!DNL Payment Services] Commerce Cloud例項的擴充功能。
 
-1. 更新 `composer.json` 文件：
-
-   ```bash
-   composer require magento/payment-services --no-update
-   ```
-
-1. 更新依赖项并安装扩展：
-
-   ```bash
-   composer update magento/payment-services --with-dependencies
-   ```
-
-   使用 `composer update` 命令更新所有根依赖关系。
-
-1. 提交并推送更改。
-
-### 内部部署和其他配置
-
-此方法用于安装 [!DNL Payment Services] 内部实例和的扩展 [!DNL Magento Open Source] 客户。
-
-1. 要获取该扩展，请运行以下命令：
+1. 更新您的 `composer.json` 檔案：
 
    ```bash
    composer require magento/payment-services --no-update
    ```
 
-1. 更新依赖项并安装扩展：
+1. 更新相依性並安裝擴充功能：
 
    ```bash
    composer update magento/payment-services --with-dependencies
    ```
 
-   使用 `composer update` 命令更新所有根依赖关系。
+   使用 `composer update` 更新所有根相依性的命令。
 
-1. 升级您的实例：
+1. 提交並推送您的變更。
+
+### 內部部署和其他設定
+
+此方法用於安裝 [!DNL Payment Services] 內部部署執行個體的擴充功能和 [!DNL Magento Open Source] 客戶。
+
+1. 若要取得擴充功能，請執行以下命令：
+
+   ```bash
+   composer require magento/payment-services --no-update
+   ```
+
+1. 更新相依性並安裝擴充功能：
+
+   ```bash
+   composer update magento/payment-services --with-dependencies
+   ```
+
+   使用 `composer update` 更新所有根相依性的命令。
+
+1. 升級您的執行個體：
 
    ```bash
    bin/magento setup:upgrade
    ```
 
-1. 清除缓存：
+1. 清除快取：
 
    ```bash
    bin/magento cache:clean
    ```
 
-1. 提交更改。
-1. 要确保部署已提交的代码，请更新您的实例。
+1. 認可變更。
+1. 為確保已提交程式碼已部署，請更新您的執行個體。
 
-## 升级扩展
+## 升級擴充功能
 
-当的 [!DNL Payment Services] 发布后，您可以轻松升级扩展。
+當有新版本的 [!DNL Payment Services] 已發行，您可輕鬆升級擴充功能。
 
-1. 要获取包的最新版本，请执行以下操作：
+1. 若要取得最新版本的套件：
 
    ```bash
    composer update magento/payment-services --with-dependencies
    ```
 
-   使用 `composer update` 命令更新所有根依赖关系。
+   使用 `composer update` 更新所有根相依性的命令。
 
-1. 提交并推送更改。
+1. 提交並推送您的變更。
 
-## 疑难解答
+## 疑難排除
 
-尝试安装 [!DNL Payment Services] 扩展。 请使用以下故障诊断方法来解决错误。
+嘗試安裝時，您可能會看到錯誤 [!DNL Payment Services] 副檔名。 使用下列疑難排解方法來解決錯誤。
 
-### 编辑器键不正确
+### 不正確的撰寫器金鑰
 
-如果您看到以下错误，表示您的编辑器键不正确：
+如果您看到以下錯誤，指出您的撰寫器索引鍵不正確：
 
 ```terminal
 Could not find a matching version of package magento/payment-services. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
 ```
 
-验证您的编辑器键是否有效以及您是否有权访问其他Magento包。
+確認您的Composer金鑰有效，並且您有權存取其他Magento套件。
 
-要查看配置了哪些编辑器键：
+若要檢視已設定的撰寫器金鑰：
 
-1. 查找 `auth.json` 文件：
+1. 尋找的位置 `auth.json` 檔案：
 
    ```bash
    composer config --global home
    ```
 
-1. 查看 `auth.json` 文件：
+1. 檢視 `auth.json` 檔案：
 
    ```bash
    cat /path/to/auth.json
    ```
 
-1. 请参阅 [哪些键与您的商务帐户关联 `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+1. 另請參閱 [哪些金鑰與您的Commerce帳戶相關聯 `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
 
-### 内存不足，PHP不能使用
+### PHP的記憶體不足
 
-如果您看到以下错误，表示没有足够的内存用于PHP:
+如果看到以下錯誤，表示您沒有足夠的記憶體來使用PHP：
 
 ```terminal
 Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocate 4096 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
 ```
 
-[提高内存限制](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html#increase-php-memory-limit) ，用于 `php.ini`.
+[增加記憶體限制](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html#increase-php-memory-limit) 適用於PHP，位於您的環境中 `php.ini`.
 
-或者，您也可以使用以下命令指定内存限制： `php -d memory_limit=-1 [path to composer]/composer require magento/payment-services`.
+或者，您也可以使用此指令指定記憶體限制： `php -d memory_limit=-1 [path to composer]/composer require magento/payment-services`.
 
 例如：
 

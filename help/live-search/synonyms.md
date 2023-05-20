@@ -1,6 +1,6 @@
 ---
-title: "同义词"
-description: '"[!DNL Live Search] 同义词会展开查询，其中包含与目录中的单词不同的单词。”'
+title: 「同義字」
+description: '"[!DNL Live Search] 同義字會使用與您目錄中的字詞不同的字詞來展開查詢。」'
 exl-id: f2b7c5fb-f009-4834-baff-06e8ed7be7e5
 source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
@@ -9,10 +9,10 @@ ht-degree: 0%
 
 ---
 
-# 同义词
+# 同義字
 
-同义词会展开搜索查询，以包含购物者可能使用与目录中的词语不同的词语。 你不想因为有人在找“沙发”而输掉一场销售，而你的产品被列为“沙发”。 您可以输入客户在查找产品时可能使用的所有可能词语，以捕获范围广泛的搜索词。
+同義字會展開搜尋查詢，以納入購物者可能使用與目錄中不同之字詞。 您不想因為某人正在尋找「沙發」，而您的產品卻被列為「沙發」而失去銷售機會。 您可以輸入客戶可能用來尋找您的產品的所有字詞，以擷取廣泛的搜尋字詞。
 
 >[!IMPORTANT]
 >
->对于Adobe Commerce安装， [!DNL Live Search] 已安装， [!DNL Live Search] 同义词取代了标准Adobe Commerce [搜索同义词](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html#search-synonyms) 功能，但两者都显示在 *SEO和搜索* 中。 如果您使用 [!DNL Live Search]，请按照此部分中的说明操作。
+>若為Adobe Commerce安裝，使用 [!DNL Live Search] 已安裝， [!DNL Live Search] 同義字取代了標準Adobe Commerce [搜尋同義字](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html#search-synonyms) 功能，但兩者皆出現在 *SEO和搜尋* 區段。 如果您使用 [!DNL Live Search]，請依照本節中的指示操作。
