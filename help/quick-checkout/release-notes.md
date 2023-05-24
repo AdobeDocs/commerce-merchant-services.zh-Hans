@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] 發行說明'
 description: 如需瞭解所有資訊，請參閱發行說明 [!DNL Quick Checkout] 發行版本。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: d58193b622a1851259b2191ea54ac6b59029dd64
+source-git-commit: 169b3e365d7f4c0c4cef19fa1941dfa0a95ea58b
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1422'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ ht-degree: 0%
 這些版本注意事項說明發生的功能變更和修正，這些變更和修正是在Admin面板的定期版本化功能發行之外發行的。
 
 +++管理面板更新
+
+2023年5月23日_
+
+![已修正的問題](../assets/fix.svg)<!-- Issue BOLT-489 --> 現在， **新帳戶** 中的元件 [!DNL Quick Checkout] 報告頁面包含頻譜 [工作流程圖示](https://react-spectrum.adobe.com/react-spectrum/workflow-icons.html){target=_blank}.
 
 _2023年4月25日_
 
