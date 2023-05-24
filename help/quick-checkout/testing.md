@@ -1,6 +1,6 @@
 ---
-title: 「測試 [!DNL Quick Checkout] 適用於Adobe Commerce擴充功能」
-description: 「測試和驗證可確保 [!DNL Quick Checkout] 擴充功能如預期運作。」
+title: “测试 [!DNL Quick Checkout] for Adobe Commerce扩展”
+description: “测试和验证可确保 [!DNL Quick Checkout] 扩展按预期工作。”
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
 source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
 workflow-type: tm+mt
@@ -10,53 +10,53 @@ ht-degree: 0%
 ---
 
 
-# 測試 [!DNL Quick Checkout] 擴充功能
+# 测试 [!DNL Quick Checkout] 扩展
 
-在您公開 [!DNL Quick Checkout] 若是給購物者使用的Adobe Commerce擴充功能，建議您在沙箱環境和生產環境中測試。 測試和驗證可確保 [!DNL Quick Checkout] 如預期運作，為您的商店和客戶提供順暢的結帳體驗。
+在您公开 [!DNL Quick Checkout] 对于面向购物者的Adobe Commerce扩展，建议在沙盒环境和生产环境中进行测试。 测试和验证有助于确保 [!DNL Quick Checkout] 可按预期工作，并为您的商店和客户提供无缝的结账体验。
 
-設定之前 [!DNL Quick Checkout] 在您的Adobe Commerce管理員中，需要建立  [生產](https://merchant.bolt.com/register){target="_blank"} and [sandbox](https://merchant-sandbox.bolt.com/register){target="_blank"} 中的商家帳戶 [!DNL Bolt].
+配置之前 [!DNL Quick Checkout] 在Adobe Commerce管理员中，需要创建  [生产](https://merchant.bolt.com/register){target="_blank"} and [sandbox](https://merchant-sandbox.bolt.com/register){target="_blank"} 中的商家帐户 [!DNL Bolt].
 
-## 在沙箱中測試
+## 在沙盒中测试
 
-測試 [!DNL Quick Checkout] 在沙箱環境中是非常重要的驗證步驟，即使它是僅連線到 [!DNL Bolt] 沙箱帳戶，不適用於真正的銀行或商家。
+测试 [!DNL Quick Checkout] 在沙盒环境中，是一个非常重要的验证步骤，即使它是仅连接到 [!DNL Bolt] 沙盒账户，而不是给真正的银行或商家。
 
-### 使用沙箱帳戶
+### 使用沙盒帐户
 
-當您測試及驗證沙箱時，您必須使用假信用卡號碼和 [沙箱](https://merchant-sandbox.bolt.com/register){target="_blank"} 中的商家帳戶 [!DNL Bolt]，以免建立現有信用卡帳戶的實際費用。
+在测试和验证沙盒时，您必须使用假信用卡号码和 [沙盒](https://merchant-sandbox.bolt.com/register){target="_blank"} 中的商家帐户 [!DNL Bolt]，这样就不会对现有信用卡帐户产生实际费用。
 
-## 在生產環境中測試
+## 在生产环境中测试
 
 >[!NOTE]
 >
-> 強烈建議您測試 [!DNL Quick Checkout] 在生產環境中，使用真實的信用卡和銀行，然後將擴充功能公開給購物者。 雖然在沙箱中測試很重要，但在生產環境中測試是確保正常運作最萬無一失的方法。
+> 强烈建议您测试 [!DNL Quick Checkout] 在真实信用卡和银行的生产环境中，向购物者展示这一扩展。 虽然在沙盒中测试很重要，但在生产环境中测试是确保沙盒按预期工作的最万无一失的方法。
 
-使用以下兩種建議方式之一測試您的生產環境：
+使用以下两种推荐方法之一测试您的生产环境：
 
-- 選擇您知道購物者不會下訂單的時間。
-- 使用購物者暫時無法存取但可供您存取以進行測試的網路商店。
+- 选择您知道购物者不会下订单的时间。
+- 使用购物者暂时无法访问，但可供您进行测试的网络商店。
 
-使用真正的信用卡完成您的生產測試，並且 [!DNL Bolt] 生產帳戶，測試結帳的整個生命週期。 當您在測試期間完成整個結帳流程時，可讓您清楚瞭解當即時購物者使用此功能時的運作方式。
+用真正的信用卡和信用卡，完成您的生产测试 [!DNL Bolt] 生产帐户，测试结账的整个生命周期。 当您在测试期间完成整个结账流程时，它将让您清楚地了解当现场购物者使用您的功能时它是如何工作的。
 
-您也應確認出現在銀行對帳單上，用於生產測試中付款方式的資訊正確與預期（包括業務說明）。
+您还应该验证银行对帐单上针对您在生产测试中使用的支付方式显示的信息是否正确和符合预期（包括您的业务描述）。
 
-## 如何測試 [!DNL Quick Checkout] 擴充功能
+## 如何测试 [!DNL Quick Checkout] 扩展
 
-從您的商店成功完成結帳：
+从您的商店成功结帐：
 
-1. 前往您的店面，並將所需商品放入購物車中。
-1. 繼續結帳。
-1. 輸入與關聯的電子郵件地址 [!DNL Bolt] 帳戶時。
-1. 輸入傳送至帳戶電子郵件地址的一次性密碼(OTP)。
-1. 選取環境控制面板：
+1. 转到店面并将所需商品放入购物车中。
+1. 继续结帐。
+1. 输入与关联的电子邮件地址 [!DNL Bolt] 帐户。
+1. 输入发送到帐户电子邮件地址的一次性密码(OTP)。
+1. 选择环境功能板：
 
-   - Sandbox
-   - 生產
+   - 沙盒
+   - 生产
 
-1. 下訂單。
+1. 下订单。
 
-下訂單後，您便可以在下列位置檢視訂單的詳細資料： _訂單格線_ 檢視：
+下订单后，您可以在以下位置查看订单的详细信息： _订单网格_ 视图：
 
-1. 導覽至 _銷售_ > _訂購_.
-1. 檢視所有已下訂單的清單。
+1. 导航到 _销售_ > _订单_.
+1. 查看所有已下订单的列表。
 
-請參閱 [訂購](https://docs.magento.com/user-guide/sales/orders.html) 主題以取得更多關於您的資訊 _訂單格線_ 檢視。
+请参阅 [订单](https://docs.magento.com/user-guide/sales/orders.html) 主题以了解有关 _订单网格_ 视图。

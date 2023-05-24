@@ -1,6 +1,6 @@
 ---
-title: 目錄同步
-description: 瞭解如何從匯出產品資料 [!DNL Commerce] 伺服器至 [!DNL Commerce Services] 持續提供服務，以保持最新狀態。
+title: 目录同步
+description: 了解如何从导出产品数据 [!DNL Commerce] 服务器至 [!DNL Commerce Services] 不断更新服务。
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 source-git-commit: 3931a8c2e19f0024017682b029451bf1670d94b1
 workflow-type: tm+mt
@@ -9,132 +9,132 @@ ht-degree: 0%
 
 ---
 
-# 目錄同步
+# 目录同步
 
-Adobe Commerce和Magento Open Source使用索引器將目錄資料編譯為表格。 程式由自動觸發 [事件](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) 例如產品價格或存貨層次變更。
+Adobe Commerce和Magento Open Source使用索引器将目录数据编译到表中。 该过程由自动触发 [事件](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) 例如产品价格或库存水平改变。
 
-目錄同步程式每小時執行一次，以允許 [!DNL Commerce] 服務使用目錄資料。 目錄同步會從匯出產品資料 [!DNL Commerce] 伺服器至 [!DNL Commerce] 持續提供服務，以保持服務的最新狀態。 例如， [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) 需要最新的目錄資訊，才能以正確的名稱、定價和可用性準確傳回建議。 您可以使用 _目錄同步_ 儀表板來觀察和管理同步程式或 [命令列介面](#resynccmdline) 若要觸發目錄同步和重新索引產品資料以供以下人員使用： [!DNL Commerce] 服務。
-
->[!NOTE]
->
-> 若要使用 _目錄同步_ 圖示板或命令列介面中，必須有 [API金鑰和已設定的SaaS資料空間](saas.md).
-
-## 存取「目錄同步」控制面板
+目录同步过程每小时运行一次，以允许 [!DNL Commerce] 服务使用目录数据。 目录同步从导出产品数据 [!DNL Commerce] 服务器至 [!DNL Commerce] 持续提供服务，使服务保持最新。 例如， [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) 需要最新的目录信息才能准确地返回具有正确名称、定价和可用性的推荐。 您可以使用 _目录同步_ 仪表板来观察和管理同步过程，或 [命令行界面](#resynccmdline) 触发目录同步和重新索引产品数据以供使用 [!DNL Commerce] 服务。
 
 >[!NOTE]
 >
-> 此 _目錄同步_ 儀表板僅適用於 _產品Recommendations_ 模組已安裝，且僅會反映與該功能相關的資料投影。 支援其他商務服務，例如 _即時搜尋_ 和 _目錄服務_ 已規劃在未來推出。
+> 要使用 _目录同步_ 仪表板或命令行界面，必须具有 [已配置API密钥和SaaS数据空间](saas.md).
 
-若要存取「目錄同步」儀表板，請選取 **系統** > _資料傳輸_ > **目錄同步**.
+## 访问目录同步仪表板
 
-使用 **目錄同步** 控制面板您可以：
+>[!NOTE]
+>
+> 此 _目录同步_ 仅当满足以下条件时，仪表板才可用 _产品Recommendations_ 模块已安装，并且仅反映与该功能相关的数据投影。 支持其他Commerce服务，例如 _实时搜索_ 和 _目录服务_ 是面向未来的。
 
-- 檢視同步處理狀態(**進行中**， **成功**， **已失敗**)
-- 檢視同步的產品總數（如果成功）
-- 搜尋同步的產品以檢視其目前狀態
-- 依名稱、SKU等搜尋存放區目錄
-- 以JSON檢視同步的產品詳細資訊，以協助診斷同步差異
-- 重新起始同步處理作業
+要访问“目录同步”仪表板，请选择 **系统** > _数据传输_ > **目录同步**.
+
+使用 **目录同步** 功能板您可以：
+
+- 查看同步状态(**进行中**， **成功**， **失败**)
+- 查看同步的产品总数（如果成功）
+- 搜索同步的产品以查看其当前状态
+- 按名称、SKU等搜索存储目录
+- 在JSON中查看同步的产品详细信息，以帮助诊断同步差异
+- 重新启动同步过程
 
 ### 上次同步
 
-報告以下專案的同步狀態：
+报告同步状态：
 
-- **成功**  — 顯示同步成功的日期和時間，以及更新的產品數量
-- **已失敗**  — 顯示嘗試同步的日期和時間
-- **進行中**  — 顯示上次成功同步的日期和時間
+- **成功**  — 显示同步成功的日期和时间以及更新的产品数量
+- **失败**  — 显示尝试同步的日期和时间
+- **进行中**  — 显示上次成功同步的日期和时间
 
 >[!NOTE]
 >
-> 目錄同步程式每小時會自動執行一次。 不過，如果您沒有在店面看到產品，或產品未反映您最近所做的變更，您可以解決 [目錄同步問題](#resolvesync).
+> 目录同步过程每小时自动运行一次。 但是，如果您未在店面中看到产品，或者产品未反映您最近所做的更改，您可以解决 [目录同步问题](#resolvesync).
 
-### 產品已同步
+### 产品已同步
 
-顯示從以下專案同步的產品總數： [!DNL Commerce] 目錄。 初次同步後，您應該只會同步已變更的產品。
+显示从以下位置同步的产品总数： [!DNL Commerce] 目录。 在初始同步之后，您应该只同步已更改的产品。
 
 ## 重新同步 {#resync}
 
-如果必須在每小時排程同步前啟動目錄的重新同步，則可以強制進行重新同步。
+如果在每小时计划同步发生之前必须启动目录的重新同步，则可以强制进行重新同步。
 
 >[!NOTE]
 >
-> 強制重新同步會觸發整個產品目錄的重新同步，而這會增加硬體資源的負載。
+> 强制重新同步会触发整个产品目录的重新同步，这会增加硬件资源的负载。
 
-1. 從 _目錄同步_ 儀表板，選取 **設定**.
+1. 从 _目录同步_ 仪表板，选择 **设置**.
 
-   此 _目錄同步設定_ 頁面便會顯示。
+   此 _目录同步设置_ 页面。
 
-1. 在 _重新同步資料_ 區段，按一下 [!UICONTROL Resync].
+1. 在 _重新同步数据_ 部分，单击 [!UICONTROL Resync].
 
-   [!DNL Commerce] 會在下一個排定的同步處理期間同步您的目錄。 根據目錄的大小，此操作可能需要很長的時間。
+   [!DNL Commerce] 在下一个计划同步窗口同步您的目录。 根据目录的大小，此操作可能需要较长时间。
 
 
-## 已同步的目錄產品
+## 已同步的目录产品
 
-此 **已同步的目錄產品** 表格會顯示下列資訊。
+此 **已同步的目录产品** 表格显示以下信息。
 
-| 欄位 | 說明 |
+| 字段 | 描述 |
 |---|---|
-| ID | 產品的唯一識別碼 |
-| 名稱 | 產品的店面名稱 |
-| 型別 | 識別產品型別，例如，簡單、可設定、可下載等 |
-| 上次匯出時間 | 上次成功從目錄中匯出產品的日期 |
-| 上次修改時間 | 上次在目錄中修改產品的日期 |
-| SKU | 顯示產品的庫存單位 |
-| 價格 | 產品的價格 |
-| 可見度 | 產品的可見度設定，如 [!DNL Commerce] 目錄 |
+| ID | 产品的唯一标识符 |
+| 名称 | 产品的店面名称 |
+| 类型 | 标识产品类型，如简单、可配置、可下载等 |
+| 上次导出 | 上次成功从目录中导出产品的日期 |
+| 上次修改时间 | 上次在目录中修改产品的日期 |
+| SKU | 显示产品的库存单位 |
+| 价格 | 产品的价格 |
+| 可见性 | 产品的可见性设置，如 [!DNL Commerce] 目录 |
 
-## 解決目錄同步問題 {#resolvesync}
+## 解决目录同步问题 {#resolvesync}
 
-當您觸發資料重新同步時，最多可能需要一小時的時間才會更新資料，並反映在UI元件中，例如建議單位。 但是，如果在等待一小時後，您仍然注意到目錄與店面顯示的內容之間有差異，或是目錄同步失敗，請參考以下內容：
+触发数据重新同步时，最多可能需要一小时才能更新数据并反映在UI组件中，例如推荐单元。 但是，如果在等待一小时后，您仍然发现目录与店面中显示的内容存在差异，或者如果目录同步失败，请参阅以下内容：
 
-### 資料差異
+### 数据差异
 
-1. 在搜尋結果中顯示相關產品的詳細檢視。
-1. 複製JSON輸出，並確認內容符合您在 [!DNL Commerce] 目錄。
-1. 如果內容不符，請對目錄中的產品進行微幅變更，例如新增空格或句點。
-1. 等待重新同步或 [觸發手動重新同步](#resync).
+1. 在搜索结果中显示相关产品的详细视图。
+1. 复制JSON输出，并验证内容是否与您在 [!DNL Commerce] 目录。
+1. 如果内容不匹配，请对目录中的产品进行细微更改，例如添加空格或句点。
+1. 等待重新同步或 [触发手动重新同步](#resync).
 
-### 同步處理未執行
+### 同步未运行
 
-如果同步未依排程執行或未同步任何專案，請參閱 [知識庫](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html).
+如果同步未按计划运行或未同步任何内容，请参阅 [知识库](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html).
 
-### 同步失敗
+### 同步失败
 
-如果目錄同步的狀態為 **已失敗**，提交 [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+如果目录同步的状态为 **失败**，提交 [支持服务单](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
-## 命令列介面 {#resynccmdline}
+## 命令行界面 {#resynccmdline}
 
-此 `saas:resync` 命令是 `magento/saas-export` 封裝。 您可以使用以下其中一種方式來安裝此套件： [!DNL Commerce Services] 產品，例如 [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) 或 [[!DNL Live Search]](/help/live-search/install.md).
+此 `saas:resync` 命令是 `magento/saas-export` 包。 您可以使用以下任一方式安装此包： [!DNL Commerce Services] 产品，例如 [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) 或 [[!DNL Live Search]](/help/live-search/install.md).
 
 >[!NOTE]
 >
-> 第一次執行資料同步時，請務必執行 `productattributes` 會先輸入內容，然後輸入 `productoverrides`，然後再執行 `products` 摘要。
+> 首次运行数据同步时，请务必运行 `productattributes` 信息源优先，随后提供 `productoverrides`，然后再运行 `products` 信息源。
 
-命令選項：
+命令选项：
 
 ```bash
 bin/magento saas:resync --feed <feed name> [no-reindex]
 ```
 
-下表說明 `saas:resync` 引數和說明。
+下表描述了 `saas:resync` 参数和描述。
 
-| 引數 | 說明 | 必填？ |
+| 参数 | 描述 | 必需？ |
 |---| ---| ---|
-| `feed` | 指定要重新同步的圖元，例如 `products` | 是 |
-| `no-reindex` | 將現有目錄資料重新提交至 [!DNL Commerce Services] 而不重新索引。 如果未指定此引數，命令會在同步資料之前執行完整重新索引。 | 否 |
+| `feed` | 指定要重新同步的实体，如 `products` | 是 |
+| `no-reindex` | 将现有目录数据重新提交到 [!DNL Commerce Services] 而不重新索引。 如果未指定此参数，该命令会在同步数据之前运行完整的重新索引。 | 否 |
 
-摘要名稱可以是下列其中一項：
+馈送名称可以是以下名称之一：
 
-- `products` — 目錄中的產品
-- `categories` — 目錄中的類別
-- `variants` — 可設定產品的產品變化，例如顏色和大小
-- `productattributes` — 產品屬性，例如 `activity`， `gender`， `tops`， `bottoms`、等等
-- `productoverrides` — 客戶特定的定價和目錄可見性規則，例如以類別許可權為基礎的規則
+- `products` — 目录中的产品
+- `categories` — 目录中的类别
+- `variants` — 可配置产品的产品变体，如颜色和大小
+- `productattributes` — 产品属性，例如 `activity`， `gender`， `tops`， `bottoms`，等等
+- `productoverrides` — 特定于客户的定价和目录可见性规则，例如基于类别权限的规则
 
-當您從命令列觸發資料重新同步時，最多可能需要一小時的時間才會更新資料。
+从命令行触发数据重新同步时，数据更新可能最多需要1小时。
 
-如果您使用 [SaaS價格索引](../price-index/index.md) 並需要重新同步，請執行以下命令：
+如果您使用 [SaaS价格索引](../price-index/index.md) 并需要重新同步，请运行以下命令：
 
 ```bash
 bin/magento saas:resync --feed=scopesCustomerGroup
@@ -142,15 +142,15 @@ bin/magento saas:resync --feed=scopesWebsite
 bin/magento saas:resync --feed=prices
 ```
 
-### 範例
+### 示例
 
-以下範例會重新索引產品資料，從 [!DNL Commerce] 編目並重新同步至Commerce服務：
+以下示例对中的产品数据重新编制索引 [!DNL Commerce] 将其编录并重新同步到Commerce Services：
 
 ```bash
 bin/magento saas:resync --feed products
 ```
 
-如果您不想執行產品的完整重新索引，您可以改為同步已產生的產品資料：
+如果不希望运行产品的完整重新索引，则可以同步已生成的产品数据：
 
 ```bash
 bin/magento saas:resync --feed products --no-reindex

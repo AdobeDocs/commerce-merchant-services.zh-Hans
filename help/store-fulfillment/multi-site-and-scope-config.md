@@ -1,6 +1,6 @@
 ---
-title: 多個網站和範圍設定
-description: 設定多個網站的庫存和傳送方法，並儲存範圍。
+title: 多个网站和范围配置
+description: 为多个网站和商店范围配置库存和投放方法。
 role: User, Admin
 level: Intermediate
 exl-id: 8939046e-1c26-4380-83be-ff8e074e591d
@@ -11,30 +11,30 @@ ht-degree: 0%
 
 ---
 
-# 多個網站和範圍設定
+# 多个网站和范围配置
 
-您可以設定 [範圍](https://docs.magento.com/user-guide/configuration/scope.html) 對於幾個元素，以容納多個網站、商店和商店檢視：
+您可以设置 [范围](https://docs.magento.com/user-guide/configuration/scope.html) 对于一些元素，用于容纳多个网站、商店和商店视图：
 
-- [管理庫存](https://docs.magento.com/user-guide/catalog/inventory-stock.html) 每個範圍
+- [管理库存](https://docs.magento.com/user-guide/catalog/inventory-stock.html) 每个范围
 
-- 管理 [!DNL Delivery Methods] 每個範圍
+- 管理 [!DNL Delivery Methods] 每个范围
 
-您可以將庫存指派給網站或商店範圍。 然後，更新商店來源以設定可用的傳送方法（首頁傳送、商店取貨）。
+您可以将库存分配给网站或商店范围。 然后，更新商店源以设置可用的配送方式（主配送、商店提货）。
 
-成功更新設定後，Adobe Commerce店面中產品詳細資料頁面(PDP)上的商店取貨選項只能針對允許商店取貨的庫存來源提供的產品選擇。
+成功更新配置后，只能为Adobe Commerce店面的产品详细信息页面(PDP)上的商店提货选项选择来自允许商店提货的库存源中的可用产品。
 
-## 管理店內取貨設定
+## 管理店内提货设置
 
-啟用或停用 [!UICONTROL In-Store Pickup] 每個網站或商店範圍的選項 [傳遞方法設定](enable-general.md#delivery-methods) 在Admin中。
+启用或禁用 [!UICONTROL In-Store Pickup] 中每个网站或商店范围的选项 [投放方法配置](enable-general.md#delivery-methods) 在Admin中。
 
-1. 導覽至 **[!UICONTROL Stores > Configuration]**.
+1. 导航到 **[!UICONTROL Stores > Configuration]**.
 
-1. 選取要設定的範圍（網站至商店）。
+1. 选择要配置的范围（网站到商店）。
 
-1. 選取範圍後，導覽至 **[!UICONTROL Sales > Delivery Methods]**.
+1. 选择范围后，导航到 **[!UICONTROL Sales > Delivery Methods]**.
 
-1. 停用或啟用 **[!UICONTROL In-Store Pickup]** 傳遞方法。
+1. 禁用或启用 **[!UICONTROL In-Store Pickup]** 投放方法。
 
-您也可以管理此區段中是否有全域可用的路邊或店內取貨。
+您还可以在此部分中管理是否全局提供路边或店内提货。
 
-管理 [!UICONTROL In-Store Pickup] 和 [!UICONTROL Delivery Method] 每個庫存來源的設定。 您有許多其他設定，在實施上擁有完整的彈性。
+管理 [!UICONTROL In-Store Pickup] 和 [!UICONTROL Delivery Method] 每个库存来源的设置。 您还可通过多种其他配置实现实施方面的完全灵活性。

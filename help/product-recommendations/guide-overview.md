@@ -1,6 +1,6 @@
 ---
-title: '''[!DNL Product Recommendations] 指南概述'
-description: 以下各項的完整資訊： [!DNL Product Recommendations] 適用於Adobe Commerce管理員，包括安裝和上線
+title: ‘[!DNL Product Recommendations] 指南概述
+description: 有关以下内容的全面信息 [!DNL Product Recommendations] 适用于Adobe Commerce管理员，包括安装和载入
 seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.
 exl-id: 7f5105ba-e764-4cb5-9b95-75810e934b47
@@ -13,30 +13,30 @@ ht-degree: 0%
 
 # [!DNL Product Recommendations] 指南概述
 
-本指南適用於Adobe Commerce的管理員。 其中包含有關安裝和上線的詳細資訊 [!DNL Product Recommendations]以及服務的設定和管理。 它假定您對核心有基本的瞭解 [!DNL Commerce] 設定和功能。
+本指南适用于Adobe Commerce管理员。 它包括有关安装和载入的详细信息 [!DNL Product Recommendations]以及服务的配置和管理。 它假定您对核心有一个基本的了解 [!DNL Commerce] 配置和功能。
 
-[!DNL Product Recommendations] 有兩個管理員區域：
+[!DNL Product Recommendations] 有两个管理员区域：
 
-* 管理員：使用此區域可存取設定UI和報告。
-* 命令列介面：使用此工具來執行安裝和後端設定工作。
+* 管理员：使用此区域可访问配置UI和报表。
+* 命令行界面：使用此工具执行安装和后端配置任务。
 
-本指南涵蓋：
+本指南涵盖：
 
-* 全部 [!DNL Product Recommendations] — 在Admin中完成的特定工作。
-* 全部 [!DNL Product Recommendations] — 使用完成的特定工作 [!DNL Commerce] 命令列
+* 全部 [!DNL Product Recommendations] — 在Admin中完成的特定任务。
+* 全部 [!DNL Product Recommendations] — 使用完成的特定任务 [!DNL Commerce] 命令行
 
-本指南不涵蓋Adobe Commerce和Magento Open Source的核心功能。
+本指南不涉及Adobe Commerce和Magento Open Source的核心功能。
 
-## 其他檔案
+## 其他文档
 
-| 指南 | 說明 |
+| 指南 | 描述 |
 |------ | ----------- |
-| [Adobe Commerce 2.4使用手冊](https://experienceleague.adobe.com/docs/commerce.html) | Adobe Commerce和Magento Open Source的以商家為中心的檔案 |
-| [Adobe Commerce 2.4開發人員指南](https://developer.adobe.com/commerce/docs) | 用於建置和自訂Adobe Commerce或Magento Open Source的開發人員專屬檔案 |
+| [Adobe Commerce 2.4用户指南](https://experienceleague.adobe.com/docs/commerce.html) | Adobe Commerce和Magento Open Source的以商家为中心的文档 |
+| [Adobe Commerce 2.4开发人员指南](https://developer.adobe.com/commerce/docs) | 用于构建和自定义Adobe Commerce或Magento Open Source的以开发人员为中心的文档 |
 
-## 支援
+## 支持
 
-如果您需要本指南未涵蓋的資訊或問題，請使用下列資源：
+如果您需要本指南中未涉及的信息或问题，请使用以下资源：
 
-* [說明中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-tickets){target="_blank"} — 請參閱 [!DNL Product Recommendations] — 相關疑難排解文章。
-* [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} — 提交票證以接收其他說明。
+* [帮助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-tickets){target="_blank"} — 请参阅 [!DNL Product Recommendations] — 相关疑难解答文章。
+* [支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} — 提交票证以接收其他帮助。

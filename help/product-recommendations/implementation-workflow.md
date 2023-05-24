@@ -1,6 +1,6 @@
 ---
-title: 實作工作流程
-description: 瞭解成功實作的步驟 [!DNL Product Recommendations] 在店面。
+title: 实施工作流
+description: 了解成功实施的步骤 [!DNL Product Recommendations] 你的店面。
 exl-id: 766e1191-0330-4515-9331-e45318539dc9
 source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
@@ -9,52 +9,52 @@ ht-degree: 0%
 
 ---
 
-# 實作工作流程
+# 实施工作流
 
-[!DNL Product Recommendations] 同時使用行為和目錄資料：
+[!DNL Product Recommendations] 同时使用行为和目录数据：
 
-- 行為 — 購物者在您網站上的參與度資料，例如產品檢視、新增到購物車的專案以及購買。 Adobe Commerce和Adobe Sensei不會收集個人識別資訊。
+- 行为 — 购物者在您网站上的参与数据，例如产品查看、添加到购物车的商品和购买。 Adobe Commerce和Adobe Sensei不收集个人身份信息。
 
-- 目錄 — 產品中繼資料，例如名稱、價格和可用性。
+- 目录 — 产品元数据，如名称、价格和可用性。
 
-當您安裝 `magento/product-recommendations module`，Adobe Sensei會彙總行為和目錄資料並建立 [!DNL Product Recommendations] 適用於每種建議型別。 此 [!DNL Product Recommendations] 然後將這些建議部署至您的店面。 為協助您在店面實作產品推薦，請使用以下工作流程：
+当您安装 `magento/product-recommendations module`，Adobe Sensei会聚合行为和目录数据并创建 [!DNL Product Recommendations] 适用于每种推荐类型。 此 [!DNL Product Recommendations] 然后，服务将这些推荐部署到您的店面。 要帮助您在店面中实施产品推荐，请使用以下工作流：
 
 >[!NOTE]
 >
-> 如果您的店面是使用PWA Studio實作，請參閱 [PWA檔案](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). 如果您使用自訂前端技術，例如React或Vue JS，請瞭解如何 [整合](headless.md) [!DNL Product Recommendations] 進入您的headless店面。
+> 如果您的店面是使用PWA Studio实现的，请参阅 [PWA文档](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). 如果您使用自定义前端技术，例如React或Vue JS，请了解如何 [集成](headless.md) [!DNL Product Recommendations] 到你的无头店面。
 
-## 工作流程
+## 工作流
 
-1. **將資料收集部署至生產環境**
+1. **将数据收集部署到生产环境**
 
-   部署 [!DNL Product Recommendations] 需要兩個主要 [資料來源](type.md)：目錄和行為。 由於生產是擷取和分析購物者動作的唯一環境，因此儘早在生產上開始資料收集最符合您的利益。 [瞭解](behavioral-data.md) Adobe Sensei如何訓練產生更高品質推薦的機器學習模型。 另外一項好處是，當您開始在生產環境中收集行為資料時，可以 [擷取建議](verify.md) 根據此生產資料，而在非生產環境中作業時。 接著，您可以測試和實驗根據生產環境中收集的實際購物者資料計算而來的不同建議。
+   部署 [!DNL Product Recommendations] 需要两个主节点 [数据源](type.md)：目录和行为。 由于生产是捕获和分析购物者行为的唯一环境，因此尽早在生产上开始数据收集符合您的最大利益。 [了解](behavioral-data.md) Adobe Sensei如何训练可生成高质量推荐的机器学习模型。 作为一项附加好处，当您开始收集生产中的行为数据时，可以 [获取推荐](verify.md) 基于此生产数据，同时在非生产环境中运行。 然后，您可以测试和试验根据生产中收集的真实购物者数据计算的各种推荐。
 
-   若要將資料收集部署至生產環境，您必須 [安裝與設定](install-configure.md) 此 [!DNL Product Recommendations] 模組，提供 [API金鑰](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html).
-
-   >[!TIP]
-   >
-   > 部署資料彙集不會變更店面外觀或購物者的體驗。 只有建立和部署建議單位，才能改變店面的客戶體驗。 請務必先在非生產環境中進行測試，然後再部署到生產環境。 此外，在自訂範本之前，請勿建立建議單位。 請參閱下一個步驟。
-
-1. **自訂範本以符合您的樣式**
-
-   您的店面代表您的品牌，因此請務必修改產品推薦範本以符合您的網站主題。
+   要将数据收集部署到生产环境，您必须 [安装和配置](install-configure.md) 此 [!DNL Product Recommendations] 模块 [API密钥](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html).
 
    >[!TIP]
    >
-   > 透過自訂範本，您可以指定樣式表、覆寫建議單位在頁面上的顯示位置等。
+   > 部署数据收集不会更改店面的外观或购物者的体验。 只有创建和部署推荐单元才能改变店面的客户体验。 在部署到生产环境之前，请确保在非生产环境中进行测试。 此外，在自定义模板之前，请勿创建推荐单位。 请参阅下一步。
 
-   另請參閱 [自訂](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/customize.html) ，瞭解如何完成此步驟。
+1. **自定义模板以匹配您的样式**
 
-1. **在您的非生產環境中測試建議**
-
-   在將技術部署到生產環境之前，最好的做法是在非生產環境中測試新技術。 在非生產環境中測試建議可讓您使用不同的建議單位型別、位置和頁面。 您可以在非生產環境中進行測試時，根據生產上已收集的行為資料提取建議，讓建議結果以實際客戶的購物行為為基礎。
+   您的店面代表您的品牌，因此请确保修改产品推荐模板以匹配您的站点主题。
 
    >[!TIP]
    >
-   > 確保您的非生產環境目錄與生產環境中的目錄大致相同。 使用類似的目錄，可確保建議單位中傳回的產品與生產時的產品極為相似。
+   > 通过自定义模板，您可以指定样式表、覆盖推荐单元在页面上的显示位置等。
 
-   另請參閱 [擷取](staging-environment.md) 生產環境中的行為資料，以瞭解如何完成此步驟。
+   参见 [自定义](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/customize.html) ，了解如何完成此步骤。
 
-1. **建立建議並部署至您的生產店面**
+1. **在非生产环境中测试推荐**
 
-   現在您已在生產環境中部署行為資料收集、修改產品建議範本，以及使用實際購物者行為來測試建議，您已準備好將所有程式碼提升至生產環境並 [建立](create.md) 即時產品推薦。
+   在将技术部署到生产环境之前，最好在非生产环境中测试新技术。 通过在非生产环境中测试推荐，您可以播放不同的推荐单元类型、位置和页面。 您可以在非生产环境中进行测试时，根据已在生产环境中收集的行为数据提取推荐，以使推荐结果基于实际客户的购物行为。
+
+   >[!TIP]
+   >
+   > 确保您的非生产环境目录与生产环境中的目录大致相同。 使用类似的目录可确保推荐单元中返回的产品与生产中的产品非常相似。
+
+   参见 [Fetch](staging-environment.md) 生产环境中的行为数据，以了解如何完成此步骤。
+
+1. **创建建议并将其部署到生产店面**
+
+   现在，您已部署了生产中的行为数据收集、修改了产品推荐模板，并使用实际购物者行为测试了推荐，接下来可以将所有代码提升到生产环境并 [创建](create.md) 实时产品推荐。

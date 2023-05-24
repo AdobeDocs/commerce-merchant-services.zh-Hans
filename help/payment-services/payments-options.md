@@ -1,6 +1,6 @@
 ---
-title: 付款選項
-description: 設定付款選項，以自訂商店客戶可用的方式。
+title: 付款选项
+description: 设置付款选项以自定义商店客户可用的方法。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 source-git-commit: 9bc392f2ae12269ded6174b830562444d6827f5f
 workflow-type: tm+mt
@@ -9,112 +9,112 @@ ht-degree: 0%
 
 ---
 
-# 付款選項
+# 付款选项
 
-替換為 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] [!DNL Payment Services]，您有多個可用的付款選項。 您可以透過以下方式設定這些付款選項：
+替换为 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] [!DNL Payment Services]，您有多个可用的支付选项。 您可以通过以下方式配置这些付款选项：
 
-* [首頁設定](payments-home.md)
-* [存放區設定](configure-admin.md) （建議舊版付款選項或多重商店設定使用）
+* [主页设置](payments-home.md)
+* [存储配置](configure-admin.md) （建议使用旧版支付选项或多商店设置）
 
-根據您在結帳過程中的位置，每種付款方式都有不同的行為：
+根据您在结帐过程中的位置，每种付款方法都有不同的行为：
 
-* 產品頁面 — 專案的產品頁面
-* 迷你購物車 — 當產品已新增至購物車時，按一下購物車圖示即可使用
-* 購物車 — 按一下即可使用 _檢視和編輯購物車_ 從mini-cart
-* 出庫檢視 — 按一下即可使用 _繼續結帳_ 來自迷你購物車或購物車
+* 产品页面 — 项目的产品页面
+* 迷你购物车 — 将产品添加到购物车后，单击购物车图标即可使用
+* 购物车 — 单击后即可使用 _查看和编辑购物车_ 从mini-cart
+* 签出视图 — 单击时可用 _继续结帐_ 从迷你购物车或购物车
 
 >[!IMPORTANT]
 >
->必須先完成付款服務上線，才能處理付款。
+>必须先完成支付服务载入，然后才能处理支付。
 
 ## [!UICONTROL Credit Card Fields]
 
-[!UICONTROL Credit Card Fields] 為信用卡或扣帳卡付款方式提供簡單安全的結帳。 當購物者使用信用卡欄位結帳時，他們會輸入他們的姓名、帳單地址以及信用卡或扣帳卡資訊來下訂單。 客戶資訊在購買工作階段期間會安全地使用，以順暢地引導他們完成結帳流程。
+[!UICONTROL Credit Card Fields] 为信用卡或借记卡支付方法提供简单安全的结账。 当购物者使用信用卡字段结账时，他们输入姓名、帐单地址以及信用卡或借记卡信息以下订单。 客户信息在购买会话期间被安全地使用，以无缝地引导他们完成结账流程。
 
-啟用 [信用卡保險存放](#vaulting) 讓您的商店允許購物者儲存信用卡資訊，以便稍後快速結帳。
+启用 [信用卡保险存储](#vaulting) 让您的商店允许购物者保存（保存）其信用卡信息，以便稍后快速结账。
 
-您可以設定 [!UICONTROL Credit Card Fields] 在商店設定或支付服務首頁中。 另請參閱 [設定](settings.md#credit-card-fields) 以取得詳細資訊。
+您可以配置 [!UICONTROL Credit Card Fields] 在商店配置或Payment Services主页中。 参见 [设置](settings.md#credit-card-fields) 了解更多信息。
 
-您也可以變更信用卡欄位的版面、寬度、高度和外部樣式。 另請參閱 [PayPal檔案](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) 以取得詳細資訊。
+您还可以更改信用卡字段的布局、宽度、高度和外部样式。 参见 [PayPal文档](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) 了解更多信息。
 
 ## [!DNL PayPal Smart Buttons]
 
-[!DNL PayPal Smart Buttons]，會使用PayPal完成購買、儲存購物者的運送地址、帳單地址及付款詳細資料，以供日後使用。 購物者可以使用PayPal先前儲存或提供的任何付款方式。
+[!DNL PayPal Smart Buttons]，使用PayPal完成购买，存储购物者的送货地址、帐单地址和付款详细信息以供将来使用。 购物者可以使用PayPal以前存储或提供的任何支付方式。
 
-![[!DNL PayPal Smart Buttons] 選項](assets/buttons-md.png)
+![[!DNL PayPal Smart Buttons] options](assets/buttons-md.png)
 
-您可以設定 [!UICONTROL PayPal Smart Buttons] 在商店設定或支付服務首頁中。  另請參閱 [設定](settings.md#payment-buttons) 以取得詳細資訊。
+您可以配置 [!UICONTROL PayPal Smart Buttons] 在商店配置或Payment Services主页中。  参见 [设置](settings.md#payment-buttons) 了解更多信息。
 
-### [!DNL PayPal] 按鈕
+### [!DNL PayPal] 按钮
 
-客戶可以使用PayPal按鈕輕鬆自信地結帳離開。
+客户可以使用PayPal按钮轻松自信地结账。
 
-此 [!DNL PayPal] 按鈕在產品頁面、迷你購物車、購物車和結帳檢視中可見。
+此 [!DNL PayPal] 按钮在产品页面、迷你购物车、购物车和结帐视图中可见。
 
-### [!DNL Venmo] 按鈕
+### [!DNL Venmo] 按钮
 
-客戶可使用 [Venmo](https://venmo.com/) 按鈕。
+客户可使用以下工具结帐： [Venmo](https://venmo.com/) 按钮。
 
-此 [!DNL Venmo] 按鈕在產品頁面、迷你購物車、購物車和結帳檢視中可見。
+此 [!DNL Venmo] 按钮在产品页面、迷你购物车、购物车和结帐视图中可见。
 
-### [!DNL Apple Pay] 按鈕
+### [!DNL Apple Pay] 按钮
 
-客戶可以在他們的裝置上使用Touch ID來使用 [[!DNL Apple Pay]](https://www.apple.com/apple-pay/)，會使用儲存在iOS或macOS裝置上的信用卡和扣帳卡付款憑證。
+客户可以在他们的设备上使用Touch ID来使用 [[!DNL Apple Pay]](https://www.apple.com/apple-pay/)，它会使用存储在其iOS或macOS设备上的信用卡和借记卡支付凭据。
 
-此 [!DNL Apple Pay] 按鈕在產品頁面、迷你購物車、購物車和結帳檢視中可見。
+此 [!DNL Apple Pay] 按钮在产品页面、迷你购物车、购物车和结帐视图中可见。
 
 >[!NOTE]
 >
-> 使用 [!DNL Apple Pay] 針對您的商店，完成 [自行註冊 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_註冊您的即時網域_ 章節)和 [為中的商店設定 [!DNL Payment Services]](settings.md#payment-buttons).
+> 使用 [!DNL Apple Pay] 对于您的商店，完成 [自行注册 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_注册您的活动域_ 部分)和 [在中为您的商店配置它 [!DNL Payment Services]](settings.md#payment-buttons).
 
-### [!DNL Pay Later] 按鈕
+### [!DNL Pay Later] 按钮
 
-為您的客戶提供短期、免息的付款和其他融資選項，以便他們現在購買後使用 [!DNL Pay Later] 按鈕。
+为客户提供短期、无息支付和其他融资选项，以便他们现在购买以后使用 [!DNL Pay Later] 按钮。
 
-此 [!DNL Pay Later] 按鈕在產品頁面、迷你購物車、購物車和結帳檢視中可見：
+此 [!DNL Pay Later] 按钮在产品页面、迷你购物车、购物车和结帐视图中可见：
 
-* **當客戶選擇介於$30和$600之間的產品時**，在PayPal和底下傳送訊息 [!DNL Pay Later] 按鈕可為客戶提供更多關於 [!DNL Pay in 4] 付款選項。 客戶可以點選 **瞭解更多** 以瞭解&quot;[!DNL Pay in 4]」選項 _或_ 按一下快顯視窗中的「或檢視6個月特殊融資」文字，瞭解並申請PayPal信用選項。
-* **當客戶選取超過$98.99的產品時**，在PayPal和底下傳送訊息 [!DNL Pay Later] 按鈕可提供客戶有關PayPal信用支付選項的更多資訊。 客戶可以點選 **瞭解更多** 若要瞭解並申請PayPal信用額度選項， _或_ 按一下快顯視窗中的「或按4付款」文字，瞭解 [!DNL Pay in 4] 選項。
+* **当客户选择$30至$600的产品时**，PayPal下的消息传送和 [!DNL Pay Later] 按钮为客户提供了更多关于 [!DNL Pay in 4] 付款选项。 客户可以点击 **了解详情** 以了解“[!DNL Pay in 4]”选项 _或_ 单击弹出窗口中的“或查看6个月特别融资”文本，了解并申请PayPal信用选项。
+* **当客户选择超过$98.99的产品时**，PayPal下的消息传送和 [!DNL Pay Later] 按钮为客户提供了有关PayPal信用支付选项的更多信息。 客户可以点击 **了解详情** 要了解并申请PayPal点数选项， _或_ 单击弹出窗口中的“或参阅按4付费”文本以了解 [!DNL Pay in 4] 选项。
 
    >[!NOTE]
    >
-   >以上所列金額可能會有變動。
+   >上述金额可能有所变动。
 
-另請參閱 [設定](settings.md#payment-buttons) 以瞭解如何停用/啟用 [!DNL Pay Later] 傳送訊息。
+参见 [设置](settings.md#payment-buttons) 以了解如何禁用/启用 [!DNL Pay Later] 消息传送。
 
-有兩種付款選項 [!DNL Pay Later] 按鈕：
+有两种付款方式 [!DNL Pay Later] 按钮：
 
-* **以4付款** — 客戶在初次支付首期付款後，可以透過四筆免息付款（每兩週）來支付訂單餘額。 請參閱 [以4份檔案付費](https://www.paypal.com/us/digital-wallet/ways-to-pay/buy-now-pay-later) 以取得詳細資訊。
-* **PayPal信用** — 客戶可在6個月內全額支付訂單餘額，且免息。 請參閱 [PayPal信用檔案](https://www.paypal.com/us/webapps/mpp/paypal-credit) 以取得詳細資訊。
+* **4小时付费** — 初次支付首期付款后，客户可以通过四次免息付款（每两周）支付其订单余额。 请参阅 [以4个文档付款](https://www.paypal.com/us/digital-wallet/ways-to-pay/buy-now-pay-later) 了解更多信息。
+* **PayPal点数** — 客户可在六个月后支付全部订单余额，且免息。 请参阅 [PayPal信用文档](https://www.paypal.com/us/webapps/mpp/paypal-credit) 了解更多信息。
 
-### [!DNL Pay Now] 按鈕
+### [!DNL Pay Now] 按钮
 
-此 [!DNL Pay Now] 當客戶按一下付款熒幕上的付款按鈕時，按鈕會顯示在PayPal彈出式視窗中。
+此 [!DNL Pay Now] 当客户单击付款屏幕上的付款按钮时，按钮在PayPal弹出窗口中可见。
 
-如果最終訂單金額還不清楚（例如您還沒有送貨地址資訊），而客戶正在從產品頁面、迷你購物車或購物車結帳時，則會收到 _繼續_ 按鈕可供使用。 客戶點按時 _繼續_，在確認其付款方式後，系統會將他們導向至訂單稽核頁面，以在完成結帳前收集所需的詳細資料。
+如果最终订单金额未知（例如，当您还没有送货地址信息时），并且客户正在从产品页面、迷你购物车或购物车中结帐，则 _继续_ 按钮可用。 客户点击时 _继续_，在确认其支付方式后，客户将转到订单审核页面，以在完成结账之前收集所需的详细信息。
 
-## 訂單重新計算
+## 订单重新计算
 
-當客戶從迷你購物車、購物車或產品頁面進入結帳流程時，會被導向至訂單稽核頁面，他們可在PayPal快顯視窗中看到選取的送貨地址。 客戶選取出貨方式後，會適當地重新計算訂單金額，而客戶可以看到出貨成本與稅捐。
+当客户从迷你购物车、购物车或产品页面进入结帐流程时，会被定向到订单审核页面，他们可以在PayPal弹出窗口中看到选定的送货地址。 客户选择发运方法后，订单金额会进行适当重新计算，并且客户可以看到发运成本和税额。
 
-當客戶從結帳頁面進入結帳流程時，系統已知道送貨地址及最終計算金額，且總計已適當呈現。
+当客户从结帐页面进入结帐流程时，系统已知道送货地址和最终计算金额，并且总数已适当显示。
 
-免稅期、運費和銷售稅可能因地點而異。 晚於 [!DNL Payment Services] 會收到送貨地址與運費，然後快速重新計算所有適用成本，並在結帳的最後階段適當地加以顯示。
+免税期、运费和销售税可能因地点而异。 晚于 [!DNL Payment Services] 接收送货地址和运费，然后快速重新计算所有适用的成本，并在结账的最后阶段适当地显示这些成本。
 
-## 從產品頁面結帳
+## 从产品页面中结帐
 
-客戶使用PayPal或 [!DNL Pay Later] 按鈕，則只會購買目前產品頁面中表示的專案。 已存在於客戶購物車中的專案不會新增至結帳流程，也不會購買。
+客户使用PayPal或 [!DNL Pay Later] 按钮时，只会购买当前产品页面中显示的项目。 已存在于客户购物车中的商品不会添加到结账流程中，也不会购买。
 
-如果客戶取消訂單，目前產品頁面中的專案會新增到客戶的購物車，加入購物車中存在的任何其他專案。 此功能可讓客戶快速購買目前檢視的專案，同時保留先前瀏覽產品時新增至購物車的任何其他專案。
+如果客户取消订单，则当前产品页面中的项目将添加到客户的购物车中，加入购物车中存在的任何其他项目。 此功能允许客户快速购买他们当前正在查看的项目，同时还可以保留他们之前浏览产品时添加到购物车的任何其他项目。
 
-當客戶從產品頁面進入結帳流程時，結帳頁面會簡化，此檢視只會顯示訂單相關資料和選項。
+当客户从产品页面进入结帐流程时，结帐页面得到简化，视图仅显示与订单相关的数据和选项。
 
-## 信用卡保險存放
+## 信用卡保险存储
 
-購物者可以儲存信用卡資訊，以便日後在網站層級（同一商家帳戶內的任何商店）購買。
+购物者可以将其信用卡信息保存或“保存”，以便将来在网站级别（同一商家帐户内的任何商店）进行购买。
 
-另請參閱 [信用卡保險存放](vaulting.md) 以取得詳細資訊。
+参见 [信用卡保险存储](vaulting.md) 了解更多信息。
 
 ## 安全性
 
-另請參閱 [PCI法規遵循](security.md#pci-compliance) 以取得詳細資訊。
+参见 [PCI合规性](security.md#pci-compliance) 了解更多信息。

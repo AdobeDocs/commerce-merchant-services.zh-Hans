@@ -1,6 +1,6 @@
 ---
-title: 應用程式設定
-description: 設定 [!DNL Store Assist] 應用程式可管理線上購物的端對端商店履行工作流程與流程、在商店訂單中提貨。
+title: 应用程序设置
+description: 设置 [!DNL Store Assist] 用于管理在线购买、店内提货的端到端商店履行工作流程和流程的应用程序。
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
@@ -11,63 +11,63 @@ ht-degree: 0%
 
 ---
 
-# 應用程式設定
+# 应用程序设置
 
-Store Assist是由Walmart Commerce Technologies提供支援的Fulfillment-as-a-service (FaaS)平台應用程式。 應用程式提供店內履行功能，供您處理 [!DNL buy online, pick up in store] (BOPIS)訂單。 藉助「商店協助」，商店夥伴可以檢視客戶訂購的料號、更快地挑選正確的料號，以及設定已履行訂單以便店內或路邊取貨交貨給客戶。
+Store Assist是由Walmart Commerce Technologies提供支持的“履行即服务”(FaaS)平台应用程序。 该应用程序提供要处理的店内履行功能 [!DNL buy online, pick up in store] (BOPIS)命令。 借助Store Assist，店员可以查看客户订购的商品、更快地挑选正确的商品以及设置已履行订单以便向客户提供店内或路边取货交货。
 
-Store Assist應用程式會接收所有訂單和客戶資訊（從訂單詳細資料到取貨時間），並透過行動裝置將資料提供給線上商店夥伴。 應用程式包含 [!UICONTROL Pick]， [!UICONTROL Stage]， [!UICONTROL Handoff]、和 [!UICONTROL Orders] 模組可協助Store Associates進行如下的履行活動：
+Store Assist应用程序会接收所有订单和客户信息（从订单详细信息到取货时间），并通过移动设备在线将相关数据提供给存储合作伙伴。 该应用程序包括 [!UICONTROL Pick]， [!UICONTROL Stage]， [!UICONTROL Handoff]、和 [!UICONTROL Orders] 模块来帮助Store Associates完成以下活动：
 
-- 指定訂單交貨日期和時間。
-- 當客戶抵達取貨地點時，接收他們的通知。
-- 暫存移交客戶的訂單。
-- 追蹤其指定商店位置中所有訂單的訂單狀態。
+- 分配订单交货日期和时间。
+- 在客户到达订单提货时收到他们的通知。
+- 暂存移交客户的订单。
+- 跟踪其分配的商店位置中所有订单的订单状态。
 
 >[!NOTE]
 >
->另請參閱 [商店協助履行工作流程](store-assist-modules.md) 以進一步瞭解「商店協助」應用程式。
+>参见 [存储协助完成工作流](store-assist-modules.md) 以详细了解Store Assist应用程序。
 
-## 設定商店協助應用程式
+## 配置应用商店助手应用程序
 
-Store Assist應用程式需要兩種設定：
+Store Assist应用程序需要两种类型的配置：
 
-- Adobe Commerce管理系統設定至 [管理使用者帳號、使用者角色、資源許可權](user-setup.md)、和 [客戶在入庫程式期間可用的汽車製造和模型選擇](check-in-experience-setup.md).
+- Adobe Commerce管理系统设置用于 [管理用户帐户、用户角色、资源权限](user-setup.md)、和 [客户在登记入住过程中可以使用的车辆制造商和型号选择](check-in-experience-setup.md).
 
-- 前端組態設定可自訂Store Assist應用程式介面和其他設定，包括：
+- 前端配置设置，用于自定义Store Assist应用程序界面和其他设置，包括：
 
-   - **品牌化Store Assist應用程式** — 使用貴公司的標誌和顏色自訂應用程式使用者介面。
+   - **品牌化Store Assist应用程序** — 使用您公司的徽标和颜色自定义应用程序用户界面。
 
-   - **更新預設指示** — 自訂「商店協助挑選」、「預備」、「移交」和「訂購」模組中的指示，以引導「商店夥伴」完成公司工作流程的每個步驟。
+   - **更新默认说明** — 自定义Store Assist Pick 、 Stage 、 Handoff和Order模块中的说明，以指导Store Associates完成公司工作流的每个步骤。
 
-   - **本地化** — 選取應用程式的可用語言。 選擇您的日期和時間格式，並選取您的預設度量單位和預設貨幣。
+   - **本地化** — 选择应用程序的可用语言。 选择日期和时间格式，然后选择默认度量单位和默认货币。
 
-   - **非使用狀態時間** — 指定應用程式在登出前必須處於非使用中狀態的時間長度。
+   - **非活动时间** — 指定应用程序在注销之前必须处于非活动状态的时间量。
 
-   - **從商店取消** — 指定是否可從商店取消訂單，以及哪些角色具有取消許可權
+   - **从商店取消** — 指定是否可从存储中取消订单以及哪些角色具有取消权限
 
-   - **訂單清理視窗** — 指定經過多長時間 [預估取貨前置時間](enable-general.md#delivery-method-title-configuration) 撿料訂單在重新存貨之前仍保留在暫存中，例如，3天。 預設值為7天。 如果開啟此設定，則當此時間到期時，會自動取消訂單。 系統會重新儲存料號，而商家會收到取消電子郵件。
+   - **订单清理窗口** — 指定超过 [估计的装货提前期](enable-general.md#delivery-method-title-configuration) 挑库订单在重新存储之前仍保留在分段中 — 例如，三天。 默认值为7天。 如果启用此配置，则当此时间到期时，将自动取消订单。 商品重新上架，商家会收到一封取消电子邮件。
 
-   - 自訂所有應用程式內指示（挑選、預備、移交）。
+   - 自定义所有应用程序内指令（领料、暂存、交货）。
 
-   - **撿料通知** — 指定是否傳送推播通知，以便在客戶下訂單後開始撿料流程。
+   - **领料通知** — 指定是否在客户下订单后发送推送通知以启动领料流程。
 
-   - **簽入通知** — 指定是否要在訂單撿料入庫程式期間傳送推播通知 — 入庫後、客戶等待時間超過指定時段後。 或者，停用通知。
+   - **签入通知** — 指定是否在订单提货的登记过程中发送推送通知 — 在登记之后、客户等待时间超过指定时间段之后。 或者，禁用通知。
 
-   - **移交程式** — 當「商店關聯」將訂單交付給客戶時，啟用選擇性程式，例如，需要客戶簽名或提示關聯檢查客戶ID。
+   - **移交流程** — 在Store Associate向客户交付订单时启用可选流程，例如，需要客户签名或提示关联检查客户ID。
 
-   - **切換時啟用專案拒絕** — 允許客戶在訂單移交期間退回或取消訂單專案。
-   與Walmart Commerce Technologies Client Services團隊合作，完成Store Assist應用程式的前端設定。
+   - **切换时启用项目拒绝** — 允许客户在订单移交期间返回或取消订单项目。
+   与Walmart Commerce Technologies Client Services团队合作，完成Store Assist应用程序的前端配置。
 
-## 應用程式下載和安裝
+## 应用程序下载和安装
 
-設定Store Assist應用程式後，Store Associates可以從行動裝置下載、安裝並登入Store Assist應用程式。
+设置和配置Store Assist应用程序后，Store Associates可以从其移动设备下载、安装和登录Store Assist应用程序。
 
-- 確認行動裝置符合 [硬體與軟體需求](solution-requirements.md#store-assist-app-requirements) 適用於「商店履行」解決方案。
+- 验证移动设备是否符合 [硬件和软件要求](solution-requirements.md#store-assist-app-requirements) 用于Store Fulfillment解决方案
 
-- 從下載「商店協助」應用程式 [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} or the [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.
+- 从下载Store Assist应用程序 [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} or the [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.
 
-- Store Associates需要下列資訊才能登入：
+- 存储区关联需要以下信息才能登录：
 
-   - **[!UICONTROL Company name]** 與Store Assist帳戶相關聯
+   - **[!UICONTROL Company name]** 与应用商店助手帐户关联
 
-   - **儲存協助帳戶認證** — 其帳戶的使用者名稱和密碼認證。
-   Adobe Commerce管理員可以建立和管理 [!DNL Store Assist app] 擁有以下條件的所有商店位置的使用者帳戶： [店內取貨](merchant-store-configuration.md#pickup-location-configuration) 已在「管理商店」設定中啟用。
+   - **存储协助帐户凭据** — 其帐户的用户名和密码凭据。
+   Adobe Commerce管理员可以创建和管理 [!DNL Store Assist app] 具有下列条件的所有商店位置的用户帐户： [店内取货](merchant-store-configuration.md#pickup-location-configuration) 已在“管理存储”设置中启用。

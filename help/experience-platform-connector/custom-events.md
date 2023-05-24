@@ -1,6 +1,6 @@
 ---
-title: 建立自訂事件
-description: 瞭解如何建立自訂事件，將您的Adobe Commerce資料連線到其他AdobeDX產品。
+title: 创建自定义事件
+description: 了解如何创建自定义事件，将您的Adobe Commerce数据连接到其他AdobeDX产品。
 exl-id: 5a754106-c66a-4280-9896-6d065df8a841
 source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
@@ -9,19 +9,19 @@ ht-degree: 0%
 
 ---
 
-# 建立自訂事件
+# 创建自定义事件
 
-您可以擴充 [事件平台](events.md) 建立自己的店面活動，收集業界獨有的資料。 當您建立和設定自訂事件時，它會傳送至 [Adobe Commerce事件收集器](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-collectors).
+您可以扩展 [事件平台](events.md) 通过创建自己的店面活动来收集行业独有的数据。 创建和配置自定义事件时，它会发送到 [Adobe Commerce事件收集器](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-collectors).
 
-## 處理自訂事件
+## 处理自定义事件
 
-只有Adobe Experience Platform支援自訂事件。 自訂資料不會轉送至Adobe Commerce儀表板和量度追蹤器。
+仅Adobe Experience Platform支持自定义事件。 自定义数据不会转发到Adobe Commerce功能板和量度跟踪器。
 
-針對任何 `custom` 事件，收集器會新增 `personId` (`ecid`)至 `customContext` 並換行 `xdm` 物件，再轉送至Edge。
+对于任意 `custom` 事件，则收集器会添加 `personId` (`ecid`)至 `customContext` 并封装 `xdm` 对象，然后再转发到Edge。
 
-範例：
+示例：
 
-透過Adobe Commerce Events SDK發佈的自訂事件：
+通过Adobe Commerce Events SDK发布的自定义事件：
 
 ```javascript
 mse.publish.custom({
@@ -29,7 +29,7 @@ mse.publish.custom({
 });
 ```
 
-在Experience Platform邊緣：
+在Experience Platform边缘中：
 
 ```javascript
 {
@@ -43,17 +43,17 @@ mse.publish.custom({
 
 >[!NOTE]
 >
-> 使用自訂事件可能會影響預設的Adobe Analytics報表。
+> 使用自定义事件可能会影响默认的Adobe Analytics报表。
 
-## 處理事件覆寫（自訂屬性）
+## 处理事件覆盖（自定义属性）
 
-只有Experience Platform支援標準事件的屬性覆寫。 自訂資料不會轉送到Commerce儀表板和量度追蹤器。
+仅该Experience Platform支持标准事件的属性覆盖。 自定义数据不会转发到Commerce功能板和量度跟踪器。
 
-對於具有集的任何事件 `customContext`，收集器會覆寫 `personId` 和Adobe Analytics計數器，並轉送中設定的所有其他屬性 `customContext`.
+对于包含集的任何事件 `customContext`，收集器将覆盖 `personId` 和Adobe Analytics计数器，并转发在中设置的所有其他属性 `customContext`.
 
-範例：
+示例：
 
-透過Adobe Commerce Events SDK發佈的具有覆寫的產品檢視：
+通过Adobe Commerce Events SDK发布的带覆盖的产品视图：
 
 ```javascript
 mse.publish.productPageView({
@@ -61,7 +61,7 @@ mse.publish.productPageView({
 });
 ```
 
-在Experience Platform邊緣：
+在Experience Platform边缘中：
 
 ```javascript
 {
@@ -78,7 +78,7 @@ mse.publish.productPageView({
 }
 ```
 
-透過Adobe Commerce Events SDK發佈的具有Adobe Commerce的產品檢視：
+通过Adobe Commerce Events SDK发布的带Adobe Commerce的产品视图覆盖：
 
 ```javascript
 mse.publish.productPageView({
@@ -86,7 +86,7 @@ mse.publish.productPageView({
 });
 ```
 
-在Experience Platform邊緣：
+在Experience Platform边缘中：
 
 ```javascript
 {
@@ -105,4 +105,4 @@ mse.publish.productPageView({
 
 >[!NOTE]
 >
-> 使用自訂屬性覆寫事件可能會影響預設的Adobe Analytics報表。
+> 使用自定义属性覆盖事件可能会影响默认的Adobe Analytics报表。

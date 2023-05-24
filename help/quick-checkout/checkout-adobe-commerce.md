@@ -1,6 +1,6 @@
 ---
-title: 「Adobe Commerce使用者的結帳流程」
-description: 「概述 [!DNL Quick Checkout] Adobe Commerce使用者的流量。」
+title: “Adobe Commerce用户的结账流程”
+description: “概述 [!DNL Quick Checkout] 流向Adobe Commerce用户。”
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
 source-git-commit: f790732804e110aad298689c0ddf74547ff17618
 workflow-type: tm+mt
@@ -9,59 +9,59 @@ ht-degree: 0%
 
 ---
 
-# 現有Adobe Commerce使用者：運作方式
+# 现有Adobe Commerce用户：其工作方式
 
-使用下訂單時，現有的Adobe Commerce使用者可以選取已儲存的送貨和付款詳細資料 [!DNL Quick Checkout] 以獲得更快的結帳體驗。
+在使用下订单时，现有Adobe Commerce用户可以选择保存的装运和付款详细信息 [!DNL Quick Checkout] 以获得更快的结帐体验。
 
-當購物者在結帳時輸入其電子郵件地址時， [!DNL Quick Checkout] 驗證並尋找現有的 [!DNL Bolt] 帳戶。
+当购物者在结帐时输入其电子邮件地址时， [!DNL Quick Checkout] 验证它并找到现有的 [!DNL Bolt] 帐户。
 
-## 在Adobe Commerce和中的註冊使用者 [!DNL Bolt]
+## Adobe Commerce和中的注册用户 [!DNL Bolt]
 
-當購物者同時是Adobe Commerce和中的註冊使用者時 [!DNL Bolt] 網路，這兩個網路都提供儲存的送貨和付款細節。
+当购物者同时是Adobe Commerce和中的注册用户时 [!DNL Bolt] 网络，这两个网络都提供了存储的送货和付款详细信息。
 
-若為 [!DNL Bolt] 結帳時找到帳戶，購物者可以繼續使用 [!DNL Quick Checkout] 順暢的結帳體驗：
+如果 [!DNL Bolt] 帐户在结账时找到，购物者可以继续使用他们的 [!DNL Quick Checkout] 无缝结账体验：
 
-1. 輸入傳送至該的一次性密碼(OTP) [!DNL Bolt] 帳戶的電子郵件地址或行動電話，具體取決於 [使用者在「 」中的偏好設定 [!DNL Bolt] 帳戶](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
+1. 输入发送给该用户的一次性密码(OTP) [!DNL Bolt] 帐户的电子邮件地址或手机，具体取决于 [用户在 [!DNL Bolt] 帐户](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
 
-![OTP快顯視窗](assets/new-logo-otp-email.png)
+![OTP弹出窗口](assets/new-logo-otp-email.png)
 
-1. 使用登入後 [!DNL Bolt] 帳戶，則會自動新增詳細資料：
+1. 使用登录后 [!DNL Bolt] 帐户，则将自动添加详细信息：
 
-   - 送貨資訊
+   - 配送信息
    - 付款方式
 
-1. 下訂單。
+1. 下订单。
 
 >[!NOTE]
 >
-> 只有當購物者位於結帳頁面時，「螺栓OTP」彈出式視窗才會出現。 購物者可以關閉該快顯視窗，選擇退出登入Bolt。
+> 仅当购物者位于结帐页面上时，才会出现“螺栓OTP”弹出窗口。 购物者可以通过关闭该弹出窗口来选择退出登录Bolt。
 
-如果購物者在結帳前登入Adobe Commerce，則 [!DNL Bolt] 結帳期間不會出現OTP快顯視窗，但會出現一則訊息，建議購物者登入以存取其Bolt Wallet。
+如果购物者在结帐前登录到Adobe Commerce，则 [!DNL Bolt] 结帐期间不会出现OTP弹出窗口，但会显示一条消息，建议购物者登录以访问其Bolt Wallet。
 
-如果您在以現有Adobe Commerce使用者身分下訂單時遇到問題，請參閱 [疑難排解Quick Checkout問題](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) Adobe Commerce說明中心的文章。
+如果您在以现有Adobe Commerce用户身份下达订单时遇到问题，请参阅 [快速签出问题疑难解答](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) Adobe Commerce帮助中心中的文章。
 
-## 自動登入
+## 自动登录
 
-自動登入元件會偵測購物者何時具有作用中的Bolt工作階段，並自動將購物者登入。 這會略過帳戶偵測和一次性密碼(OTP)步驟，因為購物者已在先前的作業階段中完成這些步驟。
+自动登录组件会检测购物者何时具有活动的Bolt会话，并自动将购物者登录。 这会跳过帐户检测和一次性密码(OTP)步骤，因为购物者已在上一个会话中完成这些步骤。
 
-您可以設定自動登入 [!DNL Quick Checkout] 使用者。 您可以啟用設定，以便在結帳期間自動登入使用者。
+可以配置自动登录 [!DNL Quick Checkout] 用户。 您可以启用配置以在签出期间自动登录用户。
 
-1. 於 _管理員_ 側欄，導覽至 **商店** > **設定** > **簽出** 以存取一般簽出管理設定頁面。
-1. 在 _服務設定_ 「 」部分 [!DNL Quick Checkout]，提供設定自動登入所需的所有詳細資訊。
+1. 在 _管理员_ 侧栏，导航到 **商店** > **配置** > **结账** 以访问常规签出管理配置页面。
+1. 在 _服务设置_ 部分 [!DNL Quick Checkout]，提供设置自动登录所需的所有详细信息。
 
-另請參閱 [[!DNL Quick Checkout] 設定服務設定](../quick-checkout/onboarding.md#configure-service-settings) 主題以取得詳細資訊。
+参见 [[!DNL Quick Checkout] 配置服务设置](../quick-checkout/onboarding.md#configure-service-settings) 主题以了解更多信息。
 
 >[!NOTE]
 >
-> 首次登入時間 **自動登入** 必須獲得使用者的同意，才能透過接受快顯視窗來授權啟用。
+> 首次登录时间 **自动登录** 要启用，需要用户同意通过接受弹出窗口来授权它。
 
-## 新增 [!DNL Bolt] 帳戶
+## 新 [!DNL Bolt] 帐户
 
-若否 [!DNL Bolt] 找到帳戶後，購物者會繼續使用預設的現成Adobe Commerce結帳，購物者會從儲存的資訊中選取所有必要的詳細資訊來下訂單：
+如果否 [!DNL Bolt] 找到帐户后，购物者会继续其默认的现成Adobe Commerce结账，购物者会从其保存的信息中选择所有必要的详细信息来下订单：
 
-- 送貨與帳單資訊
-- 送貨方法
-- 檢閱付款方式
-- 要註冊的選項 [!DNL Bolt] 在下訂單前快速結帳的選項會出現。 購物者可以同意建立其購物網站的相關條款與條件 [!DNL Bolt] 帳戶。
+- 配送和帐单信息
+- 配送方式
+- 审核付款方式
+- 在中注册的选项 [!DNL Bolt] 此时会显示订购前更快结帐的信息。 购物者可以同意条款和条件以创建其 [!DNL Bolt] 帐户。
 
-   ![記住 [!DNL Bolt]](assets/checkbox-remember-bolt.png)
+   ![记住 [!DNL Bolt]](assets/checkbox-remember-bolt.png)

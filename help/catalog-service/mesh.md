@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
-description: '''[!DNL API Mesh] for Adobe Commerce可讓您透過通用的GraphQL端點整合多個資料來源。」'
+description: ‘[!DNL API Mesh] for Adobe Commerce提供了一种通过通用的GraphQL端点集成多个数据源的方法。”
 exl-id: cdda4a83-3c5f-4a69-8279-b90464e16c0e
 source-git-commit: 368059d50133d8b01be83e1616044a61ab094e3c
 workflow-type: tm+mt
@@ -11,22 +11,22 @@ ht-degree: 0%
 
 # [!DNL Catalog Service and API Mesh]
 
-此 [Adobe Developer App Builder的API網格](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 可讓開發人員使用Adobe I/O Runtime將私人或第三方API和其他介面與Adobe產品整合。
+此 [Adobe Developer App Builder的API网格](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 使开发人员能够使用Adobe I/O Runtime将专用或第三方API和其他界面与Adobe产品集成。
 
-![目錄架構圖](assets/catalog-service-architecture-mesh.png)
+![目录架构图](assets/catalog-service-architecture-mesh.png)
 
-搭配「目錄服務」使用API網狀架構的第一步，是將API網狀架構連線到您的執行個體。 請參閱以下連結的詳細說明： [建立網格](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
+将API网格与目录服务结合使用的第一步是将API网格连接到您的实例。 请参阅中的详细说明 [创建网格](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
-若要完成設定，請安裝 [Adobe Developer CLI套件](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+要完成安装，请安装 [Adobe Developer CLI包](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 
-在Adobe I/O Runtime上設定Mesh後，請執行以下命令，新增 `CommerceCatalogServiceGraph` 網格的來源。
+在Adobe I/O Runtime上配置Mesh后，运行以下命令以添加 `CommerceCatalogServiceGraph` 网格的源。
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 ```
 
-位置 `variables.json` 是一個獨立檔案，用於儲存Adobe I/O Runtime的常用值。
-例如，API金鑰可以儲存在檔案中：
+位置 `variables.json` 是一个单独的文件，用于存储Adobe I/O Runtime的常用值。
+例如，可以将API密钥保存在文件中：
 
 ```json
 {
@@ -34,16 +34,16 @@ aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 }
 ```
 
-執行此命令後， Catalog Service應透過API Mesh執行。 您可以執行 `aio api-mesh:get` 命令來檢視更新後的網格的設定。
+运行此命令后， Catalog Service应通过API网格运行。 您可以运行 `aio api-mesh:get` 命令查看更新后的网格的配置。
 
-## API網格範例
+## API网格示例
 
-API Mesh可讓使用者使用外部資料來源，以增強您的Adobe Commerce執行個體。 它也可以用來設定現有的Commerce資料以啟用新功能。
+API网格允许用户使用外部数据源，以增强您的Adobe Commerce实例。 它也可用于配置现有Commerce数据以启用新功能。
 
-### 啟用層級價格
+### 启用层价格
 
-在此範例中，API Mesh是用來啟用Adobe Commerce中的層級價格。
-取代 `name `， `endpoint`、和 `x-api-key` 值。
+在此示例中，API Mesh用于在Adobe Commerce中启用层价格。
+更换 `name `， `endpoint`、和 `x-api-key` 值。
 
 ```json
 {
@@ -127,7 +127,7 @@ API Mesh可讓使用者使用外部資料來源，以增強您的Adobe Commerce�
 }
 ```
 
-設定後，請查詢Mesh以取得階層式定價：
+配置完毕后，在Mesh中查询分层定价：
 
 ```graphql
 query {
@@ -156,9 +156,9 @@ query {
 }
 ```
 
-### 取得實體ID
+### 获取实体ID
 
-此網格會附加 `entityId` 至ProductView介面。 取代 `name `， `endpoint`、和 `x-api-key` 值。
+此网格会附加 `entityId` 到ProductView界面。 更换 `name `， `endpoint`、和 `x-api-key` 值。
 
 ```json
 {
@@ -235,7 +235,7 @@ query {
   }
 ```
 
-`entityId` 現在可以查詢：
+`entityId` 现在可以查询：
 
 ```graphql
 query {

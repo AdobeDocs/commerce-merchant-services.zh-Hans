@@ -1,6 +1,6 @@
 ---
-title: 上線和安裝
-description: 瞭解如何安裝 [!DNL Catalog Service]
+title: 载入和安装
+description: 了解如何安装 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
 source-git-commit: 3d7a38fc81265897615896812d49a164a21d1d84
 workflow-type: tm+mt
@@ -9,9 +9,9 @@ ht-degree: 0%
 
 ---
 
-# 上線和安裝
+# 载入和安装
 
-請參閱目錄服務程式的逐步解說。
+请参阅目录服务过程的演练。
 
 第1部分：
 
@@ -21,51 +21,51 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415600)
 
-## 必要條件
+## 先决条件
 
-入門流程 [!DNL Catalog Service] 需要存取伺服器的命令列。 如果您不熟悉如何使用命令列，請向開發人員或系統整合商尋求協助。
+的新用户引导流程 [!DNL Catalog Service] 需要访问服务器的命令行。 如果您不熟悉如何使用命令行，请要求开发人员或系统集成商提供帮助。
 
-### 軟體需求
+### 软件要求
 
 - Adobe Commerce 2.4.4+
 - PHP 8.1、8.2
 - Composer： 2.x
 
-### 支援的平台
+### 支持的平台
 
-- 雲端基礎結構上的Adobe Commerce： 2.4.4+
-- Adobe Commerce內部部署： 2.4.4+
+- 云基础架构上的Adobe Commerce：2.4.4+
+- Adobe Commerce内部部署：2.4.4+
 
-## 環境
+## 环境
 
-目錄服務有兩個環境可供上線使用：
+目录服务有两个环境可供载入：
 
-- 沙箱(https://catalog-service-sandbox.adobe.io/graphql) — 用於上線前的測試和驗證
-- 生產(https://catalog-service.adobe.io/graphql)-用於Commerce商家和網站的即時流量
+- 沙盒(https://catalog-service-sandbox.adobe.io/graphql) — 用于上线前的测试和验证
+- 生产(https://catalog-service.adobe.io/graphql)-用于Commerce商家和网站的实时流量
 
-## 安裝及設定
+## 安装和配置
 
-若要開始使用Adobe Commerce的目錄服務，必須執行下列步驟：
+要开始使用Adobe Commerce的目录服务，需要执行以下步骤：
 
-- 安裝資料匯出擴充功能
-- 設定服務與資料匯出
-- 存取服務
+- 安装数据导出扩展
+- 配置服务和数据导出
+- 访问服务
 
-### 安裝資料匯出擴充功能
+### 安装数据导出扩展
 
-目錄服務的上線流程需要存取伺服器的命令列。
+目录服务的载入流程需要访问服务器的命令行。
 
-Catalog Service擴充功能可安裝在Adobe Commerce雲端基礎結構和內部部署執行個體上。
+Catalog Service扩展可以安装在Adobe Commerce云基础架构和内部部署实例上。
 
-目錄服務會使用連結至Commerce帳戶的撰寫器金鑰安裝 [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) 在註冊過程中提供。 Composer會在Adobe Commerce的初始安裝期間，或先前未將Composer金鑰儲存至外部時，使用這些金鑰 `auth.json` 檔案。
+目录服务随编辑器密钥一起安装，这些密钥链接到商务帐户 [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) 在注册过程中提供。 Composer在Adobe Commerce的初始安装期间或之前未将Composer键保存到外部的情况下使用这些键 `auth.json` 文件。
 
-另請參閱 [取得您的驗證金鑰](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) 以取得有關取得撰寫器金鑰的詳細資訊。
+参见 [获取您的身份验证密钥](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) 以了解有关获取编辑器键的更多信息。
 
-#### 雲端基礎結構上的Adobe Commerce
+#### 云基础架构上的Adobe Commerce
 
-使用此方法為Commerce Cloud執行個體安裝目錄服務擴充功能。
+使用此方法为Commerce Cloud实例安装目录服务扩展。
 
-1. 開啟 `<Commerce_root>/composer.json` 檔案並更新必要區段，如下所示：
+1. 打开 `<Commerce_root>/composer.json` 在文本编辑器中生成文件并更新所需部分，如下所示：
 
 ```json
 "require": {
@@ -73,21 +73,21 @@ Catalog Service擴充功能可安裝在Adobe Commerce雲端基礎結構和內部
 }
 ```
 
-1. 在本機測試新設定並更新相依性：
+1. 在本地测试新配置并更新依赖关系：
 
 ```bash
 composer update
 ```
 
-指令會更新所有相依性。
+该命令会更新所有依赖项。
 
-1. 認可並推送您的變更 `composer.json` 和 `composer.lock`.
+1. 提交并推送您的更改 `composer.json` 和 `composer.lock`.
 
-#### 內部部署
+#### 内部部署
 
-使用此方法為內部部署執行個體安裝目錄服務擴充功能。
+使用此方法为本地实例安装目录服务扩展。
 
-1. 開啟 `<Commerce_root>/composer.json` 檔案並更新必要區段，如下所示：
+1. 打开 `<Commerce_root>/composer.json` 在文本编辑器中生成文件并更新所需部分，如下所示：
 
 ```json
 "require": {
@@ -95,50 +95,50 @@ composer update
 }
 ```
 
-1. 更新相依性並安裝擴充功能：
+1. 更新依赖项并安装扩展：
 
 ```bash
 composer update
 ```
 
-指令會更新所有相依性。
+该命令会更新所有依赖项。
 
-1. 升級Adobe Commerce：
+1. 升级Adobe Commerce：
 
 ```bash
 bin/magento setup:upgrade
 ```
 
-1. 清除快取：
+1. 清除缓存：
 
 ```bash
 bin/magento cache:clean
 ```
 
-### 設定服務與資料匯出
+### 配置服务和数据导出
 
-安裝目錄服務後，您必須設定 [商務服務聯結器](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) 指定API金鑰並選取SaaS資料空間。
+安装目录服务后，必须配置 [商务服务连接器](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) 通过指定API密钥并选择SaaS数据空间。
 
-SaaS設定完成後，請遵循下列步驟執行初始資料同步 [目錄同步](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) 指南。
+SaaS配置完成后，请按照以下步骤执行初始数据同步 [目录同步](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) 指南。
 
-若要確保目錄匯出正確執行：
+要确保目录导出正常运行，请执行以下操作：
 
-- 確認cron工作正在執行。
-- 驗證索引器是否正在執行。
-- 確保 `Catalog Attributes Feed, Product Feed, Product Overrides Feed`、和 `Product Variant Feed` 索引器設為「依排程更新」。
+- 确认cron作业正在运行。
+- 验证索引器是否正在运行。
+- 确保 `Catalog Attributes Feed, Product Feed, Product Overrides Feed`、和 `Product Variant Feed` 索引器设置为“按计划更新”。
 
-視目錄大小而定，初始同步可能需要幾分鐘到幾小時的時間。 初始同步後，「目錄」會持續將產品資料從Commerce伺服器匯出至Commerce服務，以保持服務為最新。
+根据目录大小，初始同步可能需要几分钟到几小时的时间。 初始同步后，目录会持续将产品数据从Commerce服务器导出到Commerce Services，以保持服务最新。
 
-### 存取服務
+### 访问服务
 
-透過HTTPS使用POST命令可存取目錄服務API。
+可以通过HTTPS上的POST命令访问目录服务API。
 
-若要取得API金鑰，請前往Admin中的Commerce Service聯結器區域並複製公開API金鑰。
+要获取API密钥，请转到管理员中的Commerce Service Connector区域并复制公共API密钥。
 
-閱讀 [GraphQL檔案](https://developer.adobe.com/commerce/webapi/graphql/) 以瞭解如何查詢及傳送產生API請求所需的標頭。
+阅读 [GraphQL文档](https://developer.adobe.com/commerce/webapi/graphql/) 了解如何查询和发送生成API请求所需的标头。
 
-## 目錄服務和API網格
+## 目录服务和API网格
 
-此 [Adobe Developer App Builder的API網格](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 可讓開發人員使用AdobeIO將私人或第三方API和其他介面與Adobe產品整合。
+此 [Adobe Developer App Builder的API网格](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 使开发人员能够使用AdobeIO将专用或第三方API和其他界面与Adobe产品集成。
 
-請參閱  [目錄服務和API網格](mesh.md) 有關安裝和設定詳細資訊的主題。
+请参阅  [目录服务和API网格](mesh.md) 有关安装和配置详细信息的主题。

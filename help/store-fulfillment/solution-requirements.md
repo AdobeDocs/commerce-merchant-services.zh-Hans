@@ -1,6 +1,6 @@
 ---
-title: 商店履行需求
-description: 布建和上線需求 [!DNL Store Fulfillment solution].
+title: 商店履行要求
+description: 配置和入门的要求 [!DNL Store Fulfillment solution].
 role: User, Admin
 level: Intermediate
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
@@ -11,22 +11,22 @@ ht-degree: 2%
 
 ---
 
-# Adobe Commerce的商店履行需求
+# Adobe Commerce的存储履行要求
 
-以下小節詳細說明安裝和啟用Adobe Commerce適用的Store Fulfillment解決方案的技術和業務需求。
+以下部分详细说明了安装和启用Adobe Commerce的商店交付解决方案的技术和业务要求。
 
-## 平台與軟體版本需求
+## 平台和软件版本要求
 
-此 [!DNL Store Fulfillment] 解決方案適用於下列平台上的Adobe Commerce客戶。
+此 [!DNL Store Fulfillment] 解决方案在以下平台上向Adobe Commerce客户提供。
 
-- 雲端基礎結構上的Adobe Commerce (ECE)
-- Adobe Commerce內部部署(EE)
+- 云基础架构上的Adobe Commerce (ECE)
+- Adobe Commerce内部部署(EE)
 
-Store Fulfillment解決方案與 *軟體相容性* 表格。
+Store Fillment解决方案与 *软件兼容性* 表格。
 
-**軟體相容性**
+**软件兼容性**
 
-| **軟體** | **最低版本** | **最大版本** |
+| **软件** | **最低版本** | **最大版本** |
 |----------------|---------------------|---------------------|
 | Adobe Commerce | 2.4.0 | 2.4.5 |
 | Composer | 1.x | 2.x |
@@ -34,38 +34,38 @@ Store Fulfillment解決方案與 *軟體相容性* 表格。
 | MySQL | 5.7 | 8.0 |
 | PHP | 7.4 | 8.1 |
 
-如需詳細需求，請參閱Adobe Commerce [系統需求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) 在 *Adobe Commerce安裝指南*.
+有关详细要求，请查看Adobe Commerce [系统要求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) 在 *Adobe Commerce安装指南*.
 
-## 商店協助應用程式需求
+## 商店协助应用程序要求
 
-管理商店取貨訂單的端對端程式，可透過安裝在行動裝置上的「商店協助」應用程式來管理。 這些裝置（由零售商或商店員工使用其個人智慧型手機所提供）必須符合下列要求：
+通过安装在移动设备上的Store Assist应用程序来管理商店提货订单的端到端流程。 这些设备（由零售商提供，或由商店员工使用其个人智能手机提供）必须符合以下要求：
 
-**最低作業系統需求**
+**最低操作系统要求**
 
 - Android 6
 - iOS 12
 
-**最低硬體需求**
+**最低硬件要求**
 
 - 1 GB RAM
-- 600 MB可用磁碟空間
+- 600 MB可用磁盘空间
 
-## 業務需求
+## 业务要求
 
-您的企業必須符合下列最低條件，才能實作「商店履行」解決方案：
+贵企业必须满足以下最低标准才能实施商店供货解决方案：
 
-- 僅限美國企業
+- 仅限美国企业
 
-- 企業對消費者(B2C)零售商、消費性包裝商品(CPG)製造商直接銷售給消費者(D2C)，或直接銷售給消費者或小型企業的經銷商
+- 企业对消费者(B2C)零售商、消费性包装品(CPG)制造商直接销售给消费者(D2C)，或者直接销售给消费者或小型企业的分销商
 
-- 至少一個實體商店或倉庫
+- 至少一个实体商店或仓库
 
-- 使用Inventory management for Adobe Commerce （亦稱為MSI）管理您的產品詳細目錄
+- 使用Inventory management for Adobe Commerce （又称MSI）管理产品库存
 
-- 整合商家庫存的能力
+- 整合商户库存的能力
 
-- 在所有支援「商店履行」解決方案的地點，都可使用Wi-Fi：網際網路速度下限3 Mbps
+- 在支持“商店履行”解决方案的所有位置都提供Wi-Fi服务：最低3 Mbps Internet速度
 
-- 商店和倉儲關係人在輪班期間可以存取iOS或Android行動裝置，無論為個人使用者或由商家提供
+- 店铺和仓库联系人可以在轮班期间访问iOS或Android移动设备，可以是个人设备，也可以由商家提供
 
-- 使用「商店履行」解決方案管理的產品必須具有包含SKU或UPC產品代碼的產品屬性
+- 使用“商店履行”解决方案管理的产品必须具有包含SKU或UPC产品代码的产品属性

@@ -1,6 +1,6 @@
 ---
-title: 命令列設定
-description: 安裝後，您可以設定 [!DNL Payment Services] 使用命令列介面(CLI)。
+title: 命令行配置
+description: 安装后，您可以配置 [!DNL Payment Services] 使用命令行界面(CLI)。
 role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
@@ -11,33 +11,33 @@ ht-degree: 0%
 
 ---
 
-# 命令列設定
+# 命令行配置
 
-安裝之後 [!DNL Payment Services]，您可從以下位置輕鬆進行設定： [在首頁內](payments-home.md) 或透過命令列介面(CLI)。
+安装之后 [!DNL Payment Services]，您可以轻松地从中配置它 [在主页内](payments-home.md) 或通过命令行界面(CLI)。
 
-## 設定資料匯出
+## 配置数据导出
 
-[!DNL Payment Services] 結合匯出的訂單資料 [!DNL Magento Open Source] 和 [!DNL Adobe Commerce] 付款提供者的彙總付款資料，以建立有用的報表。 此 [!DNL Payment Services] 擴充功能會使用索引器來有效率地收集報表的所有必要資料。
+[!DNL Payment Services] 合并从导出的订单数据 [!DNL Magento Open Source] 和 [!DNL Adobe Commerce] 使用来自支付提供商的汇总支付数据创建有用的报表。 此 [!DNL Payment Services] 扩展使用索引器高效地收集报告的所有必要数据。
 
-若要瞭解中使用的資料 [!DNL Payment Services] 報表，請參閱 [訂單付款狀態報表](order-payment-status.md#data-used-in-the-report).
+要了解中使用的数据 [!DNL Payment Services] 报表，请参阅 [订单付款状态报表](order-payment-status.md#data-used-in-the-report).
 
-### 設定cron on [!DNL Magento Open Source]
+### 配置cron on [!DNL Magento Open Source]
 
-如果您想使用 `BY SCHEDULE` 索引模式開啟 [!DNL Magento Open Source]，您必須設定cron。 另請參閱 [設定並執行cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
+如果要使用 `BY SCHEDULE` 索引模式开启 [!DNL Magento Open Source]，您必须配置cron。 参见 [配置和运行cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
 
-### 設定索引子
+### 设置索引器
 
-使用兩種索引模式之一，匯出訂單資料並保留在付款服務中 — `ON SAVE` （預設）或 `BY SCHEDULE` （建議使用）。
+使用两种索引模式之一 — `ON SAVE` （默认）或 `BY SCHEDULE` （推荐）。
 
-下列索引適用於 [!DNL Payment Services]：
+以下索引用于 [!DNL Payment Services]：
 
-| 程式碼 | 名稱 | 說明 |
+| 代码 | 名称 | 描述 |
 |    ---    |  ---  |  ---  |
-| `sales_order_data_exporter` | 銷售訂單摘要 | 建立訂單資料的索引 |
-| `sales_order_status_data_exporter` | 銷售訂單狀態摘要 | 建立銷售訂單狀態資料的索引 |
-| `store_data_exporter` | 商店摘要 | 建立存放區資料的索引 |
+| `sales_order_data_exporter` | 销售订单信息源 | 生成订单数据的索引 |
+| `sales_order_status_data_exporter` | 销售订单状态信息源 | 生成销售订单状态数据的索引 |
+| `store_data_exporter` | 商店信息源 | 生成存储数据的索引 |
 
-若要變更所有三個索引器的索引模式，請執行：
+要更改所有三个索引器的索引模式，请运行：
 
 ```bash
 bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_status_data_exporter store_data_exporter
@@ -45,46 +45,46 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 
 >[!TIP]
 >
->如果您未在命令中指定任何索引子，所有索引子都會更新為相同的值。 如果要變更特定的索引子，必須在指令中列出它。
+>如果在命令中未指定任何索引符，则所有索引符都会更新为相同的值。 如果要更改特定索引器，必须在命令中列出该索引器。
 
-若要進一步瞭解手動變更索引器的模式，請參閱 [設定索引子](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} in the developer documentation. To learn how to change it in the Admin, see [Index management](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} 在核心使用手冊中。
+要了解有关手动更改索引器模式的更多信息，请参阅 [配置索引器](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} in the developer documentation. To learn how to change it in the Admin, see [Index management](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} （在核心用户指南中）。
 
-### 手動重新索引資料
+### 手动重新索引数据
 
-您可以手動重新索引資料，而不必等待資料自動發生。 另請參閱 [重新索引](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Manage the Indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} 以取得詳細資訊。
+您可以手动重新索引数据，而不是等待数据自动生成。 参见 [重新索引](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Manage the Indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} 了解更多信息。
 
-時間 `BY SCHEDULE` 模式已設定，系統會追蹤已變更的實體，而cron作業會根據設定的排程更新這些實體的索引。 另請參閱 [從命令列執行cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) 在 [設定並執行cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html))，瞭解如何使用cron工作手動觸發索引化。
+时间 `BY SCHEDULE` 模式被设置，系统跟踪被改变的实体，并且cron作业根据设置的计划更新它们的索引。 参见 [从命令行运行cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) 在 [配置和运行cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html))，了解如何使用cron作业手动触发索引化。
 
-### 將重新索引的資料傳送至付款服務
+### 将重新索引的数据发送到支付服务
 
-資料編制索引後，會自動傳送至 [!DNL Payment Services]. 您也可以使用此命令手動觸發傳送索引資料的程式：
+为数据编制索引后，数据将自动发送到 [!DNL Payment Services]. 您还可以使用此命令手动触发发送索引数据的过程：
 
 ```bash
 bin/magento saas:resync --feed [feedName]
 ```
 
-使用下列命令選項：
+使用以下命令选项：
 
-| 命令 | 說明 |
+| 命令 | 描述 |
 |  ---  |  ---  |
-| `bin/magento saas:resync --feed [feedName]` | 執行指定摘要的重新索引，並將其傳送至對應的服務 |
-| `bin/magento saas:resync --no-reindex` | 略過索引化並從索引傳送未同步的資料 |
+| `bin/magento saas:resync --feed [feedName]` | 执行指定馈送的重新索引并将其发送到相应的服务 |
+| `bin/magento saas:resync --no-reindex` | 跳过索引并从索引发送未同步的数据 |
 
-此 `--feed` 引數可讓您指定要傳送的摘要：
+此 `--feed` 参数允许您指定要发送的信息源：
 
-| 摘要 | 說明 |
+| 信息源 | 描述 |
 |  ---  |  ---  |
-| `paymentServicesOrdersProduction` | 生產模式下的訂單摘要 |
-| `paymentServicesOrdersSandbox` | 沙箱模式下的訂單摘要 |
-| `paymentServicesOrderStatusesProduction` | 生產模式下的訂單狀態 |
-| `paymentServicesOrderStatusesSandbox` | 在沙箱模式中的訂單狀態 |
-| `paymentServicesStoresProduction` | 以生產模式儲存 |
-| `paymentServicesStoresSandbox` | 以沙箱模式儲存 |
+| `paymentServicesOrdersProduction` | 生产模式下的订单馈送 |
+| `paymentServicesOrdersSandbox` | 沙盒模式下的订单馈送 |
+| `paymentServicesOrderStatusesProduction` | 生产模式下的订单状态 |
+| `paymentServicesOrderStatusesSandbox` | 沙盒模式下的订单状态 |
+| `paymentServicesStoresProduction` | 在生产模式下存储 |
+| `paymentServicesStoresSandbox` | 在沙盒模式下存储 |
 
-報告所需的所有資料都會傳送到 [!DNL Payment Services] 如果已設定並安裝cron，則會自動進行。 您也可以手動觸發cron資料傳送至的程式 [!DNL Payment Services].
+报告所需的所有数据都会发送至 [!DNL Payment Services] 如果配置和安装了cron，则会自动进行更改。 您还可以手动触发将cron数据发送到的过程 [!DNL Payment Services].
 
 ```bash
 bin/magento cron:run --group payment_services_data_export
 ```
 
-若要進一步瞭解重新索引和索引器，請參閱 [管理索引器](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) 開發人員檔案中的主題。
+要了解有关重新索引和索引器的更多信息，请参阅 [管理索引器](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) 开发人员文档中的主题。

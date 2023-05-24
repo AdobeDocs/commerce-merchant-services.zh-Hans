@@ -1,6 +1,6 @@
 ---
-title: 新增欄位群組至XDM結構描述
-description: 瞭解如何將Adobe Commerce特定的欄位群組新增至XDM結構描述。
+title: 将字段组添加到XDM架构
+description: 了解如何将Adobe Commerce特定的字段组添加到XDM架构。
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
 source-git-commit: 90356cc593653cf4583da86bc29d69112fc948ba
 workflow-type: tm+mt
@@ -9,33 +9,33 @@ ht-degree: 0%
 
 ---
 
-# 新增欄位群組至XDM結構描述
+# 将字段组添加到XDM架构
 
-其中一項 [入門步驟](overview.md#onboarding-steps) 使用Experience Platform聯結器的方式是存取資料流工作區並 [建立資料串流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) 特定於Adobe Commerce的資訊。 建立該資料流時，您還必須選取代表您計畫擷取之資料的XDM結構描述。 本主題提供您的XDM結構描述必須包含的欄位群組，才能成功收集Adobe Commerce店面提供的資料 [事件](events.md).
+其中一项 [载入步骤](overview.md#onboarding-steps) 使用Experience Platform连接器是为了访问数据流工作区和 [创建数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) 特定于Adobe Commerce的。 在创建该数据流时，还必须选择表示您计划摄取的数据的XDM架构。 本主题向您提供XDM架构必须包括的字段组，以成功收集Adobe Commerce店面提供的数据 [事件](events.md).
 
-1. 如果您還沒有XDM結構描述， [建立](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) 一。 否則， [編輯](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#edit) Adobe Experience Platform UI中現有的XDM結構描述。
+1. 如果您还没有XDM架构， [创建](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) 一。 否则， [编辑](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#edit) 您在Adobe Experience Platform UI中现有的XDM架构。
 
-1. [新增](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) 以下特定於Commerce的欄位群組：
+1. [添加](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) 以下特定于Commerce的字段组：
 
-   - 網站搜尋
-   - 造訪網頁
-   - 使用者登入程式
-   - 參考索引鍵
-   - 個人聯絡詳細資訊
-   - 商務詳細資料
-   - Adobe Analytics ExperienceEvent Commerce (如果您想要傳送資料至Adobe Analytics)
-   - 身分對應
+   - 网站搜索
+   - 访问网页
+   - 用户登录过程
+   - 引用键
+   - 个人联系人详细信息
+   - 商业详细信息
+   - Adobe Analytics ExperienceEvent Commerce(如果要将数据发送到Adobe Analytics)
+   - 身份映射
 
    >[!NOTE]
    >
-   > 請勿將任何商務專用欄位群組設為 `Primary identity`. 如此一來，會將欄位識別為必填欄位，且Experience Platform會在每個事件中預期該欄位。 如果該欄位不存在，則資料擷取會失敗。
+   > 不要将任何特定于Commerce的字段组设置为 `Primary identity`. 这样做会将字段标识为必填字段，并且Experience Platform在每个事件中都需要该字段。 如果该字段不存在，则数据摄取将失败。
 
-   您的XDM結構描述現在包含Commerce特定的欄位群組，以便從Commerce店面收集的資料 [事件](events.md) 在XDM中呈現。
+   您的XDM架构现在包含特定于Commerce的字段组，以便从Commerce店面收集的数据 [事件](events.md) 在XDM中呈现。
 
-1. [建立資料集](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) 根據您建立或更新的schema。
+1. [创建数据集](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) 基于您创建或更新的架构。
 
-   資料集是資料集合的儲存和管理結構，通常是包含方案（欄）和欄位（列）的表格。 資料集也包含中繼資料，說明資料集所儲存資料的各個層面。
+   数据集是用于数据集合的存储和管理结构，通常是表，包含架构（列）和字段（行）。 数据集还包含描述其存储的数据的各个方面的元数据。
 
-1. [建立資料串流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) 並選取包含商務特定欄位群組和對應資料集的XDM結構描述。
+1. [创建数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) 并选择包含特定于Commerce的字段组和相应数据集的XDM架构。
 
-   資料流會將收集的資料轉送至資料集。 資料會根據選取的結構描述顯示在資料集中。
+   数据流将收集的数据转发到数据集。 数据基于所选架构在数据集中进行表示。

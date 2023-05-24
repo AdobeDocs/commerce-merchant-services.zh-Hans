@@ -1,6 +1,6 @@
 ---
-title: 商務服務聯結器
-description: 瞭解如何使用生產和沙箱API金鑰將您的Adobe Commerce或Magento Open Source執行個體整合到服務。
+title: 商务服务连接器
+description: 了解如何使用生产和沙盒API密钥将Adobe Commerce或Magento Open Source实例集成到服务。
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
@@ -11,104 +11,104 @@ ht-degree: 0%
 
 # [!DNL Commerce Services Connector]
 
-部分Adobe Commerce和Magento Open Source功能由以下提供技術支援 [!DNL Commerce Services]  並部署為SaaS （軟體即服務）。 若要使用這些服務，您必須將 [!DNL Commerce] 使用生產和沙箱API金鑰的例項，並在 [設定](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). 您只需要設定一次。
+某些Adobe Commerce和Magento Open Source功能由提供支持 [!DNL Commerce Services]  并部署为SaaS（软件即服务）。 要使用这些服务，您必须连接 [!DNL Commerce] 使用生产和沙盒API密钥的实例，并在 [配置](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). 您只需设置一次。
 
-## 可用服務 {#availableservices}
+## 可用服务 {#availableservices}
 
-以下列出 [!DNL Commerce] 您可透過存取的功能 [!DNL Commerce Services Connector]：
+下面列出了 [!DNL Commerce] 您可通过访问的功能 [!DNL Commerce Services Connector]：
 
-| 服務 | 可用性 |
+| 服务 | 可用性 |
 | ---|--- |
-| [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) 由Adobe Sensei提供 | Adobe Commerce |
-| [[!DNL Live Search]](/help/live-search/overview.md) 由Adobe Sensei提供 | Adobe Commerce |
+| [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) 由Adobe Sensei提供支持 | Adobe Commerce |
+| [[!DNL Live Search]](/help/live-search/overview.md) 由Adobe Sensei提供支持 | Adobe Commerce |
 | [[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce和Magento Open Source |
 | [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html) | Adobe Commerce和Magento Open Source |
 | [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) | Adobe Commerce |
 | [[!DNL Catalog Service]](/help/catalog-service/overview.md) | Adobe Commerce |
-| [Experience Platform聯結器](/help/experience-platform-connector/overview.md) | Adobe Commerce |
+| [Experience Platform连接器](/help/experience-platform-connector/overview.md) | Adobe Commerce |
 
-## 架構
+## 架构
 
-從高層面來看， [!DNL Commerce Services Connector] 由下列核心元素組成：
+从高层次上说， [!DNL Commerce Services Connector] 由以下核心元素组成：
 
-![Commerce Services聯結器架構](assets/saas-config-sync-workflow.png)
+![Commerce Services连接器架构](assets/saas-config-sync-workflow.png)
 
-以下各節會更詳細地討論這些元素。
+以下部分将更详细地讨论这些元素中的每一个。
 
-## 認證 {#apikey}
+## 凭据 {#apikey}
 
-生產和沙箱API金鑰產生自 [!DNL Commerce] 授權持有者的帳戶，以唯一識別碼 [!DNL Commerce] ID (MageID)。 若要通過服務的軟體權利檔案驗證，例如 [!DNL Product Recommendations] 或 [!DNL Live Search]，商家組織的授權擁有者只要帳戶處於良好狀態，即可產生API金鑰集。 這些金鑰可在「須知」基礎上與系統整合商或代表授權持有者管理專案和環境的開發團隊分享。 此外，解決方案整合經銷商也有權使用 [!DNL Commerce Services]. 如果您是解決方案整合商， [!DNL Commerce] 合作夥伴合約應該產生API金鑰。
+生产和沙盒API密钥从生成 [!DNL Commerce] 许可证持有者的帐户，由唯一的 [!DNL Commerce] ID (MageID)。 要通过服务的授权验证，请执行以下操作 [!DNL Product Recommendations] 或 [!DNL Live Search]，则商户组织的许可证持有人可以生成一组API密钥，只要帐户处于良好状态。 系统集成商或开发团队可“需要了解”地共享这些密钥，代表许可证持有者管理项目和环境。 此外，解决方案集成商还有权使用 [!DNL Commerce Services]. 如果您是解决方案集成商， [!DNL Commerce] 合作伙伴合同应生成API密钥。
 
-### 產生生產和沙箱API金鑰 {#genapikey}
+### 生成生产和沙盒API密钥 {#genapikey}
 
-1. 登入您的 [!DNL Commerce] 帳戶位置 [https://account.magento.com](https://account.magento.com/){：target=&quot;_blank&quot;}。
+1. 登录 [!DNL Commerce] 帐户位置 [https://account.magento.com](https://account.magento.com/){：target=&quot;_blank&quot;}.
 
-1. 在 **Magento** 索引標籤，選取 **api入口網站** 在側邊欄上。
+1. 在 **Magento** 选项卡，选择 **API门户** 在侧栏上。
 
-1. 從 _環境_ 功能表，選取 **生產** 或 **Sandbox**.
+1. 从 _环境_ 菜单，选择 **生产** 或 **沙盒**.
 
-1. 在中輸入名稱 _API金鑰_ 區段並按一下 **新增**.
+1. 在中输入名称 _API密钥_ 部分并单击 **新增**.
 
-   這會開啟對話方塊，供您下載新金鑰。
+   这将打开一个用于下载新密钥的对话框。
 
-   ![下載私密金鑰](assets/download-api-private-key.png)
+   ![下载私钥](assets/download-api-private-key.png)
 
    >[!WARNING]
    >
-   > 這是您必須複製或下載金鑰的唯一機會。
+   > 这是您必须复制或下载密钥的唯一机会。
 
-1. 按一下 **下載** 然後按一下 **取消**.
+1. 单击 **下载** 然后单击 **取消**.
 
-1. 對每個環境（生產和沙箱）重複上述步驟。
+1. 对每个环境（生产和沙盒）重复上述步骤。
 
-   此 **API金鑰** 區段現在會顯示您的API金鑰。 當您執行以下動作時，需要生產金鑰和沙箱金鑰 [選取或建立SaaS專案](#createsaasenv).
+   此 **API密钥** 部分现在显示您的API密钥。 在以下情况下，您需要生产密钥和沙盒密钥： [选择或创建SaaS项目](#createsaasenv).
 
-## SaaS設定 {#saasenv}
+## SaaS配置 {#saasenv}
 
-[!DNL Commerce] 執行個體必須設定一個SaaS專案和一個SaaS資料空間，以便 [!DNL Commerce Services] 可將資料傳送至正確的位置。 SaaS專案會將所有SaaS資料空間分組。 SaaS資料空間用於收集和儲存資料，以便 [!DNL Commerce Services] 才能運作。 其中部分資料可從匯出。 [!DNL Commerce] 例項和部分可從店面的購物者行為中收集。 然後，這些資料會持續儲存以保護雲端儲存空間。
+[!DNL Commerce] 必须使用SaaS项目和SaaS数据空间配置实例，以便 [!DNL Commerce Services] 可以将数据发送到正确的位置。 SaaS项目对所有SaaS数据空间进行分组。 SaaS数据空间用于收集和存储数据，以便 [!DNL Commerce Services] 去工作。 其中一些数据可能从 [!DNL Commerce] 实例和某些可以从店面的购物者行为中收集。 然后，保留该数据以保护云存储。
 
-對象 [!DNL Product Recommendations]，SaaS資料空間包含目錄和行為資料。 您可以指向 [!DNL Commerce] 執行個體到SaaS資料空間，依據 [選取它](https://docs.magento.com/user-guide/configuration/services/saas.html) 在 [!DNL Commerce] 設定。
+对象 [!DNL Product Recommendations]，SaaS数据空间包含目录和行为数据。 您可以指向 [!DNL Commerce] 实例到SaaS数据空间，创建者： [选择它](https://docs.magento.com/user-guide/configuration/services/saas.html) 在 [!DNL Commerce] 配置。
 
 >[!WARNING]
 >
-> 只在生產環境中使用您的生產SaaS資料空間 [!DNL Commerce] 安裝以避免資料衝突。 否則，您可能會用測試資料汙染生產網站資料，從而導致部署延遲。 例如，中繼資料（例如中繼URL）可能會錯誤地覆寫您的生產產品資料。
+> 仅在生产环境中使用生产SaaS数据空间 [!DNL Commerce] 安装以避免数据冲突。 否则，您可能会用测试数据污染生产站点数据，从而导致部署延迟。 例如，可能会错误地从暂存数据（如暂存URL）覆盖您的生产产品数据。
 
-### 選取或建立SaaS專案 {#createsaasenv}
+### 选择或创建SaaS项目 {#createsaasenv}
 
 >[!NOTE]
 >
-> 如果您沒有看到 **[!UICONTROL Commerce Services Connector]** 中的區段 [!DNL Commerce] 設定，您必須安裝 [!DNL Commerce] 符合您需求的模組 [[!DNL Commerce] 服務](#availableservices).
+> 如果您没有看到 **[!UICONTROL Commerce Services Connector]** 中的部分 [!DNL Commerce] 配置，您必须安装 [!DNL Commerce] 模块满足您的需求 [[!DNL Commerce] 服务](#availableservices).
 
-若要選取或建立SaaS專案，請要求 [!DNL Commerce] 來自的API金鑰 [!DNL Commerce] 您商店的授權持有人。
+要选择或创建SaaS项目，请请求 [!DNL Commerce] 来自的API密钥 [!DNL Commerce] 您商店的许可证持有者。
 
-1. 於 _管理員_ 側欄，前往 **系統** >服務> **商務服務聯結器**.
+1. 在 _管理员_ 侧栏，转到 **系统** >服务> **商务服务连接器**.
 
-1. 在 _沙箱API金鑰_ 和 _生產API金鑰_ 區段，貼上您的金鑰值。
+1. 在 _沙盒API密钥_ 和 _生产API密钥_ 部分，粘贴您的键值。
 
-   私密金鑰必須包括 `----BEGIN PRIVATE KEY---` 在索引鍵的開頭和 `----END PRIVATE KEY----` 位於私密金鑰結尾。
+   私钥必须包括 `----BEGIN PRIVATE KEY---` 键的开头和 `----END PRIVATE KEY----` 在私钥的末尾。
 
-1. 按一下 **儲存**.
+1. 单击 **保存**.
 
-任何與您的金鑰相關聯的SaaS專案都會顯示在 **專案** 中的欄位 **SaaS識別碼** 區段。
+任何与键关联的SaaS项目都会显示在 **项目** 中的字段 **SaaS标识符** 部分。
 
-1. 如果沒有SaaS專案，請按一下 **建立專案**. 然後在 **專案** 欄位中，輸入SaaS專案的名稱。
+1. 如果不存在任何SaaS项目，请单击 **创建项目**. 然后在 **项目** 字段中，输入SaaS项目的名称。
 
-   建立SaaS專案時， [!DNL Commerce] 會根據您的環境產生一或多個SaaS資料空間 [!DNL Commerce] 授權：
-   - Adobe Commerce — 一個生產資料空間；兩個測試資料空間
-   - Magento Open Source — 一個生產資料空間；無測試資料空間
+   创建SaaS项目时， [!DNL Commerce] 生成一个或多个SaaS数据空间，具体取决于您的 [!DNL Commerce] 许可证：
+   - Adobe Commerce — 一个生产数据空间；两个测试数据空间
+   - Magento Open Source — 一个生产数据空间；无测试数据空间
 
-1. 選取 **資料空間** 用於目前的設定 [!DNL Commerce] 商店。
+1. 选择 **数据空间** 用于的当前配置 [!DNL Commerce] 商店。
 
 >[!WARNING]
 >
-> 如果您在「我的帳戶」的「API入口網站」區段中產生新金鑰，請立即更新「管理員」設定中的API金鑰。 如果您在管理員中產生新金鑰但未更新金鑰，您的SaaS擴充功能將無法繼續運作，而您會遺失寶貴資料。
+> 如果您在“我的帐户”的“API门户”部分生成新密钥，请立即更新管理员配置中的API密钥。 如果您在管理员中生成新密钥且未更新它们，则SaaS扩展不再有效，并且您会丢失有价值的数据。
 
-若要變更SaaS專案或資料空間名稱，請按一下 **重新命名**.
+要更改SaaS项目或数据空间名称，请单击 **重命名**.
 
-## IMS組織（選用） {#organizationid}
+## IMS组织（可选） {#organizationid}
 
-若要將您的Adobe Commerce執行個體連結至Adobe Experience Platform，請使用您的Adobe ID登入您的Adobe帳戶。 登入後，與您的Adobe帳戶相關聯的IMS組織會顯示在此區段中。
+要将您的Adobe Commerce实例连接到Adobe Experience Platform，请使用Adobe ID登录到Adobe帐户。 登录后，与您的Adobe帐户关联的IMS组织将显示在此部分中。
 
-## 目錄同步
+## 目录同步
 
-當您的 [!DNL Commerce] 執行個體已成功連線到 [!DNL Commerce Services]時，目錄同步程式會從您的伺服器匯出產品資料， [!DNL Commerce] 伺服器至 [!DNL Commerce Services]. [瞭解更多](catalog-sync.md) 關於目錄同步程式。
+当 [!DNL Commerce] 实例已成功连接到 [!DNL Commerce Services]，目录同步过程会从您的 [!DNL Commerce] 服务器至 [!DNL Commerce Services]. [了解详情](catalog-sync.md) 关于目录同步过程。

@@ -1,6 +1,6 @@
 ---
-title: 安全性與合規性
-description: 檢閱您網站的安全性與法規遵循需求。
+title: 安全性和合规性
+description: 查看您站点的安全性和合规性要求。
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 source-git-commit: bfce1cb702d634647022a92669d704dd82fe41e6
 workflow-type: tm+mt
@@ -9,54 +9,54 @@ ht-degree: 0%
 
 ---
 
-# 安全性與合規性
+# 安全性和合规性
 
-安全性是以下各項中最重要的考量： [!DNL Payment Services] 而且您的系統不會傳送任何私人或支付卡產業(PCI)規範資訊 [!DNL Payment Services].
+安全是以下方面最值得关注的问题： [!DNL Payment Services] 而且您的系统不会传送任何私有或支付卡行业(PCI)管理信息 [!DNL Payment Services].
 
-## Commerce安全性
+## 商务安全
 
-[!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 包含對多項安全性功能的支援。
+[!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 包括对多种安全功能支持。
 
-另請參閱 [安全性](https://docs.magento.com/user-guide/stores/security.html){target="_blank"} ，檢閱安全性最佳實務，並瞭解如何管理管理員工作階段和認證、實作驗證碼及管理網站限制。
+参见 [安全性](https://docs.magento.com/user-guide/stores/security.html){target="_blank"} 查看安全最佳实践，了解如何管理管理员会话和凭据、实施验证码以及管理网站限制。
 
-## PCI法規遵循
+## PCI合规性
 
-支付卡產業(PCI)為接受透過網際網路信用卡付款的企業建立了一套要求。 除了維護安全的環境之外，處理客戶信用卡資訊的商戶也應負責符合某些標準准則。
+支付卡行业(PCI)为通过互联网接受信用卡付款的企业制定了一系列要求。 除了维护安全的环境外，处理客户信用卡信息的商户还需要满足一些标准准则。
 
-另請參閱 [PCI法規遵循指南](https://docs.magento.com/user-guide/stores/compliance-pci.html){target="_blank"} 以取得詳細資訊。
+参见 [PCI合规性准则](https://docs.magento.com/user-guide/stores/compliance-pci.html){target="_blank"} 了解更多信息。
 
-商戶可完成 [自我評估問卷(SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"}，這是評估持卡人資料安全性的自我驗證工具。
+商家可以完成 [自我评估问卷(SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"}，这是一种用于评估持卡人数据安全性的自验证工具。
 
-### 信用卡欄位
+### 信用卡字段
 
-若使用信用卡欄位，您的服務不會傳遞PCI管制的資料。 您不必儲存或維護這些資料，這大大減少了PCI法規遵循問題。
+使用信用卡字段，您的服务中不会传递PCI监管的数据。 您不必存储或维护这些数据，这大大减少了PCI法规遵从性方面的顾虑。
 
 ### 3DS
 
-PCI 3-D Secure (3DS)可讓購買者線上上購買信用卡時，透過信用卡發行商進行驗證。 此額外的安全性層級有助於防止線上詐騙，是歐盟(EU)法規的必要部分。
+PCI 3-D Secure (3DS)使购买者在在线购买信用卡时能够与其信用卡发行商进行身份验证。 此附加安全层有助于防止在线欺诈，是欧盟(EU)合规条例的必备功能。
 
-[!UICONTROL Payment Services] 提供3DS功能，讓商戶遵守歐盟法規，並保護客戶和商戶免受其商店中的詐騙活動。
+[!UICONTROL Payment Services] 提供3DS功能，使商家能够遵守欧盟法规，并保护客户和商家免受其商店中的欺诈活动。
 
-如果您是歐盟或英國境內需要3DS規範的商家，您必須手動開啟3DS (它是 `Off` 預設值)，在 [設定](settings.md#credit-card-fields).
+如果您是欧盟或英国境内需要3DS合规性的商家，则必须手动启用3DS(它可以 `Off` 默认情况下)，位于 [设置](settings.md#credit-card-fields).
 
 >[!NOTE]
 >
->3DS要求適用於企業和持卡人的銀行位於 [歐洲經濟區](https://www.efta.int/eea) (EEA)和英國。 美國商戶不需要3DS，但可視需要為其交易啟用。
+>3DS规定适用于业务及持卡人银行所在地位于中国之交易。 [欧洲经济区](https://www.efta.int/eea) (EEA)和英国。 美国商户不需要3DS，但可以根据需要为其交易启用3DS。
 
-商家/店舖人員為買方下單的訂單未設定3DS合規措施。
+商家/店员为买方下达的订单未配置3DS合规措施。
 
-另請參閱 [設定中的3DS](settings.md#3ds) 以取得詳細資訊。
+参见 [设置中的3DS](settings.md#3ds) 了解更多信息。
 
-### 卡片儲存庫
+### 信息卡保险存储
 
-當購物者 [儲存庫（或「儲存」）的信用卡資訊](vaulting.md) 若您日後在商店購買，購物者會獲得最少量的信用卡資訊（最後四位數、卡片到期日及卡片品牌）。 信用卡資訊會與付款提供者一併儲存。 當卡片到期或不再需要儲存資訊時，他們可以刪除該Token，以便付款提供者不再儲存資訊。
+当购物者 [保险库（或“保存”）的信用卡信息](vaulting.md) 对于将来在您的商店中进行的购买，与购物者共享的最少的信用卡信息（最后四位、卡到期日期和卡品牌）。 信用卡信息存储在支付提供商中。 当卡到期或不再需要保存信息时，他们可以删除该令牌，以便支付提供商不再存储信息。
 
-另請參閱 [信用卡保險存放](vaulting.md) 以取得詳細資訊。
+参见 [信用卡保险存储](vaulting.md) 了解更多信息。
 
-### PayPal智慧按鈕
+### PayPal智能按钮
 
-使用PayPal智慧型按鈕時，服務之間不會傳遞PCI管制的資料。 您不必儲存或維護這些資料，這大大減少了PCI法規遵循問題。
+使用PayPal智能按钮，您的服务中不会传递PCI管制的数据。 您不必存储或维护这些数据，这大大减少了PCI法规遵从性方面的顾虑。
 
-基於安全考量，PayPal在結帳時不會傳送帳單地址，因為國家/地區、電子郵件和名稱是唯一使用的帳單資訊。 您可以選擇啟用網站的PayPal結帳，連絡PayPal並完成審查程式，以傳回完整的帳單地址。
+为安全起见，PayPal在结账期间不会传递账单地址 — 国家/地区、电子邮件和名称是唯一使用的账单信息。 您可以选择启用网站的PayPal结账，以便联系PayPal并完成审查流程，从而返回完整的帐单地址。
 
-PayPal也整合了詐騙防護功能，使用機器學習協助您打擊詐騙行為。 請參閱PayPal的 [賣方保護檔案](https://www.paypal.com/us/webapps/mpp/security/seller-protection) 以取得詳細資訊。
+PayPal还集成了防欺诈功能，使用机器学习帮助你打击欺诈。 查看PayPal的 [卖方保护文档](https://www.paypal.com/us/webapps/mpp/security/seller-protection) 了解更多信息。

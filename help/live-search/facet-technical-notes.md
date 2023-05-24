@@ -1,6 +1,6 @@
 ---
-title: 「Facet技術說明」
-description: 「關於使用的技術說明 [!DNL Live Search] 多面向。」
+title: "Facet技术说明"
+description: “有关使用的技术说明 [!DNL Live Search] 多方面。”
 exl-id: 37982610-0ff7-48b7-b088-be7d2eff8a57
 source-git-commit: 995f528abc0011c6ae7c4c524982c301072ec2eb
 workflow-type: tm+mt
@@ -9,16 +9,16 @@ ht-degree: 0%
 
 ---
 
-# Facet技術備註
+# Facet技术说明
 
-多面向是一種高效能篩選方法，使用可搜尋靜態和動態屬性值的多個維度作為搜尋條件。
+分面是一种高性能筛选方法，使用多个可搜索的静态和动态属性值维度作为搜索标准。
 
-[!DNL Live Search] 使用 `productSearch` 查詢會傳回刻面及其他特定資料 [!DNL Live Search]. 請參閱 [`productSearch` 查詢](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) 以取得程式碼範例。
+[!DNL Live Search] 使用 `productSearch` 返回面向和特定于的其他数据的查询 [!DNL Live Search]. 请参阅 [`productSearch` 查询](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) 以了解代码示例。
 
-## Facet彙總
+## Facet聚合
 
-多面向彙總的執行方式如下：如果店面有三方面（類別、顏色和價格），且購物者對所有三方面(顏色=藍色，價格為$10.00-50.00，類別= `promotions`)。
+分面聚合按如下方式执行：如果店面具有三个分面（类别、颜色和价格），并且购物者对所有三个分面都进行过滤(颜色=蓝色，价格为$10.00-50.00，类别= `promotions`)。
 
-* `categories` 彙總 — 彙總 `categories`，然後套用 `color` 和 `price` 篩選條件，但不適用於 `categories` 篩選。
-* `color` 彙總 — 彙總 `color`，然後套用`price` 和 `categories` 篩選條件，但不適用於 `color` 篩選。
-* `price` 彙總 — 彙總 `price`，然後套用 `color` 和 `categories` 篩選條件，但不適用於 `price` 篩選。
+* `categories` 聚合 — 聚合 `categories`，然后应用 `color` 和 `price` 过滤器，但不匹配 `categories` 筛选条件。
+* `color` 聚合 — 聚合 `color`，然后应用`price` 和 `categories` 过滤器，但不匹配 `color` 筛选条件。
+* `price` 聚合 — 聚合 `price`，然后应用 `color` 和 `categories` 过滤器，但不匹配 `price` 筛选条件。

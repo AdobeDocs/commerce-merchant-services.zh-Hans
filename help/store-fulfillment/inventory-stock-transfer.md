@@ -1,6 +1,6 @@
 ---
-title: Inventory management來源轉移
-description: 「設定庫存 [!DNL Store Fulfillment solution] Adobe Commerce Inventory management。 設定新的存貨，並將存貨移出預設存貨，以便您可以將其指定給設定為啟用「商店履行」解決方案所需的「商店提貨」功能的來源。」
+title: Inventory management源传输
+description: “配置库存，用于 [!DNL Store Fulfillment solution] Adobe Commerce Inventory management。 设置新库存并从默认库存中转移库存，以便您可以将其分配给为启用“商店提货”功能而配置的来源，该功能是“商店履行”解决方案所必需的。”
 role: User, Admin
 level: Intermediate
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
@@ -12,39 +12,39 @@ ht-degree: 0%
 ---
 
 
-# Inventory management來源轉移
+# Inventory management源传输
 
-此 [!DNL Store Fulfillment] 解決方案使用原生Adobe Commerce Inventory management。 根據預設， [!DNL Commerce] 「設定」會將所有網頁庫存指派給預設存貨，此預設庫存不能有其他指派的來源。 由於網站只能指定單一存貨，商家必須設定新存貨，並選擇性地將其預設來源存貨移轉至指定至適當範圍的來源。 然後，可將來源指派給新庫存。
-
->[!IMPORTANT]
->
->商家必須維護群組及套件產品型別中包含之所有產品的預設來源。 這些產品需要存貨數量符合庫存料號的最低數量臨界值，並包含存貨狀態 [!UICONTROL In Stock].
-
-這些設定變更可協助您完成下列三件事：
-
-1. [將存貨移轉至來源](https://docs.magento.com/user-guide/catalog/inventory-bulk-transfer-inventory.html) 將存貨從預設存貨/來源移至新存貨/來源。
-
-1. [大量指派來源](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) 以新增所有產品的新來源。
-
-1. [完成產品屬性的大量更新](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) 新增 `Allow Store Pickup` 和 `Allow Home Delivery` 屬性至現有產品。 安裝解決方案時，屬性具有最佳化 *預設* 值。 不過，在您完成大量更新程式之前，這些屬性不會套用至現有產品。
-
-庫存會從選取的來源（零售商店地點或電子商務倉儲）中扣除。 用作電子商務倉儲的來源必須指派給與商店取貨地點相同的存貨，並在零售地點之前排定優先順序。 如需詳細資訊，請參閱 [排定庫存來源的優先順序](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html).
-
-如需管理存貨、庫存和來源的詳細資訊，請參閱Adobe Commerce使用者檔案：
-
-- [管理詳細目錄](https://docs.magento.com/user-guide/catalog/inventory-management.html)
-
-- [管理存貨數量](https://docs.magento.com/user-guide/catalog/inventory-manage-inventory-quantities.html)
-
-- [管理庫存](https://docs.magento.com/user-guide/catalog/inventory-stock.html)
-
-- [管理來源](https://docs.magento.com/user-guide/catalog/inventory-sources.html)
-
-- [排定庫存來源的優先順序](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html)
-
-- [產品屬性的大量更新](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html)
-
+此 [!DNL Store Fulfillment] 解决方案使用本机Adobe Commerce Inventory management。 默认情况下， [!DNL Commerce] 配置将所有Web库存分配给默认库存，该库存不能分配其他来源。 由于网站只能分配单个库存，因此商家必须配置新库存，并可以选择将其默认来源库存转移到分配给相应范围的来源。 然后，可以将源分配给新库存。
 
 >[!IMPORTANT]
 >
->變更庫存和庫存來源的設定也會對整合系統產生下游影響。 確保您瞭解庫存設定的變更如何影響這些系統。
+>商家必须维护组和捆绑销售产品类型中包含的所有产品的默认来源。 这些产品需要库存数量满足库存物料的最小数量阈值，并且库存状态为 [!UICONTROL In Stock].
+
+这些配置更改可帮助您完成以下三件事：
+
+1. [将库存转移到来源](https://docs.magento.com/user-guide/catalog/inventory-bulk-transfer-inventory.html) 将库存从默认库存/来源移至新库存/来源。
+
+1. [批量分配源](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) 为所有产品添加新源。
+
+1. [完成产品属性的批量更新](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) 以添加 `Allow Store Pickup` 和 `Allow Home Delivery` 属性到现有产品。 安装解决方案后，属性具有最佳值 *默认* 值。 但是，在完成批量更新过程之前，这些属性不会应用于现有产品。
+
+库存从所选源（零售商店库位或电子商务仓库）中扣除。 用作电子商务仓库的来源必须分配给与商店取货地点相同的库存，并在零售地点之前排定优先级。 有关其他信息，请参阅 [设置库存来源的优先级](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html).
+
+有关管理库存、库存和来源的详细信息，请参阅Adobe Commerce用户文档：
+
+- [管理库存](https://docs.magento.com/user-guide/catalog/inventory-management.html)
+
+- [管理库存数量](https://docs.magento.com/user-guide/catalog/inventory-manage-inventory-quantities.html)
+
+- [管理库存](https://docs.magento.com/user-guide/catalog/inventory-stock.html)
+
+- [管理源](https://docs.magento.com/user-guide/catalog/inventory-sources.html)
+
+- [设置库存来源的优先级](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html)
+
+- [产品属性的批量更新](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html)
+
+
+>[!IMPORTANT]
+>
+>更改库存和库存源的配置也会对集成系统产生下游影响。 确保您了解对库存配置的更改如何影响这些系统。

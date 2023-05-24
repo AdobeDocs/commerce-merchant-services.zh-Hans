@@ -1,6 +1,6 @@
 ---
-title: 商店履行的組態概述
-description: 瞭解可用於自訂Store Fulfillment解決方案所提供的延伸履行功能的Admin設定設定型別，以及完成設定的相關說明連結。
+title: 商店履行的配置概述
+description: 了解可用于自定义“商店履行”解决方案提供的扩展履行功能的管理员配置设置类型，以及指向完成配置说明的链接。
 role: User, Admin
 level: Intermediate
 exl-id: c432791a-94a0-457d-9ed9-8937846ce4f4
@@ -11,38 +11,38 @@ ht-degree: 0%
 
 ---
 
-# Store Fulfillment的設定概述
+# 商店履行的配置概述
 
-在「Adobe Commerce管理員」中，Walmart Commerce Technologies的「商店履行服務」組態設定會依型別分類。
+在“Adobe Commerce管理”中，Walmart Commerce Technologies的“商店履行服务”的配置设置按类型进行分类。
 
-**依型別儲存履行組態設定**
+**按类型存储履行配置设置**
 
-| **型別** | **說明** | **API可設定** |
+| **类型** | **描述** | **API可配置** |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
-| [一般設定](enable-general.md) | 為Store Fulfillment解決方案、其有效功能及連線至履行服務的憑證設定的一般整合。 | 否 |
-| [銷售電子郵件設定](sales-emails.md) | 為簽到程式中傳送的客戶通知設定其他電子郵件範本。 | 否 |
-| [商家商店設定](merchant-store-configuration.md) | 將增強的Inventory management來源設定為商家商店。 | 是 |
-| [產品庫存管理](product-stock.md) | 設定可供客戶使用的商家股票訊息和功能。 | 是 |
-| [Inventory management來源轉移](inventory-stock-transfer.md) | 設定新存貨，將存貨移出預設存貨。 | 是 |
-| [多個網站/範圍設定](multi-site-and-scope-config.md) | 為多個網站/商店範圍設定庫存和傳送方法。 | 否 |
-| [背景處理序系統組態](background-processes.md) | 設定與履行服務同步資料所使用的背景處理排程。 | 否 |
-| [存放區位置和對應設定](store-location-map-provider-setup.md) | 設定使用距離提供者來搜尋零售商店並在SLS地圖中顯示此資訊的功能 | 是 |
-| [簽入體驗設定](check-in-experience-setup.md) | 設定入庫程式期間可用的車輛顏色和車輛製造選項 | 是 |
-| [使用者設定](user-setup.md) | 管理使用Store Assist應用程式之商店關聯的使用者帳戶、角色和許可權。 範圍。 | 是 |
-| [應用程式設定](app-setup.md) | 檢閱完成上線流程所需的Store Assist應用程式的可用設定。 無法從Adobe Commerce管理員設定這些設定。 | 是 |
+| [常规配置](enable-general.md) | 为Store Fulfillment解决方案设置的常规集成、其活动功能以及用于连接履行服务的凭据。 | 否 |
+| [销售电子邮件配置](sales-emails.md) | 为签入过程中发送的客户通知设置其他电子邮件模板。 | 否 |
+| [商户存储配置](merchant-store-configuration.md) | 将增强的Inventory management源设置为商户商店。 | 是 |
+| [产品库存管理](product-stock.md) | 配置可供客户使用的商户股票消息传递和功能。 | 是 |
+| [Inventory management源传输](inventory-stock-transfer.md) | 设置新库存，将库存转移出默认库存。 | 是 |
+| [多个网站/作用域配置](multi-site-and-scope-config.md) | 为多个网站/商店范围配置库存和投放方法。 | 否 |
+| [后台进程系统配置](background-processes.md) | 配置用于与履行服务同步数据的后台进程的计划。 | 否 |
+| [存储位置和映射设置](store-location-map-provider-setup.md) | 配置使用距离提供商搜索零售商店并在SLS地图中显示此信息的功能 | 是 |
+| [签入体验设置](check-in-experience-setup.md) | 配置在检入过程中可用的汽车颜色和汽车制造选项 | 是 |
+| [用户设置](user-setup.md) | 管理使用Store Assist应用程序的商店关联的用户帐户、角色和权限。 范围。 | 是 |
+| [应用程序设置](app-setup.md) | 查看完成载入流程所需的Store Assist应用程序的可用配置。 无法从Adobe Commerce管理员配置这些设置。 | 是 |
 
-## 使用設定參考
+## 使用配置引用
 
-選取中的型別名稱，檢視每個設定型別的組態參照 _依型別儲存履行組態設定_ 表格。
+通过在中选择类型名称，查看每个设置类型的配置引用 _按类型存储履行配置设置_ 表格。
 
-在每種型別的組態參考中，組態詳細資訊會顯示在含有下列欄標題的表格中：
+在每种类型的配置引用中，配置详细信息会显示在具有以下列标题的表中：
 
-- **欄位** 指要設定的欄位名稱
+- **字段** 是指要配置的字段的名称
 
-- **說明** 提供有關欄位用途和行為的重要細節
+- **描述** 提供了有关字段用途和行为的重要详细信息
 
-- **範圍** 表示設定的Adobe Commerce設定範圍（全域、網站、商店）
+- **范围** 指示设置的Adobe Commerce配置范围（全局、网站、商店）
 
-- **必填** 值會指出欄位上是否必須設定值
+- **必需** 值指示是否必须在字段上设置值
 
-如需技術參考，您還可以找到每個欄位的內部設定路徑。
+如需技术参考，您还可以找到每个字段的内部配置路径。

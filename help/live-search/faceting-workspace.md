@@ -1,6 +1,6 @@
 ---
-title: 「多面向工作區」
-description: 「瞭解您的運作方式 [!DNL Live Search] 多面向工作區。」
+title: “彩块化工作区”
+description: “了解您如何应对 [!DNL Live Search] 面向工作区。”
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
 source-git-commit: e166c8cb9d715dce573195a188b5335c02d8fd0c
 workflow-type: tm+mt
@@ -9,41 +9,41 @@ ht-degree: 0%
 
 ---
 
-# 多面向工作區
+# 彩块化工作区
 
-此 [!DNL Live Search] 工作區會列出目前可用的所有Facet，並可讓您存取設定和管理Facet所需的工具。 釘選的多面會先出現在現有Facet清單中，然後是動態Facet。 您可以篩選清單以顯示所有多面，或僅顯示釘選或動態多面。
+此 [!DNL Live Search] 工作区列出了当前可用的所有Facet，并允许访问设置和管理Facet所需的工具。 固定的Facet首先出现在现有Facet列表中，然后是动态Facet。 可以对列表进行过滤，以显示所有方面，或仅显示固定或动态方面。
 
-![多面向工作區](assets/faceting-workspace.png)
+![彩块化工作区](assets/faceting-workspace.png)
 
-## 設定範圍
+## 设置范围
 
-如果您的Adobe Commerce安裝包含多個商店檢視，請設定 **範圍** 至 [存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 適用於您的Facet設定。
+如果您的Adobe Commerce安装包含多个商店视图，请设置 **范围** 到 [商店视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 应用Facet设置的位置。
 
-## 篩選清單
+## 筛选列表
 
-1. 按一下 **篩選依據** 控制。
-1. 選擇下列其中一個選項：
+1. 单击 **筛选条件** 控制。
+1. 选择以下选项之一：
 
-   * 所有篩選器
-   * 已釘選
-   * 動態
+   * 所有筛选器
+   * 已固定
+   * 动态
 
-## 新增面向
+## 添加方面
 
-1. 按一下 **新增facet**.
-1. 另請參閱 [新增Facet](facets-add.md) 以取得詳細指示。
+1. 单击 **添加Facet**.
+1. 参见 [添加Facet](facets-add.md) 以获取详细说明。
 
-## 欄說明
+## 列描述
 
-| 欄 | 說明 |
+| 列 | 描述 |
 |--- |--- |
-| （第一欄） | 依據以下專案列出釘選和動態Facet [標籤](facets-type.md) 購物者看得見的內容。 |
-| 排序型別 | 此 [排序順序](facets-type.md) Facet值。 Facet會依字母順序排序所有 [!DNL Commerce] 店面。 對象 [headless] 實作，Facet可依字母順序或計數排序。 選項：字母順序、計數（僅限Headless） |
-| 最大值 | 店面中可作為篩選器使用的面向值數量，最多為10個。 |
+| （第一列） | 按列示固定和动态Facet [标签](facets-type.md) 对购物者可见。 |
+| 排序类型 | 此 [排序顺序](facets-type.md) Facet值。 所有方面均按字母顺序排序 [!DNL Commerce] 店面。 对象 [headless] 实施，Facet可以按字母顺序或计数排序。 选项：按字母顺序、计数（仅限Headless） |
+| 最大值 | 店面中作为过滤器可用的方面值数量，最多为10个。 |
 
-## 控制項
+## 控件
 
-| 控制 | 說明 |
+| 控制 | 描述 |
 |--- |--- |
-| 新增facet | 開啟 [Facet編輯器](facets-add.md). |
-| 篩選依據 | 決定 [Facet型別](facets-type.md) 即會顯示在清單中。 選項：全部、釘選、動態 |
+| 添加Facet | 打开 [Facet编辑器](facets-add.md). |
+| 筛选条件 | 确定 [Facet类型](facets-type.md) 列表中所显示的属性。 选项：全部、固定、动态 |

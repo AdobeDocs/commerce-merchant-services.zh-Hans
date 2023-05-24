@@ -1,6 +1,6 @@
 ---
-title: 「結帳頁面」
-description: 「Adobe Commerce中結帳頁面的概觀。」
+title: “结帐页面”
+description: “Adobe Commerce中的‘结帐’页面概述。”
 exl-id: afe3a93d-8aba-428e-ac9d-0be8d23ceb47
 source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
@@ -9,23 +9,23 @@ ht-degree: 0%
 
 ---
 
-# Adobe Commerce中的結帳頁面
+# Adobe Commerce中的“结帐”页面
 
-客戶可在結帳頁面輸入下單所需的資訊。
+客户可在结帐页面中输入下达订单所需的信息。
 
-結帳頁面的範例：
+结账页面的示例：
 
-![結帳頁面](assets/checkout-page.png)
+![结帐页面](assets/checkout-page.png)
 
-如需Adobe Commerce標準結帳頁面的詳細資訊，請參閱 [結帳頁面](https://docs.magento.com/user-guide/quick-tour/checkout-page.html) 主題。
+有关Adobe Commerce标准结帐页面的更多信息，请参阅 [结帐页面](https://docs.magento.com/user-guide/quick-tour/checkout-page.html) 主题。
 
-現成可用的結帳程式包含兩個步驟：
+开箱即用的结帐过程包括两个步骤：
 
-- 送貨資訊
-- 複查與付款資訊
+- 送货信息
+- 复查和付款信息
 
 >[!NOTE]
 >
-> 完成第一個步驟後，「結帳」會顯示結帳總計和對應的側邊欄資訊。
+> 第一步完成后， checkout将显示结帐总数和相应的侧栏信息。
 
-請參閱 [結帳流程](../quick-checkout/checkout-flow.md) 主題以取得更多關於 [!DNL Quick Checkout] 流量。
+请参阅 [结账流程](../quick-checkout/checkout-flow.md) 主题以了解有关 [!DNL Quick Checkout] 流量。

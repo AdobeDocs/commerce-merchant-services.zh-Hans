@@ -1,9 +1,9 @@
 ---
-title: 服務檔案
-description: 瀏覽Adobe Commerce產品檔案的服務
+title: 服务文档
+description: Browse Services for Adobe Commerce产品文档
 seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
-breadcrumb-title: 檔案
+breadcrumb-title: 文档
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 source-git-commit: 63f6b5f33e3a8457420703d292d1eb341949af04
 workflow-type: tm+mt
@@ -14,21 +14,21 @@ ht-degree: 0%
 
 # Adobe Commerce Services指南
 
-Adobe提供Commerce、整合和資料服務的集合，以協助商家支援其業務的重要元件。
+Adobe提供了Commerce、集成和数据服务的集合，以帮助商家支持其业务的关键组件。
 
->[!BEGINSHADEBOX 「版本資訊」]
+>[!BEGINSHADEBOX &quot;发行信息&quot;]
 
-另請參閱 [說明檔案新增功能](whats-new.md) 或 [發行說明](release-notes-all.md) 每個Commerce服務。
+参见 [我们文档的新增功能](whats-new.md) 或 [发行说明](release-notes-all.md) 每个Commerce服务。
 >[!ENDSHADEBOX]
 
-## Commerce服務
+## Commerce服务
 
 <table>
 <tr>
   <td valign="top" width="200">
       <img alt="[!DNL Live Search]" src="assets/live-search.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html"><strong>[!DNL Live Search]</strong></a>  
-    <div>實施此AI支援的搜尋工具，為B2C購物者提供更聰明、更快速且相關的結果。</div>
+    <div>实施此AI支持的搜索工具，为B2C购物者提供更智能、更快速且相关的结果。</div>
   </td>
    </tr>
 <tr>
@@ -36,61 +36,61 @@ Adobe提供Commerce、整合和資料服務的集合，以協助商家支援其�
        <img alt="[!UICONTROL Product Recommendations]" src="assets/product-recs.png" width="170px"/></td>
    <td valign="top">
    <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/overview.html"><strong>[!DNL Product Recommendations]</strong></a>
-    <div>根據購物者行為、熱門趨勢、產品相似性等新增以AI為根據的建議。</div>
+    <div>根据购物者行为、流行趋势、产品相似性等添加由AI提供支持的推荐。</div>
   </td>
    </tr>
 <tr>
     <td valign="top" width="200px">
-       <img alt="目錄服務" src="assets/catalog-service.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html"> <strong>目錄服務</strong></a> <br>
-    <div>為客戶提供最佳化的產品體驗，同時提升效能、改善擴充能力及提高轉換率。</div>
+       <img alt="目录服务" src="assets/catalog-service.png" width="170px"></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html"> <strong>目录服务</strong></a> <br>
+    <div>为您的客户提供优化的产品体验，同时提高性能、增强可扩展性和提高转化率。</div>
   </td>
    </tr>
 <tr>
   <td valign="top" width="200px">
-    <img alt="付款服務" src="assets/payment-services.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html"><strong>付款服務</strong></a>  <br><em>(可供Magento Open Source)</em>
-    <div>提供多種付款方式，包括免息分期付款，以及付款處理、訂單和發票的單一檢視，輕鬆提升客戶滿意度。</div>
+    <img alt="支付服务" src="assets/payment-services.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html"><strong>支付服务</strong></a>  <br><em>(可供Magento Open Source)</em>
+    <div>通过轻松提供各种支付方式（包括免息分期付款）和单一付款处理、订单和发票视图，提高客户满意度。</div>
   </td>
     </tr>
 <tr>
   <td valign="top" width="200px">
-    <img alt="快速簽出" src="assets/quick-checkout.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html"><strong>快速簽出</strong></a>  <br><em>(可供Magento Open Source)</em>
-    <div>透過提供快速且直覺的購物體驗，將一次性購物者轉換為忠誠的帳戶持有者。</div>
+    <img alt="快速签出" src="assets/quick-checkout.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html"><strong>快速签出</strong></a>  <br><em>(可供Magento Open Source)</em>
+    <div>通过提供快速、直观的购物体验，将一次性购物者转化为忠诚的帐户持有者。</div>
   </td>
     </tr>
 <tr>
     <td valign="top" width="200px">
        <img alt="商店履行" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>商店履行</strong></a></br>
-    <div>提供優異的線上購買、到店取貨(BOPIS)客戶體驗，並透過行動裝置提供完整的履行工作流程，讓員工發揮最大生產力。</div>
+    <div>提供通过移动设备实现的全面履行工作流程，提供卓越的在线购买体验、店内提货(BOPIS)客户体验和最大化的员工工作效率。</div>
   </td>
    </tr>
 <tr>
     <td valign="top" width="200px">
        <img alt="AmazonSales Channel" src="assets/amazon-channel.png" width="170px"></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html"> <strong>Amazon sales channel</strong></a> <br><em>(可供Magento Open Source)</em>
-    <div>與全球最大的全球線上購物目的地整合，以透過單一儀表板啟用Amazon銷售、提供資料自動化和同步化、管理Amazon清單等等。</div>
+    <div>与世界上最大的全球在线购物目的地集成，以实现Amazon销售、提供数据自动化和同步、管理Amazon列表等，这一切都通过一个仪表板来实现。</div>
   </td>
    </tr>
 <tr>
     <td valign="top">
        <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"> <strong>頻道管理員</strong></a> <br><em>(可供Magento Open Source)</em>
-    <div>與沃爾瑪市集整合，增加銷售量、吸引新客戶、簡化營運並節省時間。 讓員工能夠順暢地管理沃爾瑪市集銷售、庫存和定價 — 所有這一切都在Commerce中進行。</div>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"> <strong>渠道管理器</strong></a> <br><em>(可供Magento Open Source)</em>
+    <div>通过与沃尔玛市场集成，提高销售额、吸引新客户、简化运营并节省时间。 使员工能够无缝地管理沃尔玛商城的销售、库存和定价 — 所有这些都在商务部门。</div>
   </td>
    </tr>
 </table>
 
-## 資料服務
+## 数据服务
 
 <table>
 <tr>
   <td valign="top" width="200">
       <img alt="[!DNL Experience Platform Connector]" src="assets/live-search.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html"><strong>[!DNL Experience Platform Connector]</strong></a>  
-    <div>運用Adobe Commerce與Adobe Experience Platform Edge之間的連線，將Commerce資料用於其他Adobe Experience Cloud產品，例如Adobe Analytics和Adobe Target。</div>
+    <div>利用Adobe Commerce和Adobe Experience Platform Edge之间的连接，将Commerce数据用于其他Adobe Experience Cloud产品，例如Adobe Analytics和Adobe Target。</div>
   </td>
    </tr>
 <tr>
@@ -98,19 +98,19 @@ Adobe提供Commerce、整合和資料服務的集合，以協助商家支援其�
        <img alt="[!UICONTROL Services Connector]" src="assets/product-recs.png" width="170px"/></td>
    <td valign="top">
    <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html"><strong>[!DNL Services Connector]</strong></a>
-    <div>Commerce Services Connector使用API金鑰和私密金鑰為您的Adobe Commerce或Magento Open Source執行個體提供整合。 若為資料服務(僅限Adobe Commerce)，您也可以在設定中指定資料空間。</div>
+    <div>Commerce Services Connector使用API密钥和私钥为您的Adobe Commerce或Magento Open Source实例提供集成。 对于数据服务(仅限Adobe Commerce)，您还可以指定配置中的数据空间。</div>
   </td>
    </tr>
 </table>
 
-## Integration services
+## 集成服务
 
 <table>
 <tr>
    <td valign="top" width="200">
       <img alt="[!DNL Catalog Sync]" src="assets/live-search.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html"><strong>[!DNL Catalog Sync]</strong></a>  
-    <div>目錄同步會從Commerce伺服器將產品資料匯出至Commerce服務，以保持服務在最新狀態。 由產品價格或存貨層次變更等事件觸發的索引器，會編譯目錄資料。 您可以透過*Catalog Sync*儀表板或命令列介面來觀察和管理此程式。</div>
+    <div>目录同步会将产品数据从Commerce服务器导出到Commerce Services on ，以使服务保持最新。 由产品价格或库存水平更改等事件触发的索引器编译目录数据。 您可以通过*Catalog Sync*仪表板或命令行界面观察和管理此过程。</div>
   </td>
 </tr>
 </table>

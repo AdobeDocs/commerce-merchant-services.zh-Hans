@@ -1,6 +1,6 @@
 ---
-title: 建立新建議
-description: 瞭解如何建立產品推薦單位。
+title: 创建新推荐
+description: 了解如何创建产品推荐单位。
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
 source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
@@ -9,100 +9,100 @@ ht-degree: 0%
 
 ---
 
-# 建立新建議
+# 创建新推荐
 
-建立建議時，您會建立 _推薦單位_ 包含建議產品 _個專案_.
+在创建推荐时，您需要 _推荐单位_ 包含推荐的产品 _个项目_.
 
-![推薦單位](assets/unit.png)
-_推薦單位_
+![推荐单位](assets/unit.png)
+_推荐单位_
 
-當您啟用建議單位時，Adobe Commerce會開始 [收集資料](workspace.md) 以測量曝光數、檢視數、點按數等。 此 [!DNL Product Recommendations] 表格會顯示每個建議單位的量度，以協助您做出明智的業務決策。
+激活推荐单元后，Adobe Commerce将开始 [收集数据](workspace.md) 用于测量展示次数、查看次数、点击次数等。 此 [!DNL Product Recommendations] 此表显示每个推荐单位的量度，以帮助您做出明智的业务决策。
 
-1. 於 _管理員_ 側欄，前往 **行銷** > _促銷活動_ > **產品Recommendations** 以顯示 _產品Recommendations_ 工作區。
+1. 在 _管理员_ 侧栏，转到 **营销** > _促销活动_ > **产品Recommendations** 以显示 _产品Recommendations_ 工作区。
 
-1. 指定 [存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 您希望建議顯示的位置。
+1. 指定 [商店视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 您希望推荐显示的位置。
 
    >[!NOTE]
    >
-   > 頁面產生器建議單位必須在預設商店檢視中建立，然後才可以在任何地方使用。 若要進一步瞭解如何使用頁面產生器建立產品推薦，請參閱 [新增內容 — 產品Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
+   > 必须在默认商店视图中创建Page Builder推荐单位，然后才可以在任何位置使用。 要了解有关使用页面生成器创建产品推荐的更多信息，请参阅 [添加内容 — 产品Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
 
-1. 按一下 **建立建議**.
+1. 单击 **创建推荐**.
 
-1. 在 _為您的建議命名_ 區段，輸入內部參考的描述性名稱，例如 `Home page most popular`.
+1. 在 _为您的推荐命名_ 部分，输入描述性名称以供内部参考，例如 `Home page most popular`.
 
-1. 在 _選取頁面型別_ 區段中，從下列選項中選取您要顯示建議的頁面：
+1. 在 _选择页面类型_ 部分，从以下选项中选择要在其中显示推荐的页面：
 
-   - 首頁
-   - 類別
-   - 產品詳細資料
-   - 購物車
-   - 確認
-   - [頁面產生器](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
+   - 主页
+   - 类别
+   - 产品详细信息
+   - 购物车
+   - 确认
+   - [页面生成器](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
 
-   您可以為每個頁面型別建立最多5個作用中的建議單位，並為頁面產生器建立最多25個作用中的建議單位。 當達到限制時，頁面型別會變成灰色。
+   您最多可以为每种页面类型创建5个有效的推荐单位，并为页面生成器创建25个有效的推荐单位。 当达到限制时，页面类型将灰显。
 
-   ![建議名稱和頁面](assets/create-recommendation.png)
-   _建議名稱和頁面位置_
+   ![推荐名称和页面](assets/create-recommendation.png)
+   _推荐名称和页面位置_
 
-1. 在 _選取建議型別_ 區段，指定 [建議型別](type.md) 您想要顯示在選取的頁面上。 對於某些頁面， [刊登](placement.md) 個建議受限於特定型別。
+1. 在 _选择推荐类型_ 部分，指定 [推荐类型](type.md) 您希望显示在所选页面上。 对于某些页面， [投放](placement.md) 个建议中的个建议仅限用于某些类型。
 
-   有些建議型別會使用購物者的行為資料來 [訓練機器學習模型](behavioral-data.md) 以建立個人化建議。 為了協助您視覺化每個建議型別的培訓進度，本節會顯示每個型別的整備程度。 這些整備程度指標是根據兩個因素計算：
+   某些推荐类型使用购物者的行为数据来 [训练机器学习模型](behavioral-data.md) 以构建个性化推荐。 为了帮助您可视化每种推荐类型的培训进度，此部分显示每种类型的准备程度度量。 这些就绪性指标是根据以下两个因素计算的：
 
-   - 足夠的結果集大小：在大多數案例中傳回的結果是否足夠以避免使用 [備用建議](behavioral-data.md#backuprecs)？
+   - 足够的结果集大小：在大多数情况下返回的结果是否足够以避免使用 [备用建议](behavioral-data.md#backuprecs)？
 
-   - 足夠的結果集變化：返回的產品是否代表目錄中的各種產品？ 此因素的目標是避免少數產品成為整個網站唯一建議的專案。
+   - 结果集种类充足：返回的产品是否代表目录中的各种产品？ 此因素的目标是避免少数产品成为网站上唯一推荐的项目。
 
-   系統會根據上述因素計算並顯示整備程度值。 當建議型別的整備程度值為75%或以上時，即視為已準備好部署。 建議型別的整備程度至少為50%時，即視為已部分就緒。 最後，當建議型別的整備程度值小於50%時，即視為未準備好部署。
+   根据上述因素，计算并显示就绪值。 当推荐类型的就绪值达到或高于75%时，会将该推荐类型视为准备部署。 当推荐类型的准备程度至少为50%时，即被视为部分准备就绪。 最后，推荐类型在其就绪值小于50%时被视为未做好部署准备。
 
-   ![建議型別](assets/create-recommendation-select-type.png)
-   _建議型別_
+   ![推荐类型](assets/create-recommendation-select-type.png)
+   _推荐类型_
 
-1. 在 _店面顯示標籤_ 區段，輸入 [標籤](placement.md#recommendation-labels) 您的購物者看得見該頁面，例如「最暢銷商品」。
+1. 在 _店面显示标签_ 部分，输入 [标签](placement.md#recommendation-labels) 对您的购物者可见，例如“最畅销商品”。
 
-1. 在 _選擇產品數量_ 區段，使用滑桿來指定您想在建議單位中顯示多少產品。
+1. 在 _选择产品数量_ 部分，使用滑块指定要在推荐单元中显示的产品数量。
 
-   預設值為 `5`，最多為 `20`.
+   默认为 `5`，最大值为 `20`.
 
-1. 在 _選取位置_ 區段，指定建議單位在頁面上的顯示位置。
+1. 在 _选择投放位置_ 部分，指定推荐单位在页面上的显示位置。
 
-   - 主要內容底部
-   - 在主要內容的頂端
+   - 在主内容的底部
+   - 在主内容的顶部
 
-1. （可選）若要變更建議的順序，請選取並移動 _選擇位置_ 表格。
+1. （可选）要更改推荐的顺序，请选择并移动 _选择位置_ 表格。
 
-   此 _選擇位置_ 區段會顯示為您選取的頁面型別建立的所有建議（如果有的話）。
+   此 _选择位置_ 部分显示为所选页面类型创建的所有推荐（如果有）。
 
-   ![建議順序](assets/create-recommendation-select-placement.png)
-   _頁面上的建議順序_
+   ![推荐顺序](assets/create-recommendation-select-placement.png)
+   _页面上的推荐顺序_
 
-1. （選用）在 _篩選器_ 區段， [套用篩選器](filters.md) 控制哪些產品會出現在建議單位中。
+1. （可选）在 _筛选器_ 部分， [应用筛选器](filters.md) 控制推荐单元中显示的产品。
 
-   ![建議篩選器](assets/create-recommendation-filter-products.png)
-   _建議產品篩選器_
+   ![推荐过滤器](assets/create-recommendation-filter-products.png)
+   _推荐产品过滤器_
 
-1. 完成後，按一下下列其中一項：
+1. 完成后，单击以下选项之一：
 
-   - **另存為草稿** 以稍後編輯建議單位。 您無法修改處於草稿狀態的建議單位的頁面型別或建議型別。
+   - **另存为草稿** 以稍后编辑推荐单元。 您无法修改处于草稿状态的推荐单元的页面类型或推荐类型。
 
-   - **啟動** 以啟用店面上的推薦單位。
+   - **激活** 以启用店面上的推荐单元。
 
-## 預覽Recommendations {#preview}
+## 预览Recommendations {#preview}
 
-此 _建議的產品預覽_ 面板始終可用於範例產品選擇，當建議單位部署至店面時，這些產品選擇可能會出現在建議單位中。
+此 _推荐的产品预览_ 面板始终可用于示例产品选择，当建议单元部署到店面时，这些产品选择可能会显示在建议单元中。
 
-若要在非生產環境中工作時測試建議，您可以從擷取建議資料 [不同來源](settings.md). 這可讓商家在部署至生產環境之前，先體驗規則並預覽建議。
+要在非生产环境中工作时测试推荐，您可以从获取推荐数据 [不同来源](settings.md). 这允许商家在部署到生产环境之前试验规则并预览推荐。
 
-| 欄位 | 說明 |
+| 字段 | 描述 |
 |---|---|
-| 名稱 | 產品的名稱。 |
-| SKU | 指定給產品的庫存單位 |
-| 價格 | 產品的價格。 |
-| 結果型別 | 主要 — 表示所收集的訓練資料足以顯示建議。<br />備份 — 表示所收集的訓練資料不足，所以會使用備份建議來填滿位置。 前往 [行為資料](behavioral-data.md) 以進一步瞭解機器學習模型和備用建議。 |
+| 名称 | 产品的名称。 |
+| SKU | 分配给产品的库存单位 |
+| 价格 | 产品的价格。 |
+| 结果类型 | 主要 — 表示收集的训练数据足以显示推荐。<br />备份 — 表示收集的训练数据不足，因此使用备份推荐来填充插槽。 转到 [行为数据](behavioral-data.md) 详细了解机器学习模型和备用推荐。 |
 
-當您建立建議單位時，請嘗試使用頁面型別、建議型別和篩選器，以取得即將包含之產品的即時即時回饋。 當您開始瞭解顯示哪些產品時，可以設定建議單位來滿足您的業務需求。
+在创建推荐单元时，请尝试使用页面类型、推荐类型和过滤器，以立即实时获取有关将包含的产品的反馈。 当您开始了解显示哪些产品时，可以配置推荐单元以满足您的业务需求。
 
-Adobe Commerce [篩選器](filters.md) 建議：可避免在單一頁面上部署多個建議單位時顯示重複的產品。 因此，預覽面板中顯示的產品可能與店面中顯示的產品不同。
+Adobe Commerce [过滤器](filters.md) 推荐，以避免在单个页面上部署多个推荐单元时显示重复的产品。 因此，预览面板中显示的产品可能与店面中显示的产品不同。
 
 >[!NOTE]
 >
-> 您無法預覽 `Recently viewed` 建議型別，因為管理中無法取得資料。
+> 您无法预览 `Recently viewed` 推荐类型，因为数据在管理员中不可用。

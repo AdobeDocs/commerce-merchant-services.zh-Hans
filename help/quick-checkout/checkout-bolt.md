@@ -1,6 +1,6 @@
 ---
-title: 「Adobe Commerce中Bolt使用者的結帳流程」
-description: 概述 [!DNL Quick Checkout] Adobe Commerce中Bolt使用者的流程。
+title: “Adobe Commerce中Bolt用户的结账流程”
+description: 概述 [!DNL Quick Checkout] Bolt用户在Adobe Commerce中的流程。
 exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
 source-git-commit: f790732804e110aad298689c0ddf74547ff17618
 workflow-type: tm+mt
@@ -9,39 +9,39 @@ ht-degree: 0%
 
 ---
 
-# 訪客使用者
+# 来宾用户
 
-訪客結帳體驗與Adobe使用者體驗不同。 當購物者輸入電子郵件地址進行結帳時， [!DNL Quick Checkout] 驗證並尋找現有的 [!DNL Bolt] 帳戶。
+来宾签出体验与Adobe用户体验不同。 当购物者输入电子邮件地址进行结账时， [!DNL Quick Checkout] 验证它并找到现有的 [!DNL Bolt] 帐户。
 
 >[!WARNING]
 >
-> 此 [!DNL In-Store Pickup] (ISPU)功能不支援，當 [!DNL Quick Checkout] 已啟用。
+> 此 [!DNL In-Store Pickup] (ISPU)功能在以下情况下不受支持： [!DNL Quick Checkout] 已启用。
 
-## 已註冊 [!DNL Bolt] 帳戶
+## 已注册 [!DNL Bolt] 帐户
 
-若為 [!DNL Bolt] 找到帳戶，購物者會繼續使用 [!DNL Quick Checkout] 順暢的結帳體驗：
+如果 [!DNL Bolt] 账户被发现，购物者继续购买他们的 [!DNL Quick Checkout] 无缝结账体验：
 
-1. 輸入傳送至該的一次性密碼(OTP) [!DNL Bolt] 帳戶的電子郵件地址或行動電話，具體取決於 [使用者在「 」中的偏好設定 [!DNL Bolt] 帳戶](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
+1. 输入发送给该用户的一次性密码(OTP) [!DNL Bolt] 帐户的电子邮件地址或手机，具体取决于 [用户在 [!DNL Bolt] 帐户](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
 
-![OTP快顯視窗](assets/new-logo-otp-email.png)
+![OTP弹出窗口](assets/new-logo-otp-email.png)
 
-1. 使用登入後 [!DNL Bolt] 帳戶，則會自動新增詳細資料：
+1. 使用登录后 [!DNL Bolt] 帐户，则将自动添加详细信息：
 
-   - 送貨資訊
+   - 配送信息
    - 付款方式
 
-1. 下訂單。
+1. 下订单。
 
 >[!TIP]
 >
-> 訪客使用者下訂單，並可選擇在Adobe Commerce中註冊。
+> 访客用户下订单，并且可以选择在Adobe Commerce中注册。
 
-## 新增 [!DNL Bolt] 帳戶
+## 新 [!DNL Bolt] 帐户
 
-若否 [!DNL Bolt] 找到帳戶後，購物者會繼續使用預設的開箱即用Adobe Commerce結帳，而購物者提供下單所需的所有細節：
+如果否 [!DNL Bolt] 账户后，购物者可以继续使用默认的开箱即用Adobe Commerce结账，购物者提供下单所需的所有详细信息：
 
-- 送貨與帳單資訊
-- 送貨方法
-- 檢閱付款方式
-- 出現一個核取方塊，表示註冊於 [!DNL Bolt] ，以便在下訂單前更快結帳。 購物者可以同意建立其購物網站的相關條款與條件 [!DNL Bolt] 帳戶。
-- 訪客使用者下訂單，並可選擇在Adobe Commerce中註冊。
+- 配送和帐单信息
+- 配送方式
+- 审核付款方式
+- 此时会显示一个复选框，以注册 [!DNL Bolt] ，以便在下订单前更快结账。 购物者可以同意条款和条件以创建其 [!DNL Bolt] 帐户。
+- 访客用户下订单，并且可以选择在Adobe Commerce中注册。

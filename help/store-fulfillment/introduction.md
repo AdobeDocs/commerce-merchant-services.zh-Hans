@@ -1,6 +1,6 @@
 ---
-title: 「簡介 [!DNL Store Fulfillment]"
-description: 「瞭解如何 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 支援客戶線上購買、到店取貨(BOPIS)。 使用Store Assist mobile簡化商店夥伴和Commerce客戶的BOPIS履行和訂單處理。」
+title: “简介 [!DNL Store Fulfillment]”
+description: “了解如何 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 支持客户在线购买、店内提货(BOPIS)。 使用Store Assist移动版为商店合作伙伴和Commerce客户简化BOPIS履行和订单处理。”
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
@@ -11,72 +11,72 @@ ht-degree: 0%
 
 ---
 
-# 簡介 [!DNL Store Fulfillment]
+# 简介 [!DNL Store Fulfillment]
 
-Walmart Commerce Technologies為Adobe Commerce提供的商店履行，是進階的全通路履行解決方案，可與您的 [!DNL Commerce] 商店提供卓越的線上購買體驗、到店取貨(BOPIS)客戶體驗。
+Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies是一个高级全渠道履行解决方案，可与您的 [!DNL Commerce] 店内购买提供卓越的网上购买体验，店内提货(BOPIS)客户体验。
 
-![Store Fulfillment解決方案Adobe管理員設定](assets/store-fulfillment-admin-home.png)
+![Store Fulfillment解决方案Adobe管理员配置](assets/store-fulfillment-admin-home.png)
 
-Store Fulfillment還提供端對端履行工作流程，協助商戶降低成本，同時提高轉換率、平均訂單價值及客戶滿意率。 此工作流程可提供：
+Store Fulfillment还提供端到端履行工作流，帮助商家降低成本，同时提高转化率、平均订单价值和客户满意度。 此工作流可提供：
 
-* **全通路彈性** — 將商店和倉庫變成取貨點和履行中心。
+* **全渠道灵活性** — 将商店和仓库变成取货点和履行中心。
 
-* **便利的客戶取車選項** — 在選擇線上購買時，客戶可以輕鬆檢視產品可用性，並選擇商店在店內或路邊取貨。
+* **方便的客户取车选项** — 在选择在线购买时，客户可以轻松查看产品可用性，并选择商店进行店内或路边取货。
 
-* **履行效率**— Store Assist行動應用程式可協助商店關係人提高訂單履行速度和準確性。
+* **履行效率**— Store Assist移动应用程序可帮助存储关联提高订单履行速度和准确性。
 
-* **行動便利性** — 客戶會在每個步驟收到訂單通知。 從訂單確認到訂單取貨，他們都可以追蹤訂單狀態、取得簽到指示，並在到達商店時與商店夥伴通訊。
+* **移动便利性** — 客户会在每个步骤收到订单通知。 从订单确认到订单提货，他们可以跟踪订单状态、获取登记指令，并在到达商店时与商店联系人通信。
 
-* **營運可見度** — 改善商店層級的存貨配置，促進及時本地履行。
+* **运营可见性** — 改进商店级别的库存分配，及时推动本地履行。
 
-## Store Fulfillment擴充功能
+## Store Fillment扩展
 
-Store Fulfillment解決方案支援並增強原生Adobe Commerce功能。
+Store Fulfillment解决方案支持并增强了本机Adobe Commerce功能。
 
-* 支援大多數產品型別 — 簡單、可設定、分組、套件和虛擬
+* 支持大多数产品类型 — 简单、可配置、分组、捆绑和虚拟
 
-* 整合 [[!DNL Adobe Commerce] Inventory management](https://docs.magento.com/user-guide/catalog/inventory-learn-more.html)
+* 集成 [[!DNL Adobe Commerce] Inventory management](https://docs.magento.com/user-guide/catalog/inventory-learn-more.html)
 
-* 整合銷售點(POS)商家庫存管理系統，例如ERP、OMS和WMS
+* 与销售点(POS)商家库存管理系统（如ERP、OMS和WMS）集成
 
-* 與Luma主題完全相容
+* 与Luma主题完全兼容
 
-* 與PWA和Headless店面部分相容
+* 与PWA和Headless店面部分兼容
 
-* 支援Walmart Commerce Technologies的商店協助應用程式。 此應用程式會直接將取貨單資訊傳送至選定商店位置中員工的手持裝置。 有了這些資訊，他們就能在客戶到達商店時，快速準確地挑選、暫存和移交商品。
+* 支持沃尔玛商业技术有限公司的Store Assist应用程序。 此应用程序会将取车订单信息直接发送到所选商店位置中员工的手持设备。 有了这些信息，他们就可以快速准确地挑选、暂存商品，并在商品到达商店时将其移交给客户。
 
-## 商店協助應用程式
+## 商店协助应用程序
 
-適用於iOS和Android™裝置的商店協助應用程式會與 [!DNL Walmart Commerce Technologies] 讓您的零售商店具備全通路履行功能。
+适用于iOS和Android™设备的商店助手应用程序与 [!DNL Walmart Commerce Technologies] 为您的零售商店带来全渠道履行能力。
 
-* 直接將店內和路邊取貨訂單傳送至店內的關聯行動裝置
+* 直接将店内和路边取货订单发送到店员的移动设备
 
-* 確保當客戶抵達商店取貨時，能快速準確地撿到、暫存並遞送商店訂單
+* 确保快速、准确地挑选商店订单，将其分段，并在客户到达商店取货时将其交给客户
 
-* 管理存放區關聯使用者存取，包括安全性原則、雙因素驗證等
+* 管理存储关联用户访问权限，包括安全策略、双重身份验证等
 
-* 自動將零售商店位置和詳細目錄的相關資料同步至Adobe Commerce
+* 自动将零售商店位置和库存的相关数据同步到Adobe Commerce
 
-## 增強的使用者體驗
+## 增强的用户体验
 
-「商店履行」藉由新增功能來改善購物體驗並簡化履行工作流程，進而增強Adobe Commerce。
+“商店履行”通过添加功能来改进购物体验和简化履行工作流程，从而增强了Adobe Commerce。
 
-* **存放區位置選擇器(SLS)** — 除了原始結帳之外，還新增商店取貨選項、庫存可用性，以及產品和購物車頁面的商店選擇器。
+* **存储位置选择器(SLS)** — 除了本机结帐之外，还向产品和购物车页面添加商店提货选项、库存可用性和商店选择器。
 
-* **庫存可用性** — 新增其他產品和全域設定選項至Adobe Commerce Inventory management。 這些選項支援商店層級存貨配置，以推動及時本地履行。
+* **库存可用性** — 向Adobe Commerce Inventory management中添加了其他产品和全局配置选项。 这些选项支持商店级别的库存分配，以便及时实现本地履行。
 
-* **購物車和結帳增強功能** — 在客戶的線上購物工作階段期間，與客戶溝通可用的最快取車時間、地點和成本。
+* **购物车和结帐功能增强** — 在客户的在线购物会话期间，向客户传达可用的最快取车时间、地点和成本。
 
-* **簽入處理流程** — 新增介面，以改善客戶簽到程式，以及當他們到達店內或路邊取貨地點時與店舖夥伴的互動。
+* **签入流程** — 添加了界面，以改进客户签到流程以及在他们到达店内或路边取货时与店铺协作的交互。
 
-* **我的帳戶記錄** — 擴充 [!DNL Commerce] account history （帳戶歷史記錄），以顯示訂單歷史記錄中的步驟。
+* **我的帐户历史记录** — 扩展 [!DNL Commerce] 帐户历史记录，以显示订单历史记录中的步骤。
 
-* **異動電子郵件** — 擴充下列專案的管理員功能： [!UICONTROL Sales Emails] 若要新增線上購買的電子郵件範本，請在商店交易中提貨。 這些範本支援在訂單撿料程式期間，客戶與商店關聯者之間的即時通訊。
+* **事务性电子邮件** — 扩展了以下各项的管理功能 [!UICONTROL Sales Emails] 要添加用于在线购买的电子邮件模板，请在商店交易中提货。 这些模板支持在订单提货流程中客户与店铺关联方之间的实时通信。
 
-* **彈性履行** — 延伸 [!DNL Commerce] 支援延期交貨、減少數量及部份訂單履行等案例的功能，同時協助支援這些案例所需的任何取消與銷退折讓單。
+* **灵活履行** — 扩展 [!DNL Commerce] 支持延期交货方案、数量减少方案和部分订单履行方案，同时促进支持这些方案所需的任何取消和贷项通知单。
 
 >[!TIP]
 >
-> 如需Store Fulfillment解決方案的快速示範，請參閱 [商店履行概要](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) 提供於 _Adobe Commerce影片和Tutorials_.
+> 要快速演示Store Fulfillment解决方案，请参阅 [商店履行概述](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) 可用位置 _Adobe Commerce视频和Tutorials_.
 
 

@@ -1,6 +1,6 @@
 ---
-title: 簡介 [!DNL Payment Services]
-description: 瞭解如何安裝及使用 [!DNL Payment Services] 作為立即可用、強大且安全的支付處理解決方案，適合您的 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 網站。
+title: 简介 [!DNL Payment Services]
+description: 了解如何安装和使用 [!DNL Payment Services] 作为全包式、强大而安全的支付处理解决方案，适合贵机构 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 网站。
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
@@ -11,66 +11,66 @@ ht-degree: 0%
 
 ---
 
-# 簡介 [!DNL Payment Services]
+# 简介 [!DNL Payment Services]
 
-[!DNL Payment Services] 的 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 是您的全包自助解決方案，包括沙箱測試和簡易設定，可為您的Commerce網站提供穩定且安全的付款處理。
+[!DNL Payment Services] 对象 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 是您的全包自助服务解决方案，包括沙盒测试和简单的设置，用于为您的Commerce网站提供稳定且安全的支付处理。
 
-![[!DNL Payment Services] 擴充功能管理檢視](assets/admin-view.png)
+![[!DNL Payment Services] 扩展管理视图](assets/admin-view.png)
 
-無論您是小型企業、中端市場競爭者或大型企業，此付款解決方案都能協助您減少營運開銷、增加收入，並提供實用工具以改善整個購物者體驗。
+无论您是小型企业、中端市场竞争者还是大型企业，此支付解决方案都有助于您减少运营开销、增加收入，并为您提供有用的工具来改善整个购物体验。
 
-[!DNL Payment Services] 為：
+[!DNL Payment Services] 为：
 
-* 易於設定與維護
-* 專為最大化您的利潤而設計
-* 安全無虞
-* 專為滿足您的所有支付需求而設計
-* 獨立於Admin
+* 易于设置和维护
+* 旨在最大限度地提高您的利润
+* 安全无虞
+* 旨在满足您的所有支付需求
+* 在管理员中自包含
 
 ## 功能
 
 >[!NOTE]
 >
->這裡提到的部分功能可能尚未在GA （一般可用性）版本中提供。
+>此处提到的某些功能可能尚未在GA（正式发布）版本中提供。
 
-[!DNL Payment Services] 是您線上結帳的一站式商店（從結算和退款到收取款項）。 它提供強大的工具，讓您獲得所需的洞察力和控制力，為您的買家創造最佳體驗。
+[!DNL Payment Services] 是用于在线结账（从结算和退款到付费）的一站式商店。 它提供了强大的工具，使您可以获得所需的洞察力和控制力，从而为购买者提供最佳体验。
 
-* [**入門**](onboard.md) — 此程式會引導您完成商業註冊、技術設定、權益、沙箱環境設定和即時付款啟用。
-* [**付款選項**](payments-options.md) — 設定付款選項，以自訂商店（或多商店）客戶可用的方式。
-* **現金流量管理財務報告** — 同步 [付款詳細資料](order-payment-status.md) 提供訂單，讓已處理量、付款餘額和詳細資料完全透明 [交易層級報告](payouts.md) 用於財務核對。
-* **透明的定價** — 價格明確、預先設定；您所見即所得。
-* **高效率的結帳體驗** — 移除快速簡易結帳的任何障礙，並透過建立忠實客戶 [卡片儲存庫](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) 和 [立即購買](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (預設會針對Adobe Commerce啟用)功能。
+* [**入门**](onboard.md) — 该过程将指导您完成商业注册、技术配置、授权、沙盒环境配置和实时支付支持。
+* [**付款选项**](payments-options.md) — 设置支付选项以自定义商店（或多商店）客户可用的方式。
+* **现金流量管理财务报告** — 同步 [付款详细信息](order-payment-status.md) ，以完全透明地显示处理的交易量、支付余额和详情 [交易级别报告](payouts.md) 进行财务对账。
+* **透明的定价** — 定价是明确的、预先的；您所看到的就是您所获得的。
+* **高效的结账体验** — 消除任何阻碍快速而简单的结账的障碍，并通过以下方式创造忠诚客户 [信息卡保险存储](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) 和 [即时购买](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (对于Adobe Commerce，默认启用)功能。
 
 ## 可用性
 
-[!DNL Payment Services] 可用於 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source]. 此 [!DNL Payment Services] 擴充功能現在相容於 [!DNL Adobe Commerce] 2.4.x版。
+[!DNL Payment Services] 可用于 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source]. 此 [!DNL Payment Services] 扩展现在与 [!DNL Adobe Commerce] 版本2.4.x。
 
-另請參閱 [生命週期原則](https://devdocs.magento.com/release/lifecycle-policy.html){target="_blank"} 和 [[!DNL Payment Services] 發行說明](release-notes.md) 頁面以取得更多發行版本和版本特定資訊。
+参见 [生命周期策略](https://devdocs.magento.com/release/lifecycle-policy.html){target="_blank"} 和 [[!DNL Payment Services] 发行说明](release-notes.md) 页面，以了解更多特定于发行版和版本的信息。
 
-## 接受的信用卡與幣別
+## 接受的信用卡和货币
 
-目前， [!DNL Payment Services] 僅適用於：
+目前， [!DNL Payment Services] 仅在以下位置提供：
 
-* 美國(US)並接受美元(USD)貨幣。
-* 加拿大(CA)並接受加幣(CAD)貨幣。
+* 美国(US)接受美元(USD)货币。
+* 加拿大(CA)并接受加拿大元(CAD)货币。
 
-請參閱 [PayPal貨幣可用性](https://developer.paypal.com/docs/platforms/checkout/reference/country-availability-advanced-cards/) 說明檔案以取得詳細資訊。
+请参阅 [PayPal货币可用性](https://developer.paypal.com/docs/platforms/checkout/reference/country-availability-advanced-cards/) 文档，以了解更多信息。
 
-## 開始使用
+## 开始使用
 
-上線和設定 [!DNL Payment Services] 只需幾個步驟即可完成：
+入门和设置 [!DNL Payment Services] 只需几个步骤即可完成：
 
-1. 取得 [[!DNL Payment Services] 擴充功能](install.md).
-1. 將您的Commerce執行個體連結至Commerce Services。
-1. 上線並設定沙箱服務。
-1. 啟用 [!DNL Payment Services] 作為您的付款方式，並開始處理測試付款。
-1. 完成商家上線，為您的網站啟用即時付款。
-1. 啟動 [!DNL Payment Services] 以開始處理即時付款。
+1. 获取 [[!DNL Payment Services] 扩展](install.md).
+1. 将您的Commerce实例连接到Commerce Services。
+1. 载入并设置沙盒服务。
+1. 启用 [!DNL Payment Services] 作为您的支付方式，开始处理测试支付。
+1. 完成商户入门培训，为您的网站启用实时支付。
+1. 激活 [!DNL Payment Services] 处于实时模式以开始处理实时支付。
 
-若要取得完整指示並開始入門流程，請參閱 [上線 [!DNL Payment Services]](onboard.md).
+要获取完整说明并启动载入流程，请参阅 [载入 [!DNL Payment Services]](onboard.md).
 
-## [!DNL Payment Services] 示範
+## [!DNL Payment Services] 演示
 
-觀看此影片以瞭解 [!DNL Payment Services]：
+观看本视频，了解 [!DNL Payment Services]：
 
 >[!VIDEO](https://video.tv.adobe.com/v/343990?quality=12)

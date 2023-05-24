@@ -1,6 +1,6 @@
 ---
-title: 連線您的執行個體
-description: 使用API金鑰和私密金鑰連線您的Commerce執行個體，並在設定中指定資料空間。
+title: 连接实例
+description: 使用API密钥和私钥连接您的Commerce实例，并在配置中指定数据空间。
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
@@ -9,46 +9,46 @@ ht-degree: 0%
 
 ---
 
-# 連線您的執行個體
+# 连接实例
 
-[!DNL Payment Services] 由Commerce Services提供技術支援，並部署為SaaS （軟體即服務）。 您可以使用API金鑰和私密金鑰來連線Commerce執行個體，並使用在設定中指定資料空間 [商務服務聯結器](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html). **您只設定一次此連線。**
+[!DNL Payment Services] 由Commerce Services提供支持，并部署为SaaS（软件即服务）。 您使用API密钥和私钥连接Commerce实例，并使用指定配置中的数据空间 [商务服务连接器](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html). **您只需设置一次此连接。**
 
-* 如果您有 *已連線您的執行個體*，透過取得及使用您的API憑證並設定Commerce Services，您可以繼續前往 [設定您的測試沙箱](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html).
-* 如果您仍然 *需要連線您的執行個體*，請參閱本主題中有關以下內容的資訊： [取得API認證](#obtain-api-credentials) 和 [設定Commerce服務](#configure-commerce-services).
-* 如果您是 *不確定您的執行個體是否已連線*，導覽至 **系統** >服務> **商務服務聯結器** 和檢視中的公開和私人API金鑰值 [!UICONTROL Sandbox Keys] 和 [!UICONTROL Production Keys] 區段，以及 *專案* 和 *資料空間* 中的欄位 [!UICONTROL SaaS Identifier] 區段。 如果這些值存在，則表示您的執行個體已連線。
+* 如果您拥有 *已连接您的实例*，通过获取和使用您的API凭据并配置Commerce Services，您可以继续 [设置测试沙盒](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html).
+* 如果你还在 *需要连接实例*，请参阅本主题中关于 [获取API凭据](#obtain-api-credentials) 和 [配置Commerce服务](#configure-commerce-services).
+* 如果您是 *不确定实例是否已连接*，导航到 **系统** >服务> **商务服务连接器** 并查看中的公共API密钥和私有API密钥值 [!UICONTROL Sandbox Keys] 和 [!UICONTROL Production Keys] 部分，以及 *项目* 和 *数据空间* 中的字段 [!UICONTROL SaaS Identifier] 部分。 如果这些值存在，则表示您的实例已连接。
 
-## 取得API認證
+## 获取API凭据
 
-若要使用Commerce SaaS服務，您必須將執行個體的API金鑰（Commerce公開API金鑰和私密金鑰）用於沙箱和生產，這會在您的中建立和管理。 [我的帳戶儀表板](https://account.magento.com/customer/account/login). [金鑰組](https://docs.magento.com/user-guide/configuration/services/saas.html) 可為Commerce帳戶建立（一個用於沙箱，一個用於生產），但一次只能主動使用一組。
+要使用Commerce SaaS服务，您必须将实例的API密钥（Commerce公共API密钥和私钥）用于沙盒和生产，它们是在您的系统中创建和管理的。 [我的帐户信息板](https://account.magento.com/customer/account/login). [密钥对](https://docs.magento.com/user-guide/configuration/services/saas.html) 可以为Commerce帐户创建（一个用于沙盒，一个用于生产），但一次只能活动使用一对。
 
 >[!NOTE]
 >
->需要協助存取您的 [!UICONTROL My Account] 儀表板？ 另請參閱 [建立Commerce帳戶](https://docs.magento.com/user-guide/magento/magento-account-create.html).
+>需要访问的相关帮助 [!UICONTROL My Account] 仪表板？ 参见 [创建商务帐户](https://docs.magento.com/user-guide/magento/magento-account-create.html).
 
-公開API金鑰一經建立，即可在您的「我的帳戶」控制面板中使用。 您可以視需要複製或刪除它。 當您為沙箱或生產環境建立公開API金鑰時，私人API金鑰會變成可見；它只能從後續的對話方塊複製或儲存，並且之後無法存取。
+公共API密钥创建后，始终可在“我的帐户”信息板中使用。 可以根据需要复制或删除它。 当您为沙盒或生产环境创建公共API密钥时，私有API密钥会变得可见；它只能从后续对话框中复制或保存，并且以后无法访问。
 
-指定的API金鑰組對環境中的所有Commerce Services有效，因此，如果您已針對執行個體設定了Commerce Services，您的API金鑰組已存在於Commerce Services Connector中。
+给定的API密钥对对对环境中的所有Commerce Services有效，因此，如果您已经为您的实例配置了Commerce Services，则API密钥对已存在于Commerce Services Connector中。
 
-如果您的API金鑰遺失，新的API金鑰組必須為 [已產生](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#generate-an-api-key-and-private-key) 和 [已套用](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-saas-project) 至管理員中的Commerce Services聯結器設定。 如果設定的金鑰有誤或設定中沒有任何金鑰，則付款服務中會出現帳戶驗證錯誤對話方塊，通知您該帳戶未驗證。
+如果您的API密钥丢失，则新的API密钥对必须为 [已生成](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#generate-an-api-key-and-private-key) 和 [已应用](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-saas-project) 到Admin中的Commerce Services Connector配置。 如果配置的密钥有误或配置中不存在任何密钥，则付款服务中将显示帐户验证错误对话框，通知您未验证帐户。
 
-參閱 [使用API的可用Commerce Services清單](https://docs.magento.com/user-guide/system/saas.html#available-services).
+查看 [使用API的可用Commerce Services列表](https://docs.magento.com/user-guide/system/saas.html#available-services).
 
-若要瞭解如何為沙箱或生產環境產生API金鑰，請參閱 [認證](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
+要了解如何为沙盒或生产环境生成API密钥，请参阅 [凭据](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
 
 >[!IMPORTANT]
->建議您不要重新產生API金鑰組 *和* 變更作用中生產執行個體上的SaaS識別碼和/或資料空間。 如果修改執行個體的資料，您將會遺失這些資料。
+>建议您不要重新生成API密钥对 *和* 更改活动生产实例上的SaaS标识符和/或数据空间。 如果修改实例，则将丢失实例的数据。
 
-## 設定Commerce服務
+## 配置Commerce服务
 
-執行個體間可以使用相同的API金鑰，但每個執行個體都必須有自己的金鑰 [SaaS資料空間](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#saasenv).
+可以在各个实例中使用相同的API密钥，但每个实例必须具有自己的API密钥 [SaaS数据空间](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#saasenv).
 
-現在您已取得認證，您可以設定SaaS專案和Saas資料空間。
+现在您已获得凭据，可以配置SaaS项目和Saas数据空间。
 
-1. 於 _管理員_ 側欄，前往 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]**.
-1. 按一下 **[!UICONTROL Configure Commerce Services]**.
+1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]**.
+1. 单击 **[!UICONTROL Configure Commerce Services]**.
 
-   如果您尚未為帳戶設定Commerce Services，則會顯示此選項。
+   如果您尚未为帐户配置Commerce Services，则可以看到此选项。
 
-   系統會將您導向至「管理員」中的設定區域， **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**，以設定您的Commerce Services聯結器。
+   您将被定向到“管理员”中的配置区域， **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**，以配置Commerce Services Connector。
 
-1. 若要設定Commerce Services，請依照中所述的步驟操作 [SaaS設定](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#saasenv).
+1. 要配置Commerce Services，请按照中所述的步骤操作 [SaaS配置](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#saasenv).

@@ -1,6 +1,6 @@
 ---
-title: 設定 [!DNL Quick Checkout] 適用於Adobe Commerce擴充功能
-description: 瞭解的設定選項 [!DNL Quick Checkout] 以及如何成功上線及設定擴充功能。
+title: 配置 [!DNL Quick Checkout] for Adobe Commerce扩展
+description: 了解的配置选项 [!DNL Quick Checkout] 以及如何成功载入和设置扩展。
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
 source-git-commit: f790732804e110aad298689c0ddf74547ff17618
 workflow-type: tm+mt
@@ -9,54 +9,54 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Quick Checkout] 設定
+# [!DNL Quick Checkout] 设置
 
-[!DNL Quick Checkout] 適用於Adobe Commerce和Magento Open Source的設定檢視提供設定擴充功能所需的所有資訊。
+[!DNL Quick Checkout] for Adobe Commerce and Magento Open Source提供了一个配置视图，其中包含设置扩展所需的所有信息。
 
-若要存取這些組態設定：
+要访问这些配置设置，请执行以下操作：
 
-1. 於 _管理員_ 側欄，前往 **商店** > _設定_ > **設定**.
-1. 在左側面板中，展開 **銷售** 並選取 **簽出**.
+1. 在 _管理员_ 侧栏，转到 **商店** > _设置_ > **配置**.
+1. 在左侧面板中，展开 **销售** 并选择 **结账**.
 
-   ![快速簽出](assets/config-new-logo-view.png)
+   ![快速签出](assets/config-new-logo-view.png)
 
-請參閱 [入門](../quick-checkout/onboarding.md) 主題以取得如何設定 [!DNL Quick Checkout] 適用於Adobe Commerce。
+请参阅 [入门](../quick-checkout/onboarding.md) 主题以了解有关如何配置 [!DNL Quick Checkout] 适用于Adobe Commerce的。
 
-## 啟用擴充功能
+## 启用扩展
 
-![快速簽出](assets/enable-method.png)
+![快速签出](assets/enable-method.png)
 
-| 欄位 | 範圍 | 說明 |
+| 字段 | 范围 | 描述 |
 |---|---|---|
-| [!UICONTROL Enable] | 網站 | 啟用或停用 [!DNL Quick Checkout] （適用於您的網站）。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Method] | 網站 | 為設定方法或環境 [!DNL Quick Checkout]. 選項： [!UICONTROL Sandbox] / [!UICONTROL Production] |
+| [!UICONTROL Enable] | 网站 | 启用或禁用 [!DNL Quick Checkout] （对于您的网站）。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Method] | 网站 | 为设置方法或环境 [!DNL Quick Checkout]. 选项： [!UICONTROL Sandbox] / [!UICONTROL Production] |
 
 {style="table-layout:auto"}
 
-## 帳戶認證
+## 帐户凭据
 
-![快速簽出](assets/account-creds.png)
+![快速签出](assets/account-creds.png)
 
-| 欄位 | 範圍 | 說明 |
+| 字段 | 范围 | 描述 |
 |---|---|---|
-| [!UICONTROL API key] | 網站 | 後端用來與互動的私密金鑰 [!DNL Bolt] API。 |
-| [!UICONTROL Publishable key] | 網站 | 您前端用來與互動的金鑰 [!DNL Bolt] API。 |
-| [!UICONTROL Signing secret] | 網站 | 用於對從收到的請求進行簽名驗證 [!DNL Bolt]. |
+| [!UICONTROL API key] | 网站 | 后端用来与交互的私钥 [!DNL Bolt] API。 |
+| [!UICONTROL Publishable key] | 网站 | 前端用于与交互的密钥 [!DNL Bolt] API。 |
+| [!UICONTROL Signing secret] | 网站 | 用于对从收到的请求进行签名验证 [!DNL Bolt]. |
 
 {style="table-layout:auto"}
 
-## 服務設定
+## 服务设置
 
-![快速簽出](assets/service-settings.png)
+![快速签出](assets/service-settings.png)
 
-| 欄位 | 範圍 | 說明 |
+| 字段 | 范围 | 描述 |
 |---|---|---|
-| [!UICONTROL Title] | 存放區檢視 | 在結帳期間，在「付款方式」檢視中，新增文字以顯示為此付款選項的標題。 選項： [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | 網站 | 此 [付款動作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定付款方式的。 選項： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
-| [!UICONTROL Debug Mode] | 網站 | 啟用或停用偵錯模式。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Enable checkout tracking] | 網站 | 定義Adobe Commerce是否允許與Bolt共用的簽出追蹤資訊。 預設為啟用。 如果停用，報告將受到影響。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Next Stage After Login Mode] | 網站 | 在客戶登入後變更導覽流程。 選項： [!UICONTROL Payment] / [!UICONTROL Shipping] |
-| [!UICONTROL Automatic Login Enabled] | 網站 | 定義條件 [!DNL Quick Checkout] 允許在結帳期間自動登入。 預設為啟用。 選項： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Automatic Login Network] | 網站 | 選取客戶自動登入的網路。 預設為啟用Bolt。 選項： [!UICONTROL Bolt + Merchant] / [!UICONTROL Bolt] |
+| [!UICONTROL Title] | 商店视图 | 在结帐期间，在“付款方式”视图中添加用于显示此付款选项的标题的文本。 选项： [!UICONTROL text field] |
+| [!UICONTROL Payment Action] | 网站 | 此 [付款操作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定付款方式的。 选项： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Debug Mode] | 网站 | 启用或禁用“调试模式”。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Enable checkout tracking] | 网站 | 定义Adobe Commerce是否允许与Bolt共享签出跟踪信息。 默认启用。 如果禁用，报表将受影响。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Next Stage After Login Mode] | 网站 | 在客户登录后更改导航流程。 选项： [!UICONTROL Payment] / [!UICONTROL Shipping] |
+| [!UICONTROL Automatic Login Enabled] | 网站 | 定义条件 [!DNL Quick Checkout] 允许在结帐期间自动登录。 默认启用。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Automatic Login Network] | 网站 | 选择客户自动登录的网络。 默认启用“螺栓”。 选项： [!UICONTROL Bolt + Merchant] / [!UICONTROL Bolt] |
 
 {style="table-layout:auto"}
