@@ -2,7 +2,7 @@
 title: "Facet"
 description: ”[!DNL Live Search] Facet使用属性值的多个维度作为搜索条件。”
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: e1a512d2c9738f05bb8dcb929dccc7ad81cf7e3e
+source-git-commit: 6d4317df4f921bdc57faa4a7fbb86fc3a1d9e9b2
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 [!DNL Live Search] 最多支持：
 
-* 200个属性配置为Facet
+* 100个属性配置为Facet
 * 50个可排序的属性
 * 200个可过滤属性
 * 200个可搜索属性
