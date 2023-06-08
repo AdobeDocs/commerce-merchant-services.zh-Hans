@@ -2,9 +2,9 @@
 title: 商务服务连接器
 description: 了解如何使用生产和沙盒API密钥将Adobe Commerce或Magento Open Source实例集成到服务。
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 506b00e72d65fbafa071476608bb658cb59404b4
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '862'
 ht-degree: 0%
 
 ---
@@ -111,4 +111,4 @@ ht-degree: 0%
 
 ## 目录同步
 
-当 [!DNL Commerce] 实例已成功连接到 [!DNL Commerce Services]，目录同步过程会从您的 [!DNL Commerce] 服务器至 [!DNL Commerce Services]. [了解详情](catalog-sync.md) 关于目录同步过程。
+当 [!DNL Commerce] 实例已成功连接到 [!DNL Commerce Services]，目录同步过程会从您的 [!DNL Commerce] 服务器至 [!DNL Commerce Services]. 目前，只有产品Recommendations使用目录同步服务。 [了解详情](catalog-sync.md) 关于目录同步过程。
