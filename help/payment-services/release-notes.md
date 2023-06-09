@@ -2,9 +2,9 @@
 title: ”[!DNL Payment Services] 发行说明”
 description: 查看发行说明，了解关于 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: e076864a117be007eeb8003d9d6a472b704996ba
+source-git-commit: e9209d7361d0dd6b6f502df9a898a5a35c53ec1a
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1971'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,16 @@ ht-degree: 0%
 这些发行说明描述了在托管服务的常规版本化功能发行之外发生的功能更改和修复。
 
 +++托管服务更新
+
+_2023年6月9日_
+
+![新](../assets/new.svg)<!-- Issue PAY-4288 --> 现在，商家可以 [配置 _仅限_ PayPal付款按钮](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons) — 和 _非_ 使用PayPal信用卡付款选项 — 提供各种付款选项，无需申请PayPal信用卡审批。
+
+![新](../assets/new.svg)<!-- Issue PAY-4050 --> 添加了 [数据可视化视图](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view)，显示在付款服务主页上，用于订单付款状态报表。
+
+![已修复的问题](../assets/fix.svg)<!-- Issue PAY-4486--> 以前，PayPal PayLater按钮未出现在英国商家的结账单中。 该问题已得到解决。
+
+![已修复的问题](../assets/fix.svg)<!-- Issue PAY-4485--> 禁用付款服务后，报表数据可视化视图现在显示在付款服务主页上。
 
 _2023年1月25日_
 
@@ -56,6 +66,22 @@ _2021年6月28日_
 ![新](../assets/new.svg)<!-- Issue PAY-2761 --> 您现在可以自定义以下位置显示的数据： [订单付款状态报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 和 [付款报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 使用“列设置”控件显示或隐藏列。
 
 +++
+
+## v2.1.0
+
+_2023年6月9日_
+
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+
+![新](../assets/new.svg)<!-- Issue xxx --> 添加了对Adobe Commerce 2.4.7-beta1的支持。
+
+![新](../assets/new.svg)<!-- Issue xxx --> 已添加 [在以下国家/地区和相关货币中提供](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#availability)：澳大利亚、法国、英国。
+
+![新](../assets/new.svg)<!-- Issue PAY-4296 --> 已添加 [扩展了管理员角色的资源](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) 以确保管理员用户可以创建和管理客户的订单，并可以在“销售”菜单中查看支付服务。
+
+![新](../assets/new.svg)<!-- Issue PAY-4236 --> 已添加 [结帐期间发生错误的订单的自动作废](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html#order-auto-voided-if-error).
+
+![新](../assets/new.svg)<!-- Issue PAY-4183 --> 创建的功能 [显示“信用卡付款/借记卡付款”选项按钮](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#debit-or-credit-card-button) 在结帐页面上。
 
 ## v2.0.0
 

@@ -4,9 +4,9 @@ description: 使用“订单付款状态”报表，可以查看订单的付款�
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: 8295b7c4ea407f0528d6be69655a8b12f7defe15
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1828'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,12 @@ ht-degree: 0%
 
 [!DNL Payment Services] 对象 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供全面的报告，以便您清楚地了解商店的订单和付款。
 
-![财务报告视图](assets/reports-justpayouts.png)
+有两个可用的“订单付款状态”报告视图，使您可以快速查看订单的付款状态：
 
-订单付款状态报表可帮助您轻松了解特定订单在订单到现金处理流程中的位置。 通过此报表，您可以快速查看订单的付款状态并确定任何潜在问题。
+* **[订单付款状态可视化图表视图](#order-payment-status-data-visualization-view)** — 付款服务主页上的图表，它直观地呈现订单付款状态报表视图中的每日汇总付款状态
+* **[订单付款状态报表视图](#order-payment-status-report-view)** — 以订单付款状态显示所有事务处理的详细付款、已开票、已发运、退款和争议状态的报告
 
-您不必打开多个视图，即可人工交叉参考订单和付款。 [!DNL Payment Services] 对象 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 使您能够全面了解订单和付款 — 所有这些都在订单付款状态报表中。
-
-在“管理员”中查看此报表中的付款状态、已开票和已发运状态、退款状态、争议状态等。
+订单付款状态视图帮助您轻松了解特定订单在订单到现金处理流程中的位置。 这些报告允许您根据订单的付款状态和付款日期快速查看订单，并识别任何潜在问题。
 
 您可以下载.csv文件格式的“订单”付款状态交易记录，以便在现有的会计软件或订单管理软件中使用。
 
@@ -29,9 +28,63 @@ ht-degree: 0%
 >
 >如果没有，则无法查看财务报表 [已载入和激活的实时模式](production.md#enable-live-payments) 对象 [!DNL Payment Services].
 
-## 报告中使用的数据
+## 订单付款状态数据可视化图表视图
 
-此 [!DNL Payment Services] 模块使用订单数据，并将其与其他来源（包括PayPal）的汇总付款数据相结合，以提供有意义且非常有用的报表。
+可在Payment Services主页中找到订单付款状态数据可视化视图。 它是详细表格中每天汇总支付状态的直观表示形式 [订单付款状态报表视图](#order-payment-status-report-view).
+
+在 _管理员_ 侧栏，转到 **销售** > **支付服务** 查看数据可视化图表 [付款状态表](#statuses-information).
+
+![管理员中的支付数据可视化图表](assets/orderpayment-dataviz.png){zoomable=yes}
+
+单击 **查看报告** 导航到详细的表格 [订单付款状态报表视图](#order-payment-status-report-view).
+
+### 自定义状态时间范围
+
+默认情况下，将显示30天的付款状态。
+
+从“订单付款状态”可视化图表视图中，您可以通过选择日期范围来自定义要查看的付款状态的时间范围：
+
+1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**. 订单付款状态数据可视化图表视图在订单付款状态部分中可见。
+1. 单击 **[!UICONTROL Range]** 选择器过滤器。
+1. 选择适用的日期范围 — 30天、15天或7天。
+1. 查看指定日期的状态信息。
+
+### 状态信息
+
+选定日期范围的付款状态显示在“订单付款状态”数据可视化视图的左侧。 所选日期范围的日期显示在视图底部。 如果特定日期没有订单，则不会显示该日期。
+
+订单付款状态数据可视化图表视图包含以下信息。
+
+| 数据 | 描述 |
+| ------------ | -------------------- |
+| [!UICONTROL Orders] | 指定时间范围内订单的数量范围；Y轴上的数据（左） |
+| 日期范围 | 指定时间范围的日期范围；X轴（底部）上的数据 |
+| 已授权 | 订单已授权 |
+| 已请求捕获 | 订单的捕获请求 |
+| 捕获已确认 | 订单捕获已完成 |
+| 部分捕获 | 订单已部分捕获 |
+| 捕获失败 | 订单捕获失败 |
+| 已失效 | 订单已失效 |
+
+## 订单付款状态报表视图
+
+“订单付款状态”报表视图在“付款服务”的“订单付款状态”视图中可用。 它包括所有交易的详细状态 — 付款、已开票、已发运、退款、争议等。 此 [订单付款状态数据可视化图表视图](#order-payment-status-data-visualization-view) 在Payment Services Home中，可以从“订单付款状态”报表视图中直观地显示每天的汇总付款状态。
+
+在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Order payment status]** 要查看详细的表格式订单付款状态报表视图，请执行以下操作：
+
+![管理员中的订单付款状态交易记录](assets/orders-report-data.png)
+
+您可以根据本主题中的部分配置此视图，以便最好地呈现您希望查看的数据。
+
+您可以 [下载支付交易记录](#download-order-payment-statuses) .csv文件格式的文件，用于现有的财务或订单管理软件。
+
+>[!NOTE]
+>
+>此表中显示的数据按降序排序(`DESC`)默认情况下，使用 `TRANS DATE`. 此 `TRANS DATE` 是启动交易的日期和时间。
+
+### 报告中使用的数据
+
+此 [!DNL Payment Services] 模块使用订单数据，并将其与其他来源（包括PayPal）的汇总付款数据相结合，以提供有意义且高度有用的报表。
 
 订单数据将导出并保留在支付服务中。 当您 [更改或添加订单状态](https://docs.magento.com/user-guide/sales/order-status-custom.html){target="_blank"} or [edit a store view](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target="_blank"}, [store](https://docs.magento.com/user-guide/stores/store-information.html){target="_blank"}或网站名称)时，该数据与付款数据相结合，并且使用结合的信息填充“订单付款状态”报表。
 
@@ -49,7 +102,7 @@ ht-degree: 0%
 >
 >此表中显示的数据按降序排序(`DESC`)默认情况下，使用 `ORDER DATE`. 此 `ORDER DATE` 是创建订单的日期时间戳。
 
-### 配置数据导出
+#### 配置数据导出
 
 即使默认情况下，重新索引发生在 `ON SAVE` 模式，建议您在以下位置索引： `BY SCHEDULE` 模式。 此 `BY SCHEDULE` 索引按cron计划运行，运行时间为1分钟，任何更改的数据将在任何数据更改后的2分钟内显示在订单状态报表中。 此计划的重新索引可帮助您减轻存储的任何压力，尤其是在您有大量传入订单的情况下，因为它按计划进行（而不是在每次下订单时）。
 
@@ -57,19 +110,13 @@ ht-degree: 0%
 
 要了解如何配置数据导出，请参阅 [命令行配置](configure-cli.md#configure-data-export).
 
-## 可用性
-
-在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Order payment status]** 以查看订单的付款状态。
-
-![管理员中的订单付款状态](assets/order-payment-status-report.png)
-
-## 选择数据源
+### 选择数据源
 
 在“订单付款状态”报表视图中，您可以选择数据源 — _[!UICONTROL Live]_或_[!UICONTROL Sandbox]_ — 您希望查看其报告结果。
 
-![数据源选择](assets/datasource.png)
+![数据源选择](assets/datasource.png){width=400px}
 
-如果 _[!UICONTROL Live]_是选定的数据源，则可以查看使用的商店的报表信息 [!DNL Payment Services] 在_[!UICONTROL Live]_ 模式。 如果 [!UICONTROL Sandbox]_是选定的数据源，您可以看到沙盒环境的报表信息。
+如果 _[!UICONTROL Live]_是选定的数据源，则可以查看使用的商店的报表信息 [!DNL Payment Services] 在生产模式下。 如果_[!UICONTROL Sandbox]_ 是选定的数据源，您可以看到沙盒模式的报表信息。
 
 数据源选择的工作方式如下：
 
@@ -84,7 +131,7 @@ ht-degree: 0%
 
    报表结果会根据所选数据源重新生成。
 
-## 自定义日期时间范围
+### 自定义日期时间范围
 
 从“订单付款状态”报表视图中，您可以通过选择特定日期，自定义要查看的状态的时间范围。 默认情况下，网格中显示30天的订单付款状态。
 
@@ -93,7 +140,7 @@ ht-degree: 0%
 1. 选择适用的日期范围。
 1. 查看网格中指定日期的订单付款状态。
 
-## 显示和隐藏列
+### 显示和隐藏列
 
 默认情况下，“订单付款状态”报表会显示所有可用的信息列。 但是，您可以自定义您在报表中看到的列。
 
@@ -103,11 +150,11 @@ ht-degree: 0%
 
    订单付款状态报表将立即显示您在“列设置”菜单中所做的任何更改。 列首选项将进行保存，如果您离开报表视图，这些首选项将保持有效。
 
-## 查看状态
+### 查看状态
 
 “订单付款状态”报表视图显示每个付款服务订单的综合事务处理状态和支付状态信息。
 
-### 交易状态
+#### 交易状态
 
 默认情况下，网格中显示30天的订单付款状态。
 
@@ -115,15 +162,15 @@ ht-degree: 0%
 
 搜索中返回的行数，或显示在默认的30天订单付款状态的行数，显示在订单付款状态视图网格的上方，以及订单日期日历选择器过滤器。
 
-### 付薪状态
+#### 付薪状态
 
 “支付状态”列显示任何付款的当前状态。 A `Capture failed` 付款显示红色警报状态和 `Voided` 付款显示灰色警报状态。
 
-### 退款状态
+#### 退款状态
 
 退款状态列显示任何退款的当前状态。 A `Capture failed` 付款显示红色警报状态和 `Voided` 付款显示灰色警报状态。
 
-## 更新报表数据
+### 更新报表数据
 
 订单付款状态报表视图显示 _[!UICONTROL Last updated]_显示上次更新报告信息的时间戳。 默认情况下，订单付款状态报表数据每三小时自动刷新一次。
 
@@ -134,7 +181,7 @@ ht-degree: 0%
 
    订单付款状态报表数据已刷新，并且 *[!UICONTROL Update complete]* 确认后，网格中将显示最新信息。
 
-## 查看争议
+### 查看争议
 
 您可以在订单付款状态报表中查看商店订单上的任何争议，然后定位至PayPal解决中心对其执行活动。
 
@@ -146,7 +193,7 @@ ht-degree: 0%
 
    要按状态对订单争议进行排序，请单击“争议”列标题。
 
-## 下载订单付款状态
+### 下载订单付款状态
 
 无论您查看的是默认的30天状态还是自定义的时间范围，都可以下载在“订单付款”状态视图网格中可见所有状态的.csv文件。
 
@@ -171,11 +218,7 @@ These order payment status timeframes are currently available in [!DNL Payment S
 | Custom range | Available from the Order payment status dates selector, this can be filtered to show a custom date range. |
 -->
 
-## 订单付款状态信息
-
-“订单付款状态”视图显示网格中显示的每个状态的详细信息。
-
-### 列描述
+#### 状态信息
 
 订单付款状态报表包括以下信息。
 

@@ -4,9 +4,9 @@ description: 使用“付款”报表，可以完全透明地显示付款金额�
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: 8295b7c4ea407f0528d6be69655a8b12f7defe15
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,6 @@ ht-degree: 0%
 # 支付报表
 
 [!DNL Payment Services] 对象 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供全面的报告，以便您清楚地了解商店的订单和付款。
-
-![财务报告视图](assets/reports-justpayouts.png)
 
 有两个可用的“付款”报告视图，使您能够查看有关所有付款的深入信息：
 
@@ -34,7 +32,7 @@ ht-degree: 0%
 
 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** 查看信用与借记的数据可视化图表以及一段时间内的移动平均值。
 
-![管理员中的支付数据可视化图表](assets/payouts-report.png)
+![管理员中的支付数据可视化图表](assets/payouts-report.png){zoomable=yes}
 
 单击 **[!UICONTROL View Report]** 导航到详细的表格 [支付报表视图](#payouts-report-view).
 
@@ -66,17 +64,17 @@ ht-degree: 0%
 
 ## 支付报表视图
 
-付款服务的“付款”视图中提供“付款”报表视图。 它包括有关您商店的付款的所有可用信息。 此 [支付数据可视化视图](#payouts-data-visualization-view) 在Payment Services Home中，您可以在此更详细的报表视图中直观地表示每天的总金额。
+付款服务的“付款”视图中提供“付款”报表视图。 它包括有关您商店的付款的所有可用信息。 此 [支付数据可视化视图](#payouts-data-visualization-view) 在Payment Services主页中，可以直观地表示此更详细的报表视图中的每日汇总金额。
 
 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** 查看详细的表格式支付报表视图。
 
-![管理员中的支付交易记录](assets/payouts-report-new.png)
+![管理员中的支付交易记录](assets/payouts-report-new.png){zoomable=yes}
 
 您可以根据本主题中的部分配置此视图，以便最好地呈现您希望查看的数据。
 
 请参阅“管理员”的“付款”报表中链接的商务订单和交易ID、交易金额、每笔交易的付款方式等。
 
-您可以下载.csv文件格式的支付交易，以便在现有的会计或订单管理软件中使用。
+您可以 [下载支付交易记录](#download-transactions) .csv文件格式的文件，用于现有的财务或订单管理软件。
 
 >[!NOTE]
 >
@@ -86,9 +84,9 @@ ht-degree: 0%
 
 在“付款”报表视图中，您可以选择数据源 — _[!UICONTROL Live]_或_[!UICONTROL Sandbox]_ — 您希望查看其报告结果。
 
-![数据源选择](assets/datasource.png)
+![数据源选择](assets/datasource.png){width=400px}
 
-如果 _[!UICONTROL Live]_是选定的数据源，则可以查看实时存储的报表信息。 如果 [!UICONTROL Sandbox]_是选定的数据源，您可以看到沙盒环境的报表信息。
+如果 _[!UICONTROL Live]_是选定的数据源，您可以查看生产模式下存储的报表信息。 如果_[!UICONTROL Sandbox]_ 是选定的数据源，您可以在沙盒模式下查看存储的报表信息。
 
 数据源选择的工作方式如下：
 
@@ -154,27 +152,27 @@ ht-degree: 0%
 | [!UICONTROL Code] | 表示贷方(*CR*)或借方(*DR*) |
 | [!UICONTROL Reference ID] | 与此事件相关的原始交易ID |
 | [!UICONTROL Invoice] | 交易的发票ID（每张订单一个） |
-| [!UICONTROL Commerce order] | 商业订单ID <br> <br>查看相关内容 [订单信息](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}中，单击ID。 |
-| [!UICONTROL Commerce trans] | 商业交易ID <br> <br>查看相关内容 [交易信息](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}中，单击ID。 |
-| [!UICONTROL Pay method] | 信用卡类型 — *[!UICONTROL BANK]*， *[!UICONTROL PAYPAL]*， *[!UICONTROL APPLE_PAY]*， *[!UICONTROL CREDIT_CARD]* — 和相关联的卡提供商(例如 *Visa* 或 *MasterCard*) |
-| [!UICONTROL Trans amt] | 交易金额 |
-| [!UICONTROL Cur] | 交易记录金额的货币单位 |
-| [!UICONTROL Pending] | 尚未支付的金额 |
-| [!UICONTROL Cur] | 待定金额的货币单位 |
-| [!UICONTROL Seller amt] | 向客户转移或从客户转移的资金金额 <br> <br>从卖方账户移出的资金会显示一个短划线(-)前缀。 |
-| [!UICONTROL Cur] | 卖方金额的货币单位 |
-| [!UICONTROL Partner fee] | 与交易相关的合作伙伴费用 <br> <br>从合作伙伴费用帐户移出的基金会显示一个短划线(-)前缀。 |
-| [!UICONTROL Cur] | 合作伙伴费用的货币单位 |
-| [!UICONTROL Prov fees] | 与交易相关的费用 <br> <br>从提供商费用帐户中移出的基金显示一个短划线(-)前缀。 |
-| [!UICONTROL Cur] | 提供商费用的货币单位 |
-| [!UICONTROL Fee %] | 收取费用的交易金额的百分比 |
-| [!UICONTROL Fixed fee] | 固定提供商费用金额 |
-| [!UICONTROL Chbk fee] | 与交易相关的拖缺款项 <br> <br>短划线(-)前缀表示按存储容量使用计费已撤销。 |
-| [!UICONTROL Cur] | 拖缺费用的货币单位 |
-| [!UICONTROL Hold amt] | 暂挂或解除暂挂的金额 <br> <br>短划线(-)前缀表示正在释放暂挂资金。 |
-| [!UICONTROL Cur] | 暂挂金额的货币单位 |
-| [!UICONTROL Recoup amt] | 从补偿帐户中扣除的金额 <br> <br>从回收帐户移出的资金显示一个短划线(-)前缀。 |
-| [!UICONTROL Cur] | 扣除金额的货币单位 |
+| [!UICONTROL Commerce order] | 商业订单ID <br> <br>查看相关内容 [订单信息](https://docs.magento.com/user-guide/sales/orders.html)中，单击ID。 |
+| [!UICONTROL Commerce trans] | 商业交易ID |
+| [!UICONTROL Pay method] | 信用卡类型 — *[!UICONTROL BANK]*， *[!UICONTROL PAYPAL]*， *[!UICONTROL CREDIT_CARD]* — 和相关联的卡提供商(例如 *Visa* 或 *MasterCard*) |
+| [!UICONTROL TRANS AMT] | 交易金额 |
+| [!UICONTROL CUR] | 交易记录金额的货币单位 |
+| [!UICONTROL PENDING] | 尚未支付的金额 |
+| [!UICONTROL CUR] | 待定金额的货币单位 |
+| [!UICONTROL SELLER AMT] | 向客户转移或从客户转移的资金金额 <br> <br>从卖方账户移出的资金会显示一个短划线(-)前缀。 |
+| [!UICONTROL CUR] | 卖方金额的货币单位 |
+| [!UICONTROL PARTNER FEE] | 与交易相关的合作伙伴费用 <br> <br>从合作伙伴费用帐户移出的基金会显示一个短划线(-)前缀。 |
+| [!UICONTROL CUR] | 合作伙伴费用的货币单位 |
+| [!UICONTROL PROV FEES] | 与交易相关的费用 <br> <br>从提供商费用帐户中移出的基金显示一个短划线(-)前缀。 |
+| [!UICONTROL CUR] | 提供商费用的货币单位 |
+| [!UICONTROL FEE %] | 收取费用的交易金额的百分比 |
+| [!UICONTROL FIXED FEE] | 固定提供商费用金额 |
+| [!UICONTROL CHBK FEE] | 与交易相关的拖缺款项 <br> <br>短划线(-)前缀表示按存储容量使用计费已撤销。 |
+| [!UICONTROL CUR] | 拖缺费用的货币单位 |
+| [!UICONTROL HOLD AMT] | 暂挂或解除暂挂的金额 <br> <br>短划线(-)前缀表示正在释放暂挂资金。 |
+| [!UICONTROL CUR] | 暂挂金额的货币单位 |
+| [!UICONTROL RECOUP AMT] | 从补偿帐户中扣除的金额 <br> <br>从回收帐户移出的资金显示一个短划线(-)前缀。 |
+| [!UICONTROL CUR] | 扣除金额的货币单位 |
 
 ### 交易类型
 

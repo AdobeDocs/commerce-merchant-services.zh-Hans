@@ -4,9 +4,9 @@ description: 安装后，您可以配置 [!DNL Payment Services] 在家里。
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: f14b4a1abe9c0f85dc9f070467f94819c1fe89e6
+source-git-commit: c28b86f3a0ff0aae06a4ee8a60b2b9f304295ff8
 workflow-type: tm+mt
-source-wordcount: '1909'
+source-wordcount: '2036'
 ht-degree: 0%
 
 ---
@@ -142,6 +142,7 @@ ht-degree: 0%
 1. 要更改结帐期间显示的付款方式名称，请编辑 **[!UICONTROL Checkout Title]** 字段。
 1. 至 [设置付款活动](production.md#set-payment-services-as-payment-method)，切换 **[!UICONTROL Payment action]** 到 `Authorize` 或 `Authorize and Capture`.
 1. 使用切换选择器启用或禁用 [!DNL PayPal smart button] 显示功能：
+
    - **[!UICONTROL Show PayPal buttons on product checkout page]**
    - **[!UICONTROL Show PayPal buttons on product detail page]**
    - **[!UICONTROL Show PayPal buttons in mini-cart preview]**
@@ -150,12 +151,13 @@ ht-degree: 0%
    - **[!UICONTROL Show PayPal Pay Later message]**
    - **[!UICONTROL Show Venmo button]**
    - **[!UICONTROL Show Apple Pay button]**
+   - **[!UICONTROL Show PayPal Credit and Debit Card button]**
 
-      >[!NOTE]
-      >
-      > 要使用Apple为您付款，请执行以下操作 [必须具有Apple sandbox tester帐户](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) （包含虚假信用卡和账单信息）进行测试。 当您准备好在沙盒中使用Apple Pay时 _或_ 生产模式，完成任意 [测试和验证](test-validate.md#test-in-sandbox-environment)，完成 [自行注册 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_注册您的活动域_ 部分)和 [在中为您的商店配置它 [!DNL Payment Services]](settings.md#payment-buttons).
+     >[!NOTE]
+     >
+     > 要使用Apple为您付款，请执行以下操作 [必须具有Apple sandbox tester帐户](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) （包含虚假信用卡和账单信息）进行测试。 当您准备好在沙盒中使用Apple Pay时 _或_ 生产模式，完成任意 [测试和验证](test-validate.md#test-in-sandbox-environment)，完成 [自行注册 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_注册您的活动域_ 部分)和 [在中为您的商店配置它 [!DNL Payment Services]](settings.md#payment-buttons).
 
-      当您打开/关闭付款按钮或PayPal Pay Later消息的可见性时，“设置”页面底部会显示该配置的可视预览。
+     当您打开/关闭付款按钮或PayPal Pay Later消息的可见性时，“设置”页面底部会显示该配置的可视预览。
 
 1. 要启用调试模式，请切换 **[!UICONTROL Debug Mode]** 选择器。
 1. 单击 **[!UICONTROL Save]**.
@@ -178,6 +180,7 @@ ht-degree: 0%
 | [!UICONTROL Show PayPal Pay Later Message] | 网站 | 在购物车、产品页面、迷你购物车和结帐流程中启用或禁用“稍后付费”消息。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show Venmo button] | 商店视图 | 启用或禁用显示付款按钮的Venmo付款选项。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show Apple Pay button] | 商店视图 | 启用或禁用显示付款按钮的Apple支付付款选项。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal Credit and Debit card button] | 商店视图 | 启用或禁用显示付款按钮的信用卡和借记卡付款选项。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | 网站 | 启用或禁用“调试模式”。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### 按钮样式
@@ -198,6 +201,8 @@ ht-degree: 0%
 
    当您更改布局、颜色、形状、高度和标签的配置选项时，“设置”页面底部会显示该配置的可视预览。
 
+   ![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="500"}
+
 1. 单击 **[!UICONTROL Save]**.
 
    如果您尝试离开此视图而不保存更改，则会出现一个模式窗口，提示您放弃更改、继续编辑或保存更改。
@@ -217,6 +222,19 @@ ht-degree: 0%
 | [!UICONTROL Responsive Button Height] | 商店视图 | 定义付款按钮是否使用默认高度。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Height] | 商店视图 | 定义付款按钮的高度。 默认值：无 |
 | [!UICONTROL Label] | 商店视图 | 定义付款按钮中显示的标签。 选项： [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
+
+## 配置角色
+
+要确保管理员用户能够在商务管理员中创建和管理订单，请启用 [!DNL Payment Services]用户角色的特定资源。
+
+参见 [用户角色](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-user-roles.html) 以了解如何管理角色。
+
+将资源分配给角色时，必须选择：
+
+- **付款方式[!DNL Payment Services]** — 此资源确保当您在Admin中创建订单时， [!DNL Payment Services] 信用卡可作为付款方式使用。 如果您选择 **操作** 父资源，也将选择此资源。
+- **[!DNL Payment Services]** — 此资源包括 **仪表板** 和 **SaaS服务代理** 资源，还必须选择该属性。 它们确保 [!DNL Payment Services] 显示在 _销售_ 菜单。
+
+  ![Payment Services资源](assets/roles-payments.png)
 
 ## 刷新缓存
 
