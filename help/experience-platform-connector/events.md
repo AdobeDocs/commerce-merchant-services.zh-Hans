@@ -2,9 +2,9 @@
 title: 事件
 description: 了解每个事件捕获的数据。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: ddacfc053f83be750c63ba376519169b38f7f478
+source-git-commit: 7b34b66d5fb199e75b321a7d7ff0f98a3a0dcf8b
 workflow-type: tm+mt
-source-wordcount: '4596'
+source-wordcount: '4605'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 店面活动
 
-店面活动收集购物者浏览您的网站时的匿名行为数据。 这些事件收集的数据可用于创建针对特定购物者集的促销和促销活动。
+店面活动收集购物者浏览您的网站时的匿名行为数据。 您可以使用这些事件收集的数据来创建针对特定购物者组的促销和促销活动。 店面事件数据仅包括简单且可配置的产品。
 
 >[!NOTE]
 >

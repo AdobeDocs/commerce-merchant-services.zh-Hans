@@ -2,9 +2,9 @@
 title: 将Commerce数据连接到Adobe Experience Platform
 description: 了解如何将Commerce数据连接到Adobe Experience Platform。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: 386d5e4245401695d7123a87b7dfb703f1f849e9
+source-git-commit: 8c2f275354eb4deba151ccdd83302e4b2cc5d4c9
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1952'
 ht-degree: 0%
 
 ---
@@ -30,23 +30,17 @@ ht-degree: 0%
 
 ## 更新Experience Platform连接器
 
-在本节中，您将使用组织ID将Adobe Commerce实例连接到Adobe Experience Platform。 然后，您可以指定要发送到Experience Platform边缘的数据类型（店面或后台）。
+在本节中，您将使用组织ID将Adobe Commerce实例连接到Adobe Experience Platform。 然后，您可以指定要发送到Experience Platform边缘的数据类型（店面和后台）。
 
 ![Experience Platform连接器配置](assets/epc-config-dc.png)
 
 ## 常规
 
-1. 在中登录到您的Adobe帐户 [商务服务连接器](../landing/saas.md#organizationid) 并选择您的组织ID。
-
-   >[!NOTE]
-   >
-   >如果您之前配置了Commerce Services连接器，则可以跳过此步骤，因为已选择您的组织ID。
-
 1. 在“管理员”中，转到 **系统** >服务> **Experience Platform连接器**.
 
-1. 在 **范围** 下拉列表，将上下文设置为 **网站**.
+1. 在 **设置** 选项卡位于 **常规**，验证与您的Adobe Experience Platform帐户关联的ID，如中所配置 [商务服务连接器](../landing/saas.md#organizationid). 组织ID是全局的。 每个Adobe Commerce实例只能关联一个组织ID。
 
-1. 在 **组织ID** 字段中，验证与您的Adobe Experience Platform帐户关联的ID，如中配置 [商务服务连接器](../landing/saas.md#organizationid). 组织ID是全局的。 每个Adobe Commerce实例只能关联一个组织ID。
+1. 在 **范围** 下拉列表，将上下文设置为 **网站**.
 
 1. （可选）如果您已经拥有 [AEP Web SDK（合金）](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) 部署到您的站点时，启用复选框并添加AEP Web SDK的名称。 否则，请将这些字段留空，Experience Platform连接器将为您部署一个字段。
 
@@ -60,7 +54,7 @@ ht-degree: 0%
 
 客户端数据是在店面中捕获的数据。 这包括购物者交互，例如 `View Page`， `View Product`， `Add to Cart`、和 [申请列表](events.md#b2b-events) 信息（对于B2B商家）。 服务器端数据（或后台数据）是在Commerce服务器中捕获的数据。 这包括有关订单状态的信息，例如订单是否已下达、取消、退款、已发运或已完成。
 
-在 **数据收集** 部分，选择要发送到Experience Platform边缘的数据类型。 要确保Adobe Commerce实例可以开始数据收集，请查看 [先决条件](overview.md#prerequisites).
+要确保Adobe Commerce实例可以开始数据收集，请查看 [先决条件](overview.md#prerequisites).
 
 请参阅事件主题以了解有关 [店面](events.md#storefront-events) 和 [后台](events.md#back-office-events) 事件。
 
@@ -117,6 +111,127 @@ ht-degree: 0%
 >[!NOTE]
 >
 >上线后，店面数据开始流入Experience Platform边缘。 后台数据需要大约5分钟才能显示在边缘。 根据cron计划，后续更新在Edge上可见。
+
+## （测试版）发送历史订单数据
+
+>[!NOTE]
+>
+>此功能仅适用于Beta版用户。 您可以通过向以下地址发送电子邮件来加入测试版： [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+
+Adobe Commerce最多可收集五年的历史订单数据和状态。 您可以使用Experience Platform连接器将该历史数据发送到Experience Platform，以根据这些过去的订单扩充您的客户配置文件。 该数据存储在Experience Platform内的数据集中。
+
+虽然Commerce已收集历史订单数据，但您必须完成几项任务才能将该数据发送到Experience Platform。 以下部分将指导您完成此过程。
+
+### 安装历史订单测试版
+
+要为测试版启用历史订单数据收集，您必须更新项目的根 [!DNL Composer] `.json` 文件如下所示：
+
+1. 打开根 `composer.json` 文件和搜索 `magento/experience-platform-connector`.
+
+1. 在 `require` 部分，按如下方式更新版本号：
+
+   ```json
+   "require": {
+      ...
+      "magento/experience-platform-connector": "^3.0.0-beta1",
+      ...
+    }
+   ```
+
+1. 对于B2B商家，请更新 `.json` 文件如下所示：
+
+   ```json
+   "require": {
+     ...
+     "magento/experience-platform-connector-b2b": "^2.0.0-beta1"
+     ...
+   }
+   ```
+
+1. **保存** `composer.json`. 然后，从命令行运行以下命令：
+
+   ```bash
+   composer update magento/experience-platform-connector –-with-dependencies
+   ```
+
+   或者，对于B2B商家：
+
+   ```bash
+   composer update magento/experience-platform-connector-b2b --with-dependencies
+   ```
+
+### 配置历史订单测试版
+
+为了确保可以将客户的订单历史记录发送到Experience Platform，您必须指定将您的Commerce实例链接到Experience Platform的凭据。 如果您已安装并启用了 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) 模块，您已指定所需的凭据，可以跳过此步骤。 如果尚未安装并启用Audience Activation模块，请完成以下步骤：
+
+>[!NOTE]
+>
+>在此部分中，您从开发人员控制台输入凭据。 确保您的开发人员控制台项目具有正确的 [配置的角色和权限](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
+
+1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
+
+1. 展开 **[!UICONTROL Services]** 并选择 **[!UICONTROL Experience Platform Connector]**.
+
+1. 输入可在以下位置找到的配置凭据： [开发人员控制台](https://developer.adobe.com/console/home).
+
+   ![Experience Platform连接器管理员配置](./assets/epc-admin-config.png){width="700" zoomable="yes"}
+
+   >[!NOTE]
+   >
+   >对于测试版，Commerce在开发人员控制台中使用JSON Web令牌(JWT)凭据。 测试后，Commerce将在开发人员控制台中使用OAuth 2.0。
+
+1. 单击 **保存配置**.
+
+### 设置订单同步服务
+
+输入开发人员凭据后，您可以设置订单同步服务。 订单同步服务使用 [消息队列框架](https://developer.adobe.com/commerce/php/development/components/message-queues/) 和RabbitMQ。 完成这些步骤后，订单状态数据可以同步到SaaS，在发送到Experience Platform之前需要这样做。
+
+1. [启用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq.html) RabbitMQ。
+
+   >[!NOTE]
+   >
+   >已为Commerce版本2.4.7及更高版本设置了RabbitMQ，但您必须启用消费者。
+
+1. 在中按cron作业启用消息队列使用者 `.magento.env.yaml` 使用 `CRON_CONSUMERS_RUNNER` 环境变量。
+
+   ```yaml
+      stage:
+        deploy:
+          CRON_CONSUMERS_RUNNER:
+            cron_run: true
+   ```
+
+   >[!NOTE]
+   >
+   >请参阅 [部署变量文档](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) 了解所有可用的配置选项。
+
+启用订单同步服务后，您可以在“Experience Platform连接器”页面中指定历史订单日期范围。
+
+### 指定订单历史记录日期范围
+
+在此部分中，您可以指定要发送给Experience Platform的历史订单的日期范围。
+
+![同步订单历史记录](./assets/order-history.png){width="700" zoomable="yes"}
+
+1. 在“管理员”中，转到 **系统** >服务> **Experience Platform连接器**.
+
+1. 选择 **订单历史记录** 选项卡。
+
+1. 下 **订单历史记录同步**，输入 **数据集Id**. 此数据集应与您在中指定的数据流相关联 [数据收集](#data-collection) 部分。
+
+   1. 要访问数据集ID，请打开Experience PlatformUI并选择 **数据集** 在左侧导航中打开 **数据集** 仪表板。 仪表板列出您组织的所有可用数据集。 将显示每个列出数据集的详细信息，包括其名称、数据集所遵循的架构以及最近一次摄取运行的状态。
+   1. 打开与数据流关联的数据集。
+   1. 在右侧窗格中，您将看到有关数据集的详细信息。 复制数据集ID。
+
+   ![复制数据集Id](./assets/retrieve-dataset-id.png){width="700" zoomable="yes"}
+
+1. 在 **起始日期** 和 **至** 字段为要发送的历史订单数据指定数据范围。 您不能选择超过五年的日期范围。
+
+1. 选择 [!UICONTROL Start Sync] 以触发同步开始。 历史订单数据是批处理数据，而不是作为流式数据的店面和后台数据。 批量数据大约需要45分钟才能到达Experience Platform。
+
+   >[!NOTE]
+   >
+   >对于Beta版，如果在同一或重叠的时间范围内多次触发同步，则会在数据集中看到重复事件。
 
 ## 确认已收集事件数据
 

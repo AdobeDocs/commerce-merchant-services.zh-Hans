@@ -2,7 +2,7 @@
 title: 从Adobe Commerce安装和配置Adobe Experience Platform连接器
 description: 了解如何从Adobe Commerce安装、配置、更新和卸载Adobe Experience Platform连接器。
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: 898d49cbeb4711862a47693a0d608b74730dc845
+source-git-commit: 052b9fe32797e62d5802241c7b3420decf593fc1
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -63,7 +63,7 @@ composer update magento/experience-platform-connector-b2b --with-dependencies
 
 要更新到主要版本（例如从1.0.0到2.0.0），请编辑项目的根 [!DNL Composer] `.json` 文件如下所示：
 
-1. 打开根 `composer.json` 文件和搜索 `magento/platform-connector`.
+1. 打开根 `composer.json` 文件和搜索 `magento/experience-platform-connector`.
 
 1. 在 `require` 部分，按如下方式更新版本号：
 

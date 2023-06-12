@@ -2,9 +2,9 @@
 title: 发行说明
 description: Adobe Commerce中的Adobe Experience Platform连接器的最新发行信息。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 22823b662eefa953fcca6ae78f6c37ee8abff3d1
+source-git-commit: b48f9eadda233f4996f1e1d806ecc973cfd241c2
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '371'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,11 @@ ht-degree: 1%
 以下发行说明介绍了与Experience Platform连接器使用的扩展相关的功能更改和修复。
 
 +++支持的服务更新
+
+_2023年6月10日_
+
+* ![修复](../assets/fix.svg)  — 修复了以下情况下出现的问题： `orderId` 由于商务订单标识符中的前缀，无法在上下文中传递。
+* ![修复](../assets/fix.svg)  — 更新了内容安全策略配置。
 
 _2023年3月30日_
 
