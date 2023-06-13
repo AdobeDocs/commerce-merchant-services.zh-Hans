@@ -2,9 +2,9 @@
 title: ‘[!DNL Live Search] 发行说明
 description: “的最新发行信息 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
+source-git-commit: d4f22cdae9b4b0a19691465ae87e344847672698
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1277'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,11 @@ ht-degree: 0%
 ![修复](../assets/fix.svg) 修复和改进功能
 ![错误](../assets/bug.svg) 已知问题
 
+
+_2023年6月13日_
+
+![新](../assets/new.svg) Live Search现在支持另外5个 [配置值](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/configuration.html).
+![修复](../assets/fix.svg) 修复了某些字符（如引号或撇号）导致排名问题的情况。 重新索引将解决这些问题。
 
 _2023年4月25日_
 

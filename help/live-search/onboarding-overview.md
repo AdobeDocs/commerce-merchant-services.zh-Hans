@@ -2,9 +2,9 @@
 title: “入门培训概述”
 description: ”[!DNL Live Search] 载入流程、系统要求、边界和限制”
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 86e6fdb653278f3e70640155d697897a2ea1b674
+source-git-commit: 8f842732334dc8b1f8ebdf76310e16abe4e6b1b6
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -66,11 +66,31 @@ Live Search客户可以使用新的 [SaaS价格索引器](../price-index/index.m
 
 ### PWA支持
 
-Live Search支持被视为测试版，因为并非所有PWA都经过测试 [!DNL Live Search]. 在Venia中，搜索和产品列表页面等基本功能可以正常工作，但Graphql的某些排列可能无法正常工作。
+[!DNL Live Search] 适用于PWA Studio，但用户可能看到与其他Commerce实施相比略有差异。 在Venia中，搜索和产品列表页面等基本功能可以正常工作，但Graphql的某些排列可能无法正常工作。 此外，可能存在性能差异。
 
-* 当前的Beta版PWA实施 [!DNL Live Search] 返回搜索结果所需的处理时间大于 [!DNL Live Search] 具有原生Commerce店面。
-* [!DNL Live Search] PWA不支持 [事件处理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
+* 当前的PWA实施 [!DNL Live Search] 返回搜索结果所需的处理时间大于 [!DNL Live Search] 具有原生Commerce店面。
+* [!DNL Live Search] PWA不支持 [事件处理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). 因此，智能促销无法正常工作。
 * 直接筛选 `description`， `name`， `short_description` GraphQL不支持与一起使用 [PWA](https://developer.adobe.com/commerce/pwa-studio/)，但会使用更一般的过滤器返回它们。
+
+使用 [!DNL Live Search] 对于PWA Studio，集成商还必须：
+
+1. 安装 [livesearch-storefront-utils](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).
+1. 设置 `environmentId` 在 `storeDetails` 对象。
+
+   ```javascript
+   const storeDetails: StoreDetailsProps = {
+       environmentId: <Storefront_ID>,
+       websiteCode: "base",
+       storeCode: "main_website_store",
+       storeViewCode: "default",
+       searchUnitId: searchUnitId,
+       config: {
+           minQueryLength: 5,
+           pageSize: 8,
+           currencySymbol: "$",
+           },
+       };
+   ```
 
 ### 当前不支持
 

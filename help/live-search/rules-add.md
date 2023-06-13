@@ -2,9 +2,9 @@
 title: "添加规则"
 description: “了解如何创建 [!DNL Live Search] 规则。”
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 2d4c96679b93a97e032fcbb50a27cbd579554795
+source-git-commit: 0b0e9a630162c4c98c6a3af969002def03155267
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1419'
 ht-degree: 0%
 
 ---
@@ -85,6 +85,10 @@ ht-degree: 0%
 * 无：产品按相关性排序
 
 1. 选择规则的策略类型。 “测试规则”窗口将显示预期的结果。
+
+>[!NOTE]
+>
+>查询中的撇号和引号可能会导致某些语言中的排名和相关性出现一些轻微问题。
 
 ## 添加事件
 

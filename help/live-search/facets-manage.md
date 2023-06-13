@@ -2,9 +2,9 @@
 title: “管理Facet”
 description: “了解如何管理现有 [!DNL Live Search] 多方面。”
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+source-git-commit: bce69f952e70e2e8dcb892357dea41e18f61e5f6
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,10 @@ ht-degree: 0%
 销钉变为灰色，小平面移动到 *动态Facet* 部分。
 
    ![固定和动态Facet](assets/facets-pinned-unpinned.png)
+
+>[!NOTE]
+>
+>如果存在具有相同名称的两个标签，则固定的Facet排序可能会不一致。
 
 ## 移动固定方面
 
