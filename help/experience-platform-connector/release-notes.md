@@ -2,9 +2,9 @@
 title: 发行说明
 description: Adobe Commerce中的Adobe Experience Platform连接器的最新发行信息。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: b48f9eadda233f4996f1e1d806ecc973cfd241c2
+source-git-commit: 520a05f4cf944261a5f35baae045318e836b4a4b
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '390'
 ht-degree: 1%
 
 ---
@@ -45,6 +45,14 @@ _2022年10月12日_
 * ![新](../assets/new.svg)  — 增加了对 [AEM店面](overview.md#aem-support)
 
 +++
+
+## 3.0.0-beta1
+
+_2023年6月13日_
+
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+
+* ![新](../assets/new.svg)  — （测试版）添加了以下功能： [发送历史订单](connect-data.md#beta-send-historical-order-data) Experience Platform的数据和状态。
 
 ## 2.2.0
 
