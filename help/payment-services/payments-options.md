@@ -2,9 +2,9 @@
 title: 付款选项
 description: 设置付款选项以自定义商店客户可用的方法。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 44d36c530ba95f38c264ac40123ea12ec98c32b3
+source-git-commit: 36dd961d06f279143e90f3a1f5a6114db14e8c1b
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ ht-degree: 0%
 
 这允许您：
 
-* 为您的客户提供各种支付选项，而无需通过PayPal申请信用卡审批。
+* 为您的客户提供各种支付选项，包括Venmo和PayPal支付按钮，以及关闭PayPal托管卡字段并使用现有信用卡提供商的选项。
 * 使用您现有的信用卡提供商进行信用卡支付，同时利用PayPal的其他支付选项。
 * 在PayPal不支持将信用卡作为付款选项的区域中使用PayPal的付款按钮。
 
