@@ -2,9 +2,9 @@
 title: ‘[!DNL Catalog Service] 发行说明
 description: 的最新发行信息 [!DNL Catalog Service] 适用于Adobe Commerce的。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
+source-git-commit: f5a7e5ca4d1978e7ee8683c0ff0be8ba554cc9b2
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
@@ -21,18 +21,13 @@ ht-degree: 0%
 
 ## 当前主要版本
 
-_2023年4月25日_
+### V1.10发布
 
-![新](../assets/new.svg) 目录服务客户现在可以利用新的 [SaaS价格索引器](../price-index/index.md).
-
-### V1.7版本
-
-_2023年4月12日_
+_2023年6月27日_
 
 [!BADGE 兼容性]{type=Informative tooltip="兼容性"}
 
-![新](../assets/new.svg) 目录服务现在可以清除已删除的产品变型。
-![修复](../assets/fix.svg) 基础架构可扩展性和性能改进。
+![新](../assets/new.svg) 目录服务现在可以在产品详细信息页面构件中显示相关产品。
 
 #### 已知限制
 
@@ -48,6 +43,15 @@ _2023年4月12日_
 * 最低广告价格
 * [分层定价](mesh.md)
 * 可下载的产品和礼品卡
+
+### V1.7版本
+
+_2023年4月12日_
+
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+
+![新](../assets/new.svg) 目录服务现在可以清除已删除的产品变型。
+![修复](../assets/fix.svg) 基础架构可扩展性和性能改进。
 
 ### V1.6发布
 
