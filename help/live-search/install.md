@@ -2,9 +2,9 @@
 title: '"安装 [!DNL Live Search]”'
 description: “了解如何安装、更新和卸载 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: cccdcfe28150d929d9ff7de4459bbfef941860a4
+source-git-commit: 8b57f2269ae13033f26c0e5e468bc35ce9deaf9f
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
@@ -163,7 +163,7 @@ ht-degree: 0%
 
 ## 同步目录数据 {#synchronize-catalog-data}
 
-[!DNL Live Search] 搜索操作需要同步的产品数据，而配置Facet需要同步属性数据。 产品目录与目录服务之间的初始同步始于 [!DNL Live Search] 第一次连接。 根据目录的安装方法和大小，导出和索引数据最多可能需要8小时 [!DNL Live Search]. 在架构中可以找到与目录服务同步和共享的数据列表，架构定义于：
+[!DNL Live Search] 搜索操作需要同步的产品数据，而配置Facet需要同步属性数据。 产品目录与目录服务之间的初始同步始于 [!DNL Live Search] 第一次连接。 根据目录的安装方法和大小，导出和索引数据最多可能需要30分钟 [!DNL Live Search]. 在架构中可以找到与目录服务同步和共享的数据列表，架构定义于：
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 
