@@ -2,7 +2,7 @@
 title: 事件
 description: 了解每个事件捕获的数据。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 7b34b66d5fb199e75b321a7d7ff0f98a3a0dcf8b
+source-git-commit: 1484a465f3ce5b5578a7c5cf3f5f3b7d68d69c41
 workflow-type: tm+mt
 source-wordcount: '4605'
 ht-degree: 0%
@@ -328,7 +328,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->安装了B2B模块的Adobe Commerce Enterprise Edition不支持搜索事件。
+>安装了B2B扩展的Adobe Commerce Enterprise Edition不支持搜索事件。
 
 #### 从searchRequestSent收集的数据
 
@@ -355,7 +355,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->安装了B2B模块的Adobe Commerce Enterprise Edition不支持搜索事件。
+>安装了B2B扩展的Adobe Commerce Enterprise Edition不支持搜索事件。
 
 #### 从searchResponseReceived收集的数据
 

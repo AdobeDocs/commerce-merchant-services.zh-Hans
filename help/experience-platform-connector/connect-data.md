@@ -2,7 +2,7 @@
 title: 将Commerce数据连接到Adobe Experience Platform
 description: 了解如何将Commerce数据连接到Adobe Experience Platform。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: 8c2f275354eb4deba151ccdd83302e4b2cc5d4c9
+source-git-commit: 1484a465f3ce5b5578a7c5cf3f5f3b7d68d69c41
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 0%
@@ -162,7 +162,7 @@ Adobe Commerce最多可收集五年的历史订单数据和状态。 您可以�
 
 ### 配置历史订单测试版
 
-为了确保可以将客户的订单历史记录发送到Experience Platform，您必须指定将您的Commerce实例链接到Experience Platform的凭据。 如果您已安装并启用了 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) 模块，您已指定所需的凭据，可以跳过此步骤。 如果尚未安装并启用Audience Activation模块，请完成以下步骤：
+为了确保可以将客户的订单历史记录发送到Experience Platform，您必须指定将您的Commerce实例链接到Experience Platform的凭据。 如果您已安装并启用了 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) 扩展上，您已指定所需的凭据，可以跳过此步骤。 如果尚未安装并启用Audience Activation扩展，请完成以下步骤：
 
 >[!NOTE]
 >
