@@ -4,7 +4,7 @@ description: 使用SaaS价格索引提高性能
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: a93ada3230d3d29dd6b79f67a61ede38de7dc250
+source-git-commit: 19c4d3263c22914672b38c5dc5ec9908889bb9b6
 workflow-type: tm+mt
 source-wordcount: '752'
 ht-degree: 0%
@@ -83,16 +83,16 @@ adobe-commerce/catalog-adapter
 
 ### 没有扩展依赖性的Luma
 
-* 已安装所需服务(Live Search、Product Recommendations、Catalog Service)的Luma或Abode Commerce核心GraphQL商家
+* 已安装所需服务(Live Search、Product Recommendations、Catalog Service)的Luma或Adobe Commerce Core GraphQL商家
 * 没有依赖于PHP核心价格索引器的第三方扩展
 * 销售简单、可配置、分组、虚拟和捆绑的动态产品
 
 1. 启用新信息源。
 1. 安装目录适配器。
 
-### 带有PHP核心价格索引器依赖项的Luma和Abode Commerce核心GraphQl
+### 具有PHP核心价格索引器依赖项的Luma和Adobe Commerce核心GraphQl
 
-* 已安装受支持服务(Live Search、Product Recommendations、Catalog Service)的Luma或Abode Commerce核心GraphQL商家
+* 已安装受支持服务(Live Search、Product Recommendations、目录服务)的Luma或Adobe Commerce Core GraphQL商家
 * 通过依赖于PHP核心价格索引器的第三方扩展
 * 销售简单、可配置、分组、虚拟和捆绑的动态产品
 
