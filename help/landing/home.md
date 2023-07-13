@@ -5,7 +5,8 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: 文档
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 63f6b5f33e3a8457420703d292d1eb341949af04
+recommendations: noCatalog
+source-git-commit: d803cd9c78ac8c5529eadf39f361d7e46045359e
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -19,6 +20,7 @@ Adobe提供了Commerce、集成和数据服务的集合，以帮助商家支持�
 >[!BEGINSHADEBOX &quot;发行信息&quot;]
 
 参见 [我们文档的新增功能](whats-new.md) 或 [发行说明](release-notes-all.md) 每个Commerce服务。
+
 >[!ENDSHADEBOX]
 
 ## Commerce服务

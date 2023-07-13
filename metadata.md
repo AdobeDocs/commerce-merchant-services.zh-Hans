@@ -7,7 +7,8 @@ mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/commerce-merchant-services.zh-Hans
 index: y
 role: User
-source-git-commit: dca352d5c7789fe65a490b57c29d0c2658566898
+feature-set: Commerce
+source-git-commit: 1858e450d635105d4655ec24a01d2e23ae2e1244
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 0%
@@ -15,23 +16,23 @@ ht-degree: 0%
 ---
 
 
-# 供內部使用的中繼資料
+# 供内部使用的元数据
 
-此 `metadata.md` 檔案包含傳遞至使用手冊的存放庫層級中繼資料 `TOC.md` 存放庫中的檔案。 如果您想要變更任何使用手冊的metadata.md內容，請在任何使用手冊中變更 `TOC.md` 檔案。
+此 `metadata.md` 文件包含存储库级别的元数据，这些元数据将传递到用户指南 `TOC.md` 文件库中的文件。 如果要更改任何用户指南的metadata.md内容，请在任意 `TOC.md` 文件。
 
-| 中繼資料 | 作用 |
+| 元数据 | 作用 |
 |--- |--- |
-| solution-title | 在文章標題中作為連結使用 |
-| solution-hub-url | 開啟helpx中樞頁面 |
-| solution-icon | 在解決方案標題旁邊顯示解決方案圖示。 尚未實作 |
-| getting-started-url | helpx快速入門頁面的連結 |
-| tutorials-url | 教學課程影片（helpx或KT教學課程其中之一）的連結 |
-| mini-toc-levels | 決定顯示在右側欄中的標題層數。 預設值為2 |
-| git-repo | 指定內部使用的主要存放庫位置 |
+| solution-title | 在文章标题中用作链接 |
+| solution-hub-url | 打开helpx中心页面 |
+| solution-icon | 在解决方案标题旁边显示解决方案图标。 尚未实施 |
+| getting-started-url | 指向helpx快速入门页面的链接 |
+| tutorials-url | 指向视频教程的链接 — helpx教程或KT教程 |
+| mini-toc-levels | 确定右边栏中显示的标题级别数。 默认值为2 |
+| git-repo | 指定主控存储库的位置以供内部使用 |
 
-在TOC.md檔案中
+在TOC.md文件中
 
-| 中繼資料 | 作用 |
+| 元数据 | 作用 |
 |--- |--- |
-| 使用手冊標題 | 在文章標題中作為連結使用 |
-| 使用手冊url | 開啟helpx中樞頁面 |
+| user-guide-title | 在文章标题中用作链接 |
+| user-guide-url | 打开helpx中心页面 |

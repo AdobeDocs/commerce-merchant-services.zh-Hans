@@ -2,7 +2,8 @@
 title: 目录同步
 description: 了解如何从导出产品数据 [!DNL Commerce] 服务器至 [!DNL Commerce Services] 不断更新服务。
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: 3931a8c2e19f0024017682b029451bf1670d94b1
+feature: Catalogs, Data Import/Export, Catalog Service
+source-git-commit: d803cd9c78ac8c5529eadf39f361d7e46045359e
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
