@@ -2,7 +2,8 @@
 title: 简介 [!DNL Live Search]
 description: ”[!DNL Live Search] Adobe Commerce提供了超快、超相关和直观的搜索体验。”
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
-source-git-commit: 5319c1474346ed3eb3cd2cf097813b00d8f56503
+recommendations: noCatalog
+source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 0%

@@ -2,7 +2,8 @@
 title: '''Commerce配置设置和 [!DNL Live Search] ‘'
 description: 描述Adobe Commerce配置设置，这些设置能够 [!DNL Live Search] 可以阅读。
 exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
-source-git-commit: c8303b11c7a274a3956a7336203aa34bd9d6a67f
+features: Services, Search, Configuration
+source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 0%
