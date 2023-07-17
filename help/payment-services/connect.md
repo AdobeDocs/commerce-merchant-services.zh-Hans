@@ -2,7 +2,8 @@
 title: 连接实例
 description: 使用API密钥和私钥连接您的Commerce实例，并在配置中指定数据空间。
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+feature: Payments, Checkout, Configuration, Saas
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 0%

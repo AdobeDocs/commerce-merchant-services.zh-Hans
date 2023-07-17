@@ -2,7 +2,8 @@
 title: 空洞
 description: 通过撤消，您可以释放信用卡或借记卡帐户中的资金，这些帐户已被阻止或根据授权保留在购买金额中。
 exl-id: 029a7038-2812-46ce-b188-929a7a758d89
-source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
+feature: Payments, Checkout
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%

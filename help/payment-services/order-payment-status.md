@@ -4,7 +4,8 @@ description: 使用“订单付款状态”报表，可以查看订单的付款�
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 8295b7c4ea407f0528d6be69655a8b12f7defe15
+feature: Payments, Checkout, Orders
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 0%
@@ -51,7 +52,7 @@ ht-degree: 0%
 
 ### 状态信息
 
-选定日期范围的付款状态显示在“订单付款状态”数据可视化视图的左侧。 所选日期范围的日期显示在视图底部。 如果特定日期没有订单，则不会显示该日期。
+选定日期范围的付款状态显示在“订单付款状态”数据可视化视图的左侧。 所选日期范围的日期显示在视图底部。 如果在特定日期没有订单，则该日期不会显示。
 
 订单付款状态数据可视化图表视图包含以下信息。
 

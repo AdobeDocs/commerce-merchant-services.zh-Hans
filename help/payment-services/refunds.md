@@ -2,7 +2,8 @@
 title: 退款
 description: 创建退款 [!DNL Payment Services] 管理中的订单，作为贷项通知单流程的一部分。
 exl-id: 2b3721a1-9c9d-4e3f-ab7d-5bd61573dcb4
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+feature: Payments, Checkout
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 0%

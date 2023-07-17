@@ -4,7 +4,8 @@ description: 使用“付款”报表，可以完全透明地显示付款金额�
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 8295b7c4ea407f0528d6be69655a8b12f7defe15
+feature: Payments, Checkout
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '1326'
 ht-degree: 0%
@@ -64,7 +65,7 @@ ht-degree: 0%
 
 ## 支付报表视图
 
-付款服务的“付款”视图中提供“付款”报表视图。 它包括有关您商店的付款的所有可用信息。 此 [支付数据可视化视图](#payouts-data-visualization-view) 在Payment Services主页中，可以直观地表示此更详细的报表视图中的每日汇总金额。
+付款服务的“付款”视图中提供“付款”报表视图。 它包括有关您商店的付款的所有可用信息。 此 [支付数据可视化视图](#payouts-data-visualization-view) 在Payment Services Home中，您可以在此更详细的报表视图中直观地表示每天的总金额。
 
 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** 查看详细的表格式支付报表视图。
 

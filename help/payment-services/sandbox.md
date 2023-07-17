@@ -2,7 +2,8 @@
 title: 设置测试沙盒
 description: 使用PayPal沙盒帐户以使用 [!DNL Payment Services] 处于测试模式。
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+feature: Payments, Checkout, Configuration, Install
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%

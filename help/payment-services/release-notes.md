@@ -2,7 +2,8 @@
 title: ”[!DNL Payment Services] 发行说明”
 description: 查看发行说明，了解关于 [!DNL Payment Services] 版本。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 36dd961d06f279143e90f3a1f5a6114db14e8c1b
+feature: Payments, Release Notes
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '1989'
 ht-degree: 0%
@@ -59,7 +60,7 @@ _2021年6月28日_
 
 ![新](../assets/new.svg)<!-- Issue PAY-1720 --> 有关商店订单的争议现在可在 [订单付款状态报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). 您可以直接从导航到PayPal解决中心，对争议采取行动 [!DNL Payment Services].
 
-![新](../assets/new.svg)<!-- Issue PAY-2854 --> 来自以下各项的用户体验改进： [!DNL Payment Services] 主页包含在当前继承级别修改配置的功能，并改进了标题和导航的显示。
+![新](../assets/new.svg)<!-- Issue PAY-2854 --> 来自以下各项的用户体验改进： [!DNL Payment Services] 主页包含在当前继承级别修改配置的功能，并改进了标题和导航的显示方式。
 
 ![新](../assets/new.svg)<!-- Issue PAY-2854 --> 现在，当您从沙盒模式切换到生产模式时，以及当您尝试从包含尚未保存的更新的视图导航离开时，您会看到警告。
 

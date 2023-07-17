@@ -2,7 +2,8 @@
 title: 测试和验证
 description: 测试和验证有助于确保 [!DNL Payment Services] 功能按预期工作，并为客户提供最佳支付选项
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
-source-git-commit: 0324c2d8e34fee0872d5f52ed3a246094b482aa2
+feature: Payments, Checkout
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%
