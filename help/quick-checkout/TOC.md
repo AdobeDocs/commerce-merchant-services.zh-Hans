@@ -2,7 +2,9 @@
 user-guide-title: ”[!DNL Quick Checkout] 适用于Adobe Commerce”
 user-guide-description: “了解如何 [!DNL Quick Checkout] 可使您的Adobe Commerce实例以及如何成功载入和设置扩展受益。”
 breadcrumb-title: 《商家服务指南》
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+role: Admin, Leader, User
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '76'
 ht-degree: 0%

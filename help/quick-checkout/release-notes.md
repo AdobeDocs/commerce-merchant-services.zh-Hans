@@ -2,7 +2,8 @@
 title: ‘[!DNL Quick Checkout] 发行说明
 description: 查看发行说明，了解关于 [!DNL Quick Checkout] 版本。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 169b3e365d7f4c0c4cef19fa1941dfa0a95ea58b
+feature: Release Notes, Services, Checkout
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 0%
@@ -197,7 +198,7 @@ _2022年8月9日_
 
 ![新](../assets/new.svg)<!-- Issue BOLT-780 --> 您的购物者可以通过 [[!DNL Quick Checkout]](checkout-page.md) 扩展或通过 [手动订单创建](create-order-admin.md).
 
-![新](../assets/new.svg)<!-- Issue BOLT-666 --> 商家可以配置 [!DNL Quick Checkout] 具有基本支付操作，例如 [`Authorize and Capture` 或 `Authorize` ](onboarding.md#complete-admin-configuration)，或在沙盒环境和生产环境之间切换。
+![新](../assets/new.svg)<!-- Issue BOLT-666 --> 商家可以配置 [!DNL Quick Checkout] 具有基本支付操作，例如 [`Authorize and Capture` 或 `Authorize`](onboarding.md#complete-admin-configuration)，或在沙盒环境和生产环境之间切换。
 
 ![新](../assets/new.svg)<!-- Issue BOLT-288 --> 自定义 [用户会话生命周期](user-session-lifetime.md) 对象 [!DNL Quick Checkout] 适用于Adobe Commerce的。
 

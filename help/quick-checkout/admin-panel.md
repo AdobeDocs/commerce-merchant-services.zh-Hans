@@ -2,7 +2,8 @@
 title: ‘[!DNL Quick Checkout] (适用于Adobe Commerce管理面板)
 description: 了解如何 [!DNL Quick Checkout] 管理面板可帮助如何成功载入、设置和可视化扩展。
 exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%

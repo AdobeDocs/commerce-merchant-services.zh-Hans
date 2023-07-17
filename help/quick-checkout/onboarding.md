@@ -2,7 +2,8 @@
 title: “载入 [!DNL Quick Checkout] for Adobe Commerce扩展”
 description: “了解如何 [!DNL Quick Checkout] 可使您的Adobe Commerce实例以及如何成功载入和设置扩展受益。”
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -68,7 +69,7 @@ ht-degree: 0%
 - [!DNL Publishable key]：前端用于与交互的密钥 [!DNL Bolt] API。
 - [!DNL Signing secret]：用于对从收到的请求进行签名验证 [!DNL Bolt].
 
-   ![快速签出](assets/account-credentials.png)
+  ![快速签出](assets/account-credentials.png)
 
 请参阅 [[!DNL Bolt] 环境详细信息](https://help.bolt.com/developers/references/environment-details/#about-keys){target="_blank"} 要从中了解密钥和签名密钥的页面 [!DNL Bolt] 对于 [!DNL Quick Checkout] 扩展。
 
