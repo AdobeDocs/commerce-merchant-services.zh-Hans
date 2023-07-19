@@ -2,9 +2,9 @@
 title: 载入和安装
 description: 了解如何安装 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 742af84407943e7df47f986717b6dc31dc067863
+source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
@@ -136,6 +136,8 @@ SaaS配置完成后，请按照以下步骤执行初始数据同步 [目录同�
 要获取API密钥，请转到管理员中的Commerce Service Connector区域并复制公共API密钥。
 
 阅读 [GraphQL文档](https://developer.adobe.com/commerce/webapi/graphql/) 了解如何查询和发送生成API请求所需的标头。
+
+要允许目录服务通过防火墙，请添加 `commerce.adobe.io` 到允许列表。
 
 ## 目录服务和API网格
 

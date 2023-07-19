@@ -3,9 +3,9 @@ title: '"安装 [!DNL Live Search]”'
 description: “了解如何安装、更新和卸载 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1299'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ ht-degree: 0%
 >
 >由于Elasticsearch7将于2023年8月宣布终止支持，建议所有Adobe Commerce客户迁移到OpenSearch 2.x搜索引擎。 有关在产品升级期间迁移搜索引擎的信息，请参阅 [迁移到OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) 在 _升级指南_.
 
-安装时建议使用此载入方法 [!DNL Live Search] 至：
+安装时建议使用此载入方法 [!DNL Live Search] 到：
 
 * 现有生产 [!DNL Commerce] 安装
 
@@ -192,6 +192,8 @@ ht-degree: 0%
 如果一切运行正常，恭喜您！ [!DNL Live Search] 已安装、已连接并已准备就绪。
 
 如果您在店面遇到问题，请检查 `var/log/system.log` API通信失败或服务端错误的文件。
+
+要允许实时搜索通过防火墙，请添加 `commerce.adobe.io` 到允许列表。
 
 ## 检查已安装的版本
 

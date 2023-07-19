@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: “此 [!DNL Live Search storefront popover] 动态返回建议的产品和缩略图。”
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
+source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,20 @@ ht-degree: 0%
 1. 设置 **自动完成限制** 到您希望在 [!DNL popover].
 1. 完成后，单击 **保存配置**.
 
+## 目录服务
+
+此 [Adobe Commerce的目录服务](../catalog-service/overview.md) 扩展提供了丰富的视图模型目录数据，可快速并完全渲染与产品相关的店面体验。 目录服务可以与Live Search结合使用，以提供本机扩展当前不支持的功能：
+
+* 色板
+* 扩展属性
+* 还可以引入其他产品信息
+
+商家可以使用目录服务自定义和扩展构件或店面元素，但这不属于Adobe支持团队的范围。
+
 ## 限制
 
-* 此 [!DNL Live Search] [!DNL storefront popover] 仅适用于使用 *Luma* 主题，或基于 *Luma*.
+* 此 [!DNL Live Search] [!DNL storefront popover] 仅适用于使用 *Luma* 主题，或基于 *Luma*. 搜索结果页面上的痕迹导航不具有 *流明* 样式。
 * 此 [!DNL popover] 不支持 *空白* 主题。 参见 [样式 [!DNL Popover] 元素](storefront-popover-styling.md) 了解更多信息。
 * 此 [!DNL popover] 快速订购单上不支持。
-* 商家可以使用自定义和扩展小部件或店面元素（例如：将颜色样本集成到实时搜索结果中） [目录服务](../catalog-service/overview.md) 店面API，但这不在Adobe支持团队的覆盖范围内。
+* 不支持愿望清单和产品比较。
+* 仅支持基本货币。

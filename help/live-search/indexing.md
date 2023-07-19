@@ -2,7 +2,7 @@
 title: ”[!DNL Live Search] 索引”
 description: “了解如何 [!DNL Live Search] 索引产品属性属性。”
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 9be12e2ce8231dc188e3b79bba3e39d3cff52892
+source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 0%
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 ## 客户端搜索
 
-此 [!DNL Live Search] API允许客户端通过设置 [店面属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html)， *用于产品列表中的排序* 到 `Yes`. 根据主题，此设置会导致属性作为选项包含在 [排序方式](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) 目录页面上的分页控件。 可通过以下方式索引多达300个产品属性 [!DNL Live Search]，替换为 [店面属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) 可搜寻和可筛选的资源。
+此 [!DNL Live Search] API允许客户端通过设置 [店面属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html)， *用于产品列表中的排序* 到 `Yes`. 根据主题，此设置会导致属性作为选项包含在 [排序方式](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) 目录页面上的分页控件。 索引方式最多可以为200个产品属性 [!DNL Live Search]，替换为 [店面属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) 可搜寻和可筛选的资源。
 索引元数据存储在索引管道中，可供搜索服务访问。
 
 ![[!DNL Live Search] 索引元数据API图](assets/index-metadata-api.svg)
