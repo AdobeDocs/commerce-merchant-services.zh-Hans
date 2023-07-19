@@ -2,7 +2,8 @@
 title: 将Commerce数据连接到Adobe Experience Platform
 description: 了解如何将Commerce数据连接到Adobe Experience Platform。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: 1484a465f3ce5b5578a7c5cf3f5f3b7d68d69c41
+feature: Personalization, Integration, Configuration
+source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 0%
