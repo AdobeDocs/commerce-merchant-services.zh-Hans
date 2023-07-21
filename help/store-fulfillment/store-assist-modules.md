@@ -1,10 +1,11 @@
 ---
 title: 存储协助履行工作流
 description: 了解Store Assist应用程序中提供的“挑库”、“暂存”、“过帐”和“订单”模块。 这些模块为BOPIS订单启用端到端存储履行工作流。 店铺关联使用这些模块管理店铺提货订单并将其交付给客户。
-role: User
+role: Leader, Admin, User
 level: Intermediate
+feature: Shipping/Delivery, Tools and External Services, Customer Service
 exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -19,7 +20,7 @@ Store Assist应用程序为Store Associates提供了四个模块，用于管理�
 
 - **[暂存](#stage-module)** — 输入客户前往商店时下订单的地点，以便商店合作伙伴可以轻松地找到它们进行订单交接。
 
-- **[移开](#hand-off-module)** — 在客户到达商店后获得实时通知，以最大限度地缩短他们的等待时间和无缝移交订单
+- **[移开](#hand-off-module)** — 在客户到达商店后获得实时通知，以将其等待时间和移交订单无缝地缩到最短。
 
 - **[订单](#orders-module)** — 查看为商店下所有订单的列表，以便每个人都知道订单数量和每个订单的状态。
 
@@ -58,7 +59,7 @@ Store Assist应用程序为Store Associates提供了四个模块，用于管理�
 
 客户可能已选择另一个人来取订单。 在这种情况下，您将看到应选择订单的人员的姓名和联系信息。
 
-将订单交给客户后，店员必须接受订单或拒绝某些项目。 客户满意后，如果贵公司要求签名的话，他们必须在您联系人的设备上签署订单。
+将订单交给客户后，店员必须接受订单或拒绝某些项目。 客户满意后，如果贵公司需要签名，他们必须在您联系人的设备上签署订单。
 
 如果客户未办理登记就抵达，您的联系人可以手动办理登记手续。
 

@@ -3,8 +3,9 @@ title: 测试和部署存储履行
 description: 测试计划，以验证Store Fulfillment功能。 测试包括“库存同步API”、已取消订单的端到端履行工作流、“商店履行”应用程序用户管理和客户登记体验。
 role: User, Admin
 level: Intermediate
+feature: Shipping/Delivery, User Account, Roles/Permissions
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '2660'
 ht-degree: 0%
@@ -84,7 +85,7 @@ ht-degree: 0%
 <td>实时同步操作会在5分钟内将详细信息发送给沃尔玛GIF</td>
 </tr>
 <tr>
-<td><strong>提货库存来源</br><code>Is Synced</code> 状态</br><code>Is Synced</code></strong></td>
+<td><strong>提货库存来源</br><code>Is Synced</code> 状态</strong></td>
 <td>将更新保存到现有的提货库存来源。</td>
 <td>成功操作后， <code>Is Synced</code> “管理源”页更新所在的列 <code>No</code> 到 <code>Yes</code>.</td>
 </tr>
@@ -166,7 +167,7 @@ ht-degree: 0%
 </ul>
 </td>
 </tr>
-<td><strong>准备取车</br></br>完全取消</br>（所有产品均设置为0数量的“已挑库”）</br></strong></td>
+<td><strong>准备取车</br></br>完全取消</br>（所有产品均设置为0数量的“已挑库”）</strong></td>
 <td>
 <ol>
 <li>下订单。</li>
@@ -250,7 +251,7 @@ ht-degree: 0%
 </tr>
 <tr>
 <td><strong>分配（分配期间）</br></br>部分取消</br>（某些产品已分发；某些产品被拒绝。）</strong>
-</br></td>
+</td>
 <td>
 <ol>
 <li>下订单。</li>
@@ -469,7 +470,7 @@ Adobe Commerce产品类型的测试方案将验证客户是否可以看到不同
 </tr>
 <tr>
 <td><strong>备用取车联系人</br>
-签入</br><strong>
+签入<strong>
 </td>
 <td>
 客户提交带有“店内提货”选项的订单。</td>

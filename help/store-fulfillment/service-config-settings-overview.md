@@ -1,10 +1,11 @@
 ---
 title: 商店履行的配置概述
 description: 了解可用于自定义“商店履行”解决方案提供的扩展履行功能的管理员配置设置类型，以及指向完成配置说明的链接。
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Configuration
 exl-id: c432791a-94a0-457d-9ed9-8937846ce4f4
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%

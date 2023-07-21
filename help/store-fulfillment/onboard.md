@@ -1,10 +1,11 @@
 ---
 title: Store Fulfillment Services入门概述
 description: ‘[!DNL Live Search] 入门流程、系统要求、边界和限制。”
-role: User, Admin
+role: Admin, Leader
 level: Intermediate
+feature: Shipping/Delivery, Install
 exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -17,15 +18,15 @@ ht-degree: 0%
 
 - **Store Fillment扩展** — 在Adobe Commerce实例上安装并配置此第三方扩展。 安装后，您可以从管理员处配置和管理Store Fulfillment解决方案以支持 [!DNL buys online, pickup in store] (BOPIS)方案。
 
-   ![[!DNL Store Fulfillment Service] “管理员”视图中的配置](assets/store-fulfillment-admin-home.png)
+  ![[!DNL Store Fulfillment Service] “管理员”视图中的配置](assets/store-fulfillment-admin-home.png)
 
 - **存储履行帐户** — 在启用过程中，客户经理会创建您的Store Fulfillment帐户，并为您提供帐户信息和凭据。 启用Adobe Commerce与“商店履行”解决方案之间的连接需要这些凭据。
 
 - **商店助手应用程序** — 为商店关联提供端到端商店履行工作流，以管理来自移动设备的BOPIS订单。 Store Associates可以下载并安装沃尔玛的 [!DNL Store Assist] 适用于iOS和Android™设备。 应用程序载入流程由沃尔玛商业技术客户中心作为单独流程进行管理。 但是， [某些应用程序配置设置](user-setup.md) 是从Adobe Commerce管理员处完成的。
 
-   | 应用商店助手应用程序 — 开始使用视图 | 应用商店助手应用程序 — 模块视图 |
-   |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-   | ![[!DNL Store Assist App Getting Started] 在移动设备上查看](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] 在移动设备上](assets/store-assist-orders-small.png) |
+  | 应用商店助手应用程序 — 开始使用视图 | 应用商店助手应用程序 — 模块视图 |
+  |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+  | ![[!DNL Store Assist App Getting Started] 在移动设备上查看](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] 在移动设备上](assets/store-assist-orders-small.png) |
 
 ## 配置步骤
 

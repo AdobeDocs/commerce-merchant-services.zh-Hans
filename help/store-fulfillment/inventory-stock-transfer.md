@@ -1,10 +1,11 @@
 ---
 title: Inventory management源传输
 description: “配置库存，用于 [!DNL Store Fulfillment solution] Adobe Commerce Inventory management。 设置新库存并从默认库存中转移库存，以便您可以将其分配给为启用“商店提货”功能而配置的来源，该功能是“商店履行”解决方案所必需的。”
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
@@ -26,7 +27,7 @@ ht-degree: 0%
 
 1. [批量分配源](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) 为所有产品添加新源。
 
-1. [完成产品属性的批量更新](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) 以添加 `Allow Store Pickup` 和 `Allow Home Delivery` 属性到现有产品。 安装解决方案后，属性具有最佳值 *默认* 值。 但是，在完成批量更新过程之前，这些属性不会应用于现有产品。
+1. [完成产品属性的批量更新](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) 以添加 `Allow Store Pickup` 和 `Allow Home Delivery` 属性到现有产品。 安装解决方案后，属性具有最佳值 *默认* 值。 但是，在完成批量更新内容过程之前，这些属性不会应用于现有产品。
 
 库存从所选源（零售商店库位或电子商务仓库）中扣除。 用作电子商务仓库的来源必须分配给与商店取货地点相同的库存，并在零售地点之前排定优先级。 有关其他信息，请参阅 [设置库存来源的优先级](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html).
 

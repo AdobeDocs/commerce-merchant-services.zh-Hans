@@ -1,10 +1,11 @@
 ---
 title: 销售电子邮件模板
 description: 配置事务型电子邮件模板，以便在完成商店提货订单的过程中与客户和商店管理员进行通信。
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Communications, Configuration
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 0%
@@ -312,7 +313,7 @@ ht-degree: 0%
 <tbody><tr>
 <td><strong>订单具有收货商店产品电子邮件发件人</strong></td>
 <td>将发送给指定商家人员的电子邮件作为所有未结订单的汇总报表，这些订单在商家商店的库存可用之前无法挑库。 </br></br> 商家可以使用此报表来起动和管理商店到商店的库存转移或补充。 </br></br>此通知仅在 [!DNL Ship-to-Store] 功能已启用。
-</br></br>此标签不会影响所选的装运承运人或其可用的装运方法标签。</br></br></td>
+</br></br>此标签不会影响所选的装运承运人或其可用的装运方法标签。</td>
 <td>商店视图</td>
 <td>否</td>
 </tr>

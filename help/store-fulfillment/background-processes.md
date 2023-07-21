@@ -1,12 +1,12 @@
 ---
 title: 后台进程配置
 description: “配置计划 [!DNL Store Fulfillment] 后台进程，用于将数据与履行服务同步。”
-role: User, Admin
+role: Admin, Developer
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '133'
 ht-degree: 0%
 
 ---
@@ -22,4 +22,4 @@ Store Fulfillment集成使用后台流程和报文队列以获得最佳性能和
 
 从管理员转到 **[!UICONTROL Stores > Configuration > Advanced > System > Cron (Scheduled Tasks) > Cron configuration options for group:store_fulfillment]**.
 
-查看Store Fulfillment服务的默认配置。 根据您的订单处理量和资源可用性，您可能需要调整这些设置。
+查看Store Fulfillment服务的默认配置。 您可以根据订单处理量和资源可用性来自定义这些设置。

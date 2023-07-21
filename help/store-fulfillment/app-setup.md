@@ -1,12 +1,13 @@
 ---
 title: 应用程序设置
 description: 设置 [!DNL Store Assist] 用于管理在线购买、店内提货的端到端商店履行工作流程和流程的应用程序。
-role: User, Admin
 level: Intermediate
+role: Admin
+feature: Shipping/Delivery, Configuration, Tools and External Services
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Store Assist应用程序会接收所有订单和客户信息（从订单详细�
 
 >[!NOTE]
 >
->参见 [存储协助完成工作流](store-assist-modules.md) 以详细了解Store Assist应用程序。
+>通过查看 [存储协助完成工作流](store-assist-modules.md) 主题。
 
 ## 配置应用商店助手应用程序
 
@@ -42,9 +43,9 @@ Store Assist应用程序需要两种类型的配置：
 
    - **非活动时间** — 指定应用程序在注销之前必须处于非活动状态的时间量。
 
-   - **从商店取消** — 指定是否可从存储中取消订单以及哪些角色具有取消权限
+   - **从商店取消** — 指定是否可以从商店取消订单以及哪些角色具有取消权限
 
-   - **订单清理窗口** — 指定超过 [估计的装货提前期](enable-general.md#delivery-method-title-configuration) 挑库订单在重新存储之前仍保留在分段中 — 例如，三天。 默认值为7天。 如果启用此配置，则当此时间到期时，将自动取消订单。 商品重新上架，商家会收到一封取消电子邮件。
+   - **订单清理窗口** — 指定超过 [估计的装货提前期](enable-general.md#delivery-method-title-configuration) 挑库订单在重新存储之前仍保留在分段中 — 例如，三天。 默认值为7天。 如果启用了此配置，则当此时间到期时，将自动取消订单。 商品重新上架，商家会收到一封取消电子邮件。
 
    - 自定义所有应用程序内指令（领料、暂存、交货）。
 
@@ -55,7 +56,8 @@ Store Assist应用程序需要两种类型的配置：
    - **移交流程** — 在Store Associate向客户交付订单时启用可选流程，例如，需要客户签名或提示关联检查客户ID。
 
    - **切换时启用项目拒绝** — 允许客户在订单移交期间返回或取消订单项目。
-   与Walmart Commerce Technologies Client Services团队合作，完成Store Assist应用程序的前端配置。
+
+  与Walmart Commerce Technologies Client Services团队合作，完成Store Assist应用程序的前端配置。
 
 ## 应用程序下载和安装
 
@@ -70,4 +72,5 @@ Store Assist应用程序需要两种类型的配置：
    - **[!UICONTROL Company name]** 与应用商店助手帐户关联
 
    - **存储协助帐户凭据** — 其帐户的用户名和密码凭据。
-   Adobe Commerce管理员可以创建和管理 [!DNL Store Assist app] 具有下列条件的所有商店位置的用户帐户： [店内取货](merchant-store-configuration.md#pickup-location-configuration) 已在“管理存储”设置中启用。
+
+  Adobe Commerce管理员可以创建和管理 [!DNL Store Assist app] 具有下列条件的所有商店位置的用户帐户： [店内取货](merchant-store-configuration.md#pickup-location-configuration) 已在“管理存储”设置中启用。
