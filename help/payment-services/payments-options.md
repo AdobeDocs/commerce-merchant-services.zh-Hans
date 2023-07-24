@@ -3,9 +3,9 @@ title: 付款选项
 description: 设置付款选项以自定义商店客户可用的方法。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 27d121f862be99b41f467a00e5f6b9d28a40deab
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1034'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,8 @@ ht-degree: 0%
 
 您可以配置 [!UICONTROL PayPal Smart Buttons] 在商店配置或Payment Services主页中。  参见 [设置](settings.md#payment-buttons) 了解更多信息。
 
+查看PayPal的 [支付方式文档](https://developer.paypal.com/docs/checkout/payment-methods/) 以了解目前每种支付方式在哪些国家/地区可用。
+
 ### [!DNL PayPal] 按钮
 
 客户可以使用PayPal按钮轻松自信地结账。
@@ -80,21 +82,11 @@ ht-degree: 0%
 
 为客户提供短期、无息支付和其他融资选项，以便他们现在购买以后使用 [!DNL Pay Later] 按钮。
 
-此 [!DNL Pay Later] 按钮在产品页面、迷你购物车、购物车和结帐视图中可见：
+此 [!DNL Pay Later] 按钮在产品页面、迷你购物车、购物车和结帐视图中可见。
 
-* **当客户选择$30至$600的产品时**，PayPal下的消息传送和 [!DNL Pay Later] 按钮为客户提供了更多关于 [!DNL Pay in 4] 付款选项。 客户可以点击 **了解详情** 以了解“[!DNL Pay in 4]”选项 _或_ 单击弹出窗口中的“或查看6个月特别融资”文本，了解并申请PayPal信用选项。
-* **当客户选择超过$98.99的产品时**，PayPal下的消息传送和 [!DNL Pay Later] 按钮为客户提供了有关PayPal信用支付选项的更多信息。 客户可以点击 **了解详情** 要了解并申请PayPal点数选项， _或_ 单击弹出窗口中的“或参阅按4付费”文本以了解 [!DNL Pay in 4] 选项。
-
-  >[!NOTE]
-  >
-  >上述金额可能有所变动。
+请参阅中有关“稍后支付”优惠的信息 [PayPal的Pay Later优惠文档](https://developer.paypal.com/docs/checkout/pay-later/us/). 使用 **国家或地区** 下拉列表以选择感兴趣的区域。
 
 参见 [设置](settings.md#payment-buttons) 以了解如何禁用/启用 [!DNL Pay Later] 消息传送。
-
-有两种付款方式 [!DNL Pay Later] 按钮：
-
-* **4小时付费** — 初次支付首期付款后，客户可以通过四次免息付款（每两周）支付其订单余额。 请参阅 [以4个文档付款](https://www.paypal.com/us/digital-wallet/ways-to-pay/buy-now-pay-later) 了解更多信息。
-* **PayPal点数** — 客户可在六个月后支付全部订单余额，且免息。 请参阅 [PayPal信用文档](https://www.paypal.com/us/webapps/mpp/paypal-credit) 了解更多信息。
 
 ### [!DNL Pay Now] 按钮
 

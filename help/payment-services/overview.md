@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: b1984085fa5d10c8202d2a982227e183d0b169e8
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -54,20 +54,22 @@ ht-degree: 0%
 * 法国(FR)
 * 英国（英国）
 
-参见 [生命周期策略](https://devdocs.magento.com/release/lifecycle-policy.html){target="_blank"} 和 [[!DNL Payment Services] 发行说明](release-notes.md) 页面，以了解更多特定于发行版和版本的信息。
+参见 [生命周期策略](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) 和 [[!DNL Payment Services] 发行说明](release-notes.md) 页面，以了解更多特定于发行版和版本的信息。
 
 ### 接受的信用卡和货币
 
 [!DNL Payment Services] 接受国家/地区的货币 [在其中可用](#availability).
 
-请参阅 [PayPal货币可用性](https://developer.paypal.com/docs/platforms/checkout/reference/country-availability-advanced-cards/) 文档，以了解更多信息。
+要查看PayPal支持的货币，请参阅 [支持的货币文档](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/).
+
+要了解PayPal支持的支付方法，请参阅它们的 [支付方式文档](https://developer.paypal.com/docs/checkout/payment-methods/).
 
 ## 开始使用
 
 入门和设置 [!DNL Payment Services] 只需几个步骤即可完成：
 
 1. 获取 [[!DNL Payment Services] 扩展](install.md).
-1. 将您的Commerce实例连接到Commerce Services。
+1. 将商务实例连接到Commerce Services。
 1. 载入并设置沙盒服务。
 1. 启用 [!DNL Payment Services] 作为您的支付方式，开始处理测试支付。
 1. 完成商户入门培训，为您的网站启用实时支付。
