@@ -1,13 +1,13 @@
 ---
-user-guide-title: ”[!DNL Catalog Service] 指南”
-user-guide-description: “本指南提供了详细的使用说明 [!DNL Catalog Service] 为Adobe Commerce效力。”
-breadcrumb-title: ”[!DNL Catalog Service] 指南”
+user-guide-title: '"[!DNL Catalog Service] 指南”'
+user-guide-description: “本指南详细介绍了如何使用 [!DNL Catalog Service] 为Adobe Commerce服务。”
+breadcrumb-title: '"[!DNL Catalog Service] 指南”'
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: c256252ea58b61e511034cd33d81e004acff96d2
 workflow-type: tm+mt
-source-wordcount: '75'
+source-wordcount: '79'
 ht-degree: 0%
 
 ---
@@ -16,8 +16,9 @@ ht-degree: 0%
 
 - [指南概述](guide-overview.md)
 - [简介 [!DNL Catalog Service]](overview.md)
-- [入门和安装](installation.md)
+- [载入和安装](installation.md)
 - [目录服务和API网格](mesh.md)
+- [馈送引入服务（测试版）](feed-ingestion.md)
 - GraphQL查询 {#graphql}
    - [类别查询](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/)
    - [产品查询](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/)
