@@ -1,7 +1,7 @@
 ---
 title: 馈送引入服务
 description: 了解Adobe Commerce的信息源摄取服务
-source-git-commit: b484429a529acfa95f70c5a55b6a5fcdedc887b3
+source-git-commit: 12b1e89924a2eb89494bcb884fc3bc14e87b2b1c
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%
@@ -42,4 +42,4 @@ ht-degree: 0%
 * 拥有大型复杂目录的客户
 * 客户未使用Adobe Commerce管理员管理目录数据，而是使用ERP或第三方系统管理目录数据
 
-如果您有兴趣加入Beta计划，请通过XXXXX@adobe.com联系团队。
+如果您有兴趣加入Beta计划，请通过sagonzal@adobe.com联系团队。
