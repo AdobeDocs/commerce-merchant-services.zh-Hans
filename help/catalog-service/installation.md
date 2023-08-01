@@ -2,9 +2,9 @@
 title: 载入和安装
 description: 了解如何安装 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 04b1553e7cc16d142b72553ca2a6bb9d6a6b5eb4
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 先决条件
 
-的新用户引导流程 [!DNL Catalog Service] 需要访问服务器的命令行。 如果您不熟悉如何使用命令行，请要求开发人员或系统集成商提供帮助。
+的新用户引导流程 [!DNL Catalog Service] 需要访问服务器的命令行。 如果您不熟悉如何使用命令行，请向开发人员或系统集成商寻求帮助。
 
 ### 软件要求
 
@@ -40,8 +40,10 @@ ht-degree: 0%
 
 目录服务有两个环境可供载入：
 
-- 沙盒(https://catalog-service-sandbox.adobe.io/graphql) — 用于上线前的测试和验证
+- 沙盒(https://catalog-service-sandbox.adobe.io/graphql) — 用于在上线之前进行测试和验证
 - 生产(https://catalog-service.adobe.io/graphql)-用于Commerce商家和网站的实时流量
+
+加载测试只应在沙盒环境中执行。 建议 [支持服务单](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 在负载测试时打开，以便服务团队可以预见额外的服务器流量。
 
 ## 安装和配置
 
@@ -55,11 +57,11 @@ ht-degree: 0%
 
 目录服务的载入流程需要访问服务器的命令行。
 
-Catalog Service扩展可以安装在Adobe Commerce云基础架构和内部部署实例上。
+目录服务扩展可以安装在Adobe Commerce云基础架构和内部部署实例上。
 
-目录服务随编辑器密钥一起安装，这些密钥链接到商务帐户 [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) 在注册过程中提供。 Composer在Adobe Commerce的初始安装期间或之前未将Composer键保存到外部的情况下使用这些键 `auth.json` 文件。
+目录服务使用编辑器键安装，这些键链接到商务帐户 [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) 在注册过程中提供。 Composer在Adobe Commerce的初始安装期间或之前未将Composer键保存到外部的情况下使用这些键 `auth.json` 文件。
 
-参见 [获取您的身份验证密钥](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) 以了解有关获取编辑器键的更多信息。
+请参阅 [获取您的身份验证密钥](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) 以了解有关获取编辑器键的更多信息。
 
 #### 云基础架构上的Adobe Commerce
 
@@ -117,21 +119,21 @@ bin/magento cache:clean
 
 ### 配置服务和数据导出
 
-安装目录服务后，必须配置 [商务服务连接器](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) 通过指定API密钥并选择SaaS数据空间。
+安装目录服务后，必须配置 [Commerce服务连接器](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) 通过指定API密钥并选择SaaS数据空间。
 
-SaaS配置完成后，请按照以下步骤执行初始数据同步 [目录同步](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) 指南。
+SaaS配置完成后，按照以下步骤执行初始数据同步 [目录同步](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) 指南。
 
-要确保目录导出正常运行，请执行以下操作：
+要确保正确运行目录导出，请执行以下操作：
 
 - 确认cron作业正在运行。
 - 验证索引器是否正在运行。
 - 确保 `Catalog Attributes Feed, Product Feed, Product Overrides Feed`、和 `Product Variant Feed` 索引器设置为“按计划更新”。
 
-根据目录大小，初始同步可能需要几分钟到几小时的时间。 初始同步后，目录会持续将产品数据从Commerce服务器导出到Commerce Services，以保持服务最新。
+初始同步可能需要几分钟到几小时，具体取决于目录大小。 初始同步后，目录会持续将产品数据从Commerce服务器导出到Commerce服务，以使服务保持最新。
 
 ### 访问服务
 
-可以通过HTTPS上的POST命令访问目录服务API。
+可通过HTTPS使用POST命令访问目录服务API。
 
 要获取API密钥，请转到管理员中的Commerce Service Connector区域并复制公共API密钥。
 
@@ -141,6 +143,6 @@ SaaS配置完成后，请按照以下步骤执行初始数据同步 [目录同�
 
 ## 目录服务和API网格
 
-此 [Adobe Developer App Builder的API网格](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 使开发人员能够使用AdobeIO将专用或第三方API和其他界面与Adobe产品集成。
+此 [适用于Adobe Developer App Builder的API网格](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 使开发人员能够使用AdobeIO将专用或第三方API以及其他界面与Adobe产品集成。
 
 请参阅  [目录服务和API网格](mesh.md) 有关安装和配置详细信息的主题。
