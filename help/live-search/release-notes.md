@@ -3,9 +3,9 @@ title: ’[!DNL Live Search] 发行说明
 description: “的最新发行信息 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
+source-git-commit: e7e45863dced36ecbd508931df5141bb6f1d8e64
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1374'
 ht-degree: 0%
 
 ---
@@ -20,15 +20,49 @@ ht-degree: 0%
 ![修复](../assets/fix.svg) 修复和改进功能
 ![错误](../assets/bug.svg) 已知问题
 
+## 托管服务更新
+
+这些说明描述了在未发布版本控制版本或对托管服务的改进的情况下发布的更新。
+
++++托管服务更新
 
 _2023年6月13日_
 
-![新建](../assets/new.svg) Live Search现在又支持5个 [配置值](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/configuration.html).
 ![修复](../assets/fix.svg) 修复了某些字符（如引号或撇号）导致排名问题的情况。 重新索引将解决这些问题。
 
 _2023年4月25日_
 
 ![新建](../assets/new.svg) Live Search客户现在可以利用新的 [SaaS价格索引器](../price-index/index.md).
+
++++
+
+## [!DNL Live Search] 3.0.2 {#302}
+
+_2023年8月7日_
+
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+
+### 新增功能
+
+以下值已添加到 `storeDetails` 对象：
+
+* &quot;允许每页所有产品&quot;
+* 汇率
+* “网格上每页的产品允许值”
+* “网格上每页产品默认值”
+* 存储语言
+
+### 更新
+
+* 目录服务模块已添加到该中继，以支持高级数据检索。
+
+商家必须升级 [!DNL Live Search] 扩展版本>= 3.0.2以访问这些功能。
+
+建议在推送到生产环境之前进行升级和测试。 在验证其测试环境结果后，请考虑在非高峰时间升级生产环境。
+
+## 先前版本
+
++++3.0.1和之前的版本
 
 ## [!DNL Live Search] 3.0.1 {#301}
 
@@ -73,10 +107,6 @@ _2023年3月14日_
 商家必须升级 [!DNL Live Search] 扩展版本>= 3.0.1以访问这些功能。
 
 建议在推送到生产环境之前进行升级和测试。 在验证其测试环境结果后，请考虑在非高峰时间升级生产环境。
-
-## 先前版本
-
-+++2.0.5和之前的版本
 
 ## [!DNL Live Search] 2.0.5 {#205}
 
@@ -133,7 +163,7 @@ _2023年3月14日_
 
 ![修复](../assets/fix.svg) [自定义价格属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) 配置为时不再返回错误 [方面]({%链接live-search/facets-add.md %})。
 ![修复](../assets/fix.svg) 修复了在以下情况下导致出现错误的问题： [货币符号](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html#step-5%3A-customize-currency-symbols-(optional)) (`data-currency-symbol`)可用。
-![修复](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) 现在显示 [特价](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) （最低最终价格）。
+![修复](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) 现在显示 [特别价格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) （最低最终价格）。
 
 ### [!DNL Live Search] 1.3.0 {#130}
 
