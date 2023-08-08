@@ -3,7 +3,7 @@ title: 将Adobe Experience Platform Mobile SDK与Commerce集成
 description: 了解如何将Adobe Experience Platform Mobile SDK与Headless或自定义Commerce店面结合使用。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: f06020fd6bea6dbb73476f91f359987b3f61cd95
+source-git-commit: cae4d26d389376476b9b6a567841a847cc9c9732
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 以下示例显示如何跟踪 `web.webpagedetails.pageViews` 事件并设置 `identityMap` 使用“电子邮件”字段。
 
-    &quot;&#39;swift
+    ```javascript
     let stateName = &quot;luma： content： ios： us： en： home&quot;
     var xdmData： [字符串：任何] = [
     &quot;eventType&quot;： &quot;web.webpagedetails.pageViews&quot;，
