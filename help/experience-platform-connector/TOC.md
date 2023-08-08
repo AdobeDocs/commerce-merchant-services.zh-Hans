@@ -1,13 +1,13 @@
 ---
 user-guide-title: 适用于Adobe Commerce的Adobe Experience Platform Connector
-user-guide-description: 本指南提供了有关使用Adobe Experience Platform Connector for Adobe Commerce的详细说明。
+user-guide-description: 本指南提供了有关使用适用于Adobe Commerce的Adobe Experience Platform Connector的详细说明。
 breadcrumb-title: 适用于Adobe Commerce的Adobe Experience Platform Connector
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 91db0176b5ecf09ac403e6e91a4b4513dfb06ea0
 workflow-type: tm+mt
-source-wordcount: '66'
+source-wordcount: '75'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,8 @@ ht-degree: 0%
    - [安装Experience Platform连接器](install.md)
    - [配置Experience Platform连接器](connect-data.md)
    - [将字段组添加到XDM架构](update-xdm.md)
+   - [将Adobe Experience Platform Mobile SDK与Commerce集成](mobile-sdk-epc.md)
 - 捕获数据 {#event-forwarding}
-   - [事件](events.md)
+   - [活动](events.md)
    - [自定义事件](custom-events.md)
    - [使用Adobe Experience Platform标记](using-tags.md)
