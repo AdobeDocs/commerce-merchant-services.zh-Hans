@@ -3,9 +3,9 @@ title: 将Adobe Experience Platform Mobile SDK与Commerce集成
 description: 了解如何将Adobe Experience Platform Mobile SDK与Headless或自定义Commerce店面结合使用。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: cae4d26d389376476b9b6a567841a847cc9c9732
+source-git-commit: c5d618788a58109e124a1774b3860cf9c41abb8a
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -40,32 +40,33 @@ ht-degree: 0%
 
 1. 要通过SDK将Commerce事件数据发送到Experience Platform，您必须在应用程序代码中提供XDM架构。 此架构必须与架构匹配 [已配置](https://developer.adobe.com/client-sdks/documentation/getting-started/set-up-schemas-and-datasets/) Experience Platform中的SDK的。
 
-以下示例显示如何跟踪 `web.webpagedetails.pageViews` 事件并设置 `identityMap` 使用“电子邮件”字段。
+   以下示例显示如何跟踪 `web.webpagedetails.pageViews` 事件并设置 `identityMap` 使用“电子邮件”字段。
 
-    ```javascript
-    let stateName = &quot;luma： content： ios： us： en： home&quot;
-    var xdmData： [字符串：任何] = [
-    &quot;eventType&quot;： &quot;web.webpagedetails.pageViews&quot;，
-    &quot;web&quot;： [
-    &quot;webPageDetails&quot;： [
-    &quot;pageViews&quot;： [
-    &quot;value&quot;： 1
-    ]，
-    &quot;name&quot;： &quot;Home page&quot;
-    ]
-    ]
-    ]
-    
-    let experienceEvent = ExperienceEvent(xdm： xdmData)
-    Edge.sendEvent(experienceEvent： experienceEvent)
-    
-    // Adobe Experience Platform — 更新标识
-    let emailLabel = &quot;mobileuser@example.com&quot;
-    
-    let identityMap： IdentityMap = IdentityMap()
-    identityMap.add(item： IdentityItem(id： emailLabel)， withNamespace： &quot;Email&quot;)
-    Identity.updateIdentities(with： identityMap)
-    ```
+   ```swift
+   let stateName = "luma: content: ios: us: en: home"
+   var xdmData: [String: Any] = [
+       "eventType": "web.webpagedetails.pageViews",
+       "web": [
+           "webPageDetails": [
+               "pageViews": [
+                   "value": 1
+               ],
+               "name": "Home page"
+           ]
+       ]
+   ]
+   
+   let experienceEvent = ExperienceEvent(xdm: xdmData)
+   Edge.sendEvent(experienceEvent: experienceEvent)
+   
+   // Adobe Experience Platform - Update Identity
+   
+   let emailLabel = "mobileuser@example.com"
+   
+   let identityMap: IdentityMap = IdentityMap()
+   identityMap.add(item: IdentityItem(id: emailLabel), withNamespace: "Email")
+   Identity.updateIdentities(with: identityMap)
+   ```
 
 1. 连接到Commerce Cloud环境。
 
@@ -82,7 +83,7 @@ ht-degree: 0%
 
       这会创建 `apollo-codegen-configuration.json` 文件。
 
-   1. 通过替换项目中的内容来生成所需的GraphQL文件和目录 `apollo-codegen-configuration.json` 文件包含以下内容：
+   1. GraphQL通过替换 `apollo-codegen-configuration.json` 文件包含以下内容：
 
       ```json
       {
