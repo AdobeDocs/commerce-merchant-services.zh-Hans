@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # 创建自定义事件
 
-您可以扩展 [事件平台](events.md) 通过创建自己的店面活动来收集行业独有的数据。 创建和配置自定义事件时，它会发送到 [Adobe Commerce事件收集器](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-collectors).
+您可以扩展 [事件平台](events.md) 创建自己的店面活动以收集行业独特的数据。 创建和配置自定义事件时，它会发送到 [Adobe Commerce事件收集器](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-collectors).
 
 ## 处理自定义事件
 
 仅Adobe Experience Platform支持自定义事件。 自定义数据不会转发到Adobe Commerce功能板和量度跟踪器。
 
-对于任意 `custom` 事件，则收集器会添加 `personId` (`ecid`)至 `customContext` 并封装 `xdm` 对象，然后再转发到Edge。
+对于任何 `custom` 事件，收集器会添加 `personId` (`ecid`)到 `customContext` 并包装一个 `xdm` 对象在转发到Edge之前。
 
 示例：
 
@@ -45,7 +45,7 @@ mse.publish.custom({
 
 >[!NOTE]
 >
-> 使用自定义事件可能会影响默认的Adobe Analytics报表。
+> 使用自定义事件可能影响默认的Adobe Analytics报表。
 
 ## 处理事件覆盖（自定义属性）
 
@@ -80,7 +80,7 @@ mse.publish.productPageView({
 }
 ```
 
-通过Adobe Commerce Events SDK发布的带Adobe Commerce的产品视图覆盖：
+通过Adobe Commerce Events SDK发布的带Adobe Commerce覆盖的产品视图：
 
 ```javascript
 mse.publish.productPageView({

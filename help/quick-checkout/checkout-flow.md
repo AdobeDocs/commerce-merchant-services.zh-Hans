@@ -12,18 +12,18 @@ ht-degree: 0%
 
 # [!DNL Quick Checkout] 流量
 
-此部分概述了使用的典型签出体验 [!DNL Quick Checkout] (适用于Adobe Commerce扩展)。
+此部分概述了使用的典型签出体验 [!DNL Quick Checkout] 适用于Adobe Commerce扩展。
 
 成功 [!DNL Quick Checkout] 流程包含以下步骤：
 
 1. 打开店面并在购物车中添加商品。
 1. 继续结帐。
 
-![结账](assets/proceed-checkout.png)
+![结帐](assets/proceed-checkout.png)
 
 >[!NOTE]
 >
-> 您可以为商家启用自动登录。 参见 [Bolt的“启用自动登录”主题](https://help.bolt.com/products/embedded/direct-api/auto-login/) 了解更多信息。
+> 您可以为商家启用自动登录。 请参阅 [Bolt的“启用自动登录”主题](https://help.bolt.com/products/embedded/direct-api/auto-login/) 以了解更多信息。
 
 1. 出现提示时，输入与关联的电子邮件地址 [!DNL Bolt] 帐户。
 1. 输入发送给该用户的一次性密码(OTP) [!DNL Bolt] 帐户的电子邮件地址或电话号码。
@@ -37,11 +37,11 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   > 即使自动填写了结帐详细信息，您也可以使用现有的wallet信息（地址或信用卡信息）。
+   > 即使自动填写了结帐详细信息，您也可以使用现有的Wallet信息（地址或信用卡信息）。
 
-1. 下订单。
+1. 下单。
 
-此 [!DNL Quick Checkout] 与标准的其他Adobe Commerce签出选项兼容，例如 [礼品卡](https://docs.magento.com/user-guide/catalog/product-gift-card.html) 或 [折扣代码](https://docs.magento.com/user-guide/marketing/price-rules-cart-coupon.html).
+此 [!DNL Quick Checkout] 与标准的其他Adobe Commerce签出选项兼容，例如 [礼品卡](https://docs.magento.com/user-guide/catalog/product-gift-card.html) 或 [折扣码](https://docs.magento.com/user-guide/marketing/price-rules-cart-coupon.html).
 
 ## [!DNL Quick Checkout] 用例
 
@@ -52,4 +52,4 @@ ht-degree: 0%
 
 ## 获取帮助
 
-请通过以下方式联系Adobe Commerce支持： [Adobe Commerce帮助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) 以寻求任何帮助。
+请通过以下方式联系Adobe Commerce支持人员： [Adobe Commerce帮助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) 任何帮助。

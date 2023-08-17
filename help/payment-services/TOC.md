@@ -1,7 +1,7 @@
 ---
-user-guide-title: ”[!DNL Payment Services] 指南”
+user-guide-title: “[!DNL Payment Services] 指南”
 user-guide-description: “本指南提供有关安装和配置的详细信息 [!DNL Payment Services] 您的 [!DNL Adobe Commerce] 或 [!DNL Magento Open Source] 商店。”
-breadcrumb-title: ”[!DNL Payment Services] 指南”
+breadcrumb-title: “[!DNL Payment Services] 指南”
 index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
@@ -9,12 +9,12 @@ recommendations: noDisplay
 source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '79'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# [!DNL Payment Services] for Commerce {#payment-services}
+# [!DNL Payment Services] （用于商务） {#payment-services}
 
 - [指南概述](guide-overview.md)
 - [简介 [!DNL Payment Services]](overview.md)
@@ -22,9 +22,9 @@ ht-degree: 0%
 - 支付和结账 {#payments-checkout}
    - [付款选项](payments-options.md)
    - [信用卡保险存储](vaulting.md)
-   - [结账](checkout.md)
+   - [结帐](checkout.md)
 - 载入 [!DNL Payment Services] {#get-started}
-   - [入门培训概述](onboard.md)
+   - [载入概述](onboard.md)
    - [安装 [!DNL Payment Services] 扩展](install.md)
    - [连接实例](connect.md)
    - [设置测试沙盒](sandbox.md)
@@ -38,7 +38,7 @@ ht-degree: 0%
 - [创建订单](create-order.md)
 - 财务报告 {#reporting}
    - [订单付款状态报表](order-payment-status.md)
-   - [付款报表](payouts.md)
+   - [支付报表](payouts.md)
    - [可用数据](data.md)
 - 管理付款 {#manage}
    - [退款](refunds.md)

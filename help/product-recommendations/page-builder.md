@@ -1,5 +1,5 @@
 ---
-title: ‘[!DNL Page Builder] 集成
+title: ’[!DNL Page Builder] 集成
 description: 了解如何使用 [!DNL Product Recommendations] 页面生成器中的单位。
 exl-id: dd972642-1fb4-426a-ac68-f56bb5fa2ecf
 feature: Services, Recommendations, Page Builder
@@ -16,12 +16,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 在本机页面生成器页面上最多可以有25个推荐单位。 非本机页面生成器页面最多可以有5个推荐单位。 参见 [创建新推荐](create.md) 了解更多信息。
+> 在本地Page Builder页面上最多可以有25个推荐单元。 非本机页面生成器页面最多可以具有5个推荐单元。 请参阅 [创建新推荐](create.md) 以了解更多信息。
 
 ## 将产品Recommendations与页面生成器内容结合使用
 
-1. 在网站的默认商店视图中创建推荐单位。 即使您计划在不同商店视图中使用它们，也必须在默认商店视图中创建它们。
-1. 在Page Builder中，选择产品Recommendations内容小部件并置于您的网站上。
+1. 在网站的默认商店视图中创建“推荐”单位。 即使您计划在不同商店视图中使用它们，也必须在默认商店视图中创建它们。
+1. 在页面生成器中，选择产品Recommendations内容小部件并放置在您的网站上。
 
 ![插入推荐单位](assets/pb-insert.png)
 

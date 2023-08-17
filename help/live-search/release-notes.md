@@ -1,12 +1,12 @@
 ---
-title: ’[!DNL Live Search] 发行说明
+title: '[!DNL Live Search] 发行说明'
 description: “的最新发行信息 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
 source-git-commit: 3edbbc054fdadfeaa710b8c096db63e0d1961d02
 workflow-type: tm+mt
 source-wordcount: '1390'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -99,7 +99,7 @@ _2023年3月14日_
 
 * 修复了在保存期间存在未完成事件时的服务器错误
 * 修复了在存在多个事件时正确删除特定事件的问题
-* 修复了在添加新事件后现有规则事件未更新的问题
+* 修复了在添加新事件后未更新的现有规则事件
 * 修复了来自详细信息的第二次“编辑”点击 [!DNL Live Search] 需要重新加载的页面
 * 同义词：修复了当用户单击退出输入时，无法将焦点返回到字段的问题
 * 其他次要错误修复和性能更新

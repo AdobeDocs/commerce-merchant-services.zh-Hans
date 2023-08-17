@@ -1,6 +1,6 @@
 ---
-title: “管理规则”
-description: “了解如何管理现有 [!DNL Live Search] 规则。”
+title: 管理规则
+description: “了解如何管理现有的 [!DNL Live Search] 规则。”
 exl-id: 1a2ca9f9-1cf2-446f-809b-03ca5c798b13
 source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
 workflow-type: tm+mt
@@ -21,7 +21,7 @@ ht-degree: 0%
 1. 根据需要更新名称、开始和结束日期以及说明字段。 所有规则名称必须唯一。
 1. 测试规则。
 1. 发布更改。
-该规则即添加到规则工作区的列表中。 尽管活动规则会立即生效，但刷新店面中的缓存查询结果可能需要15分钟。
+该规则将添加到规则工作区的列表中。 尽管活动规则会立即生效，但刷新店面中的缓存查询结果可能需要15分钟。
 
 ## 删除规则
 

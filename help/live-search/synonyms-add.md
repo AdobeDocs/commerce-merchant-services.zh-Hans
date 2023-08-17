@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 添加同义词
 
-通过添加您自己的策划列表来提高客户参与度 [!DNL Live Search] 同义词。 [!DNL Live Search] 最多可以管理200个同义词 `Data Space ID`.
+通过添加您自己的精选列表来提高客户参与度 [!DNL Live Search] 同义词。 [!DNL Live Search] 最多可以管理200个同义词，每 `Data Space ID`.
 
 ![[!DNL Live Search] 同义词](assets/synonym-workspace.png)
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 步骤2：按类型定义同义词
 
-按照 [同义词类型](synonyms-type.md) 您希望创建的内容。
+按照 [同义词类型](synonyms-type.md) 您希望创建的。
 
 ### 双向同义词
 
@@ -40,7 +40,7 @@ ht-degree: 0%
    ![双向同义词示例](assets/synonym-add-two-way-example.png)
 
 1. 完成后，单击 **保存**.
-同义词集显示在列表中，每个术语之间有一个双向箭头，这意味着术语可以互换。
+该同义词集显示在列表中，每个术语之间有一个双向箭头，这意味着术语可以互换。
 
    ![双向同义词](assets/synonym-two-way.png)
 
@@ -54,17 +54,17 @@ ht-degree: 0%
 
    ![单向同义词示例](assets/synonym-add-one-way-example.png)
 
-   在此示例中，关键字是“pants”，而单向扩展术语“capris， calf-length pants， peddle-pushers”都是“pants”的子集，但具有特定含义。
+   在此示例中，关键字是“pants”，而单向扩展术语“capris， calf-length pants， peddle-pushers”是“pants”的子集，但具有特定含义。
 
 1. 完成后，单击 **保存**.
-同义词集合出现在列表中，有一个从展开项指向关键字的单向箭头，指示这些项是关键字的子集。 每个扩展项之间用加号分隔。
+同义词集合出现在列表中，有一个从展开项指向关键字的单向箭头，指示这些项是关键字的子集。 每个扩展项之间用加号隔开。
 
    ![单向同义词](assets/synonym-one-way.png)
 
 ## 步骤3：发布更改
 
 1. 同义词完成后，单击 **发布更改**.
-1. 请等待两个小时，以便您的更新在店面中可用。
+1. 等待长达两个小时，您的更新才会在店面中出现。
 
 ## 字段描述
 

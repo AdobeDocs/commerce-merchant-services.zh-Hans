@@ -1,5 +1,5 @@
 ---
-title: ’[!DNL Product Recommendations] 发行说明
+title: '[!DNL Product Recommendations] 发行说明'
 description: 的最新发行信息 [!DNL Product Recommendations] 来自Adobe Commerce的。
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes

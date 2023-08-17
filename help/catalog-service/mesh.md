@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
-description: ‘[!DNL API Mesh] for Adobe Commerce提供了一种通过通用的GraphQL端点集成多个数据源的方法。”
+description: ’[!DNL API Mesh] for Adobe Commerce提供了通过公共GraphQL端点集成多个数据源的方法。
 exl-id: cdda4a83-3c5f-4a69-8279-b90464e16c0e
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
@@ -13,22 +13,22 @@ ht-degree: 0%
 
 # [!DNL Catalog Service and API Mesh]
 
-此 [Adobe Developer App Builder的API网格](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 使开发人员能够使用Adobe I/O Runtime将专用或第三方API和其他界面与Adobe产品集成。
+此 [适用于Adobe Developer App Builder的API网格](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 使开发人员能够使用Adobe I/O Runtime将专用或第三方API和其他界面与Adobe产品集成。
 
 ![目录架构图](assets/catalog-service-architecture-mesh.png)
 
-将API网格与目录服务结合使用的第一步是将API网格连接到您的实例。 请参阅中的详细说明 [创建网格](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
+将API网格与目录服务结合使用的第一步是将API网格连接到实例。 请参阅中的详细说明 [创建网格](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
 要完成安装，请安装 [Adobe Developer CLI包](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 
-在Adobe I/O Runtime上配置Mesh后，运行以下命令以添加 `CommerceCatalogServiceGraph` 网格的源。
+在Adobe I/O Runtime上配置Mesh后，请运行以下命令，该命令会添加 `CommerceCatalogServiceGraph` 网格的源。
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 ```
 
 位置 `variables.json` 是一个单独的文件，用于存储Adobe I/O Runtime的常用值。
-例如，可以将API密钥保存在文件中：
+例如，API密钥可以保存在文件中：
 
 ```json
 {
@@ -36,16 +36,16 @@ aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 }
 ```
 
-运行此命令后， Catalog Service应通过API网格运行。 您可以运行 `aio api-mesh:get` 命令查看更新后的网格的配置。
+运行此命令后，目录服务应通过API Mesh运行。 您可以运行 `aio api-mesh:get` 命令查看已更新网格的配置。
 
 ## API网格示例
 
-API网格允许用户使用外部数据源，以增强您的Adobe Commerce实例。 它也可用于配置现有Commerce数据以启用新功能。
+API网格允许用户使用外部数据源来增强您的Adobe Commerce实例。 它也可用于配置现有Commerce数据以启用新功能。
 
 ### 启用层价格
 
 在此示例中，API Mesh用于在Adobe Commerce中启用层价格。
-更换 `name `， `endpoint`、和 `x-api-key` 值。
+替换 `name `， `endpoint`、和 `x-api-key` 值。
 
 ```json
 {
@@ -160,7 +160,7 @@ query {
 
 ### 获取实体ID
 
-此网格会附加 `entityId` 到ProductView界面。 更换 `name `， `endpoint`、和 `x-api-key` 值。
+此网格会附加 `entityId` 到ProductView界面。 替换 `name `， `endpoint`、和 `x-api-key` 值。
 
 ```json
 {

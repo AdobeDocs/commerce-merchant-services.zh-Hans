@@ -1,6 +1,6 @@
 ---
 title: 订单付款状态报表
-description: 使用“订单付款状态”报表，可以查看订单的付款状态并确定任何潜在问题。
+description: 使用“订单付款状态”报表可以查看订单的付款状态，并确定任何潜在问题。
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
@@ -14,30 +14,30 @@ ht-degree: 0%
 
 # 订单付款状态报表
 
-[!DNL Payment Services] 对象 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供全面的报告，以便您清楚地了解商店的订单和付款。
+[!DNL Payment Services] 对象 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供全面的报表，以便您清楚地了解商店的订单和付款。
 
 有两个可用的“订单付款状态”报告视图，使您可以快速查看订单的付款状态：
 
-* **[订单付款状态可视化图表视图](#order-payment-status-data-visualization-view)** — 付款服务主页上的图表，它直观地呈现订单付款状态报表视图中的每日汇总付款状态
-* **[订单付款状态报表视图](#order-payment-status-report-view)** — 以订单付款状态显示所有事务处理的详细付款、已开票、已发运、退款和争议状态的报告
+* **[订单付款状态可视化图表视图](#order-payment-status-data-visualization-view)** — 付款服务主页上的图表，它直观地显示订单付款状态报表视图中的每日汇总付款状态
+* **[订单付款状态报表视图](#order-payment-status-report-view)** — 以订单付款状态报告可用，显示所有事务处理的详细付款、已开票、已发运、退款和争议状态
 
-订单付款状态视图帮助您轻松了解特定订单在订单到现金处理流程中的位置。 这些报告允许您根据订单的付款状态和付款日期快速查看订单，并识别任何潜在问题。
+订单付款状态视图帮助您轻松了解特定订单在订单到现金流程中的位置。 这些报告允许您根据订单的付款状态和付款日期快速查看订单，并识别任何潜在问题。
 
-您可以下载.csv文件格式的“订单”付款状态交易记录，以便在现有的会计软件或订单管理软件中使用。
+您可以下载.csv文件格式的订单付款状态交易记录，以便在现有的会计或订单管理软件中使用。
 
 >[!NOTE]
 >
 >如果没有，则无法查看财务报表 [已载入和激活的实时模式](production.md#enable-live-payments) 对象 [!DNL Payment Services].
 
-## 订单付款状态数据可视化图表视图
+## 订单支付状态数据可视化视图
 
-可在Payment Services主页中找到订单付款状态数据可视化视图。 它是详细表格中每天汇总支付状态的直观表示形式 [订单付款状态报表视图](#order-payment-status-report-view).
+可在Payment Services主页中找到订单付款状态数据可视化视图。 这是详细表格中每天汇总支付状态的可视表示形式 [订单付款状态报表视图](#order-payment-status-report-view).
 
 在 _管理员_ 侧栏，转到 **销售** > **支付服务** 查看数据可视化图表 [付款状态表](#statuses-information).
 
 ![管理员中的支付数据可视化图表](assets/orderpayment-dataviz.png){zoomable=yes}
 
-单击 **查看报告** 导航到详细的表格 [订单付款状态报表视图](#order-payment-status-report-view).
+单击 **查看报表** 导航到详细表格 [订单付款状态报表视图](#order-payment-status-report-view).
 
 ### 自定义状态时间范围
 
@@ -52,52 +52,52 @@ ht-degree: 0%
 
 ### 状态信息
 
-选定日期范围的付款状态显示在“订单付款状态”数据可视化视图的左侧。 所选日期范围的日期显示在视图底部。 如果在特定日期没有订单，则该日期不会显示。
+选定日期范围的付款状态显示在“订单付款状态”数据可视化视图的左侧。 所选日期范围的日期显示在视图底部。 如果特定日期没有订单，则不会显示该日期。
 
-订单付款状态数据可视化图表视图包含以下信息。
+订单支付状态数据可视化视图包含以下信息。
 
 | 数据 | 描述 |
 | ------------ | -------------------- |
-| [!UICONTROL Orders] | 指定时间范围内订单的数量范围；Y轴上的数据（左） |
+| [!UICONTROL Orders] | 指定时间范围内的订单金额范围；Y轴上的数据（左） |
 | 日期范围 | 指定时间范围的日期范围；X轴（底部）上的数据 |
 | 已授权 | 订单已授权 |
-| 已请求捕获 | 订单的捕获请求 |
+| 已请求捕获 | 订单捕获请求 |
 | 捕获已确认 | 订单捕获已完成 |
-| 部分捕获 | 订单已部分捕获 |
+| 部分捕获 | 部分捕获的订单 |
 | 捕获失败 | 订单捕获失败 |
 | 已失效 | 订单已失效 |
 
 ## 订单付款状态报表视图
 
-“订单付款状态”报表视图在“付款服务”的“订单付款状态”视图中可用。 它包括所有交易的详细状态 — 付款、已开票、已发运、退款、争议等。 此 [订单付款状态数据可视化图表视图](#order-payment-status-data-visualization-view) 在Payment Services Home中，可以从“订单付款状态”报表视图中直观地显示每天的汇总付款状态。
+在Payment Services的“订单付款状态”视图中可以使用“订单付款状态”报表视图。 它包括所有交易的详细状态 — 付款、已开票、已发运、退款、争议等。 此 [订单支付状态数据可视化视图](#order-payment-status-data-visualization-view) 在“付款服务主页”中，可以从“订单付款状态”报表视图中直观地显示每天的汇总付款状态。
 
-在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Order payment status]** 要查看详细的表格式订单付款状态报表视图，请执行以下操作：
+在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Order payment status]** 要查看详细的表格形式订单付款状态报表视图，请执行以下操作：
 
 ![管理员中的订单付款状态交易记录](assets/orders-report-data.png)
 
-您可以根据本主题中的部分配置此视图，以便最好地呈现您希望查看的数据。
+您可以根据本主题中的部分对此视图进行配置，以便最好地呈现您希望查看的数据。
 
-您可以 [下载支付交易记录](#download-order-payment-statuses) .csv文件格式的文件，用于现有的财务或订单管理软件。
+您可以 [下载支付交易记录](#download-order-payment-statuses) CSV文件格式，用于现有会计或订单管理软件。
 
 >[!NOTE]
 >
 >此表中显示的数据按降序排序(`DESC`)默认情况下，使用 `TRANS DATE`. 此 `TRANS DATE` 是启动交易的日期和时间。
 
-### 报告中使用的数据
+### 报表中使用的数据
 
-此 [!DNL Payment Services] 模块使用订单数据，并将其与其他来源（包括PayPal）的汇总付款数据相结合，以提供有意义且高度有用的报表。
+此 [!DNL Payment Services] 模块使用订单数据，并将其与其他来源（包括PayPal）的汇总付款数据相结合，以提供有意义且非常有用的报表。
 
-订单数据将导出并保留在支付服务中。 当您 [更改或添加订单状态](https://docs.magento.com/user-guide/sales/order-status-custom.html){target="_blank"} or [edit a store view](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target="_blank"}, [store](https://docs.magento.com/user-guide/stores/store-information.html){target="_blank"}或网站名称)时，该数据与付款数据相结合，并且使用结合的信息填充“订单付款状态”报表。
+订单数据将导出并保留在支付服务中。 当您 [更改或添加订单状态](https://docs.magento.com/user-guide/sales/order-status-custom.html){target="_blank"} or [edit a store view](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target="_blank"}, [store](https://docs.magento.com/user-guide/stores/store-information.html){target="_blank"}或网站名称)时，该数据将与付款数据相结合，并且订单付款状态报表中会填充合并的信息。
 
-此流程包含两个步骤：
+此过程包括两个步骤：
 
-1. 索引已更改数据 `ON SAVE` （每次更改订单信息或商店信息时）或 `BY SCHEDULE` （按照预配置的cron计划），具体取决于在中如何进行配置 [索引管理](https://docs.magento.com/user-guide/system/index-management.html){target="_blank"} 在Admin中。
+1. 索引是更改的数据 `ON SAVE` （每次更改订单信息或商店信息时）或 `BY SCHEDULE` （按照预配置的cron计划），具体取决于在中如何进行配置 [索引管理](https://docs.magento.com/user-guide/system/index-management.html){target="_blank"} 在“管理员”中。
 
    默认情况下，进行数据索引 `ON SAVE`，这意味着每当订单中的某些内容、订单状态、商店视图、商店或网站发生更改时，索引过程都会立即发生。
 
-1. 将索引数据发送到付款服务，然后填充到订单付款状态报表中。
+1. 系统会将索引数据发送到付款服务，然后付款服务将填充到订单付款状态报表中。
 
-为报告目的而导出和整理的唯一数据是订单付款状态报表使用的数据。
+为报告目的而导出和整理的唯一数据是“订单付款状态”报表使用的数据。
 
 >[!NOTE]
 >
@@ -105,24 +105,24 @@ ht-degree: 0%
 
 #### 配置数据导出
 
-即使默认情况下，重新索引发生在 `ON SAVE` 模式，建议您在以下位置索引： `BY SCHEDULE` 模式。 此 `BY SCHEDULE` 索引按cron计划运行，运行时间为1分钟，任何更改的数据将在任何数据更改后的2分钟内显示在订单状态报表中。 此计划的重新索引可帮助您减轻存储的任何压力，尤其是在您有大量传入订单的情况下，因为它按计划进行（而不是在每次下订单时）。
+即使默认情况下，重新索引也会在 `ON SAVE` 模式，建议您在 `BY SCHEDULE` 模式。 此 `BY SCHEDULE` 索引以1分钟的cron时间表运行，任何更改的数据将在任何数据更改后的2分钟内显示在订单状态报表中。 此计划的重新索引可帮助您减少存储空间上的任何压力，尤其是在您有大量传入订单的情况下，因为它按计划进行（而不是在每次下订单时）。
 
-可以更改索引模式 — `ON SAVE` 或 `BY SCHEDULE`—[在管理员中](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"}.
+您可以更改索引模式 — `ON SAVE` 或 `BY SCHEDULE`—[在管理员中](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"}.
 
 要了解如何配置数据导出，请参阅 [命令行配置](configure-cli.md#configure-data-export).
 
 ### 选择数据源
 
-在“订单付款状态”报表视图中，您可以选择数据源 — _[!UICONTROL Live]_或_[!UICONTROL Sandbox]_ — 您希望查看其报告结果。
+在“订单付款状态”报表视图中，您可以选择数据源 — _[!UICONTROL Live]_或_[!UICONTROL Sandbox]_ — 要查看其报告结果。
 
 ![数据源选择](assets/datasource.png){width=400px}
 
 如果 _[!UICONTROL Live]_是选定的数据源，则可以查看使用的商店的报表信息 [!DNL Payment Services] 在生产模式下。 如果_[!UICONTROL Sandbox]_ 是选定的数据源，您可以看到沙盒模式的报表信息。
 
-数据源选择的工作方式如下：
+数据源选择的工作方式如下所示：
 
-* 如果您没有任何使用 [!DNL Payment Services] 在实时模式下，数据源选择默认为 _[!UICONTROL Sandbox]_.
-* 如果您有任何商店（一个或多个）使用 [!DNL Payment Services] 在实时模式下，数据源选择默认为 _[!UICONTROL Live]_.
+* 如果您没有任何使用 [!DNL Payment Services] 在实时模式下，数据源选项默认为 _[!UICONTROL Sandbox]_.
+* 如果您有任何商店（一个或多个）使用 [!DNL Payment Services] 在实时模式下，数据源选项默认为 _[!UICONTROL Live]_.
 * 报表导出始终遵循数据源选择。
 
 要为选择数据源，请执行以下操作 [!UICONTROL Order Payment Status] 报告：
@@ -134,12 +134,12 @@ ht-degree: 0%
 
 ### 自定义日期时间范围
 
-从“订单付款状态”报表视图中，您可以通过选择特定日期，自定义要查看的状态的时间范围。 默认情况下，网格中显示30天的订单付款状态。
+从“订单付款状态”报表视图中，您可以通过选择特定日期来自定义要查看的状态的时间范围。 默认情况下，网格中显示30天的订单付款状态。
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
 1. 单击 **[!UICONTROL Order dates]** 日历选择器过滤器。
 1. 选择适用的日期范围。
-1. 查看网格中指定日期的订单付款状态。
+1. 在网格中查看指定日期的订单付款状态。
 
 ### 显示和隐藏列
 
@@ -159,11 +159,11 @@ ht-degree: 0%
 
 默认情况下，网格中显示30天的订单付款状态。
 
-向左和向右滚动以查看 [订单付款状态信息](#column-descriptions)，包括订单日期、授权日期、开票、已发运、付款状态等。
+向左和向右滚动以查看 [订单付款状态信息](#column-descriptions)，包括订单日期、授权日期、开票、发运、付款状态等。
 
-搜索中返回的行数，或显示在默认的30天订单付款状态的行数，显示在订单付款状态视图网格的上方，以及订单日期日历选择器过滤器。
+在搜索中返回的行数，或默认显示的30天订单付款状态的行数，显示在“订单付款”状态视图网格的上方，与“订单日期”日历选择器过滤器一起显示。
 
-#### 付薪状态
+#### 付款状态
 
 “支付状态”列显示任何付款的当前状态。 A `Capture failed` 付款显示红色警报状态和 `Voided` 付款显示灰色警报状态。
 
@@ -175,31 +175,31 @@ ht-degree: 0%
 
 订单付款状态报表视图显示 _[!UICONTROL Last updated]_显示上次更新报告信息的时间戳。 默认情况下，订单付款状态报表数据每三小时自动刷新一次。
 
-您还可以人工强制刷新订单付款状态报表数据，以查看最新的报表信息。
+您也可以手动强制刷新订单付款状态报表数据，以查看最新的报表信息。
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
 1. 单击 _刷新_ 图标(![刷新图标](assets/refresh-button-med.png))。
 
-   订单付款状态报表数据已刷新，并且 *[!UICONTROL Update complete]* 确认后，网格中将显示最新信息。
+   订单付款状态报表数据已刷新，并且 *[!UICONTROL Update complete]* 确认即会出现，网格中会显示最新信息。
 
 ### 查看争议
 
-您可以在订单付款状态报表中查看商店订单上的任何争议，然后定位至PayPal解决中心对其执行活动。
+您可以在订单付款状态报表中查看商店订单上的任何争议，然后定位至PayPal解决中心对其执行操作。
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. 导航到 **[!UICONTROL Disputes column]**.
+1. 导航至 **[!UICONTROL Disputes column]**.
 1. 查看特定订单的任何争议并查看 [争议状态](#order-payment-status-information).
-1. 单击争议ID链接(从 _PP-D-_)以转到 [PayPal解决中心](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
-1. 根据需要采取适当行动处理争议。
+1. 单击争议ID链接(以 _PP-D-_)以转到 [PayPal解决中心](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
+1. 根据需要，对争议采取适当行动。
 
    要按状态对订单争议进行排序，请单击“争议”列标题。
 
 ### 下载订单付款状态
 
-无论您查看的是默认的30天状态还是自定义的时间范围，都可以下载在“订单付款”状态视图网格中可见所有状态的.csv文件。
+您可以下载.csv文件，该文件的所有状态均显示在“订单付款”状态视图网格中，无论您查看的是默认的30天状态还是自定义的时间范围。
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. 如果您希望查看过去30天以外的时间范围的状态， [自定义状态的日期范围时间范围](#customize-dates-timeframe).
+1. 如果您希望查看过去30天以外的其他时间范围的状态， [自定义状态的日期范围时间范围](#customize-dates-timeframe).
 1. 单击 _下载_ (![下载图标](assets/icon-download.png))图标。
 
 您的订单付款状态将以.csv格式下载。
@@ -234,13 +234,13 @@ These order payment status timeframes are currently available in [!DNL Payment S
 | [!UICONTROL Order Amt] | 订单的总金额 |
 | [!UICONTROL Cur] | 订单的货币类型 |
 | [!UICONTROL Pay Status] | 特定订单的付款状态 |
-| [!UICONTROL Paid Amt] | 订单上的已付金额 |
+| [!UICONTROL Paid Amt] | 订单已付金额 |
 | [!UICONTROL Cur] | 订单上已付金额的货币类型 |
-| [!UICONTROL Refund Status] | 订单上的退款状态（例如退货、RMA和贷项通知单中的信息） —    *[!UICONTROL Requires refund]*， *[!UICONTROL Refund requested]*， *[!UICONTROL Refunded]*， *[!UICONTROL Refund failed]*，或 *[!UICONTROL Voided]* |
+| [!UICONTROL Refund Status] | 订单上的退款状态（如退货、RMA和贷项通知单中的信息） —    *[!UICONTROL Requires refund]*， *[!UICONTROL Refund requested]*， *[!UICONTROL Refunded]*， *[!UICONTROL Refund failed]*，或 *[!UICONTROL Voided]* |
 | [!UICONTROL Refund Amount] | 订单的已退款总额 |
-| [!UICONTROL Cur] | 订单退款的金额的币种类型 |
-| [!UICONTROL Disputes] | 订单上任何争议的状态（争议信息和退款） — *[!UICONTROL Open]*， *[!UICONTROL Waiting for buyer response]*， *[!UICONTROL Waiting for seller response]*， *[!UICONTROL Under review]*， *[!UICONTROL Resolved]*，或 *[!UICONTROL Other]* |
-| [!UICONTROL Payment Method] | 订单的商务交易记录中使用的付款方法 |
+| [!UICONTROL Cur] | 订单退款金额的币种类型 |
+| [!UICONTROL Disputes] | 订单上的任何争议状态（争议信息和退款） — *[!UICONTROL Open]*， *[!UICONTROL Waiting for buyer response]*， *[!UICONTROL Waiting for seller response]*， *[!UICONTROL Under review]*， *[!UICONTROL Resolved]*，或 *[!UICONTROL Other]* |
+| [!UICONTROL Payment Method] | 在订单的商务交易记录中使用的付款方法 |
 | [!UICONTROL Website] | 从中下达订单的网站 |
 | [!UICONTROL Store] | 下订单的商店 |
 | [!UICONTROL Store View] | 从中下达订单的存储区视图 |

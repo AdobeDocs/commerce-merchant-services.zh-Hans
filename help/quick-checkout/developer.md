@@ -1,6 +1,6 @@
 ---
-title: ”[!DNL Quick Checkout] (适用于Adobe Commerce开发人员信息)
-description: ”[!DNL Quick Checkout] 开发人员信息。”
+title: '"[!DNL Quick Checkout] (适用于Adobe Commerce开发人员信息)'
+description: '"[!DNL Quick Checkout] 开发人员信息。”'
 exl-id: 8926eda4-b4de-4938-a86c-b095616f61f6
 feature: Checkout, Services
 role: Developer
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Quick Checkout] 开发人员信息
 
-本主题包含与以下Adobe Commerce紧密合作的开发人员适用的信息： [!DNL Magento Open Source] 代码，并想要了解关于 [!DNL Quick Checkout] 扩展。
+本主题包含面向与Adobe Commerce紧密合作的开发人员的信息，包括 [!DNL Magento Open Source] 代码并想要了解有关 [!DNL Quick Checkout] 扩展。
 
 ## 扩展点
 
@@ -25,9 +25,9 @@ ht-degree: 0%
 
 扩展点可用于在使用登录后自定义自动步骤导航 [!DNL Bolt].
 
-购物者登录后 [!DNL Bolt]，所有有效信息都将预先填写并重定向到付款详情步骤以下订单。 请参阅 [结账流程](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-flow.html) 主题以了解更多信息。
+一旦购物者登录使用 [!DNL Bolt]，则所有有效信息都将预先填写并重定向到支付详情步骤以下订单。 请参阅 [结账流程](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-flow.html) 主题以了解更多信息。
 
-此扩展点允许阻止导航到付款步骤，并且在存在需要购物者对装运步骤执行其他操作的扩展时可能很有用。 请参阅以下示例，了解如何将扩展点与mixin结合使用：
+此扩展点允许阻止导航到付款步骤，并且在存在需要购物者对配送步骤执行其他操作的扩展时可能很有用。 请参阅以下示例，了解如何将扩展点与mixin结合使用：
 
 1. 在中注册新的mixin `require-config.js` 文件位于 `app/code/Vendor/ModuleName/view/frontend/`.
 

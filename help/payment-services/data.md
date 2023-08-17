@@ -1,6 +1,6 @@
 ---
 title: 可用数据
-description: 使用财务报表数据使报表与非商务系统相协调。
+description: 使用财务报表数据使报表与非商业系统相协调。
 role: User
 level: Intermediate
 exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
@@ -14,17 +14,17 @@ ht-degree: 0%
 
 # 可用数据
 
-您可以获得一些订单和付款数据，以便协调外部系统之间的Adobe Commerce Financial Reporting。
+您可以获得一些订单和付款数据，以便跨外部系统协调Adobe Commerce Financial Reporting。
 
 ## 与ERP系统协调
 
-您可以使用与特定订单关联的增量ID来调节Adobe Commerce Financial Reporting与非AdobeEnterprise Resource Planning (ERP)系统。
+您可以使用与特定订单关联的增量ID来调整Adobe Commerce Financial Reporting与非Adobe企业资源计划(ERP)系统。
 
-当支付服务将商业订单发送至PayPal时，增量ID被包含为 `custom_id` _和_ 在 `invoice_id` (其中还包含 `increment_id`)。
+当支付服务将商业订单发送至PayPal时，增量ID包含为 `custom_id` _和_ 在 `invoice_id` (也包含随机字符串，位于 `increment_id`)。
 
 在付款的商家活动详细信息和PayPal webhook中均可轻松访问ID。
 
-此 `invoice_id` 和 `custom_id` 在付款的商家活动详细信息底部附近显示：
+此 `invoice_id` 和 `custom_id` 显示在付款的商家活动详细信息底部附近：
 
 ![`custom_id` 在商家活动详细信息中](assets/merchant-activity-ids.png)
 

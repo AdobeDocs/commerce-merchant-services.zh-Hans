@@ -1,5 +1,5 @@
 ---
-title: ‘[!DNL Product Recommendations] 工作区
+title: ’[!DNL Product Recommendations] 工作区
 description: 了解如何配置、管理和监控产品推荐性能。
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
 source-git-commit: 25d5321b6f29bab5d8cf329170f3644f35100438
@@ -11,14 +11,14 @@ ht-degree: 0%
 
 # [!DNL Product Recommendations] 工作区
 
-此 [!DNL Product Recommendations] 工作区显示之前配置的推荐列表，其中包含可帮助您跟踪每个推荐是否成功的量度。 可将该列表配置为计算过去一天、一周或月的量度。 您可以使用这些量度，根据查看或单击推荐单位的频率创建切实可行的见解，或者分析推荐的执行情况。
+此 [!DNL Product Recommendations] 工作区显示之前配置的推荐列表，其中包含可帮助您跟踪每个推荐是否成功的量度。 可将该列表配置为计算过去一天、一周或月的量度。 您可以使用量度，根据查看或单击推荐单位的频率创建切实可行的见解，或分析推荐的执行情况。
 
 ![Recommendations工作区](assets/workspace.png)
 _Recommendations工作区_
 
 ## 设置范围
 
-最初 [范围](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) （在所有推荐设置中）设置为 `Default Store View`. 如果您的Commerce安装包含多个商店视图，请设置 **范围** 到 [商店视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 您的推荐适用的位置。
+最初 [范围](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) （在所有推荐设置中）设置为 `Default Store View`. 如果Commerce安装包含多个商店视图，请设置 **范围** 到 [商店视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 您的推荐适用的位置。
 
 ## 设置量度日期范围
 
@@ -36,12 +36,12 @@ _Recommendations工作区_
 
 1. 在左上角，单击 **显示/隐藏** ![列选择器](assets/icon-show-hide-columns.png) 列。
 
-   可见列具有蓝色复选标记。
+   可见的列具有蓝色复选标记。
 
 1. 在菜单中，执行以下任一操作：
 
-   - 要显示隐藏的列，请单击任何不带复选标记的列名。
-   - 要隐藏可见列，请单击带有复选标记的任意列名。
+   - 要显示隐藏的列，请单击任何不带复选标记的列名称。
+   - 要隐藏可见列，请单击带有复选标记的任何列名称。
 
    将刷新表以仅包含选定的列。
 
@@ -70,19 +70,19 @@ _Recommendations设置_
 
 ## 编辑推荐
 
-在推荐详细信息页面中，单击 **编辑**. 要了解更多信息，请转到 [编辑Recommendations](edit.md).
+在推荐详细信息页面中，单击 **编辑**. 要了解更多信息，请访问 [编辑Recommendations](edit.md).
 
 ## 创建推荐
 
-在推荐详细信息页面中，单击 **创建**. 要了解更多信息，请转到 [创建Recommendations](create.md).
+在推荐详细信息页面中，单击 **创建**. 要了解更多信息，请访问 [创建Recommendations](create.md).
 
 ## 工作区控件
 
-| 控制 | 描述 |
+| 控件 | 描述 |
 |---|---|
 | ![日历选择器](assets/icon-calendar.png) | 确定用于量度计算的时间范围。 选项：24小时/7天/30天 |
-| ![列选择器](assets/icon-show-hide-columns.png) | 确定中显示的列 [!DNL Product Recommendations] 表格。 |
-| 设置 | 确定从中获取推荐行为数据的SaaS数据空间，并启用视觉相似性推荐类型。 |
+| ![列选择器](assets/icon-show-hide-columns.png) | 确定在 [!DNL Product Recommendations] 表格。 |
+| 设置 | 确定从中获取推荐行为数据的SaaS数据空间，还启用视觉相似性推荐类型。 |
 | 创建推荐 | 打开 [创建新推荐](create.md) 页面。 |
 
 ## 列说明
@@ -95,10 +95,10 @@ _Recommendations设置_
 | 状态 | 推荐状态。 选项：不活动/活动/草稿 |
 | 已创建 | 创建推荐的日期。 |
 | 上次编辑时间 | 上次编辑推荐的日期。 |
-| 展示次数 | 推荐单元在页面上加载和渲染的次数。 位于浏览器视区折叠下方的推荐单元会呈现在页面上，但购物者不会查看。 在这种情况下，渲染的单位被计为一次展示，但仅当用户滚动该单位查看时才计为一次查看。 |
+| 展示次数 | 在页面上加载和呈现推荐单元的次数。 位于浏览器视区折叠下方的推荐单元会在页面上呈现，但购物者不会查看。 在这种情况下，呈现的单位被计为一次展示，但是仅当用户滚动该单位进入视图时才计为一次浏览。 |
 | 展示次数 | （可视展示次数）注册至少一个视图的推荐单元数。 |
-| 查看次数 | 购物者浏览器视区中显示的推荐单位数。 此事件可在页面上多次触发。 |
-| 点击次数 | 购物者点击推荐单元中项目的次数和购物者点击 **添加到购物车** 推荐单位中的按钮 |
+| 视图 | 购物者浏览器视区中显示的推荐单位数。 此事件可在页面上多次触发。 |
+| 点击次数 | 购物者点击推荐单元中项目的次数和购物者点击 **添加到购物车** 推荐单元中的按钮 |
 | 收入 | 在当前时间范围内由推荐驱动的收入。 |
 | Lt收入 | （生命周期收入）由推荐驱动的生命周期收入。 |
 | 可见性 | 注册查看的推荐单元的百分比。 |

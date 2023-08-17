@@ -1,5 +1,5 @@
 ---
-title: ’[!DNL Quick Checkout] 发行说明
+title: '[!DNL Quick Checkout] 发行说明'
 description: 查看发行说明，了解所有 [!DNL Quick Checkout] 版本发布。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
 feature: Release Notes, Services, Checkout

@@ -18,23 +18,23 @@ ht-degree: 0%
 当 [!DNL Live Search] 安装服务，默认搜索功能将转换为 [!DNL Live Search] 自动。
 必须在管理员中启用PLP小组件。
 
-1. 转到 **商店** >设置> **配置** > **[!DNL Live Search]** > **店面功能** 和设置 **启用产品列表小组件** “是”。
+1. 转到 **商店** >设置> **配置** > **[!DNL Live Search]** > **店面特色** 并设置 **启用产品列表小组件** 是。
 1. 选择 **保存配置** 以保存设置。
 
-## 样式示例
+## 样式设置示例
 
-您可以使用自定义PLP小部件的外观和风格，以匹配您的网站 [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/).
+您可以自定义PLP小组件的外观，以使用匹配您的网站 [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/).
 
 >[!NOTE]
 >
->Adobe Commerce主题中带有自定义类的元素不会继承。 这些元素必须由其特定类定向，以便与自定义类匹配；主操作类不适用于构件按钮。
->将继承CSS中的常规目标元素； `button` 将应用于构件按钮。
+>不会继承Adobe Commerce主题中自定义类的元素。 这些元素必须由其特定类定位以匹配自定义类；主操作类不适用于构件按钮。
+>CSS中的常规目标元素将被继承； `button` 将应用于构件按钮。
 
 高亮显示的div包含目标类 `ds-sdk-product-item__product-name`.
 
 ![分页](assets/plp-css-example.png)
 
-通过添加大写规则来自定义产品名称。
+通过添加规则使其变为大写来自定义产品名称。
 
 ```css
 .ds-sdk-product-item__product-name {
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 * `.ds-sdk-sort-dropdown__button`
 
-![“下拉”按钮](assets/plp-css-dropdown-button.png)
+![下拉按钮](assets/plp-css-dropdown-button.png)
 
 * `.ds-sdk-sort-dropdown__items`
 

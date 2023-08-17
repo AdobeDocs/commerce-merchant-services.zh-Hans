@@ -1,5 +1,5 @@
 ---
-title: 商务服务连接器
+title: Commerce服务连接器
 description: 了解如何使用生产和沙盒API密钥将Adobe Commerce或Magento Open Source实例集成到服务。
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
@@ -35,11 +35,11 @@ ht-degree: 0%
 
 ![Commerce Services连接器架构](assets/saas-config-sync-workflow.png)
 
-以下部分将更详细地讨论这些元素中的每一个。
+以下部分将更详细地讨论其中各个元素。
 
 ## 凭据 {#apikey}
 
-生产和沙盒API密钥从生成 [!DNL Commerce] 许可证持有者的帐户，由唯一的 [!DNL Commerce] ID (MageID)。 要通过服务的授权验证，请执行以下操作 [!DNL Product Recommendations] 或 [!DNL Live Search]，则商户组织的许可证持有人可以生成一组API密钥，只要帐户处于良好状态。 系统集成商或开发团队可“需要了解”地共享这些密钥，代表许可证持有者管理项目和环境。 此外，解决方案集成商还有权使用 [!DNL Commerce Services]. 如果您是解决方案集成商， [!DNL Commerce] 合作伙伴合同应生成API密钥。
+生产和沙盒API密钥从生成 [!DNL Commerce] 许可证持有者的帐户，由唯一标识符 [!DNL Commerce] ID (MageID)。 要通过如下服务的授权验证，请执行以下操作 [!DNL Product Recommendations] 或 [!DNL Live Search]，则商户组织的许可证持有人可以生成API密钥集，只要帐户处于良好状态。 这些密钥可在“需要知道”的基础上与系统集成商或代表许可证持有人管理项目和环境的开发团队共享。 此外，解决方案集成商还有权使用 [!DNL Commerce Services]. 如果您是解决方案集成商， [!DNL Commerce] 合作伙伴合同应生成API密钥。
 
 ### 生成生产和沙盒API密钥 {#genapikey}
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 1. 从 _环境_ 菜单，选择 **生产** 或 **沙盒**.
 
-1. 在中输入名称 _API密钥_ 部分并单击 **新增**.
+1. 在 _API密钥_ 部分并单击 **新增**.
 
    这将打开一个用于下载新密钥的对话框。
 
@@ -63,17 +63,17 @@ ht-degree: 0%
 
 1. 对每个环境（生产和沙盒）重复上述步骤。
 
-   此 **API密钥** 部分现在显示您的API密钥。 在以下情况下，您需要生产密钥和沙盒密钥： [选择或创建SaaS项目](#createsaasenv).
+   此 **API密钥** 部分现在显示您的API密钥。 在执行以下操作时，您需要同时使用生产密钥和沙盒密钥： [选择或创建SaaS项目](#createsaasenv).
 
 ## SaaS配置 {#saasenv}
 
-[!DNL Commerce] 必须使用SaaS项目和SaaS数据空间配置实例，以便 [!DNL Commerce Services] 可以将数据发送到正确的位置。 SaaS项目对所有SaaS数据空间进行分组。 SaaS数据空间用于收集和存储数据，以便 [!DNL Commerce Services] 去工作。 其中一些数据可能从 [!DNL Commerce] 实例和某些可以从店面的购物者行为中收集。 然后，保留该数据以保护云存储。
+[!DNL Commerce] 必须使用SaaS项目和SaaS数据空间配置实例，以便 [!DNL Commerce Services] 可以将数据发送到正确的位置。 SaaS项目对所有SaaS数据空间进行分组。 SaaS数据空间用于收集和存储以下各项的数据： [!DNL Commerce Services] 去工作。 其中一些数据可从以下导出： [!DNL Commerce] 实例和某些可以从店面的购物者行为中收集。 然后，该数据将保留到安全云存储中。
 
 对象 [!DNL Product Recommendations]，SaaS数据空间包含目录和行为数据。 您可以指向 [!DNL Commerce] 实例到SaaS数据空间，创建者： [选择它](https://docs.magento.com/user-guide/configuration/services/saas.html) 在 [!DNL Commerce] 配置。
 
 >[!WARNING]
 >
-> 仅在生产环境中使用生产SaaS数据空间 [!DNL Commerce] 安装以避免数据冲突。 否则，您可能会用测试数据污染生产站点数据，从而导致部署延迟。 例如，可能会错误地从暂存数据（如暂存URL）覆盖您的生产产品数据。
+> 仅在生产环境中使用生产SaaS数据空间 [!DNL Commerce] 安装以避免数据冲突。 否则，您可能会用测试数据污染生产站点数据，从而导致部署延迟。 例如，可能会从暂存数据（如暂存URL）错误地覆盖您的生产产品数据。
 
 ### 选择或创建SaaS项目 {#createsaasenv}
 
@@ -83,11 +83,11 @@ ht-degree: 0%
 
 要选择或创建SaaS项目，请请求 [!DNL Commerce] 来自的API密钥 [!DNL Commerce] 您商店的许可证持有者。
 
-1. 在 _管理员_ 侧栏，转到 **系统** >服务> **商务服务连接器**.
+1. 在 _管理员_ 侧栏，转到 **系统** >服务> **Commerce服务连接器**.
 
 1. 在 _沙盒API密钥_ 和 _生产API密钥_ 部分，粘贴您的键值。
 
-   私钥必须包括 `----BEGIN PRIVATE KEY---` 键的开头和 `----END PRIVATE KEY----` 在私钥的末尾。
+   私钥必须包括 `----BEGIN PRIVATE KEY---` 在键的开头和 `----END PRIVATE KEY----` 在私钥的末尾。
 
 1. 单击 **保存**.
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 1. 如果不存在任何SaaS项目，请单击 **创建项目**. 然后在 **项目** 字段中，输入SaaS项目的名称。
 
-   创建SaaS项目时， [!DNL Commerce] 生成一个或多个SaaS数据空间，具体取决于您的 [!DNL Commerce] 许可证：
+   创建SaaS项目时， [!DNL Commerce] 根据您的URL生成一个或多个SaaS数据空间 [!DNL Commerce] 许可证：
    - Adobe Commerce — 一个生产数据空间；两个测试数据空间
    - Magento Open Source — 一个生产数据空间；无测试数据空间
 
@@ -103,13 +103,13 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> 如果您在“我的帐户”的“API门户”部分生成新密钥，请立即更新管理员配置中的API密钥。 如果您在管理员中生成新密钥且未更新它们，则SaaS扩展不再有效，并且您会丢失有价值的数据。
+> 如果您在“我的帐户”的“API门户”部分生成新密钥，请立即更新管理员配置中的API密钥。 如果您在管理员中生成新密钥但未更新它们，则SaaS扩展不再有效，并且您会丢失宝贵的数据。
 
 要更改SaaS项目或数据空间名称，请单击 **重命名**.
 
 ## IMS组织（可选） {#organizationid}
 
-要将您的Adobe Commerce实例连接到Adobe Experience Platform，请使用Adobe ID登录到Adobe帐户。 登录后，与您的Adobe帐户关联的IMS组织将显示在此部分中。
+要将您的Adobe Commerce实例连接到Adobe Experience Platform，请使用Adobe ID登录到您的Adobe帐户。 登录后，与您的Adobe帐户关联的IMS组织将显示在此部分中。
 
 ## 目录同步
 

@@ -1,6 +1,6 @@
 ---
 title: 安装
-description: '"安装 [!DNL Store Fulfillment solution] 使用Composer for PHP的Adobe Commerce店面。”'
+description: “安装 [!DNL Store Fulfillment solution] 使用PHP编辑器的Adobe Commerce店面。”
 role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 # 安装
 
-完成初始安装 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 扩展运行队列管理器，并将缓存配置为允许异常处理。 确保您的开发环境包含开发工具，以确保运营和维护您的Adobe Commerce实例的最佳实践。
+完成初始安装 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 扩展处于非生产环境中，队列管理器正在运行，缓存配置为允许异常处理。 确保您的开发环境包含开发工具，以确保操作和维护您的Adobe Commerce实例的最佳实践。
 
 ## 先决条件
 
 查看 [要求](solution-requirements.md) ，并在安装 [!DNL Store Fulfillment] Adobe Commerce的扩展。
 
-如果您已安装预发行版或测试版的Store Fulfillment for Adobe Commerce扩展，请在安装当前版本之前使用以下命令将其删除。
+如果您已安装预发行版或测试版的Store Fulfillment for Adobe Commerce扩展，请使用以下命令将其删除，然后再安装当前版本。
 
 ```terminal
 rm -rf composer.lock vendor/walmart &&
@@ -30,13 +30,13 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 ## 安装要求
 
-- **访问Walmart Commerce Technologies软件归档的Store Fulfillment （.zip文件）** — 在新用户引导和启用过程中，请与您的客户经理合作，以访问Store Fulfillment扩展的安装文件。
+- **访问Walmart Commerce Technologies软件归档的“商店履行”（.zip文件）** — 在新用户引导和启用过程中，请与您的客户经理合作，以访问Store Fulfillment扩展的安装文件。
 
 - **Adobe Commerce帐户信息** — 安装 [!DNL Store Fulfillment] 解决方案需要 [[!DNL Commerce] 帐户](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"}. 您需要具有所有者或管理员访问权限的帐户ID和凭据， [!DNL Adobe Commerce] 项目。
 
-- 对象 [!DNL Adobe Commerce] 在云基础架构项目中，软件安装程序必须具有对云项目的管理员访问权限。 参见 [管理用户访问权限](https://devdocs.magento.com/cloud/project/user-admin.html).
+- 对象 [!DNL Adobe Commerce] 在云基础架构项目中，软件安装程序必须具有对云项目的管理员访问权限。 请参阅 [管理用户访问权限](https://devdocs.magento.com/cloud/project/user-admin.html).
 
-- **使用Composer和[!DNL Commerce CLI]** — 请参阅 [常规CLI安装](https://devdocs.magento.com/extensions/install/){target="_blank"} 有关使用这些工具在上安装和管理扩展的信息 [!DNL Adobe Commerce] 平台。
+- **使用编辑器和[!DNL Commerce CLI]** — 请参阅 [常规CLI安装](https://devdocs.magento.com/extensions/install/){target="_blank"} 有关使用这些工具在 [!DNL Adobe Commerce] 平台。
 
 - **在Adobe Commerce上安装第三方扩展的经验** — 有关参考，请参阅Adobe Commerce文档。
 
@@ -48,7 +48,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 按照您的客户代表提供的说明，下载包含用于安装Store Fulfillment Services扩展的Composer包的存档文件。
 
-### 步骤2：将扩展工件提取到应用程序
+### 第2步：将扩展工件提取到应用程序
 
 提取包含集成捆绑包的存档文件以安装Store Fulfillment Services扩展。
 
@@ -58,7 +58,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
    - 创建 `artifacts` 目录。
 
-1. 将存档文件解压缩到新目录。
+1. 将存档文件提取到新目录。
 
 1. 通过查看文件列表验证是否成功提取了文件。
 
@@ -81,7 +81,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
    composer config repositories.artifacts artifact artifacts/
    ```
 
-1. 将Store Fulfillment Services扩展添加到 `composer.json`.
+1. 将Store Fulfillment Service扩展添加到 `composer.json`.
 
    ```bash
    composer require walmart/magento-bopis-metapackage:1.0.0
@@ -89,15 +89,15 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 >[!NOTE]
 >
->为了获得更好的Adobe Commerce内部部署实例性能，您可以 [更新自动加载配置](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/deployment-flow.html#update-the-autoloader)： `composer dump-autoload --optimize`
+>为了获得更好的Adobe Commerce本地实例性能，您可以 [更新自动加载配置](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/deployment-flow.html#update-the-autoloader)： `composer dump-autoload --optimize`
 
 ### 步骤4：升级数据库架构和数据
 
-使用完成安装 `bin/magento setup:upgrade` 使用更改更新数据库架构和数据，以支持Store Fulfillment解决方案。
+使用 `bin/magento setup:upgrade` 使用更改更新数据库架构和数据，以支持“商店履行”解决方案。
 
 >[!NOTE]
 >
->对于云基础架构项目上的Adobe Commerce，您无需注册扩展。 相反，请提交上一步中的代码更改，并将它们推送到您的环境分支。 在云构建和部署过程中，更新数据库架构和数据的命令会自动运行。
+>对于云基础架构项目上的Adobe Commerce，您无需注册扩展。 相反，请提交上一步中的代码更改，并将它们推送到您的环境分支。 更新数据库架构和数据的命令在云构建和部署过程中自动运行。
 
 ### 步骤5：完成安装
 
@@ -127,11 +127,11 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 ### 步骤6：验证安装
 
-从Adobe Commerce服务器中，验证是否已安装和启用Store Fulfillment Services扩展的模块。
+在Adobe Commerce服务器上，验证是否已安装和启用Store Fulfillment Services扩展的模块。
 
 1. 登录到服务器。
 
-   有关在云基础架构上安装Adobe Commerce的信息， [使用SSH登录到远程环境](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
+   对于在云基础架构上安装Adobe Commerce， [使用SSH登录到远程环境](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
 
 1. 验证是否已启用“商店履行服务”模块。
 

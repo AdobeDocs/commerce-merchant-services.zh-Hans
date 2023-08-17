@@ -32,7 +32,7 @@ ht-degree: 0%
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html">商店履行</a></li>
           </ul>
         </td>
-      <td><strong>集成服务</strong>
+      <td><strong>Integration services</strong>
         <p>了解集成服务的最新改进，这些改进使我们的Commerce Services能够与其他服务和Adobe扩展及产品连接。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">Experience Platform连接器</a></li>

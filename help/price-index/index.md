@@ -13,23 +13,23 @@ ht-degree: 0%
 
 # SaaS价格索引
 
-SaaS价格索引加快了价格更改提交后反映在SaaS客户网站上的时间。 此可选模块允许拥有大型复杂目录或拥有多个网站或客户组的商家更快速、更持续地处理价格变化。
+SaaS价格索引缩短了价格变更提交后反映在SaaS客户网站上的时间。 此可选模块允许拥有大型复杂目录或具有多个网站或客户组的商家更快速、更持续地处理价格变化。
 
-该管道的最大瓶颈：索引和价格计算等计算密集型流程已从PHP核心转移到该Adobe的云基础架构。 这允许商家快速扩展资源以缩短价格指数化时间，并以更快的速度在网站上反映这些变化。
+该管道的最大瓶颈：索引和价格计算等计算密集型流程已从PHP核心转移到该Adobe的云基础架构。 这使商家能够快速扩展资源以缩短价格指数化时间，并以快得多的速度在网站上反映这些变化。
 
-核心索引数据将流向SaaS服务，如下所示：
+核心索引数据流向SaaS服务的形式如下所示：
 
 ![默认数据流](assets/old_way.png)
 
-通过SaaS价格指数，流程是：
+使用SaaS价格指数时，流程是：
 
-![SaaS价格指数数据流](assets/new_way.png)
+![SaaS价格索引数据流](assets/new_way.png)
 
-所有符合要求的商户都可以从这些改进中受益，但那些将看到最大收益的商户是具有以下特征的客户：
+所有符合要求的商家都可以从这些改进中受益，但那些收益最大的是具有以下特征的客户：
 
-* 价格不断变化：商家需要重复更改价格以实现战略目标，例如频繁促销、季节性折扣或库存减价。
+* 价格持续变化：商家需要重复更改价格以满足战略目标，如频繁促销、季节性折扣或库存减价。
 * 多个网站和/或客户组：在多个网站（域/品牌）和/或客户组之间共享产品目录的商家。
-* 跨网站或客户组的大量唯一价格：具有大量共享产品目录的商家，其中包含跨网站或客户组的唯一价格，例如具有预先协商价格的B2B商家，以及具有不同定价策略的品牌。
+* 跨网站或客户组的大量唯一价格：具有广泛共享产品目录的商家，其中包含跨网站或客户组的唯一价格，例如，具有预先协商价格的B2B商家，以及具有不同定价策略的品牌。
 
 如果您有依赖于PHP核心价格索引器的第三方应用程序，请在进行任何更改之前阅读文档并咨询扩展提供商。
 
@@ -72,38 +72,38 @@ adobe-commerce/catalog-adapter
 
 ## 注意事项
 
-根据产品类型、价格复杂性和目录大小等因素， SaaS价格索引可能是您商店的正确解决方案。 请阅读以下限制并确定这是否适用于您的网站。
+根据产品类型、价格复杂性和目录大小等因素， SaaS价格索引可能是您商店的正确解决方案。 请阅读以下限制并确定这是否是您网站的良好解决方案。
 
-目前， SaaS价格索引支持简单、分组、虚拟、可配置和 [捆绑包动态](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-bundle.html) 产品类型。
-即将支持可下载、礼品卡和捆绑包固定产品类型。
+目前， SaaS价格索引支持简单、分组、虚拟、可配置和 [捆绑动态](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-bundle.html) 产品类型。
+即将支持可下载、礼品卡和捆绑固定产品类型。
 
-新馈送应手动与 `resync` [CLI命令](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). 否则，数据将在标准同步进程中刷新。 获取有关 [目录同步](../landing/catalog-sync.md) 进程。
+新馈送应手动与同步 `resync` [CLI命令](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). 否则，数据将在标准同步过程中刷新。 获取有关 [目录同步](../landing/catalog-sync.md) 进程。
 
 ## 使用方案
 
-### 没有扩展依赖性的Luma
+### Luma没有扩展依赖关系
 
 * 已安装所需服务(Live Search、Product Recommendations、Catalog Service)的Luma或Adobe Commerce Core GraphQL商家
 * 没有依赖于PHP核心价格索引器的第三方扩展
 * 销售简单、可配置、分组、虚拟和捆绑的动态产品
 
-1. 启用新信息源。
+1. 启用新馈送。
 1. 安装目录适配器。
 
-### 具有PHP核心价格索引器依赖项的Luma和Adobe Commerce核心GraphQl
+### 带有PHP核心价格索引器依赖项的Luma和Adobe Commerce核心GraphQl
 
-* 已安装受支持服务(Live Search、Product Recommendations、目录服务)的Luma或Adobe Commerce Core GraphQL商家
+* 已安装支持服务(Live Search、Product Recommendations、Catalog Service)的Luma或Adobe Commerce Core GraphQL商家
 * 通过依赖于PHP核心价格索引器的第三方扩展
 * 销售简单、可配置、分组、虚拟和捆绑的动态产品
 
 1. 启用新信息源
 1. 安装目录适配器。
 1. 重新启用PHP核心价格索引器。
-1. 在中使用新信息源和Luma兼容性代码 `catalog-adapter` 模块。
+1. 在中使用新馈送和Luma兼容性代码 `catalog-adapter` 模块。
 
 ### Headless商家
 
-* 已安装受支持服务(Live Search、产品Recommendations、目录服务)的Headless商家
+* 已安装支持服务(Live Search、产品Recommendations、目录服务)的Headless商家
 * 不依赖PHP核心价格索引器
 * 销售简单、可配置、分组、虚拟和捆绑的动态产品
 

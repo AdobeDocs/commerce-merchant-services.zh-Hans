@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # 安装 [!DNL Quick Checkout]
 
-此 [!DNL Quick Checkout] Adobe Commerce的扩展和 [!DNL Magento Open Source] 可以安装 [!DNL Composer keys]，这些帐户链接到Commerce帐户 [`mageid`](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions){target="_blank"} 在注册过程中提供。 Composer在Adobe Commerce的初始安装期间或以下情况下使用这些密钥： [!DNL Composer keys] 之前未保存到 `auth.json` 文件。
+此 [!DNL Quick Checkout] Adobe Commerce的扩展和 [!DNL Magento Open Source] 可以安装 [!DNL Composer keys]，这些页面链接到商务帐户 [`mageid`](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions){target="_blank"} 在注册过程中提供。 Composer在Adobe Commerce的初始安装期间或 [!DNL Composer keys] 之前未保存到 `auth.json` 文件。
 
-参见 [获取您的身份验证密钥](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html){target="_blank"} 有关获取的详细信息，请参阅主题 [!DNL Composer keys].
+请参阅 [获取您的身份验证密钥](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html){target="_blank"} 有关获取的详细信息，请参阅主题 [!DNL Composer keys].
 
-有两种方法可安装此扩展 — for [云基础架构上的Adobe Commerce](#magento-commerce-cloud) 或 [内部部署](#on-premises) 安装。 这些方法要求您使用命令行界面(command-line interface， CLI)。
+有两种方法可安装此扩展 —  [云基础架构上的Adobe Commerce](#magento-commerce-cloud) 或 [内部部署](#on-premises) 安装。 这些方法要求您使用命令行界面(CLI)。
 
 ## 更新最低稳定性设置
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 此方法用于安装 [!DNL Quick Checkout] 内部部署实例的扩展。
 
-1. 将“快速签出”模块添加到 `require` 部分 `composer.json` 文件：
+1. 将“快速签出”模块添加到 `require` 的部分 `composer.json` 文件：
 
    ```bash
    composer require magento/quick-checkout --no-update
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 ## 升级扩展
 
-当我们发布新版本的 [!DNL Quick Checkout]，您可以轻松升级扩展。
+当我们发布新版本的 [!DNL Quick Checkout]中，您可以轻松升级扩展。
 
 1. 要获取包的最新版本，请执行以下操作：
 
@@ -97,9 +97,9 @@ ht-degree: 0%
 
 1. 提交并推送更改。
 
-## 疑难解答
+## 故障排除
 
-在尝试安装 [!DNL Quick Checkout] 扩展。
+尝试安装 [!DNL Quick Checkout] 扩展。
 
 如果您在 [!DNL Quick Checkout] 安装过程，请参见 [快速签出问题疑难解答](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) 在Adobe Commerce帮助中心。
 

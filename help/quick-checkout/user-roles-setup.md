@@ -1,5 +1,5 @@
 ---
-title: ‘[!DNL Quick Checkout] 用户设置
+title: ’[!DNL Quick Checkout] 用户设置
 description: 设置用户角色和权限以显示 [!DNL Quick Checkout] 管理面板。
 exl-id: 76393840-8312-41bb-8447-412849815169
 feature: Checkout, Services
@@ -12,17 +12,17 @@ ht-degree: 0%
 
 # [!DNL Quick Checkout] 用户设置
 
-[!DNL Quick Checkout] 提供“管理员”面板，其中包含开始载入的所有必要信息，使用该扩展，或包括访问文档等资源， [!DNL Bolt] 商家功能板或发行说明。
+[!DNL Quick Checkout] 向管理员面板提供开始载入的所有必要信息，使用该扩展，或包括访问文档等资源， [!DNL Bolt] 商家功能板或发行说明。
 
 要访问 [!DNL Quick Checkout] 管理面板：
 
 1. 在 _管理员_ 侧栏，导航到 **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**.
 
-   ![菜单快速签出](assets/overview-admin-panel.png)
+   ![菜单“快速签出”](assets/overview-admin-panel.png)
 
-请参阅 [入门](../quick-checkout/onboarding.md) 主题以了解有关如何配置 [!DNL Quick Checkout] 适用于Adobe Commerce的。
+请参阅 [入门](../quick-checkout/onboarding.md) 主题以了解有关如何配置 [!DNL Quick Checkout] 用于Adobe Commerce。
 
-允许用户访问和查看 [!DNL Quick Checkout] 在管理面板中，您需要检查用户是否拥有授予的正确角色资源：
+允许用户访问和查看 [!DNL Quick Checkout] 在管理面板中，您需要检查用户是否获得了适当的角色资源：
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL System]** >权限> **[!UICONTROL User Roles]**.
 

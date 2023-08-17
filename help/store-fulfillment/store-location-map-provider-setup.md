@@ -1,6 +1,6 @@
 ---
 title: 存储位置和映射系统配置
-description: 配置距离提供商以支持店面UI中的商店位置映射。 “商店履行”解决方案需要一个距离提供商，以便为端到端履行工作流启用零售商店搜索以及其他映射和计划功能。
+description: 配置距离提供商以支持店面UI中的商店位置映射。 “商店履行”解决方案要求距离提供商为端到端履行工作流启用零售商店搜索以及其他映射和计划功能。
 role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Integration, Tools and External Services, Configuration
@@ -18,11 +18,11 @@ ht-degree: 0%
 
 **要求**
 
-在配置过程中，您将为Google Maps平台提供一个Google API密钥。 如果你没有， [从Google Maps平台生成一个](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html#configure-google-maps).
+在配置过程中，您会为Google Maps平台提供一个Google API密钥。 如果你没有， [从Google Maps平台生成一个](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html#configure-google-maps).
 
 要配置距离提供器，请执行以下操作：
 
-1. 从 **[!UICONTROL Stores > General]** 配置中，为“映射”内容类型添加Google映射集成。
+1. 从 **[!UICONTROL Stores > General]** 在管理员中进行配置，为映射内容类型添加Google映射集成。
 
    - 转到 **[!UICONTROL Stores > Configuration  > General > Content Management]**.
 

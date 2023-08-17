@@ -1,6 +1,6 @@
 ---
 title: 多个网站和范围配置
-description: 为多个网站和商店范围配置库存和投放方法。
+description: 为多个网站配置库存和投放方法并存储范围。
 role: Admin
 level: Experienced
 feature: Shipping/Delivery, Inventory, Configuration
@@ -20,22 +20,22 @@ ht-degree: 0%
 
 - 管理 [!DNL Delivery Methods] 每个范围
 
-您可以将库存分配给网站或商店范围。 然后，更新商店源以设置可用的配送方式（主配送、商店提货）。
+您可以将库存分配给网站或商店范围。 然后，更新商店来源以设置可用的配送方式（家庭配送、商店提货）。
 
-成功更新配置后，只能为Adobe Commerce店面的产品详细信息页面(PDP)上的商店提货选项选择来自允许商店提货的库存源中的可用产品。
+成功更新配置后，只能为Adobe Commerce店面中产品详细信息页面(PDP)上来自允许店铺提货的库存来源可用的产品选择店铺提货选项。
 
-## 管理店内提货设置
+## 管理店内接送设置
 
-启用或禁用 [!UICONTROL In-Store Pickup] 中每个网站或商店范围的选项 [投放方法配置](enable-general.md#delivery-methods) 在Admin中。
+启用或禁用 [!UICONTROL In-Store Pickup] 每个网站或商店范围的选项 [投放方法配置](enable-general.md#delivery-methods) 在“管理员”中。
 
 1. 导航到 **[!UICONTROL Stores > Configuration]**.
 
-1. 选择要配置的范围（网站到商店）。
+1. 选择要配置的范围（商店网站）。
 
-1. 选择范围后，导航到 **[!UICONTROL Sales > Delivery Methods]**.
+1. 选择范围后，导航至 **[!UICONTROL Sales > Delivery Methods]**.
 
 1. 禁用或启用 **[!UICONTROL In-Store Pickup]** 投放方法。
 
-您还可以在此部分中管理是否全局提供路边或店内提货。
+在此部分中，您还可以管理是否全局提供路边或店内提货。
 
-管理 [!UICONTROL In-Store Pickup] 和 [!UICONTROL Delivery Method] 每个库存来源的设置。 您还可通过多种其他配置实现实施方面的完全灵活性。
+管理 [!UICONTROL In-Store Pickup] 和 [!UICONTROL Delivery Method] 每个库存源的设置。 您还可使用多种其他配置来灵活地实施这些配置。

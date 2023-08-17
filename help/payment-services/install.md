@@ -104,7 +104,7 @@ Composer在初始安装期间使用这些密钥 [!DNL Adobe Commerce]，或者�
 
 1. 提交并推送更改。
 
-## 疑难解答
+## 故障排除
 
 尝试安装 [!DNL Payment Services] 扩展。 使用以下故障排除方法解决错误。
 

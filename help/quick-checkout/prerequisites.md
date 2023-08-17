@@ -1,5 +1,5 @@
 ---
-title: ”[!DNL Quick Checkout] 先决条件”
+title: '"[!DNL Quick Checkout] 前提条件”'
 description: “确认您的系统满足使用 [!DNL Quick Checkout] (适用于Adobe Commerce扩展)。”
 exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
 feature: Checkout, Services
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # [!DNL Quick Checkout] 先决条件
 
-此 [!DNL Quick Checkout] 与两者都兼容 [!DNL Magento Open Source] 和Adobe Commerce。 参见 [生命周期策略](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html){target=_blank} 以了解有关支持的版本的详细信息。
+此 [!DNL Quick Checkout] 与两者都兼容 [!DNL Magento Open Source] 和Adobe Commerce。 请参阅 [生命周期政策](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html){target=_blank} 有关支持的版本的详细信息。
 
 请参阅 [入门](../quick-checkout/onboarding.md) 主题以了解更多信息。
 
@@ -29,6 +29,6 @@ ht-degree: 1%
 | [!DNL 3D Secure] | [!DNL 3D Secure] 不受支持 |
 | B2B | 不支持B2B |
 | ISPU | [!DNL In-Store Pickup] 不支持(ISPU)功能 |
-| 多发运输 | 不支持多发功能 |
+| 多运输 | 不支持多发货 |
 
 请参阅 [[!DNL Bolt] 限制](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/#limitations) 主题，以了解有关兼容性限制的详细信息 [!DNL Bolt] 和 [!DNL Quick Checkout] 扩展。

@@ -1,7 +1,7 @@
 ---
 user-guide-title: "[!DNL Store FulFillment Guide]"
 user-guide-description: 有关为Adobe Commerce存储安装、配置和使用Store Fulfillment的详细信息。
-breadcrumb-title: 适用于Adobe Commerce的Store Fulfillment
+breadcrumb-title: Adobe Commerce 的商店履行情况
 index: true
 feature: Shipping/Delivery
 role: Admin, User
@@ -9,12 +9,12 @@ recommendations: noDisplay
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
 
-# Commerce商店履行 {#store-fulfillment}
+#  Commerce 的商店履行情况 {#store-fulfillment}
 
 - [指南概述](guide-overview.md)
 - [简介 [!DNL Store Fulfillment]](introduction.md)
@@ -22,7 +22,7 @@ ht-degree: 0%
 - [要求](solution-requirements.md)
 - [发行说明](release-notes.md)
 - Onboard Store Fulfillment {#onboarding}
-   - [入门培训概述](onboard.md)
+   - [载入概述](onboard.md)
    - [安装扩展](install.md)
    - [Connect Store履行](connect-set-up-service.md)
    - [测试和部署](test-and-deploy.md)

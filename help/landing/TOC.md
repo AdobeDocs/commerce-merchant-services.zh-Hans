@@ -1,14 +1,14 @@
 ---
-user-guide-title: Adobe Commerce服务
-user-guide-description: 为Adobe Commerce和Magento Open Source提供扩展功能的托管服务的文档和资源。
-title: Adobe Commerce服务
+user-guide-title: Adobe Commerce 的服务
+user-guide-description: 为 Adobe Commerce 和 Magento Open Source 提供扩展功能的托管服务的文档和资源。
+title: Adobe Commerce 的服务
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
 source-git-commit: 1858e450d635105d4655ec24a01d2e23ae2e1244
 workflow-type: tm+mt
 source-wordcount: '106'
-ht-degree: 0%
+ht-degree: 24%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 0%
    - [[!DNL Store Fulfillment]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html)
    - [[!DNL Amazon Sales Channel]](https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html)
    - [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html)
-- 集成服务 {#integration-services}
+- Integration services {#integration-services}
    - [Experience Platform连接器](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
    - [服务连接器](/help/landing/saas.md)
 - 数据服务 {#data-services}

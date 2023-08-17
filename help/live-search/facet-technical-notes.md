@@ -11,14 +11,14 @@ ht-degree: 0%
 
 # Facet技术说明
 
-分面是一种高性能筛选方法，使用多个可搜索的静态和动态属性值维度作为搜索标准。
+Faceting是一种高性能过滤方法，它使用多个可搜索的静态和动态属性值维度作为搜索条件。
 
-[!DNL Live Search] 使用 `productSearch` 返回面向和特定于的其他数据的查询 [!DNL Live Search]. 请参阅 [`productSearch` 查询](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) 以了解代码示例。
+[!DNL Live Search] 使用 `productSearch` 返回分面和其它特定数据的查询 [!DNL Live Search]. 请参阅 [`productSearch` 查询](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) 以了解代码示例。
 
 ## Facet聚合
 
-分面聚合按如下方式执行：如果店面具有三个分面（类别、颜色和价格），并且购物者对所有三个分面都进行过滤(颜色=蓝色，价格为$10.00-50.00，类别= `promotions`)。
+分面聚合按以下方式执行：如果店面具有三个分面（类别、颜色和价格），并且购物者对所有这三个方面都进行过滤(颜色=蓝色，价格为$10.00-50.00，类别= `promotions`)。
 
-* `categories` 聚合 — 聚合 `categories`，然后应用 `color` 和 `price` 过滤器，但不匹配 `categories` 筛选条件。
-* `color` 聚合 — 聚合 `color`，然后应用`price` 和 `categories` 过滤器，但不匹配 `color` 筛选条件。
-* `price` 聚合 — 聚合 `price`，然后应用 `color` 和 `categories` 过滤器，但不匹配 `price` 筛选条件。
+* `categories` 聚合 — 聚合 `categories`，然后应用 `color` 和 `price` 过滤器，但不匹配 `categories` 筛选。
+* `color` 聚合 — 聚合 `color`，然后应用`price` 和 `categories` 过滤器，但不匹配 `color` 筛选。
+* `price` 聚合 — 聚合 `price`，然后应用 `color` 和 `categories` 过滤器，但不匹配 `price` 筛选。

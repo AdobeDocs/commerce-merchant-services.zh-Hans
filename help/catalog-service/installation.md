@@ -43,7 +43,7 @@ ht-degree: 0%
 - 沙盒(https://catalog-service-sandbox.adobe.io/graphql) — 用于在上线之前进行测试和验证
 - 生产(https://catalog-service.adobe.io/graphql)-用于Commerce商家和网站的实时流量
 
-加载测试只应在沙盒环境中执行。 建议 [支持服务单](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 在负载测试时打开，以便服务团队可以预见额外的服务器流量。
+加载测试只应在沙盒环境中执行。 建议 [支持服务单](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 在加载测试时打开，以便服务团队可以预见额外的服务器流量。
 
 ## 安装和配置
 

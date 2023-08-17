@@ -1,17 +1,17 @@
 ---
-user-guide-title: ”[!DNL Product Recommendations] 指南”
+user-guide-title: “[!DNL Product Recommendations] 指南”
 user-guide-description: 本指南提供了有关使用的详细说明 [!DNL Product Recommendations] 来自Adobe Commerce的。
-breadcrumb-title: ”[!DNL Product Recommendations] 指南”
+breadcrumb-title: “[!DNL Product Recommendations] 指南”
 role: Admin
 feature: Services, Recommendations
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '54'
-ht-degree: 0%
+ht-degree: 12%
 
 ---
 
-# [!DNL Product Recommendations] for Commerce {#product-recommendations}
+# [!DNL Product Recommendations] （用于商务） {#product-recommendations}
 
 - [指南概述](guide-overview.md)
 - [简介 [!DNL Product Recommendations]](overview.md)
@@ -31,7 +31,7 @@ ht-degree: 0%
    - [创建](create.md)
    - [编辑](edit.md)
    - [推荐类型](type.md)
-   - [筛选器](filters.md)
+   - [过滤器](filters.md)
    - [投放位置和标签](placement.md)
 - [!DNL Product Recommendations] 开发人员 {#developer}
    - [概述](development-overview.md)

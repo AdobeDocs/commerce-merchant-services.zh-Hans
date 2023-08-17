@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # 目录同步
 
-Adobe Commerce和Magento Open Source使用索引器将目录数据编译到表中。 该过程由自动触发 [事件](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) 例如产品价格或库存水平改变。
+Adobe Commerce和Magento Open Source使用索引器将目录数据编译到表中。 该进程由自动触发 [事件](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) 例如产品价格或库存水平改变。
 
-目录同步过程每小时运行一次，以允许 [!DNL Commerce] 服务使用目录数据。 目录同步从导出产品数据 [!DNL Commerce] 服务器至 [!DNL Commerce] 持续提供服务，使服务保持最新。 例如， [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) 需要最新的目录信息才能准确地返回具有正确名称、定价和可用性的推荐。 您可以使用 _目录同步_ 仪表板来观察和管理同步过程，或 [命令行界面](#resynccmdline) 触发目录同步和重新索引产品数据以供使用 [!DNL Commerce] 服务。
+目录同步过程每小时运行以允许 [!DNL Commerce] 服务使用目录数据。 目录同步从导出产品数据 [!DNL Commerce] 服务器至 [!DNL Commerce] 持续提供服务，使服务保持最新。 例如， [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) 需要当前的目录信息才能准确地返回具有正确名称、定价和可用性的推荐。 您可以使用 _目录同步_ 仪表板来观察和管理同步过程或 [命令行界面](#resynccmdline) 触发目录同步和重新索引产品数据以供使用： [!DNL Commerce] 服务。
 
 >[!NOTE]
 >
-> 要使用 _目录同步_ 仪表板或命令行界面，必须具有 [已配置API密钥和SaaS数据空间](saas.md).
+> 要使用 _目录同步_ 在仪表板或命令行界面中，必须具有 [已配置API密钥和SaaS数据空间](saas.md).
 
 ## 访问目录同步仪表板
 
@@ -41,7 +41,7 @@ Adobe Commerce和Magento Open Source使用索引器将目录数据编译到表�
 
 报告同步状态：
 
-- **成功**  — 显示同步成功的日期和时间以及更新的产品数量
+- **成功**  — 显示同步成功的日期和时间以及更新的产品数
 - **失败**  — 显示尝试同步的日期和时间
 - **进行中**  — 显示上次成功同步的日期和时间
 
@@ -51,11 +51,11 @@ Adobe Commerce和Magento Open Source使用索引器将目录数据编译到表�
 
 ### 产品已同步
 
-显示从以下位置同步的产品总数： [!DNL Commerce] 目录。 在初始同步之后，您应该只同步已更改的产品。
+显示从您的 [!DNL Commerce] 目录。 在初始同步之后，您应该只会同步已更改的产品。
 
 ## 重新同步 {#resync}
 
-如果在每小时计划同步发生之前必须启动目录的重新同步，则可以强制进行重新同步。
+如果在进行每小时计划同步之前必须启动目录的重新同步，则可以强制进行重新同步。
 
 >[!NOTE]
 >
@@ -72,7 +72,7 @@ Adobe Commerce和Magento Open Source使用索引器将目录数据编译到表�
 
 ## 已同步的目录产品
 
-此 **已同步的目录产品** 表格显示以下信息。
+此 **已同步的目录产品** 表格显示了以下信息。
 
 | 字段 | 描述 |
 |---|---|
@@ -110,7 +110,7 @@ Adobe Commerce和Magento Open Source使用索引器将目录数据编译到表�
 
 >[!NOTE]
 >
-> 首次运行数据同步时，请务必运行 `productattributes` 信息源优先，随后提供 `productoverrides`，然后再运行 `products` 信息源。
+> 首次运行数据同步时，请务必运行 `productattributes` 首先馈送，然后馈送 `productoverrides`，然后运行 `products` 信息源。
 
 命令选项：
 
@@ -131,9 +131,9 @@ bin/magento saas:resync --feed <feed name> [no-reindex]
 - `categories` — 目录中的类别
 - `variants` — 可配置产品的产品变体，如颜色和大小
 - `productattributes` — 产品属性，例如 `activity`， `gender`， `tops`， `bottoms`，等等
-- `productoverrides` — 特定于客户的定价和目录可见性规则，例如基于类别权限的规则
+- `productoverrides` — 特定于客户的定价和目录可见性规则，如基于类别权限的那些规则
 
-从命令行触发数据重新同步时，数据更新可能最多需要1小时。
+如果从命令行触发数据重新同步，则更新数据可能最多需要1小时。
 
 如果您使用 [SaaS价格索引](../price-index/index.md) 并需要重新同步，请运行以下命令：
 
@@ -151,7 +151,7 @@ bin/magento saas:resync --feed=prices
 bin/magento saas:resync --feed products
 ```
 
-如果不希望运行产品的完整重新索引，则可以同步已生成的产品数据：
+如果您不想对产品运行完整的重新索引，则可以同步已生成的产品数据：
 
 ```bash
 bin/magento saas:resync --feed products --no-reindex

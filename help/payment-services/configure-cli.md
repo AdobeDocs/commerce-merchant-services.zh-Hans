@@ -14,21 +14,21 @@ ht-degree: 0%
 
 # 命令行配置
 
-安装之后 [!DNL Payment Services]，您可以轻松地从中配置它 [在主页内](payments-home.md) 或通过命令行界面(CLI)。
+安装之后 [!DNL Payment Services]，您可以从中轻松配置它 [在家中](payments-home.md) 或通过命令行界面(CLI)。
 
 ## 配置数据导出
 
-[!DNL Payment Services] 合并从导出的订单数据 [!DNL Magento Open Source] 和 [!DNL Adobe Commerce] 使用来自支付提供商的汇总支付数据创建有用的报表。 此 [!DNL Payment Services] 扩展使用索引器高效地收集报告的所有必要数据。
+[!DNL Payment Services] 组合从导出的订单数据 [!DNL Magento Open Source] 和 [!DNL Adobe Commerce] 使用来自付款提供商的汇总付款数据创建有用的报表。 此 [!DNL Payment Services] 扩展使用索引器高效地收集报告的所有必要数据。
 
 要了解中使用的数据 [!DNL Payment Services] 报表，请参阅 [订单付款状态报表](order-payment-status.md#data-used-in-the-report).
 
-### 配置cron on [!DNL Magento Open Source]
+### 配置cron [!DNL Magento Open Source]
 
-如果要使用 `BY SCHEDULE` 索引模式开启 [!DNL Magento Open Source]，您必须配置cron。 参见 [配置和运行cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
+如果您要使用 `BY SCHEDULE` 索引模式开启 [!DNL Magento Open Source]，您必须配置cron。 请参阅 [配置和运行cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
 
 ### 设置索引器
 
-使用两种索引模式之一 — `ON SAVE` （默认）或 `BY SCHEDULE` （推荐）。
+使用以下两种索引模式之一，在支付服务中导出并保留订单数据：`ON SAVE` （默认）或 `BY SCHEDULE` （推荐）。
 
 以下索引用于 [!DNL Payment Services]：
 
@@ -46,19 +46,19 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 
 >[!TIP]
 >
->如果在命令中未指定任何索引符，则所有索引符都会更新为相同的值。 如果要更改特定索引器，必须在命令中列出该索引器。
+>如果未在命令中指定任何索引器，则所有索引器都会更新为相同的值。 如果要更改特定索引器，必须在命令中列出该索引器。
 
 要了解有关手动更改索引器模式的更多信息，请参阅 [配置索引器](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} in the developer documentation. To learn how to change it in the Admin, see [Index management](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} （在核心用户指南中）。
 
 ### 手动重新索引数据
 
-您可以手动重新索引数据，而不是等待数据自动生成。 参见 [重新索引](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Manage the Indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} 了解更多信息。
+您可以手动重新索引数据，而不是等待数据自动生成。 请参阅 [重新索引](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Manage the Indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} 以了解更多信息。
 
-时间 `BY SCHEDULE` 模式被设置，系统跟踪被改变的实体，并且cron作业根据设置的计划更新它们的索引。 参见 [从命令行运行cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) 在 [配置和运行cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html))，了解如何使用cron作业手动触发索引化。
+时间 `BY SCHEDULE` 模式被设置，系统跟踪被改变的实体，并且cron作业根据设置的计划更新它们的索引。 请参阅 [从命令行运行cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) 在 [配置和运行cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html))，了解如何使用cron作业手动触发索引。
 
-### 将重新索引的数据发送到支付服务
+### 将重新索引的数据发送到付款服务
 
-为数据编制索引后，数据将自动发送到 [!DNL Payment Services]. 您还可以使用此命令手动触发发送索引数据的过程：
+为数据编制索引后，该数据将自动发送到 [!DNL Payment Services]. 您还可以使用此命令手动触发发送索引数据的过程：
 
 ```bash
 bin/magento saas:resync --feed [feedName]
@@ -69,7 +69,7 @@ bin/magento saas:resync --feed [feedName]
 | 命令 | 描述 |
 |  ---  |  ---  |
 | `bin/magento saas:resync --feed [feedName]` | 执行指定馈送的重新索引并将其发送到相应的服务 |
-| `bin/magento saas:resync --no-reindex` | 跳过索引并从索引发送未同步的数据 |
+| `bin/magento saas:resync --no-reindex` | 跳过索引并发送来自索引的未同步数据 |
 
 此 `--feed` 参数允许您指定要发送的信息源：
 
@@ -78,11 +78,11 @@ bin/magento saas:resync --feed [feedName]
 | `paymentServicesOrdersProduction` | 生产模式下的订单馈送 |
 | `paymentServicesOrdersSandbox` | 沙盒模式下的订单馈送 |
 | `paymentServicesOrderStatusesProduction` | 生产模式下的订单状态 |
-| `paymentServicesOrderStatusesSandbox` | 沙盒模式下的订单状态 |
+| `paymentServicesOrderStatusesSandbox` | 沙盒模式中的订单状态 |
 | `paymentServicesStoresProduction` | 在生产模式下存储 |
-| `paymentServicesStoresSandbox` | 在沙盒模式下存储 |
+| `paymentServicesStoresSandbox` | 以沙盒模式存储 |
 
-报告所需的所有数据都会发送至 [!DNL Payment Services] 如果配置和安装了cron，则会自动进行更改。 您还可以手动触发将cron数据发送到的过程 [!DNL Payment Services].
+报告所需的所有数据都会发送至 [!DNL Payment Services] 如果配置和安装了cron，则会自动进行配置。 您还可以手动触发将cron数据发送到的过程 [!DNL Payment Services].
 
 ```bash
 bin/magento cron:run --group payment_services_data_export

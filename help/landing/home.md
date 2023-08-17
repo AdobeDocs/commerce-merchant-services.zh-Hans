@@ -19,7 +19,7 @@ Adobe提供了Commerce、集成和数据服务的集合，以帮助商家支持�
 
 >[!BEGINSHADEBOX &quot;发行信息&quot;]
 
-参见 [我们文档的新增功能](whats-new.md) 或 [发行说明](release-notes-all.md) 每个Commerce服务。
+请参阅 [我们文档的新增功能](whats-new.md) 或 [发行说明](release-notes-all.md) 每个Commerce服务。
 
 >[!ENDSHADEBOX]
 
@@ -45,14 +45,14 @@ Adobe提供了Commerce、集成和数据服务的集合，以帮助商家支持�
     <td valign="top" width="200px">
        <img alt="目录服务" src="assets/catalog-service.png" width="170px"></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html"> <strong>目录服务</strong></a> <br>
-    <div>为您的客户提供优化的产品体验，同时提高性能、增强可扩展性和提高转化率。</div>
+    <div>为客户提供优化的产品体验，同时提高性能、改进可扩展性和提高转化率。</div>
   </td>
    </tr>
 <tr>
   <td valign="top" width="200px">
     <img alt="支付服务" src="assets/payment-services.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html"><strong>支付服务</strong></a>  <br><em>(可供Magento Open Source)</em>
-    <div>通过轻松提供各种支付方式（包括免息分期付款）和单一付款处理、订单和发票视图，提高客户满意度。</div>
+    <div>通过轻松提供各种支付方式（包括免息支付分期付款）和单一付款处理、订单和发票视图，提高客户满意度。</div>
   </td>
     </tr>
 <tr>
@@ -66,21 +66,21 @@ Adobe提供了Commerce、集成和数据服务的集合，以帮助商家支持�
     <td valign="top" width="200px">
        <img alt="商店履行" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>商店履行</strong></a></br>
-    <div>提供通过移动设备实现的全面履行工作流程，提供卓越的在线购买体验、店内提货(BOPIS)客户体验和最大化的员工工作效率。</div>
+    <div>提供通过移动设备实现的全面履行工作流程，从而提供卓越的在线购买体验、店内取货(BOPIS)客户体验并最大限度地提高员工的工作效率。</div>
   </td>
    </tr>
 <tr>
     <td valign="top" width="200px">
        <img alt="AmazonSales Channel" src="assets/amazon-channel.png" width="170px"></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html"> <strong>Amazon sales channel</strong></a> <br><em>(可供Magento Open Source)</em>
-    <div>与世界上最大的全球在线购物目的地集成，以实现Amazon销售、提供数据自动化和同步、管理Amazon列表等，这一切都通过一个仪表板来实现。</div>
+    <div>与世界上最大的全球在线购物目的地集成，以实现Amazon销售、提供数据自动化和同步、管理Amazon列表以及通过单个仪表板实现更多功能。</div>
   </td>
    </tr>
 <tr>
     <td valign="top">
        <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"> <strong>渠道管理器</strong></a> <br><em>(可供Magento Open Source)</em>
-    <div>通过与沃尔玛市场集成，提高销售额、吸引新客户、简化运营并节省时间。 使员工能够无缝地管理沃尔玛商城的销售、库存和定价 — 所有这些都在商务部门。</div>
+    <div>通过与沃尔玛市场集成，提高销售额、接触新客户、简化运营并节省时间。 使员工能够无缝地管理Walmart Marketplace的销售、库存和定价 — 所有这些都在Commerce中实现。</div>
   </td>
    </tr>
 </table>
@@ -105,14 +105,14 @@ Adobe提供了Commerce、集成和数据服务的集合，以帮助商家支持�
    </tr>
 </table>
 
-## 集成服务
+## Integration services
 
 <table>
 <tr>
    <td valign="top" width="200">
       <img alt="[!DNL Catalog Sync]" src="assets/live-search.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html"><strong>[!DNL Catalog Sync]</strong></a>  
-    <div>目录同步会将产品数据从Commerce服务器导出到Commerce Services on ，以使服务保持最新。 由产品价格或库存水平更改等事件触发的索引器编译目录数据。 您可以通过*Catalog Sync*仪表板或命令行界面观察和管理此过程。</div>
+    <div>目录同步会将产品数据从Commerce服务器导出到Commerce服务，以保持服务处于最新状态。 由产品价格或库存水平更改等事件触发的索引器编译目录数据。 您可以通过*Catalog Sync*仪表板或命令行界面来观察和管理此过程。</div>
   </td>
 </tr>
 </table>

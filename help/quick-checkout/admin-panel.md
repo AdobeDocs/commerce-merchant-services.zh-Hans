@@ -1,12 +1,12 @@
 ---
-title: ‘[!DNL Quick Checkout] (适用于Adobe Commerce管理面板)
+title: ’[!DNL Quick Checkout] (适用于Adobe Commerce管理面板)
 description: 了解如何 [!DNL Quick Checkout] 管理面板可帮助如何成功载入、设置和可视化扩展。
 exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
 feature: Checkout, Services
 source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 0%
 [!DNL Quick Checkout] for Adobe Commerce and Magento Open Source提供了一个管理员面板视图，其中包含设置和使用扩展所需的所有信息。
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**：
-1. 在此视图中，您可以访问 _“管理”面板_ 概述， _资源_ 关于 [!DNL Quick Checkout]，获取 _帮助与支持_，或通过配置扩展 _设置_.
+1. 在此视图中，您可以访问 _管理面板_ 概述， _资源_ 关于 [!DNL Quick Checkout]，获取 _帮助与支持_，或通过配置扩展 _设置_.
 
-   ![菜单快速签出](assets/admin-panel-view.png)
+   ![菜单“快速签出”](assets/admin-panel-view.png)
 
-检查是否授予了用户适当的角色和权限，以便 [!DNL Quick Checkout] 要显示的管理面板。 请参阅 [用户角色和权限](../quick-checkout/user-roles-setup.md) 主题以了解更多信息。
+检查用户是否具有适当的角色和权限，以便能够 [!DNL Quick Checkout] 要显示的管理面板。 请参阅 [用户角色和权限](../quick-checkout/user-roles-setup.md) 主题以了解更多信息。
 
-请参阅 [入门](../quick-checkout/onboarding.md) 主题以了解有关如何配置 [!DNL Quick Checkout] 适用于Adobe Commerce的。
+请参阅 [入门](../quick-checkout/onboarding.md) 主题以了解有关如何配置 [!DNL Quick Checkout] 用于Adobe Commerce。
 
 ## 主页
 
@@ -41,10 +41,10 @@ ht-degree: 0%
 
 | 字段 | 描述 |
 |---|---|
-| [!UICONTROL Open documentation] | 请参阅以下内容的最新文档 [!DNL Quick Checkout]. |
-| [!UICONTROL [!DNL Bolt] merchant dashboard] | 访问您的 [!DNL Bolt] 商户帐户和仪表板。 |
+| [!UICONTROL Open documentation] | 请参阅最新的文档 [!DNL Quick Checkout]. |
+| [!UICONTROL [!DNL Bolt] merchant dashboard] | 访问 [!DNL Bolt] 商户帐户和仪表板。 |
 | [!UICONTROL Release notes] | 了解的最新更改 [!DNL Quick Checkout]. |
 
 ## 设置
 
-在管理面板视图中，单击 **[!UICONTROL Settings]** 以访问 [!DNL Quick Checkout] 配置。 参见 [管理员配置](onboarding.md#complete-admin-configuration) 了解更多信息。
+在管理面板视图中，单击 **[!UICONTROL Settings]** 以访问 [!DNL Quick Checkout] 配置。 请参阅 [管理员配置](onboarding.md#complete-admin-configuration) 以了解更多信息。
