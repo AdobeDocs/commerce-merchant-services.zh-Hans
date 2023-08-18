@@ -5,9 +5,9 @@ role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Communications, Configuration
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1233'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 </thead>
 <tbody><tr>
 <td><strong>异步发送</strong></td>
-<td>禁用此功能。 不支持异步发送电子邮件。 为了达到商店代答的最快通信和响应时间，请立即发送电子邮件，而不是成批发送。 </td>
+<td>确定是否异步发送销售电子邮件。 选项： <br/>**“禁用”**（默认）事件触发时会发送销售电子邮件。 要获得最快速的商店代答通信和响应时间，请使用默认设置。 <br/>**'启用'** — 启用此选项可将处理结账和订单处理电子邮件通知的流程移至后台，以预先确定的固定间隔发送。</td>
 <td>商店视图</td>
 <td>否</td>
 </tr>

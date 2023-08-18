@@ -5,10 +5,10 @@ role: Leader, Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 2%
+source-wordcount: '315'
+ht-degree: 0%
 
 ---
 
@@ -23,19 +23,14 @@ ht-degree: 2%
 - 云基础架构上的Adobe Commerce (ECE)
 - Adobe Commerce内部部署(EE)
 
-Store Fulfillment解决方案与 *软件兼容性* 表格。
+在安装或升级之前，请查看发行说明和Adobe Commerce系统要求，以获取有关版本兼容性、更新或可能影响安装或升级要求的更改的最新信息。
 
-**软件兼容性**
+- [存储履行发行说明](release-notes.md)
 
-| **软件** | **最低版本** | **最大版本** |
-|----------------|---------------------|---------------------|
-| Adobe Commerce | 2.4.0 | 2.4.5 |
-| Composer | 1.x | 2.x |
-| MariaDB | 10.2 | 10.4 |
-| MySQL | 5.7 | 8.0 |
-| PHP | 7.4 | 8.1 |
+- [Adobe Commerce发行说明](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) 在 *Adobe Commerce发行信息*.
 
-有关详细要求，请查看Adobe Commerce [系统要求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) 在 *Adobe Commerce安装指南*.
+- [Adobe Commerce系统要求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) 在 *Adobe Commerce安装指南*.
+
 
 ## 商店协助应用程序要求
 

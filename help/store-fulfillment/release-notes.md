@@ -4,10 +4,10 @@ description: “查看发行说明，了解所有 [!DNL Store Fulfillment by Wal
 role: Admin, User, Leader
 feature: Shipping/Delivery, Release Notes
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 4%
+source-wordcount: '479'
+ht-degree: 2%
 
 ---
 
@@ -19,13 +19,53 @@ ht-degree: 4%
 ![修复的问题](../assets/fix.svg) 修复和改进功能
 ![已知问题](../assets/bug.svg) 已知问题
 
+## v1.5.0
+
+*2023年8月3日*
+
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}[Adobe Commerce 2.4.4到2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)，包括2.4.6-p1、2.4.5-p3和2.4.4-p4安全修补程序版本。
+
+此版本包含以下更新：
+
+![新建](../assets/fix.svg) 更新了扩展以支持 [Adobe Commerce安全修补程序版本](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/overview.html) 2.4.6-p1、2.4.5-p3和2.4.4-p4。
+
+![新建](../assets/new.svg)<!-- WMTP-918 --> 添加了对 [异步发送](sales-emails.md) 销售电子邮件的配置选项。 升级到版本1.5.0的商家可以选择立即发送电子邮件（默认）或异步发送。
+
+![新建](../assets/new.svg)<!-- WMTP-916--> 已更新 [源配置](merchant-store-configuration.md) 支持国际电话号码格式。
+
+![新建](../assets/new.svg) 添加了逻辑，以防止退款金额超过剩余金额或开票金额。
+
+![新建](../assets/new.svg)<!-- WMTP-882 --> 已替换 `google.map.LatLng` 对象的JSON文本，用于支持与旧版本的 [!DNL Google Maps].
+
+![修复的问题](../assets/fix.svg)<!-- WMTP- --> 更新了用于创建 `[!DNL Available for Store Pickup]` 和 `[!DNL Available for Home Delivery]` 产品属性，以防止属性类别冲突。
+
+![修复的问题](../assets/fix.svg)<!-- WMTP-915 --> 修复了在加载和保存某些实体时导致无休止循环的兼容性问题。
+
+![修复的问题](../assets/fix.svg)<!-- WMTP-921 --> 修复了导致无法正常工作的问题 [!DNL Ship to Store] 将项目从产品详细信息页面(PDP)添加到购物车时触发的报价验证。
+
+![修复的问题](../assets/fix.svg)<!-- WMTP- 932 --> 修复了一个结账问题，该问题允许客户为不符合主页交付条件的项目选择主页交付方法。
+
+![修复的问题](../assets/fix.svg) 安装更新：
+
+- <!-- WMTP-880--> 修复了在安装时导致返回错误网站代码的问题 [!DNL Store Fulfillment] 扩展。
+
+- <!-- WMTP-878--> 修复了SKU整数的一个问题，该问题要求在安装期间将数据类型转换为字符串类型。
+
+![修复的问题](../assets/fix.svg)<!-- WMTP-915--> 修复了因缺少签入错误代码导致的故障。
+
+![修复的问题](../assets/fix.svg)<!-- WMTP-932 --> 修复了与分配操作期间部分拒绝相关的错误。
+
+![新建](../assets/new.svg)<!-- WMTP-953 --> 更新了Cancel API端点，以将status参数用作可选对象。
+
+![新建](../assets/new.svg)<!-- WMTP-960 --> 改进了Dispense API端点的日志记录详细信息。
+
 ## v1.4.0
 
 *2023年4月13日*
 
 [!BADGE 兼容性]{type=Informative tooltip="兼容性"}
 
-![新建](../assets/fix.svg) [!DNL Store Fulfillment] 为现在 [兼容 [!DNL Adobe Commerce] 2.4.0至2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+![新建](../assets/fix.svg) [!DNL Store Fulfillment] 为现在 [兼容 [!DNL Adobe Commerce] 2.4.4至2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 
 ## v1.3.0
@@ -46,7 +86,7 @@ ht-degree: 4%
 
 此版本包含以下更新：
 
-![新建](../assets/fix.svg) [!DNL Store Fulfillment] 为现在 [兼容 [!DNL Adobe Commerce] 2.4.0至2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+![新建](../assets/fix.svg) [!DNL Store Fulfillment] 为现在 [兼容 [!DNL Adobe Commerce] 2.4.4至2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 
 ## v1.1.0

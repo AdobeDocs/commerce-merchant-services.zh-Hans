@@ -5,9 +5,9 @@ role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,13 @@ ht-degree: 0%
 
 完成初始安装 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 扩展处于非生产环境中，队列管理器正在运行，缓存配置为允许异常处理。 确保您的开发环境包含开发工具，以确保操作和维护您的Adobe Commerce实例的最佳实践。
 
+>[!TIP]
+>
+>通过以下方式升级本地Adobe Commerce的Store Fulfillment扩展 [升级说明](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html) 在 _Adobe Commerce升级指南_. 有关云基础架构上的Adobe Commerce，请参阅 [升级扩展](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html#upgrade-an-extension) 在 *云基础架构上的Commerce指南*.
+
 ## 先决条件
 
-查看 [要求](solution-requirements.md) ，并在安装 [!DNL Store Fulfillment] Adobe Commerce的扩展。
+查看 [要求](solution-requirements.md) ，并在安装或升级 [!DNL Store Fulfillment] Adobe Commerce的扩展。
 
 如果您已安装预发行版或测试版的Store Fulfillment for Adobe Commerce扩展，请使用以下命令将其删除，然后再安装当前版本。
 
@@ -196,4 +200,5 @@ php bin/magento setup:static-content:deploy -f
 >[!NOTE]
 >
 >欲了解更多信息，请参见 [Adobe Commerce中的静态内容部署最佳实践](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) Adobe Commerce帮助中心中的文章。
+
 
