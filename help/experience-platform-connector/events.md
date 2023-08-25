@@ -4,9 +4,9 @@ description: 了解每个事件捕获的数据。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 0be39c5d46289a12bc2cfa704e942dc594fbded2
 workflow-type: tm+mt
-source-wordcount: '4779'
+source-wordcount: '6126'
 ht-degree: 0%
 
 ---
@@ -44,10 +44,17 @@ ht-degree: 0%
 | `priceTotal` | 产品系列项目的总价 |
 | `quantity` | 添加到购物车的产品件数 |
 | `discountAmount` | 指示应用的折扣金额 |
-| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 产品的货币 |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR` |
 | `productImageUrl` | 产品的主图像URL |
-| `selectedOptions` | 用于可配置产品的字段。 `attribute` 标识可配置产品的属性，如 `size` 或 `color` 和 `value` 标识属性的值，例如 `small` 或 `black`. |
+| `selectedOptions` | 用于可配置产品的字段。 |
+| `attribute` | 标识可配置产品的属性，如 `size` 或 `color` |
+| `value` | 标识属性的值，例如 `small` 或 `black`. |
 | `cartID` | 标识客户购物车的唯一ID |
+| `commerceScope` | 指示事件发生位置（商店视图、商店、网站等）。 |
+| `environmentID` | 环境ID 32位数的字母数字ID，用连字符分隔。 |
+| `storeCode` | 唯一商店代码。 每个网站可以有许多商店。 |
+| `storeViewCode` | 唯一的商店视图代码。 每个商店可以有多个商店视图。 |
+| `websiteCode` | 唯一的网站代码。 在一个环境中可以有许多网站。 |
 
 ### openCart
 
@@ -68,10 +75,17 @@ ht-degree: 0%
 | `priceTotal` | 产品系列项目的总价 |
 | `quantity` | 添加到购物车的产品件数 |
 | `discountAmount` | 指示应用的折扣金额 |
-| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 产品的货币 |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR` |
 | `productImageUrl` | 产品的主图像URL |
-| `selectedOptions` | 用于可配置产品的字段。 `attribute` 标识可配置产品的属性，如 `size` 或 `color` 和 `value` 标识属性的值，例如 `small` 或 `black`. |
+| `selectedOptions` | 用于可配置产品的字段。 |
+| `attribute` | 标识可配置产品的属性，如 `size` 或 `color` |
+| `value` | 标识属性的值，例如 `small` 或 `black`. |
 | `cartID` | 标识客户购物车的唯一ID |
+| `commerceScope` | 指示事件发生位置（商店视图、商店、网站等）。 |
+| `environmentID` | 环境ID 32位数的字母数字ID，用连字符分隔。 |
+| `storeCode` | 唯一商店代码。 每个网站可以有许多商店。 |
+| `storeViewCode` | 唯一的商店视图代码。 每个商店可以有多个商店视图。 |
+| `websiteCode` | 唯一的网站代码。 在一个环境中可以有许多网站。 |
 
 ### removeFromCart
 
@@ -92,10 +106,17 @@ ht-degree: 0%
 | `priceTotal` | 产品系列项目的总价 |
 | `quantity` | 从购物车中删除的产品件数 |
 | `discountAmount` | 指示应用的折扣金额 |
-| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 产品的货币 |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR` |
 | `productImageUrl` | 产品的主图像URL |
-| `selectedOptions` | 用于可配置产品的字段。 `attribute` 标识可配置产品的属性，如 `size` 或 `color` 和 `value` 标识属性的值，例如 `small` 或 `black`. |
+| `selectedOptions` | 用于可配置产品的字段。 |
+| `attribute` | 标识可配置产品的属性，如 `size` 或 `color` |
+| `value` | 标识属性的值，例如 `small` 或 `black`. |
 | `cartID` | 标识客户购物车的唯一ID |
+| `commerceScope` | 指示事件发生位置（商店视图、商店、网站等）。 |
+| `environmentID` | 环境ID 32位数的字母数字ID，用连字符分隔。 |
+| `storeCode` | 唯一商店代码。 每个网站可以有许多商店。 |
+| `storeViewCode` | 唯一的商店视图代码。 每个商店可以有多个商店视图。 |
+| `websiteCode` | 唯一的网站代码。 在一个环境中可以有许多网站。 |
 
 ### shoppingcartView
 
@@ -116,10 +137,17 @@ ht-degree: 0%
 | `priceTotal` | 产品系列项目的总价 |
 | `quantity` | 购物车中的产品件数 |
 | `discountAmount` | 指示应用的折扣金额 |
-| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 产品的货币 |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR` |
 | `productImageUrl` | 产品的主图像URL |
-| `selectedOptions` | 用于可配置产品的字段。 `attribute` 标识可配置产品的属性，如 `size` 或 `color` 和 `value` 标识属性的值，例如 `small` 或 `black`. |
+| `selectedOptions` | 用于可配置产品的字段。 |
+| `attribute` | 标识可配置产品的属性，如 `size` 或 `color` |
+| `value` | 标识属性的值，例如 `small` 或 `black`. |
 | `cartID` | 标识客户购物车的唯一ID |
+| `commerceScope` | 指示事件发生位置（商店视图、商店、网站等）。 |
+| `environmentID` | 环境ID 32位数的字母数字ID，用连字符分隔。 |
+| `storeCode` | 唯一商店代码。 每个网站可以有许多商店。 |
+| `storeViewCode` | 唯一的商店视图代码。 每个商店可以有多个商店视图。 |
+| `websiteCode` | 唯一的网站代码。 在一个环境中可以有许多网站。 |
 
 ### pageView
 
@@ -134,6 +162,11 @@ ht-degree: 0%
 | 字段 | 描述 |
 |---|---|
 | `pageViews` | 指示是否已加载页面。 A `value` 之 `1` 指示页面已加载。 |
+| `commerceScope` | 指示事件发生位置（商店视图、商店、网站等）。 |
+| `environmentID` | 环境ID 32位数的字母数字ID，用连字符分隔。 |
+| `storeCode` | 唯一商店代码。 每个网站可以有许多商店。 |
+| `storeViewCode` | 唯一的商店视图代码。 每个商店可以有多个商店视图。 |
+| `websiteCode` | 唯一的网站代码。 在一个环境中可以有许多网站。 |
 
 ### productPageView
 
@@ -153,9 +186,16 @@ ht-degree: 0%
 | `name` | 产品的显示名称或易于用户识别的名称 |
 | `priceTotal` | 产品系列项目的总价 |
 | `discountAmount` | 指示应用的折扣金额 |
-| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 产品的货币 |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR` |
 | `productImageUrl` | 产品的主图像URL |
-| `selectedOptions` | 用于可配置产品的字段。 `attribute` 标识可配置产品的属性，如 `size` 或 `color` 和 `value` 标识属性的值，例如 `small` 或 `black`. |
+| `selectedOptions` | 用于可配置产品的字段。 |
+| `attribute` | 标识可配置产品的属性，如 `size` 或 `color` |
+| `value` | 标识属性的值，例如 `small` 或 `black`. |
+| `commerceScope` | 指示事件发生位置（商店视图、商店、网站等）。 |
+| `environmentID` | 环境ID 32位数的字母数字ID，用连字符分隔。 |
+| `storeCode` | 唯一商店代码。 每个网站可以有许多商店。 |
+| `storeViewCode` | 唯一的商店视图代码。 每个商店可以有多个商店视图。 |
+| `websiteCode` | 唯一的网站代码。 在一个环境中可以有许多网站。 |
 
 ### startCheckout
 
@@ -176,10 +216,17 @@ ht-degree: 0%
 | `priceTotal` | 产品系列项目的总价 |
 | `quantity` | 购物车中的产品件数 |
 | `discountAmount` | 指示应用的折扣金额 |
-| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 产品的货币 |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR` |
 | `productImageUrl` | 产品的主图像URL |
-| `selectedOptions` | 用于可配置产品的字段。 `attribute` 标识可配置产品的属性，如 `size` 或 `color` 和 `value` 标识属性的值，例如 `small` 或 `black`. |
+| `selectedOptions` | 用于可配置产品的字段。 |
+| `attribute` | 标识可配置产品的属性，如 `size` 或 `color` |
+| `value` | 标识属性的值，例如 `small` 或 `black`. |
 | `cartID` | 标识客户购物车的唯一ID |
+| `commerceScope` | 指示事件发生位置（商店视图、商店、网站等）。 |
+| `environmentID` | 环境ID 32位数的字母数字ID，用连字符分隔。 |
+| `storeCode` | 唯一商店代码。 每个网站可以有许多商店。 |
+| `storeViewCode` | 唯一的商店视图代码。 每个商店可以有多个商店视图。 |
+| `websiteCode` | 唯一的网站代码。 在一个环境中可以有许多网站。 |
 
 ### completeCheckout
 
@@ -198,13 +245,14 @@ ht-degree: 0%
 | `purchaseID` | 卖方为此购买或合同分配的唯一标识符。 无法保证ID是唯一的。 |
 | `orderType` | 指示所下订单的类型，如“结帐”或“即时购买” |
 | `payments` | 此订单的付款清单 |
-| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用于此付款项目的货币代码。 例如， `USD` 或 `EUR`. |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR` |
 | `paymentAmount` | 付款金额 |
 | `paymentType` | 此订单的付款方式。 选项包括： `cash`， `credit_card`， `debit_card`， `gift_card`， `check`， `paypal`， `wire_transfer`， `credit_card_reference`， `other` |
 | `transactionID` | 此付款项目的唯一交易标识符 |
 | `shipping` | 一个或多个产品的运输详细信息。 |
 | `shippingMethod` | 客户选择的配送方式，如标准配送、加急配送、店内提货等 |
 | `shippingAmount` | 购物车中物料的总运输成本 |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR` |
 | `promotionID` | 促销的唯一标识符（如果有） |
 | `personalEmail` | 指定个人电子邮件地址 |
 | `address` | 技术地址，例如， `name@domain.com` 如RFC2822和后续标准中共同定义 |
@@ -214,9 +262,16 @@ ht-degree: 0%
 | `priceTotal` | 产品系列项目的总价 |
 | `quantity` | 购物车中的产品件数 |
 | `discountAmount` | 指示应用的折扣金额 |
-| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用于订单总计的货币代码。 |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR` |
 | `productImageUrl` | 产品的主图像URL |
-| `selectedOptions` | 用于可配置产品的字段。 `attribute` 标识可配置产品的属性，如 `size` 或 `color` 和 `value` 标识属性的值，例如 `small` 或 `black`. |
+| `selectedOptions` | 用于可配置产品的字段。 |
+| `attribute` | 标识可配置产品的属性，如 `size` 或 `color` |
+| `value` | 标识属性的值，例如 `small` 或 `black`. |
+| `commerceScope` | 指示事件发生位置（商店视图、商店、网站等）。 |
+| `environmentID` | 环境ID 32位数的字母数字ID，用连字符分隔。 |
+| `storeCode` | 唯一商店代码。 每个网站可以有许多商店。 |
+| `storeViewCode` | 唯一的商店视图代码。 每个商店可以有多个商店视图。 |
+| `websiteCode` | 唯一的网站代码。 在一个环境中可以有许多网站。 |
 
 ## 配置文件事件
 
@@ -246,6 +301,11 @@ ht-degree: 0%
 | `address` | 技术地址，例如， `name@domain.com` 如RFC2822和后续标准中共同定义 |
 | `userAccount` | 指示任何忠诚度详细信息、首选项、登录流程和其他帐户首选项 |
 | `login` | 指示访客是否尝试登录 |
+| `commerceScope` | 指示事件发生位置（商店视图、商店、网站等）。 |
+| `environmentID` | 环境ID 32位数的字母数字ID，用连字符分隔。 |
+| `storeCode` | 唯一商店代码。 每个网站可以有许多商店。 |
+| `storeViewCode` | 唯一的商店视图代码。 每个商店可以有多个商店视图。 |
+| `websiteCode` | 唯一的网站代码。 在一个环境中可以有许多网站。 |
 
 ### 注销
 
@@ -265,6 +325,11 @@ ht-degree: 0%
 |---|---|
 | `userAccount` | 指示任何忠诚度详细信息、首选项、登录流程和其他帐户首选项 |
 | `logout` | 指示访客是否尝试注销 |
+| `commerceScope` | 指示事件发生位置（商店视图、商店、网站等）。 |
+| `environmentID` | 环境ID 32位数的字母数字ID，用连字符分隔。 |
+| `storeCode` | 唯一商店代码。 每个网站可以有许多商店。 |
+| `storeViewCode` | 唯一的商店视图代码。 每个商店可以有多个商店视图。 |
+| `websiteCode` | 唯一的网站代码。 在一个环境中可以有许多网站。 |
 
 ### createAccount
 
@@ -290,6 +355,11 @@ ht-degree: 0%
 | `address` | 技术地址，例如， `name@domain.com` 如RFC2822和后续标准中共同定义 |
 | `userAccount` | 指示任何忠诚度详细信息、首选项、登录流程和其他帐户首选项 |
 | `createProfile` | 指示用户是否已创建帐户配置文件 |
+| `commerceScope` | 指示事件发生位置（商店视图、商店、网站等）。 |
+| `environmentID` | 环境ID 32位数的字母数字ID，用连字符分隔。 |
+| `storeCode` | 唯一商店代码。 每个网站可以有许多商店。 |
+| `storeViewCode` | 唯一的商店视图代码。 每个商店可以有多个商店视图。 |
+| `websiteCode` | 唯一的网站代码。 在一个环境中可以有许多网站。 |
 
 ### editAccount
 
@@ -315,6 +385,11 @@ ht-degree: 0%
 | `address` | 技术地址，例如， `name@domain.com` 如RFC2822和后续标准中共同定义 |
 | `userAccount` | 指示任何忠诚度详细信息、首选项、登录流程和其他帐户首选项 |
 | `updateProfile` | 指示用户是否已更新其帐户配置文件 |
+| `commerceScope` | 指示事件发生位置（商店视图、商店、网站等）。 |
+| `environmentID` | 环境ID 32位数的字母数字ID，用连字符分隔。 |
+| `storeCode` | 唯一商店代码。 每个网站可以有许多商店。 |
+| `storeViewCode` | 唯一的商店视图代码。 每个商店可以有多个商店视图。 |
+| `websiteCode` | 唯一的网站代码。 在一个环境中可以有许多网站。 |
 
 ## 搜索事件
 
@@ -348,6 +423,11 @@ ht-degree: 0%
 | `attribute` （排序） | 用于对搜索结果中的项目进行排序的属性 |
 | `order` | 返回搜索结果的顺序 |
 | `query` | 搜索的词语 |
+| `commerceScope` | 指示事件发生位置（商店视图、商店、网站等）。 |
+| `environmentID` | 环境ID 32位数的字母数字ID，用连字符分隔。 |
+| `storeCode` | 唯一商店代码。 每个网站可以有许多商店。 |
+| `storeViewCode` | 唯一的商店视图代码。 每个商店可以有多个商店视图。 |
+| `websiteCode` | 唯一的网站代码。 在一个环境中可以有许多网站。 |
 
 ### searchResponseReceived
 
@@ -373,6 +453,11 @@ ht-degree: 0%
 | `SKU` | 库存单位。 产品的唯一标识符。 |
 | `name` | 产品的显示名称或易于用户识别的名称 |
 | `productImageUrl` | 产品的主图像URL |
+| `commerceScope` | 指示事件发生位置（商店视图、商店、网站等）。 |
+| `environmentID` | 环境ID 32位数的字母数字ID，用连字符分隔。 |
+| `storeCode` | 唯一商店代码。 每个网站可以有许多商店。 |
+| `storeViewCode` | 唯一的商店视图代码。 每个商店可以有多个商店视图。 |
+| `websiteCode` | 唯一的网站代码。 在一个环境中可以有许多网站。 |
 
 ## B2B事件
 
@@ -396,6 +481,11 @@ B2B事件包含 [申请列表](https://experienceleague.adobe.com/docs/commerce-
 | `ID` | 申购单列表的唯一标识符 |
 | `name` | 客户指定的申请列表的名称 |
 | `description` | 客户指定的申请列表的描述 |
+| `commerceScope` | 指示事件发生位置（商店视图、商店、网站等）。 |
+| `environmentID` | 环境ID 32位数的字母数字ID，用连字符分隔。 |
+| `storeCode` | 唯一商店代码。 每个网站可以有许多商店。 |
+| `storeViewCode` | 唯一的商店视图代码。 每个商店可以有多个商店视图。 |
+| `websiteCode` | 唯一的网站代码。 在一个环境中可以有许多网站。 |
 
 ### addToRequisitionList
 
@@ -423,8 +513,15 @@ B2B事件包含 [申请列表](https://experienceleague.adobe.com/docs/commerce-
 | `quantity` | 添加的产品单位数 |
 | `priceTotal` | 产品系列项目的总价 |
 | `discountAmount` | 指示应用的折扣金额 |
-| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用于此付款项目的货币代码 |
-| `selectedOptions` | 用于可配置产品的字段。 `attribute` 标识可配置产品的属性，如 `size` 或 `color` 和 `value` 标识属性的值，例如 `small` 或 `black`. |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR` |
+| `selectedOptions` | 用于可配置产品的字段。 |
+| `attribute` | 标识可配置产品的属性，如 `size` 或 `color` |
+| `value` | 标识属性的值，例如 `small` 或 `black`. |
+| `commerceScope` | 指示事件发生位置（商店视图、商店、网站等）。 |
+| `environmentID` | 环境ID 32位数的字母数字ID，用连字符分隔。 |
+| `storeCode` | 唯一商店代码。 每个网站可以有许多商店。 |
+| `storeViewCode` | 唯一的商店视图代码。 每个商店可以有多个商店视图。 |
+| `websiteCode` | 唯一的网站代码。 在一个环境中可以有许多网站。 |
 
 ### removeFromRequisitionList
 
@@ -448,8 +545,15 @@ B2B事件包含 [申请列表](https://experienceleague.adobe.com/docs/commerce-
 | `quantity` | 添加的产品单位数 |
 | `priceTotal` | 产品系列项目的总价 |
 | `discountAmount` | 指示应用的折扣金额 |
-| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用于此付款项目的货币代码 |
-| `selectedOptions` | 用于可配置产品的字段。 `attribute` 标识可配置产品的属性，如 `size` 或 `color` 和 `value` 标识属性的值，例如 `small` 或 `black`. |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR` |
+| `selectedOptions` | 用于可配置产品的字段。 |
+| `attribute` | 标识可配置产品的属性，如 `size` 或 `color` |
+| `value` | 标识属性的值，例如 `small` 或 `black`. |
+| `commerceScope` | 指示事件发生位置（商店视图、商店、网站等）。 |
+| `environmentID` | 环境ID 32位数的字母数字ID，用连字符分隔。 |
+| `storeCode` | 唯一商店代码。 每个网站可以有许多商店。 |
+| `storeViewCode` | 唯一的商店视图代码。 每个商店可以有多个商店视图。 |
+| `websiteCode` | 唯一的网站代码。 在一个环境中可以有许多网站。 |
 
 ## 后台活动
 
@@ -478,7 +582,12 @@ B2B事件包含 [申请列表](https://experienceleague.adobe.com/docs/commerce-
 | `SKU` | 库存单位。 产品的唯一标识符。 |
 | `quantity` | 购物车中的产品件数 |
 | `priceTotal` | 产品系列项目的总价 |
-| `discountAmount` | 指示应用的折扣金额 |
+| `discountAmount` | 指示应用于物料的折扣金额 |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR` |
+| `productImageUrl` | 产品的主图像URL |
+| `selectedOptions` | 用于可配置产品的字段。 |
+| `attribute` | 标识可配置产品的属性，如 `size` 或 `color` |
+| `value` | 标识属性的值，例如 `small` 或 `black`. |
 | `commerceScope` | 指示事件发生位置（商店视图、商店、网站等）。 |
 | `environmentID` | 环境ID 32位数的字母数字ID，用连字符分隔。 |
 | `storeCode` | 唯一商店代码。 每个网站可以有许多商店。 |
@@ -487,17 +596,19 @@ B2B事件包含 [申请列表](https://experienceleague.adobe.com/docs/commerce-
 | `order` | 包含有关订单的信息 |
 | `purchaseID` | 卖方为此购买或合同分配的唯一标识符。 无法保证ID是唯一的 |
 | `priceTotal` | 应用所有折扣和税费后此订单的总价 |
-| `currencyCode` | 用于订单总额的ISO 4217货币代码 |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR` |
 | `purchaseOrderNumber` | 购买者为此购买或合同分配的唯一标识符 |
 | `payments` | 此订单的付款清单 |
 | `paymentType` | 此订单的付款方式。 枚举，允许自定义值。 |
-| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用于此付款项目的货币代码 |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR` |
 | `paymentAmount` | 付款金额 |
 | `taxAmount` | 买方作为最终付款的一部分支付的税额 |
+| `discountAmount` | 指示应用于整个订单的折扣金额 |
 | `createdDate` | 在商业系统中创建新订单的时间和日期。 例如，`2022-10-15T20:20:39+00:00` |
 | `shipping` | 一个或多个产品的运输详细信息 |
 | `shippingMethod` | 客户选择的配送方式，如标准配送、加急配送、店内提货等 |
 | `shippingAmount` | 客户必须支付的运费。 |
+| `currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR` |
 | `address` | 实际配送地址 |
 | `street1` | 主要街道级别信息、公寓号、街道号和街道名称 |
 | `street2` | 街道级别信息的附加字段 |
@@ -524,7 +635,7 @@ B2B事件包含 [申请列表](https://experienceleague.adobe.com/docs/commerce-
 #### 从orderItemsShipped收集的数据
 
 下表描述了为此事件收集的数据。
-|字段|描述| |—|—| |`address`|技术地址，例如， `name@domain.com` 如RFC2822和后续标准中通常定义| |`productListItems`|订单中的一系列产品| |`id`|此产品条目的行项目标识符。 通过标识产品本身 `product` 字段。| |`name`|产品的显示名称或人类可读的名称| |`SKU`|库存单位。 产品的唯一标识符。| |`quantity`|购物车中的产品件数| |`priceTotal`|产品行项目的总价| |`discountAmount`|指示应用的折扣金额| |`commerceScope`|指示发生事件的位置（商店视图、商店、网站等）。| |`environmentID`|环境ID 32位数的字母数字ID，用连字符分隔。| |`storeCode`|唯一商店代码。 每个网站可以有许多商店。| |`storeViewCode`|唯一的商店视图代码。 每个商店可以有多个商店视图。| |`websiteCode`|唯一的网站代码。 在一个环境中可以有许多网站。| |`order`|包含有关订单的信息| |`purchaseID`|卖方为此购买或合同分配的唯一标识符。 无法保证ID是唯一的| |`priceTotal`|应用了所有折扣和税费后此订单的总价| |`currencyCode`|用于订单总额的ISO 4217货币代码| |`purchaseOrderNumber`|购买者为此购买或合同分配的唯一标识符| |`payments`|此订单的付款清单| |`paymentType`|此订单的付款方式。 枚举，允许自定义值。| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用于此付款项目的货币代码| |`paymentAmount`|付款金额| |`lastUpdatedDate`|在商务系统中上次更新特定订单记录的时间| |`shipping`|一个或多个产品的配送详细信息| |`shippingMethod`|客户选择的配送方式，如标准配送、加急配送、店内提货等| |`trackingNumber`|装运承运人为订单项目装运提供的跟踪编号| |`trackingURL`|用于跟踪订单项配送状态的URL| |`shipDate`|订单中的一个或多个项目发运的日期| |`address`|实际送货地址| |`street1`|主要街道级别信息、公寓号、街道号和街道名称| |`street2`|街道级别信息的附加字段| |`city`|城市名称| |`state`|状态的名称。 这是自由格式字段。| |`postalCode`|地点的邮政编码。 并非所有国家/地区都提供邮政编码。 在一些国家/地区，这将仅包含邮政编码的一部分。| |`country`|政府管辖地区的名称。 除 `xdm:countryCode`，这是一个自由格式的字段，可以包含任何语言的国家/地区名称。| |`shippingAmount`|客户必须支付的运费。| |`billingAddress`|帐单邮寄地址| |`street1`|主要街道级别信息、公寓号、街道号和街道名称| |`street2`|街道级别信息的附加字段| |`city`|城市名称| |`state`|状态的名称。 这是自由格式字段。| |`postalCode`|地点的邮政编码。 并非所有国家/地区都提供邮政编码。 在一些国家/地区，这将仅包含邮政编码的一部分。| |`country`|政府管辖地区的名称。 除 `xdm:countryCode`，这是一个自由格式的字段，可以包含任何语言的国家/地区名称。| |`personalEmail`|个人电子邮件地址| |`address`|技术地址，例如RFC2822和后续标准中通常定义的“name@domain.com”|
+|字段|描述| |—|—| |`address`|技术地址，例如， `name@domain.com` 如RFC2822和后续标准中通常定义| |`productListItems`|订单中的一系列产品| |`id`|此产品条目的行项目标识符。 通过标识产品本身 `product` 字段。| |`name`|产品的显示名称或人类可读的名称| |`SKU`|库存单位。 产品的唯一标识符。| |`quantity`|购物车中的产品件数| |`priceTotal`|产品行项目的总价| |`discountAmount`|指示应用的折扣金额| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR`| |`productImageUrl`|产品的主图像URL| |`selectedOptions`|用于可配置产品的字段。| |`attribute`|标识可配置产品的属性，如 `size` 或 `color`| |`value`|标识属性的值，例如 `small` 或 `black`.| |`commerceScope`|指示发生事件的位置（商店视图、商店、网站等）。| |`environmentID`|环境ID 32位数的字母数字ID，用连字符分隔。| |`storeCode`|唯一商店代码。 每个网站可以有许多商店。| |`storeViewCode`|唯一的商店视图代码。 每个商店可以有多个商店视图。| |`websiteCode`|唯一的网站代码。 在一个环境中可以有许多网站。| |`order`|包含有关订单的信息| |`purchaseID`|卖方为此购买或合同分配的唯一标识符。 无法保证ID是唯一的| |`priceTotal`|应用了所有折扣和税费后此订单的总价| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR`| |`purchaseOrderNumber`|购买者为此购买或合同分配的唯一标识符| |`payments`|此订单的付款清单| |`paymentType`|此订单的付款方式。 枚举，允许自定义值。| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR`| |`paymentAmount`|付款金额| |`lastUpdatedDate`|在商务系统中上次更新特定订单记录的时间| |`shipping`|一个或多个产品的配送详细信息| |`shippingMethod`|客户选择的配送方式，如标准配送、加急配送、店内提货等| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR`| |`trackingNumber`|装运承运人为订单项目装运提供的跟踪编号| |`trackingURL`|用于跟踪订单项配送状态的URL| |`shipDate`|订单中的一个或多个项目发运的日期| |`address`|实际送货地址| |`street1`|主要街道级别信息、公寓号、街道号和街道名称| |`street2`|街道级别信息的附加字段| |`city`|城市名称| |`state`|状态的名称。 这是自由格式字段。| |`postalCode`|地点的邮政编码。 并非所有国家/地区都提供邮政编码。 在一些国家/地区，这将仅包含邮政编码的一部分。| |`country`|政府管辖地区的名称。 除 `xdm:countryCode`，这是一个自由格式的字段，可以包含任何语言的国家/地区名称。| |`shippingAmount`|客户必须支付的运费。| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR`| |`billingAddress`|帐单邮寄地址| |`street1`|主要街道级别信息、公寓号、街道号和街道名称| |`street2`|街道级别信息的附加字段| |`city`|城市名称| |`state`|状态的名称。 这是自由格式字段。| |`postalCode`|地点的邮政编码。 并非所有国家/地区都提供邮政编码。 在一些国家/地区，这将仅包含邮政编码的一部分。| |`country`|政府管辖地区的名称。 除 `xdm:countryCode`，这是一个自由格式的字段，可以包含任何语言的国家/地区名称。| |`personalEmail`|个人电子邮件地址| |`address`|技术地址，例如RFC2822和后续标准中通常定义的“name@domain.com”|
 
 ### orderCanceled
 
@@ -535,7 +646,7 @@ B2B事件包含 [申请列表](https://experienceleague.adobe.com/docs/commerce-
 #### 从orderCanceled收集的数据
 
 下表描述了为此事件收集的数据。
-|字段|描述| |—|—| |`address`|技术地址，例如， `name@domain.com` 如RFC2822和后续标准中通常定义| |`productListItems`|订单中的一系列产品| |`id`|此产品条目的行项目标识符。 通过标识产品本身 `product` 字段。| |`name`|产品的显示名称或人类可读的名称| |`SKU`|库存单位。 产品的唯一标识符。| |`quantity`|购物车中的产品件数| |`priceTotal`|产品行项目的总价| |`discountAmount`|指示应用的折扣金额| |`commerceScope`|指示发生事件的位置（商店视图、商店、网站等）。| |`environmentID`|环境ID 32位数的字母数字ID，用连字符分隔。| |`storeCode`|唯一商店代码。 每个网站可以有许多商店。| |`storeViewCode`|唯一的商店视图代码。 每个商店可以有多个商店视图。| |`websiteCode`|唯一的网站代码。 在一个环境中可以有许多网站。| |`order`|包含有关订单的信息| |`purchaseID`|卖方为此购买或合同分配的唯一标识符。 无法保证ID是唯一的| |`purchaseOrderNumber`|购买者为此购买或合同分配的唯一标识符| |`cancelDate`|购物者取消订单的日期和时间| |`lastUpdatedDate`|在商务系统中上次更新特定订单记录的时间| |`personalEmail`|个人电子邮件地址| |`address`|技术地址，例如RFC2822和后续标准中通常定义的“name@domain.com”|
+|字段|描述| |—|—| |`address`|技术地址，例如， `name@domain.com` 如RFC2822和后续标准中通常定义| |`productListItems`|订单中的一系列产品| |`id`|此产品条目的行项目标识符。 通过标识产品本身 `product` 字段。| |`name`|产品的显示名称或人类可读的名称| |`SKU`|库存单位。 产品的唯一标识符。| |`quantity`|购物车中的产品件数| |`priceTotal`|产品行项目的总价| |`discountAmount`|指示应用的折扣金额| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR`| |`productImageUrl`|产品的主图像URL| |`selectedOptions`|用于可配置产品的字段。| |`attribute`|标识可配置产品的属性，如 `size` 或 `color`| |`value`|标识属性的值，例如 `small` 或 `black`.| |`commerceScope`|指示发生事件的位置（商店视图、商店、网站等）。| |`environmentID`|环境ID 32位数的字母数字ID，用连字符分隔。| |`storeCode`|唯一商店代码。 每个网站可以有许多商店。| |`storeViewCode`|唯一的商店视图代码。 每个商店可以有多个商店视图。| |`websiteCode`|唯一的网站代码。 在一个环境中可以有许多网站。| |`order`|包含有关订单的信息| |`purchaseID`|卖方为此购买或合同分配的唯一标识符。 无法保证ID是唯一的| |`purchaseOrderNumber`|购买者为此购买或合同分配的唯一标识符| |`cancelDate`|购物者取消订单的日期和时间| |`lastUpdatedDate`|在商务系统中上次更新特定订单记录的时间| |`personalEmail`|个人电子邮件地址| |`address`|技术地址，例如RFC2822和后续标准中通常定义的“name@domain.com”|
 
 ### 贷项通知单已发放
 
@@ -546,7 +657,7 @@ B2B事件包含 [申请列表](https://experienceleague.adobe.com/docs/commerce-
 #### 从creditMemoIssued收集的数据
 
 下表描述了为此事件收集的数据。
-|字段|描述| |—|—| |`address`|技术地址，例如， `name@domain.com` 如RFC2822和后续标准中通常定义| |`productListItems`|订单中的一系列产品| |`id`|此产品条目的行项目标识符。 通过标识产品本身 `product` 字段。| |`name`|产品的显示名称或人类可读的名称| |`SKU`|库存单位。 产品的唯一标识符。| |`quantity`|购物车中的产品件数| |`priceTotal`|产品行项目的总价| |`discountAmount`|指示应用的折扣金额| |`order`|包含有关订单的信息| |`purchaseID`|卖方为此购买或合同分配的唯一标识符。 无法保证ID是唯一的| |`purchaseOrderNumber`|购买者为此购买或合同分配的唯一标识符| |`lastUpdatedDate`|在商务系统中上次更新特定订单记录的时间| |`personalEmail`|个人电子邮件地址| |`address`|技术地址，例如RFC2822和后续标准中通常定义的“name@domain.com”|
+|字段|描述| |—|—| |`address`|技术地址，例如， `name@domain.com` 如RFC2822和后续标准中通常定义| |`productListItems`|订单中的一系列产品| |`id`|此产品条目的行项目标识符。 通过标识产品本身 `product` 字段。| |`name`|产品的显示名称或人类可读的名称| |`SKU`|库存单位。 产品的唯一标识符。| |`quantity`|购物车中的产品件数| |`priceTotal`|产品行项目的总价| |`discountAmount`|指示应用的折扣金额| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR`| |`productImageUrl`|产品的主图像URL| |`selectedOptions`|用于可配置产品的字段。| |`attribute`|标识可配置产品的属性，如 `size` 或 `color`| |`value`|标识属性的值，例如 `small` 或 `black`.| |`order`|包含有关订单的信息| |`purchaseID`|卖方为此购买或合同分配的唯一标识符。 无法保证ID是唯一的| |`purchaseOrderNumber`|购买者为此购买或合同分配的唯一标识符| |`lastUpdatedDate`|在商务系统中上次更新特定订单记录的时间| |`priceTotal`|产品行项目的总价| |`discountAmount`|指示应用的折扣金额| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR`| |`taxAmount`|买方作为最终付款的一部分所支付的税额。| |`refunds`|此订单的退款清单| |`refundPaymentType`|此订单的付款方式。 枚举，允许自定义值。| |`refundAmount`|退款的值。| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR`| |`personalEmail`|个人电子邮件地址| |`address`|技术地址，例如， `name@domain.com` 如RFC2822和后续标准中通常定义|
 
 ### orderShipmentCompleted
 
@@ -557,4 +668,4 @@ B2B事件包含 [申请列表](https://experienceleague.adobe.com/docs/commerce-
 #### 从orderShipmentCompleted收集的数据
 
 下表描述了为此事件收集的数据。
-|字段|描述| |—|—| |`address`|技术地址，例如， `name@domain.com` 如RFC2822和后续标准中通常定义| |`productListItems`|订单中的一系列产品| |`id`|此产品条目的行项目标识符。 通过标识产品本身 `product` 字段。| |`name`|产品的显示名称或人类可读的名称| |`SKU`|库存单位。 产品的唯一标识符。| |`quantity`|购物车中的产品件数| |`priceTotal`|产品行项目的总价| |`discountAmount`|指示应用的折扣金额| |`order`|包含有关订单的信息| |`purchaseID`|卖方为此购买或合同分配的唯一标识符。 无法保证ID是唯一的| |`priceTotal`|应用了所有折扣和税费后此订单的总价| |`currencyCode`|用于订单总额的ISO 4217货币代码| |`purchaseOrderNumber`|购买者为此购买或合同分配的唯一标识符| |`taxAmount`|买方作为最终付款的一部分所支付的税额。| |`createdDate`|在商务系统中创建新订单的时间和日期。 例如， `2022-10-15T20:20:39+00:00`| |`payments`|此订单的付款清单| |`paymentType`|此订单的付款方式。 枚举，允许自定义值。| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 用于此付款项目的货币代码| |`paymentAmount`|付款金额| |`shipping`|一个或多个产品的配送详细信息| |`shippingMethod`|客户选择的配送方式，如标准配送、加急配送、店内提货等| |`address`|实际送货地址| |`street1`|主要街道级别信息、公寓号、街道号和街道名称| |`street2`|街道级别信息的附加字段| |`city`|城市名称| |`state`|状态的名称。 这是自由格式字段。| |`postalCode`|地点的邮政编码。 并非所有国家/地区都提供邮政编码。 在一些国家/地区，这将仅包含邮政编码的一部分。| |`country`|政府管辖地区的名称。 除 `xdm:countryCode`，这是一个自由格式的字段，可以包含任何语言的国家/地区名称。| |`shippingAmount`|客户必须支付的运费。| |`address`|技术地址，例如， `name@domain.com` 如RFC2822和后续标准中通常定义| |`billingAddress`|帐单邮寄地址| |`street1`|主要街道级别信息、公寓号、街道号和街道名称| |`street2`|街道级别信息的附加字段| |`city`|城市名称| |`state`|状态的名称。 这是自由格式字段。| |`postalCode`|地点的邮政编码。 并非所有国家/地区都提供邮政编码。 在某些国家/地区，此数据仅包含邮政编码的一部分。| |`country`|政府管辖地区的名称。 除 `xdm:countryCode`，这是一个自由格式的字段，可以包含任何语言的国家/地区名称。| |`personalEmail`|个人电子邮件地址| |`address`|技术地址，例如RFC2822和后续标准中通常定义的“name@domain.com”|
+|字段|描述| |—|—| |`address`|技术地址，例如， `name@domain.com` 如RFC2822和后续标准中通常定义| |`productListItems`|订单中的一系列产品| |`id`|此产品条目的行项目标识符。 通过标识产品本身 `product` 字段。| |`name`|产品的显示名称或人类可读的名称| |`SKU`|库存单位。 产品的唯一标识符。| |`quantity`|购物车中的产品件数| |`priceTotal`|产品行项目的总价| |`discountAmount`|指示应用的折扣金额| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR`| |`productImageUrl`|产品的主图像URL| |`selectedOptions`|用于可配置产品的字段。| |`attribute`|标识可配置产品的属性，如 `size` 或 `color`| |`value`|标识属性的值，例如 `small` 或 `black`.| |`order`|包含有关订单的信息| |`purchaseID`|卖方为此购买或合同分配的唯一标识符。 无法保证ID是唯一的| |`priceTotal`|应用了所有折扣和税费后此订单的总价| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR`| |`purchaseOrderNumber`|购买者为此购买或合同分配的唯一标识符| |`taxAmount`|买方作为最终付款的一部分所支付的税额。| |`createdDate`|在商务系统中创建新订单的时间和日期。 例如， `2022-10-15T20:20:39+00:00`| |`payments`|此订单的付款清单| |`paymentType`|此订单的付款方式。 枚举，允许自定义值。| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR`| |`paymentAmount`|付款金额| |`shipping`|一个或多个产品的配送详细信息| |`shippingMethod`|客户选择的配送方式，如标准配送、加急配送、店内提货等| |`address`|实际送货地址| |`street1`|主要街道级别信息、公寓号、街道号和街道名称| |`street2`|街道级别信息的附加字段| |`city`|城市名称| |`state`|状态的名称。 这是自由格式字段。| |`postalCode`|地点的邮政编码。 并非所有国家/地区都提供邮政编码。 在一些国家/地区，这将仅包含邮政编码的一部分。| |`country`|政府管辖地区的名称。 除 `xdm:countryCode`，这是一个自由格式的字段，可以包含任何语言的国家/地区名称。| |`shippingAmount`|客户必须支付的运费。| |`currencyCode`|此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR`| |`address`|技术地址，例如， `name@domain.com` 如RFC2822和后续标准中通常定义| |`billingAddress`|帐单邮寄地址| |`street1`|主要街道级别信息、公寓号、街道号和街道名称| |`street2`|街道级别信息的附加字段| |`city`|城市名称| |`state`|状态的名称。 这是自由格式字段。| |`postalCode`|地点的邮政编码。 并非所有国家/地区都提供邮政编码。 在某些国家/地区，此数据仅包含邮政编码的一部分。| |`country`|政府管辖地区的名称。 除 `xdm:countryCode`，这是一个自由格式的字段，可以包含任何语言的国家/地区名称。| |`personalEmail`|个人电子邮件地址| |`address`|技术地址，例如RFC2822和后续标准中通常定义的“name@domain.com”|
