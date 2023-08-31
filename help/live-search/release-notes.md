@@ -3,9 +3,9 @@ title: '[!DNL Live Search] 发行说明'
 description: “的最新发行信息 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 3edbbc054fdadfeaa710b8c096db63e0d1961d02
+source-git-commit: 282c652304ba362fcceca1faa35e1d0c1378041b
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1400'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ _2023年4月25日_
 
 _2023年8月7日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 兼容性]{type="信息性" tooltip="兼容性"}
 
 ### 新增功能
 
@@ -72,7 +72,7 @@ _2023年8月7日_
 
 _2023年3月14日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 兼容性]{type="信息性" tooltip="兼容性"}
 
 ### 新增功能
 
@@ -114,7 +114,7 @@ _2023年3月14日_
 
 ## [!DNL Live Search] 2.0.5 {#205}
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 兼容性]{type="信息性" tooltip="兼容性"}
 
 * ![修复](../assets/fix.svg)  — 当SDK资源因网络问题而不可用时，Live Search会引发错误。 此错误已修复。
 
@@ -124,7 +124,7 @@ _2023年3月14日_
 
 ### [!DNL Live Search] 2.0.4 {#204}
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 兼容性]{type="信息性" tooltip="兼容性"}
 
 ![新建](../assets/new.svg) 实时搜索现在支持通过管理员中的“显示缺货产品”设置进行筛选。 如果“显示缺货产品”设置为false， `inStock = true` 会添加到过滤器中。
 ![修复](../assets/fix.svg) 为了提高性能，已从“实时搜索”弹出窗口中删除“建议”块。 如果要替换该功能，数据仍会通过GraphQL传递。
@@ -138,7 +138,7 @@ _2023年3月14日_
 
 ### [!DNL Live Search] 2.0.3 {#203}
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 兼容性]{type="信息性" tooltip="兼容性"}
 
 ![新建](../assets/new.svg) Live Search现在通过遵循类别权限、共享目录和特定于客户组的定价来支持B2B功能。
 
@@ -148,7 +148,7 @@ _2023年3月14日_
 
 ### [!DNL Live Search] 2.0 {#20}
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 兼容性]{type="信息性" tooltip="兼容性"}
 
 现有 [!DNL Live Search] 安装必须升级到 [!DNL Live Search] 2.0.0以利用以下新增功能、修复和改进功能：
 
@@ -163,7 +163,7 @@ _2023年3月14日_
 
 ### [!DNL Live Search] 1.3.1 {#131}
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 兼容性]{type="信息性" tooltip="兼容性"}
 
 ![修复](../assets/fix.svg) [自定义价格属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) 配置为时不再返回错误 [方面]({%链接live-search/facets-add.md %})。
 ![修复](../assets/fix.svg) 修复了在以下情况下导致出现错误的问题： [货币符号](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html#step-5%3A-customize-currency-symbols-(optional)) (`data-currency-symbol`)可用。
@@ -171,7 +171,7 @@ _2023年3月14日_
 
 ### [!DNL Live Search] 1.3.0 {#130}
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 兼容性]{type="信息性" tooltip="兼容性"}
 
 ![新建](../assets/new.svg) [性能](performance.md) 报表仪表板提供有关购物者使用的搜索词的洞察。
 ![新建](../assets/new.svg) [!DNL Live Search] [店面事件SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) 提供对具有事件发布和订阅服务以及量度的公共数据层的访问。
@@ -182,7 +182,7 @@ _2023年3月14日_
 
 ### [!DNL Live Search] 1.2.0 {#120}
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 兼容性]{type="信息性" tooltip="兼容性"}
 
 ![新建](../assets/new.svg) [[!DNL Storefront popover]](storefront-popover.md) 当购物者将查询键入搜索框时，显示推荐的产品和排名最前的搜索结果的缩略图图像。
 ![新建](../assets/new.svg) 商务 *管理员* 会话在长时间键盘不活动期间保持打开状态
@@ -195,7 +195,7 @@ _2023年3月14日_
 
 ### [!DNL Live Search] 1.1.0 {#110}
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 兼容性]{type="信息性" tooltip="兼容性"}
 
 ![错误](../assets/bug.svg) 此 [!DNL Live Search] 服务仅支持 [基础货币](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) Adobe Commerce的URL名称。
 ![错误](../assets/bug.svg) 添加Facet时，将设置为时，产品属性信息源无法正确更新 `Update on Save`. 要避免出现此问题，请转到 [索引管理](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) 并将产品属性信息源设置为 `Update by Schedule`.
