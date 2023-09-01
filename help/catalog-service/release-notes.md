@@ -3,7 +3,7 @@ title: '[!DNL Catalog Service] 发行说明'
 description: 的最新发行信息 [!DNL Catalog Service] 用于Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
+source-git-commit: 822108fb92b2cac7cc62d00db035faed81ae9e25
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 _2023年7月18日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![新建](../assets/new.svg) 目录服务现在支持 [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL查询产品Recommendations。
 
@@ -49,7 +49,7 @@ _2023年7月18日_
 
 _2023年6月27日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![新建](../assets/new.svg) 目录服务现在可以在产品详细信息页面小组件中显示相关产品。
 
@@ -57,7 +57,7 @@ _2023年6月27日_
 
 _2023年4月12日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![新建](../assets/new.svg) 目录服务现在可以清理已删除的产品变型。
 ![修复](../assets/fix.svg) 基础架构可扩展性和性能改进。
@@ -66,7 +66,7 @@ _2023年4月12日_
 
 _2023年3月28日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![新建](../assets/new.svg) 已将样本添加到 [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) 查询。
 ![新建](../assets/new.svg) 添加了获取 `entityId` 使用 [API网格](mesh.md).
@@ -75,7 +75,7 @@ _2023年3月28日_
 
 _2023年3月6日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![新建](../assets/new.svg) 已添加 [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL功能。
 ![修复](../assets/fix.svg) 改进了性能和API可扩展性。
@@ -84,7 +84,7 @@ _2023年3月6日_
 
 _2023年2月7日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![新建](../assets/new.svg) 已发布目录服务元包以简化安装步骤。
 ![修复](../assets/fix.svg) API可扩展性和性能改进。
@@ -93,7 +93,7 @@ _2023年2月7日_
 
 _2023年1月17日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![新建](../assets/new.svg) 简化并改进了载入体验。
 ![新建](../assets/new.svg) 新的客户沙盒端点可用于预生产测试。
@@ -104,7 +104,7 @@ _2023年1月17日_
 
 _2022年11月18日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![新建](../assets/new.svg) 目录服务现在支持Adobe [API网格](https://developer.adobe.com/graphql-mesh-gateway/).
 ![修复](../assets/fix.svg) 改进了API可扩展性和整体性能。
@@ -113,7 +113,7 @@ _2022年11月18日_
 
 _2022年10月4_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![新建](../assets/new.svg) 现在支持捆绑产品和分组产品。
 ![新建](../assets/new.svg) 添加了B2B可见性覆盖。 产品现在可供搜索，并可添加到特定客户组的购物车中。
@@ -127,7 +127,7 @@ _2022年10月4_
 
 _2022年9月12日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![新建](../assets/new.svg) 变体支持的图像：根据所选选项返回产品图像
 ![新建](../assets/new.svg) 价格支持角色：仅允许特定客户组的成员查看产品价格
@@ -138,7 +138,7 @@ _2022年9月12日_
 
 _2022年8月9日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![新建](../assets/new.svg) 此 `products` 和 `refineProduct` 查询返回以下数据：
 
