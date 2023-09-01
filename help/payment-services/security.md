@@ -3,9 +3,10 @@ title: 安全性和合规性
 description: 查看您站点的安全性和合规性要求。
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
+source-git-commit: fef972355565472f0d0851a2e3cace692fb2db67
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -61,3 +62,10 @@ PCI 3-D Secure (3DS)支持在线购买信用卡时购买者与其信用卡发行
 为安全起见，PayPal在结账时不会传递账单地址 — 国家/地区、电子邮件和名称是唯一使用的账单信息。 您可以选择启用网站的PayPal签出，以联系PayPal并完成审查流程来返回完整的帐单地址。
 
 PayPal还集成了防欺诈功能，使用机器学习帮助你打击欺诈。 查看PayPal的 [卖方保护文档](https://www.paypal.com/us/webapps/mpp/security/seller-protection) 以了解更多信息。
+
+## 欺诈防护
+
+您可以使用为支付服务启用自动欺诈防护 [显着扩展](https://commercemarketplace.adobe.com/signifyd-module-connect.html).
+
+请参阅 [有效保护欺诈行为](fraud-protection.md) 以了解更多信息。
+

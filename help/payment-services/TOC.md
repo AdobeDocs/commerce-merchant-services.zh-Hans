@@ -6,9 +6,9 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '79'
+source-wordcount: '85'
 ht-degree: 2%
 
 ---
@@ -37,10 +37,13 @@ ht-degree: 2%
 - [测试和验证](test-validate.md)
 - [创建订单](create-order.md)
 - 财务报告 {#reporting}
+   - [交易报表](transactions.md)
    - [订单付款状态报表](order-payment-status.md)
    - [支付报表](payouts.md)
    - [可用数据](data.md)
 - 管理付款 {#manage}
    - [退款](refunds.md)
    - [空洞](voids.md)
-- [安全性和合规性](security.md)
+- 安全性 {#security-compliance}
+   - [安全性和合规性](security.md)
+   - [有效保护欺诈行为](fraud-protection.md)

@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 4b70917ed09dcae72c3ec829db2e243fad7b14d3
 workflow-type: tm+mt
-source-wordcount: '2036'
+source-wordcount: '2387'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ ht-degree: 0%
 
 | 字段 | 范围 | 描述 |
 |---|---|---|
-| [!UICONTROL Enable] | 网站 | 启用或禁用 [!DNL Payment Services] 用于您的网站。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Enable] | 网站 | 启用或禁用 [!DNL Payment Services] 用于您的网站。 选项： [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Payment mode] | 商店视图 | 为存储设置方法或环境。 选项： [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Sandbox Merchant ID] | 商店视图 | 您的沙盒商家ID，在沙盒载入期间自动生成。 |
 | [!UICONTROL Production Merchant ID] | 商店视图 | 您的生产商家ID，在沙盒载入期间自动生成。 |
@@ -108,8 +108,9 @@ ht-degree: 0%
    ![主视图](assets/payment-services-menu-small.png)
 
 1. 选择商店视图，在 **[!UICONTROL Scope]** 下拉菜单，您要为其启用付款方式。
-1. 要更改结账时显示的付款方式名称，请编辑 **[!UICONTROL Checkout title]** 字段。
+1. 在 **[!UICONTROL Credit card fields]** 部分中，编辑值 **[!UICONTROL Checkout title]** 用于更改结帐期间显示的付款方式名称的字段。
 1. 至 [设置付款操作](production.md#set-payment-services-as-payment-method)，切换 **[!UICONTROL Payment action]** 到 `Authorize` 或 `Authorize and Capture`.
+1. 要在结账页面上排定付款方法的优先级，请提供 `Numeric Only` 中的值 **[!UICONTROL Sort order]** 字段。
 1. 要启用 [3DS安全身份验证](security.md#3ds) (`Off` 默认情况下)切换 **[!UICONTROL 3DS Secure authentication]** 选择器到 `Always` 或 `When required`.
 1. 要启用或禁用结账页面上的信用卡字段，请切换 **[!UICONTROL Show on checkout page]** 选择器。
 1. 启用或禁用 [卡保险存储](#card-vaulting)，切换 **[!UICONTROL Vault enabled]** 选择器。
@@ -127,11 +128,47 @@ ht-degree: 0%
 |---|---|---|
 | [!UICONTROL Title] | 商店视图 | 在结帐期间在“付款方式”视图中添加文本，以显示此付款选项的标题。 选项： [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | 网站 | 此 [付款操作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定付款方式的。 选项： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Sort order] | 商店视图 | 结账页面上指定支付方式的排序顺序。 `Numeric Only` 值 |
 | [!UICONTROL 3DS Secure authentication] | 网站 | 启用或禁用 [3DS安全身份验证](security.md#3ds). 选项： [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
-| [!UICONTROL Show on checkout page] | 网站 | 启用或禁用要在结账页面上显示的信用卡字段。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | 商店视图 | 启用或禁用 [信用卡保险存储](vaulting.md). 选项： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show vaulted payment methods in Admin] | 商店视图 | 启用或禁用商家在管理员中为客户完成订单的功能 [使用保管式支付方式](vaulting.md). 选项： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Debug Mode] | 网站 | 启用或禁用调试模式。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show on checkout page] | 网站 | 启用或禁用要在结账页面上显示的信用卡字段。 选项： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Vault enabled] | 商店视图 | 启用或禁用 [信用卡保险存储](vaulting.md). 选项： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show vaulted payment methods in Admin] | 商店视图 | 启用或禁用商家在管理员中为客户完成订单的功能 [使用保管式支付方式](vaulting.md). 选项： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Debug Mode] | 网站 | 启用或禁用调试模式。 选项： [!UICONTROL Off] / [!UICONTROL On] |
+
+### Apple Pay
+
+此 [!UICONTROL Apple Pay] 按钮付款选项允许您提供 [!UICONTROL Apple Pay] 商店结账时的付款按钮。
+
+请参阅 [支付选项](payments-options.md#apple-pay-buttob) 以了解更多信息。
+
+您可以启用和配置 [!UICONTROL Apple Pay] 按钮付款选项：
+
+1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. 选择商店视图，在 **[!UICONTROL Scope]** 下拉菜单，您要为其启用付款方式。
+1. 在 **[!UICONTROL Apple Pay]** 部分中，编辑值 _[!UICONTROL Checkout title]_用于更改结帐期间显示的付款方式名称的字段。
+1. 至 [设置付款操作](production.md#set-payment-services-as-payment-method)，切换 **[!UICONTROL Payment action]** 到 `Authorize` 或 `Authorize and Capture`.
+1. 要在结账页面上启用或禁用Apple Pay，请切换 **[!UICONTROL Show Apple Pay on checkout page]** 选择器。
+1. 要在产品详细信息页面上启用或禁用Apple Pay，请切换 **[!UICONTROL Show Apple Pay on product detail page]** 选择器。
+1. 要在迷你购物车预览中启用或禁用Apple Pay，请切换 **[!UICONTROL Show Apple Pay on the mini cart preview]** 选择器。
+1. 要在购物车页面上启用或禁用Apple Pay，请切换 **[!UICONTROL Show Apple Pay on cart page]** 选择器。
+1. 要启用或禁用调试模式，请切换 **[!UICONTROL Debug Mode]** 选择器。
+1. 单击 **[!UICONTROL Save]**.
+
+   如果尝试离开此视图而不保存更改，会出现一个模式窗口，提示您放弃更改、继续编辑或保存更改。
+
+1. [刷新缓存](#flush-the-cache).
+
+#### 配置选项
+
+| 字段 | 范围 | 描述 |
+|---|---|---|
+| [!UICONTROL Checkout title] | 商店视图 | 在结帐期间在“付款方式”视图中添加文本，以显示此付款选项的标题。 选项： [!UICONTROL text field] |
+| [!UICONTROL Payment Action] | 网站 | 此 [付款操作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions) 指定付款方式的。 选项： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Show on checkout page] | 网站 | 启用或禁用“Apple支付”按钮以在结账页面上显示。 选项： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show on checkout page] | 网站 | 启用或禁用“Apple支付”按钮以在产品详细信息页面上显示。 选项： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show on mini cart preview] | 网站 | 启用或禁用“Apple支付”按钮以在迷你购物车预览中显示。 选项： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show on cart page] | 网站 | 启用或禁用“Apple支付”按钮以在购物车页面上显示。 选项： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Debug Mode] | 网站 | 启用或禁用调试模式。 选项： [!UICONTROL Off] / [!UICONTROL On] |
 
 ### 付款按钮
 
@@ -142,6 +179,7 @@ ht-degree: 0%
 1. 选择商店视图，在 **[!UICONTROL Scope]** 下拉菜单，您要为其启用付款方式。
 1. 要更改结账期间显示的付款方式名称，请编辑 **[!UICONTROL Checkout Title]** 字段。
 1. 至 [设置付款操作](production.md#set-payment-services-as-payment-method)，切换 **[!UICONTROL Payment action]** 到 `Authorize` 或 `Authorize and Capture`.
+1. 要在结账页面上排定付款方法的优先级，请提供 `Numeric Only` 中的值 **[!UICONTROL Sort order]** 字段。
 1. 使用切换选择器启用或禁用 [!DNL PayPal smart button] 显示功能：
 
    - **[!UICONTROL Show PayPal buttons on product checkout page]**
@@ -173,26 +211,27 @@ ht-degree: 0%
 |---|---|---|
 | [!UICONTROL Title] | 商店视图 | 在结帐期间，在“付款方式”视图中添加要作为此付款选项的标题显示的文本。 选项：文本字段 |
 | [!UICONTROL Payment Action] | 网站 | 此 [付款操作](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 指定付款方式的。 选项： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Sort order] | 商店视图 | 结账页面上指定支付方式的排序顺序。 `Numeric Only` 值 |
 | [!UICONTROL Show PayPal buttons on checkout page] | 商店视图 | 启用或禁用 [!DNL PayPal Smart Buttons] 在结帐页面上。 选项： [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on product detail page] | 商店视图 | 启用或禁用 [!DNL PayPal Smart Buttons] 在产品详细信息页面上。 选项： [!UICONTROL  Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal buttons in mini-cart preview] | 商店视图 | 启用或禁用 [!DNL PayPal Smart Buttons] 在迷你购物车预览中。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal buttons on cart page] | 商店视图 | 启用或禁用 [!DNL PayPal Smart Buttons] 在购物车页面上。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal Pay Later button] | 商店视图 | 启用或禁用显示付款按钮的稍后付款选项外观。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal Pay Later Message] | 网站 | 在购物车、产品页面、迷你购物车和结帐流程中启用或禁用“稍后付款”消息。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show Venmo button] | 商店视图 | 启用或禁用显示付款按钮的Venmo付款选项。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show Apple Pay button] | 商店视图 | 启用或禁用显示付款按钮的Apple支付付款选项。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal Credit and Debit card button] | 商店视图 | 启用或禁用显示付款按钮的信用卡和借记卡付款选项。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Debug Mode] | 网站 | 启用或禁用调试模式。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons in mini-cart preview] | 商店视图 | 启用或禁用 [!DNL PayPal Smart Buttons] 在迷你购物车预览中。 选项： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show PayPal buttons on cart page] | 商店视图 | 启用或禁用 [!DNL PayPal Smart Buttons] 在购物车页面上。 选项： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show PayPal Pay Later button] | 商店视图 | 启用或禁用显示付款按钮的稍后付款选项外观。 选项： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show PayPal Pay Later Message] | 网站 | 在购物车、产品页面、迷你购物车和结帐流程中启用或禁用“稍后付款”消息。 选项： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show Venmo button] | 商店视图 | 启用或禁用显示付款按钮的Venmo付款选项。 选项： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show Apple Pay button] | 商店视图 | 启用或禁用显示付款按钮的Apple支付付款选项。 选项： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show PayPal Credit and Debit card button] | 商店视图 | 启用或禁用显示付款按钮的信用卡和借记卡付款选项。 选项： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Debug Mode] | 网站 | 启用或禁用调试模式。 选项： [!UICONTROL Off] / [!UICONTROL On] |
 
 ### 按钮样式
 
-您还可以配置 _[!UICONTROL Button style]_paypal智能按钮的选项：
+您还可以配置 _[!UICONTROL Button style]_付款按钮的选项：
 
 1. 要更改 **[!UICONTROL Layout]**，选择 `Vertical` 或 `Horizontal`.
 
    >[!NOTE]
    >
-   > 如果按钮样式配置为 `Horizontal` 并且您的商店配置为显示多个PayPal智能按钮，则您只能看到产品页面、结帐页面和迷你购物车上显示的两个按钮，以及购物车中显示的一个按钮。
+   > 如果按钮样式配置为 `Horizontal` 且您的商店配置为显示多个付款按钮，则您只能看到产品页面、结帐页面和迷你购物车上显示两个按钮，购物车中显示的一个按钮。
 
 1. 要在水平布局中启用标语，请切换 **[!UICONTROL Show tagline]** 选择器。
 1. 要修改 **[!UICONTROL Color]**，选择所需的颜色选项。
@@ -210,17 +249,17 @@ ht-degree: 0%
 
 1. [刷新缓存](#flush-the-cache).
 
-您可以配置 [!DNL PayPal Smart Buttons] 样式 [在管理员的旧版配置中](configure-admin.md#configure-paypal-smart-buttons) 或此处输入 [!DNL Payment Services Home]. 请参阅 [PayPal按钮样式指南](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) 以了解有关这些选项的详细信息。
+您可以配置付款按钮样式 [在管理员的旧版配置中](configure-admin.md#configure-paypal-smart-buttons) 或此处输入 [!DNL Payment Services Home]. 请参阅 [PayPal按钮样式指南](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) 有关设置PayPal付款按钮样式的详细信息。
 
 #### 配置选项
 
 | 字段 | 范围 | 描述 |
 |--- |--- |--- |
 | [!UICONTROL Layout] | 商店视图 | 定义付款按钮的布局样式。 选项： [!UICONTROL Vertical] / [!UICONTROL Horizontal] |
-| [!UICONTROL Tagline] | 商店视图 | 启用/禁用标语。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Tagline] | 商店视图 | 启用/禁用标语。 选项： [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Color] | 商店视图 | 定义付款按钮的颜色。 选项： [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |
 | [!UICONTROL Shape] | 商店视图 | 定义付款按钮的形状。 选项： [!UICONTROL Rectangular] / [!UICONTROL Pill] |
-| [!UICONTROL Responsive Button Height] | 商店视图 | 定义付款按钮是否使用默认高度。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Responsive Button Height] | 商店视图 | 定义付款按钮是否使用默认高度。 选项： [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Height] | 商店视图 | 定义付款按钮的高度。 默认值：无 |
 | [!UICONTROL Label] | 商店视图 | 定义付款按钮中显示的标签。 选项： [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
 

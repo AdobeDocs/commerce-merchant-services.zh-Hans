@@ -5,16 +5,16 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1868'
 ht-degree: 0%
 
 ---
 
 # 订单付款状态报表
 
-[!DNL Payment Services] 对象 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供全面的报表，以便您清楚地了解商店的订单和付款。
+[!DNL Payment Services] 对象 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供全面的报表，以便您清楚地了解商店的 [交易](transactions.md)、订单和支付。
 
 有两个可用的“订单付款状态”报告视图，使您可以快速查看订单的付款状态：
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 订单付款状态视图帮助您轻松了解特定订单在订单到现金流程中的位置。 这些报告允许您根据订单的付款状态和付款日期快速查看订单，并识别任何潜在问题。
 
-您可以下载.csv文件格式的订单付款状态交易记录，以便在现有的会计或订单管理软件中使用。
+您可以 [下载订单付款状态](#download-order-payment-statuses) CSV文件格式，用于现有会计或订单管理软件。
 
 >[!NOTE]
 >
@@ -33,11 +33,11 @@ ht-degree: 0%
 
 可在Payment Services主页中找到订单付款状态数据可视化视图。 这是详细表格中每天汇总支付状态的可视表示形式 [订单付款状态报表视图](#order-payment-status-report-view).
 
-在 _管理员_ 侧栏，转到 **销售** > **支付服务** 查看数据可视化图表 [付款状态表](#statuses-information).
+在 _管理员_ 侧栏，转到 **销售** > **支付服务** > _订购_ 查看数据可视化图表 [付款状态表](#statuses-information).
 
 ![管理员中的支付数据可视化图表](assets/orderpayment-dataviz.png){zoomable=yes}
 
-单击 **查看报表** 导航到详细表格 [订单付款状态报表视图](#order-payment-status-report-view).
+单击 **[!UICONTROL View Report]** 导航到详细表格 [订单付款状态报表视图](#order-payment-status-report-view).
 
 ### 自定义状态时间范围
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 从“订单付款状态”可视化图表视图中，您可以通过选择日期范围来自定义要查看的付款状态的时间范围：
 
-1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**. 订单付款状态数据可视化图表视图在订单付款状态部分中可见。
+1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**. 订单支付状态数据可视化图表视图在以下位置可见： _订购_ 部分。
 1. 单击 **[!UICONTROL Range]** 选择器过滤器。
 1. 选择适用的日期范围 — 30天、15天或7天。
 1. 查看指定日期的状态信息。
@@ -69,9 +69,9 @@ ht-degree: 0%
 
 ## 订单付款状态报表视图
 
-在Payment Services的“订单付款状态”视图中可以使用“订单付款状态”报表视图。 它包括所有交易的详细状态 — 付款、已开票、已发运、退款、争议等。 此 [订单支付状态数据可视化视图](#order-payment-status-data-visualization-view) 在“付款服务主页”中，可以从“订单付款状态”报表视图中直观地显示每天的汇总付款状态。
+在Payment Services的“主页”视图中可以使用“订单付款状态”报表视图。 它包括所有交易的详细状态 — 付款、已开票、已发运、退款、争议等。
 
-在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Order payment status]** 要查看详细的表格形式订单付款状态报表视图，请执行以下操作：
+在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**要查看详细的表格形式订单付款状态报表视图，请执行以下操作：
 
 ![管理员中的订单付款状态交易记录](assets/orders-report-data.png)
 
@@ -87,11 +87,11 @@ ht-degree: 0%
 
 此 [!DNL Payment Services] 模块使用订单数据，并将其与其他来源（包括PayPal）的汇总付款数据相结合，以提供有意义且非常有用的报表。
 
-订单数据将导出并保留在支付服务中。 当您 [更改或添加订单状态](https://docs.magento.com/user-guide/sales/order-status-custom.html){target="_blank"} or [edit a store view](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target="_blank"}, [store](https://docs.magento.com/user-guide/stores/store-information.html){target="_blank"}或网站名称)时，该数据将与付款数据相结合，并且订单付款状态报表中会填充合并的信息。
+订单数据将导出并保留在支付服务中。 当您 [更改或添加订单状态](https://docs.magento.com/user-guide/sales/order-status-custom.html) 或 [编辑商店视图](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html)， [存储](https://docs.magento.com/user-guide/stores/store-information.html)或网站名称)时，该数据将与付款数据相结合，并且订单付款状态报表中会填充合并的信息。
 
 此过程包括两个步骤：
 
-1. 索引是更改的数据 `ON SAVE` （每次更改订单信息或商店信息时）或 `BY SCHEDULE` （按照预配置的cron计划），具体取决于在中如何进行配置 [索引管理](https://docs.magento.com/user-guide/system/index-management.html){target="_blank"} 在“管理员”中。
+1. 索引是更改的数据 `ON SAVE` （每次更改订单信息或商店信息时）或 `BY SCHEDULE` （按照预配置的cron计划），具体取决于在中如何进行配置 [索引管理](https://docs.magento.com/user-guide/system/index-management.html) 在“管理员”中。
 
    默认情况下，进行数据索引 `ON SAVE`，这意味着每当订单中的某些内容、订单状态、商店视图、商店或网站发生更改时，索引过程都会立即发生。
 
@@ -107,13 +107,13 @@ ht-degree: 0%
 
 即使默认情况下，重新索引也会在 `ON SAVE` 模式，建议您在 `BY SCHEDULE` 模式。 此 `BY SCHEDULE` 索引以1分钟的cron时间表运行，任何更改的数据将在任何数据更改后的2分钟内显示在订单状态报表中。 此计划的重新索引可帮助您减少存储空间上的任何压力，尤其是在您有大量传入订单的情况下，因为它按计划进行（而不是在每次下订单时）。
 
-您可以更改索引模式 — `ON SAVE` 或 `BY SCHEDULE`—[在管理员中](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"}.
+您可以更改索引模式 — `ON SAVE` 或 `BY SCHEDULE`—[在管理员中](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
 
 要了解如何配置数据导出，请参阅 [命令行配置](configure-cli.md#configure-data-export).
 
 ### 选择数据源
 
-在“订单付款状态”报表视图中，您可以选择数据源 — _[!UICONTROL Live]_或_[!UICONTROL Sandbox]_ — 要查看其报告结果。
+在“订单付款状态”报表视图中，您可以选择数据源 — **[!UICONTROL Live]** _或 **[!UICONTROL Sandbox]** — 要查看其报告结果。
 
 ![数据源选择](assets/datasource.png){width=400px}
 
@@ -127,8 +127,8 @@ ht-degree: 0%
 
 要为选择数据源，请执行以下操作 [!UICONTROL Order Payment Status] 报告：
 
-1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. 单击 **[!UICONTROL Data source]** 并选择 _[!UICONTROL Live]_或_[!UICONTROL Sandbox]_.
+1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**.
+1. 单击 _[!UICONTROL Data source]_选择器筛选并选择&#x200B;**[!UICONTROL Live]**或&#x200B;**[!UICONTROL Sandbox]**.
 
    报表结果会根据所选数据源重新生成。
 
@@ -136,16 +136,26 @@ ht-degree: 0%
 
 从“订单付款状态”报表视图中，您可以通过选择特定日期来自定义要查看的状态的时间范围。 默认情况下，网格中显示30天的订单付款状态。
 
-1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. 单击 **[!UICONTROL Order dates]** 日历选择器过滤器。
+1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
+1. 单击 _[!UICONTROL Order dates]_日历选择器过滤器。
 1. 选择适用的日期范围。
 1. 在网格中查看指定日期的订单付款状态。
+
+### 筛选报表信息
+
+从“订单付款状态”报表视图中，您可以通过选择筛选条件来筛选要查看的状态结果。
+
+1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
+1. 单击 **[!UICONTROL Filter]** 选择器。
+1. 切换 _付款状态_ 选项，用于仅查看选定订单付款状态的报表结果。
+1. 输入 _最小订单金额_ 或 _最大订单金额_ 以便在该订单金额范围内查看报表结果。
+1. 单击 **[!UICONTROL Hide filters]** 以隐藏筛选器。
 
 ### 显示和隐藏列
 
 默认情况下，“订单付款状态”报表会显示所有可用的信息列。 但是，您可以自定义您在报表中看到的列。
 
-1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 单击 _列设置_ 图标(![列设置图标](assets/column-settings.png))。
 1. 要自定义您在报表中看到的列，请选中或取消选中列表中的列。
 
@@ -153,9 +163,7 @@ ht-degree: 0%
 
 ### 查看状态
 
-“订单付款状态”报表视图显示每个付款服务订单的综合事务处理状态和支付状态信息。
-
-#### 交易状态
+“订单付款状态”报表视图显示每个订单的综合付款状态信息。
 
 默认情况下，网格中显示30天的订单付款状态。
 
@@ -177,7 +185,7 @@ ht-degree: 0%
 
 您也可以手动强制刷新订单付款状态报表数据，以查看最新的报表信息。
 
-1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 单击 _刷新_ 图标(![刷新图标](assets/refresh-button-med.png))。
 
    订单付款状态报表数据已刷新，并且 *[!UICONTROL Update complete]* 确认即会出现，网格中会显示最新信息。
@@ -186,7 +194,7 @@ ht-degree: 0%
 
 您可以在订单付款状态报表中查看商店订单上的任何争议，然后定位至PayPal解决中心对其执行操作。
 
-1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 导航至 **[!UICONTROL Disputes column]**.
 1. 查看特定订单的任何争议并查看 [争议状态](#order-payment-status-information).
 1. 单击争议ID链接(以 _PP-D-_)以转到 [PayPal解决中心](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
@@ -198,28 +206,13 @@ ht-degree: 0%
 
 您可以下载.csv文件，该文件的所有状态均显示在“订单付款”状态视图网格中，无论您查看的是默认的30天状态还是自定义的时间范围。
 
-1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 如果您希望查看过去30天以外的其他时间范围的状态， [自定义状态的日期范围时间范围](#customize-dates-timeframe).
 1. 单击 _下载_ (![下载图标](assets/icon-download.png))图标。
 
 您的订单付款状态将以.csv格式下载。
 
-<!-- ## Default order payment status timeframes
-
-These order payment status timeframes are currently available in [!DNL Payment Services].
-
-| Report       | Description          |
-| ------------ | -------------------- |
-| Yesterday | Available from the Order payment status dates selector, this shows information for the prior date. |
-| | Today | Available from the Order payment status dates selector, this shows information for the current day. |
-| Last 7 days | Available from the Order payment status dates selector, this shows information for the last seven days. |
-| Last 30 days | Available from the Order payment status dates selector and by default in the Order payment statuses view, this shows information for the last 30 days. |
-| Last 90 days | Available from the Order payment status dates selector, this shows information for the last 90 days. |
-| Year to date | Available from the Order payment status dates selector, this shows information for the the entire year to date. |
-| Custom range | Available from the Order payment status dates selector, this can be filtered to show a custom date range. |
--->
-
-#### 状态信息
+### 列描述
 
 订单付款状态报表包括以下信息。
 

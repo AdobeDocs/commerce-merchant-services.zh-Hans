@@ -5,16 +5,16 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1316'
 ht-degree: 0%
 
 ---
 
 # 支付报表
 
-[!DNL Payment Services] 对象 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供全面的报表，以便您清楚地了解商店的订单和付款。
+[!DNL Payment Services] 对象 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供全面的报表，以便您清楚地了解商店的交易、订单和付款。
 
 有两个可用的付款报告视图，使您能够查看有关所有付款的深入信息：
 
@@ -22,6 +22,8 @@ ht-degree: 0%
 * **[支付报表视图](#payouts-report-view)** — 支付中提供的报告，显示所有事务处理的详细支付信息
 
 “付款”视图一目了然地显示全面的付款信息，使您可以对付款金额、处理数量以及财务对帐事务处理级别的详细报告实现完全透明。
+
+您可以 [下载支付交易记录](#download-transactions) CSV文件格式，用于现有会计或订单管理软件。
 
 >[!NOTE]
 >
@@ -65,15 +67,15 @@ ht-degree: 0%
 
 ## 支付报表视图
 
-付款报表视图在Payment Services的“付款”视图中可用。 它包括有关您商店的付款的所有可用信息。 此 [支付数据可视化视图](#payouts-data-visualization-view) 在Payment Services主页中，可以直观地表示此更详细的报表视图中的每日汇总金额。
+付款报表视图在Payment Services的“付款”视图中可用。 它包括有关您商店的付款的所有可用信息。
 
-在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** 查看详细的表格式支付报表视图。
+在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**查看详细的表格式支付报表视图。
 
 ![管理员中的支付交易记录](assets/payouts-report-new.png){zoomable=yes}
 
 您可以根据本主题中的部分对此视图进行配置，以便最好地呈现您希望查看的数据。
 
-请参阅链接的商务订单和交易ID、交易金额、每笔交易的付款方式等，所有这些都在管理员的支付报表中。
+请参阅链接的商务订单和交易ID、交易金额、每笔交易的付款方式等，所有这些都可在此报表中。
 
 您可以 [下载支付交易记录](#download-transactions) CSV文件格式，用于现有会计或订单管理软件。
 
@@ -83,7 +85,7 @@ ht-degree: 0%
 
 ### 选择数据源
 
-在支付报表视图中，您可以选择数据源 — _[!UICONTROL Live]_或_[!UICONTROL Sandbox]_ — 要查看其报告结果。
+在支付报表视图中，您可以选择数据源 — **[!UICONTROL Live]** 或 **[!UICONTROL Sandbox]** — 要查看其报告结果。
 
 ![数据源选择](assets/datasource.png){width=400px}
 
@@ -97,8 +99,8 @@ ht-degree: 0%
 
 要为订单付款状态报表选择数据源，请执行以下操作：
 
-1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-1. 单击 **[!UICONTROL Data source]** 并选择 _[!UICONTROL Live]_或_[!UICONTROL Sandbox]_.
+1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
+1. 单击 **[!UICONTROL Data source]** 并选择 **[!UICONTROL Live]** 或 **[!UICONTROL Sandbox]**.
 
    报表结果会根据所选数据源重新生成。
 
@@ -114,8 +116,8 @@ ht-degree: 0%
 
 在“支付报表”视图中，您可以通过输入特定日期或从日期选择器中选择日期范围，自定义要查看的支付事务处理的时间范围：
 
-1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-1. 单击交易日期日历选择器过滤器。
+1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
+1. 单击 _[!UICONTROL Transaction dates]_日历选择器过滤器。
 1. 选择适用的日期范围。
 1. 查看网格中指定日期的付款状态。
 
@@ -123,7 +125,7 @@ ht-degree: 0%
 
 默认情况下，“付款”报表视图会显示大多数可用的信息列。 但是，您可以自定义您在报表中看到的列。
 
-1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Payouts]**.
+1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. 单击 _列设置_ 图标(![列设置图标](assets/column-settings.png))。
 1. 要自定义您在报表中看到的列，请选中或取消选中列表中的列。
 
@@ -133,7 +135,7 @@ ht-degree: 0%
 
 您可以下载一个.csv文件，其中包含在“付款”视图网格中显示的所有事务。
 
-1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
+1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. [自定义交易的日期范围时间范围](#customize-transactions-timeframe).
 1. 单击 _下载_ (![](assets/icon-download.png))图标。
 

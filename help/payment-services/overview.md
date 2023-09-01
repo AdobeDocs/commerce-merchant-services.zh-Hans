@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: b1984085fa5d10c8202d2a982227e183d0b169e8
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 * [**入门**](onboard.md) — 该过程将指导您完成商业注册、技术配置、授权、沙盒环境配置和实时支付支持。
 * [**付款选项**](payments-options.md) — 设置付款选项以自定义商店（或多商店）客户可用的方式。
-* **现金流量管理财务报告** — 同步 [付款详细信息](order-payment-status.md) ，以完全透明地处理交易量、支付余额和细节 [交易层报告](payouts.md) 进行财务对账。
+* **现金流量管理财务报告** — 同步 [付款详细信息](order-payment-status.md) 以实现对处理量、支付余额、 [付款](payouts.md)和详细信息 [交易层报告](transactions.md) 实现财务对账以及交易可视性的最大限度。
 * **透明的定价** — 定价是明确的、预先的；您所看到的就是您得到的结果。
 * **高效的结账体验** — 扫除一切障碍，实现快速而简单的结帐，用以下方式创造忠实客户 [卡保险存储](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) 和 [即时购买](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (默认情况下为Adobe Commerce启用)功能。
 

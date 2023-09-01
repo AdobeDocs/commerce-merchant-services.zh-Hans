@@ -3,9 +3,9 @@ title: 付款选项
 description: 设置付款选项以自定义商店客户可用的方法。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 9a52976be16afa707b494f4da3b99192dd73b8f2
+source-git-commit: a9045c13d35797ce1a85697b70849d718dbc2e87
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,18 @@ ht-degree: 0%
 
 您还可以更改信用卡字段的布局、宽度、高度和外部样式。 请参阅 [PayPal文档](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) 以了解更多信息。
 
+## [!DNL Apple Pay] 按钮
+
+客户可以使用 [[!DNL Apple Pay]](https://www.apple.com/apple-pay/)，利用存储在iOS或macOS设备上的信用卡和借记卡支付凭据进行购买。
+
+此 [!DNL Apple Pay] 按钮在产品页面、迷你购物车、购物车和结账视图中可见。
+
+>[!NOTE]
+>
+> 使用 [!DNL Apple Pay] 对于您的商店，完成 [自助注册 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_注册您的实时域_ 部分)和 [在中为您的商店配置它 [!DNL Payment Services]](settings.md#payment-buttons).
+
+您可以配置 [!UICONTROL Apple Pay] 在商店配置或Payment Services主页中。 请参阅 [设置](settings.md#apple-pay) 以了解更多信息。
+
 ## [!DNL PayPal Smart Buttons]
 
 [!DNL PayPal Smart Buttons]，使用PayPal完成购买，存储购物者的送货地址、帐单地址和付款详细信息，以供将来使用。 购物者可以使用PayPal以前存储或提供的任何支付方式。
@@ -59,16 +71,6 @@ ht-degree: 0%
 客户可使用以下工具结帐： [文莫](https://venmo.com/) 按钮。
 
 此 [!DNL Venmo] 按钮在产品页面、迷你购物车、购物车和结账视图中可见。
-
-### [!DNL Apple Pay] 按钮
-
-客户可以在他们的设备上使用Touch ID来使用 [[!DNL Apple Pay]](https://www.apple.com/apple-pay/)，使用存储在其iOS或macOS设备上的信用卡和借记卡支付凭据。
-
-此 [!DNL Apple Pay] 按钮在产品页面、迷你购物车、购物车和结账视图中可见。
-
->[!NOTE]
->
-> 使用 [!DNL Apple Pay] 对于您的商店，完成 [自助注册 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_注册您的实时域_ 部分)和 [在中为您的商店配置它 [!DNL Payment Services]](settings.md#payment-buttons).
 
 ### PayPal借记或信用卡按钮
 
