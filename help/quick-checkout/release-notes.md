@@ -3,9 +3,9 @@ title: '[!DNL Quick Checkout] 发行说明'
 description: 查看发行说明，了解所有 [!DNL Quick Checkout] 版本发布。
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
 feature: Release Notes, Services, Checkout
-source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
+source-git-commit: b0f9aee6603ecbc0c711190adb52440d05219368
 workflow-type: tm+mt
-source-wordcount: '1422'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 0%
 ![修复的问题](../assets/fix.svg) 修复和改进功能
 ![已知问题](../assets/bug.svg) 已知问题
 
-请参阅 [即将发布的版本](https://devdocs.magento.com/release/) 了解发布计划和支持。
+请参阅 [即将发布的版本](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) 了解发布计划和支持。
 
-请参阅 [可用性](https://devdocs.magento.com/release/availability.html) ，了解有关产品兼容性的信息。
+请参阅 [可用性](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) ，了解有关产品兼容性的信息。
 
 ## 管理面板更新
 
@@ -82,7 +82,7 @@ _2022年10月5_
 
 _2023年2月24日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![新建](../assets/new.svg)<!-- Issue BOLT-520 --> 正式发布版 — [[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) 现已在Adobe Commerce Cloud版本2.4.6及更高版本中预安装。
 
@@ -92,7 +92,7 @@ _2023年2月24日_
 
 _2023年2月22日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![修复的问题](../assets/fix.svg)<!-- Issue AC-8002 --> 使用下达订单时的用户体验改进 [多运输](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/multishipping-settings.html) 方法。 此功能支持在结账时显示支付方式 [!DNL Quick Checkout] 已启用。
 
@@ -100,7 +100,7 @@ _2023年2月22日_
 
 _2023年2月9日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![修复的问题](../assets/fix.svg)<!-- Issue BOLT-567 --> 在以下情况下改善用户体验： [下订单](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) 使用 [店内投放](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery.html) 具有的方法 [!DNL Quick Checkout] 已禁用。
 
@@ -110,7 +110,7 @@ _2023年2月9日_
 
 _2023年1月18日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![新建](../assets/new.svg)<!-- Issue BOLT-522 --> 可以启用/禁用新配置以检测 [购物者](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-options/checkout-adobe-commerce.html) 可自动登录Bolt。
 
@@ -126,7 +126,7 @@ _2023年1月18日_
 
 _2022年11月30日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![新建](../assets/new.svg)<!-- Issue BOLT-513 --> 现在，当Adobe Commerce客户在结帐过程中登录到应用商店，并且具有Bolt帐户时，将会显示用于登录到购物者的Bolt帐户的选项。
 
@@ -138,7 +138,7 @@ _2022年11月30日_
 
 _2022年11月2_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![新建](../assets/new.svg)<!-- Issue BOLT-293 --> 现在， [!DNL Quick Checkout] 包括启用 [结账跟踪](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) 设置，允许Adobe Commerce与Bolt共享报表信息。
 
@@ -148,7 +148,7 @@ _2022年11月2_
 
 _2022年9月8日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![新建](../assets/new.svg)<!-- Issue BOLT-341 --> 正式发布版 — [[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) 现在与Adobe Commerce版本2.4.5兼容。
 
@@ -172,7 +172,7 @@ _2022年9月8日_
 
 _2022年8月12日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![修复的问题](../assets/fix.svg)<!-- Issue BOLT-375 --> 中的用户体验改进 [[!DNL Quick Checkout] 管理面板](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 现在，仅包含在启用扩展时可见并验证的参数。
 
@@ -182,7 +182,7 @@ _2022年8月12日_
 
 _2022年8月9日_
 
-[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+[!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![新建](../assets/new.svg)<!-- Issue BOLT-341 --> 正式发布版 — [[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) 现在与Adobe Commerce版本2.4.1到2.4.4兼容。
 
