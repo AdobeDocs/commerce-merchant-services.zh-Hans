@@ -3,7 +3,7 @@ title: “Adobe Commerce中Bolt用户的结账流程”
 description: 概述 [!DNL Quick Checkout] Adobe Commerce中Bolt用户的流程。
 exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
 feature: Checkout, Services, Storefront
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 1. 输入发送给该用户的一次性密码(OTP) [!DNL Bolt] 帐户的电子邮件地址或手机，具体取决于 [用户在 [!DNL Bolt] 帐户](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
 
-![OTP弹出窗口](assets/new-logo-otp-email.png)
+![OTP弹出窗口](assets/new-logo-otp-email.png){width="300" zoomable="yes"}
 
 1. 使用登录后 [!DNL Bolt] 帐户，则将自动添加详细信息：
 

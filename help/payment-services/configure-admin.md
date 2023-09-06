@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 366689fccdf3ae93700d458bf9cbcab63e4583a8
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '1407'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. 在左侧面板中，展开 **[!UICONTROL Sales]** 并选择 **[!UICONTROL Payment Methods]**.
 
-   ![“方法”视图](assets/methods-view.png)
+   ![“方法”视图](assets/methods-view.png){width="400" zoomable="yes"}
 
 1. 展开 _[!UICONTROL Recommended Solutions]_部分。
 1. 在 _[!UICONTROL [!DNL Payment Services]]_部分，展开_[!UICONTROL General Configuration]_ 部分。

@@ -5,7 +5,7 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] 对象 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 是您的全包自助服务解决方案，包括沙盒测试和简单的设置，用于为您的Commerce网站提供稳定且安全的支付处理。
 
-![[!DNL Payment Services] 扩展管理员视图](assets/admin-view.png)
+![[!DNL Payment Services] 扩展管理员视图](assets/admin-view.png){width="300" zoomable="yes"}
 
 无论您是小型企业、中端市场竞争者还是大型企业，此支付解决方案都有助于您减少运营开销、增加收入，并为您提供有用的工具来改善整个购物体验。
 

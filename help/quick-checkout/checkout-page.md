@@ -3,7 +3,7 @@ title: “结帐页面”
 description: “Adobe Commerce中结帐页面的概述。”
 exl-id: afe3a93d-8aba-428e-ac9d-0be8d23ceb47
 feature: Checkout, Services, Storefront
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 结账页面的示例：
 
-![签出页面](assets/checkout-page.png)
+![签出页面](assets/checkout-page.png){width="600" zoomable="yes"}
 
 有关Adobe Commerce标准签出页面的更多信息，请参阅 [结账页面](https://docs.magento.com/user-guide/quick-tour/checkout-page.html) 主题。
 

@@ -6,7 +6,7 @@ seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerc
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
 feature: Payments, Checkout
 recommendations: noCatalog
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 0%
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 如果您需要本指南中未涉及的信息或问题，请使用主页上的以下资源：
 
-![帮助资源](assets/help-resources.png)
+![帮助资源](assets/help-resources.png){width="600" zoomable="yes"}
 
 * [帮助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) — 搜索 [!DNL Payment Services]知识库中相关的故障排除文章。
 * [支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) — 提交票证以接收其他帮助。

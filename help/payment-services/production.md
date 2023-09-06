@@ -3,7 +3,7 @@ title: 启用 [!DNL Payment Services] 用于生产
 description: 通过启用 [!DNL Payment Services] 用于生产。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 0%
@@ -78,7 +78,7 @@ ht-degree: 0%
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. 单击 **[!UICONTROL Get Live Payments]** 在您的 [!DNL Payment Services] 家。
 
-   ![请求权利](assets/request-entitlements.png)
+   ![请求权利](assets/request-entitlements.png){width="500" zoomable="yes"}
 
 1. 完成表单。
 1. 销售团队的成员将与您联系。

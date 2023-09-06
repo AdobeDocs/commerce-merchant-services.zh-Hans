@@ -3,7 +3,7 @@ title: ’[!DNL Quick Checkout] 用户设置
 description: 设置用户角色和权限以显示 [!DNL Quick Checkout] 管理面板。
 exl-id: 76393840-8312-41bb-8447-412849815169
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 1. 在 _管理员_ 侧栏，导航到 **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**.
 
-   ![菜单“快速签出”](assets/overview-admin-panel.png)
+   ![菜单“快速签出”](assets/overview-admin-panel.png){width="600" zoomable="yes"}
 
 请参阅 [入门](../quick-checkout/onboarding.md) 主题以了解有关如何配置 [!DNL Quick Checkout] 用于Adobe Commerce。
 
@@ -26,12 +26,12 @@ ht-degree: 0%
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL System]** >权限> **[!UICONTROL User Roles]**.
 
-   ![用户角色](assets/user-roles-small.png)
+   ![用户角色](assets/user-roles-small.png){width="300" zoomable="yes"}
 
 1. 在 _角色_ 视图，单击 **添加新角色**
 1. 选择 [!DNL Quick Checkout] 资源：
 
-   ![快速签出角色和权限](assets/role-resource-quick-checkout.png)
+   ![快速签出角色和权限](assets/role-resource-quick-checkout.png){width="300" zoomable="yes"}
 
 1. 单击 **保存角色**.
 

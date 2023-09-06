@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 4b70917ed09dcae72c3ec829db2e243fad7b14d3
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '2387'
+source-wordcount: '2381'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
-   ![主视图](assets/payment-services-menu-small.png)
+   ![主视图](assets/payment-services-menu-small.png){width="400" zoomable="yes"}
 
 1. 单击 **[!UICONTROL Settings]**. 请参阅 [简介 [!DNL Payment Services] 主页](payments-home.md) 以了解更多信息。
 
@@ -57,9 +57,6 @@ ht-degree: 0%
 您可以添加 [!UICONTROL Soft Descriptor] 至您的网站或单个商店视图配置。 客户交易银行对帐单上显示软描述符。 例如，如果您有多个商店/品牌/目录，则可以通过将自定义文本添加到 [!UICONTROL Soft Descriptor] 字段。
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-
-   ![主视图](assets/payment-services-menu-small.png)
-
 1. 单击 **[!UICONTROL Settings]**. 请参阅 [简介 [!DNL Payment Services] 主页](payments-home.md) 以了解更多信息。
 1. 选择网站或商店视图，在 **[!UICONTROL Scope]** 下拉菜单，您要为其创建软描述符。 对于初始设置，请将其保留为 **[!UICONTROL Default]** 以设置默认值。
 1. 在文本字段中添加自定义文本（最多22个字符），替换 `Custom descriptor`.
@@ -91,9 +88,6 @@ ht-degree: 0%
 现在您已启用 [!UICONTROL Payment Services] 对于您的网站，您可以更改付款功能和店面显示的默认设置。
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-
-   ![主视图](assets/payment-services-menu-small.png)
-
 1. 单击 **[!UICONTROL Settings]**. 请参阅 [简介 [!DNL Payment Services] 主页](payments-home.md) 以了解更多信息。
 1. 配置付款选项 [信用卡](#credit-card-fields)， [付款按钮](#payment-buttons)、和 [按钮样式](#button-style)，详见以下部分。
 
@@ -104,9 +98,6 @@ ht-degree: 0%
 请参阅 [支付选项](payments-options.md#credit-card-fields) 以了解更多信息。
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-
-   ![主视图](assets/payment-services-menu-small.png)
-
 1. 选择商店视图，在 **[!UICONTROL Scope]** 下拉菜单，您要为其启用付款方式。
 1. 在 **[!UICONTROL Credit card fields]** 部分中，编辑值 **[!UICONTROL Checkout title]** 用于更改结帐期间显示的付款方式名称的字段。
 1. 至 [设置付款操作](production.md#set-payment-services-as-payment-method)，切换 **[!UICONTROL Payment action]** 到 `Authorize` 或 `Authorize and Capture`.
@@ -241,7 +232,7 @@ ht-degree: 0%
 
    当您更改布局、颜色、形状、高度和标签的配置选项时，该配置的可视预览会显示在“设置”页面的底部。
 
-   ![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="500"}
+   ![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="400" zoomable="yes"}
 
 1. 单击 **[!UICONTROL Save]**.
 
@@ -274,7 +265,7 @@ ht-degree: 0%
 - **付款方式[!DNL Payment Services]** — 此资源可确保当您在Admin中创建订单时， [!DNL Payment Services] 信用卡可作为付款方式使用。 如果您选择 **操作** 父资源，也将选择此资源。
 - **[!DNL Payment Services]** — 此资源包括 **仪表板** 和 **SaaS服务代理** 资源，也必须选择该属性。 它们确保 [!DNL Payment Services] 显示在 _销售_ 菜单。
 
-  ![Payment Services资源](assets/roles-payments.png)
+  ![Payment Services资源](assets/roles-payments.png){width="400" zoomable="yes"}
 
 ## 刷新缓存
 

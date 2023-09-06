@@ -2,7 +2,7 @@
 title: 结帐
 description: 根据客户的需求自定义结帐。
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 购物者的结帐页面上会显示一条错误消息。 消息可能有所不同。
 
-![检查时出错](assets/user-checkout-error.png "签出时出错")
+![检查时出错](assets/user-checkout-error.png "签出时出错"){width="600" zoomable="yes"}
 
 有关已取消订单的注释也会显示在特定 [订购](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en).
 
-![已取消订单管理员中的订单评论](assets/admin-checkout-error.png "已取消订单管理员中的订单评论")
+![已取消订单管理员中的订单评论](assets/admin-checkout-error.png "已取消订单管理员中的订单评论"){width="600" zoomable="yes"}
 
 如果购物者获得了订单授权，但并未创建订单并将其转换为 `Capture`，则订单会自动失效。 此过程确保购物者的信用卡上不会预留任何信用，并避免在标准29天期限结束时授权失效时产生的支付提供商费用。
 

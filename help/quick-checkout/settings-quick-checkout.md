@@ -3,7 +3,7 @@ title: 配置 [!DNL Quick Checkout] for Adobe Commerce扩展
 description: 了解的配置选项 [!DNL Quick Checkout] 以及如何成功载入和设置扩展。
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 1%
@@ -19,13 +19,13 @@ ht-degree: 1%
 1. 在 _管理员_ 侧栏，转到 **商店** > _设置_ > **配置**.
 1. 在左侧面板中，展开 **销售** 并选择 **结帐**.
 
-   ![快速签出](assets/config-new-logo-view.png)
+   ![快速签出](assets/config-new-logo-view.png){width="800" zoomable="yes"}
 
 请参阅 [入门](../quick-checkout/onboarding.md) 主题以了解有关如何配置 [!DNL Quick Checkout] 用于Adobe Commerce。
 
 ## 启用扩展
 
-![快速签出](assets/enable-method.png)
+![快速签出](assets/enable-method.png){width="500" zoomable="yes"}
 
 | 字段 | 范围 | 描述 |
 |---|---|---|
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 ## 帐户凭据
 
-![快速签出](assets/account-creds.png)
+![快速签出](assets/account-creds.png){width="500" zoomable="yes"}
 
 | 字段 | 范围 | 描述 |
 |---|---|---|
@@ -48,7 +48,7 @@ ht-degree: 1%
 
 ## 服务设置
 
-![快速签出](assets/service-settings.png)
+![快速签出](assets/service-settings.png){width="500" zoomable="yes"}
 
 | 字段 | 范围 | 描述 |
 |---|---|---|

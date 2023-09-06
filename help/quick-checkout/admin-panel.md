@@ -3,7 +3,7 @@ title: ’[!DNL Quick Checkout] (适用于Adobe Commerce管理面板)
 description: 了解如何 [!DNL Quick Checkout] 管理面板可帮助如何成功载入、设置和可视化扩展。
 exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**：
 1. 在此视图中，您可以访问 _管理面板_ 概述， _资源_ 关于 [!DNL Quick Checkout]，获取 _帮助与支持_，或通过配置扩展 _设置_.
 
-   ![菜单“快速签出”](assets/admin-panel-view.png)
+   ![菜单“快速签出”](assets/admin-panel-view.png){width="600" zoomable="yes"}
 
 检查用户是否具有适当的角色和权限，以便能够 [!DNL Quick Checkout] 要显示的管理面板。 请参阅 [用户角色和权限](../quick-checkout/user-roles-setup.md) 主题以了解更多信息。
 

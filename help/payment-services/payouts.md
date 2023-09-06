@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1310'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** 查看信用与借记的数据可视化图表以及一段时间内的移动平均值。
 
-![管理员中的支付数据可视化图表](assets/payouts-report.png){zoomable=yes}
+![管理员中的支付数据可视化图表](assets/payouts-report.png){width="800" zoomable="yes"}
 
 单击 **[!UICONTROL View Report]** 导航到详细表格 [支付报表视图](#payouts-report-view).
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**查看详细的表格式支付报表视图。
 
-![管理员中的支付交易记录](assets/payouts-report-new.png){zoomable=yes}
+![管理员中的支付交易记录](assets/payouts-report-new.png){width="800" zoomable="yes"}
 
 您可以根据本主题中的部分对此视图进行配置，以便最好地呈现您希望查看的数据。
 
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 在支付报表视图中，您可以选择数据源 — **[!UICONTROL Live]** 或 **[!UICONTROL Sandbox]** — 要查看其报告结果。
 
-![数据源选择](assets/datasource.png){width=400px}
+![数据源选择](assets/datasource.png){width="300" zoomable="yes"}
 
 如果 _[!UICONTROL Live]_是选定的数据源，您可以查看生产模式下存储的报表信息。 如果_[!UICONTROL Sandbox]_ 是选定的数据源，您可以在沙盒模式下查看存储的报表信息。
 
@@ -126,7 +126,7 @@ ht-degree: 0%
 默认情况下，“付款”报表视图会显示大多数可用的信息列。 但是，您可以自定义您在报表中看到的列。
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
-1. 单击 _列设置_ 图标(![列设置图标](assets/column-settings.png))。
+1. 单击 _列设置_ 图标(![列设置图标](assets/column-settings.png){width="20" zoomable="yes"})。
 1. 要自定义您在报表中看到的列，请选中或取消选中列表中的列。
 
    支付报表视图将立即显示您在“列设置”菜单中所做的任何更改。 列首选项将进行保存，如果您离开报表视图，这些首选项将保持有效。
@@ -137,7 +137,7 @@ ht-degree: 0%
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. [自定义交易的日期范围时间范围](#customize-transactions-timeframe).
-1. 单击 _下载_ (![](assets/icon-download.png))图标。
+1. 单击 _下载_ (![](assets/icon-download.png){width="20" zoomable="yes"})图标。
 
 您的付款交易记录将以.csv格式下载。
 

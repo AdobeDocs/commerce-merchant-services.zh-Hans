@@ -3,7 +3,7 @@ title: 设置测试沙盒
 description: 使用PayPal沙盒帐户以使用 [!DNL Payment Services] 处于测试模式。
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
@@ -32,7 +32,7 @@ PayPal沙盒帐户允许您使用 [!DNL Payment Services] 处于测试模式。 
    1. 在 _[!UICONTROL Sandbox Accounts]_部分中，单击_[!UICONTROL Manage accounts]_ 您创建的沙盒帐户的列。
    1. 单击 **[!UICONTROL View/edit account]**.
 
-      ![PayPal — 查看/编辑沙盒帐户](assets/onboarding-viewedit-sandbox.png)
+      ![PayPal — 查看/编辑沙盒帐户](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
 
    1. 复制并保存电子邮件ID和系统生成的密码以供将来使用。
 
@@ -48,7 +48,7 @@ PayPal沙盒帐户允许您使用 [!DNL Payment Services] 处于测试模式。 
 1. 输入您在步骤3中生成的PayPal沙盒帐户的电子邮件和密码（不是您的PayPal商业帐户信息）以及您所在国家或地区。
 1. 单击 **[!UICONTROL Next]**.
 
-   ![PayPal — 连接PayPal帐户以进行支付](assets/paypal-connectacct.png)
+   ![PayPal — 连接PayPal帐户以进行支付](assets/paypal-connectacct.png){width="300" zoomable="yes"}
 
 1. 使用您之前保存的沙盒帐户凭据继续遵循PayPal流程。
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.

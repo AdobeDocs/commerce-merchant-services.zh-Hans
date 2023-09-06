@@ -3,7 +3,7 @@ title: ’[!DNL Quick Checkout] 报告
 description: ’[!DNL Quick Checkout] 提供了全面的报表信息。”
 exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 [!DNL Quick Checkout] 对于Adobe Commerce和Magento Open Source，提供了全面的报表，以便您能够获得有关商店结账体验统计的详细信息。
 
-![“报表”视图](assets/reports-view-big-checkout.png)
+![“报表”视图](assets/reports-view-big-checkout.png){width="600" zoomable="yes"}
 
 >[!WARNING]
 >
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 “概述”部分中的图表显示有关商店结账性能的详细信息，包括平均结账时间、结账或结账放弃期间创建的新帐户。
 
-![报表概述](assets/overview-report-checkout.png)
+![报表概述](assets/overview-report-checkout.png){width="600" zoomable="yes"}
 
 | 图表 | 描述 |
 |---|---|
@@ -38,7 +38,7 @@ ht-degree: 1%
 
 “趋势”部分中的图表显示按帐户类型过滤的结账体验趋势，或在结账期间创建的新帐户。
 
-![报表趋势](assets/trends-report-checkout.png)
+![报表趋势](assets/trends-report-checkout.png){width="600" zoomable="yes"}
 
 | 图表 | 描述 |
 |---|---|
@@ -50,7 +50,7 @@ ht-degree: 1%
 
 您可以按日期或现有预设过滤显示的结果，如 **最近30天**.
 
-![筛选器视图](assets/filter-view.png)
+![筛选器视图](assets/filter-view.png){width="300" zoomable="yes"}
 
 | 字段 | 描述 |
 |---|---|

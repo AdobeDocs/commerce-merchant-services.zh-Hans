@@ -3,7 +3,7 @@ title: 事务报表
 description: 使用事务报表可以查看事务授权率和事务趋势。
 role: User
 level: Intermediate
-source-git-commit: dab47a7dcac5d32f4b10cd8b4ce1f7e5dc7fd6c9
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] 对象 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供全面的报表，以便您清楚地了解商店的交易、订单和付款。
 
-![交易报表](assets/transactions-report.png){width="600" zoomable="yes"}
+![交易报表](assets/transactions-report.png){width="700" zoomable="yes"}
 
 “交易”报表提供了交易授权率和负交易趋势的可见性，因此您可以有效地监控存储设备的运行状况，并提前发现和处理任何交易问题。
 
@@ -91,7 +91,7 @@ ht-degree: 0%
 默认情况下，“事务处理”报表会显示所有可用的信息列。 但是，您可以自定义您在报表中看到的列。
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. 单击 **[!UICONTROL Column settings]** 图标 ![列设置图标](assets/column-settings.png){width="25"}.
+1. 单击 **[!UICONTROL Column settings]** 图标 ![列设置图标](assets/column-settings.png){width="20" zoomable="yes"}.
 1. 要自定义您在报表中看到的列，请选中或取消选中列表中的列。
 
    事务报表会立即显示您在“列设置”菜单中所做的任何更改。 列首选项已保存，如果您离开报表视图，这些首选项将保持有效。
@@ -103,7 +103,7 @@ ht-degree: 0%
 您还可以手动强制刷新报表数据以查看最新的报表信息。
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. 单击 _刷新_ 图标(![刷新图标](assets/refresh-button-med.png))。
+1. 单击 _刷新_ 图标(![刷新图标](assets/refresh-button-med.png){width="20" zoomable="yes"})。
 
    事务报表数据会进行刷新，并且 *[!UICONTROL Update complete]* 确认即会出现，网格中会显示最新信息。
 
@@ -113,7 +113,7 @@ ht-degree: 0%
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
 1. 如果您希望查看过去30天以外的其他时间范围内的事务， [自定义状态的日期范围时间范围](#customize-dates-timeframe).
-1. 单击 _下载_ ![下载图标](assets/icon-download.png){width="25"} 图标。
+1. 单击 _下载_ ![下载图标](assets/icon-download.png){width="20" zoomable="yes"} 图标。
 
 您的交易将以.csv格式下载。
 

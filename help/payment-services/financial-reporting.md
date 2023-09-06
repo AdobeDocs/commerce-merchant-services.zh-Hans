@@ -4,7 +4,7 @@ description: '"[!DNL Payment Services] 提供全面的报表，以便您能够�
 role: User
 feature: Payments, Checkout
 level: Intermediate
-source-git-commit: 3f90e508e6cbb8d7a119587dabd86e709c08d508
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '79'
 ht-degree: 0%
@@ -15,6 +15,6 @@ ht-degree: 0%
 
 [!DNL Payment Services] 对象 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 提供全面的报表，以便您清楚地了解商店的订单和付款。
 
-![财务报告视图](assets/reports-view.png)
+![财务报告视图](assets/reports-view.png){width="600" zoomable="yes"}
 
 现金流管理报表（付款、事务处理和订单付款状态）将付款详细信息与订单信息同步，以使您能够完全透明地查看已处理的金额、付款余额以及财务对帐的事务处理层详细报表。

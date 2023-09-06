@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '1868'
+source-wordcount: '1864'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 在 _管理员_ 侧栏，转到 **销售** > **支付服务** > _订购_ 查看数据可视化图表 [付款状态表](#statuses-information).
 
-![管理员中的支付数据可视化图表](assets/orderpayment-dataviz.png){zoomable=yes}
+![管理员中的支付数据可视化图表](assets/orderpayment-dataviz.png){width="800" zoomable="yes"}
 
 单击 **[!UICONTROL View Report]** 导航到详细表格 [订单付款状态报表视图](#order-payment-status-report-view).
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**要查看详细的表格形式订单付款状态报表视图，请执行以下操作：
 
-![管理员中的订单付款状态交易记录](assets/orders-report-data.png)
+![管理员中的订单付款状态交易记录](assets/orders-report-data.png){width="800" zoomable="yes"}
 
 您可以根据本主题中的部分对此视图进行配置，以便最好地呈现您希望查看的数据。
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 在“订单付款状态”报表视图中，您可以选择数据源 — **[!UICONTROL Live]** _或 **[!UICONTROL Sandbox]** — 要查看其报告结果。
 
-![数据源选择](assets/datasource.png){width=400px}
+![数据源选择](assets/datasource.png){width="300" zoomable="yes"}
 
 如果 _[!UICONTROL Live]_是选定的数据源，则可以查看使用的商店的报表信息 [!DNL Payment Services] 在生产模式下。 如果_[!UICONTROL Sandbox]_ 是选定的数据源，您可以看到沙盒模式的报表信息。
 
@@ -156,7 +156,7 @@ ht-degree: 0%
 默认情况下，“订单付款状态”报表会显示所有可用的信息列。 但是，您可以自定义您在报表中看到的列。
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. 单击 _列设置_ 图标(![列设置图标](assets/column-settings.png))。
+1. 单击 _列设置_ 图标(![列设置图标](assets/column-settings.png){width="20" zoomable="yes"})。
 1. 要自定义您在报表中看到的列，请选中或取消选中列表中的列。
 
    订单付款状态报表将立即显示您在“列设置”菜单中所做的任何更改。 列首选项将进行保存，如果您离开报表视图，这些首选项将保持有效。
@@ -186,7 +186,7 @@ ht-degree: 0%
 您也可以手动强制刷新订单付款状态报表数据，以查看最新的报表信息。
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. 单击 _刷新_ 图标(![刷新图标](assets/refresh-button-med.png))。
+1. 单击 _刷新_ 图标(![刷新图标](assets/refresh-button-med.png){width="20" zoomable="yes"})。
 
    订单付款状态报表数据已刷新，并且 *[!UICONTROL Update complete]* 确认即会出现，网格中会显示最新信息。
 
@@ -208,7 +208,7 @@ ht-degree: 0%
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 如果您希望查看过去30天以外的其他时间范围的状态， [自定义状态的日期范围时间范围](#customize-dates-timeframe).
-1. 单击 _下载_ (![下载图标](assets/icon-download.png))图标。
+1. 单击 _下载_ (![下载图标](assets/icon-download.png){width="20" zoomable="yes"})图标。
 
 您的订单付款状态将以.csv格式下载。
 
