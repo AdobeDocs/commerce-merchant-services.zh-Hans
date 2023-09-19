@@ -3,9 +3,9 @@ title: '[!DNL Live Search] 发行说明'
 description: “的最新发行信息 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 74282ba307f22730e1f6bfcb9a590caee87ba073
+source-git-commit: add4d61f1e97bdf889ab0de694f8c3921caaab50
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1459'
 ht-degree: 1%
 
 ---
@@ -75,6 +75,16 @@ _2023年8月7日_
 * 此 **我的帐户** 使用产品列表页面构件时，页面导航不再消失。
 
 商家必须升级 [!DNL Live Search] 扩展版本>= 3.0.2以访问这些功能。
+
+建议在推送到生产环境之前进行升级和测试。 在验证其测试环境结果后，请考虑在非高峰时间升级生产环境。
+
+### 限制
+
+使用实时搜索产品列表页面构件将导致Google Tag Manager失败。 如果需要Google Tag Manager，请使用默认的Search Adapter 。
+
+## 先前版本
+
++++3.0.1和之前的版本
 
 ## [!DNL Live Search] 3.0.1 {#301}
 

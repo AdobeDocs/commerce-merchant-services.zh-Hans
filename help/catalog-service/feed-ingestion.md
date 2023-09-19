@@ -1,9 +1,9 @@
 ---
 title: 馈送引入服务
 description: 了解Adobe Commerce的信息源摄取服务
-source-git-commit: 12b1e89924a2eb89494bcb884fc3bc14e87b2b1c
+source-git-commit: b57fc43d23dbbcbcae31743fd0ab9c1b3d1c1084
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,11 @@ ht-degree: 0%
 >
 >信息源引入服务当前为私有测试版。 尚不可用于一般用途。
 
+信息源摄取服务允许拥有大型和/或复杂目录的客户直接将数据发送到Adobe Commerce服务。
+
 信息源摄取服务绕过Adobe Commerce实例，将目录数据从第三方企业资源规划(ERP)直接移动到Adobe Commerce服务，从而减少处理产品更改（价格更新、添加新属性）所需的时间。
 
-此服务适用于在核心Adobe Commerce应用程序外部系统中存储和管理其产品目录的客户。
+此服务适用于在核心Adobe Commerce应用程序外部系统中存储和管理其产品目录的客户。 它作为API提供，因此客户可以将其集成到其现有系统中，从而在其部署方式上提供了更大的灵活性。
 
 拥有大型、复杂目录或频繁更新的目录的客户担心新数据在Live Store中显示所花的时间可能超过预期。 由于目录服务知道它处理这些更新需要哪些数据，因此无需通过核心Commerce产品发送数据，只需将其转发到目录服务。 消除此中间步骤是发现效率提高的地方。
 

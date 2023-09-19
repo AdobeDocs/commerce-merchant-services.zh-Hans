@@ -2,9 +2,9 @@
 title: 载入和安装
 description: 了解如何安装 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 04b1553e7cc16d142b72553ca2a6bb9d6a6b5eb4
+source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -36,14 +36,16 @@ ht-degree: 0%
 - 云基础架构上的Adobe Commerce：2.4.4+
 - Adobe Commerce内部部署：2.4.4+
 
-## 环境
+## 端点
 
-目录服务有两个环境可供载入：
+目录服务有两个端点可供载入：
 
 - 沙盒(https://catalog-service-sandbox.adobe.io/graphql) — 用于在上线之前进行测试和验证
 - 生产(https://catalog-service.adobe.io/graphql)-用于Commerce商家和网站的实时流量
 
-加载测试只应在沙盒环境中执行。 建议 [支持服务单](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 在加载测试时打开，以便服务团队可以预见额外的服务器流量。
+Commerce的所有测试实例都应使用Sanbox端点。
+
+只应对沙盒端点执行负载测试。 建议 [支持服务单](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 在加载测试时打开，以便服务团队可以预见额外的服务器流量。
 
 ## 安装和配置
 
