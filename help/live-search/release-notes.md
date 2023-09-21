@@ -3,10 +3,10 @@ title: '[!DNL Live Search] 发行说明'
 description: “的最新发行信息 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: add4d61f1e97bdf889ab0de694f8c3921caaab50
+source-git-commit: 190ff4bd6442f77407675e48850e214e241b392a
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 1%
+source-wordcount: '1662'
+ht-degree: 0%
 
 ---
 
@@ -36,6 +36,52 @@ _2023年4月25日_
 
 +++
 
+## [!DNL Live Search] 3.1.1 {#311}
+
+_2023年9月15日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"}
+
+### 新增功能
+
+* 添加了新的“类别促销”选项卡。 用户现在可以按类别添加智能排名和手动排名（固定、提升、隐藏、隐藏）
+* 用户可以添加具有智能或手动排名的单个类别规则
+* 用户现在可以将智能排名规则添加到子类别
+* 使用智能排名删除子类别时，会提供详细信息
+* 添加了删除继承排名策略的规则的功能
+* 添加了删除单个类别的规则的功能
+* 添加规则时，用户现在可以按类别名称搜索
+* 通过类别树视图，用户现在可以查看哪个类别应用了规则。
+* 类别预览仅显示选定的类别。
+
+### 更新
+
+* “规则”选项卡已重命名为“搜索规则”
+* 当按“趋势”进行排名时，您现在可以在以下各项之间进行选择：
+   * 3天（默认）
+   * 14天
+   * 30天
+* “活动”（提升/固定/伯里/隐藏）已重命名为“手动排名”
+* “排名类型”已重命名为“智能排名”
+
+### 修复
+
+* 次要错误修复
+
+商家必须升级 [!DNL Live Search] 扩展版本>= 3.1.1以访问这些功能。
+
+安装版本3.1.1后，必须启用以下新索引器：
+
+* 产品价格信息源
+* 范围网站数据馈送
+* 范围客户组数据馈送
+
+建议在将更改推送到生产环境之前，在QA或暂存环境中进行升级和测试。
+
+## 先前版本
+
++++3.1.0和之前的版本
+
 ## [!DNL Live Search] 3.1.0 {#310}
 
 _2023年9月1日_
@@ -45,10 +91,6 @@ _2023年9月1日_
 ### 更新
 
 * 产品列表构件已更新，可使用 [目录服务API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
-
-## 先前版本
-
-+++3.0.2和之前的版本
 
 ## [!DNL Live Search] 3.0.2 {#302}
 

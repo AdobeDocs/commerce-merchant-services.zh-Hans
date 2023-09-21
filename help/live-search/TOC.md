@@ -4,9 +4,9 @@ user-guide-description: “本指南详细介绍了如何使用 [!DNL Live Searc
 breadcrumb-title: “[!DNL Live Search] 指南”
 role: Admin
 feature: Services, Search
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: cc921e7e5abe41998497fcd8a6bdcc146dd1acb0
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '98'
 ht-degree: 9%
 
 ---
@@ -25,8 +25,8 @@ ht-degree: 9%
    - [店面 [!DNL Popover]](storefront-popover.md)
    - [样式 [!DNL Popover] 元素](storefront-popover-styling.md)
 - [!DNL Live Search] 管理员{#live-search-admin}
-   - [工作区](workspace.md)
-   - [性能](performance.md)
+   - [类别促销](category-merch.md)
+   - [Commerce配置设置](configuration.md)
    - Facet {#facets}
       - [概述](facets.md)
       - [彩块化工作区](faceting-workspace.md)
@@ -34,19 +34,20 @@ ht-degree: 9%
       - [添加Facet](facets-add.md)
       - [管理Facet](facets-manage.md)
       - [技术说明](facet-technical-notes.md)
-   - 同义词 {#synonyms}
-      - [概述](synonyms.md)
-      - [同义词的类型](synonyms-type.md)
-      - [添加同义词](synonyms-add.md)
-      - [管理同义词](synonyms-manage.md)
+   - [索引](indexing.md)
+   - [性能](performance.md)
    - 规则 {#rules}
       - [概述](rules.md)
       - [规则工作区](rules-workspace.md)
       - [添加规则](rules-add.md)
       - [管理规则](rules-manage.md)
-   - [Commerce配置设置](configuration.md)
    - [设置](settings.md)
-   - [索引](indexing.md)
+   - 同义词 {#synonyms}
+      - [概述](synonyms.md)
+      - [同义词的类型](synonyms-type.md)
+      - [添加同义词](synonyms-add.md)
+      - [管理同义词](synonyms-manage.md)
+   - [工作区](workspace.md)
 - GraphQL查询 {#graphql}
    - [attributeMetadata](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/attribute-metadata/)
    - [产品搜索](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)

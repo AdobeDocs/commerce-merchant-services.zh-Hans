@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] 发行说明'
 description: 的最新发行信息 [!DNL Product Recommendations] 来自Adobe Commerce的。
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 1dc69bf92ce8c9105724dea0ce70c34afa25a091
+source-git-commit: f3e94b20580fcd14b341b2b04a04966afd4be5ce
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
@@ -45,12 +45,12 @@ _2023年4月25日_
 
 ## 当前主要版本
 
-### 5.0.0个magento/product-recommendations
+### 5.0.1的magento/product-recommendations
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
-![新建](../assets/new.svg) 更新了产品Recommendations以支持Adobe Commerce 2.4.6。
-![新建](../assets/new.svg) 这是一个主版本发行版本。 [编辑](install-configure.md#update) 根 `composer.json` 您的项目的文件。
+![新建](../assets/new.svg) 添加了新模块以支持 [Saas价格索引器](../price-index/index.md).
+![新建](../assets/new.svg) 添加了新的数据导出模块，以支持导出更多产品类型，包括捆绑产品和礼品卡。
 
 #### 已知限制
 
@@ -58,7 +58,14 @@ _2023年4月25日_
 
 ### 先前版本
 
-+++4.0.1和之前的版本
++++5.0.0和之前的版本
+
+### 5.0.0个magento/product-recommendations
+
+[!BADGE 支持]{type=Informative tooltip="支持"}
+
+![新建](../assets/new.svg) 更新了产品Recommendations以支持Adobe Commerce 2.4.6。
+![新建](../assets/new.svg) 这是一个主版本发行版本。 [编辑](install-configure.md#update) 根 `composer.json` 您的项目的文件。
 
 ### magento/product-recommendations的4.0.1
 

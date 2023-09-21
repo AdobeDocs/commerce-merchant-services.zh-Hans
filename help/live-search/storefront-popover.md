@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: “ [!DNL Live Search storefront popover] 会动态返回建议的产品和缩略图。”
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 441f8c6c6113ce96c5353dcbde170ca600bb0abb
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
@@ -49,10 +49,13 @@ ht-degree: 0%
 
 商家可以使用目录服务自定义和扩展小部件或店面元素，但这不属于Adobe支持团队的范围。
 
+## Headless实施
+
+对于具有Headless实施的客户，可以使用安装实时搜索弹出框 [npm包](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).
+
 ## 限制
 
 * 此 [!DNL Live Search] [!DNL storefront popover] 仅适用于使用 *Luma* 主题，或基于 *Luma*. 搜索结果页面上的痕迹导航不具有 *流明* 样式。
 * 此 [!DNL popover] 不支持 *空白* 主题。 请参阅 [样式 [!DNL Popover] 元素](storefront-popover-styling.md) 了解更多信息。
 * 此 [!DNL popover] 快速订购表单上不支持。
 * 不支持愿望清单和产品比较。
-* 仅支持基础货币。
