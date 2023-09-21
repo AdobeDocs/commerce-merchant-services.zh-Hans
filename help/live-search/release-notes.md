@@ -3,9 +3,9 @@ title: '[!DNL Live Search] 发行说明'
 description: “的最新发行信息 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 190ff4bd6442f77407675e48850e214e241b392a
+source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1691'
 ht-degree: 0%
 
 ---
@@ -44,29 +44,23 @@ _2023年9月15日_
 
 ### 新增功能
 
-* 添加了新的“类别促销”选项卡。 用户现在可以按类别添加智能排名和手动排名（固定、提升、隐藏、隐藏）
-* 用户可以添加具有智能或手动排名的单个类别规则
-* 用户现在可以将智能排名规则添加到子类别
-* 使用智能排名删除子类别时，会提供详细信息
-* 添加了删除继承排名策略的规则的功能
-* 添加了删除单个类别的规则的功能
-* 添加规则时，用户现在可以按类别名称搜索
-* 通过类别树视图，用户现在可以查看哪个类别应用了规则。
-* 类别预览仅显示选定的类别。
+![新建](../assets/new.svg) 添加了新的“类别促销”选项卡。 用户现在可以按类别添加智能排名和手动排名（固定、提升、隐藏、隐藏）
+![新建](../assets/new.svg) 用户可以添加具有智能或手动排名的单个类别规则
+![新建](../assets/new.svg) 用户现在可以将智能排名规则添加到子类别
+![新建](../assets/new.svg) 使用智能排名删除子类别时，会提供详细信息
+![新建](../assets/new.svg) 添加了删除继承排名策略的规则的功能
+![新建](../assets/new.svg) 添加了删除单个类别的规则的功能
+![新建](../assets/new.svg) 添加规则时，用户现在可以按类别名称搜索
+![新建](../assets/new.svg) 通过类别树视图，用户现在可以查看哪个类别应用了规则。
+![新建](../assets/new.svg) 类别预览仅显示选定的类别。
 
 ### 更新
 
-* “规则”选项卡已重命名为“搜索规则”
-* 当按“趋势”进行排名时，您现在可以在以下各项之间进行选择：
-   * 3天（默认）
-   * 14天
-   * 30天
-* “活动”（提升/固定/伯里/隐藏）已重命名为“手动排名”
-* “排名类型”已重命名为“智能排名”
-
-### 修复
-
-* 次要错误修复
+![修复](../assets/fix.svg) “规则”选项卡已重命名为“搜索规则”
+![修复](../assets/fix.svg) 当按“趋势”进行排名时，您现在可以选择以下两项：* 3天（默认）* 14天* 30天
+![修复](../assets/fix.svg) “活动”（提升/固定/伯里/隐藏）已重命名为“手动排名”
+![修复](../assets/fix.svg) “排名类型”已重命名为“智能排名”
+![修复](../assets/fix.svg) 次要错误修复
 
 商家必须升级 [!DNL Live Search] 扩展版本>= 3.1.1以访问这些功能。
 
@@ -90,7 +84,7 @@ _2023年9月1日_
 
 ### 更新
 
-* 产品列表构件已更新，可使用 [目录服务API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
+![修复](../assets/fix.svg) 产品列表构件已更新，可使用 [目录服务API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
 
 ## [!DNL Live Search] 3.0.2 {#302}
 
@@ -100,7 +94,7 @@ _2023年8月7日_
 
 ### 新增功能
 
-以下值已添加到 `storeDetails` 对象：
+![新建](../assets/new.svg) 以下值已添加到 `storeDetails` 对象：
 
 * &quot;允许每页所有产品&quot;
 * 汇率
@@ -110,11 +104,8 @@ _2023年8月7日_
 
 ### 更新
 
-* 目录服务模块已添加到该中继，以支持高级数据检索。
-
-### 修复
-
-* 此 **我的帐户** 使用产品列表页面构件时，页面导航不再消失。
+![修复](../assets/fix.svg) 目录服务模块已添加到该中继，以支持高级数据检索。
+![修复](../assets/fix.svg) 此 **我的帐户** 使用产品列表页面构件时，页面导航不再消失。
 
 商家必须升级 [!DNL Live Search] 扩展版本>= 3.0.2以访问这些功能。
 
@@ -124,10 +115,6 @@ _2023年8月7日_
 
 使用实时搜索产品列表页面构件将导致Google Tag Manager失败。 如果需要Google Tag Manager，请使用默认的Search Adapter 。
 
-## 先前版本
-
-+++3.0.1和之前的版本
-
 ## [!DNL Live Search] 3.0.1 {#301}
 
 _2023年3月14日_
@@ -136,37 +123,33 @@ _2023年3月14日_
 
 ### 新增功能
 
-* 规则预览中的产品项目卡
-* [产品列表页面小组件](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
-* [类别过滤选项](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
-* 添加了使用拖放操作创建Pin事件的功能
-* 新的Pin操作：
-   * 固定到特定位置 — 单击一次即可固定按钮以创建固定事件
-   * 固定到顶部 — 将产品放在第一个位置
-   * 固定到底部 — 将产品放置在结果的底部
-   * 只需单击一下即可取消固定事件
-* [规则的智能排名](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
+![新建](../assets/new.svg) 规则预览中的产品项目卡
+![新建](../assets/new.svg) [产品列表页面小组件](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
+![新建](../assets/new.svg) [类别过滤选项](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
+![新建](../assets/new.svg) 添加了使用拖放操作创建Pin事件的功能
+![新建](../assets/new.svg) 新固定操作： *固定到位置 — 单击一次以固定按钮创建“固定”事件*固定到顶部 — 将产品放在第一个位置*固定到底部 — 将产品放在结果底部*一次单击即可取消固定事件
+![新建](../assets/new.svg) [规则的智能排名](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
 
 ### 更新
 
-* 现在，配置规则会自动对职位进行唯一排序
-* 删除现有事件现在会更新预览
-* 可以保存不含事件的规则
-* 删除彩块化“选择类型”选择器
-* 为未保存的规则添加了新的“正在编辑”状态
+![修复](../assets/fix.svg) 现在，配置规则会自动对职位进行唯一排序
+![修复](../assets/fix.svg) 删除现有事件现在会更新预览
+![修复](../assets/fix.svg) 可以保存不含事件的规则
+![修复](../assets/fix.svg) 删除彩块化“选择类型”选择器
+![修复](../assets/fix.svg) 为未保存的规则添加了新的“正在编辑”状态
 
 ### 修复
 
-* 修复了在保存期间存在未完成事件时的服务器错误
-* 修复了在存在多个事件时正确删除特定事件的问题
-* 修复了在添加新事件后未更新的现有规则事件
-* 修复了来自详细信息的第二次“编辑”点击 [!DNL Live Search] 需要重新加载的页面
-* 同义词：修复了当用户单击退出输入时，无法将焦点返回到字段的问题
-* 其他次要错误修复和性能更新
+![修复](../assets/fix.svg) 修复了在保存期间存在未完成事件时的服务器错误
+![修复](../assets/fix.svg) 修复了在存在多个事件时正确删除特定事件的问题
+![修复](../assets/fix.svg) 修复了在添加新事件后未更新的现有规则事件
+![修复](../assets/fix.svg) 修复了来自详细信息的第二次“编辑”点击 [!DNL Live Search] 需要重新加载的页面
+![修复](../assets/fix.svg) 同义词：修复了当用户单击退出输入时，无法将焦点返回到字段的问题
+![修复](../assets/fix.svg) 其他次要错误修复和性能更新
 
 
-* ![错误](../assets/bug.svg)  — 仅在实时搜索构件中支持按“为您推荐”进行排名。 默认的Luma和PWA搜索功能不支持此功能。
-* ![错误](../assets/bug.svg)  — 自定义价格属性Facet在Luma中无法正确呈现，但API会正确筛选它们。
+![错误](../assets/bug.svg)  — 仅在实时搜索构件中支持按“为您推荐”进行排名。 默认的Luma和PWA搜索功能不支持此功能。
+![错误](../assets/bug.svg)  — 自定义价格属性Facet在Luma中无法正确呈现，但API会正确筛选它们。
 
 商家必须升级 [!DNL Live Search] 扩展版本>= 3.0.1以访问这些功能。
 
@@ -176,7 +159,7 @@ _2023年3月14日_
 
 [!BADGE 支持]{type="信息性" tooltip="支持"}
 
-* ![修复](../assets/fix.svg)  — 当SDK资源因网络问题而不可用时，Live Search会引发错误。 此错误已修复。
+![修复](../assets/fix.svg)  — 当SDK资源因网络问题而不可用时，Live Search会引发错误。 此错误已修复。
 
 商家必须升级Live Search扩展版本>= 2.0.5才能访问这些功能。
 

@@ -2,7 +2,7 @@
 title: "[!DNL Storefront Popover]"
 description: “ [!DNL Live Search storefront popover] 会动态返回建议的产品和缩略图。”
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 441f8c6c6113ce96c5353dcbde170ca600bb0abb
+source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 ## 限制
 
-* 此 [!DNL Live Search] [!DNL storefront popover] 仅适用于使用 *Luma* 主题，或基于 *Luma*. 搜索结果页面上的痕迹导航不具有 *流明* 样式。
+* 此 [!DNL Live Search] [!DNL storefront popover] 仅适用于使用 *Luma* 主题，或基于 *Luma*. 搜索结果页面上的痕迹导航不具有 *Luma* 样式。
 * 此 [!DNL popover] 不支持 *空白* 主题。 请参阅 [样式 [!DNL Popover] 元素](storefront-popover-styling.md) 了解更多信息。
 * 此 [!DNL popover] 快速订购表单上不支持。
 * 不支持愿望清单和产品比较。
