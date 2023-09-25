@@ -3,9 +3,9 @@ title: "安装 [!DNL Live Search]"
 description: “了解如何安装、更新和卸载 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 97a743b1f7162af01930a37db448432acb9f89d5
+source-git-commit: 017299c613cc010d96d90c9b1d88e43304d00e2b
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1301'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 0%
    >
    > 当数据已编制索引并同步时，店面中无法使用搜索和类别浏览操作。 根据目录的大小，此过程可能至少需要一个小时 `cron` 运行以将数据同步到 [!DNL Live Search] 服务。
 
-1. 验证以下各项 [索引器](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) 设置为 `Update by Schedule`：
+1. 验证以下各项 [索引器](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) 设置为“按计划更新”：
 
    * 产品信息源
    * 产品变型馈送
@@ -119,7 +119,7 @@ ht-degree: 0%
 
    [!DNL Elasticsearch] 继续管理店面的搜索请求，同时 [!DNL Live Search] 服务在后台同步目录数据和索引产品。
 
-1. 验证以下各项 [索引器](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) 设置为 `Update by Schedule`：
+1. 验证以下各项 [索引器](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) 设置为“按计划更新”：
 
    * 产品信息源
    * 产品变型馈送
@@ -263,10 +263,21 @@ composer update magento/live-search --with-dependencies
 
 ## [!DNL Live Search] 依赖关系 {#dependencies}
 
-以下各项 [!DNL Live Search] 依赖项由捕获 [!DNL Composer]：
+以下各项 [!DNL Live Search] 依赖项由捕获 [!DNL Composer].
 
-| 依赖关系 | 描述 |
-|--- |--- |
-| 导出模块 | 以下模块收集和同步目录数据：<br />`module-sass-catalog`<br />`module-sass-product-override`<br />`module-bundle-product-data-exporter`<br />`module-catalog-data-exporter`<br />`module-catalog-inventory-data-exporter`<br />`module-catalog-url-rewrite-data-exporter`<br />`module-configurable-product-data-exporter`<br />`module-data-exporter`<br />`module-parent-product-data-exporter`<br />`module-product-override-data-exporter` |
-| `data-services` | 需要配置与Commerce Services的连接。 |
-| `services-id` | 需要配置与Commerce Services的连接。 |
+* `magento/module-saas-catalog`
+* `magento/module-saas-category`
+* `magento/module-saas-category-permissions`
+* `magento/module-saas-product-override`
+* `magento/module-saas-product-variant`
+* `magento/module-saas-price`
+* `magento/module-saas-scopes`
+* `magento/module-bundle-product-data-exporter`
+* `magento/module-catalog-inventory-data-exporter`
+* `magento/module-catalog-url-rewrite-data-exporter`
+* `magento/module-configurable-product-data-exporter`
+* `magento/module-parent-product-data-exporter`
+* `magento/module-gift-card-product-data-exporter`
+* `magento/module-bundle-product-override-data-exporter`
+* `data-services`
+* `services-id`
