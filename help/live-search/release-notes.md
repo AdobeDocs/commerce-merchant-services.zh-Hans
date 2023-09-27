@@ -3,9 +3,9 @@ title: "[!DNL Live Search] 发行说明"
 description: “的最新发行信息 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 21170ecc66891d803b6c45dd8e2fa2135f0e5de1
+source-git-commit: e568609ac1093b36d78250b45e581b63ff35a2ac
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1725'
 ht-degree: 0%
 
 ---
@@ -129,7 +129,7 @@ _2023年3月14日_
 ![新建](../assets/new.svg) 添加了使用拖放操作创建Pin事件的功能
 ![新建](../assets/new.svg) 新固定操作： *固定到位置 — 单击一次以固定按钮创建“固定”事件*固定到顶部 — 将产品放在第一个位置*固定到底部 — 将产品放在结果底部*一次单击即可取消固定事件
 ![新建](../assets/new.svg) [规则的智能排名](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
-![新建](../assets/new.svg) [!DNL Live Search] 现在支持多源清单(MSI)。 要使用MSI，您必须 [安装](install.md#update) 该 `commerce-data-export` 102.2.0+模块。 使用以下命令检查版本： `composer update magento/live-search --with-dependencies`.
+![新建](../assets/new.svg) [!DNL Live Search] 现在支持完全 [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) commerce（以前称为多源清单，或MSI）中的功能。 要启用全面支持，您必须 [更新](install.md#update) 依赖关系模块 `commerce-data-export` 到版本102.2.0+。
 
 ### 更新
 
