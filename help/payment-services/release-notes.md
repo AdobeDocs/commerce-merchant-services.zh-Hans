@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] 发行说明"
 description: 查看发行说明，了解所有 [!DNL Payment Services] 版本发布。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: eb2d21193ee3bde5e52bddb738564f0265422fe4
+source-git-commit: a5bd06372678512062415702f83e57afb0eeb8da
 workflow-type: tm+mt
-source-wordcount: '2200'
+source-wordcount: '2247'
 ht-degree: 0%
 
 ---
@@ -71,6 +71,14 @@ _2021年6月28日_
 ![新建](../assets/new.svg)<!-- Issue PAY-2761 --> 您现在可以自定义以下位置显示的数据： [订单付款状态报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 和 [支付报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 通过使用“列设置”控件显示或隐藏列。
 
 +++
+
+## v2.2.1
+
+_2023年9月27日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"}
+
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-4870 --> 修复了在使用最新版本发送扩展版本时，Storefront中正确填充新标题属性的问题。 以前，使用 `1.3.0` 发布Commerce Services连接器，您无法扩展 `User-Agent header` 从Payment Services扩展中。
 
 ## v2.2.0
 
