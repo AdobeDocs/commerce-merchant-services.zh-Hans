@@ -2,16 +2,16 @@
 title: 载入和安装
 description: 了解如何安装 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
+source-git-commit: f2771983072848e0da4a51d06bec970737ef951a
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # 载入和安装
 
-请参阅目录服务过程的演练。
+查看以下内容的演练： [!DNL Catalog Service] 进程。
 
 第1部分：
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## 端点
 
-目录服务有两个端点可供载入：
+[!DNL Catalog Service] 有两个端点可供载入：
 
 - 沙盒(https://catalog-service-sandbox.adobe.io/graphql) — 用于在上线之前进行测试和验证
 - 生产(https://catalog-service.adobe.io/graphql)-用于Commerce商家和网站的实时流量
@@ -49,7 +49,7 @@ Commerce的所有测试实例都应使用沙盒端点。
 
 ## 安装和配置
 
-要开始使用Adobe Commerce的目录服务，需要执行以下步骤：
+开始使用 [!DNL Catalog Service] 对于Adobe Commerce，需要执行以下步骤：
 
 - 安装数据导出扩展
 - 配置服务和数据导出
@@ -57,23 +57,23 @@ Commerce的所有测试实例都应使用沙盒端点。
 
 ### 安装数据导出扩展
 
-目录服务的载入流程需要访问服务器的命令行。
+的新用户引导流程 [!DNL Catalog Service] 需要访问服务器的命令行。
 
-目录服务扩展可以安装在Adobe Commerce云基础架构和内部部署实例上。
+此 [!DNL Catalog Service] 扩展可以安装在Adobe Commerce云基础架构和内部部署实例上。
 
-目录服务使用编辑器键安装，这些键链接到商务帐户 [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) 在注册过程中提供。 Composer在Adobe Commerce的初始安装期间或之前未将Composer键保存到外部的情况下使用这些键 `auth.json` 文件。
+此 [!DNL Catalog Service] 随编辑器密钥一起安装，这些密钥链接到Commerce帐户 [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) 在注册过程中提供。 Composer在Adobe Commerce的初始安装期间或之前未将Composer键保存到外部的情况下使用这些键 `auth.json` 文件。
 
 请参阅 [获取您的身份验证密钥](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) 以了解有关获取编辑器键的更多信息。
 
 #### 云基础架构上的Adobe Commerce
 
-使用此方法为Commerce Cloud实例安装目录服务扩展。
+使用此方法安装 [!DNL Catalog Service] Commerce Cloud实例的扩展。
 
 1. 打开 `<Commerce_root>/composer.json` 在文本编辑器中生成文件并更新所需部分，如下所示：
 
 ```json
 "require": {
-  "magento/catalog-service": "^2.2.0"
+  "magento/catalog-service": "^3.0.0"
 }
 ```
 
@@ -89,13 +89,13 @@ composer update
 
 #### 内部部署
 
-使用此方法为本地实例安装目录服务扩展。
+使用此方法安装 [!DNL Catalog Service] 内部部署实例的扩展。
 
 1. 打开 `<Commerce_root>/composer.json` 在文本编辑器中生成文件并更新所需部分，如下所示：
 
 ```json
 "require": {
-    "magento/catalog-service": "^2.2.0"
+    "magento/catalog-service": "^3.0.0"
 }
 ```
 
@@ -121,7 +121,7 @@ bin/magento cache:clean
 
 ### 配置服务和数据导出
 
-安装目录服务后，必须配置 [Commerce服务连接器](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) 通过指定API密钥并选择SaaS数据空间。
+安装之后 [!DNL Catalog Service]，您必须配置 [Commerce服务连接器](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) 通过指定API密钥并选择SaaS数据空间。
 
 SaaS配置完成后，按照以下步骤执行初始数据同步 [目录同步](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) 指南。
 
@@ -135,16 +135,16 @@ SaaS配置完成后，按照以下步骤执行初始数据同步 [目录同步](
 
 ### 访问服务
 
-可通过HTTPS使用POST命令访问目录服务API。
+此 [!DNL Catalog Service] 可通过HTTPS使用POST命令访问API。
 
 要获取API密钥，请转到管理员中的Commerce Service Connector区域并复制公共API密钥。
 
 阅读 [GraphQL文档](https://developer.adobe.com/commerce/webapi/graphql/) 了解如何查询和发送生成API请求所需的标头。
 
-要允许目录服务通过防火墙，请添加 `commerce.adobe.io` 到允许列表。
+允许 [!DNL Catalog Service] 通过防火墙，添加 `commerce.adobe.io` 给允许列表。
 
 ## 目录服务和API网格
 
 此 [适用于Adobe Developer App Builder的API网格](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 使开发人员能够使用AdobeIO将专用或第三方API以及其他界面与Adobe产品集成。
 
-请参阅  [目录服务和API网格](mesh.md) 有关安装和配置详细信息的主题。
+请参阅  [[!DNL Catalog Service] 和API Mesh](mesh.md) 有关安装和配置详细信息的主题。
