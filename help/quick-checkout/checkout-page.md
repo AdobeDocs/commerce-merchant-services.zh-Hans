@@ -3,9 +3,9 @@ title: “结帐页面”
 description: “Adobe Commerce中结帐页面的概述。”
 exl-id: afe3a93d-8aba-428e-ac9d-0be8d23ceb47
 feature: Checkout, Services, Storefront
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: f40a1b9d2bd2f5247bf219e6de73d00052d18bdc
 workflow-type: tm+mt
-source-wordcount: '99'
+source-wordcount: '125'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,15 @@ ht-degree: 0%
 
 现成的结账包括两个步骤：
 
+>[!NOTE]
+>
+> [!BADGE 2.4.6-p1]{type=Informative tooltip="2.4.6-p1中的变化"}[!BADGE 2.4.7-beta1]{type=Informative tooltip="2.4.7-beta1中的更改"}[!UICONTROL Enable Guest Checkout Login] 将存储配置中的字段设置为 `Yes`. 但是，此设置可能会向未经身份验证的用户公开客户信息。
+
 - 配送信息
 - 复查和付款信息
 
 >[!NOTE]
 >
-> 第一步完成后， checkout将显示结账总数和相应的侧栏信息。
+第一步完成后， checkout将显示结账总数和相应的侧栏信息。
 
 请参阅 [结账流程](../quick-checkout/checkout-flow.md) 主题以了解有关 [!DNL Quick Checkout] 流量。
