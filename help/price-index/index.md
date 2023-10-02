@@ -4,9 +4,9 @@ description: 使用SaaS价格索引提高性能
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: af57acec1208204128feec6c523e3745a9948d51
+source-git-commit: b7989b416f852d2c7164d21e8f0598373662b760
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '713'
 ht-degree: 0%
 
 ---
@@ -51,10 +51,13 @@ Luma和Adobe Commerce Core GraphQL用户可以安装 [`catalog-adapter`](catalog
 
 升级具有SaaS价格索引支持的Adobe Commerce实例后，同步新的信息源：
 
-```bash
-bin/magento saas:resync --feed=scopesCustomerGroup
-bin/magento saas:resync --feed=scopesWebsite
-bin/magento saas:resync --feed=prices
+```
+magento/module-saas-price
+magento/module-saas-scopes
+magento/module-product-override-price-remover
+magento/module-bundle-product-override-data-exporter
+magento/module-bundle-product-override-data-exporter
+magento/module-gift-card-product-data-exporter
 ```
 
 ## 自定义产品类型的价格
@@ -63,33 +66,109 @@ bin/magento saas:resync --feed=prices
 
 如果您的自定义产品类型使用特定公式计算最终价格，则可以扩展产品价格信息源的行为。
 
+## 使用情况
+
+```xml
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\ProductPriceDataExporter\Model\Provider\ProductPrice">
+        <plugin name="custom_type_price_feed" type="YourModule\CustomProductType\Plugin\UpdatePriceFromFeed" />
+    </type>
+</config>
+```
+
+新馈送应手动与同步 `resync` [CLI命令](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). 否则，数据将在标准同步过程中刷新。 获取有关 [目录同步](../landing/catalog-sync.md) 进程。
+
+## 使用方案
+
+### Luma没有扩展依赖关系
+
+* 已安装所需服务(Live Search、Product Recommendations、Catalog Service)的Luma或Adobe Commerce Core GraphQL商家
+* 没有依赖于PHP核心价格索引器的第三方扩展
+* 销售简单、可配置、分组、虚拟和捆绑的动态产品
+
+1. 启用新馈送。
+1. 安装目录适配器。
+
+### 带有PHP核心价格索引器依赖项的Luma和Adobe Commerce核心GraphQl
+
+* 已安装支持服务(Live Search、Product Recommendations、Catalog Service)的Luma或Adobe Commerce Core GraphQL商家
+* 通过依赖于PHP核心价格索引器的第三方扩展
+* 销售简单、可配置、分组、虚拟和捆绑的动态产品
+
+1. 启用新信息源
+1. 安装目录适配器。
+1. 重新启用PHP核心价格索引器。
+1. 在中使用新馈送和Luma兼容性代码 `catalog-adapter` 模块。
+
+### Headless商家
+
+* 已安装支持服务(Live Search、产品Recommendations、目录服务)的Headless商家
+* 不依赖PHP核心价格索引器
+* 销售简单、可配置、分组、虚拟和捆绑的动态产品
+
+1. 启用新信息源
+1. 安装目录适配器，该适配器将禁用PHP核心价格索引器。
+
+## 自定义价格
+
+SaaS价格索引器支持Adobe Commerce中提供的自定义产品类型价格功能，例如特殊价格、组价格和目录规则价格。
+
+例如：存在自定义产品类型  `custom_type` 以及具有SKU“自定义类型产品”的产品。
+
+默认情况下，Commerce Data Export扩展将以下价格信息源发送到价格索引器：
+
+```json
+{
+    "sku": "Custom Type Product",
+    "type": "SIMPLE", // must be "SIMPLE" regardless of the real product type
+    "customerGroupCode": "0",
+    "websiteCode": "base",
+    "regular": 123, // the regular base price found in catalog_product_entity_decimal table
+    "discounts":    // list of discounts: special_price, group, catalog_rule
+    [
+        {
+            "code": "catalog_rule",
+            "price": 102.09
+        }
+    ],
+    "deleted": false,
+    "updatedAt": "2023-07-31T13:07:54+00:00"
+}
+```
+
+如果“自定义产品类型”使用唯一的公式来计算产品价格，则系统集成商可以通过扩展Commerce Data Export扩展来覆盖价格和折扣字段。
+
 1. 在上创建插件 `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` 类。
 
-   ```xml
-   <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-       <type name="Magento\ProductPriceDataExporter\Model\Provider\ProductPrice">
-           <plugin name="custom_type_price_feed" type="YourModule\CustomProductType\Plugin\UpdatePriceFromFeed" />
-       </type>
-   </config>
-   ```
+`di.xml` 文件：
+
+```xml
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\ProductPriceDataExporter\Model\Provider\ProductPrice">
+        <plugin name="custom_type_price_feed" type="YourModule\CustomProductType\Plugin\UpdatePriceFromFeed" disabled="false" />
+    </type>
+</config>
+```
 
 1. 使用自定义公式创建方法：
 
-   ```php
-   class UpdatePriceFromFeed
-   {
-       /**
-       * @param ProductPrice $subject
-       * @param array $result
-       * @param array $values
-       *
-       * @return array
-       */
-       public function afterGet(ProductPrice $subject, array $result, array $values) : array
-       {
-           // Override the output $result with your data for the corresponding products (see original method for details) 
-           return $result;
-       }
-   }
-   ```
+```php
+class UpdatePriceFromFeed
+{
+    /**
+    * @param ProductPrice $subject
+    * @param array $result
+    * @param array $values
+    *
+    * @return array
+    */
+    public function afterGet(ProductPrice $subject, array $result, array $values) : array
+    {
+        // Get all custom products, prices and discounts per website and customer groups
+        // Override the output $result with your data for the corresponding products
+        return $result;
+    }
+}
+```
