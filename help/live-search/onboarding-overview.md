@@ -3,9 +3,9 @@ title: “入门概述”
 description: '"[!DNL Live Search] 载入流程、系统要求、边界和限制”'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 21170ecc66891d803b6c45dd8e2fa2135f0e5de1
+source-git-commit: 68c96b6fc74e60ddd44ab8e953c022b8244da281
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -64,11 +64,19 @@ ht-degree: 0%
 
 * [!DNL Live Search] 每个存储视图最多可管理200个同义词。
 
+## 类别促销
+
+类别促销允许您配置 [!DNL Live Search] 在产品类别级别工作。
+
+本视频介绍了类别推销。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
+
 ## 价格索引器
 
 Live Search客户可以使用新的 [SaaS价格索引器](../price-index/index.md)，可以加快价格变更更新和同步时间。
 
-### PWA支持
+## PWA支持
 
 [!DNL Live Search] 适用于PWA Studio，但用户可能会看到与其他Commerce实施相比的细微差异。 在威尼亚省可以使用搜索和产品列表页面等基本功能，但Graphql的某些排列可能无法正确工作。 此外，可能存在性能差异。
 
@@ -96,7 +104,7 @@ Live Search客户可以使用新的 [SaaS价格索引器](../price-index/index.m
        };
    ```
 
-### 当前不支持
+## 当前不支持
 
 * 此 [高级搜索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 在以下情况下将禁用模块 [!DNL Live Search] ，并删除店面页脚中的高级搜索链接。
 * 产品价格不包括 [增值税](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) （增值税）。
