@@ -1,20 +1,21 @@
 ---
 title: 目录同步
-description: 了解如何从导出产品数据 [!DNL Commerce] 服务器至 [!DNL Commerce Services] 不断更新服务。
+description: 了解如何从导出产品数据 [!DNL Commerce] 服务器至 [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 1fd5f25b88fa129cc136b93fdf88b981624f0678
+source-git-commit: 151b57d7b31637178c645149d78c0d3670ee1c3e
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
 
+
 # 目录同步
 
-Adobe Commerce和Magento Open Source使用索引器将目录数据编译到表中。 该进程由自动触发 [事件](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) 例如产品价格或库存水平改变。
+Adobe Commerce使用索引器将目录数据编译到表中。 该进程由自动触发 [事件](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) 例如产品价格或库存水平改变。
 
-目录同步过程每小时运行以允许 [!DNL Commerce] 服务使用目录数据。 目录同步从导出产品数据 [!DNL Commerce] 服务器至 [!DNL Commerce] 持续提供服务，使服务保持最新。 例如， [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) 需要当前的目录信息才能准确地返回具有正确名称、定价和可用性的推荐。 您可以使用 _目录同步_ 仪表板来观察和管理同步过程或 [命令行界面](#resynccmdline) 触发目录同步和重新索引产品数据以供使用： [!DNL Commerce] 服务。
+目录同步服务将产品数据从 [!DNL Adobe Commerce] 实例到 [!DNL Commerce Services] 平台，持续保持数据最新。 例如， [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) 需要当前的目录信息才能准确地返回具有正确名称、定价和可用性的推荐。 使用 _目录同步_ 仪表板来观察和管理同步过程或 [命令行界面](#resynccmdline) 触发目录同步并重新索引产品数据以供使用： [!DNL Commerce Services].
 
 >[!NOTE]
 >
@@ -31,7 +32,7 @@ Adobe Commerce和Magento Open Source使用索引器将目录数据编译到表�
 使用 **目录同步** 功能板您可以：
 
 - 查看同步状态(**进行中**， **成功**， **失败**)
-- 查看同步的产品总数（如果成功）
+- 查看同步的产品总数
 - 搜索同步的产品以查看其当前状态
 - 按名称、SKU等搜索存储目录
 - 在JSON中查看同步的产品详细信息，以帮助诊断同步差异
@@ -45,17 +46,15 @@ Adobe Commerce和Magento Open Source使用索引器将目录数据编译到表�
 - **失败**  — 显示尝试同步的日期和时间
 - **进行中**  — 显示上次成功同步的日期和时间
 
->[!NOTE]
->
-> 目录同步过程每小时自动运行一次。 但是，如果您未在店面中看到产品，或者产品未反映您最近所做的更改，您可以解决 [目录同步问题](#resolvesync).
+目录同步过程每小时自动运行一次。 如果您未在店面中看到预期的产品，或者这些产品未反映您最近所做的更改，您可以解决 [目录同步问题](#resolvesync).
 
 ### 产品已同步
 
-显示从您的 [!DNL Commerce] 目录。 在初始同步之后，您应该只会同步已更改的产品。
+显示从您的 [!DNL Commerce] 目录。 初次同步后，只应同步已更改的产品。
 
 ## 重新同步 {#resync}
 
-如果在进行每小时计划同步之前必须启动目录的重新同步，则可以强制进行重新同步。
+如果需要在每小时计划同步发生之前启动目录重新同步，则可以强制进行重新同步。
 
 >[!NOTE]
 >
@@ -78,7 +77,7 @@ Adobe Commerce和Magento Open Source使用索引器将目录数据编译到表�
 |---|---|
 | ID | 产品的唯一标识符 |
 | 名称 | 产品的店面名称 |
-| 类型 | 标识产品类型，如简单、可配置、可下载等 |
+| 类型 | 标识产品类型，例如简单、可配置或可下载 |
 | 上次导出 | 上次成功从目录中导出产品的日期 |
 | 上次修改时间 | 上次在目录中修改产品的日期 |
 | SKU | 显示产品的库存单位 |
@@ -87,7 +86,7 @@ Adobe Commerce和Magento Open Source使用索引器将目录数据编译到表�
 
 ## 解决目录同步问题 {#resolvesync}
 
-触发数据重新同步时，最多可能需要一小时才能更新数据并反映在UI组件中，例如推荐单元。 但是，如果在等待一小时后，您仍然发现目录与店面中显示的内容存在差异，或者如果目录同步失败，请参阅以下内容：
+触发数据重新同步时，可能需要长达一小时的时间才能更新数据并反映在UI组件（如推荐单元）中。 如果您仍然看到店面上的目录和数据之间存在差异，或者如果目录同步失败，请参阅以下内容：
 
 ### 数据差异
 
@@ -98,7 +97,7 @@ Adobe Commerce和Magento Open Source使用索引器将目录数据编译到表�
 
 ### 同步未运行
 
-如果同步未按计划运行或未同步任何内容，请参阅 [知识库](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html).
+如果同步未按计划运行或未同步任何内容，请参阅此 [知识库](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) 文章。
 
 ### 同步失败
 
@@ -106,16 +105,16 @@ Adobe Commerce和Magento Open Source使用索引器将目录数据编译到表�
 
 ## 命令行界面 {#resynccmdline}
 
-此 `saas:resync` 命令是 `magento/saas-export` 包。 您可以使用以下任一方式安装此包： [!DNL Commerce Services] 产品，例如 [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) 或 [[!DNL Live Search]](/help/live-search/install.md).
+此 `saas:resync` 命令是 `magento/saas-export` 包，并且随以下任一选项提供现成可用的 [!DNL Commerce Services] 产品，例如 [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) 或 [[!DNL Live Search]](/help/live-search/install.md).
 
 >[!NOTE]
 >
-> 首次运行数据同步时，请务必运行 `productattributes` 首先馈送，然后馈送 `productoverrides`，然后运行 `products` 信息源。
+> 首次运行数据同步时，请运行 `productattributes` 首先馈送，然后馈送 `productoverrides`，然后运行 `products` 信息源。
 
 命令选项：
 
 ```bash
-bin/magento saas:resync --feed <feed name> [no-reindex]
+bin/magento saas:resync --feed <feed name> [no-reindex|cleanup-feed]
 ```
 
 下表描述了 `saas:resync` 参数和描述。
@@ -124,51 +123,86 @@ bin/magento saas:resync --feed <feed name> [no-reindex]
 |---| ---| ---|
 | `feed` | 指定要重新同步的实体，如 `products` | 是 |
 | `no-reindex` | 将现有目录数据重新提交到 [!DNL Commerce Services] 而不重新索引。 如果未指定此参数，该命令会在同步数据之前运行完整的重新索引。 | 否 |
+| `cleanup-feed` | 在同步之前清理馈送索引器表。 | 否 |
 
 馈送名称可以是以下名称之一：
 
-- `categories` — 目录中的类别
-- `categoryPermissions`  — 每个类别的权限
 - `products` — 目录中的产品
 - `productattributes` — 产品属性，例如 `activity`， `gender`， `tops`， `bottoms`，等等
-- `productoverrides` — 特定于客户的定价和目录可见性规则，如基于类别权限的那些规则
 - `variants` — 可配置产品的产品变体，如颜色和大小
+- `prices`  — 产品价格
+- `scopesCustomerGroup`  — 客户组
+- `scopesWebsite`  — 有商店视图的网站
+- `categories` — 目录中的类别
+- `categoryPermissions`  — 每个类别的权限
+- `productoverrides` — 特定于客户的定价和目录可见性规则，如基于类别权限的那些规则
 
-如果从命令行触发数据重新同步，则更新数据可能最多需要1小时。
+根据具体情况 [Commerce服务](../landing/saas.md) 已安装，则可能有不同的源集可用于 `saas:resync` 命令。
 
-### 同步SaaS价格索引
+不建议运行 `saas:resync` 定期执行命令。 在以下两种情况下，您可能需要手动运行命令：
 
-如果您使用 [SaaS价格索引](../price-index/index.md) 并需要重新同步，请运行以下命令：
+- 初始同步
+- 此 [SaaS数据空间ID](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) 已更改
 
-```bash
-bin/magento saas:resync --feed scopesCustomerGroup
-bin/magento saas:resync --feed scopesWebsite
-bin/magento saas:resync --feed prices
-```
+### 初始同步
 
-### 正在同步目录服务
+当您触发 `saas:resync` 从命令行中，更新数据可能需要几分钟到几小时的时间，具体取决于您的目录大小。
 
-要重新同步目录服务，请务必按以下顺序运行命令：
+对于初始同步，建议按以下顺序运行命令：
 
 ```bash
 bin/magento saas:resync --feed productattributes
 bin/magento saas:resync --feed products
+bin/magento saas:resync --feed scopesCustomerGroup
+bin/magento saas:resync --feed scopesWebsite
+bin/magento saas:resync --feed prices
 bin/magento saas:resync --feed productoverrides
 bin/magento saas:resync --feed variants
 bin/magento saas:resync --feed categories
 bin/magento saas:resync --feed categoryPermissions 
 ```
 
-### 示例
+### 故障排除
 
-以下示例对中的产品数据重新编制索引 [!DNL Commerce] 将其编录并重新同步到Commerce Services：
+如果您在中看不到预期的数据 [!DNL Commerce Service]，检查在从同步期间是否出现问题 [!DNL Adobe Commerce] 实例到 [!DNL Commerce Service] 平台。
+
+中存在2个日志文件 `var/log/` 目录：
+
+- `commerce-data-export-errors.log`  — 如果期间发生错误 _收集_ 阶段
+- `saas-export-errors.log`  — 如果期间发生错误 _传输_ 阶段
+
+#### 检查馈送有效负荷
+
+查看已发送给的信息源有效负载可能会很有用 [!DNL Commerce Service]. 可以通过传递环境变量来完成此操作 `EXPORTER_EXTENDED_LOG=1`. 此 `no-reindex` 标志表示仅发送当前收集的数据。
 
 ```bash
-bin/magento saas:resync --feed products
+EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products --no-reindex
 ```
 
-如果您不想对产品运行完整的重新索引，则可以同步已生成的产品数据：
+有效负载位于 `var/log/saas-export.log`.
+
+#### 在馈送索引表中保留有效负载
+
+起始日期 `magento/module-data-exporter:103.0.0` 某些信息源：产品信息源、价格信息源，在索引表中仅保留最低要求数据。
+
+不建议在生产环境中保留索引表中的有效负荷数据，但在开发人员实例中可能很有用。 这是通过传递 `PERSIST_EXPORTED_FEED=1` 环境变量：
 
 ```bash
-bin/magento saas:resync --feed products --no-reindex
+PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 ```
+
+#### 侧写
+
+如果特定信息源的重新索引过程耗时过长，请运行Profiler以收集可能对支持团队有用的其他数据。 要执行此操作，请传递 `EXPORTER_PROFILER=1`环境变量：
+
+```bash
+EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
+```
+
+Profiler数据存储在 `var/log/commerce-data-export.log` 格式为：
+
+`<Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>`
+
+#### 提交支持请求
+
+如果看到与配置或第三方扩展无关的错误，请提交 [支持服务单](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 尽可能多的信息。
