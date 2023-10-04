@@ -2,7 +2,7 @@
 title: '"[!DNL Live Search] 设置”'
 description: “配置设置 [!DNL Live Search] 服务。”
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: eefae3c849545062012cea1a7092c27f7df56b58
+source-git-commit: 06dfc8fd5dc3619732a1f534e5770b6812eddc07
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 0%
@@ -37,12 +37,3 @@ ht-degree: 0%
 |--- |--- |
 | 选择数量 | 指定可在店面中用作搜索过滤器的价格范围分组的数量。 默认值：8，最大值：50 |
 | 间隔值 | 指定每个组的价格范围间隔。 例如，间隔值为20的五个选择将创建0-20、20-40、40-60、60-80和>80的五个分组。 默认值：5，最大值：10,000 |
-
-<!-- ## Language
-
-The Language setting tells [!DNL Live Search] which language to expect when reading the catalog and writing the index. 
-
-Languages have different sets of rules for grammar: how words are separated, verb tenses and synonyms, for example.
-The Language setting ensures that the correct set of rules are applied to the indexing mechanism.
-
-The Language settings should be set to the primary language of the catalog. -->
