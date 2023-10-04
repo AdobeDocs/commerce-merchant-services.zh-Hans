@@ -2,20 +2,18 @@
 title: '"[!DNL Live Search] 设置”'
 description: “配置设置 [!DNL Live Search] 服务。”
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: 06dfc8fd5dc3619732a1f534e5770b6812eddc07
+source-git-commit: ba4836a67ffee5ae46b6c0efa1db3f1dcbd53116
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
 # 设置
 
-使用 *设置* 选项卡，以配置价格方面范围和间隔以及索引的默认语言。
+使用 *设置* 选项卡，以配置价格方面范围和间隔。
 
 价格彩块化指定价格范围组的数量以及价格值在它们之间的分配方式。
-
-语言设置告知 [!DNL Live Search] 写入索引时要使用的语言。
 
 ![设置](assets/settings.png)
 
