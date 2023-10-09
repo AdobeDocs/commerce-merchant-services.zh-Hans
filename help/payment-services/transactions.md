@@ -3,9 +3,10 @@ title: 事务报表
 description: 使用事务报表可以查看事务授权率和事务趋势。
 role: User
 level: Intermediate
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
+source-git-commit: ffbc5ca30a092f5ef2642b051f080fe47ce0e815
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
@@ -40,7 +41,7 @@ ht-degree: 0%
 
 请参阅链接的商务订单和提供商交易ID、交易金额、每笔交易的支付方式等，所有这些都包含在此报表中。
 
-并非所有支付方式都提供相同的信息粒度。 例如，信用卡交易会在“交易”报表中提供响应、AVS和CCV代码；而PayPal智能按钮则不提供。
+并非所有支付方式都提供相同的信息粒度。 例如，信用卡交易提供响应、AVS和CCV代码，以及“交易”报表中卡的最后四位数字；而PayPal智能按钮不提供。
 
 您可以 [下载事务](#download-transactions) CSV文件格式，用于现有会计或订单管理软件。
 
@@ -84,6 +85,7 @@ ht-degree: 0%
 1. 切换 _[!UICONTROL Payment Method]_选项，用于仅查看选定付款方法的报表结果。
 1. 输入 _最小订单金额_ 或 _最大订单金额_ 以便在该订单金额范围内查看报表结果。
 1. 输入 _[!UICONTROL Order ID]_搜索特定事务处理。
+1. 输入 _[!UICONTROL Card Last Four Digits]_以搜索特定的信用卡或借记卡。
 1. 单击 **[!UICONTROL Hide filters]** 以隐藏筛选器。
 
 ### 显示和隐藏列
@@ -126,7 +128,8 @@ ht-degree: 0%
 | [!UICONTROL Order ID] | 商业订单ID（仅包含成功交易的值，对于拒绝的交易为空）<br> <br>查看相关内容 [订单信息](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}中，单击ID。 |
 | [!UICONTROL Provider Transaction ID] | 由付款提供商提供的交易ID；仅包含成功交易的值，并包含拒绝交易的短划线。 |
 | [!UICONTROL Transaction Date] | 交易日期时间戳 |
-| [!UICONTROL Payment Method] | 交易的支付方式；适用于Payment Services版本1.6.0及更高版本 |
+| [!UICONTROL Payment Method] | 具有品牌和卡类型详细信息的交易的支付方法。 请参阅 [信息卡类型](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) 有关更多信息；适用于Payment Services 1.6.0及更高版本 |
+| [!UICONTROL Card Last Four Digits] | 用于交易记录的信用卡或借记卡的最后四位数字 |
 | [!UICONTROL Result] | 交易的结果 — *[!UICONTROL OK]* （成功交易）， *[!UICONTROL Rejected by Payment Provider]* （被PayPal拒绝）， *[!UICONTROL Rejected by Bank]* （被发卡银行拒绝） |
 | [!UICONTROL Response Code] | 提供来自付款提供商或银行的拒绝原因的错误代码；请参阅可能的响应代码列表和描述 [`Rejected by Bank` 状态](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) 和 [`Rejected by Payment Provider` 状态](https://developer.paypal.com/api/rest/reference/orders/v2/errors/). |
 | [!UICONTROL AVS Code] | 地址验证服务代码；付款请求的处理器响应信息。 请参阅 [可能的代码列表和描述](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) 以了解更多信息。 |
@@ -147,4 +150,3 @@ ht-degree: 0%
 * `5650` — 关联银行拒绝了交易，因为该银行要求强大的客户身份验证([3DS](security.md#3ds))。
 
 失败交易的详细错误响应代码可用于2023年6月1日以后的交易。 对于2023年6月1日之前发生的交易，将显示部分报表数据。
-
