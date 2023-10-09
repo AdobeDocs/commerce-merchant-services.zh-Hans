@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] 发行说明"
 description: 查看发行说明，了解所有 [!DNL Payment Services] 版本发布。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: a5bd06372678512062415702f83e57afb0eeb8da
+source-git-commit: f61a9c9ed1eedded4b304d2fe3f9e2930d10e027
 workflow-type: tm+mt
-source-wordcount: '2247'
+source-wordcount: '2279'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ ht-degree: 0%
 这些发行说明描述了所发生的功能更改和修复，这些更改和修复是在托管服务的常规版本化功能发布之外发布的。
 
 +++托管服务更新
+
+_2023年10月10日_
+
+![新建问题](../assets/fix.svg)<!-- Issue PAY-4888 --> 现在，商家可以根据以下位置中卡号的最后4位数过滤信用卡和借记卡交易： [交易报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html).
 
 _2023年7月12日_
 
