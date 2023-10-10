@@ -3,9 +3,9 @@ title: 将Commerce数据连接到Adobe Experience Platform
 description: 了解如何将Commerce数据连接到Adobe Experience Platform。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 6044a60c60bf8f29295a14157230d85d0a1b9e07
+source-git-commit: bcee983ee7f40fbe2ea8eb96317b663ce7363ddd
 workflow-type: tm+mt
-source-wordcount: '2232'
+source-wordcount: '2246'
 ht-degree: 0%
 
 ---
@@ -118,9 +118,13 @@ ht-degree: 0%
 
 ## 发送历史订单数据
 
-Adobe Commerce最多收集5年的数据 [历史订单数据和状态](events.md#back-office-events). 您可以使用Experience Platform连接器将该历史数据发送到Experience Platform，以根据这些过去的订单扩充您的客户配置文件。 该数据存储在Experience Platform内的数据集中。
+Adobe Commerce最多收集5年的数据 [历史订单数据和状态](events.md#back-office-events). 您可以使用Experience Platform连接器将该历史数据发送到Experience Platform，以丰富客户配置文件并根据这些过去的订单个性化客户体验。 该数据存储在Experience Platform内的数据集中。
 
 虽然Commerce已收集历史订单数据，但您必须完成多个步骤才能将该数据发送到Experience Platform。
+
+观看本视频，了解有关历史订单的更多信息，然后完成以下步骤来实施历史订单收集和配置。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 ### 步骤1：安装历史订单数据收集
 
@@ -248,12 +252,6 @@ Adobe Commerce最多收集5年的数据 [历史订单数据和状态](events.md#
 | 从 | 您要开始收集订单历史记录数据的起始日期。 |
 | 至 | 您要结束收集订单历史记录数据的起始日期。 |
 | 开始同步 | 开始将订单历史记录数据同步到Experience Platform边缘的过程。 如果 **[!UICONTROL Dataset ID]** 字段为空或数据集ID无效。 |
-
-### 历史订单演示
-
-观看此视频，进一步了解历史订单：
-
->[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 ## 确认已收集事件数据
 
