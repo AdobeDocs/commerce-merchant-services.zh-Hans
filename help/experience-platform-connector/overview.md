@@ -3,16 +3,16 @@ title: 指南概述
 description: 了解如何使用Experience Platform连接器将Adobe Commerce数据与Adobe Experience Platform集成。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 0b30d78602e6fc033a05178de8454b4dbf197911
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '498'
 ht-degree: 1%
 
 ---
 
 # Experience Platform连接器概述
 
-Experience Platform连接器扩展允许Adobe Commerce商家发送 [店面](events.md#storefront-events) 和 [后台](events.md#back-office-events) 将数据发送到Adobe Experience Platform Edge，以便其他Adobe Experience Cloud产品(如Adobe Analytics和Adobe Target)可以使用该Commerce数据。 通过将Commerce数据连接到Adobe Experience Cloud中的其他产品，您可以执行任务，例如分析网站上的用户行为、执行AB测试以及创建个性化营销活动。
+Experience Platform连接器扩展允许Adobe Commerce商家发送 [店面](events.md#storefront-events) 和 [后台](events.md#back-office-events) 将数据发送到Adobe Experience Platform Edge，以便其他Adobe Experience Cloud产品(如Adobe Analytics和Adobe Journey Optimizer)可以使用该Commerce数据。 通过将Commerce数据连接到Adobe Experience Cloud中的其他产品，您可以执行任务，例如分析网站上的用户行为、执行AB测试以及创建个性化营销活动。
 
 [店面活动](events.md#storefront-events) 捕获购物者交互，例如 `View Page`， `View Product`， `Add to Cart`、和 [申请列表](events.md#b2b-events) 信息（对于B2B商家）。 [后台](events.md#back-office-events) 事件会捕获有关订单状态的信息，例如，订单是否已下达、已取消、已退款、已发运或已完成。 捕获的数据不包括个人身份信息(PII)。 所有用户标识符（如Cookie ID和IP地址）都经过严格匿名处理。 [了解详情](https://www.adobe.com/privacy/experience-cloud.html).
 

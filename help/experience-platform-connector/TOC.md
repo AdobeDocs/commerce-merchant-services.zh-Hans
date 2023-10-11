@@ -5,10 +5,10 @@ breadcrumb-title: 适用于Adobe Commerce的Adobe Experience Platform Connector
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 91db0176b5ecf09ac403e6e91a4b4513dfb06ea0
+source-git-commit: 0b30d78602e6fc033a05178de8454b4dbf197911
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 5%
+source-wordcount: '87'
+ht-degree: 4%
 
 ---
 
@@ -25,3 +25,5 @@ ht-degree: 5%
    - [活动](events.md)
    - [自定义事件](custom-events.md)
    - [使用Adobe Experience Platform标记](using-tags.md)
+- 用例 {#use-cases}
+   - [使用Adobe Journey Optimizer发送放弃的购物车电子邮件](using-ajo.md)

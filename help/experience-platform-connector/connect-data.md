@@ -3,9 +3,9 @@ title: 将Commerce数据连接到Adobe Experience Platform
 description: 了解如何将Commerce数据连接到Adobe Experience Platform。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: bcee983ee7f40fbe2ea8eb96317b663ce7363ddd
+source-git-commit: f4ed7a485d5962530641203beec79061bfa7e33f
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2320'
 ht-degree: 0%
 
 ---
@@ -278,3 +278,7 @@ Adobe Commerce最多收集5年的数据 [历史订单数据和状态](events.md#
 在此示例中，您会看到以下源自 [`commerce.productListAdds`](events.md#addtocart)， [`commerce.productViews`](events.md#productpageview)， [`web.webpagedetails.pageViews`](events.md#pageview)，等等。 利用此视图，可验证您的Commerce数据是否到达边缘。
 
 如果结果不符合预期，请打开您的数据集并查找任何失败的批量导入。 了解有关 [批处理导入疑难解答](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
+
+## 后续步骤
+
+将Commerce数据发送到Experience Platform边缘时，其他Adobe Experience Cloud产品(如Adobe Journey Optimizer)可以使用该数据。 例如，您可以将Journey Optimizer配置为侦听某些事件，并根据该事件数据触发针对首次用户的电子邮件或者当存在放弃的购物车时。 了解如何通过以下方式扩展Commerce平台 [创建客户历程](using-ajo.md) 在Journey Optimizer中。
