@@ -3,9 +3,9 @@ title: “入门概述”
 description: '"[!DNL Live Search] 载入流程、系统要求、边界和限制”'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 68c96b6fc74e60ddd44ab8e953c022b8244da281
+source-git-commit: a6d8c259f232ab27d7ed64558d5d193d59d23cad
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -13,10 +13,6 @@ ht-degree: 0%
 # 入门概述
 
 开始使用 [!DNL Live Search] 对于Adobe Commerce，请完成载入流程以安装扩展，配置API密钥，并同步目录。
-
-## 载入流程
-
-![[!DNL Live Search] 载入流程图](assets/onboarding-flow.svg)
 
 ## 要求 {#requirements}
 
@@ -72,6 +68,12 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
+## Inventory management
+
+[!DNL Live Search] 支持 [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) commerce（以前称为多源清单，或MSI）中的功能。 要启用全面支持，您必须 [更新](install.md#update) 依赖关系模块 `commerce-data-export` 到版本102.2.0+。
+
+[!DNL Live Search] 返回一个布尔值，表明某个产品在Inventory management中是否可用，但不包含有关哪个来源具有库存的信息。
+
 ## 价格索引器
 
 Live Search客户可以使用新的 [SaaS价格索引器](../price-index/index.md)，可以加快价格变更更新和同步时间。
@@ -107,7 +109,6 @@ Live Search客户可以使用新的 [SaaS价格索引器](../price-index/index.m
 ## 当前不支持
 
 * 此 [高级搜索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 在以下情况下将禁用模块 [!DNL Live Search] ，并删除店面页脚中的高级搜索链接。
-* 产品价格不包括 [增值税](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) （增值税）。
 * [层价格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) 在“实时搜索”弹出框和产品列表页面构件中不受支持。
 
 ## Cookies

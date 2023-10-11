@@ -3,9 +3,9 @@ title: "[!DNL Live Search] 发行说明"
 description: “的最新发行信息 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: e568609ac1093b36d78250b45e581b63ff35a2ac
+source-git-commit: decb478ecf3b0853933afcd35b99ec176d7262b2
 workflow-type: tm+mt
-source-wordcount: '1725'
+source-wordcount: '1747'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,7 @@ _2023年9月15日_
 
 ### 更新
 
+![修复](../assets/fix.svg) 产品和价格馈送的表大小已大大减少。 表 `catalog_data_exporter_products` 和 `catalog_data_exporter_product_prices` 应该会看到规模的大幅缩减。
 ![修复](../assets/fix.svg) “规则”选项卡已重命名为“搜索规则”
 ![修复](../assets/fix.svg) 当按“趋势”进行排名时，您现在可以选择以下两项：* 3天（默认）* 14天* 30天
 ![修复](../assets/fix.svg) “活动”（提升/固定/伯里/隐藏）已重命名为“手动排名”

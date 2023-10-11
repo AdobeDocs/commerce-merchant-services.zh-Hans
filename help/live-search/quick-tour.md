@@ -2,9 +2,9 @@
 title: “快速导览”
 description: “快速浏览一下 [!DNL Live Search] 从店面。”
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
+source-git-commit: 9f045a049ac775ed4673e807ab5e21b8811cde2d
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -40,3 +40,7 @@ ht-degree: 0%
 ## 促销规则
 
 促销 [规则](rules.md) 使用向搜索添加逻辑和事件的if-then语句塑造购物体验。 您可以轻松地提升或隐藏促销、季节或其他时间段内的产品。
+
+## 搜索词支持
+
+[!DNL Live Search] 支持商务 [搜索词重定向](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). 例如，用户可以搜索诸如“运费”之类的术语，并直接转到运费页面。

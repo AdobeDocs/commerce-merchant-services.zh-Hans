@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: “ [!DNL Live Search storefront popover] 会动态返回建议的产品和缩略图。”
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
+source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 
 [!DNL Live Search] 返回两个字符或更多字符的查询结果。 对于部分匹配，每个单词的最大字符数为20。 “键入时搜索”查询中的字符数无法配置。
 
+默认情况下， [!DNL Live Search] 支持 [搜索词重定向](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html).
+
+![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
+
 ## 可搜索属性
 
 要生成具有高度针对性的结果，请查看 [可搜索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`)产品属性。 为确保相关性，请仅在属性包含含义清晰而简洁的内容时才允许搜索属性。 避免使用包含不太精确、较长的文本的属性，例如 `description`尽管默认情况下启用了搜索，但可能会降低搜索结果的精度。 例如，如果人员搜索“短裤”，并且有描述包含“短袖”一词的衬衫，则衬衫将包含在搜索结果中。
@@ -24,8 +28,6 @@ ht-degree: 0%
 * `sku`
 * `name`
 * `categories`
-
-[[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
 ## [!DNL Popover] 页面大小
 

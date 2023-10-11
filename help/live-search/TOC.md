@@ -4,9 +4,9 @@ user-guide-description: “本指南详细介绍了如何使用 [!DNL Live Searc
 breadcrumb-title: “[!DNL Live Search] 指南”
 role: Admin
 feature: Services, Search
-source-git-commit: cc921e7e5abe41998497fcd8a6bdcc146dd1acb0
+source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '96'
 ht-degree: 9%
 
 ---
@@ -33,7 +33,6 @@ ht-degree: 9%
       - [彩块化的类型](facets-type.md)
       - [添加Facet](facets-add.md)
       - [管理Facet](facets-manage.md)
-      - [技术说明](facet-technical-notes.md)
    - [索引](indexing.md)
    - [性能](performance.md)
    - 规则 {#rules}
