@@ -58,7 +58,7 @@ ht-degree: 0%
 
    查找 `commerce.checkouts` 事件并检查事件有效负载：
 
-       “&#39;json
+       ```json
        &quot;personID&quot;： &quot;84281643067178465783746543501073369488&quot;，
        &quot;eventType&quot;： &quot;commerce.checkouts&quot;，
        “_id”：“4b41703f-e42e-485b-8d63-7001e3580856-0”，
