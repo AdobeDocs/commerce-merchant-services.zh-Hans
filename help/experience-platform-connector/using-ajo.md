@@ -3,9 +3,9 @@ title: 使用Adobe Journey Optimizer发送放弃的购物车电子邮件
 description: 了解如何使用Adobe Journey Optimizer发送放弃的购物车电子邮件。
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: ea54638b597f5eaae04780498558a8fd46821b52
+source-git-commit: 261416654773470edfa3cc22058cccf92ef29cdb
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -58,17 +58,17 @@ ht-degree: 0%
 
    查找 `commerce.checkouts` 事件并检查事件有效负载：
 
-       ```json
-       &quot;personID&quot;： &quot;84281643067178465783746543501073369488&quot;，
-       &quot;eventType&quot;： &quot;commerce.checkouts&quot;，
-       “_id”：“4b41703f-e42e-485b-8d63-7001e3580856-0”，
-       &quot;commerce&quot;： {
-       &quot;cart&quot;： {}，
-       “结帐”： {
-       &quot;value&quot;： 1
-       }
-       ```
-   
+   ```json
+   "personID": "84281643067178465783746543501073369488", 
+   "eventType": "commerce.checkouts", 
+   "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
+   "commerce": { 
+       "cart": {}, 
+       "checkouts": { 
+           "value": 1 
+       } 
+   ```
+
    如您所见，完整的事件有效负载包含丰富的事件数据。 在下一部分中，您将配置Journey Optimizer中的事件以侦听和响应 `commerce.checkouts` 事件从Commerce店面生成。
 
 ## 步骤3：在Journey Optimizer中配置事件
