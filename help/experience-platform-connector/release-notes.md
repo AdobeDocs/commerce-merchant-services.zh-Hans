@@ -3,9 +3,9 @@ title: 发行说明
 description: Adobe Commerce中的Adobe Experience Platform连接器的最新发行信息。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 5e6cf955080338e00f23eaadeaa0192798126151
+source-git-commit: 24494546d6d21cf46e3cb9f0fdd503ec8007daf8
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '652'
 ht-degree: 1%
 
 ---
@@ -63,6 +63,8 @@ _2022年10月12日_
 _2023年10月10日_
 
 [!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+
+这是一个主版本发行版本。 [编辑](install.md#update-the-experience-platform-connector) 项目的根composer.json文件。
 
 ![新建](../assets/new.svg)  — 正式发布 [发送历史订单](connect-data.md#send-historical-order-data) Experience Platform的数据和状态。
 ![新建](../assets/new.svg)  — 当您使用OAuth 2.0时 [配置](connect-data.md#connect-commerce-data-to-adobe-experience-platform) Experience Platform连接器。

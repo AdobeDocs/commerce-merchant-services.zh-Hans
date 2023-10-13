@@ -3,9 +3,9 @@ title: 将Commerce数据连接到Adobe Experience Platform
 description: 了解如何将Commerce数据连接到Adobe Experience Platform。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: f4ed7a485d5962530641203beec79061bfa7e33f
+source-git-commit: 24494546d6d21cf46e3cb9f0fdd503ec8007daf8
 workflow-type: tm+mt
-source-wordcount: '2320'
+source-wordcount: '2263'
 ht-degree: 0%
 
 ---
@@ -122,53 +122,15 @@ Adobe Commerce最多收集5年的数据 [历史订单数据和状态](events.md#
 
 虽然Commerce已收集历史订单数据，但您必须完成多个步骤才能将该数据发送到Experience Platform。
 
-观看本视频，了解有关历史订单的更多信息，然后完成以下步骤来实施历史订单收集和配置。
+观看本视频，了解有关历史订单的更多信息，然后完成以下步骤来实施历史订单收集。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
-### 步骤1：安装历史订单数据收集
-
-要启用历史订单数据收集，您必须更新项目的根 [!DNL Composer] `.json` 文件如下所示：
-
-1. 打开根 `composer.json` 文件和搜索 `magento/experience-platform-connector`.
-
-1. 在 `require` 部分，按如下方式更新版本号：
-
-   ```json
-   "require": {
-      ...
-      "magento/experience-platform-connector": "^3.0.0",
-      ...
-    }
-   ```
-
-1. 对于B2B商家，请更新 `.json` 文件如下所示：
-
-   ```json
-   "require": {
-     ...
-     "magento/experience-platform-connector-b2b": "^2.0.0"
-     ...
-   }
-   ```
-
-1. **保存** `composer.json`. 然后，从命令行运行以下命令：
-
-   ```bash
-   composer update magento/experience-platform-connector –-with-dependencies
-   ```
-
-   或者，对于B2B商家：
-
-   ```bash
-   composer update magento/experience-platform-connector-b2b --with-dependencies
-   ```
-
-### 步骤2：在Adobe Developer控制台中创建项目
+### 步骤1：在Adobe Developer控制台中创建项目
 
 >[!NOTE]
 >
->如果您已安装并启用了 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) 扩展上，您已完成步骤2和3。
+>如果您已安装并启用了 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) 扩展，您已完成步骤1和2，可以跳至步骤3。
 
 在Adobe Developer控制台中创建一个对Commerce进行身份验证的项目，以便能够进行Experience PlatformAPI调用。
 
@@ -182,7 +144,7 @@ Adobe Commerce最多收集5年的数据 [历史订单数据和状态](events.md#
 
 此步骤的结果将创建一个配置文件，供您在下一步中使用。
 
-### 步骤3：下载配置文件
+### 步骤2：下载配置文件
 
 下载 [工作区配置文件](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). 将此文件的内容复制并粘贴到 **服务帐户/凭据详细信息** 商务管理员页面。
 
@@ -204,7 +166,7 @@ Adobe Commerce最多收集5年的数据 [历史订单数据和状态](events.md#
 
 1. 单击 **保存配置**.
 
-### 步骤4：设置订单同步服务
+### 步骤3：设置订单同步服务
 
 输入开发人员凭据后，设置订单同步服务。 订单同步服务使用 [消息队列框架](https://developer.adobe.com/commerce/php/development/components/message-queues/) 和RabbitMQ。 完成这些步骤后，订单状态数据可以同步到SaaS，在发送到Experience Platform之前需要执行此操作。
 
@@ -229,7 +191,7 @@ Adobe Commerce最多收集5年的数据 [历史订单数据和状态](events.md#
 
 启用订单同步服务后，您可以在Experience Platform连接器页面中指定历史订单日期范围。
 
-### 步骤5：指定订单历史记录日期范围
+### 步骤4：指定订单历史记录日期范围
 
 指定要发送给Experience Platform的历史订单的日期范围。
 
