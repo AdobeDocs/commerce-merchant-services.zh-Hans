@@ -2,9 +2,9 @@
 title: '"[!DNL Live Search] 索引”'
 description: “了解如何 [!DNL Live Search] 索引产品属性属性。”
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
+source-git-commit: 5d76d5537c8625296663239195abd26d4ee24db4
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 ## 索引管道
 
 客户端从店面调用搜索服务以检索（可筛选、可排序）索引元数据。 仅限具有下列项的可搜索产品属性： *在分层导航中使用* 属性设置为 `Filterable (with results)` 和 *在产品列表中使用排序* 设置为 `Yes` 可以由搜索服务调用。
-为了构建动态查询，搜索服务需要知道哪些属性是可搜索的，以及它们的权重。 [!DNL Live Search] 遵循Adobe Commerce搜索权重（1-10，其中10是最高优先级）。 可以在架构中找到同步并与目录服务共享的数据列表，架构定义于：
+为了构建一个动态查询，搜索服务需要知道哪些属性是可搜索的，以及哪些属性是可搜索的 [粗细](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search). [!DNL Live Search] 遵循Adobe Commerce搜索权重（1-10，其中10是最高优先级）。 可以在架构中找到同步并与目录服务共享的数据列表，架构定义于：
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 

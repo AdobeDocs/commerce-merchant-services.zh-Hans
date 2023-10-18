@@ -1,17 +1,17 @@
 ---
-title: “搜索规则”
-description: '"[!DNL Live Search] 规则将逻辑与行动相结合，塑造购物体验。”'
+title: “搜索促销”
+description: '"[!DNL Live Search] 促销规则将逻辑与操作相结合，塑造购物体验。”'
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
 
-# 搜索规则
+# 搜索促销
 
-[!DNL Live Search] 规则将逻辑与操作相结合，以塑造购物者在商店中的搜索体验。 您可以使用规则来提升、隐藏、固定或隐藏产品，以实时校准搜索结果来支持您的业务目标。
+“搜索促销”是指一组规则，这些规则将逻辑与操作相结合，以塑造购物者在您商店中的搜索体验。 您可以使用促销规则来提升、掩盖、固定或隐藏产品，以实时校准搜索结果来支持您的业务目标。
 
 每个规则都有三个主要组件：
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 * 如果正在预览的规则不包含 `query is` 条件，以及随后的活动、匹配规则 `query is` 找到条件， `query is` 规则已应用。
 * 如果正在预览的规则不包含 `query is` 条件，且没有其他包含 `query is` 找到条件后，将应用正在预览的规则。
 
-## 类别规则和类别产品分配
+## 类别推销和类别产品分配
 
-[!DNL Live Search] 允许您按类别过滤。
+[!DNL Live Search] 允许您按类别过滤。 请参阅 [类别促销](category-merch.md) 以了解更多信息。
 但是，在Adobe Commerce中，您可以创建一个虚拟类别，并使用 [类别产品分配](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). 此类类别是在运行时生成的，在类别数据库中不存在。 因此， [!DNL Live Search] 无法读取或使用此类别类型。

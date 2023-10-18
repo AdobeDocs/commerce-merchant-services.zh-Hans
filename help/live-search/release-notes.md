@@ -3,9 +3,9 @@ title: "[!DNL Live Search] 发行说明"
 description: “的最新发行信息 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: decb478ecf3b0853933afcd35b99ec176d7262b2
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1771'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,18 @@ ht-degree: 0%
 
 +++托管服务更新
 
+_2023年10月12日_
+
+![新建](../assets/new.svg) Commerce管理员现在可以为指定索引的语言 [!DNL Live Search]. 请参阅 [设置](settings.md).
+![修复](../assets/fix.svg) “搜索规则”选项卡已重命名为“搜索促销”。
+
 _2023年6月13日_
 
 ![修复](../assets/fix.svg) 修复了某些字符（如引号或撇号）导致排名问题的情况。 重新索引将解决这些问题。
 
 _2023年4月25日_
 
-![新建](../assets/new.svg) Live Search客户现在可以利用新的 [SaaS价格索引器](../price-index/index.md).
+![新建](../assets/new.svg) [!DNL Live Search] 客户现在可以利用新的 [SaaS价格索引器](../price-index/index.md).
 
 +++
 

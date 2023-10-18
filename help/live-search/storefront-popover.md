@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: “ [!DNL Live Search storefront popover] 会动态返回建议的产品和缩略图。”
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
+source-git-commit: 5d76d5537c8625296663239195abd26d4ee24db4
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,10 @@ ht-degree: 0%
 
 ## 可搜索属性
 
-要生成具有高度针对性的结果，请查看 [可搜索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`)产品属性。 为确保相关性，请仅在属性包含含义清晰而简洁的内容时才允许搜索属性。 避免使用包含不太精确、较长的文本的属性，例如 `description`尽管默认情况下启用了搜索，但可能会降低搜索结果的精度。 例如，如果人员搜索“短裤”，并且有描述包含“短袖”一词的衬衫，则衬衫将包含在搜索结果中。
+要生成具有高度针对性的结果，请查看 [可搜索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`)产品属性。 为确保相关性，请仅在属性包含含义清晰而简洁的内容时才允许搜索属性。 避免使用包含不太精确、较长的文本的属性，例如 `description`尽管默认情况下启用了搜索，但可能会降低搜索结果的精度。
+例如，如果人员搜索“短裤”，并且有描述包含“短袖”一词的衬衫，则衬衫将包含在搜索结果中。
+
+[!DNL Live Search] 也尊重 [粗细](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) ，在Adobe Commerce中设置。 权重较高的属性在搜索结果中的显示位置将较高。
 
 以下属性始终可搜索：
 

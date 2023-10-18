@@ -2,9 +2,9 @@
 title: ’[!DNL Live Search] 工作区
 description: 此 [!DNL Live Search] 工作区用于配置、管理和监视搜索性能。
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 550c382671fd5bb611cb6c502204dacc9748cffc
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 | [性能](performance.md) | 功能板提供了有关产品搜索性能的洞察。 |
 | [彩块化](facets.md) | 高性能筛选，它使用属性值的多个维度来优化搜索条件。 |
 | [同义词](synonyms.md) | 扩展搜索范围，以包含购物者可能用于查找与您的目录中的产品不同的字词。 |
-| [搜索规则](rules.md) | 使用触发计划操作的逻辑规则塑造搜索体验。 提升、隐藏、固定或隐藏产品以校准搜索结果来支持您的业务目标。 |
+| [搜索促销](rules.md) | 使用触发计划操作的逻辑规则塑造搜索体验。 提升、隐藏、固定或隐藏产品以校准搜索结果来支持您的业务目标。 |
 | [类别促销](category-merch.md) | 在类别级别应用规则和智能促销。 |
 | [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) | 登录到商店管理员的开发人员可以使用实际目录数据编写和测试查询。 要了解更多信息，请访问 [GraphQL概述](https://developer.adobe.com/commerce/webapi/graphql/) 在 [!DNL Live Search] 开发人员文档。 |
-| [设置](settings.md) | 确定如何在店面中按价格范围对价格方面值进行分组。 |
+| [设置](settings.md) | 确定如何在店面中按价格范围对价格方面值进行分组并设置索引语言。 |

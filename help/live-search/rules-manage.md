@@ -1,10 +1,10 @@
 ---
 title: 管理规则
-description: “了解如何管理现有的 [!DNL Live Search] 规则。”
+description: “了解如何管理现有的搜索促销规则。”
 exl-id: 1a2ca9f9-1cf2-446f-809b-03ca5c798b13
-source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '139'
 ht-degree: 0%
 
 ---
