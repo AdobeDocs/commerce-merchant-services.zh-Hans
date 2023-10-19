@@ -4,9 +4,9 @@ description: 使用事务报表可以查看事务授权率和事务趋势。
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: ffbc5ca30a092f5ef2642b051f080fe47ce0e815
+source-git-commit: 91acc6e1dfd142caca77c0dc9ba55da34f75dd60
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -82,6 +82,8 @@ ht-degree: 0%
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
 1. 单击 **[!UICONTROL Filter]** 选择器。
 1. 切换 _[!UICONTROL Transaction Result]_选项，用于查看仅选定订单交易记录的报表结果。
+1. 选择 _[!UICONTROL Card Type]_以查看所选信息卡类型的报告结果。 当付款处理器无法识别卡类型时，将显示包含更多信息的工具提示。
+1. 选择 _[!UICONTROL Card Brand]_用于查看选定卡片品牌的报告结果。 当支付处理器无法识别卡品牌时，将显示包含更多信息的工具提示。
 1. 切换 _[!UICONTROL Payment Method]_选项，用于仅查看选定付款方法的报表结果。
 1. 输入 _最小订单金额_ 或 _最大订单金额_ 以便在该订单金额范围内查看报表结果。
 1. 输入 _[!UICONTROL Order ID]_搜索特定事务处理。

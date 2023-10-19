@@ -4,13 +4,13 @@ description: 为以下项目启用自动欺诈防护 [!DNL Payment Services] 和
 role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration, Security
-source-git-commit: 400d1f8a384fceebcd13e9496f8e218e694d2752
+exl-id: 440296bb-a6ff-408b-8195-3027916e4f84
+source-git-commit: 480b35fbc57b8528dbc305aa7db52483ba49d98c
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
-
 
 # 有效保护欺诈行为
 
@@ -18,15 +18,9 @@ ht-degree: 0%
 
 Adobe Commerce支持Signifyd版本5.4.0及更高版本。 [!DNL Payment Services] 支持身份验证前和身份验证后签名流程。
 
+含义/[!DNL Payment Services] 集成提供信用卡、借记卡、保险存储卡、通过管理员结账以及PayPal和Apple Pay支付方式的覆盖范围。 虽然部分交易细节未在支付服务与Signifyd之间共享，但Signifyd为所有支付方法提供了全面的风险覆盖，确保最大程度地保护。
+
 请参阅 [重要文档](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#downloadandinstallingmagento2extension) 了解有关安装和配置扩展的信息。
-
-## 集成限制
-
-目前，以下限制适用于Signifyd与 [!DNL Payment Services]：
-
-* 含义/[!DNL Payment Services] 集成仅支持 [信用卡字段](../payment-services/payments-options.md#credit-card-fields) (不是PayPal支付按钮或Apple Pay)。 [!DNL Payment Services] 将通过PayPal支付按钮和Apple Pay接收的订单数据发送到Signifyd，但集成仅提供通过信用卡字段下订单的详细信息。
-* 表示不支持商家为购物者向管理员下达的订单。
-* Signid不支持以下内容的订单： [保险存储信用卡](../payment-services/vaulting.md).
 
 ## 入门
 
