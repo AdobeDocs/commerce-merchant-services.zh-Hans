@@ -2,9 +2,9 @@
 title: 载入和安装
 description: 了解如何安装 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: f2771983072848e0da4a51d06bec970737ef951a
+source-git-commit: ec8e37078cf1b5182036192a542fdbabe61e68dd
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '624'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Commerce的所有测试实例都应使用沙盒端点。
 
 ```json
 "require": {
-  "magento/catalog-service": "^3.0.0"
+  "magento/catalog-service": "^3.0.1"
 }
 ```
 
@@ -95,7 +95,7 @@ composer update
 
 ```json
 "require": {
-    "magento/catalog-service": "^3.0.0"
+    "magento/catalog-service": "^3.0.1"
 }
 ```
 
