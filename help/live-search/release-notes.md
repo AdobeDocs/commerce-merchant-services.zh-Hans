@@ -3,9 +3,9 @@ title: "[!DNL Live Search] 发行说明"
 description: “的最新发行信息 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 67b4f24828dfdda6bd166791d6c36922294b402f
+source-git-commit: a3f89b74f3cafb855e39b410c1ab60e09d789da0
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1803'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,9 @@ ht-degree: 0%
 
 这些说明描述了在未发布版本控制版本或对托管服务的改进的情况下发布的更新。
 
-+++托管服务更新
+_2023年10月27日_
+
+![新建](../assets/new.svg) 此 [!DNL Live Search] PLP构件现在支持色板。
 
 _2023年10月12日_
 
@@ -38,8 +40,6 @@ _2023年6月13日_
 _2023年4月25日_
 
 ![新建](../assets/new.svg) [!DNL Live Search] 客户现在可以利用新的 [SaaS价格索引器](../price-index/index.md).
-
-+++
 
 ## [!DNL Live Search] 3.1.1 {#311}
 
