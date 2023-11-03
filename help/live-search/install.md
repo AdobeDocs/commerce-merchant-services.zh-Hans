@@ -3,9 +3,9 @@ title: "安装 [!DNL Live Search]"
 description: “了解如何安装、更新和卸载 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1264'
 ht-degree: 0%
 
 ---
@@ -126,7 +126,7 @@ ht-degree: 0%
 
    之后您应该能够添加Facet `cron` 运行产品和属性信息源，并将属性元数据导出到 [!DNL Live Search] 服务。
 
-1. 请至少等待一小时，以便将数据编入索引和进行同步。 然后，使用 [GraphQL游乐场](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) 以验证以下内容：
+1. 请至少等待一小时，以便将数据编入索引和进行同步。 然后，使用 [GraphQL游乐场](https://developer.adobe.com/commerce/services/graphql/live-search/) 以验证以下内容：
 
    * 返回的产品计数接近您对商店视图的预期。
    * 返回Facet。

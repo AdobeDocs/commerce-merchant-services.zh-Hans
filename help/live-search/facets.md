@@ -2,9 +2,9 @@
 title: "Facet"
 description: '"[!DNL Live Search] Facet使用属性值的多个维度作为搜索条件。”'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 4eddad715405f35ea063bab3cf4651fec3beeae5
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 分面是一种高性能筛选方法，它使用多个属性值的维度作为搜索条件。 多面向搜索与此类似，但比标准“更智能” [分层导航](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). 可用过滤器的列表由 [可过滤属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) 搜索结果中返回的产品数量。
 
-[!DNL Live Search] 使用 `productSearch` 查询，返回面向和特定于的其他数据 [!DNL Live Search]. 请参阅 [`productSearch` 查询](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) 在开发人员文档中查看代码示例。
+[!DNL Live Search] 使用 `productSearch` 查询，返回面向和特定于的其他数据 [!DNL Live Search]. 请参阅 [`productSearch` 查询](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) 在开发人员文档中查看代码示例。
 
 ![过滤的搜索结果](assets/storefront-search-results-run.png)
 
