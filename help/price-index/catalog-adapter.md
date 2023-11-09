@@ -3,9 +3,9 @@ title: 目录适配器扩展
 description: 使用目录适配器呈现来自Commerce Services的价格
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
-source-git-commit: 6b578e7113c278a05a64f2db5e032bccc4a9580a
+source-git-commit: a637ece6e806771dfc6359dacececf8ccf05b983
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Adobe Commerce产品价格索引器已禁用，在安装这些扩展模块后无
 ## 要求
 
 * Adobe Commerce 2.4.4+
-* 已安装以下Commerce Services之一：
+* 安装了以下两个Commerce服务：
 
    * [目录服务](../catalog-service/overview.md)
    * [实时搜索](../live-search/guide-overview.md)
@@ -34,14 +34,14 @@ Adobe Commerce产品价格索引器已禁用，在安装这些扩展模块后无
 composer require adobe-commerce/catalog-adapter
 ```
 
-## 重命名Adobe Commerce产品价格索引器
+## 重新启用Adobe Commerce产品价格索引器
 
 如果您的第三方应用程序依赖于默认的Adobe Commerce产品价格索引器，则可以使用以下命令重新启用它：
 
 ```bash
 # re-enable Product Price indexer
 bin/magento module:disable Magento_PriceIndexerDisabler
-# reindex Product Price indexer 
+# re-index Product Price indexer 
 bin/magento index:reindex catalog_product_price
 ```
 
@@ -78,4 +78,4 @@ composer require magento/module-price-indexer-disabler
 * 具有Headless Commerce实例并安装了所需服务(实时搜索、产品Recommendations、目录服务)的商家
 * 不依赖默认的Adobe Commerce产品价格索引器
 
-1. 从目录适配器软件包安装“价格禁用程序”
+1. 安装 `magento/module-price-indexer-disabler` 目录适配器包中的模块。

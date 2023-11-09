@@ -3,9 +3,9 @@ title: 目录同步
 description: 了解如何从导出产品数据 [!DNL Commerce] 服务器至 [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 151b57d7b31637178c645149d78c0d3670ee1c3e
+source-git-commit: 92129633adadd3ed699ae6427c01622dcb6ae3b4
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Adobe Commerce使用索引器将目录数据编译到表中。 该进程由自�
 - 查看同步状态(**进行中**， **成功**， **失败**)
 - 查看同步的产品总数
 - 搜索同步的产品以查看其当前状态
-- 按名称、SKU等搜索存储目录
+- 按名称、SKU等搜索存储目录。
 - 在JSON中查看同步的产品详细信息，以帮助诊断同步差异
 - 重新启动同步过程
 
@@ -67,7 +67,6 @@ Adobe Commerce使用索引器将目录数据编译到表中。 该进程由自�
 1. 在 _重新同步数据_ 部分，单击 [!UICONTROL Resync].
 
    [!DNL Commerce] 在下一个计划同步窗口同步您的目录。 根据目录的大小，此操作可能需要较长时间。
-
 
 ## 已同步的目录产品
 
@@ -166,7 +165,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 如果您在中看不到预期的数据 [!DNL Commerce Service]，检查在从同步期间是否出现问题 [!DNL Adobe Commerce] 实例到 [!DNL Commerce Service] 平台。
 
-中存在2个日志文件 `var/log/` 目录：
+中有两个日志文件 `var/log/` 目录：
 
 - `commerce-data-export-errors.log`  — 如果期间发生错误 _收集_ 阶段
 - `saas-export-errors.log`  — 如果期间发生错误 _传输_ 阶段
@@ -205,4 +204,4 @@ Profiler数据存储在 `var/log/commerce-data-export.log` 格式为：
 
 #### 提交支持请求
 
-如果看到与配置或第三方扩展无关的错误，请提交 [支持服务单](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 尽可能多的信息。
+如果您看到与配置或第三方扩展无关的错误，请提交 [支持服务单](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 尽可能多的信息。
