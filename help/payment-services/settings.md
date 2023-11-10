@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 85f8e158509231fb3b30c778309a9ac0fb468131
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2410'
 ht-degree: 0%
 
 ---
@@ -130,7 +130,7 @@ ht-degree: 0%
 
 此 [!UICONTROL Apple Pay] 按钮付款选项允许您提供 [!UICONTROL Apple Pay] 商店结账时的付款按钮。
 
-请参阅 [支付选项](payments-options.md#apple-pay-buttob) 以了解更多信息。
+只有在完成后才能使用Apple Pay [Apple Pay通过Paypal自助注册](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) 然后 [配置Apple Pay](settings.md/#payment-buttons) 你商店里的。 请参阅 [支付选项](payments-options.md#apple-pay-button) 以了解更多信息。
 
 您可以启用和配置 [!UICONTROL Apple Pay] 按钮付款选项：
 
