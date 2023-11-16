@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] 发行说明'
 description: 的最新发行信息 [!DNL Catalog Service] 用于Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: 8996772883b001babc09a3ae5a63310b23e58ae0
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '537'
 ht-degree: 1%
 
 ---
@@ -30,6 +30,7 @@ _2023年10月12日_
 
 ![新建](../assets/new.svg) 目录服务支持 `inStock` 产品变型的标记。
 ![新建](../assets/new.svg) `urlKey` 和 `externalId` 已添加到GraphQL架构。
+![新建](../assets/new.svg) 现在支持可下载产品和礼品卡。
 
 #### 已知限制
 
@@ -44,7 +45,6 @@ _2023年10月12日_
 
 * 最低广告价格
 * [分层定价](mesh.md)
-* 可下载的产品和礼品卡
 
 ## 先前版本
 
