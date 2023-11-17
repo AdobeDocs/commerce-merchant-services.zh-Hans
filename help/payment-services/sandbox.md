@@ -3,9 +3,9 @@ title: 设置测试沙盒
 description: 使用PayPal沙盒帐户以使用 [!DNL Payment Services] 处于测试模式。
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: bfb49e3602cc80f97817a8fd8d7c4684a3a3bcd2
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ PayPal沙盒帐户允许您使用 [!DNL Payment Services] 处于测试模式。 
 
 ## 启用联系人电话号码
 
-联系电话号码允许您获取PayPal从客户那里收集的联系电话号码。 PayPal始终从PayPal帐户持有人那里收集联系电话号码，以帮助确认其身份并联系他们以解决其帐户上的问题或完成其履行流程。 但是，PayPal不鼓励直接从商家使用联系电话号码，因为它可能会对销售产生负面影响。 请参阅 [PayPal获取联系电话号码](https://developer.paypal.com/docs/admin/checkout-settings/#get-contact-telephone-numbers) 文档，以了解更多信息。
+联系电话号码允许您获取PayPal从客户那里收集的联系电话号码。 PayPal始终从PayPal帐户持有人那里收集联系电话号码，以帮助确认其身份并联系他们以解决其帐户上的问题或完成其履行流程。 但是，PayPal不鼓励直接从商家使用联系电话号码，因为它可能会对销售产生负面影响。 请参阅 [PayPal获取联系电话号码](https://www.sandbox.paypal.com/businessmanage/preferences/website) 文档，以了解更多信息。
 
 此功能是 `off` 默认情况下。 启用后，当客户在结账页面之外完成品牌认证结账流程时，商店管理员可以看到电话号码。
 
