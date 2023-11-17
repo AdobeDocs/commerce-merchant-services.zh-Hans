@@ -2,14 +2,16 @@
 title: "[!DNL Live Search] 索引"
 description: “了解如何 [!DNL Live Search] 索引产品属性属性。”
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: a062133d94cb4898149b9cc878351ca2fad3c09e
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
 
 # 索引
+
+此 [!DNL Live Search] 索引过程读取产品属性的目录并建立索引，以便快速搜索、过滤和展示产品。
 
 产品属性属性（元数据）确定：
 

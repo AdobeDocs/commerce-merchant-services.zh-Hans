@@ -3,16 +3,16 @@ title: 简介 [!DNL Live Search]
 description: '"[!DNL Live Search] Adobe Commerce提供了闪电般快速、超级相关且直观的搜索体验。”'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 3352bd1390704646f4c21599ebf204eda2e1488c
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
 
 # 简介 [!DNL Live Search]
 
-[!DNL Live Search] 是一项用于Adobe Commerce的服务，取代了标准搜索功能。 此 [!DNL Live Search] 模块随Composer一起安装，并连接 [!DNL Commerce] 安装到 [!DNL Live Search] [服务](../landing/saas.md). 配置后，默认搜索文本字段会被替换为 [!DNL Live Search] 文本字段。
+[!DNL Live Search] 是一项用于Adobe Commerce的服务，取代了标准搜索功能。 此 [!DNL Live Search] 模块随Composer一起安装，并连接 [!DNL Commerce] 安装到 [!DNL Live Search] [服务](../landing/saas.md). 配置后，默认搜索文本字段会被替换为 [!DNL Live Search] 文本字段。 [!DNL Live Search] 此外，还安装产品列表页面(PLP)小组件，该小组件在浏览搜索结果时提供强大的筛选功能。
 
 [!DNL Live Search] 显示在 *营销* 下的菜单 *SEO和搜索* 在 [!DNL Commerce] *管理员*.
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 * [产品列表页面小组件](plp-styling.md) 提供了一个可搜索的产品列表页面，该页面支持彩块化和同义词。
 * AEM CIF组件： [弹出窗口小组件](https://github.com/adobe/aem-cif-guides-venia/pull/319) 和 [PLP小组件](https://github.com/adobe/aem-cif-guides-venia/pull/320) 允许AEM站点利用 [!DNL Live Search].
 * [[!DNL Live Search] 管理员](workspace.md) 是配置规则、彩块化和同义词的位置。
-* Search Adapter是的默认实施 [!DNL Live Search].
+* Search Adapter是的默认实施 [!DNL Live Search]. 推荐用于Headless和自定义实施。
 
 ## [!DNL Live Search] 演示
 

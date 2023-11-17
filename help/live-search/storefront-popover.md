@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: “ [!DNL Live Search storefront popover] 会动态返回建议的产品和缩略图。”
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 5d76d5537c8625296663239195abd26d4ee24db4
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,6 @@ ht-degree: 0%
 
 此 [Adobe Commerce的目录服务](../catalog-service/overview.md) 扩展提供了丰富的视图模型目录数据，以便快速和完全呈现与产品相关的店面体验。 目录服务可以与Live Search结合使用，以提供本机扩展当前不支持的功能：
 
-* 色板
 * 扩展属性
 * 还可以引入其他产品信息
 

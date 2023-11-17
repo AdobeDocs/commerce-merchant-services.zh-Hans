@@ -2,9 +2,9 @@
 title: 产品列表页面小组件
 description: 启用并设置样式 [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: 368059d50133d8b01be83e1616044a61ab094e3c
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,12 @@ ht-degree: 0%
 ## 启用PLP小组件
 
 当 [!DNL Live Search] 安装服务，默认搜索功能将转换为 [!DNL Live Search] 自动。
-必须在管理员中启用PLP小组件。
 
-1. 转到 **商店** >设置> **配置** > **[!DNL Live Search]** > **店面特色** 并设置 **启用产品列表小组件** 是。
+此 [!DNL Live Search] 默认情况下，新安装会启用PLP小组件。 如果您正在升级 [!DNL Live Search] 并且PLP小组件已关闭，将保持关闭状态。
+
+要禁用PLP小组件，请执行以下操作：
+
+1. 转到 **商店** >设置> **配置** > **[!DNL Live Search]** > **店面特色** 并设置 **启用产品列表小组件** “不”。
 1. 选择 **保存配置** 以保存设置。
 
 ## 样式设置示例
@@ -28,7 +31,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >不会继承Adobe Commerce主题中自定义类的元素。 这些元素必须由其特定类定位以匹配自定义类；主操作类不适用于构件按钮。
->CSS中的常规目标元素将被继承； `button` 将应用于构件按钮。
+>CSS中的常规目标元素会被继承； `button` 适用于构件按钮。
 
 高亮显示的div包含目标类 `ds-sdk-product-item__product-name`.
 
@@ -126,7 +129,8 @@ ht-degree: 0%
 
 * `.ds-sdk-input`
 * `.ds-sdk-input__label`
-* `.ds-sdk-input__options`
+* `.ds-sdk-product-item__product-swatch-group`
+* `ds-sdk-product-item__product-swatch-item`
 * `.ds-sdk-input_fieldset_show-more`
 
 ![输入](assets/plp-css-sdk-input.png)

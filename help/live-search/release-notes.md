@@ -3,9 +3,9 @@ title: "[!DNL Live Search] 发行说明"
 description: “的最新发行信息 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
 workflow-type: tm+mt
-source-wordcount: '1798'
+source-wordcount: '1869'
 ht-degree: 0%
 
 ---
@@ -41,13 +41,47 @@ _2023年4月25日_
 
 ![新建](../assets/new.svg) [!DNL Live Search] 客户现在可以利用新的 [SaaS价格索引器](../price-index/index.md).
 
+## [!DNL Live Search] 4.0.0 {#400}
+
+_2023年11月13日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"}
+
+### 新增功能
+
+![新建](../assets/new.svg) [!DNL Live Search] 现在支持PLP小组件中的颜色色板。
+![新建](../assets/new.svg) [!DNL Live Search] 现在显示类别名称而不是类别ID。
+![新建](../assets/new.svg) [!DNL Live Search] 现在支持PLP小组件中的删除线价格。
+![新建](../assets/new.svg) 引入了“隐藏筛选器”按钮以隐藏筛选器面板。
+
+
+### 更新
+
+![修复](../assets/fix.svg) 此 [!DNL Live Search] 默认情况下，新安装已启用PLP小组件。
+![修复](../assets/fix.svg) 重新配置了CSS样式以更好地隔离构件类。
+![修复](../assets/fix.svg) 次要错误修复
+
+商家必须升级 [!DNL Live Search] 版本>= 4.0.0的扩展以访问这些功能。
+
+安装版本3.1.1或更高版本后，启用新的索引器：
+
+* 产品价格信息源
+* 范围网站数据馈送
+* 范围客户组数据馈送
+
+升级后，在将更改推送到生产环境之前，请在QA或暂存中测试更新的配置。
+
+## 先前版本
+
++++3.1.1和之前的版本
+
 ## [!DNL Live Search] 3.1.1 {#311}
 
 _2023年9月15日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
-### 新增功能
+
 
 ![新建](../assets/new.svg) 添加了新的“类别促销”选项卡。 用户现在可以按类别添加智能排名和手动排名（固定、提升、隐藏、隐藏）
 ![新建](../assets/new.svg) 用户可以添加具有智能或手动排名的单个类别规则
@@ -68,20 +102,6 @@ _2023年9月15日_
 ![修复](../assets/fix.svg) “活动”（提升/固定/伯里/隐藏）已重命名为“手动排名”
 ![修复](../assets/fix.svg) “排名类型”已重命名为“智能排名”
 ![修复](../assets/fix.svg) 次要错误修复
-
-商家必须升级 [!DNL Live Search] 扩展版本>= 3.1.1以访问这些功能。
-
-安装版本3.1.1后，必须启用以下新索引器：
-
-* 产品价格信息源
-* 范围网站数据馈送
-* 范围客户组数据馈送
-
-建议在将更改推送到生产环境之前，在QA或暂存环境中进行升级和测试。
-
-## 先前版本
-
-+++3.1.0和之前的版本
 
 ## [!DNL Live Search] 3.1.0 {#310}
 

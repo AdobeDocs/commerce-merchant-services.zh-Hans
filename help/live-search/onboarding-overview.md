@@ -3,9 +3,9 @@ title: “入门概述”
 description: '"[!DNL Live Search] 载入流程、系统要求、边界和限制”'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: a6d8c259f232ab27d7ed64558d5d193d59d23cad
+source-git-commit: 48f16a0c5ce6c2a3226acf4a61525cfbf4a0f35f
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,22 @@ ht-degree: 0%
 ### 同义词
 
 * [!DNL Live Search] 每个存储视图最多可管理200个同义词。
+
+## 语言支持
+
+[!DNL Live Search] 小组件支持以下语言：
+
+* en_US（默认）
+* de_DE
+* es_MX
+* fr_FR
+* it_IT
+* ja_JA
+* nl_NL
+* no_NO
+* pt_PT
+
+如果小组件检测到Commerce管理语言设置(_商店_ >设置> _配置_ > _常规_ >国家/地区选项)与支持的语言匹配，默认为该语言。 否则，小组件将默认使用英语。
 
 ## 类别促销
 
