@@ -3,9 +3,9 @@ title: “入门概述”
 description: '"[!DNL Live Search] 载入流程、系统要求、边界和限制”'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 48f16a0c5ce6c2a3226acf4a61525cfbf4a0f35f
+source-git-commit: a98e8abe68b684dcddccbf7287126db159159bab
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,15 @@ ht-degree: 0%
 本视频介绍了类别推销。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424617)
+
+## 构件代码存储库
+
+产品列表页面构件和搜索弹出框构件均可从其github存储库下载。
+
+这允许开发人员完全自定义功能和样式。 这些用户自行托管代码，同时仍利用 [!DNL Live Search] 服务。
+
+* [PLP小组件](https://github.com/adobe/storefront-product-listing-page)
+* [搜索栏](https://github.com/adobe/storefront-search-as-you-type)
 
 ## Inventory management
 

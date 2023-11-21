@@ -2,9 +2,9 @@
 title: "Facet"
 description: '"[!DNL Live Search] Facet使用属性值的多个维度作为搜索条件。”'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: a8643ca9567feb7dde67358eeae321825b0253f2
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,12 @@ ht-degree: 0%
 * 50个可排序的属性
 * 200个可过滤属性
 * 200个可搜索属性
+
+>[!NOTE]
+>
+> 如果定义的可筛选属性超过200个，则无法确定哪个200个属性将实际编入索引。
+
+如果要与大量属性冲突，请考虑将属性组合到单个“meta-attribute”中。 例如，鞋的尺寸通常为数字，而衬衫的尺寸通常为“S/M/L/XL”。 这两种类型的大小可以合并为一个可搜索属性。
 
 | 设置 | 描述 |
 |--- |--- |
