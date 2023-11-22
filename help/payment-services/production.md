@@ -3,9 +3,9 @@ title: 启用 [!DNL Payment Services] 用于生产
 description: 通过启用 [!DNL Payment Services] 用于生产。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,10 @@ ht-degree: 0%
    |---|---|
    | `Authorize` | 批准购买并暂停资金。 该金额在商户将该金额“扣押”前不予提取。 |
    | `Authorize and Capture` | 批准购买，商家则“捕获”资金。 |
+
+   >[!IMPORTANT]
+   >
+   >[!DNL Payment Services] 支持部分捕获。 商家可以部分捕获（开票）订单部分。 例如，您可以单独捕获每个项目，或者现在捕获一个项目，稍后捕获其余项目。
 
 1. 单击 **[!UICONTROL Save]**.
 1. 单击 **[!UICONTROL Go to Payment Services]** 将定向回 [!DNL Payment Services] 家。

@@ -3,9 +3,9 @@ title: 信用卡保险存储
 description: 购物者可以保存（保存）自己的信用卡信息以便将来购买。
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 0%
 他们还可以轻松地从中删除其保险存储的信用卡 [存储的支付方式](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) 在我的帐户中。
 
 ![我的帐户中存储的支付方式](assets/stored-payment-methods.png){width="400" zoomable="yes"}
+
+>[!WARNING]
+>
+>PayPal当前最多可以存储5张保险存储卡。
 
 ## 启用保险存储
 

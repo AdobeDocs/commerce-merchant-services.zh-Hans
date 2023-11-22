@@ -3,9 +3,9 @@ title: 连接实例
 description: 使用API密钥和私钥连接您的Commerce实例，并在配置中指定数据空间。
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -37,11 +37,16 @@ ht-degree: 0%
 要了解如何为沙盒或生产环境生成API密钥，请参阅 [凭据](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
 
 >[!IMPORTANT]
+>
 >建议您不要重新生成API密钥对 *和* 更改活动生产实例上的SaaS标识符和/或数据空间。 如果对实例进行修改，您将丢失实例的数据。
 
 ## 配置Commerce服务
 
 可以在各个实例中使用相同的API密钥，但每个实例必须具有自己的密钥 [SaaS数据空间](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#saasenv).
+
+>[!NOTE]
+>
+>商家必须使用为MageID生成的相同密钥来获取他们的付款权利。
 
 现在您已获得凭据，可以配置SaaS项目和Saas数据空间了。
 
