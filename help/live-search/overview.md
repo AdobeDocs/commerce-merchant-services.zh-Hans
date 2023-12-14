@@ -1,11 +1,11 @@
 ---
 title: 简介 [!DNL Live Search]
-description: '"[!DNL Live Search] Adobe Commerce提供了闪电般快速、超级相关且直观的搜索体验。”'
+description: '"[!DNL Live Search] Adobe Commerce提供了快速、相关且直观的搜索体验。”'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 9460d7cf2de677557ee3792665c65d2a52a52569
+source-git-commit: 12c9fa011662e2e9fd7bb088db97359dcde87915
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '722'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 0%
 弹出框和PLP构件可以根据需要通过定义自定义CSS规则来设置样式。 请参阅 [样式弹出框元素](storefront-popover-styling.md) 和 [产品列表页面小组件](plp-styling.md).
 
 如果您希望扩展小组件的功能，则每个小组件的源代码在公共存储库中可用。
-在此方案中，您可以根据自己的需求自定义JavaScript，然后将自定义代码托管在您的网站上。 此自定义脚本与 [!DNL Live Search] 并返回正常结果，使您能够控制小组件的功能。
+在此方案中，您可以根据自己的需求自定义JavaScript，然后将自定义代码托管在CDN上。 此自定义脚本与 [!DNL Live Search] 并返回正常结果，使您能够控制小组件的功能。
 
 * [PLP构件存储库](https://github.com/adobe/storefront-product-listing-page)
 * [搜索栏存储库](https://github.com/adobe/storefront-search-as-you-type)
@@ -83,4 +83,4 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
 
-有关如何使用和配置Live Search的更深入视频，请参阅 [完整演示 [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/marketing/live-search-full-demonstration.html) 主题。
+有关如何使用和配置Live Search的更深入视频，请参阅 [完整演示 [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) 主题。
