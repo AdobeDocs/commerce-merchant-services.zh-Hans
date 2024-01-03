@@ -3,9 +3,9 @@ title: “技术概述”
 description: '"[!DNL Live Search] 载入流程、系统要求、边界和限制”'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 10b9f087da1346734735379846d50b53d36c1562
+source-git-commit: 9b46ee98d0459b6a4cce2da51ac6308a1102ef30
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -115,7 +115,7 @@ Live Search客户可以使用新的 [SaaS价格索引器](../price-index/index.m
 [!DNL Live Search] 适用于PWA Studio，但用户可能会看到与其他Commerce实施相比的细微差异。 在威尼亚省可以使用搜索和产品列表页面等基本功能，但Graphql的某些排列可能无法正确工作。 此外，可能存在性能差异。
 
 * 的当前PWA实现 [!DNL Live Search] 返回搜索结果所需的处理时间大于 [!DNL Live Search] 在本地Commerce店面中使用。
-* [!DNL Live Search] PWA不支持 [事件处理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). 因此，智能营销将无法奏效。
+* [!DNL Live Search] PWA不支持 [事件处理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). 因此，搜索报表和智能促销都将正常工作。
 * 直接筛选 `description`， `name`， `short_description` GraphQL不支持与一起使用 [PWA](https://developer.adobe.com/commerce/pwa-studio/)，但会使用更一般的过滤器返回它们。
 
 使用 [!DNL Live Search] 对于PWA Studio，集成商还必须：
