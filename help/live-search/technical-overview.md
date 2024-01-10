@@ -3,9 +3,9 @@ title: “技术概述”
 description: '"[!DNL Live Search] 载入流程、系统要求、边界和限制”'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 9b46ee98d0459b6a4cce2da51ac6308a1102ef30
+source-git-commit: 3d2b63280c2a890d7f84208efe3687c0d99e8e38
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,22 @@ ht-degree: 0%
 
 [!DNL Live Search] 通过上的端点通信 `https://catalog-service.adobe.io/graphql`.
 
->[!NOTE]
->
->作为 [!DNL Live Search] 没有访问完整产品数据库的权限， [!DNL Live Search] GraphQL和Commerce核心GraphQL不具备完全对等性。
+作为 [!DNL Live Search] 没有访问完整产品数据库的权限， [!DNL Live Search] GraphQL和Commerce核心GraphQL不具备完全对等性。
+
+建议直接调用SaaS API的 — 特别是目录服务端点。
+
+* 通过绕过Commerce数据库/Graphql进程获得性能并降低处理器负载
+* 利用 [!DNL Catalog Service] 要调用的联盟 [!DNL Live Search]， [!DNL Catalog Service]、和 [!DNL Product Recommendations] 从单个端点删除。
+
+对于某些用例，调用 [!DNL Catalog Service] 产品详细信息和类似案例。 请参阅 [refineProduct](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) 以了解更多信息。
+
+如果您有自定义Headless实施，请查看 [!DNL Live Search] 参考实施：
+
+* [PLP小组件](https://github.com/adobe/storefront-product-listing-page)
+* [实时搜索字段](https://github.com/adobe/storefront-search-as-you-type)
+
+如果您未使用默认组件，例如Luma上的搜索适配器或小组件或AEM CIF小组件，请注意，事件(为Adobe Sensei提供智能促销和性能量度的点击流数据)将无法开箱即用，并且需要自定义开发来实施headless事件。
+最新版本的 [!DNL Live Search] 已使用 [!DNL Catalog Service] 和安装 [!DNL Catalog Service] 模块。
 
 ## 边界和阈值
 
@@ -69,15 +82,42 @@ ht-degree: 0%
 
 [!DNL Live Search] 小组件支持以下语言：
 
-* en_US（默认）
-* de_DE
-* es_MX
-* fr_FR
-* it_IT
-* ja_JA
-* nl_NL
-* no_NO
-* pt_PT
+|  |  |  |  |
+|--- |--- |--- |--- |
+| 语言 | 区域 | 语言代码 | Magento区域设置 |
+| 保加利亚语 | 保加利亚 | bg_BG | bg_BG |
+| 加泰罗尼亚语 | 西班牙 | ca_ES | ca_ES |
+| 捷克语 | 捷克共和国 | cs_CZ | cs_CZ |
+| 丹麦语 | 丹麦 | da_DK | da_DK |
+| 德语 | 德国 | de_DE | de_DE |
+| 希腊语 | 希腊 | el_GR | el_GR |
+| 英语 | 英国 | en_GB | en_GB |
+| 英语 | 美国 | en_US | en_US |
+| 西班牙语 | 西班牙 | es_ES | es_ES |
+| 爱沙尼亚语 | 爱沙尼亚 | et_EE | et_EE |
+| 巴斯克语 | 西班牙 | eu_ES | eu_ES |
+| 波斯语 | 伊朗 | fa_IR | fa_IR |
+| 芬兰语 | 芬兰 | fi_FI | fi_FI |
+| 法语 | 法国 | fr_FR | fr_FR |
+| 加利西亚语 | 西班牙 | gl_ES | gl_ES |
+| 印地语 | 印度 | hi_IN | hi_IN |
+| 匈牙利语 | 匈牙利 | hu_HU | hu_HU |
+| 印尼语 | 印度尼西亚 | id_ID | id_ID |
+| 意大利语 | 意大利 | it_IT | it_IT |
+| 朝鲜语 | 韩国 | ko_KR | ko_KR |
+| 立陶宛语 | 立陶宛 | lt_LT | lt_LT |
+| 拉脱维亚语 | 拉脱维亚 | lv_LV | lv_LV |
+| 挪威语 | 挪威博克马尔语 | nb_NO | nb_NO |
+| 荷兰语 | 荷兰 | nl_NL | nl_NL |
+| 葡萄牙语 | 巴西 | pt_BR | pt_BR |
+| 葡萄牙语 | 葡萄牙 | pt_PT | pt_PT |
+| 罗马尼亚语 | 罗马尼亚 | ro_RO | ro_RO |
+| 俄语 | 俄罗斯 | ru_RU | ru_RU |
+| 瑞典语 | 瑞典 | sv_SE | sv_SE |
+| 泰语 | 泰国 | th_TH | th_TH |
+| 土耳其语 | 土耳其 | tr_TR | tr_TR |
+| 中文 | 中国 | zh_CN | zh_Hans_CN |
+| 中文 | 台湾 | zh_TW | zh_Hant_TW |
 
 如果小组件检测到Commerce管理语言设置(_商店_ >设置> _配置_ > _常规_ >国家/地区选项)与支持的语言匹配，默认为该语言。 否则，小组件将默认使用英语。
 
@@ -109,6 +149,17 @@ ht-degree: 0%
 ## 价格索引器
 
 Live Search客户可以使用新的 [SaaS价格索引器](../price-index/index.md)，可以加快价格变更更新和同步时间。
+
+## 价格支持
+
+Live Search小组件支持Adobe Commerce支持的大多数价格类型，但不是所有价格类型。
+
+目前支持基本价格。 不受支持的高级价格包括：
+
+* 成本
+* 最低广告价格
+
+查看 [API网格](../catalog-service/mesh.md) 进行更复杂的价格计算。
 
 ## PWA支持
 

@@ -2,9 +2,9 @@
 title: "Facet"
 description: '"[!DNL Live Search] Facet使用属性值的多个维度作为搜索条件。”'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: a8643ca9567feb7dde67358eeae321825b0253f2
+source-git-commit: 460065ecf6478e4313bd31ea848e04c7e8e192a3
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 彩块化要求
 
-分面的类别和产品属性要求与用于分层导航的可过滤属性类似。 必须将每个属性的店面属性设置为 `filterable (with results)`.
+分面的类别和产品属性要求与用于分层导航的可过滤属性类似。 属性的每个店面属性必须将“在搜索结果中用于分层导航”值设置为“是”。
 
 [!DNL Live Search] 最多支持：
 

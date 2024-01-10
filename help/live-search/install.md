@@ -3,7 +3,7 @@ title: "安装 [!DNL Live Search]"
 description: “了解如何安装、更新和卸载 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 10b9f087da1346734735379846d50b53d36c1562
+source-git-commit: 460065ecf6478e4313bd31ea848e04c7e8e192a3
 workflow-type: tm+mt
 source-wordcount: '1211'
 ht-degree: 0%
@@ -116,7 +116,7 @@ ht-degree: 0%
 1. 运行以下命令以暂时禁用 [!DNL Live Search] 提供店面搜索结果的模块。
 
    ```bash
-   bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover
+   bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing 
    ```
 
    ```bash
@@ -162,7 +162,7 @@ ht-degree: 0%
 1. 运行以下命令以启用 [!DNL Live Search] 模块，禁用 [!DNL OpenSearch]，并运行 `setup`.
 
    ```bash
-   bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover
+   bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover  Magento_LiveSearchProductListing 
    ```
 
    ```bash
