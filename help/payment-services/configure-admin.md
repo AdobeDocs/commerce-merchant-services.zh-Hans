@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: a7ad4130745957d596cba38892d77107e977e2e7
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1392'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ ht-degree: 0%
 
 ## [!UICONTROL Apple Pay]
 
-此 [!UICONTROL Apple Pay] 付款选项允许商家向其购物者提供使用Touch ID进行购买的Apple Pay
+此 [!UICONTROL Apple Pay] 付款选项允许商家向其购物者提供Apple Pay，购物者可以在自己的设备上使用Touch ID从Safari浏览器中进行购买。
 
 请参阅 [支付选项](payments-options.md#apple-pay-button) 以了解更多信息。
 

@@ -3,9 +3,9 @@ title: 付款选项
 description: 设置付款选项以自定义商店客户可用的方法。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: c4068d71eba45ea45b1c1eefc324bf830479e0e3
+source-git-commit: 3276cdac48461cb61c8669e2019b567c70d6f493
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,8 @@ ht-degree: 0%
 
 [!UICONTROL Credit Card Fields] 为信用卡或借记卡支付方法提供简单且安全的结账。 当购物者使用信用卡字段结账时，他们输入姓名、帐单地址以及信用卡或借记卡信息以下订单。 他们的客户信息在购买会话期间被安全地使用，以无缝地引导他们完成结账流程。
 
+![签出的信用卡字段](assets/credit-card-fields.png){width="500" zoomable="yes"}
+
 启用 [信用卡保险存储](#vaulting) 以便您的商店允许购物者保存（保存）其信用卡信息以便稍后快速结帐。
 
 您可以配置 [!UICONTROL Credit Card Fields] 在商店配置或Payment Services主页中。 请参阅 [设置](settings.md#credit-card-fields) 以了解更多信息。
@@ -41,6 +43,10 @@ ht-degree: 0%
 ## [!DNL Apple Pay] 按钮
 
 客户可以使用 [[!DNL Apple Pay]](https://www.apple.com/apple-pay/)，利用存储在iOS或macOS设备上的信用卡和借记卡支付凭据进行购买。
+
+[!DNL Apple Pay] 仅在Safari浏览器中可用。
+
+![微型计算机中的“Apple支付”按钮](assets/apple-pay-button.png){width="500" zoomable="yes"}
 
 此 [!DNL Apple Pay] 按钮在产品页面、迷你购物车、购物车和结账视图中可见。
 
@@ -54,7 +60,7 @@ ht-degree: 0%
 
 [!DNL PayPal Smart Buttons]，使用PayPal完成购买，存储购物者的送货地址、帐单地址和付款详细信息，以供将来使用。 购物者可以使用PayPal以前存储或提供的任何支付方式。
 
-![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="400" zoomable="yes"}
+![PayPal按钮](assets/paypal-button.png){width="350" zoomable="yes"}
 
 您可以配置 [!UICONTROL PayPal Smart Buttons] 在商店配置或Payment Services主页中。  请参阅 [设置](settings.md#payment-buttons) 以了解更多信息。
 
@@ -89,12 +95,6 @@ ht-degree: 0%
 请参阅中有关“稍后支付”优惠的信息 [PayPal的“稍后支付”优惠文档](https://developer.paypal.com/docs/checkout/pay-later/us/). 使用 **国家或地区** 下拉列表以选择感兴趣的区域。
 
 请参阅 [设置](settings.md#payment-buttons) 以了解如何禁用/启用 [!DNL Pay Later] 消息传送。
-
-### [!DNL Pay Now] 按钮
-
-此 [!DNL Pay Now] 当客户单击付款屏幕上的付款按钮时，按钮在PayPal弹出窗口中可见。
-
-如果最终订单金额未知（例如，当您还没有送货地址信息时），并且客户正在从产品页面、迷你购物车或购物车中结帐，则 _继续_ 按钮可用。 客户点击时 _继续_，确认其支付方式后，客户将被定向至订单审核页面，以在完成结账之前收集所需的详细信息。
 
 ## 仅使用PayPal付款按钮
 

@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 85f8e158509231fb3b30c778309a9ac0fb468131
+source-git-commit: a7ad4130745957d596cba38892d77107e977e2e7
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2364'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ ht-degree: 0%
 
 ### Apple Pay
 
-此 [!UICONTROL Apple Pay] 按钮付款选项允许您提供 [!UICONTROL Apple Pay] 商店结账时的付款按钮。
+此 [!UICONTROL Apple Pay] 按钮付款选项允许您提供 [!UICONTROL Apple Pay] 您商店从Safari浏览器结账的付款按钮。
 
 只有在完成后才能使用Apple Pay [Apple Pay通过Paypal自助注册](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) 然后 [配置Apple Pay](settings.md/#payment-buttons) 你商店里的。 请参阅 [支付选项](payments-options.md#apple-pay-button) 以了解更多信息。
 
@@ -230,7 +230,7 @@ ht-degree: 0%
 1. 要启用按钮高度选择器，请切换 **[!UICONTROL Responsive button height]** 选择器。
 1. 要修改 **[!UICONTROL Label]**，选择所需的标签选项。
 
-   当您更改布局、颜色、形状、高度和标签的配置选项时，该配置的可视预览会显示在“设置”页面的底部。
+   当您更改布局、颜色、形状、高度和标签的配置选项时，该配置的可视预览会显示在“设置”页面的底部。 在下图中， **[!UICONTROL Shape]** 设置为 _矩形_ 和 **[!UICONTROL Label]** 设置为 _PayPal（推荐）_.
 
    ![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="400" zoomable="yes"}
 
