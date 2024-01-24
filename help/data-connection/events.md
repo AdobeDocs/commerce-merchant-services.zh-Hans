@@ -4,9 +4,9 @@ description: 了解每个事件捕获的数据。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: f90ef4d2732a0b0676e0899712f94b41a1c2d85a
+source-git-commit: 136cd11e65674ec6e797aeaabd80750a50324566
 workflow-type: tm+mt
-source-wordcount: '6894'
+source-wordcount: '6957'
 ht-degree: 0%
 
 ---
@@ -236,7 +236,7 @@ ht-degree: 0%
 
 | 描述 | XDM事件名称 |
 |---|---|
-| 购物者下订单时触发。 | `commerce.order` |
+| 购物者下订单时触发。 | `commerce.purchases` |
 
 #### 从completeCheckout收集的数据
 
@@ -560,6 +560,29 @@ B2B事件包含 [申请列表](https://experienceleague.adobe.com/docs/commerce-
 | `productListItems.selectedOptions` | 用于可配置产品的字段。 |
 | `productListItems.selectedOptions.attribute` | 标识可配置产品的属性，如 `size` 或 `color`. |
 | `productListItems.selectedOptions.value` | 标识属性的值，例如 `small` 或 `black`. |
+
+### deleteRequisitionList
+
+| 描述 | XDM事件名称 |
+|---|---|
+| 当购物者删除申请列表时触发。 | `commerce.requisitionListDeletes` |
+
+#### 从deleteRequisitionList收集的数据
+
+下表描述了为此事件收集的数据。
+
+| 字段 | 描述 |
+|---|---|
+| `commerce.requisitionListDeletes` | 指示已删除申请列表。 |
+| `commerce.requisitionList` | 客户创建的申请列表的属性。 |
+| `commerce.requisitionList.ID` | 申购单列表的唯一标识符。 |
+| `commerce.requisitionList.name` | 客户指定的申请列表的名称。 |
+| `commerce.requisitionList.description` | 客户指定的申请列表的描述。 |
+| `commerce.commerceScope` | 指示事件发生位置（商店视图、商店、网站等）。 |
+| `commerce.commerceScope.environmentID` | 环境ID 32位数的字母数字ID，用连字符分隔。 |
+| `commerce.commerceScope.storeCode` | 唯一商店代码。 每个网站可以有许多商店。 |
+| `commerce.commerceScope.storeViewCode` | 唯一的商店视图代码。 每个商店可以有多个商店视图。 |
+| `commerce.commerceScope.websiteCode` | 唯一的网站代码。 在一个环境中可以有许多网站。 |
 
 ## 后台活动
 

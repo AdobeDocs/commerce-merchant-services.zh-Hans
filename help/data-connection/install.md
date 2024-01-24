@@ -4,9 +4,9 @@ description: 了解如何安装、更新和卸载 [!DNL Data Connection] 来自A
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 2392cb4257f6efdcb8fc3e38c007148e03e338fd
+source-git-commit: 688eabddaf4b3faab98c60cf440fe6e9c6772790
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -41,9 +41,33 @@ ht-degree: 0%
 
 1. （可选）包含B2B数据，包括 [申购事件](events.md#b2b-events)，安装 [B2B扩展](#install-the-b2b-extension).
 
-### 配置订单连接器
+### 安装Adobe I/O事件
 
-安装之后 `experience-platform-connector` 扩展中，您必须最终安装 `orders-connector` 基于部署类型的模块：内部部署或Adobe Commerce on Cloud基础架构。
+安装之后 `experience-platform-connector` 扩展上，您必须安装Adobe Commerce的Adobe I/O事件。
+
+以下步骤适用于云基础架构和内部部署安装的Adobe Commerce。
+
+1. 如果您正在运行Commerce 2.4.4或2.4.5，请使用以下命令加载事件模块：
+
+   ```bash
+   composer require magento/commerce-eventing=^1.0 --no-update
+   ```
+
+   Commerce 2.4.6及更高版本会自动加载这些模块。
+
+1. 更新项目依赖关系。
+
+   ```bash
+   composer update
+   ```
+
+1. 启用新模块：
+
+   ```bash
+   bin/magento module:enable Magento_AdobeCommerceEventsClient Magento_AdobeCommerceEventsGenerator Magento_AdobeIoEventsClient Magento_AdobeCommerceOutOfProcessExtensibility
+   ```
+
+根据部署类型最终完成安装：内部部署或云基础架构上的Adobe Commerce 。
 
 #### 内部部署
 
