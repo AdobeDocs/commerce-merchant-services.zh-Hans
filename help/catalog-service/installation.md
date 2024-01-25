@@ -1,47 +1,51 @@
 ---
 title: 载入和安装
-description: 了解如何安装 [!DNL Catalog Service]
+description: “了解如何安装 [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 1bd618435df30772e29e5fc95b0536680c63b482
+source-git-commit: d02ffe4028bdf5765fb0f23fd210f398729bee62
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
 
 # 载入和安装
 
-查看以下内容的演练： [!DNL Catalog Service] 进程。
+以下视频向您介绍 [!DNL Catalog Service] 进程。
 
-第1部分：
+**第1部分**：载入和安装
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415599)
 
-第2部分：
+**第2部分**：使用 [!DNL Catalog Service]
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415600)
+
+>[!BEGINSHADEBOX]
 
 ## 先决条件
 
 的新用户引导流程 [!DNL Catalog Service] 需要访问服务器的命令行。 如果您不熟悉如何使用命令行，请向开发人员或系统集成商寻求帮助。
 
-### 软件要求
+**软件要求**
 
 - Adobe Commerce 2.4.4+
 - PHP 8.1、8.2
 - Composer： 2.x
 
-### 支持的平台
+**支持的平台**
 
 - 云基础架构上的Adobe Commerce：2.4.4+
 - Adobe Commerce内部部署：2.4.4+
+
+>[!ENDSHADEBOX]
 
 ## 端点
 
 [!DNL Catalog Service] 有两个端点可供载入：
 
-- 沙盒(https://catalog-service-sandbox.adobe.io/graphql) — 用于在上线之前进行测试和验证
-- 生产(https://catalog-service.adobe.io/graphql)-用于Commerce商家和网站的实时流量
+- 沙盒(`https://catalog-service-sandbox.adobe.io/graphql`) — 用于在上线之前进行测试和验证
+- 生产(`https://catalog-service.adobe.io/graphql`) — 用于Commerce商家和网站的实时流量
 
 Commerce的所有测试实例都应使用沙盒端点。
 
@@ -61,7 +65,7 @@ Commerce的所有测试实例都应使用沙盒端点。
 
 此 [!DNL Catalog Service] 扩展可以安装在Adobe Commerce云基础架构和内部部署实例上。
 
-此 [!DNL Catalog Service] 随编辑器密钥一起安装，这些密钥链接到Commerce帐户 [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) 在注册过程中提供。 Composer在Adobe Commerce的初始安装期间或之前未将Composer键保存到外部的情况下使用这些键 `auth.json` 文件。
+此 [!DNL Catalog Service] 随编辑器密钥一起安装，这些密钥链接到Commerce帐户 [`mageid`](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) 在注册过程中提供。 Composer在Adobe Commerce的初始安装期间或之前未将Composer键保存到外部的情况下使用这些键 `auth.json` 文件。
 
 请参阅 [获取您的身份验证密钥](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) 以了解有关获取编辑器键的更多信息。
 
@@ -69,21 +73,20 @@ Commerce的所有测试实例都应使用沙盒端点。
 
 使用此方法安装 [!DNL Catalog Service] Commerce Cloud实例的扩展。
 
-1. 使用Composer将Catalog Service模块添加到您的项目中：
+1. 在本地工作站上，转到您的项目目录。
+1. 添加目录服务模块。
 
-```bash
-composer require "magento/catalog-service" "^3.0.1"
-```
+   ```bash
+   composer require "magento/catalog-service" "^3.0.1"
+   ```
 
-1. 通过运行以下命令更新依赖关系：
+1. 更新包依赖关系。
 
-```bash
-composer update
-```
+   ```bash
+   composer update
+   ```
 
-该命令会更新所有依赖项。
-
-1. 提交并推送您的更改 `composer.json` 和 `composer.lock`.
+1. 提交和推送对的代码更改 `composer.json` 和 `composer.lock` 文件。
 
 #### 内部部署
 
@@ -91,29 +94,27 @@ composer update
 
 1. 使用Composer将Catalog Service模块添加到您的项目中：
 
-```bash
-composer require "magento/catalog-service" "^3.0.1"
-```
+   ```bash
+   composer require "magento/catalog-service" "^3.0.1"
+   ```
 
 1. 更新依赖项并安装扩展：
 
-```bash
-composer update
-```
-
-该命令会更新所有依赖项。
+   ```bash
+   composer update
+   ```
 
 1. 升级Adobe Commerce：
 
-```bash
-bin/magento setup:upgrade
-```
+   ```bash
+   bin/magento setup:upgrade
+   ```
 
 1. 清除缓存：
 
-```bash
-bin/magento cache:clean
-```
+   ```bash
+   bin/magento cache:clean
+   ```
 
 ### 配置服务和数据导出
 
@@ -143,4 +144,4 @@ SaaS配置完成后，按照以下步骤执行初始数据同步 [目录同步](
 
 此 [适用于Adobe Developer App Builder的API网格](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 使开发人员能够使用AdobeIO将专用或第三方API以及其他界面与Adobe产品集成。
 
-请参阅  [[!DNL Catalog Service] 和API Mesh](mesh.md) 有关安装和配置详细信息的主题。
+请参阅 [[!DNL Catalog Service] 和API Mesh](mesh.md) 有关安装和配置详细信息的主题。
