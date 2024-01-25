@@ -3,9 +3,9 @@ title: 启用 [!DNL Payment Services] 用于生产
 description: 通过启用 [!DNL Payment Services] 用于生产。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 1. 单击 **[!UICONTROL Save]**.
 1. 单击 **[!UICONTROL Go to Payment Services]** 将定向回 [!DNL Payment Services] 家。
-1. [清除缓存](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
+1. [清除缓存](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html).
 
    应在每次配置更改后进行清除。
 
@@ -51,14 +51,58 @@ ht-degree: 0%
 
 ## 完成商户入门
 
+使您的商店启用Payment Services的下一步是完成实时上线。
+
+支付服务提供 [**高级** （完全支持）和 **标准** （快速结帐）付款选项](../payment-services/payments-options.md#standard-vs-advanced-payments-experience) 以及载入流程，具体取决于您运营的国家/地区和首选支付体验。
+
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. 单击 **[!UICONTROL Live onboarding]**.
 
    如果您尚未为完成实时载入，则可以看到此选项 [!DNL Payment Services].
 
-   您会看到一个PayPal窗口。
+1. 在 _选择您的国家/地区_ 模式中，选择您运营的国家/地区。
 
-1. 继续使用PayPal流程，使用您的PayPal帐户凭据（不是沙盒帐户凭据）或注册新的PayPal帐户。
+   Payment Services全面支持以下位置的所有支付选项： [5个国家](../payment-services/overview.md#availability) 当前。 Payment Services为国家/地区列表中表示的所有其他国家/地区提供快速结账功能（付款选项的子集）。
+
+   您从列表中选择的国家/地区将决定支付选项和登录流程 — [高级](#advanced-onboarding) （完全支持）或 [标准](#standard-onboarding) （快速签出） — 可供您使用。
+
+>[!TIP]
+>
+> 选择并继续载入选项（“标准”或“高级”）后，您必须重新完成入门，才能从初始选择进行升级或降级。
+
+### 高级入门
+
+此载入流程适用于以下地区的商家： [得到充分支持的国家](../payment-services/overview.md#availability).
+
+选择国家/地区后：
+
+1. 在显示的模式窗口中，选择 **高级**.
+
+   对于 **标准** 选项，请转到 [标准载入流程](#standard-onboarding).
+
+1. 单击 **继续**.
+1. 使用您的PayPal帐户凭据（而不是沙盒帐户凭据）继续使用PayPal流程获取完全支持的高级入门培训 _或_ 注册一个新的PayPal帐户。
+
+>[!IMPORTANT]
+>
+>**高级入门** 要求商家 [请求付款权利](#request-payments-entitlement-from-adobe) 以启用实时载入。
+
+### 标准载入
+
+此标准载入流程适用于位于以下国家/地区的商家： [仅支持Express结帐](../payment-services/overview.md#availability) 提供了。
+
+选择国家/地区后：
+
+1. 在 _支付服务协议_ 在出现的模式窗口中，单击 **支付服务协议** 用于查看Adobe Commerce Payment Services协议的链接。
+1. 在 _支付服务协议_ 模式窗口，单击 **我接受**.
+1. 继续使用PayPal流程进行快速结帐，使用您的PayPal帐户凭据（不是沙盒帐户凭据）或注册新的PayPal帐户。
+
+>[!IMPORTANT]
+>
+>[Apple支付和信用卡字段](../payment-services/payments-options.md) 不可用于 **标准载入**.
+
+## 确认电子邮件地址
+
 1. 在管理员侧边栏上，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**
 
    此 _[!UICONTROL Live onboarding]_按钮不再可见，并且您看到“[!UICONTROL Live payments pending]“文本框。
@@ -77,7 +121,7 @@ ht-degree: 0%
 
 ## 从Adobe请求付款权利
 
-要启用实时入门，您必须向Adobe请求付款权利：
+要启用您的商店，请从Adobe请求付款权利(对于 [仅高级载入](#advanced-onboarding))：
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. 单击 **[!UICONTROL Get Live Payments]** 在您的 [!DNL Payment Services] 家。
@@ -87,7 +131,7 @@ ht-degree: 0%
 1. 完成表单。
 1. 销售团队的成员将与您联系。
 
-或者，您也可以Adobe以下地址申请支付权限： [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
+或者，您可以向Adobe请求付款权利，网址为 [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
 
 >[!IMPORTANT]
 >
@@ -97,7 +141,6 @@ ht-degree: 0%
 
 获取您的 [!DNL Payment Services] _商家ID_：
 
-
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. 在“主页”视图中，单击 **[!UICONTROL Settings]**. 请参阅 [主页](payments-home.md) 以了解更多信息。
 1. 选择所需的 _商家ID_ 然后将其提交给您的销售代表，销售代表将配置正确的定价层。
@@ -106,7 +149,7 @@ ht-degree: 0%
 
 A _生产贸易商ID_ 是自动生成的，并填充在 [配置](configure-admin.md). 请勿更改或更改此ID。
 
-要启用实时付款，请执行以下操作：
+启用实时支付：
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. 在主页上，单击 **[!UICONTROL Settings]** 页面右上角的。 请参阅 [主页](payments-home.md) 以了解更多信息。

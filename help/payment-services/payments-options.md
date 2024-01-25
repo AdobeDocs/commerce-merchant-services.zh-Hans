@@ -3,19 +3,18 @@ title: 付款选项
 description: 设置付款选项以自定义商店客户可用的方法。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 3276cdac48461cb61c8669e2019b567c70d6f493
+source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
 
 # 付款选项
 
-替换为 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] [!DNL Payment Services]，您有多个可用的支付选项。 您可以通过以下方式配置这些付款选项：
+替换为 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] [!DNL Payment Services]，您有多个可用的支付选项。
 
-* [主页设置](payments-home.md)
-* [存储配置](configure-admin.md) （建议使用旧版支付选项或多商店设置）
+您可以在以下位置配置这些付款选项： [主页设置](payments-home.md) 或 [存储配置](configure-admin.md) （建议使用旧版支付选项或多商店设置）。
 
 根据结账过程中的位置，每种支付方式都有不同的行为：
 
@@ -26,7 +25,16 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->在处理付款之前，必须完成Payment Services载入。
+>[!DNL Payment Services] 在处理付款之前，必须完成入门培训。
+
+## 标准支付体验与高级支付体验
+
+[!DNL Payment Services] 提供 **高级** （完全支持）和 **标准** （快速结帐）支付选项和载入流程，具体取决于您运营的国家/地区。
+
+* **高级**  — 全部可用 [支付选项](../payment-services/payments-options.md) 当前可用 [得到充分支持的国家](../payment-services/overview.md#availability). 在新用户引导以启用实时支付时，选择 [高级入门选项](../payment-services/production.md#advanced-onboarding).
+* **标准**  — 一部分支付选项（快速结账） — PayPal信用卡和借记卡 — 适用于其他受支持的国家/地区。 [信用卡字段](#credit-card-fields) 和 [Apple Pay](#apple-pay-button) 不适用于此入门培训选项。 在新用户引导以启用实时支付时，选择 [标准载入选项](../payment-services/production.md#standard-onboarding).
+
+请参阅 [启用 [!DNL Payment Services] 用于生产](../payment-services/production.md#complete-merchant-onboarding) ，以了解有关完成高级和标准载入的信息。
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -36,7 +44,7 @@ ht-degree: 0%
 
 启用 [信用卡保险存储](#vaulting) 以便您的商店允许购物者保存（保存）其信用卡信息以便稍后快速结帐。
 
-您可以配置 [!UICONTROL Credit Card Fields] 在商店配置或Payment Services主页中。 请参阅 [设置](settings.md#credit-card-fields) 以了解更多信息。
+您可以配置 [!UICONTROL Credit Card Fields] 在商店配置或 [!DNL Payment Services] 家。 请参阅 [设置](settings.md#credit-card-fields) 以了解更多信息。
 
 您还可以更改信用卡字段的布局、宽度、高度和外部样式。 请参阅 [PayPal文档](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) 以了解更多信息。
 
@@ -62,7 +70,7 @@ ht-degree: 0%
 
 ![PayPal按钮](assets/paypal-button.png){width="350" zoomable="yes"}
 
-您可以配置 [!UICONTROL PayPal Smart Buttons] 在商店配置或Payment Services主页中。  请参阅 [设置](settings.md#payment-buttons) 以了解更多信息。
+您可以配置 [!UICONTROL PayPal Smart Buttons] 在商店配置或 [!DNL Payment Services] 家。  请参阅 [设置](settings.md#payment-buttons) 以了解更多信息。
 
 查看PayPal的 [支付方式文档](https://developer.paypal.com/docs/checkout/payment-methods/) 以了解目前每种支付方式在哪些国家/地区可用。
 
