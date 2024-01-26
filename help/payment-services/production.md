@@ -3,7 +3,7 @@ title: 启用 [!DNL Payment Services] 用于生产
 description: 通过启用 [!DNL Payment Services] 用于生产。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
 source-wordcount: '1006'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
    您将被定向到“主页”视图中的设置区域，并展开相关选项(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_)，您可以在此处启用 [!DNL Payment Services] 选项作为 [支付方式](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
 
 1. 在 _[!UICONTROL General Configuration]_，设置&#x200B;**[!UICONTROL Enable]**到 `Yes`.
-1. 设置 **[!UICONTROL Payment Action]**，表示两者 _[!UICONTROL Credit Card Fields]_和_[!UICONTROL PayPal Smart Buttons]_，更改为以下任一项：
+1. 设置 **[!UICONTROL Payment Action]**，表示两者 _[!UICONTROL Credit Card Fields]_和_[!UICONTROL PayPal payment buttons]_，更改为以下任一项：
 
    | 设置 | 描述 |
    |---|---|
@@ -47,7 +47,7 @@ ht-degree: 0%
 
    应在每次配置更改后进行清除。
 
-请参阅 [配置支付服务](settings.md) 有关配置信用卡字段和PayPal智能按钮的详细信息。
+请参阅 [配置支付服务](settings.md) 有关配置信用卡字段和PayPal付款按钮的详细信息。
 
 ## 完成商户入门
 

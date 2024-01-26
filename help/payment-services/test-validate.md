@@ -3,9 +3,9 @@ title: 测试和验证
 description: 测试和验证有助于确保 [!DNL Payment Services] 功能按预期工作，并为客户提供最佳支付选项
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 feature: Payments, Checkout
-source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 测试 [!DNL Payment Services] 在沙盒环境中是一个重要的验证步骤，即使它是一个仅连接到PayPal沙盒而非真实银行和商家的模拟环境。
 
-1. 使用以下任一方式从您的商店成功结帐： [信用卡字段](payments-options.md#credit-card-fields) 或任何 [PayPal智能按钮](payments-options.md#paypal-smart-buttons). 请参阅 [测试凭据](#testing-credentials) 了解更多有关使用假信用卡进行测试的信息。
+1. 使用以下任一方式从您的商店成功结帐： [信用卡字段](payments-options.md#credit-card-fields) 或任何 [PayPal付款按钮](payments-options.md#paypal-smart-buttons). 请参阅 [测试凭据](#testing-credentials) 了解更多有关使用假信用卡进行测试的信息。
 1. 捕获(当您的付款活动为 [设置为 `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method))， [退款](refunds.md)，或 [空白](voids.md) 刚刚完成的订单。 您也可以 [创建发票](https://docs.magento.com/user-guide/sales/invoice-create.html){target="_blank"} 对于订单，如果您的付款活动设置为 `Authorize` 而不是 `Authorize and Capture`.
 1. 在24-48小时内，查看以下文件中的交易和其它信息： [支付报表](payouts.md).
 1. 欲知订单详情，请参见 [订单付款状态报表](order-payment-status.md).

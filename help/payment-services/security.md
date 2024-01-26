@@ -4,9 +4,9 @@ description: 查看您站点的安全性和合规性要求。
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
 redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
-source-git-commit: fef972355565472f0d0851a2e3cace692fb2db67
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -55,9 +55,9 @@ PCI 3-D Secure (3DS)支持在线购买信用卡时购买者与其信用卡发行
 
 请参阅 [信用卡保险存储](vaulting.md) 以了解更多信息。
 
-### PayPal智能按钮
+### PayPal付款按钮
 
-使用PayPal智能按钮，您的服务中不会传递PCI管制的数据。 您不必存储或维护这些数据，这大大减少了PCI法规遵从性顾虑。
+使用PayPal支付按钮，您的服务中不会传递PCI管制的数据。 您不必存储或维护这些数据，这大大减少了PCI法规遵从性顾虑。
 
 为安全起见，PayPal在结账时不会传递账单地址 — 国家/地区、电子邮件和名称是唯一使用的账单信息。 您可以选择启用网站的PayPal签出，以联系PayPal并完成审查流程来返回完整的帐单地址。
 

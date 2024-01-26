@@ -3,7 +3,7 @@ title: '"[!DNL Payment Services] 发行说明”'
 description: 查看发行说明，了解所有 [!DNL Payment Services] 版本发布。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 75dbbe5a1b3bc9a84a5b26ac1b2cb6c0ec639027
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
 source-wordcount: '2132'
 ht-degree: 0%
@@ -168,7 +168,7 @@ _2023年1月29日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
-![修复的问题](../assets/fix.svg)<!-- Issue PAY-4110 --> 修复了阻止购买者使用产品页面、迷你购物车和购物车上的智能按钮下达订单的问题。 买家现在可以成功完成订单。
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-4110 --> 修复了导致购买者无法使用产品页面、迷你购物车和购物车上的付款按钮下达订单的问题。 买家现在可以成功完成订单。
 
 ## v1.5.3
 
@@ -186,7 +186,7 @@ _2022年12月22日_
 
 ![修复的问题](../assets/fix.svg)<!-- Issue PAY-3992 --> 改进了当付款方法被拒绝时付款服务中的开票。
 
-![修复的问题](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services现在可以使用为商家正确显示PayPal智能按钮 [触发签出](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} 签出页面的自定义模板。 以前，微型画间歇性地显示按钮。
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services现在可以使用为商家正确显示PayPal付款按钮 [触发签出](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} 签出页面的自定义模板。 以前，微型画间歇性地显示按钮。
 
 ## v1.5.1
 
@@ -196,7 +196,7 @@ _2022年11月23日_
 
 ![新建](../assets/new.svg)<!-- Issue PAY-3923 --> Payment Services现在在用户代理标头中包含版本号，以便能够跟踪、过滤或弃用未使用的端点。
 
-![修复的问题](../assets/fix.svg)<!-- Issue PAY-3968 --> 现在，当使用智能按钮从产品页面下订单时，Payment Services可正确显示订单数据。
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-3968 --> 现在，当使用付款按钮从产品页面下订单时，Payment Services可正确显示订单数据。
 
 ## v1.5.0
 
@@ -226,7 +226,7 @@ _2022年9月30日_
 
 ![新建](../assets/new.svg)<!-- Issue PAY-3231 --> 商家可以 [添加 [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) 对于客户交易银行对帐单上显示的网站或单个商店视图配置，以描述品牌、商店或产品线。
 
-![新建](../assets/new.svg)<!-- Issue PAY-3707 --> [启用或禁用信用卡字段和PayPal智能按钮](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) 用于在“支付服务”设置中签出。
+![新建](../assets/new.svg)<!-- Issue PAY-3707 --> [启用或禁用信用卡字段和PayPal付款按钮](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) 用于在“支付服务”设置中签出。
 
 ![修复的问题](../assets/fix.svg)<!-- Issue PAY-3546 --> 客户点击时 **[!UICONTROL Edit cart]**，页面将重定向到购物车页面，并显示更新的项目，而不是显示空购物车。
 
@@ -258,7 +258,7 @@ _2022年6月29日_
 
 ![修复的问题](../assets/fix.svg)<!-- Issue PAY-3264 --> 以前，当登录用户为其帐户选择默认地址以外的其他账单/运送地址时，签出失败。 我们已修复此问题，现在会发送选定的账单/运送地址（而不是默认的已保存地址），并成功完成结账。
 
-![修复的问题](../assets/fix.svg)<!-- Issue PAY-3314 --> 如果禁用PayPal智能结帐按钮，则不会显示错误。
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-3314 --> 如果禁用PayPal付款按钮以进行结帐，则不会显示错误。
 
 ![修复的问题](../assets/fix.svg)<!-- Issue PAY-3330 --> 当访客用户输入包含短划线的电话号码时，在结账期间付款不再失败。
 
@@ -288,7 +288,7 @@ _2022年3月31日_
 
 ![修复的问题](../assets/fix.svg)<!-- Issue PAY-2742 --> 您现在可以在商店视图级别启用和禁用可用的付款方法，例如Venmo。 以前，您只能为每个网站配置支付方式。
 
-![修复的问题](../assets/fix.svg)<!-- Issue PAY-2277 --> 您现在可以选择 [启用或禁用单个PayPal智能按钮](settings.md#payment-buttons).
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-2277 --> 您现在可以选择 [启用或禁用单个PayPal付款按钮](settings.md#payment-buttons).
 
 ![修复的问题](../assets/fix.svg)<!-- Issue PAY-2561 --> 之前删除的产品不会出现在的购物车中 _审阅订单_ 页面。
 
@@ -314,7 +314,7 @@ _2021年11月29日_
 
 ![新建](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] 支持基于总处理量的灵活的分层定价，适用于任何商家。
 
-![新建](../assets/new.svg)<!-- Issue PAY-1443 --> 您可以轻松地 [自定义外观](payments-options.md) 的PayPal智能按钮和信用卡字段的 [!DNL Payment Services] 扩展。
+![新建](../assets/new.svg)<!-- Issue PAY-1443 --> 您可以轻松地 [自定义外观](payments-options.md) 的PayPal付款按钮和信用卡字段 [!DNL Payment Services] 扩展。
 
 ![已知问题](../assets/bug.svg)<!-- Issue PAY-2473 --> 使用 [不正确的编辑器键](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) 在安装扩展期间，阻止用户 [身份验证](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 带正确的 `MAGEID`.
 

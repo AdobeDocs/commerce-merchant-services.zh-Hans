@@ -4,9 +4,9 @@ description: 使用事务报表可以查看事务授权率和事务趋势。
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 91acc6e1dfd142caca77c0dc9ba55da34f75dd60
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 请参阅链接的商务订单和提供商交易ID、交易金额、每笔交易的支付方式等，所有这些都包含在此报表中。
 
-并非所有支付方式都提供相同的信息粒度。 例如，信用卡交易提供响应、AVS和CCV代码，以及“交易”报表中卡的最后四位数字；而PayPal智能按钮不提供。
+并非所有支付方式都提供相同的信息粒度。 例如，信用卡交易提供回复、AVS和CCV代码，以及“交易”报表中卡的最后四位；PayPal支付按钮不提供。
 
 您可以 [下载事务](#download-transactions) CSV文件格式，用于现有会计或订单管理软件。
 
