@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 7ea19e5c47142e31995c570c5e1efb50850d99b2
+source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2372'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ ht-degree: 0%
 
 ### Apple Pay
 
-此 [!UICONTROL Apple Pay] 按钮付款选项允许您提供 [!UICONTROL Apple Pay] 您商店从Safari浏览器结账的付款按钮。
+此 [!UICONTROL Apple Pay] 按钮付款选项允许您提供 [!UICONTROL Apple Pay] 从Safari浏览器结账商店中的付款按钮（每个商家帐户最多99个域）。
 
 只有在完成后才能使用Apple Pay [Apple Pay通过Paypal自助注册](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) 然后 [配置Apple Pay](settings.md/#payment-buttons) 你商店里的。 请参阅 [支付选项](payments-options.md#apple-pay-button) 以了解更多信息。
 

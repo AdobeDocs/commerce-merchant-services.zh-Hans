@@ -3,9 +3,9 @@ title: 付款选项
 description: 设置付款选项以自定义商店客户可用的方法。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 7ea19e5c47142e31995c570c5e1efb50850d99b2
+source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 客户可以使用 [[!DNL Apple Pay]](https://www.apple.com/apple-pay/)，利用存储在iOS或macOS设备上的信用卡和借记卡支付凭据进行购买。
 
-[!DNL Apple Pay] 仅在Safari浏览器中可用。
+[!DNL Apple Pay] 仅在Safari浏览器中可用。 商户在每个商户帐户中最多可以添加99个域。
 
 ![微型计算机中的“Apple支付”按钮](assets/apple-pay-button.png){width="500" zoomable="yes"}
 
