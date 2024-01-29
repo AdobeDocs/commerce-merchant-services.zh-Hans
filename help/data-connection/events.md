@@ -4,7 +4,7 @@ description: 了解每个事件捕获的数据。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 136cd11e65674ec6e797aeaabd80750a50324566
+source-git-commit: 9001cd24db0941b7c7edcfd5b10464dc90084fd7
 workflow-type: tm+mt
 source-wordcount: '6957'
 ht-degree: 0%
@@ -586,7 +586,7 @@ B2B事件包含 [申请列表](https://experienceleague.adobe.com/docs/commerce-
 
 ## 后台活动
 
-后台事件包含有关订单状态的信息，例如订单是否已下达、取消、退款、已发运或已完成。 这些服务器端事件收集的数据显示购物者订单为360。 此视图可帮助商家在开发营销活动时更好地定位或分析整个订单状态。 例如，您可以发现特定产品类别中在一年中的不同时间表现出色的趋势。 例如，在较冷的月份销售较好的冬装或购物者多年来感兴趣的某些产品颜色。 此外，订单状态数据可帮助您通过了解购物者基于先前订单的转化倾向来计算存留期客户价值。
+后台事件包含有关订单状态的信息，例如 [已订购](#orderplaced)， [已取消](#ordercancelled)， [已退款](#orderitemreturncompleted)， [已发货](#ordershipmentcompleted)，或 [已完成](#ordershipmentcompleted). 这些服务器端事件收集的数据显示购物者订单为360。 此视图可帮助商家在开发营销活动时更好地定位或分析整个订单状态。 例如，您可以发现特定产品类别中在一年中的不同时间表现出色的趋势。 例如，在较冷的月份销售较好的冬装或购物者多年来感兴趣的某些产品颜色。 此外，订单状态数据可帮助您通过了解购物者基于先前订单的转化倾向来计算存留期客户价值。
 
 >[!NOTE]
 >

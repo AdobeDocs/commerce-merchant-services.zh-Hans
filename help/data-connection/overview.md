@@ -3,37 +3,82 @@ title: 指南概述
 description: 了解如何使用将Adobe Commerce数据与Adobe Experience Platform集成 [!DNL Data Connection] 扩展。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
+source-git-commit: 7d93b556881b3af5f6c8bceb5c9bb6af9ec0bc1c
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 1%
+source-wordcount: '1685'
+ht-degree: 0%
 
 ---
 
-# [!DNL Data Connection] 概述
+# [!DNL Data Connection] 介绍
 
 >[!IMPORTANT]
 >
 >Experience Platform连接器已重命名为 [!DNL Data Connection].
 
-此 [!DNL Data Connection] 扩展允许Adobe Commerce商家发送 [店面](events.md#storefront-events) 和 [后台](events.md#back-office-events) 将数据发送到Adobe Experience Platform Edge，以便其他Adobe Experience Cloud产品(如Adobe Analytics和Adobe Journey Optimizer)可以使用该Commerce数据。 通过将Commerce数据连接到Adobe Experience Cloud中的其他产品，您可以执行分析网站上的用户行为、执行AB测试以及创建个性化营销活动等任务。
+此 [!DNL Data Connection] 扩展可将Adobe Commerce Web实例连接到Adobe Experience Platform和Edge Network。 了解如何 [集成](./mobile-sdk-epc.md) 带有Commerce的Adobe Experience Platform Mobile SDK。
 
-[店面活动](events.md#storefront-events) 捕获购物者交互，例如 `View Page`， `View Product`， `Add to Cart`、和 [申请列表](events.md#b2b-events) 信息（对于B2B商家）。 [后台](events.md#back-office-events) 事件会捕获有关订单状态的信息，例如，订单是否已下达、已取消、已退款、已发运或已完成。 捕获的数据不包括个人身份信息(PII)。 所有用户标识符（如Cookie ID和IP地址）都经过严格匿名处理。 [了解详情](https://www.adobe.com/privacy/experience-cloud.html).
+您的Commerce商店包含大量数据。 有关您的购物者如何浏览、查看以及最终购买您网站上的产品的信息可能会揭示创造更个性化购物体验的机会。 虽然这些数据可告知本机商务功能（如购物车价格规则和动态块），但数据仍会孤立在您的商务实例中。
 
-此 [!DNL Data Connection] 扩展显示在Commerce管理员的下 **系统** >服务> **[!DNL Data Connection]**.
+Adobe Experience Platform提供了一套技术，当与您的Commerce商店中的数据结合时，可以将该数据通过Edge Network分发到其他AdobeDX产品，以解锁关于购物者购买行为的洞察。 借助这些深入的见解，您可以跨所有渠道创建更加个性化的购物体验。
 
-![[!DNL Data Connection] 扩展管理员视图](assets/epc-adminui.png)
+下图显示了您的Commerce数据如何从您的商店流向其他AdobeDX产品：
 
-## 先决条件 {#prereqs}
+![数据如何流向Experience Platform边缘](assets/commerce-edge.png)
+
+在上图中，您的店面和后台数据使用SDK、API和源连接器发送到Experience Platform边缘。 您无需完全了解这些部分的工作方式，因为扩展会为您处理数据共享的复杂性。 当事件数据位于边缘时，您可以将该数据提取到其他Experience Platform应用程序中。 例如：
+
+| 应用程序 | 用途 | 用例 |
+|---|---|---|
+| [Adobe [!DNL Real-Time CDP]](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=zh-Hans) | 用户档案管理和分段服务 | **购买历史记录分段**：商家可以根据特定时段（每月、每季、每年等）识别购买项目的客户。 商家随后可以为这些客户创建区段，并针对这些客户进行促销活动、促销活动以及 _漏斗顶部_ 订阅服务潜在客户的数据。<br> **基于类别的分段**：商家可以查看购买的产品的类别。<br> **基于产品的细分**：商家可以识别始终退货的客户。 现在，提供给他们的优惠和折扣会更加明智。 例如，对于始终返回产品的客户，可以删除免运费。<br> **相似人群拓展定位**：A _相似受众_ 是一种促销活动所用的方法，旨在帮助那些可能会对自己的业务感兴趣的新客户，因为他们与现有客户具有相似的特征。 可以根据行为和事务型数据创建相似区段。<br> **客户倾向**：客户行为的变化可归因于可从事务型数据创建的更深入的客户用户档案。 随着更多数据流入到计算（如产品退货和产品配置）中，倾向分数将有更高的置信度。<br> **交叉销售**：商家可以从Commerce中捕获的精细信息中识别强大的交叉销售和追加销售机会。 |
+| [客户 [!DNL Journey Analytics]](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html) | 对整个Commerce历程的深入分析 | **季节性趋势**：商家可以确定季节性趋势，这有助于他们为特定产品的需求定期变化做好准备。 此外，商家可以识别任何产品在不同年份中的整体受欢迎程度变化。<br> **转化分析**：通过了解产品购买时间以及店面展示事件访问权限，商家可以生成丰富的客户配置文件以执行转化分析。 |
+| [Adobe [!DNL Analytics]](https://experienceleague.adobe.com/docs/analytics/analyze/admin-overview/analytics-overview.html) | 对客户行为和营销活动绩效的深入分析 | **订单退货**：商家可以识别存在退货模式的客户和较大的客户群体。 这有助于商家改进其商业策略，因为他们了解其客户群行为是什么样的。<br> **订单地址**：根据送货地址，商家可以了解订单是由客户自己下单，还是由其他个人或实体下单。<br> **季节性趋势**：商家可以确定季节性趋势，这有助于他们为特定产品的需求定期变化做好准备。 此外，商家可以识别任何产品在不同年份中的整体受欢迎程度变化。<br> **转化分析**：通过了解产品购买时间以及店面展示事件访问权限，商家可以生成丰富的客户配置文件以执行转化分析。 **注意** Adobe Analytics仅支持行为（店面）事件数据。 Adobe Analytics不支持事务性(backoffice)事件数据。 |
+| [Adobe [!DNL Journey Optimizer]](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) | 跨渠道的活动编排 | **基于行为的历程**：两年前购买手机的客户可能会被定位购买新的手机，因为他们现在可能正在寻找新的手机。 此外，还可以使用个性化的促销活动和促销活动来定位此类客户。 [!DNL Journey Optimizer] 可以使用其电子邮件和短信功能来联系这些客户。 历史订单数据与行为数据可用于识别趋势。 如果客户以前购买过具有特定配置的产品，现在又希望再次购买相同的产品，则可以通过为他们提供对相同产品配置的轻松查看/访问来增强其购买历程。<br> **个性化**：访问客户个人资料信息， [!DNL Journey Optimizer] 可以解锁高度个性化的历程，从而让商家可以通过多个不同渠道联系客户。<br> **已创建新配置文件**：欢迎电子邮件和促销活动可鼓励和影响新客户的购物历程。<br> **已删除配置文件**：商家可以选择停止向已关闭其帐户的客户发送促销电子邮件。 或者，商家也可以建立营销活动以赢回失去的客户。 |
+
+## 将Experience Platform数据提取回Commerce
+
+使用将您的Commerce数据发送到Experience Platform [!DNL Data Connection] 扩展是Commerce数据共享功能的一部分。 另一端（可选扩展）称为 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html). 利用此扩展，您可以在Real-Time CDP中构建受众，并将这些受众部署到您的Commerce商店，以告知购物车价格规则和动态块。
+
+从较高层面来看，从Commerce商店到Experience Platform并通过Audience Activation扩展返回的数据流如下所示：
+
+![[!DNL Data Connection] 流量](assets/data-connection.png)
+
+在Commerce与Experience Platform和Experience Platform与Commerce之间设置连接后，数据将继续流动。 您无需重新连接，除非升级时要求重新连接。
+
+## 概念
+
+在这两个系统之间共享数据需要您了解多个概念。
+
+* **数据**  — 与Experience Platform共享的数据是从您店面的浏览器事件和服务器上的后台事件中收集的数据。 店面活动从购物者在网站上的互动中捕获，并包括如下事件 [`addToCart`](events.md#addtocart)， [`pageView`](events.md#pageview)， [`createAccount`](events.md#createaccount)， [`editAccount`](events.md#editaccount)， [`startCheckout`](events.md#startcheckout)， [`completeCheckout`](events.md#completecheckout)， [`signIn`](events.md#signin)， [`signOut`](events.md#signout)，等等。 请参阅 [店面活动](events.md#storefront-events) 以获取店面活动的完整列表。 服务器端或后台事件，包括 [订单状态](events.md#back-office-events) 信息，例如 [`orderPlaced`](events.md#orderplaced)， [`orderReturned`](events.md#orderitemreturncompleted)， [`orderShipped`](events.md#ordershipmentcompleted)， [`orderCancelled`](events.md#ordercancelled)，等等。 请参阅 [后台活动](events.md#back-office-events) 以获取后台事件的完整列表。
+
+* **Experience Platform和边缘网络**  — 大多数AdobeDX产品的数据仓库。 发送到Experience Platform的数据然后通过Experience Platform边缘网络传播到AdobeDX产品。 例如，您可以启动Journey Optimizer，从边缘检索特定的Commerce事件数据，并在Journey Optimizer中构建一个弃用的购物车电子邮件。 如果Commerce商店中有任何放弃的购物车，Journey Optimizer随后可以发送该电子邮件。 了解关于 [Experience Platform和边缘网络](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html).
+
+* **架构**  — 架构描述的是所发送数据的结构。 在Experience Platform能够摄取Commerce数据之前，您必须构建描述数据结构的架构并对每个字段中可包含的数据类型提供限制。 架构由一个基类以及零个或多个架构字段组组成。 该架构使用XDM结构，所有AdobeDX产品都可以读取该结构。 因此，当您将数据发送至Experience Platform时，可以确保所有DX产品都能理解您的数据。 了解有关 [架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
+
+* **数据集**  — 用于数据收集的存储和管理结构，通常是包含架构（列）和字段（行）的表。 数据集还包含描述其存储的数据的各个方面的元数据。 所有成功引入Adobe Experience Platform的数据都包含在数据集中。 了解有关 [数据集](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html).
+
+* **数据流**  — 允许数据从Adobe Experience Platform流向其他AdobeDX产品的ID。 此ID必须关联到您的特定Adobe Commerce实例中的特定网站。 创建此数据流时，请指定您在上面创建的XDM架构。 了解有关 [数据流](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html).
+
+## 支持的架构
+
+此 [!DNL Data Connection] 扩展在以下体系结构上可用：
+
+* PHP/Luma
+* [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
+* [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html)
+
+## 先决条件
 
 要使用 [!DNL Data Connection] 扩展上，您必须具备以下条件：
 
-- Adobe Commerce 2.4.3或更高版本
-- Adobe ID和组织ID
-- [Adobe客户端数据层(ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html). 需要ACDL才能收集店面事件数据。
-- 对其他AdobeDX产品的权利
+* Adobe Commerce 2.4.4或更高版本
+* Adobe ID和组织ID
+* [Adobe客户端数据层(ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html)，这是收集店面事件数据所必需的
+* 对其他AdobeDX产品的权利。
 
 ## 载入步骤
+
+在高级别上，启用 [!DNL Data Connection] 扩展涉及以下步骤：
 
 1. [安装](install.md) 该 [!DNL Data Connection] 扩展。
 1. [登录](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) 到您的Adobe帐户和 [查看以确认](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) 您的组织ID。 组织ID是与您配置的Experience Cloud公司关联的ID。 此ID是由24个字符组成的字母数字字符串，其后跟（且必须包括） `@AdobeOrg`.
@@ -43,19 +88,19 @@ ht-degree: 1%
 1. [连接到Commerce Services](../landing/saas.md).
 1. [连接到Adobe Experience Platform](connect-data.md).
 
+本指南的其余部分将更详细地介绍所有这些步骤，以便您快速了解并开始使用Commerce商店中AdobeDX产品的强大功能。
+
+>[!NOTE]
+>
+>对于移动开发人员，了解如何 [集成](./mobile-sdk-epc.md) 带有Commerce的Adobe Experience Platform Mobile SDK。
+
 ## 受众
 
-本指南专为希望将其Adobe Commerce数据连接到其他AdobeDX产品的Adobe Commerce商家设计。
+本指南专为希望丰富和个性化其Commerce商店以提升客户购物体验的Adobe Commerce商家而设计。
 
-### PWA Studio支持
-
-请参阅 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/) 有关如何使用的信息，请参阅文档 [!DNL Data Connection] 扩展名放在PWA Studio店面。
-
-### AEM支持 {#aem-support}
-
-请参阅 [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html) 文档，以了解如何使用CIF将storefront事件数据从AEM渲染的产品页面发送到Experience Platform- [!DNL Data Connection] 扩展。
+## 支持
 
 如果您需要本指南中未涉及的信息或问题，请使用以下资源：
 
-- [帮助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
-- [支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} — 提交票证以接收其他帮助。
+* [帮助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
+* [支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} — 提交票证以接收其他帮助。
