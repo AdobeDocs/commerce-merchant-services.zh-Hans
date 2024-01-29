@@ -3,9 +3,9 @@ title: 指南概述
 description: 了解如何使用将Adobe Commerce数据与Adobe Experience Platform集成 [!DNL Data Connection] 扩展。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: 7d93b556881b3af5f6c8bceb5c9bb6af9ec0bc1c
+source-git-commit: b2ef02d6d1efbd1d2bc1d386517f050f56d5d864
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1671'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Adobe Experience Platform提供了一套技术，当与您的Commerce商店中�
 | [Adobe [!DNL Real-Time CDP]](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=zh-Hans) | 用户档案管理和分段服务 | **购买历史记录分段**：商家可以根据特定时段（每月、每季、每年等）识别购买项目的客户。 商家随后可以为这些客户创建区段，并针对这些客户进行促销活动、促销活动以及 _漏斗顶部_ 订阅服务潜在客户的数据。<br> **基于类别的分段**：商家可以查看购买的产品的类别。<br> **基于产品的细分**：商家可以识别始终退货的客户。 现在，提供给他们的优惠和折扣会更加明智。 例如，对于始终返回产品的客户，可以删除免运费。<br> **相似人群拓展定位**：A _相似受众_ 是一种促销活动所用的方法，旨在帮助那些可能会对自己的业务感兴趣的新客户，因为他们与现有客户具有相似的特征。 可以根据行为和事务型数据创建相似区段。<br> **客户倾向**：客户行为的变化可归因于可从事务型数据创建的更深入的客户用户档案。 随着更多数据流入到计算（如产品退货和产品配置）中，倾向分数将有更高的置信度。<br> **交叉销售**：商家可以从Commerce中捕获的精细信息中识别强大的交叉销售和追加销售机会。 |
 | [客户 [!DNL Journey Analytics]](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html) | 对整个Commerce历程的深入分析 | **季节性趋势**：商家可以确定季节性趋势，这有助于他们为特定产品的需求定期变化做好准备。 此外，商家可以识别任何产品在不同年份中的整体受欢迎程度变化。<br> **转化分析**：通过了解产品购买时间以及店面展示事件访问权限，商家可以生成丰富的客户配置文件以执行转化分析。 |
 | [Adobe [!DNL Analytics]](https://experienceleague.adobe.com/docs/analytics/analyze/admin-overview/analytics-overview.html) | 对客户行为和营销活动绩效的深入分析 | **订单退货**：商家可以识别存在退货模式的客户和较大的客户群体。 这有助于商家改进其商业策略，因为他们了解其客户群行为是什么样的。<br> **订单地址**：根据送货地址，商家可以了解订单是由客户自己下单，还是由其他个人或实体下单。<br> **季节性趋势**：商家可以确定季节性趋势，这有助于他们为特定产品的需求定期变化做好准备。 此外，商家可以识别任何产品在不同年份中的整体受欢迎程度变化。<br> **转化分析**：通过了解产品购买时间以及店面展示事件访问权限，商家可以生成丰富的客户配置文件以执行转化分析。 **注意** Adobe Analytics仅支持行为（店面）事件数据。 Adobe Analytics不支持事务性(backoffice)事件数据。 |
-| [Adobe [!DNL Journey Optimizer]](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) | 跨渠道的活动编排 | **基于行为的历程**：两年前购买手机的客户可能会被定位购买新的手机，因为他们现在可能正在寻找新的手机。 此外，还可以使用个性化的促销活动和促销活动来定位此类客户。 [!DNL Journey Optimizer] 可以使用其电子邮件和短信功能来联系这些客户。 历史订单数据与行为数据可用于识别趋势。 如果客户以前购买过具有特定配置的产品，现在又希望再次购买相同的产品，则可以通过为他们提供对相同产品配置的轻松查看/访问来增强其购买历程。<br> **个性化**：访问客户个人资料信息， [!DNL Journey Optimizer] 可以解锁高度个性化的历程，从而让商家可以通过多个不同渠道联系客户。<br> **已创建新配置文件**：欢迎电子邮件和促销活动可鼓励和影响新客户的购物历程。<br> **已删除配置文件**：商家可以选择停止向已关闭其帐户的客户发送促销电子邮件。 或者，商家也可以建立营销活动以赢回失去的客户。 |
+| [Adobe [!DNL Journey Optimizer]](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) | 跨渠道的活动编排 | **基于行为的历程**：商家可以通过建议客户购买新机型来定位两年前购买手机的客户。 商家可以为这些客户创建个性化的促销活动和促销活动，并使用电子邮件和短信功能进行联系。 此外，商家可以使用历史顺序和行为数据来识别趋势。 例如，如果客户以前购买过具有特定配置的产品，现在又希望再次购买同一产品，则可以通过赋予他们可见性和访问相同产品配置的权限来增强其购买历程。<br> **个性化**：访问客户个人资料信息， [!DNL Journey Optimizer] 可以解锁高度个性化的历程，从而让商家可以通过多个不同渠道联系客户。<br> **已创建新配置文件**：欢迎电子邮件和促销活动可鼓励和影响新客户的购物历程。<br> **已删除配置文件**：商家可以选择停止向已关闭其帐户的客户发送促销电子邮件。 或者，商家也可以建立营销活动以赢回失去的客户。 |
 
 ## 将Experience Platform数据提取回Commerce
 
