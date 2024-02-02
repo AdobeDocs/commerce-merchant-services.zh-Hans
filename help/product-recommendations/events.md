@@ -3,9 +3,9 @@ title: 收集数据
 description: 了解事件如何收集产品推荐的数据。
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 7ed9321a2f4e58a7476aa91e74611fe896e1a7b1
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->为产品推荐目的而收集的数据不包括个人身份信息(PII)。 所有用户标识符（如Cookie ID和IP地址）都经过严格匿名处理。 [了解详情](https://www.adobe.com/privacy/experience-cloud.html).
+>为产品推荐目的而收集的数据不包括个人身份信息(PII)。 所有用户标识符（如Cookie ID和IP地址）都经过严格匿名处理。 学习 [更多](https://www.adobe.com/privacy/experience-cloud.html).
 
 以下事件并非特定于产品Recommendations，而是返回结果所必需的：
 
@@ -26,14 +26,17 @@ ht-degree: 0%
 
 此 [Adobe Commerce店面事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) 列出部署到您的店面的所有事件。 但是，从该列表中，有一个特定于产品Recommendations的事件子集。 当购物者与店面上的推荐单元进行交互时，这些事件会收集数据，并增强用于帮助您分析推荐表现情况的量度。
 
-| Event | 描述 | [是否用于指标？](workspace.md) |
+| 事件 | 描述 | 是否用于指标？ |
 | --- | --- | --- |
 | `impression-render` | 推荐单元在页面上呈现。 | 是 |
 | `rec-add-to-cart-click` | 客户单击 **添加到购物车** 推荐单位中项目的按钮。 | 是，当 **添加到购物车** “推荐”模板中存在按钮。 |
 | `rec-click` | 客户单击推荐单位中的产品。 | 是 |
 | `view` | 推荐单元将变为可在页面上查看，例如通过滚动到视图中。 | 是 |
 
-如果您的店面采用PWA Studio实施，请参阅 [PWA文档](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). 如果您使用自定义前端技术，例如React或Vue JS，请参阅用户指南，以了解如何在中集成Product Recommendations [headless](headless.md) 环境。
+要正确填充仪表板，需要以下事件。
+| “仪表板”列 | 活动 | 加入字段 | | ---------------- | --------- | ----------- | | 展示次数 |`page-view`， `recs-request-sent`， `recs-response-received`， `recs-unit-render` | unitId | | 视图 |`page-view`， `recs-request-sent`， `recs-response-received`， `recs-unit-render`， `recs-unit-view` | unitId | | 点击次数 |`page-view`， `recs-request-sent`， `recs-response-received`， `recs-item-click`， `recs-add-to-cart-click`    | unitId | | 收入 |`page-view`， `recs-request-sent`， `recs-response-received`， `recs-item-click`， `recs-add-to-cart-click`， `place-order` | unitId， sku | | LT收入 |`page-view`， `recs-request-sent`， `recs-response-received`， `recs-item-click`， `recs-add-to-cart-click`， `place-order` | unitId， sku | | CTR |`page-view`， `recs-request-sent`， `recs-response-received`， `recs-unit-render`， `recs-item-click`， `recs-add-to-cart-click`  | unitId， sku | | vCTR |`page-view`， `recs-request-sent`， `recs-response-received`， `recs-unit-render`， `recs-unit-view`， `recs-item-click`， `recs-add-to-cart-click` | unitId， sku |
+
+如果您的店面采用PWA Studio实施，请参阅 [PWA文档](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). 如果您使用自定义前端技术，例如React或Vue JS，请参阅用户指南以了解如何集成 [Headless中的产品Recommendations](headless.md) 环境。
 
 ## 注意事项
 
