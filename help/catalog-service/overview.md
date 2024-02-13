@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Catalog Service]'
+title: ’[!DNL Catalog Service]’
 description: ’[!DNL Catalog Service] for Adobe Commerce提供了一种方法，可以比本机Adobe Commerce GraphQL查询更快地检索产品显示页面和产品列表页面的内容。
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: 8e349cb8cfba7c4d828a6f3666a3b27fecfdbd15
+source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 Adobe Commerce有两个GraphQL系统。 核心GraphQL系统提供了广泛的查询（读取操作）和突变（写入操作），允许购物者与多种类型的页面交互，包括产品、客户帐户、购物车、结账等。 但是，返回产品信息的查询未针对速度进行优化。 GraphQL系统提供的服务只能对产品和相关信息进行查询。 这些查询的性能优于类似的核心查询。
 
-目录服务客户可以使用新的 [SaaS价格索引器](../price-index/index.md)，可以加快价格变更更新和同步时间。
+[!DNL Catalog Service] 客户可以使用新的 [SaaS价格索引器](../price-index/index.md)，可以加快价格变更更新和同步时间。
 
 ## 架构
 
@@ -62,13 +62,13 @@ GraphQL的核心系统和服务不会直接相互通信。 您可以从不同的
 
 ### 价格
 
-简单产品表示具有价格的基本销售单位。 目录服务计算折扣前的常规价格以及折扣后的最终价格。 定价计算可以包括固定产品税。 它们不包括个性化促销。
+简单产品表示具有价格的基本销售单位。 [!DNL Catalog Service] 计算折扣前的常规价格以及折扣后的最终价格。 定价计算可以包括固定产品税。 它们不包括个性化促销。
 
 复杂的产品没有确定的价格。 相反，目录服务会返回链接的单点的价格。 例如，商家最初可以为可配置产品的所有变体分配相同的价格。 如果某些尺寸或颜色不受欢迎，商家可以降低这些变体的价格。 因此，复杂（可配置）产品的价格首先显示一个价格范围，同时反映标准和不受欢迎的变体的价格。 购物者为所有可用选项选择了一个值后，店面会显示一个价格。
 
 >[!NOTE]
 >
-> 商业客户具有 [!DNL Catalog Service] 可在其网站上利用更快的价格变化更新和同步时间， [SaaS价格索引器](../price-index/index.md).
+> 商业客户具有 [!DNL Catalog Service] 能够利用网站上的更快价格更改更新和同步时间， [SaaS价格索引器](../price-index/index.md).
 
 ## 实现
 

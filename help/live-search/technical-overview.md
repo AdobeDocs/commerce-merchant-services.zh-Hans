@@ -3,9 +3,9 @@ title: “技术概述”
 description: '"[!DNL Live Search] 载入流程、系统要求、边界和限制”'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 3d2b63280c2a890d7f84208efe3687c0d99e8e38
+source-git-commit: e235073031cae1304eaae4605d2f94332e52284f
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
@@ -133,7 +133,7 @@ ht-degree: 0%
 
 ## 构件代码存储库
 
-产品列表页面构件和搜索弹出框构件均可从其github存储库下载。
+产品列表页面构件和实时搜索字段构件均可以从其github存储库下载。
 
 这允许开发人员完全自定义功能和样式。 这些用户自行托管代码，同时仍利用 [!DNL Live Search] 服务。
 
@@ -160,6 +160,8 @@ Live Search小组件支持Adobe Commerce支持的大多数价格类型，但不�
 * 最低广告价格
 
 查看 [API网格](../catalog-service/mesh.md) 进行更复杂的价格计算。
+
+价格格式支持Commerce实例中的区域设置配置设置： *商店* >设置> *配置* >常规> *常规* >本地选项>区域设置。
 
 ## PWA支持
 
@@ -192,7 +194,7 @@ Live Search小组件支持Adobe Commerce支持的大多数价格类型，但不�
 ## 当前不支持
 
 * 此 [高级搜索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 在以下情况下将禁用模块 [!DNL Live Search] ，并删除店面页脚中的高级搜索链接。
-* [分层定价](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) 和 [特殊定价](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) 不支持 [!DNL Live Search] 弹出框和产品列表页面小组件。
+* [分层定价](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) 和 [特殊定价](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) 不支持 [!DNL Live Search] 字段和产品列表页面小组件。
 
 ## Cookies
 

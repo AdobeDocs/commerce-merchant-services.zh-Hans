@@ -1,15 +1,15 @@
 ---
-title: "性能"
+title: “性能仪表板”
 description: “ [!DNL Live Search] 绩效仪表板提供对购物者所用搜索词的洞察。”
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 0b0bf898719338f5dacd55d8e89aaf2c9fa8a3c0
+source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
 
-# 性能
+# 性能仪表板
 
 此 [!DNL Live Search] 绩效仪表板提供对购物者使用搜索词的洞察。 此信息可用于识别趋势、增加点进次数并提高转化率。 “性能”功能板提供特定日期范围内的搜索度量的快照，并包括以下报表：
 
@@ -18,6 +18,8 @@ ht-degree: 0%
 * 常见结果
 
 ![性能](assets/performance-unique-searches.png)
+
+您也可以参阅 [数据管理功能板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 了解更多有关数据同步的数据。
 
 ## 查看报表
 
@@ -30,7 +32,6 @@ ht-degree: 0%
 >
 >性能仪表板每12小时更新一次。
 
-
 ## 字段描述
 
 | 快照数据 | 描述 |
@@ -41,7 +42,7 @@ ht-degree: 0%
 | 零结果率 | 在指定日期范围内未返回任何结果的唯一搜索的百分比。 例如，如果购物者搜索“fjjjjfjf”两次（没有结果）和“pants”一次（有结果），则零结果率为66.67%。 |
 | 平均 点击位置 | 基于指定日期范围的唯一搜索的平均点进率的相对位置。 |
 
-| 报表 | 描述 |
+| 报告 | 描述 |
 |--- |--- |
 | 独特搜索 | 列出在指定日期范围内使用的唯一搜索查询。 报表数据的计算方式与唯一搜索快照数据的计算方式相同。 如果购物者两次键入相同的搜索查询，但间隔超过一小时，则该搜索被视为两次唯一搜索。 报告限制：前500个术语 |
 | 零个结果 | 列出未返回结果的搜索查询以及在指定日期范围内使用的次数。 报告限制：前500个术语 |

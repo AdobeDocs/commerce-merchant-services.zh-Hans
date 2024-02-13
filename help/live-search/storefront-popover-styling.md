@@ -2,9 +2,9 @@
 title: “样式 [!DNL Popover] 元素”
 description: “有关自定义技术说明 [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
+source-git-commit: 67da9016d4bca9750fa9e440cce08ad1ae7100e2
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,10 @@ ht-degree: 0%
 #### .livesearch.product-price
 
 ![产品价格](assets/livesearch-product-price.png)
+
+#### .livesearch产品链接
+
+![产品结果](assets/livesearch-product-link.png)
 
 ## 使用修改的主题 {#working-with-modified-theme}
 

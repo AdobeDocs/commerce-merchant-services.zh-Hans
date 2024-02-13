@@ -2,9 +2,9 @@
 title: 产品列表页面小组件
 description: 启用并设置样式 [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
+source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,16 @@ ht-degree: 0%
 
 1. 转到 **商店** >设置> **配置** > **[!DNL Live Search]** > **店面特色** 并设置 **启用产品列表小组件** “不”。
 1. 选择 **保存配置** 以保存设置。
+
+## 构件功能
+
+PLP小组件提供可搜索产品页面中所需的一系列功能。 这些功能包括：
+
+* 按属性过滤。
+* 支持色板
+* 添加到购物车功能
+* 多语言支持
+* 价格滑块
 
 ## 样式设置示例
 

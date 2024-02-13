@@ -1,11 +1,11 @@
 ---
-title: "[!DNL Live Search] 发行说明"
+title: '"[!DNL Live Search] 发行说明”'
 description: “的最新发行信息 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
+source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt
-source-wordcount: '1869'
+source-wordcount: '1822'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,38 @@ _2023年4月25日_
 
 ![新建](../assets/new.svg) [!DNL Live Search] 客户现在可以利用新的 [SaaS价格索引器](../price-index/index.md).
 
+## [!DNL Live Search] 4.1.0 {#410}
+
+_2024年2月13日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"}
+
+### 新增功能
+
+![新建](../assets/new.svg) [!DNL Live Search] 现在支持为设置默认规则 [搜索促销](rules.md).
+![新建](../assets/new.svg) 多个新增功能已添加到 [PLP小组件](plp-styling.md)：
+
+* 列表/网格视图切换
+* 添加到购物车按钮
+* 样本支持
+* 每个产品有多个图像
+* 价格滑块
+* 语言支持
+
+商家必须升级 [!DNL Live Search] 版本>= 4.1.0的扩展以访问这些功能。
+
+安装版本3.1.1或更高版本后，启用新的索引器：
+
+* 产品价格信息源
+* 范围网站数据馈送
+* 范围客户组数据馈送
+
+升级后，在将更改推送到生产环境之前，请在QA或暂存中测试更新的配置。
+
+## 先前版本
+
++++4.0.0和之前的版本
+
 ## [!DNL Live Search] 4.0.0 {#400}
 
 _2023年11月13日_
@@ -61,27 +93,11 @@ _2023年11月13日_
 ![修复](../assets/fix.svg) 重新配置了CSS样式以更好地隔离构件类。
 ![修复](../assets/fix.svg) 次要错误修复
 
-商家必须升级 [!DNL Live Search] 版本>= 4.0.0的扩展以访问这些功能。
-
-安装版本3.1.1或更高版本后，启用新的索引器：
-
-* 产品价格信息源
-* 范围网站数据馈送
-* 范围客户组数据馈送
-
-升级后，在将更改推送到生产环境之前，请在QA或暂存中测试更新的配置。
-
-## 先前版本
-
-+++3.1.1和之前的版本
-
 ## [!DNL Live Search] 3.1.1 {#311}
 
 _2023年9月15日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
-
-
 
 ![新建](../assets/new.svg) 添加了新的“类别促销”选项卡。 用户现在可以按类别添加智能排名和手动排名（固定、提升、隐藏、隐藏）
 ![新建](../assets/new.svg) 用户可以添加具有智能或手动排名的单个类别规则

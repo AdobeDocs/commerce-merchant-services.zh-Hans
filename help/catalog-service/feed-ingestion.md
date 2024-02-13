@@ -1,19 +1,15 @@
 ---
 title: 馈送引入服务
 description: 了解Adobe Commerce的信息源摄取服务
-source-git-commit: b57fc43d23dbbcbcae31743fd0ab9c1b3d1c1084
+exl-id: bb5aec74-faca-42ec-9fdb-3261677d451e
+source-git-commit: d3798efa038c35f71bb0bb6874d954a8e66c7467
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
 
-
 # 馈送引入服务
-
->[!NOTE]
->
->信息源引入服务当前为私有测试版。 尚不可用于一般用途。
 
 信息源摄取服务允许拥有大型和/或复杂目录的客户直接将数据发送到Adobe Commerce服务。
 
@@ -36,12 +32,6 @@ ht-degree: 0%
 
 通过绕过核心Commerce应用程序并将数据直接移动到Commerce服务，产品更新可更快地反映在商店中。 核心目录数据（例如SKU）将发送到核心Commerce应用程序进行单独处理。
 
-## 加入Beta
+## API
 
-馈送摄取服务专为以下目的而设计：
-
-* 具有Headless实施的中型企业客户
-* 拥有大型复杂目录的客户
-* 客户未使用Adobe Commerce管理员管理目录数据，而是使用ERP或第三方系统管理目录数据
-
-如果您有兴趣加入Beta计划，请通过sagonzal@adobe.com联系团队。
+此 [馈送摄取服务API文档](https://developer.adobe.com/commerce/services/feed-ingestion) 提供了有关如何实施服务的详细信息。

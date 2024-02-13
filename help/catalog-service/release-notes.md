@@ -1,12 +1,12 @@
 ---
-title: '[!DNL Catalog Service] 发行说明'
+title: ’[!DNL Catalog Service] 发行说明
 description: 的最新发行信息 [!DNL Catalog Service] 用于Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 8996772883b001babc09a3ae5a63310b23e58ae0
+source-git-commit: 4ce37b03937cf5a8413831c720d05387031a6094
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 1%
+source-wordcount: '547'
+ht-degree: 0%
 
 ---
 
@@ -22,21 +22,20 @@ ht-degree: 1%
 
 ## 当前主要版本
 
-### V1.13发布
+### V1.16发布
 
-_2023年10月12日_
+_2023年2月13日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
-![新建](../assets/new.svg) 目录服务支持 `inStock` 产品变型的标记。
-![新建](../assets/new.svg) `urlKey` 和 `externalId` 已添加到GraphQL架构。
-![新建](../assets/new.svg) 现在支持可下载产品和礼品卡。
+![新建](../assets/new.svg) 目录服务API现在支持产品视频。
+![修复](../assets/fix.svg) 现在支持固定价格的捆绑产品。
+![修复](../assets/fix.svg) 缺货期权现在显示在PDP构件中。
 
 #### 已知限制
 
 尚不支持以下功能：
 
-* 捆绑固定价格的产品
 * 动态属性有效负载的最大大小为9 MB。
 * 组产品价格。 可以用简单的产品价格来计算。
 * 在图像数组中，只有第一个图像包含角色。
@@ -49,6 +48,16 @@ _2023年10月12日_
 ## 先前版本
 
 +++ 先前版本
+
+### V1.13发布
+
+_2023年10月12日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"}
+
+![新建](../assets/new.svg) 目录服务支持 `inStock` 产品变型的标记。
+![新建](../assets/new.svg) `urlKey` 和 `externalId` 已添加到GraphQL架构。
+![新建](../assets/new.svg) 现在支持可下载产品和礼品卡。
 
 ### V1.12发布
 
