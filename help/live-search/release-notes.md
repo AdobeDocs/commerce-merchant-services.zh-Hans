@@ -3,9 +3,9 @@ title: '"[!DNL Live Search] 发行说明”'
 description: “的最新发行信息 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
+source-git-commit: 033fff8820b5467b5b24b03159e4141ff2e6d725
 workflow-type: tm+mt
-source-wordcount: '1822'
+source-wordcount: '1772'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,10 @@ ht-degree: 0%
 
 这些说明描述了在未发布版本控制版本或对托管服务的改进的情况下发布的更新。
 
+_2024年2月13日_
+
+![新建](../assets/new.svg) [!DNL Live Search] 现在支持为设置默认规则 [搜索促销](rules.md).
+
 _2023年10月27日_
 
 ![新建](../assets/new.svg) 此 [!DNL Live Search] PLP构件现在支持色板。
@@ -41,37 +45,26 @@ _2023年4月25日_
 
 ![新建](../assets/new.svg) [!DNL Live Search] 客户现在可以利用新的 [SaaS价格索引器](../price-index/index.md).
 
-## [!DNL Live Search] 4.1.0 {#410}
+<!--## [!DNL Live Search] 4.1.0 {#410}
 
-_2024年2月13日_
+_Feb 13, 2024_
 
-[!BADGE 支持]{type=Informative tooltip="支持"}
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-### 新增功能
+### New Features
 
-![新建](../assets/new.svg) [!DNL Live Search] 现在支持为设置默认规则 [搜索促销](rules.md).
-![新建](../assets/new.svg) 多个新增功能已添加到 [PLP小组件](plp-styling.md)：
+![New](../assets/new.svg) Multiple new features have been added to the [PLP widget](plp-styling.md):
 
-* 列表/网格视图切换
-* 添加到购物车按钮
-* 样本支持
-* 每个产品有多个图像
-* 价格滑块
-* 语言支持
+* List/grid view toggling
+* Add to Cart buttons
+* Swatch support
+* Multiple images per product
+* Price sliders
+* Language support
 
-商家必须升级 [!DNL Live Search] 版本>= 4.1.0的扩展以访问这些功能。
+Merchants must upgrade the [!DNL Live Search] extension to version >= 4.1.0 to access these features.
 
-安装版本3.1.1或更高版本后，启用新的索引器：
-
-* 产品价格信息源
-* 范围网站数据馈送
-* 范围客户组数据馈送
-
-升级后，在将更改推送到生产环境之前，请在QA或暂存中测试更新的配置。
-
-## 先前版本
-
-+++4.0.0和之前的版本
+--->
 
 ## [!DNL Live Search] 4.0.0 {#400}
 
@@ -92,6 +85,18 @@ _2023年11月13日_
 ![修复](../assets/fix.svg) 此 [!DNL Live Search] 默认情况下，新安装已启用PLP小组件。
 ![修复](../assets/fix.svg) 重新配置了CSS样式以更好地隔离构件类。
 ![修复](../assets/fix.svg) 次要错误修复
+
+安装版本3.1.1或更高版本后，启用新的索引器：
+
+* 产品价格信息源
+* 范围网站数据馈送
+* 范围客户组数据馈送
+
+升级后，在将更改推送到生产环境之前，请在QA或暂存中测试更新的配置。
+
+## 先前版本
+
++++3.1.1和之前的版本
 
 ## [!DNL Live Search] 3.1.1 {#311}
 
