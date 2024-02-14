@@ -2,9 +2,9 @@
 title: “性能仪表板”
 description: “ [!DNL Live Search] 绩效仪表板提供对购物者所用搜索词的洞察。”
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
+source-git-commit: a0dded0beac3d45f8944016bd73e4ec1ae3eae22
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,6 @@ ht-degree: 0%
 * 常见结果
 
 ![性能](assets/performance-unique-searches.png)
-
-您也可以参阅 [数据管理功能板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 了解更多有关数据同步的数据。
 
 ## 查看报表
 

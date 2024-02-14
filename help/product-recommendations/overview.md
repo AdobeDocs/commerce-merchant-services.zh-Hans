@@ -3,9 +3,9 @@ title: 简介 [!DNL Product Recommendations]
 description: ’[!DNL Product Recommendations] 是一个强大的营销工具，可用于提高转化率、增加收入和刺激购物者参与。”
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
 recommendations: noCatalog
-source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
+source-git-commit: a0dded0beac3d45f8944016bd73e4ec1ae3eae22
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -25,8 +25,6 @@ ht-degree: 0%
 ## 隐私
 
 为以下目的收集数据 [!DNL Product Recommendations] 不包括任何个人身份信息(PII)。 此外，所有用户标识符（如Cookie ID和IP地址）都经过严格匿名处理。 要了解更多信息，请参阅 [Adobe隐私政策](https://www.adobe.com/privacy/policy.html).
-
-[!DNL Product Recommendations] 用户可以参阅 [数据管理功能板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 了解更多有关数据同步的数据。
 
 ## 产品推荐与产品关系
 
