@@ -3,9 +3,9 @@ title: 指南概述
 description: 了解如何使用将Adobe Commerce数据与Adobe Experience Platform集成 [!DNL Data Connection] 扩展。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: b2ef02d6d1efbd1d2bc1d386517f050f56d5d864
+source-git-commit: d54b7e894df4e6f64607afcfc6754b5a560b91e2
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1708'
 ht-degree: 0%
 
 ---
@@ -26,18 +26,18 @@ Adobe Experience Platform提供了一套技术，当与您的Commerce商店中�
 
 ![数据如何流向Experience Platform边缘](assets/commerce-edge.png)
 
-在上图中，您的店面和后台数据使用SDK、API和源连接器发送到Experience Platform边缘。 您无需完全了解这些部分的工作方式，因为扩展会为您处理数据共享的复杂性。 当事件数据位于边缘时，您可以将该数据提取到其他Experience Platform应用程序中。 例如：
+在上图中，您的行为、后台和客户个人资料数据使用SDK、API和源连接器发送到Experience Platform边缘。 您无需完全了解这些部分的工作方式，因为扩展会为您处理数据共享的复杂性。 当事件数据位于边缘时，您可以将该数据提取到其他Experience Platform应用程序中。 例如：
 
 | 应用程序 | 用途 | 用例 |
 |---|---|---|
-| [Adobe [!DNL Real-Time CDP]](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=zh-Hans) | 用户档案管理和分段服务 | **购买历史记录分段**：商家可以根据特定时段（每月、每季、每年等）识别购买项目的客户。 商家随后可以为这些客户创建区段，并针对这些客户进行促销活动、促销活动以及 _漏斗顶部_ 订阅服务潜在客户的数据。<br> **基于类别的分段**：商家可以查看购买的产品的类别。<br> **基于产品的细分**：商家可以识别始终退货的客户。 现在，提供给他们的优惠和折扣会更加明智。 例如，对于始终返回产品的客户，可以删除免运费。<br> **相似人群拓展定位**：A _相似受众_ 是一种促销活动所用的方法，旨在帮助那些可能会对自己的业务感兴趣的新客户，因为他们与现有客户具有相似的特征。 可以根据行为和事务型数据创建相似区段。<br> **客户倾向**：客户行为的变化可归因于可从事务型数据创建的更深入的客户用户档案。 随着更多数据流入到计算（如产品退货和产品配置）中，倾向分数将有更高的置信度。<br> **交叉销售**：商家可以从Commerce中捕获的精细信息中识别强大的交叉销售和追加销售机会。 |
+| [Adobe [!DNL Real-Time CDP]](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html) | 用户档案管理和分段服务 | **购买历史记录分段**：商家可以根据特定时段（每月、每季、每年等）识别购买项目的客户。 商家随后可以为这些客户创建区段，并针对这些客户进行促销活动、促销活动以及 _漏斗顶部_ 订阅服务潜在客户的数据。<br> **基于类别的分段**：商家可以查看购买的产品的类别。<br> **基于产品的细分**：商家可以识别始终退货的客户。 现在，提供给他们的优惠和折扣会更加明智。 例如，对于始终返回产品的客户，可以删除免运费。<br> **相似人群拓展定位**：A _相似受众_ 是一种促销活动所用的方法，旨在帮助那些可能会对自己的业务感兴趣的新客户，因为他们与现有客户具有相似的特征。 可以根据行为和事务型数据创建相似区段。<br> **客户倾向**：客户行为的变化可归因于可从事务型数据创建的更深入的客户用户档案。 随着更多数据流入到计算（如产品退货和产品配置）中，倾向分数将有更高的置信度。<br> **交叉销售**：商家可以从Commerce中捕获的精细信息中识别强大的交叉销售和追加销售机会。 |
 | [客户 [!DNL Journey Analytics]](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html) | 对整个Commerce历程的深入分析 | **季节性趋势**：商家可以确定季节性趋势，这有助于他们为特定产品的需求定期变化做好准备。 此外，商家可以识别任何产品在不同年份中的整体受欢迎程度变化。<br> **转化分析**：通过了解产品购买时间以及店面展示事件访问权限，商家可以生成丰富的客户配置文件以执行转化分析。 |
 | [Adobe [!DNL Analytics]](https://experienceleague.adobe.com/docs/analytics/analyze/admin-overview/analytics-overview.html) | 对客户行为和营销活动绩效的深入分析 | **订单退货**：商家可以识别存在退货模式的客户和较大的客户群体。 这有助于商家改进其商业策略，因为他们了解其客户群行为是什么样的。<br> **订单地址**：根据送货地址，商家可以了解订单是由客户自己下单，还是由其他个人或实体下单。<br> **季节性趋势**：商家可以确定季节性趋势，这有助于他们为特定产品的需求定期变化做好准备。 此外，商家可以识别任何产品在不同年份中的整体受欢迎程度变化。<br> **转化分析**：通过了解产品购买时间以及店面展示事件访问权限，商家可以生成丰富的客户配置文件以执行转化分析。 **注意** Adobe Analytics仅支持行为（店面）事件数据。 Adobe Analytics不支持事务性(backoffice)事件数据。 |
 | [Adobe [!DNL Journey Optimizer]](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) | 跨渠道的活动编排 | **基于行为的历程**：商家可以通过建议客户购买新机型来定位两年前购买手机的客户。 商家可以为这些客户创建个性化的促销活动和促销活动，并使用电子邮件和短信功能进行联系。 此外，商家可以使用历史顺序和行为数据来识别趋势。 例如，如果客户以前购买过具有特定配置的产品，现在又希望再次购买同一产品，则可以通过赋予他们可见性和访问相同产品配置的权限来增强其购买历程。<br> **个性化**：访问客户个人资料信息， [!DNL Journey Optimizer] 可以解锁高度个性化的历程，从而让商家可以通过多个不同渠道联系客户。<br> **已创建新配置文件**：欢迎电子邮件和促销活动可鼓励和影响新客户的购物历程。<br> **已删除配置文件**：商家可以选择停止向已关闭其帐户的客户发送促销电子邮件。 或者，商家也可以建立营销活动以赢回失去的客户。 |
 
 ## 将Experience Platform数据提取回Commerce
 
-使用将您的Commerce数据发送到Experience Platform [!DNL Data Connection] 扩展是Commerce数据共享功能的一部分。 另一端（可选扩展）称为 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html). 利用此扩展，您可以在Real-Time CDP中构建受众，并将这些受众部署到您的Commerce商店，以告知购物车价格规则和动态块。
+使用将您的Commerce数据发送到Experience Platform [!DNL Data Connection] 扩展是Commerce数据共享功能的一部分。 另一端（可选扩展）称为 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html). 利用此扩展，您可以在Real-Time CDP中构建受众，并将这些受众部署到您的Commerce商店，以告知购物车价格规则、相关产品规则（测试版）和动态块。
 
 从较高层面来看，从Commerce商店到Experience Platform并通过Audience Activation扩展返回的数据流如下所示：
 
@@ -82,8 +82,10 @@ Adobe Experience Platform提供了一套技术，当与您的Commerce商店中�
 
 1. [安装](install.md) 该 [!DNL Data Connection] 扩展。
 1. [登录](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) 到您的Adobe帐户和 [查看以确认](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) 您的组织ID。 组织ID是与您配置的Experience Cloud公司关联的ID。 此ID是由24个字符组成的字母数字字符串，其后跟（且必须包括） `@AdobeOrg`.
-1. [创建或更新](update-xdm.md) 您的XDM架构和特定于商务的字段组。
-1. [创建数据集](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) 基于您创建或更新的架构。 此数据集包含您发送的商务数据。
+1. 确保您拥有 [在Experience Platform中收集数据的权限](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html).
+1. 查看 [数据类型](data-ingestion.md) 您可以收集和发送。
+1. 创建或更新 [时间序列事件架构](update-xdm.md) 或 [配置文件记录数据架构](profile-data.md) 特定于Commerce的字段组。
+1. [创建数据集](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) 基于您创建或更新的架构。 此数据集包含发送到Experience Platform边缘的商务数据。
 1. [创建数据流](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) 并选择包含特定于Commerce的字段组的XDM架构。
 1. [连接到Commerce Services](../landing/saas.md).
 1. [连接到Adobe Experience Platform](connect-data.md).

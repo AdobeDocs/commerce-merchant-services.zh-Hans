@@ -3,9 +3,9 @@ title: 发行说明
 description: 的最新发行信息 [!DNL Data Connection] 来自Adobe Commerce的扩展。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 6378b89e5a077e35213f35e84be9a629c1bdc3ac
+source-git-commit: d54b7e894df4e6f64607afcfc6754b5a560b91e2
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ _2023年11月16_
 
 _2023年10月10日_
 
-![新建](../assets/new.svg)  — 添加了新订单状态事件： [已开票订单](events.md#orderinvoiced)， [已起动订单物料退货](events.md#orderitemsreturninitiated)、和 [订单物料退货已完成](events.md#orderitemreturncompleted).
+![新建](../assets/new.svg)  — 添加了新订单状态事件： [已开票订单](events-backoffice.md#orderinvoiced)， [已起动订单物料退货](events.md#orderitemsreturninitiated)、和 [订单物料退货已完成](events.md#orderitemreturncompleted).
 ![修复](../assets/fix.svg)  — 修复了在刷新缓存后，货币配置更改未反映在事件中的问题。
 ![修复](../assets/fix.svg)  — 修复了在启用异步订单放置后未显示订单确认消息的错误。
 ![新建](../assets/new.svg)  — 向添加了数据 [addToRequisitionList](events.md#addtorequisitionlist) “类别”视图页面上的简单产品事件。
@@ -71,6 +71,16 @@ _2022年10月12日_
 ![新建](../assets/new.svg)  — 增加了对 [AEM店面](overview.md#aem-support).
 
 +++
+
+## 3.2.0-beta1
+
+_2024年2月16日_
+
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+
+![新建](../assets/new.svg)  — 如果您正在参与Beta测试，请确保您的 `composer.json` 文件在根级别具有以下内容： ` "minimum-stability": "beta"`.
+![新建](../assets/new.svg)  — 添加了 [添加自定义属性](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data).
+![新建](../assets/new.svg)  — 添加了 [收集和发送配置文件记录](connect-data.md#send-customer-profile-data) 和要Experience Platform的数据。
 
 ## 3.1.0
 
@@ -120,8 +130,8 @@ _2023年3月30日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
-![新建](../assets/new.svg)  — 捆绑 `commerce-data-export` 和 `saas-export` 与的依赖关系 `experience-platform-connector` 扩展。 以前，必须单独安装这些依赖项。 这些依赖项以及商家配置支持服务器端处理 [后台活动](events.md#back-office-events).
-![新建](../assets/new.svg)  — 添加了名为的新后台事件 [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
+![新建](../assets/new.svg)  — 捆绑 `commerce-data-export` 和 `saas-export` 与的依赖关系 `experience-platform-connector` 扩展。 以前，必须单独安装这些依赖项。 这些依赖项以及商家配置支持服务器端处理 [后台活动](events-backoffice.md).
+![新建](../assets/new.svg)  — 添加了名为的新后台事件 [`orderShipmentCompleted`](events-backoffice.md#ordershipmentcompleted).
 
 ## 2.1.1
 
