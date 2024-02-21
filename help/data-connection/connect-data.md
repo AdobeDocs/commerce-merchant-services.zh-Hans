@@ -3,7 +3,7 @@ title: 将Commerce数据连接到Adobe Experience Platform
 description: 了解如何将Commerce数据连接到Adobe Experience Platform。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 540c423ecf7e50a36c1137f43a9cf9673658c805
+source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
 workflow-type: tm+mt
 source-wordcount: '2501'
 ht-degree: 0%
@@ -101,7 +101,7 @@ ht-degree: 0%
 
 要确保Adobe Commerce实例可以开始数据收集，请查看 [先决条件](overview.md#prerequisites).
 
-请参阅活动主题以了解有关 [店面](events.md#storefront-events)， [后台](events.md#back-office-events)、和 [个人资料](events.md#customer-profile-events-server-side) 事件。
+请参阅活动主题以了解有关 [店面](events.md#storefront-events)， [后台](events-backoffice.md)、和 [个人资料](events-backoffice.md#customer-profile-events-server-side) 事件。
 
 >[!NOTE]
 >
@@ -164,7 +164,7 @@ ht-degree: 0%
 
 有两种类型的配置文件数据可发送到Experience Platform：配置文件记录和时间序列配置文件事件。
 
-配置文件记录包含购物者在Commerce实例中创建配置文件时保存的数据，例如购物者的姓名。 当您的架构和数据集为 [已正确配置](profile-data.md)，则会将配置文件记录发送到Experience Platform并转发到Adobe的配置文件管理和分段服务： [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
+配置文件记录包含购物者在Commerce实例中创建配置文件时保存的数据，例如购物者的姓名。 当您的架构和数据集为 [已正确配置](profile-data.md)，则会将配置文件记录发送到Experience Platform并转发到Adobe的配置文件管理和分段服务： [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=zh-Hans).
 
 时间序列配置文件事件包含有关购物者配置文件信息的数据，例如，购物者在您的网站上创建、编辑或删除帐户的情况。 将配置文件事件数据发送到Experience Platform时，该数据会位于可供其他DX产品使用的数据集中。
 
@@ -193,7 +193,7 @@ ht-degree: 0%
 
 ### 发送历史订单数据
 
-Adobe Commerce最多收集5年的数据 [历史订单数据和状态](events.md#back-office-events). 您可以使用 [!DNL Data Connection] 扩展功能，用于将历史数据发送到Experience Platform，以丰富客户档案，并根据这些过去的订单个性化客户体验。 该数据存储在Experience Platform内的数据集中。
+Adobe Commerce最多收集5年的数据 [历史订单数据和状态](events-backoffice.md#back-office-events). 您可以使用 [!DNL Data Connection] 扩展功能，用于将历史数据发送到Experience Platform，以丰富客户档案，并根据这些过去的订单个性化客户体验。 该数据存储在Experience Platform内的数据集中。
 
 虽然Commerce已收集历史订单数据，但您必须完成多个步骤才能将该数据发送到Experience Platform。
 

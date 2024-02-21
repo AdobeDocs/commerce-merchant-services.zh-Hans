@@ -3,7 +3,7 @@ title: 发行说明
 description: 的最新发行信息 [!DNL Data Connection] 来自Adobe Commerce的扩展。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: d54b7e894df4e6f64607afcfc6754b5a560b91e2
+source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
 workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 0%
@@ -46,7 +46,7 @@ _2023年11月16_
 
 _2023年10月10日_
 
-![新建](../assets/new.svg)  — 添加了新订单状态事件： [已开票订单](events-backoffice.md#orderinvoiced)， [已起动订单物料退货](events.md#orderitemsreturninitiated)、和 [订单物料退货已完成](events.md#orderitemreturncompleted).
+![新建](../assets/new.svg)  — 添加了新订单状态事件： [已开票订单](events-backoffice.md#orderinvoiced)， [已起动订单物料退货](events-backoffice.md#orderitemsreturninitiated)、和 [订单物料退货已完成](events-backoffice.md#orderitemreturncompleted).
 ![修复](../assets/fix.svg)  — 修复了在刷新缓存后，货币配置更改未反映在事件中的问题。
 ![修复](../assets/fix.svg)  — 修复了在启用异步订单放置后未显示订单确认消息的错误。
 ![新建](../assets/new.svg)  — 向添加了数据 [addToRequisitionList](events.md#addtorequisitionlist) “类别”视图页面上的简单产品事件。
