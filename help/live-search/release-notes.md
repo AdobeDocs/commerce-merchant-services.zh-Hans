@@ -3,9 +3,9 @@ title: '"[!DNL Live Search] 发行说明”'
 description: “的最新发行信息 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 033fff8820b5467b5b24b03159e4141ff2e6d725
+source-git-commit: 89f0cd15e7eeb7f8f1f76df7a3612ba3ef02391e
 workflow-type: tm+mt
-source-wordcount: '1772'
+source-wordcount: '1900'
 ht-degree: 0%
 
 ---
@@ -45,26 +45,31 @@ _2023年4月25日_
 
 ![新建](../assets/new.svg) [!DNL Live Search] 客户现在可以利用新的 [SaaS价格索引器](../price-index/index.md).
 
-<!--## [!DNL Live Search] 4.1.0 {#410}
+## [!DNL Live Search] 4.1.0 {#410}
 
-_Feb 13, 2024_
+_2024年2月22日_
 
-[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+[!BADGE 支持]{type=Informative tooltip="支持"}
 
-### New Features
+### 新增功能
 
-![New](../assets/new.svg) Multiple new features have been added to the [PLP widget](plp-styling.md):
+![新建](../assets/new.svg) 此 [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 现已推出。 这个改版后的功能板提供了有关以下内容的数据流的分析： [!DNL Product Recommendations]， [!DNL Live Search]、和 [!DNL Catalog Service].
+![新建](../assets/new.svg) 多个新增功能已添加到 [PLP小组件](plp-styling.md)：
 
-* List/grid view toggling
-* Add to Cart buttons
-* Swatch support
-* Multiple images per product
-* Price sliders
-* Language support
+* 列表/网格视图切换
+* 添加到购物车按钮
+* 样本支持
+* 每个产品有多个图像
+* 价格滑块
+* 语言支持
 
-Merchants must upgrade the [!DNL Live Search] extension to version >= 4.1.0 to access these features.
+商家必须升级 [!DNL Live Search] 版本>= 4.1.0的扩展以访问这些功能。
 
---->
+### 更新
+
+![修复](../assets/fix.svg) 修复了在非默认商店视图中来宾用户将产品添加到购物车时导致错误的问题。
+![修复](../assets/fix.svg) 修复了导致搜索弹出框始终在价格值前面显示货币符号（无论区域设置如何）的问题。
+![修复](../assets/fix.svg) 为禁用的核心插件删除了不必要的类型定义，以修复安装时的兼容性问题。
 
 ## [!DNL Live Search] 4.0.0 {#400}
 

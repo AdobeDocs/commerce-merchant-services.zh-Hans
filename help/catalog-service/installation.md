@@ -2,9 +2,9 @@
 title: 载入和安装
 description: “了解如何安装 [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: a0dded0beac3d45f8944016bd73e4ec1ae3eae22
+source-git-commit: 6a7efbe0424e35cdec9cb00275d9a953feccaa5b
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ SaaS配置完成后，按照以下步骤执行初始数据同步 [目录同步](
 - 验证索引器是否正在运行。
 - 确保 `Catalog Attributes Feed, Product Feed, Product Overrides Feed`、和 `Product Variant Feed` 索引器设置为“按计划更新”。
 
-初始同步可能需要几分钟到几小时，具体取决于目录大小。 初始同步后，目录会持续将产品数据从Commerce服务器导出到Commerce服务，以使服务保持最新。
+初始同步可能需要几分钟到几小时，具体取决于目录大小。 初始同步后，目录会持续将产品数据从Commerce服务器导出到Commerce服务，以使服务保持最新。 要监视同步的状态，请参阅 [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html).
 
 ### 访问服务
 
@@ -145,3 +145,7 @@ SaaS配置完成后，按照以下步骤执行初始数据同步 [目录同步](
 此 [适用于Adobe Developer App Builder的API网格](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 使开发人员能够使用AdobeIO将专用或第三方API以及其他界面与Adobe产品集成。
 
 请参阅  [[!DNL Catalog Service] 和API Mesh](mesh.md) 有关安装和配置详细信息的主题。
+
+## 数据管理功能板
+
+用户可以参阅 [数据管理功能板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 有关更多数据关于 [!DNL Catalog Service] 数据同步。

@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Product Recommendations] 发行说明'
+title: ’[!DNL Product Recommendations] 发行说明
 description: 的最新发行信息 [!DNL Product Recommendations] 来自Adobe Commerce的。
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: bf7dc316f7b7b702836441b35770403d75be6cfd
 workflow-type: tm+mt
-source-wordcount: '1233'
+source-wordcount: '1281'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,19 @@ _2023年4月25日_
 
 ## 当前主要版本
 
+### 6.0.0个magento/product-recommendations
+
+_2024年2月22日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"}
+
+![新建](../assets/new.svg) 此 [!DNL Catalog Sync Dashboard] 现在是 [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html). 这个改版后的功能板提供了有关以下内容的数据流的分析： [!DNL Product Recommendations]， [!DNL Live Search]、和 [!DNL Catalog Service].
+![修复](../assets/fix.svg) 修复了导致产品Recommendations出现签出错误的问题。
+
+### 先前版本
+
++++5.0.0和之前的版本
+
 ### 5.0.1的magento/product-recommendations
 
 _2023年9月15日_
@@ -58,10 +71,6 @@ _2023年9月15日_
 #### 已知限制
 
 * 此 `websiteCode` 如果值包含下划线(_)，则错误返回该值。
-
-### 先前版本
-
-+++5.0.0和之前的版本
 
 ### 5.0.0个magento/product-recommendations
 
