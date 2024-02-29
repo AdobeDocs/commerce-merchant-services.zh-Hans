@@ -3,18 +3,14 @@ title: 配置文件记录
 description: 了解配置文件记录捕获的数据。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '212'
 ht-degree: 0%
 
 ---
 
-# [!DNL Data Connection] 配置文件记录(Beta)
-
->[!NOTE]
->
->此功能处于测试阶段。 如果您想加入Beta计划，请发送请求至 [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+# [!DNL Data Connection] 配置文件记录
 
 以下内容介绍安装Commerce配置文件时可用的记录数据 [!DNL Data Connection] 扩展。 配置文件记录中的数据将发送到Adobe Experience Platform。
 

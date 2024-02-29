@@ -3,18 +3,14 @@ title: 更新Commerce数据摄取的配置文件记录架构
 description: 了解如何创建架构、数据集和数据流，以收集Commerce配置文件记录数据并将其发送到Experience Platform。
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 8456f9b81812cf8ace55b7406d8b4fe50332c17a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
 
 # 更新Commerce数据摄取的配置文件记录架构
-
->[!NOTE]
->
->此功能处于测试阶段。 如果您想加入Beta计划，请发送请求至 [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 当购物者在Commerce网站中创建配置文件时，将创建配置文件记录并捕获数据。 您必须先创建特定于配置文件记录的架构和数据集，然后才能将该配置文件数据流式传输到Experience Platform。
 

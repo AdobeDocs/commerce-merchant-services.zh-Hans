@@ -3,9 +3,9 @@ title: 将Commerce数据连接到Adobe Experience Platform
 description: 了解如何将Commerce数据连接到Adobe Experience Platform。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '2501'
+source-wordcount: '2480'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ### 添加服务帐户和凭据详细信息
 
-如果您计划收集并发送 [历史订单数据](#send-historical-order-data) 或 [(Beta)客户配置文件数据](#send-customer-profile-data)，您必须添加服务帐户和凭据详细信息。 此外，如果您要配置 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) 扩展上，您必须完成这些步骤。
+如果您计划收集并发送 [历史订单数据](#send-historical-order-data) 或 [客户个人资料数据](#send-customer-profile-data)，您必须添加服务帐户和凭据详细信息。 此外，如果您要配置 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) 扩展上，您必须完成这些步骤。
 
 如果您只收集和发送店面或后台数据，则可以跳至 [常规](#general) 部分。
 
@@ -97,7 +97,7 @@ ht-degree: 0%
 
 - **后台** （服务器端数据）是在Commerce服务器中捕获的数据。 这包括有关订单状态的信息，例如订单是否已下达、已取消、已退款、已发运或已完成。 它还包括 [历史订单数据](#send-historical-order-data).
 
-- (**测试版**) **个人资料** 是与购物者的配置文件信息相关的数据。 学习 [更多](#send-customer-profile-data).
+- **个人资料** 是与购物者的配置文件信息相关的数据。 学习 [更多](#send-customer-profile-data).
 
 要确保Adobe Commerce实例可以开始数据收集，请查看 [先决条件](overview.md#prerequisites).
 
@@ -157,10 +157,6 @@ ht-degree: 0%
 完成新用户引导后，店面数据开始流入Experience Platform边缘。 后台数据大约需要5分钟才能显示在边缘。 根据cron时间表，可以在Edge看到后续更新。
 
 ### 发送客户个人资料数据
-
->[!IMPORTANT]
->
->此功能处于测试阶段。 如果您想加入Beta计划，请发送请求至 [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 有两种类型的配置文件数据可发送到Experience Platform：配置文件记录和时间序列配置文件事件。
 

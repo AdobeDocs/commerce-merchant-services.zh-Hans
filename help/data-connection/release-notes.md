@@ -3,9 +3,9 @@ title: 发行说明
 description: 的最新发行信息 [!DNL Data Connection] 来自Adobe Commerce的扩展。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,7 @@ _2023年6月13日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
-![新建](../assets/new.svg)  — （测试版）添加了以下功能 [发送历史订单](connect-data.md#beta-send-historical-order-data) Experience Platform的数据和状态。 此功能仅适用于Beta版用户。 您可以通过向以下地址发送电子邮件来加入测试版： `dataconnection@adobe.com`.
+![新建](../assets/new.svg)  — （测试版）添加了以下功能 [发送历史订单](connect-data.md#beta-send-historical-order-data) Experience Platform的数据和状态。
 
 ## 2.2.0
 

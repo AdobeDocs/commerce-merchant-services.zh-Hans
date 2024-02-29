@@ -4,9 +4,9 @@ description: 了解如何创建架构、数据集和数据流，以收集和发�
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -76,10 +76,6 @@ ht-degree: 0%
 要包含购物者的配置文件信息，请参阅下一部分。
 
 ## 时间序列配置文件事件数据
-
->[!NOTE]
->
->此功能处于测试阶段。 如果您想加入Beta计划，请发送请求至 [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 时间序列配置文件事件数据由以下事件生成：
 

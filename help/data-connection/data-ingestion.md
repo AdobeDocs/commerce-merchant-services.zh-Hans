@@ -3,9 +3,9 @@ title: 商业数据类型
 description: 了解您可以收集并发送到Experience Platform的数据类型。
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,7 @@ ht-degree: 0%
 
 ## 记录数据
 
->[!NOTE]
->
->此功能处于测试阶段。 如果您想加入Beta计划，请发送请求至 [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
-
-记录数据提供有关主题属性的信息。 主体可以是组织，也可以是个人。 例如，您网站上的购物者创建一个帐户并生成记录数据。 使用将类设置为的架构将此数据摄取到Experience Platform **个人资料**. 您可以将该记录数据发送到Adobe的用户档案管理和分段服务： [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
+记录数据提供有关主题属性的信息。 主体可以是组织，也可以是个人。 例如，您网站上的购物者创建一个帐户并生成记录数据。 使用将类设置为的架构将此数据摄取到Experience Platform **个人资料**. 您可以将该记录数据发送到Adobe的用户档案管理和分段服务： [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=zh-Hans).
 
 ### 捕获的配置文件记录数据
 

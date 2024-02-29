@@ -3,9 +3,9 @@ title: 后台事件
 description: 了解每个后台事件捕获哪些数据。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '3599'
+source-wordcount: '3573'
 ht-degree: 0%
 
 ---
@@ -402,10 +402,6 @@ ht-degree: 0%
 | `productListItems.categories.path` | 类别的路径。 |
 
 ## 客户个人资料事件（后台）
-
->[!NOTE]
->
->**测试版** 从服务器端生成的配置文件事件可供Beta版参与者使用。 如果您想加入Beta计划，请发送请求至 [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 从服务器端捕获的个人资料事件包括帐户信息，例如 `accountCreated`， `accountUpdated`、和 `accountDeleted`. 此数据用于帮助填充更好地定义区段或执行营销活动所需的关键客户详细信息，例如发送注册折扣优惠、帐户更改确认等。 从捕获了类似的配置文件事件 [店面](#customer-profile-events-storefront).
 
