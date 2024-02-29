@@ -2,9 +2,9 @@
 title: 创建新推荐
 description: 了解如何创建产品推荐单元。
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 24a930178873535f23331c9c5295c482d5b8e384
+source-git-commit: 51ff52eba117fe438d592ca886dbca25304a0d15
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,10 @@ _推荐单位_
 1. 在 _为您的推荐命名_ 部分，输入用于内部参考的描述性名称，例如 `Home page most popular`.
 
 1. 在 _选择页面类型_ 部分，从以下选项中选择要在其中显示推荐的页面：
+
+   >[!NOTE]
+   >
+   > 将商店配置为时，“购物车”页面上不支持产品Recommendations [将产品添加到购物车后立即显示购物车页面](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration.html#redirect-to-cart).
 
    * 主页
    * 类别
