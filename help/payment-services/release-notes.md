@@ -3,9 +3,9 @@ title: '"[!DNL Payment Services] 发行说明”'
 description: 查看发行说明，了解所有 [!DNL Payment Services] 版本发布。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 57b140463d457404b57dd23d33c72e48b4c3ac89
+source-git-commit: bcb111a409ee901a231d0bb4475b0c9ec728c95c
 workflow-type: tm+mt
-source-wordcount: '2209'
+source-wordcount: '2229'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ ht-degree: 0%
 这些发行说明描述了所发生的功能更改和修复，这些更改和修复是在托管服务的常规版本化功能发布之外发布的。
 
 +++托管服务更新
+
+_2024年3月5日_
+
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-5252 --> 现在，商家可以通过选择单个单元格的内容，从功能板网格中复制数据。
 
 _2023年10月10日_
 
