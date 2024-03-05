@@ -3,9 +3,9 @@ title: 连接实例
 description: 使用API密钥和私钥连接您的Commerce实例，并在配置中指定数据空间。
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: 57b140463d457404b57dd23d33c72e48b4c3ac89
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 0%
 * 如果您拥有 *已连接您的实例*，通过获取和使用您的API凭据并配置Commerce Services，您可以继续 [设置测试沙盒](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html).
 * 如果你还在 *需要连接您的实例*，请参阅本主题中关于 [获取API凭据](#obtain-api-credentials) 和 [配置Commerce服务](#configure-commerce-services).
 * 如果您是 *不确定您的实例是否已连接*，导航到 **系统** >服务> **Commerce服务连接器** 并在中查看公共API密钥和私有API密钥值 [!UICONTROL Sandbox Keys] 和 [!UICONTROL Production Keys] 部分，以及 *项目* 和 *数据空间* 中的字段 [!UICONTROL SaaS Identifier] 部分。 如果这些值存在，则表示您的实例已连接。
+
+>[!NOTE]
+>
+>所有有权使用支付服务的商家都可以使用一个生产数据空间和两个测试数据空间。
 
 ## 获取API凭据
 
