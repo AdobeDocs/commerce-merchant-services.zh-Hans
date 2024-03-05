@@ -2,9 +2,9 @@
 title: "添加同义词"
 description: '"添加 [!DNL Live Search] 同义词，以改善对搜索请求的响应。”'
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
+source-git-commit: 63318e2eb75bc5fb0a243b6430751b076e541b72
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 1. 输入 **关键词** 要匹配的术语或短语。
 1. 输入 **扩展** 要作为关键字的同义词添加的术语。 用逗号分隔多个术语。
-在此示例中，要匹配的关键字是“pants”，而扩展术语集是“long pants， trousers， slacks”。
+在此示例中，要匹配的关键字是“pants”，而扩展术语集是“trousers， slacks”。
 
    ![双向同义词示例](assets/synonym-add-two-way-example.png)
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
    ![单向同义词示例](assets/synonym-add-one-way-example.png)
 
-   在此示例中，关键字是“pants”，而单向扩展术语“capris， calf-length pants， peddle-pushers”是“pants”的子集，但具有特定含义。
+   在此示例中，关键字是“pants”，而单向扩展术语“capris， peddle-pushers”是“pants”的子集，但具有特定含义。
 
 1. 完成后，单击 **保存**.
 同义词集合出现在列表中，有一个从展开项指向关键字的单向箭头，指示这些项是关键字的子集。 每个扩展项之间用加号隔开。
