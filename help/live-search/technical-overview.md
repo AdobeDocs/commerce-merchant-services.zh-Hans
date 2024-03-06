@@ -3,7 +3,7 @@ title: “技术概述”
 description: '"[!DNL Live Search] 载入流程、系统要求、边界和限制”'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: e235073031cae1304eaae4605d2f94332e52284f
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
 source-wordcount: '1028'
 ht-degree: 0%
@@ -148,7 +148,7 @@ ht-degree: 0%
 
 ## 价格索引器
 
-Live Search客户可以使用新的 [SaaS价格索引器](../price-index/index.md)，可以加快价格变更更新和同步时间。
+Live Search客户可以使用新的 [SaaS价格索引器](../price-index/price-indexing.md)，可以加快价格变更更新和同步时间。
 
 ## 价格支持
 

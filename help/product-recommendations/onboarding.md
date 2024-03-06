@@ -2,9 +2,9 @@
 title: 入门
 description: 了解中的要求和支持平台 [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ### SaaS价格索引
 
-客户可以使用产品推荐 [SaaS价格索引](../price-index/index.md)，这可以加快价格变更更新和同步时间。
+客户可以使用产品推荐 [SaaS价格索引](../price-index/price-indexing.md)，这可以加快价格变更更新和同步时间。
 
 ### B2B支持 {#b2bsupport}
 

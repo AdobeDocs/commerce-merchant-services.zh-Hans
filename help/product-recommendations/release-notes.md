@@ -3,7 +3,7 @@ title: ’[!DNL Product Recommendations] 发行说明
 description: 的最新发行信息 [!DNL Product Recommendations] 来自Adobe Commerce的。
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: bf7dc316f7b7b702836441b35770403d75be6cfd
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 0%
@@ -39,7 +39,7 @@ _2023年7月18日_
 
 _2023年4月25日_
 
-![新建](../assets/new.svg) Recommendations客户现在可以利用的产品 [SaaS价格索引](../price-index/index.md).
+![新建](../assets/new.svg) Recommendations客户现在可以利用的产品 [SaaS价格索引](../price-index/price-indexing.md).
 
 +++
 
@@ -64,7 +64,7 @@ _2023年9月15日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
-![新建](../assets/new.svg) 添加了新模块以支持 [Saas价格索引器](../price-index/index.md).
+![新建](../assets/new.svg) 添加了新模块以支持 [Saas价格索引器](../price-index/price-indexing.md).
 ![新建](../assets/new.svg) 添加了新的数据导出模块，以支持导出更多产品类型，包括捆绑产品和礼品卡。
 ![修复](../assets/fix.svg) 产品和价格馈送的表大小已大大减少。 表 `catalog_data_exporter_products` 和 `catalog_data_exporter_product_prices` 应该会看到规模的大幅缩减。
 
