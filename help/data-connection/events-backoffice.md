@@ -3,9 +3,10 @@ title: 后台事件
 description: 了解每个后台事件捕获哪些数据。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+exl-id: a5a4f04b-89ac-4020-95ce-984f9f2d8385
+source-git-commit: 0ab1b4b23d25bee722b35fbc8b9717ad6d1c299e
 workflow-type: tm+mt
-source-wordcount: '3573'
+source-wordcount: '3571'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 除了以下事件收集的数据之外，您还会获得 [其他数据](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) 由Adobe Experience Platform Web SDK提供。
 
-后台事件包含服务器端数据。 此数据包括 [订单状态](#order-status) 有关订单是否已下达、取消、退款、已发运或完成的信息。 服务器端数据还包括 [客户配置文件事件](#customer-profile-events-back-office) 信息，例如帐户是否已创建、更新或删除。
+后台事件包含服务器端数据。 此数据包括 [订单状态](#order-status) 有关订单是否已下达、取消、退款、已发运或完成的信息。 服务器端数据还包括 [客户配置文件事件](#customer-profile-events) 信息，例如帐户是否已创建、更新或删除。
 
 >[!NOTE]
 >
@@ -401,9 +402,9 @@ ht-degree: 0%
 | `productListItems.categories.name` | 类别的名称。 |
 | `productListItems.categories.path` | 类别的路径。 |
 
-## 客户个人资料事件（后台）
+## 客户个人资料事件
 
-从服务器端捕获的个人资料事件包括帐户信息，例如 `accountCreated`， `accountUpdated`、和 `accountDeleted`. 此数据用于帮助填充更好地定义区段或执行营销活动所需的关键客户详细信息，例如发送注册折扣优惠、帐户更改确认等。 从捕获了类似的配置文件事件 [店面](#customer-profile-events-storefront).
+从服务器端捕获的个人资料事件包括帐户信息，例如 `accountCreated`， `accountUpdated`、和 `accountDeleted`. 此数据用于帮助填充更好地定义区段或执行营销活动所需的关键客户详细信息，例如发送注册折扣优惠、帐户更改确认等。 从捕获了类似的配置文件事件 [店面](events.md#customer-profile-events).
 
 ### 帐户已创建
 

@@ -4,9 +4,9 @@ description: 了解每个行为事件捕获的数据。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 540c423ecf7e50a36c1137f43a9cf9673658c805
+source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
 workflow-type: tm+mt
-source-wordcount: '4497'
+source-wordcount: '4496'
 ht-degree: 0%
 
 ---
@@ -303,9 +303,9 @@ ht-degree: 0%
 | `productListItems.selectedOptions.attribute` | 标识可配置产品的属性，如 `size` 或 `color`. |
 | `productListItems.selectedOptions.value` | 标识属性的值，例如 `small` 或 `black`. |
 
-## 客户配置文件事件（行为）
+## 客户个人资料事件
 
-从店面捕获的个人资料事件包括帐户信息，例如 `signIn`， `signOut`， `createAccount`、和 `editAccount`. 此数据用于帮助填充更好地定义区段或执行营销活动所需的关键客户详细信息，例如发送注册折扣优惠、帐户更改确认等。 从捕获了类似的配置文件事件 [服务器端](events-backoffice.md#customer-profile-events-back-office).
+从店面捕获的个人资料事件包括帐户信息，例如 `signIn`， `signOut`， `createAccount`、和 `editAccount`. 此数据用于帮助填充更好地定义区段或执行营销活动所需的关键客户详细信息，例如发送注册折扣优惠、帐户更改确认等。 从捕获了类似的配置文件事件 [服务器端](events-backoffice.md#customer-profile-events).
 
 ### 登录
 

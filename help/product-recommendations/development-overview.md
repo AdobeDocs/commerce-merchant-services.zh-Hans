@@ -2,9 +2,9 @@
 title: 产品Recommendations管理员开发
 description: 产品Recommendations架构和开发功能的概述。
 exl-id: caef5e0c-dd69-4846-8f85-b1c5e1c6a28f
-source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
+source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,10 @@ ht-degree: 0%
 - **目录**  — 产品元数据，如名称、价格、可用性等。
 
 当您安装 `magento/product-recommendations` 模块时，Adobe Sensei会聚合行为和目录数据，并为每种推荐类型创建产品Recommendations 。 然后，产品Recommendations服务会将这些推荐部署到您的店面。
+
+>[!NOTE]
+>
+>对于可配置产品，产品Recommendations使用推荐单元中的父产品的图像。 如果可配置产品未指定图像，则该特定产品的推荐单元将为空。
 
 ## 后续步骤
 
