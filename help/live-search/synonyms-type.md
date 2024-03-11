@@ -2,9 +2,9 @@
 title: “同义词类型”
 description: “单向和双向 [!DNL Live Search] 同义词扩展了关键字的定义。”
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+source-git-commit: cb5db979828eb0b678d19c926de2823829717c02
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,3 @@ a、an、and、are、as、at、be、but、by、for、if、in、into、is、it、
 ### 一致性
 
 与目录中术语的使用方式保持一致。 请记住，在使用上可能存在地区性差异，有时会存在行业内的差异。
-
-### 关键词映射
-
-此技术使用可搜索的产品属性（而不是同义词）在产品之间创建基于关键字的关联。 因此，映射的产品可能会出现在其他产品的搜索结果中。 要了解更多信息，请参阅 [搜索结果](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html).
