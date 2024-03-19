@@ -3,9 +3,9 @@ title: “技术概述”
 description: '"[!DNL Live Search] 载入流程、系统要求、边界和限制”'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: e8d4215b1f16f1cb34783674cabc046dec135729
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 作为 [!DNL Live Search] 没有访问完整产品数据库的权限， [!DNL Live Search] GraphQL和Commerce核心GraphQL不具备完全对等性。
 
-建议直接调用SaaS API的 — 特别是目录服务端点。
+建议直接调用SaaS API — 特别是目录服务端点。
 
 * 通过绕过Commerce数据库/Graphql进程获得性能并降低处理器负载
 * 利用 [!DNL Catalog Service] 要调用的联盟 [!DNL Live Search]， [!DNL Catalog Service]、和 [!DNL Product Recommendations] 从单个端点删除。
@@ -43,8 +43,8 @@ ht-degree: 0%
 * [PLP小组件](https://github.com/adobe/storefront-product-listing-page)
 * [实时搜索字段](https://github.com/adobe/storefront-search-as-you-type)
 
-如果您未使用默认组件，例如Luma上的搜索适配器或小组件或AEM CIF小组件，请注意，事件(为Adobe Sensei提供智能促销和性能量度的点击流数据)将无法开箱即用，并且需要自定义开发来实施headless事件。
-最新版本的 [!DNL Live Search] 已使用 [!DNL Catalog Service] 和安装 [!DNL Catalog Service] 模块。
+如果您未使用默认组件(如Luma上的搜索适配器或小组件，或AEM CIF小组件)，事件(为Adobe Sensei提供智能推销和性能量度的点击流数据)将无法开箱即用，并且需要自定义开发来实施headless事件。
+最新版本的 [!DNL Live Search] 已使用 [!DNL Catalog Service].
 
 ## 边界和阈值
 
@@ -109,6 +109,7 @@ ht-degree: 0%
 | 拉脱维亚语 | 拉脱维亚 | lv_LV | lv_LV |
 | 挪威语 | 挪威博克马尔语 | nb_NO | nb_NO |
 | 荷兰语 | 荷兰 | nl_NL | nl_NL |
+| 波兰语 | 波兰 | pl_PL | pl_PL |
 | 葡萄牙语 | 巴西 | pt_BR | pt_BR |
 | 葡萄牙语 | 葡萄牙 | pt_PT | pt_PT |
 | 罗马尼亚语 | 罗马尼亚 | ro_RO | ro_RO |
@@ -142,7 +143,7 @@ ht-degree: 0%
 
 ## Inventory management
 
-[!DNL Live Search] 支持 [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) commerce（以前称为多源清单，或MSI）中的功能。 要启用全面支持，您必须 [更新](install.md#update) 依赖关系模块 `commerce-data-export` 到版本102.2.0+。
+[!DNL Live Search] 支持 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) commerce（以前称为多源清单，或MSI）中的功能。 要启用全面支持，您必须 [更新](install.md#update) 依赖关系模块 `commerce-data-export` 到版本102.2.0+。
 
 [!DNL Live Search] 返回一个布尔值，表明某个产品在Inventory management中是否可用，但不包含有关哪个来源具有库存的信息。
 
@@ -193,9 +194,9 @@ Live Search小组件支持Adobe Commerce支持的大多数价格类型，但不�
 
 ## 当前不支持
 
-* 此 [高级搜索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 在以下情况下将禁用模块 [!DNL Live Search] ，并删除店面页脚中的高级搜索链接。
-* [分层定价](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) 和 [特殊定价](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) 不支持 [!DNL Live Search] 字段和产品列表页面小组件。
+* 此 [高级搜索](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 在以下情况下将禁用模块 [!DNL Live Search] ，并删除店面页脚中的高级搜索链接。
+* [分层定价](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) 和 [特殊定价](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) 不支持 [!DNL Live Search] 字段和产品列表页面小组件。
 
 ## Cookies
 
-[!DNL Live Search] 收集用户交互数据作为其基本功能的一部分，并且Cookie用于存储此数据。 在收集任何用户信息时，用户必须同意存储Cookie。 [!DNL Live Search] 和 [!DNL Product Recommendations] 共享数据流，因此使用相同的Cookie机制。 有关更多信息，请参阅 [处理Cookie限制](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/setting-cookie.html).
+[!DNL Live Search] 收集用户交互数据作为其基本功能的一部分，并且Cookie用于存储此数据。 在收集任何用户信息时，用户必须同意存储Cookie。 [!DNL Live Search] 和 [!DNL Product Recommendations] 共享数据流，因此使用相同的Cookie机制。 有关更多信息，请参阅 [处理Cookie限制](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/developer/setting-cookie).

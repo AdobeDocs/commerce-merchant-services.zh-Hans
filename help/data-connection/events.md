@@ -4,9 +4,9 @@ description: 了解每个行为事件捕获的数据。
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
+source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
 workflow-type: tm+mt
-source-wordcount: '4496'
+source-wordcount: '4516'
 ht-degree: 0%
 
 ---
@@ -151,6 +151,8 @@ ht-degree: 0%
 | `commerce.commerceScope.storeCode` | 唯一商店代码。 每个网站可以有许多商店。 |
 | `commerce.commerceScope.storeViewCode` | 唯一的商店视图代码。 每个商店可以有多个商店视图。 |
 | `commerce.commerceScope.websiteCode` | 唯一的网站代码。 在一个环境中可以有许多网站。 |
+| `commerce.order` | 包含有关一个或多个产品的未决订单的信息。 |
+| `commerce.order.discountAmount` | 指示应用于整个订单的折扣金额。 |
 | `productListItems` | 添加到购物车的一系列产品。 |
 | `productListItems.SKU` | 库存单位。 产品的唯一标识符。 |
 | `productListItems.name` | 产品的显示名称或人类可读的名称。 |

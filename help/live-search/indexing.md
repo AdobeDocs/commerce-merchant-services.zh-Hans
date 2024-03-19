@@ -2,7 +2,7 @@
 title: '"[!DNL Live Search] 索引”'
 description: “了解如何 [!DNL Live Search] 索引产品属性属性。”
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: 17b9383ad84c47f2b0314feccbabb33d7dd8fc11
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 0%
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ### 完整索引
 
-时间 [!DNL Live Search] 已配置并在载入期间同步，最多可能需要30分钟才能构建初始索引。 大型目录可能需要更长的时间来编制索引。 该过程在之后开始 `cron` 提交信息源并结束运行。
+时间 [!DNL Live Search] 已配置并在载入期间同步，最多可能需要60分钟才能构建初始索引。 大型目录可能需要更长的时间来编制索引。 该过程在之后开始 `cron` 提交信息源并结束运行。
 
 以下事件会触发完全同步和索引生成：
 
