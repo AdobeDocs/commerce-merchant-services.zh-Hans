@@ -4,9 +4,9 @@ description: 了解如何使用生产和沙盒API密钥将Adobe Commerce或Magen
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
+source-git-commit: 2d6b80b5133eb00ac42a5f2b64c5846ad30e56c4
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ ht-degree: 0%
 >
 > 如果您在“我的帐户”的“API门户”部分生成新密钥，请立即更新管理员配置中的API密钥。 如果您在管理员中生成新密钥但未更新它们，则SaaS扩展不再有效，并且您会丢失宝贵的数据。
 
-要更改SaaS项目或数据空间名称，请单击 **重命名**.
+要更改SaaS项目或数据空间的名称，请单击 **重命名** 旁边都有。 更改名称不会影响您的服务，因为名称只是一个标签，可帮助您识别和区分项目和数据空间。
 
 ## IMS组织（可选） {#organizationid}
 
