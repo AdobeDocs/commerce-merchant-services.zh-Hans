@@ -3,9 +3,9 @@ title: 付款选项
 description: 设置付款选项以自定义商店客户可用的方法。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1150'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 * **高级**  — 全部可用 [支付选项](../payment-services/payments-options.md) 当前可用 [得到充分支持的国家](../payment-services/overview.md#availability). 在新用户引导以启用实时支付时，选择 [高级入门选项](../payment-services/production.md#advanced-onboarding).
 * **标准**  — 一部分支付选项（快速结账） — PayPal信用卡和借记卡 — 适用于其他受支持的国家/地区。 [信用卡字段](#credit-card-fields) 和 [Apple Pay](#apple-pay-button) 不适用于此入门培训选项。 在新用户引导以启用实时支付时，选择 [标准载入选项](../payment-services/production.md#standard-onboarding).
 
-请参阅 [启用 [!DNL Payment Services] 用于生产](../payment-services/production.md#complete-merchant-onboarding) ，以了解有关完成高级和标准载入的信息。
+请参阅 [启用 [!DNL Payment Services] 用于生产](../payment-services/production.md#complete-merchant-onboarding) 有关完成高级和标准载入的信息。
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 ## [!DNL Apple Pay] 按钮
 
-客户可以使用 [[!DNL Apple Pay]](https://www.apple.com/apple-pay/)，利用存储在iOS或macOS设备上的信用卡和借记卡支付凭据进行购买。
+客户可以使用 [[!DNL Apple Pay]](https://www.apple.com/apple-pay/)，使用存储在iOS或macOS设备上的信用卡和借记卡支付凭据进行购买。
 
 [!DNL Apple Pay] 仅在Safari浏览器中可用。 商户在每个商户帐户中最多可以添加99个域。
 
@@ -64,15 +64,31 @@ ht-degree: 0%
 
 您可以配置 [!UICONTROL Apple Pay] 在商店配置或Payment Services主页中。 请参阅 [设置](settings.md#apple-pay) 以了解更多信息。
 
+## [!DNL Google Pay] 按钮
+
+客户可以使用 [[!DNL Google Pay]](https://pay.google.com/about/) 通过将支付详细信息添加到他们的Google帐户，可以将支付详细信息安全地存储在该帐户中，以实现无缝结账。
+
+[!DNL Google Pay] 仅在某些国家或地区以及在某些设备上可用。 请参阅 [[!DNL Google Pay] 文档](https://developer.paypal.com/docs/checkout/apm/google-pay/#link-googlepayintegration) 以了解更多信息。
+
+![结帐中的“Google支付”按钮](assets/google-pay-button.png){width="500" zoomable="yes"}
+
+此 [!DNL Google Pay] 按钮在产品页面、迷你购物车、购物车和结账视图中可见。
+
+您可以配置 [!UICONTROL Google Pay] 在商店配置或Payment Services主页中。 请参阅 [设置](settings.md) 以了解更多信息。
+
+>[!NOTE]
+>
+> 此 [!DNL Google Pay] API只能在安全的上下文中用于网站。 请参阅 [疑难解答](https://developers.google.com/pay/api/web/support/troubleshooting) 文档，以了解更多信息。
+
 ## [!DNL PayPal Payment Buttons]
 
 [!DNL PayPal payment buttons]，使用PayPal完成购买，存储购物者的送货地址、帐单地址和付款详细信息，以供将来使用。 购物者可以使用PayPal以前存储或提供的任何支付方式。
 
 ![PayPal按钮](assets/paypal-button.png){width="350" zoomable="yes"}
 
-您可以配置 [!UICONTROL PayPal payment buttons] 在商店配置或 [!DNL Payment Services] 家。  请参阅 [设置](settings.md#payment-buttons) 以了解更多信息。
+您可以配置 [!UICONTROL PayPal payment buttons] 在商店配置或 [!DNL Payment Services] 家。 请参阅 [设置](settings.md#payment-buttons) 以了解更多信息。
 
-查看PayPal的 [支付方式文档](https://developer.paypal.com/docs/checkout/payment-methods/) 以了解目前每种支付方式在哪些国家/地区可用。
+了解PayPal中按国家/地区划分的支付方法可用性 [支付方式文档](https://developer.paypal.com/docs/checkout/payment-methods/).
 
 ### [!DNL PayPal] 按钮
 
@@ -102,7 +118,7 @@ ht-degree: 0%
 
 请参阅中有关“稍后支付”优惠的信息 [PayPal的“稍后支付”优惠文档](https://developer.paypal.com/docs/checkout/pay-later/us/). 使用 **国家或地区** 下拉列表以选择感兴趣的区域。
 
-请参阅 [设置](settings.md#payment-buttons) 以了解如何禁用/启用 [!DNL Pay Later] 消息传送。
+了解如何禁用或启用 [!DNL Pay Later] 通过更新 [设置](settings.md#payment-buttons) 配置。
 
 ## 仅使用PayPal付款按钮
 
@@ -110,9 +126,9 @@ ht-degree: 0%
 
 这允许您：
 
-* 为您的客户提供各种支付选项，包括Venmo和PayPal支付按钮，以及关闭PayPal托管卡字段和使用现有信用卡提供商的选项。
-* 使用您现有的信用卡提供商进行信用卡支付，同时利用PayPal的其他支付选项。
-* 在PayPal不支持将信用卡作为付款选项的区域中使用PayPal的付款按钮。
+* 为您的客户提供各种支付选项，包括Venmo和PayPal支付按钮，以及关闭PayPal托管卡字段并使用现有信用卡提供商的选项。
+* 使用您现有的信用卡提供商进行信用卡支付，同时使用PayPal的其他支付选项。
+* 在PayPal不支持将信用卡作为付款选项的地区，使用PayPal的付款按钮。
 
 至 **捕获付款 _仅限_ PayPal付款按钮(_非_ paypal信用卡支付选项)**：
 

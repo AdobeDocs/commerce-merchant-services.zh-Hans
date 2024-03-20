@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1652'
 ht-degree: 0%
 
 ---
@@ -20,14 +20,15 @@ ht-degree: 0%
 
 ## 常规配置
 
-您可以启用 [!DNL Payment Services] ，并在中启用沙盒测试或实时支付 _[!UICONTROL General Configuration]_部分。
+您可以启用 [!DNL Payment Services] (适用于您的商店和  _[!UICONTROL Merchant Location]_，并在中启用沙盒测试或实时支付_[!UICONTROL General Configuration]_ 部分。
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. 在左侧面板中，展开 **[!UICONTROL Sales]** 并选择 **[!UICONTROL Payment Methods]**.
 
    ![“方法”视图](assets/methods-view.png){width="400" zoomable="yes"}
 
-1. 展开 _[!UICONTROL Recommended Solutions]_部分。
+1. 设置 _[!UICONTROL Merchant Country]_中的字段_[!UICONTROL Merchant Location]_.
+1. 展开 _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_部分以访问_[!UICONTROL [!DNL Payment Services]]_ 部分。
 1. 在 _[!UICONTROL [!DNL Payment Services]]_部分，展开_[!UICONTROL General Configuration]_ 部分。
 1. 对象 **启用**，将其设置为 `Yes` 以启用 [!DNL Payment Services] 你商店的。
 1. 对象 **方法**，将其设置为 `Sandbox` 如果您仍在测试 [!DNL Payment Services] 商店或 `Production` 如果您已准备好启用实时支付。
@@ -39,6 +40,8 @@ ht-degree: 0%
 1. 对象 **软描述符** （自定义值，显示在客户交易银行对帐单上，用于划分商店/品牌/目录），在文本字段中添加自定义文本（最多22个字符），替换 `Custom descriptor` 或现有值。
 1. 单击 **[!UICONTROL Save Config]** 以保存更改。
 1. 导航到 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**，然后单击 **[!UICONTROL Flush Cache]** 以刷新所有无效缓存。
+
+![特色的Adobe解决方案视图](assets/featured-adobe-solution-view.png){width="700" zoomable="yes"}
 
 ### 配置选项
 
@@ -58,7 +61,7 @@ ht-degree: 0%
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. 在左侧面板中，展开 **[!UICONTROL Sales]** 并选择 **[!UICONTROL Payment Methods]**.
-1. 展开 _[!UICONTROL Recommended Solutions]_部分。
+1. 展开 _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_部分。
 1. 在 _[!UICONTROL Payment Services]_部分，展开_[!UICONTROL Credit Card Fields]_ 部分。
 1. 对象 **[!UICONTROL Title]**，输入文本（如果需要）以更改结账期间显示的付款方式名称。
 1. 至 [设置付款操作](production.md#set-payment-services-as-payment-method)，选择 **[!UICONTROL Authorize]** 或 **授权和捕获**.
@@ -92,14 +95,15 @@ ht-degree: 0%
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. 在左侧面板中，展开 **[!UICONTROL Sales]** 并选择 **[!UICONTROL Payment Methods]**.
-1. 展开 _[!UICONTROL Recommended Solutions]_部分。
+1. 展开 _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_部分。
 1. 在 _[!UICONTROL Payment Services]_部分，展开_[!UICONTROL Apple Pay]_ 部分。
 1. 对象 **[!UICONTROL Title]**，输入文本（如果需要）以更改结账期间显示的付款方式名称。
 1. 至 [设置付款操作](production.md#set-payment-services-as-payment-method)，选择 **[!UICONTROL Authorize]** 或 **[!UICONTROL Authorize and Capture]**.
-1. 显示 [!DNL Apple Pay] 在结帐页面上，选择 `Yes` 对于 **[!UICONTROL Show buttons on checkout page]**.
-1. 显示 [!DNL Apple Pay] 在产品详细信息页面上，选择 `Yes` 对于 **[!UICONTROL Show buttons on product detail page]**.
-1. 显示 [!DNL Apple Pay] 在迷你购物车预览中，选择 `Yes` 对象 **[!UICONTROL Show buttons in mini cart preview]**.
-1. 显示 [!DNL Apple Pay] 在购物车页面上，选择 `Yes` 对于 **[!UICONTROL Show buttons on cart page]**.
+1. 指定 [!DNL Apple Pay] 选项通过在Adobe Commerce中选择 `Yes` （在下列选项中）：
+   * **[!UICONTROL Show Apple Pay on checkout page]**
+   * **[!UICONTROL Show Apple Pay on product detail page]**
+   * **[!UICONTROL Show Apple Pay in mini cart preview]**
+   * **[!UICONTROL Show Apple Pay on cart page]**
 1. 要启用调试模式，请选择 `Yes` 对于 **[!UICONTROL Debug Mode]** (`No` 禁用它)。
 1. 要保存更改，请单击 **[!UICONTROL Save Config]** .
 1. 导航到 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**，然后单击 **[!UICONTROL Flush Cache]** 以刷新所有无效缓存。
@@ -111,10 +115,51 @@ ht-degree: 0%
 | [!UICONTROL Title] | 商店视图 | 在结帐期间，添加要作为此付款选项的标题显示在“付款方式”视图中的文本。 选项： [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | 网站 | 此 [付款操作](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) 指定付款方式的。 选项： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | 网站 | 启用或禁用 [!DNL Apple Pay] 在结帐页面上。 选项： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Sort order] | 商店视图 | 结账页面上指定付款方式的排序顺序。 `Numeric Only` 值 |
 | [!UICONTROL Show buttons on product detail page] | 商店视图 | 启用或禁用 [!DNL Apple Pay] 在产品详细信息页面上。 选项： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons in mini-cart preview] | 商店视图 | 启用或禁用 [!DNL Apple Pay] 在迷你购物车预览中。 选项： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on cart page] | 商店视图 | 启用或禁用 [!DNL Apple Pay] 在购物车页面上。 选项： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Debug Mode] | 网站 | 启用或禁用调试模式。 选项： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+
+## [!UICONTROL Google Pay]
+
+此 [!UICONTROL Google Pay] 付款选项允许商家向其购物者提供使用Google Wallet进行购买的Google Pay。
+
+请参阅 [支付选项](payments-options.md#google-pay-button) 以了解更多信息。
+
+1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
+1. 在左侧面板中，展开 **[!UICONTROL Sales]** 并选择 **[!UICONTROL Payment Methods]**.
+1. 展开 _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_部分。
+1. 在 _[!UICONTROL Payment Services]_部分，展开_[!UICONTROL Google Pay]_ 部分。
+1. （可选）通过在以下位置输入新名称来更改结账期间显示的付款方法的名称： **[!UICONTROL Title]** 字段。
+1. [设置付款操作](production.md#set-payment-services-as-payment-method) 通过选择 **[!UICONTROL Authorize]** 或 **[!UICONTROL Authorize and Capture]**.
+1. 指定 [!DNL Google Pay] 选项通过在Adobe Commerce中选择 `Yes` （在下列选项中）：
+   * **[!UICONTROL Show Google Pay on checkout page]**
+   * **[!UICONTROL Show Google Pay on product detail page]**
+   * **[!UICONTROL Show Google Pay in mini cart preview]**
+   * **[!UICONTROL Show Google Pay on cart page]**
+1. 要启用调试模式，请选择 `Yes` 对于 **[!UICONTROL Debug Mode]** (`No` 禁用它)。
+1. 配置的外观 _[!UICONTROL Google Pay]_按钮以选择&#x200B;**[!UICONTROL Button Color]**，**[!UICONTROL Button Type]**、和&#x200B;**[!UICONTROL Button Style]**根据需要。
+1. 要设置高度，使用中定义的默认高度值 **[!UICONTROL Button Style]**.
+1. 要保存更改，请单击 **[!UICONTROL Save Config]** .
+1. 导航到 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**，然后单击 **[!UICONTROL Flush Cache]** 以刷新所有无效缓存。
+
+### 配置选项
+
+| 字段 | 范围 | 描述 |
+|---|---|---|
+| [!UICONTROL Title] | 商店视图 | 指定在结帐期间在“付款方式”视图中为此付款选项显示的文本标签。 选项： `[!UICONTROL text field]` |
+| [!UICONTROL Payment Action] | 网站 | 此 [付款操作](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) 指定付款方式的。 选项： `[!UICONTROL Authorize]` / `[!UICONTROL Authorize and Capture]` |
+| [!UICONTROL Show on checkout page] | 网站 | 启用或禁用 [!DNL Google Pay] 在结帐页面上。 选项： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Sort order] | 商店视图 | 结账页面上指定付款方式的排序顺序。 `Numeric Only` 值 |
+| [!UICONTROL Show buttons on product detail page] | 商店视图 | 启用或禁用 [!DNL Google Pay] 在产品详细信息页面上。 选项： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons in mini-cart preview] | 商店视图 | 启用或禁用 [!DNL Google Pay] 在迷你购物车预览中。 选项： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons on cart page] | 商店视图 | 启用或禁用 [!DNL Google Pay] 在购物车页面上。 选项： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Debug Mode] | 网站 | 启用或禁用调试模式。 选项： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Button Color] | 商店视图 | 定义颜色 [!DNL Google Pay] 按钮。 选项： `[!UICONTROL Default]` / `[!UICONTROL Black]` / `[!UICONTROL White]` |
+| [!UICONTROL Button Type] | 商店视图 | 定义 [!DNL Google Pay] 按钮。 选项： `[!UICONTROL buy]` / `[!UICONTROL checkout]` / `[!UICONTROL order]` / `[!UICONTROL pay]` / `[!UICONTROL plain]` |
+
+请参阅 [Google Pay API请求对象选项](https://developers.google.com/pay/api/web/reference/request-objects) 文档，以了解更多信息。
 
 ## [!DNL PayPal Payment Buttons]
 
@@ -128,16 +173,17 @@ ht-degree: 0%
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. 在左侧面板中，展开 **[!UICONTROL Sales]** 并选择 **[!UICONTROL Payment Methods]**.
-1. 展开 _[!UICONTROL Recommended Solutions]_部分。
+1. 展开 _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_部分。
 1. 在 _[!UICONTROL Payment Services]_部分，展开_[!UICONTROL PayPal payment buttons]_ 部分。
 1. 要更改结账期间显示的付款方式名称，请编辑 _[!UICONTROL Title]_字段。
 1. 至 [设置付款操作](production.md#set-payment-services-as-payment-method)，选择 **[!UICONTROL Authorize]** 或 **[!UICONTROL Authorize and Capture]**.
 1. 要在结账页面上排定付款方法的优先级，请提供 `Numeric Only` 中的值 **[!UICONTROL Sort order]** 字段。
 1. 要启用/禁用 [“稍后支付”消息](payments-options.md#pay-later-button)，选择 `Yes`/`No` 对象 **[!UICONTROL Display Pay Later Message]**.
-1. 要在结账页面上显示PayPal付款按钮，请选择 `Yes` 对于 **[!UICONTROL Show buttons on checkout page]**.
-1. 要在产品详细信息页面上显示PayPal付款按钮，请选择 `Yes` 对于 **[!UICONTROL Show buttons on product detail page]**.
-1. 要在迷你购物车预览中显示PayPal付款按钮，请选择 `Yes` 对象 **[!UICONTROL Show buttons in mini cart preview]**.
-1. 要在购物车页面上显示PayPal付款按钮，请选择 `Yes` 对于 **[!UICONTROL Show buttons on cart page]**.
+1. 通过选择，指定在Adobe Commerce中启用PayPal支付按钮的位置 `Yes` （在下列选项中）：
+   * **[!UICONTROL Show buttons on checkout page]**
+   * **[!UICONTROL Show buttons on product detail page]**
+   * **[!UICONTROL Show buttons in mini cart preview]**
+   * **[!UICONTROL Show buttons on cart page]**
 1. 要启用Venmo作为付款选项，请选择 `Yes` 对象 **[!UICONTROL Venmo Enabled]**.
 1. 要启用信用卡和借记卡作为付款选项（PayPal智能按钮），请选择 `Yes` 对象 **[!UICONTROL Credit and Debit Card Enabled]**.
 1. 要启用/禁用 [PayPal稍后支付](payments-options.md#pay-later-button) 付款选项，选择 `Yes`/`No` 对象 **[!UICONTROL PayPal Pay Later Enabled]**.
@@ -167,7 +213,7 @@ ht-degree: 0%
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. 在左侧面板中，展开 **[!UICONTROL Sales]** 并选择 **[!UICONTROL Payment Methods]**.
-1. 展开 _[!UICONTROL Recommended Solutions]_部分。
+1. 展开 _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_部分。
 1. 在 _[!UICONTROL [!DNL Payment Services]]_部分，展开_[!UICONTROL PayPal Smart Button Styling]_ 部分。
 1. 要设置布局，请选择 `Vertical` 或 `Horizontal` 对象 **[!UICONTROL Layout]**
 1. 要设置颜色，请从中的可用颜色中选择 **[!UICONTROL Color]**.

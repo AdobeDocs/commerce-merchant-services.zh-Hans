@@ -3,9 +3,9 @@ title: '"[!DNL Payment Services] 发行说明”'
 description: 查看发行说明，了解所有 [!DNL Payment Services] 版本发布。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: bcb111a409ee901a231d0bb4475b0c9ec728c95c
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '2229'
+source-wordcount: '2379'
 ht-degree: 0%
 
 ---
@@ -18,15 +18,13 @@ ht-degree: 0%
 ![修复的问题](../assets/fix.svg) 修复和改进功能
 ![已知问题](../assets/bug.svg) 已知问题
 
-有关在常规版本化功能版本之外发布的功能更改和修复，请参阅托管服务更新部分。
+有关在常规功能发布版本之外发布的功能更改和修复，请查看 _托管服务更新_ 部分。
 
-请参阅 [即将发布的版本](https://devdocs.magento.com/release/) 了解发布计划和支持。
-
-请参阅 [产品可用性](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) 以了解哪些Adobe Commerce版本支持此扩展。
+要了解有关即将发行的版本、产品支持以及哪些Adobe Commerce版本支持支付服务扩展的更多信息，请参阅Adobe Commerce [发布计划](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) 和 [产品可用性](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) 主题。
 
 ## 托管服务更新
 
-这些发行说明描述了所发生的功能更改和修复，这些更改和修复是在托管服务的常规版本化功能发布之外发布的。
+这些发行说明描述了所发生以及发行的功能更改和修复，这些更改和修复超出了托管服务的常规功能发行版本。
 
 +++托管服务更新
 
@@ -70,7 +68,7 @@ _2021年8月9日_
 
 _2021年6月28日_
 
-![新建](../assets/new.svg)<!-- Issue PAY-1720 --> 有关商店订单的争议现已可在 [订单付款状态报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). 您可以直接从导航到PayPal解决中心，对争议采取行动 [!DNL Payment Services].
+![新建](../assets/new.svg)<!-- Issue PAY-1720 --> 有关商店订单的争议现已可在 [订单付款状态报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). 您可以直接从导航到PayPal解决中心来解决争议 [!DNL Payment Services].
 
 ![新建](../assets/new.svg)<!-- Issue PAY-2854 --> 来自的用户体验改进 [!DNL Payment Services] 主页包含在当前继承级别修改配置的功能，并改进了标题和导航的显示方式。
 
@@ -79,6 +77,20 @@ _2021年6月28日_
 ![新建](../assets/new.svg)<!-- Issue PAY-2761 --> 您现在可以自定义以下位置显示的数据： [订单付款状态报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 和 [支付报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 通过使用“列设置”控件显示或隐藏列。
 
 +++
+
+## v2.4.0
+
+_2024年3月14日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"}
+
+![新建](../assets/new.svg)<!-- PAY-4868 --> 商家可以成功 [在购买过程中配置Google Pay](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html)，类似于通过管理员付款服务中的其他付款按钮。
+
+![新建](../assets/new.svg)<!-- PAY-4381 --> [Payment Services支持通过GraphQL使用Google Pay](https://developer.adobe.com/commerce/webapi/graphql/payment-services/) 允许商家使用Google Pay支付方法获得Headless Commerce体验。
+
+![新建](../assets/new.svg)<!-- PAY-4878 --> 现在，为Adobe Commerce和Magento Open Source商家捆绑了Payment Services基本结账功能。 Payment Services现在可支持全球200个地区中任何地区的商家。 Payment Services Basic结账在自助式入门培训中提供借记/贷记、PayPal、Venmo（如果可用）和PayLater（如果可用）选项。
+
+![修复](../assets/fix.svg)<!-- PAY-5291 --> 接收某些交易记录的付款确认可能会延迟。 在这种情况下，商家现在可以获得订单的更新付款状态。 [付款服务检测付款交易记录的待处理状态](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html) 通过检测待定事务并主动监视这些事务并在已捕获待定状态时进行更新，按顺序执行操作。
 
 ## v2.3.4
 
@@ -114,7 +126,10 @@ _2023年12月7日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
-![新建](../assets/new.svg)<!-- PAY-5047 --> 信用卡/借记卡品牌或支付方式类型现在可在店面的客户订单页面、发送给购物者的订单确认电子邮件以及 [订单详细信息视图](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) 在Commerce管理员中。
+![新建](../assets/new.svg)<!-- PAY-5047 --> 信用卡/借记卡品牌或支付方式类型现在可从以下位置获得：
+- 店面的客户订单页面
+- 发送给购物者的订单确认电子邮件
+- 从 [订单详细信息视图](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) 在Commerce管理员中。
 
 ## v2.3.0
 
@@ -146,7 +161,7 @@ _2023年8月30日_
 
 ![新建](../assets/new.svg)<!-- PAY-4002 --> 添加的功能允许商家执行以下操作 [排序其付款选项的顺序](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) 确定某些支付选项的优先级。 此功能可提高结帐对话率。
 
-![新建](../assets/new.svg)<!-- PAY-4035 --> 添加了一个新的 [交易报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) 前往支付服务的Admin主页，以查看交易授权率和负面的交易趋势，以便商家能够有效地监控其商店的健康状况并识别任何交易问题。
+![新建](../assets/new.svg)<!-- PAY-4035 --> 商家现在可以有效地监控店铺的健康状况，并使用新的识别任何交易问题 [交易报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) 可从Payment Services Admin主页获取。 此报表还会提供有关交易授权率和负交易趋势的数据。
 
 ## v2.1.0
 
@@ -226,7 +241,7 @@ _2022年11月23日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
-![新建](../assets/new.svg)<!-- Issue PAY-3923 --> Payment Services现在在用户代理标头中包含版本号，以便能够跟踪、过滤或弃用未使用的端点。
+![新建](../assets/new.svg)<!-- Issue PAY-3923 --> Payment Services现在在用户代理标头中包含版本号，以便请求可以跟踪、过滤或弃用未使用的端点。
 
 ![修复的问题](../assets/fix.svg)<!-- Issue PAY-3968 --> 现在，当使用付款按钮从产品页面下订单时，Payment Services可正确显示订单数据。
 
@@ -246,7 +261,7 @@ _2022年10月14_
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
-![修复](../assets/fix.svg)<!-- Issue PAY-3766 --> 当客户的支付方式被拒绝时，显示的错误消息更具描述性。 它建议客户重新输入付款信息并重试，尝试其他付款方式，或就拒绝的交易与他们的银行联系。
+![修复](../assets/fix.svg)<!-- Issue PAY-3766 --> 当客户的支付方式被拒绝时，显示的错误消息更具描述性。 它建议客户重新输入付款信息，然后重试，尝试其他付款方式，或就拒绝的交易联系其银行。
 
 ## v1.4.0
 
@@ -288,15 +303,15 @@ _2022年6月29日_
 
 ![已知问题](../assets/bug.svg)<!-- Issue PAY-x --> Apple Pay与移动和桌面上的Safari浏览器v15.5不兼容。 使用Safari版本15.5时，无法使用Apple Pay完成签出。
 
-![修复的问题](../assets/fix.svg)<!-- Issue PAY-3264 --> 以前，当登录用户为其帐户选择默认地址以外的其他账单/运送地址时，签出失败。 我们已修复此问题，现在会发送选定的账单/运送地址（而不是默认的已保存地址），并成功完成结账。
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-3264 --> 以前，当登录用户为其帐户选择默认地址以外的账单/运送地址时，签出失败。 现在，将发送选定的账单/运送地址（而不是默认的保存地址），并成功完成结账。
 
 ![修复的问题](../assets/fix.svg)<!-- Issue PAY-3314 --> 如果禁用PayPal付款按钮以进行结帐，则不会显示错误。
 
 ![修复的问题](../assets/fix.svg)<!-- Issue PAY-3330 --> 当访客用户输入包含短划线的电话号码时，在结账期间付款不再失败。
 
-![修复的问题](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> 当Commerce Services凭据无效时， [!DNL Payment Services] 主页现在将显示在管理员中。 出现凭据错误，提醒您凭据无效。
+![修复的问题](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> 当Commerce Services凭据无效时，Payment Services现在通过显示来自的凭据错误来提醒您 [!DNL Payment Services] 在Admin中主页。
 
-![已知问题](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] 当前与不兼容 `commerce-data-export` v101.20及更高版本，这使得它与 [[!DNL Channel manager] 扩展](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
+![已知问题](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] 与不兼容 `commerce-data-export` v101.20及更高版本，这使得它与 [[!DNL Channel manager] 扩展](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
 
 ## v1.1.0
 

@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '2045'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 ### 状态信息
 
-选定日期范围的付款状态显示在“订单付款状态”数据可视化视图的左侧。 所选日期范围的日期显示在视图底部。 如果特定日期没有订单，则不会显示该日期。
+选定日期范围的付款状态显示在“订单付款状态”数据可视化视图的左侧。 所选日期范围的日期显示在视图底部。 如果特定日期没有订单，则该日期不会显示。
 
 订单支付状态数据可视化视图包含以下信息。
 
@@ -83,9 +83,36 @@ ht-degree: 0%
 >
 >此表中显示的数据按降序排序(`DESC`)默认情况下，使用 `TRANS DATE`. 此 `TRANS DATE` 是启动交易的日期和时间。
 
+### 付款状态更新
+
+某些支付方式需要一段时间才能获取付款。 [!DNL Payment Services] 现在通过以下方式检测订单中付款交易的待处理状态：
+
+* 同步检测 `pending capture` 交易
+* 异步监视 `pending capture` 交易
+
+>[!NOTE]
+>
+>如果尚未收到付款，则检测订单中付款交易记录的待定状态可以防止意外发运订单。 电子支票和PayPal交易可能会发生这种情况。
+
+#### 同步检测挂起捕获事务
+
+自动检测中的捕获事务 `Pending` 状态并防止订单输入 `Processing` 检测到此类交易时的状态。
+
+在客户结账期间或管理员为以前授权的付款创建发票时， [!DNL Payment Services] 自动检测中的捕获事务 `Pending` 状态并将相应的订单移入 `Payment Review` 状态。
+
+#### 异步监视挂起的捕获事务
+
+检测挂起捕获事务何时进入 `Completed` 状态，以便商家可以恢复处理受影响的订单。
+
+为确保此流程按预期运行，商家必须配置新的cron作业。 一旦作业配置为自动运行，就不需要商家进行其他干预。
+
+请参阅 [配置cron作业](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html). 配置完毕后，新作业每30分钟运行一次，以获取 `Payment Review` 状态。
+
+商家可以通过“订单付款状态”报表视图检查更新的付款状态。
+
 ### 报表中使用的数据
 
-此 [!DNL Payment Services] 模块使用订单数据，并将其与其他来源（包括PayPal）的汇总付款数据相结合，以提供有意义且非常有用的报表。
+[!DNL Payment Services] 使用订单数据，并将其与其他来源（包括PayPal）的汇总付款数据相结合，以提供有意义且非常有用的报表。
 
 订单数据将导出并保留在支付服务中。 当您 [更改或添加订单状态](https://docs.magento.com/user-guide/sales/order-status-custom.html) 或 [编辑商店视图](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html)， [存储](https://docs.magento.com/user-guide/stores/store-information.html)或网站名称)时，该数据将与付款数据相结合，并且订单付款状态报表中会填充合并的信息。
 
@@ -132,9 +159,9 @@ ht-degree: 0%
 
    报表结果会根据所选数据源重新生成。
 
-### 自定义日期时间范围
+### 自定义订单日期时间范围
 
-从“订单付款状态”报表视图中，您可以通过选择特定日期来自定义要查看的状态的时间范围。 默认情况下，网格中显示30天的订单付款状态。
+从“订单付款状态”报表视图中，您可以通过选择特定日期，自定义要查看的状态结果的时间范围。 默认情况下，网格中显示30天的订单付款状态。
 
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 单击 _[!UICONTROL Order dates]_日历选择器过滤器。
@@ -148,7 +175,7 @@ ht-degree: 0%
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 单击 **[!UICONTROL Filter]** 选择器。
 1. 切换 _付款状态_ 选项，用于仅查看选定订单付款状态的报表结果。
-1. 输入 _最小订单金额_ 或 _最大订单金额_ 以便在该订单金额范围内查看报表结果。
+1. 通过输入 _[!UICONTROL Min Order Amount]_或_[!UICONTROL Max Order Amount_].
 1. 单击 **[!UICONTROL Hide filters]** 以隐藏筛选器。
 
 ### 显示和隐藏列
@@ -159,7 +186,7 @@ ht-degree: 0%
 1. 单击 _列设置_ 图标(![列设置图标](assets/column-settings.png){width="20" zoomable="yes"})。
 1. 要自定义您在报表中看到的列，请选中或取消选中列表中的列。
 
-   订单付款状态报表将立即显示您在“列设置”菜单中所做的任何更改。 列首选项将进行保存，如果您离开报表视图，这些首选项将保持有效。
+   “订单付款状态”报表会立即显示您在“列设置”菜单中所做的任何更改。 列首选项已保存，如果您离开报表视图，这些首选项将保持有效。
 
 ### 查看状态
 
@@ -197,10 +224,10 @@ ht-degree: 0%
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 导航至 **[!UICONTROL Disputes column]**.
 1. 查看特定订单的任何争议并查看 [争议状态](#order-payment-status-information).
-1. 单击争议ID链接(以 _PP-D-_)以转到 [PayPal解决中心](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
+1. 从查看争议详细信息 [PayPal解决中心](https://www.paypal.com/us/cshelp/article/what-is-the-resolution-center-help246) 单击以开头的争议ID链接 _PP-D-_.
 1. 根据需要，对争议采取适当行动。
 
-   要按状态对订单争议进行排序，请单击“争议”列标题。
+   要按状态对订单争议进行排序，请单击 [!UICONTROL Disputes] 列标题。
 
 ### 下载订单付款状态
 
