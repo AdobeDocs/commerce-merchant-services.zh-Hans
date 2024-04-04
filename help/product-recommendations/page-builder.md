@@ -3,9 +3,9 @@ title: ’[!DNL Page Builder] 集成
 description: 了解如何使用 [!DNL Product Recommendations] 页面生成器中的单位。
 exl-id: dd972642-1fb4-426a-ac68-f56bb5fa2ecf
 feature: Services, Recommendations, Page Builder
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 6bc8eb5ffbefc46c8666ead8c8ec8b274a0040e7
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,11 @@ ht-degree: 0%
 ## 将产品Recommendations与页面生成器内容结合使用
 
 1. 在网站的默认商店视图中创建“推荐”单位。 即使您计划在不同商店视图中使用它们，也必须在默认商店视图中创建它们。
+
+   >[!NOTE]
+   >
+   >Page Builder推荐单位的量度仅显示在默认的存储视图中 [!DNL Product Recommendations] 工作区。 即使您将页面生成器推荐单元放置在不是默认商店视图的存储视图上，与这些页面生成器推荐单元相关的量度仍只显示在默认商店视图中 [!DNL Product Recommendations] 工作区。 要在非默认商店中查看页面生成器量度，请执行以下操作 [!DNL Product Recommendations] 工作区，打开和 [编辑](edit.md) 非默认存储中的页面生成器推荐单元，然后单击 [!UICONTROL **保存**]. 页面生成器量度现在显示在 [!DNL Product Recommendations] 非默认存储下的工作区。
+
 1. 在页面生成器中，选择产品Recommendations内容小部件并放置在您的网站上。
 
 ![插入推荐单位](assets/pb-insert.png)

@@ -4,9 +4,9 @@ description: 了解如何将Adobe Experience Platform Mobile SDK与Headless或�
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: d1340b15-e7de-42b5-ad64-d4c31f0db029
-source-git-commit: 2afe6d36ada662500f5a4a08779664d6591271e8
+source-git-commit: 593e92ebf890bd7d9bfef1cd13be727ca6be172b
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -157,4 +157,10 @@ ht-degree: 0%
 
    您现在已将Adobe Experience Platform Mobile SDK与Commerce移动应用程序集成。 事件数据从您的应用程序流向Experience Platform边缘。
 
-要了解如何从移动Commerce应用程序中检索Real-Time CDP受众以告知购物车价格规则和动态块，请参阅 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).
+## 如何区分从移动应用程序生成的商务事件
+
+全部 [事件](events.md) 包含名为的字段 `channel`. 此 `channel` 字段包含 `channel._id` 和 `channel._type` 对于Luma店面，其命名空间值为 `"https://ns.adobe.com/xdm/channels/web"` 和 `"https://ns.adobe.com/xdm/channel-types/web"` 的量度。 但是，对于移动店面，命名空间值为 `"https://ns.adobe.com/xdm/channels/mobile-app"` 和 `"https://ns.adobe.com/xdm/channel-types/mobile"` 的量度。
+
+## 后续步骤
+
+要了解如何从您的移动Commerce应用程序中检索Real-Time CDP受众，以告知购物车价格规则、动态块和相关产品规则，请参阅 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).
