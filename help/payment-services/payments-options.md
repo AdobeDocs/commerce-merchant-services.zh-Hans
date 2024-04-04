@@ -3,7 +3,7 @@ title: 付款选项
 description: 设置付款选项以自定义商店客户可用的方法。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
+source-git-commit: 978340c03e05d29bae6ee872ae9c7332edcd7251
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 0%
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 此 [!DNL Google Pay] 按钮在产品页面、迷你购物车、购物车和结账视图中可见。
 
-您可以配置 [!UICONTROL Google Pay] 在商店配置或Payment Services主页中。 请参阅 [设置](settings.md) 以了解更多信息。
+您可以配置 [!UICONTROL Google Pay] 在商店配置或Payment Services主页中。 请参阅 [设置](configure-admin.md) 以了解更多信息。
 
 >[!NOTE]
 >
