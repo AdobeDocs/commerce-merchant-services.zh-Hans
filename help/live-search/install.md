@@ -3,9 +3,9 @@ title: "安装 [!DNL Live Search]"
 description: “了解如何安装、更新和卸载 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: e8d4215b1f16f1cb34783674cabc046dec135729
+source-git-commit: 8a98e069cd9ec3d2c4fec33485e5c8186d94518f
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -188,13 +188,15 @@ ht-degree: 0%
 
 ### Adobe Commerce开发人员或SI
 
-开发人员或SI会配置SaaS数据空间，如 *Commerce服务* 部分配置。 在 *管理员*，Commerce Services将在以下位置提供： *配置* 在安装SaaS模块时显示侧栏。
+开发人员或SI会配置SaaS数据空间，如 *Commerce服务* 部分配置。 在 *管理员*，Commerce服务将在以下位置提供： *配置* 在安装SaaS模块时显示侧栏。
 
 ## 同步目录数据 {#synchronize-catalog-data}
 
 [!DNL Live Search] 需要同步的产品数据来执行搜索操作，并需要同步属性数据来配置Facet。 产品目录与目录服务之间的初始同步始于 [!DNL Live Search] 首先连接。 根据目录的安装方法和大小，导出和索引数据最多可能需要30分钟 [!DNL Live Search]. 在架构中可以找到与目录服务同步和共享的数据列表，该架构定义于：
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
+
+使用 [数据管理功能板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) 监视从Commerce数据库传输到Commerce SaaS服务的产品数据的同步状态。
 
 ### 验证导出 {#verify-export}
 

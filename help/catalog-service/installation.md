@@ -2,9 +2,9 @@
 title: 载入和安装
 description: “了解如何安装 [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 6a7efbe0424e35cdec9cb00275d9a953feccaa5b
+source-git-commit: 8a98e069cd9ec3d2c4fec33485e5c8186d94518f
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Commerce的所有测试实例都应使用沙盒端点。
 
 此 [!DNL Catalog Service] 扩展可以安装在Adobe Commerce云基础架构和内部部署实例上。
 
-此 [!DNL Catalog Service] 随编辑器密钥一起安装，这些密钥链接到Commerce帐户 [`mageid`](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) 在注册过程中提供。 Composer在Adobe Commerce的初始安装期间或之前未将Composer键保存到外部的情况下使用这些键 `auth.json` 文件。
+此 [!DNL Catalog Service] 随链接到Commerce帐户的编辑器键一起安装 [`mageid`](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) 在注册过程中提供。 Composer在Adobe Commerce的初始安装期间或之前未将Composer键保存到外部的情况下使用这些键 `auth.json` 文件。
 
 请参阅 [获取您的身份验证密钥](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) 以了解有关获取编辑器键的更多信息。
 
@@ -120,7 +120,7 @@ Commerce的所有测试实例都应使用沙盒端点。
 
 安装之后 [!DNL Catalog Service]，您必须配置 [Commerce服务连接器](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) 通过指定API密钥并选择SaaS数据空间。
 
-SaaS配置完成后，按照以下步骤执行初始数据同步 [目录同步](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) 指南。
+SaaS配置完成后，使用 [数据管理功能板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). 您可以使用此功能板监控从Commerce数据库传输到Commerce SaaS服务的产品数据的同步状态。
 
 要确保正确运行目录导出，请执行以下操作：
 
@@ -134,7 +134,7 @@ SaaS配置完成后，按照以下步骤执行初始数据同步 [目录同步](
 
 此 [!DNL Catalog Service] 可通过HTTPS使用POST命令访问API。
 
-要获取API密钥，请转到管理员中的Commerce Service Connector区域并复制公共API密钥。
+要获取API密钥，请转到admin中的Commerce Service Connector区域并复制公共API密钥。
 
 阅读 [GraphQL文档](https://developer.adobe.com/commerce/services/graphql/) 了解如何查询和发送生成API请求所需的标头。
 
