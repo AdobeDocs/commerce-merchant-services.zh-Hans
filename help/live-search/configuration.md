@@ -3,9 +3,9 @@ title: '''Commerce配置设置和 [!DNL Live Search] ’'
 description: 介绍Adobe Commerce配置设置，这些设置可以 [!DNL Live Search] 可以阅读。
 exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
 features: Services, Search, Configuration
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: d1cd70e66e616c052418c719f6da23b010a22241
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
@@ -41,3 +41,4 @@ ht-degree: 0%
 | 存储>配置>目录>店面>列表模式 | 正确呈现，但是对于某些页面交互，不会发送事件 |
 | 存储>配置>目录>目录>目录搜索>最大查询长度 | 未实现；搜索服务最多接受255个字符 |
 | 配置>销售>税>价格显示设置>在目录中显示产品价格 |  |
+| 商店>配置>目录>店面>产品列表排序依据 | 不适用于 [!DNL Live Search] [产品列表页面小组件](plp-styling.md) |
