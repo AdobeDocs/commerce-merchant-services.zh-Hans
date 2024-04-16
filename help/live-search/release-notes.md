@@ -3,7 +3,7 @@ title: '"[!DNL Live Search] 发行说明”'
 description: “的最新发行信息 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
+source-git-commit: 20b4fc2dc0f6cba325e4bc79778ce4852eb189c2
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 0%
@@ -34,7 +34,7 @@ _2023年10月27日_
 
 _2023年10月12日_
 
-![新建](../assets/new.svg) Commerce管理员现在可以为指定索引的语言 [!DNL Live Search]. 请参阅 [设置](settings.md).
+![新建](../assets/new.svg) Commerce管理员现在可以指定索引的语言 [!DNL Live Search]. 请参阅 [设置](settings.md).
 ![修复](../assets/fix.svg) “搜索规则”选项卡已重命名为“搜索促销”。
 
 _2023年6月13日_
@@ -54,7 +54,7 @@ _2024年3月19日_
 ### 新增功能
 
 ![新建](../assets/new.svg) 添加了对的语言支持 [波兰语](technical-overview.md#language-support).
-![新建](../assets/new.svg) [!DNL Live Search] 现在，对于运行Adobe Commerce 2.4.4的安装，支持PHP 8.3。
+![新建](../assets/new.svg) [!DNL Live Search] 现在，对于运行Adobe Commerce 2.4.7的安装，支持PHP 8.3。
 
 ## [!DNL Live Search] 4.1.0 {#410}
 
@@ -193,7 +193,7 @@ _2023年3月14日_
 ![新建](../assets/new.svg) 添加了使用拖放操作创建Pin事件的功能
 ![新建](../assets/new.svg) 新固定操作： *固定到位置 — 单击一次以固定按钮创建“固定”事件*固定到顶部 — 将产品放在第一个位置*固定到底部 — 将产品放在结果底部*一次单击即可取消固定事件
 ![新建](../assets/new.svg) [规则的智能排名](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add)
-![新建](../assets/new.svg) [!DNL Live Search] 现在支持完全 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) commerce（以前称为多源清单，或MSI）中的功能。 要启用全面支持，您必须 [更新](install.md#update) 依赖关系模块 `commerce-data-export` 到版本102.2.0+。
+![新建](../assets/new.svg) [!DNL Live Search] 现在支持完全 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Commerce中的功能（以前称为多源清单，或MSI）。 要启用全面支持，您必须 [更新](install.md#update) 依赖关系模块 `commerce-data-export` 到版本102.2.0+。
 
 ### 更新
 
@@ -266,7 +266,7 @@ _2023年3月14日_
 ![新建](../assets/new.svg) 测试版 [PWA](https://developer.adobe.com/commerce/pwa-studio/) 支持 [!DNL Live Search].
 ![新建](../assets/new.svg) 此 [!DNL Live Search] 安装过程会随高级过程更改而更新。
 ![修复](../assets/fix.svg) [高级搜索](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 已从店面页脚中移除链接。
-![错误](../assets/bug.svg) 以下产品属性不受支持 [Commerce GraphQL API](https://developer.adobe.com/commerce/services/graphql/live-search/) 在与PWA的Beta版本相关使用时： `description`， `name`， `short_description`
+![错误](../assets/bug.svg) 以下产品属性不受支持 [COMMERCE GRAPHQL API](https://developer.adobe.com/commerce/services/graphql/live-search/) 在与PWA的Beta版本相关使用时： `description`， `name`， `short_description`
 ![错误](../assets/bug.svg) 的PWA测试版 [!DNL Live Search] 不支持 [事件处理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
 
 ### [!DNL Live Search] 1.3.1 {#131}

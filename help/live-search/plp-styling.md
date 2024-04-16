@@ -2,9 +2,9 @@
 title: 产品列表页面小组件
 description: 启用并设置样式 [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: 4c4facab0368bdeef70a5fd2925072e73d765707
+source-git-commit: d4511219a0244dca7db896419daba1e6694d80de
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,12 @@ ht-degree: 0%
 当 [!DNL Live Search] 安装服务，默认搜索功能将转换为 [!DNL Live Search] 自动。
 
 此 [!DNL Live Search] 默认情况下，新安装会启用PLP小组件。 如果您正在升级 [!DNL Live Search] 并且PLP小组件已关闭，将保持关闭状态。
+
+>[!IMPORTANT]
+>
+>当 [!DNL Live Search Product Listing Page Widget] 启用，则无法更改产品列表页面上的排序顺序方向。
+
+## 禁用PLP构件
 
 要禁用PLP小组件，请执行以下操作：
 

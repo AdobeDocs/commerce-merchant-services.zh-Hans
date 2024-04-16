@@ -3,9 +3,9 @@ title: “技术概述”
 description: '"[!DNL Live Search] 载入流程、系统要求、边界和限制”'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: e8d4215b1f16f1cb34783674cabc046dec135729
+source-git-commit: 18a0e8abd5478963425c4d0030a9a0f1df9d599e
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1024'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 ## 要求 {#requirements}
 
 * [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
-* PHP 8.1 / 8.2
+* PHP 8.1 / 8.2 / 8.3
 * [!DNL Composer]
 
 ### 支持的平台
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 建议直接调用SaaS API — 特别是目录服务端点。
 
-* 通过绕过Commerce数据库/Graphql进程获得性能并降低处理器负载
+* 通过绕过Commerce数据库/Graphql进程来提高性能并降低处理器负载
 * 利用 [!DNL Catalog Service] 要调用的联盟 [!DNL Live Search]， [!DNL Catalog Service]、和 [!DNL Product Recommendations] 从单个端点删除。
 
 对于某些用例，调用 [!DNL Catalog Service] 产品详细信息和类似案例。 请参阅 [refineProduct](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) 以了解更多信息。
@@ -120,7 +120,7 @@ ht-degree: 0%
 | 中文 | 中国 | zh_CN | zh_Hans_CN |
 | 中文 | 台湾 | zh_TW | zh_Hant_TW |
 
-如果小组件检测到Commerce管理语言设置(_商店_ >设置> _配置_ > _常规_ >国家/地区选项)与支持的语言匹配，默认为该语言。 否则，小组件将默认使用英语。
+如果构件检测到Commerce管理语言设置(_商店_ >设置> _配置_ > _常规_ >国家/地区选项)与支持的语言匹配，默认为该语言。 否则，小组件将默认使用英语。
 
 管理员还可以设置 [搜索索引](settings.md#language)，以帮助确保获得更好的搜索结果。
 
@@ -143,7 +143,7 @@ ht-degree: 0%
 
 ## Inventory management
 
-[!DNL Live Search] 支持 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) commerce（以前称为多源清单，或MSI）中的功能。 要启用全面支持，您必须 [更新](install.md#update) 依赖关系模块 `commerce-data-export` 到版本102.2.0+。
+[!DNL Live Search] 支持 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Commerce中的功能（以前称为多源清单，或MSI）。 要启用全面支持，您必须 [更新](install.md#update) 依赖关系模块 `commerce-data-export` 到版本102.2.0+。
 
 [!DNL Live Search] 返回一个布尔值，表明某个产品在Inventory management中是否可用，但不包含有关哪个来源具有库存的信息。
 
@@ -166,9 +166,9 @@ Live Search小组件支持Adobe Commerce支持的大多数价格类型，但不�
 
 ## PWA支持
 
-[!DNL Live Search] 适用于PWA Studio，但用户可能会看到与其他Commerce实施相比的细微差异。 在威尼亚省可以使用搜索和产品列表页面等基本功能，但Graphql的某些排列可能无法正确工作。 此外，可能存在性能差异。
+[!DNL Live Search] 可与PWA Studio配合使用，但用户可能会看到与其他Commerce实施相比的细微差异。 在威尼亚省可以使用搜索和产品列表页面等基本功能，但Graphql的某些排列可能无法正确工作。 此外，可能存在性能差异。
 
-* 的当前PWA实现 [!DNL Live Search] 返回搜索结果所需的处理时间大于 [!DNL Live Search] 在本地Commerce店面中使用。
+* 的当前PWA实现 [!DNL Live Search] 返回搜索结果所需的处理时间大于 [!DNL Live Search] 与原生Commerce店面合作。
 * [!DNL Live Search] PWA不支持 [事件处理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). 因此，搜索报表和智能促销都将正常工作。
 * 直接筛选 `description`， `name`， `short_description` GraphQL不支持与一起使用 [PWA](https://developer.adobe.com/commerce/pwa-studio/)，但会使用更一般的过滤器返回它们。
 
