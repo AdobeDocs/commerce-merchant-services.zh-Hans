@@ -3,7 +3,7 @@ title: 付款选项
 description: 设置付款选项以自定义商店客户可用的方法。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 978340c03e05d29bae6ee872ae9c7332edcd7251
+source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 0%
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 [!DNL Apple Pay] 仅在Safari浏览器中可用。 商户在每个商户帐户中最多可以添加99个域。
 
-![微型计算机中的“Apple支付”按钮](assets/apple-pay-button.png){width="500" zoomable="yes"}
+![微型计算机中的“Apple支付”按钮](assets/applepay-button.png){width="500" zoomable="yes"}
 
 此 [!DNL Apple Pay] 按钮在产品页面、迷你购物车、购物车和结账视图中可见。
 

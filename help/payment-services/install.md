@@ -4,14 +4,20 @@ description: 安装Payments Services扩展。
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
 
 # 安装 [!DNL Payment Services]
+
+要开始使用的付款服务，请执行以下操作： [!DNL Adobe Commerce] 和 [!DNL Magento Open Source]，您必须完成一些入门培训步骤。
+
+>[!INFO]
+>
+> 查看我们的 [配置 [!DNL Payment Services] 适用于Adobe Commerce的](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-payment-services) 视频，以了解其他信息。
 
 下载并安装 [!DNL Payment Services] 扩展 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 是使用的先决步骤 [!DNL Payment Services].
 
@@ -29,7 +35,8 @@ ht-degree: 0%
 
 ## 安装扩展
 
-您可以安装 [!DNL Payment Services] 两者的扩展 [!DNL Adobe Commerce] 链接到您的Commerce帐户的云基础架构和本地实例上 [mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) 在注册过程中提供。 [!DNL Magento Open Source] 客户使用内部部署说明。
+您可以安装 [!DNL Payment Services] 两者的扩展 [!DNL Adobe Commerce] 链接到您的Commerce帐户的云基础架构和本地实例 [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) 在注册过程中提供。
+[!DNL Magento Open Source] 客户使用内部部署说明。
 
 Composer在初始安装期间使用这些密钥 [!DNL Adobe Commerce]，或者在之前未将编辑器键保存到的情况下 `auth.json` 文件。
 
