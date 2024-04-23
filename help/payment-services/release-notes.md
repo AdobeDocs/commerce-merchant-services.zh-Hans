@@ -3,9 +3,9 @@ title: '"[!DNL Payment Services] 发行说明”'
 description: 查看发行说明，了解所有 [!DNL Payment Services] 版本发布。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 880cb5c70727224217297d5d5b09490bdb112ff1
+source-git-commit: 8e123367600c40d1d1207b35c4f7fa41079e7172
 workflow-type: tm+mt
-source-wordcount: '2481'
+source-wordcount: '2505'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,14 @@ _2021年6月28日_
 ![新建](../assets/new.svg)<!-- Issue PAY-2761 --> 您现在可以自定义以下位置显示的数据： [订单付款状态报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 和 [支付报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 通过使用“列设置”控件显示或隐藏列。
 
 +++
+
+## v2.5.0
+
+_2024年4月23日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"}
+
+![修复](../assets/fix.svg)<!-- Issue PAY-5396 --> Payment Services现在支持 [Adobe Commerce准则 `--db-prefix` 参数](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced#install-from-the-command-line) 适用于Adobe Commerce版本2.4.7及更高版本。
 
 ## v2.4.3
 
