@@ -3,9 +3,9 @@ title: ’[!DNL Catalog Service] 发行说明
 description: 的最新发行信息 [!DNL Catalog Service] 用于Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: a439df188f72d17a6a41fa248aa9957aaabd9e02
+source-git-commit: 0c4bd1aa58dced3d21edae529da367426c973034
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,16 @@ ht-degree: 0%
 ![错误](../assets/bug.svg) 已知问题
 
 ## 当前主要版本
+
+### V1.18发布
+
+_2023年4月11日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"}
+
+![新建](../assets/new.svg) 添加了对PHP 8.3的支持。
+
+![新建](../assets/new.svg) 此 [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) query现在会返回简单和复杂产品的可自定义选项数据。<!--DATA-5538-->
 
 ### V1.17发布
 
@@ -49,10 +59,10 @@ _2023年2月13日_
 尚不支持以下功能：
 
 * 动态属性有效负载的最大大小为9 MB。
-* 组产品价格。 可以用简单的产品价格来计算。
+* 组产品价格。 此值可使用简单的产品价格计算。
 * 在图像数组中，只有第一个图像包含角色。
 
-使用API网格和核心GraphQL API可以解决以下限制：
+使用API Mesh和核心GraphQL API可以解决以下限制：
 
 * 最低广告价格
 * [分层定价](mesh.md)
@@ -64,7 +74,7 @@ _2023年10月12日_
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![新建](../assets/new.svg) 目录服务支持 `inStock` 产品变型的标记。
-![新建](../assets/new.svg) `urlKey` 和 `externalId` 已添加到GraphQL架构。
+![新建](../assets/new.svg) 此 `urlKey` 和 `externalId` 字段已添加到GraphQL架构中。
 ![新建](../assets/new.svg) 现在支持可下载产品和礼品卡。
 
 ### V1.12发布
@@ -90,7 +100,7 @@ _2023年6月27日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
-![新建](../assets/new.svg) 目录服务API现在支持“相关产品”。
+![新建](../assets/new.svg) 目录服务API现在支持 `related products`.
 
 ### V1.7发布
 
@@ -184,5 +194,3 @@ _2022年8月9日_
 * 简单产品的具体价格以及可配置产品的价格范围。
 * 客户组价格及价格范围。 它们向没有客户群组的购物者返还后备默认价格。
 * 使用B2B客户特定定价的产品类型。
-
-+++
