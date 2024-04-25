@@ -3,9 +3,9 @@ title: ’[!DNL Catalog Service] 发行说明
 description: 的最新发行信息 [!DNL Catalog Service] 用于Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 0c4bd1aa58dced3d21edae529da367426c973034
+source-git-commit: 8b0640064168303f48b34af7bb3f1ce1f43b2470
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ _2023年4月11日_
 
 ![新建](../assets/new.svg) 添加了对PHP 8.3的支持。
 
-![新建](../assets/new.svg) 此 [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) query现在会返回简单和复杂产品的可自定义选项数据。<!--DATA-5538-->
+![新建](../assets/new.svg) 此 [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) 和 [`refineProduct`](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) 现在，查询会返回简单和复杂产品的可自定义选项数据。<!--DATA-5538-->
 
 ### V1.17发布
 
