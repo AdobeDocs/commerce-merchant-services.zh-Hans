@@ -4,9 +4,9 @@ description: 了解如何使用生产和沙盒API密钥将Adobe Commerce或Magen
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 2d6b80b5133eb00ac42a5f2b64c5846ad30e56c4
+source-git-commit: b86464ac65aeb260930fa2f6fed0a4aedbd7eddf
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 从高层次上说， [!DNL Commerce Services Connector] 由以下核心元素组成：
 
-![Commerce Services连接器架构](assets/saas-config-sync-workflow.png)
+![Commerce服务连接器架构](assets/saas-config-sync-workflow.png)
 
 以下部分将更详细地讨论其中各个元素。
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 1. 对每个环境（生产和沙盒）重复上述步骤。
 
-   此 **API密钥** 部分现在显示您的API密钥。 在执行以下操作时，您需要同时使用生产密钥和沙盒密钥： [选择或创建SaaS项目](#createsaasenv).
+   此 **API密钥** 部分现在显示您的API（公共）密钥。 在执行以下操作时，您需要生产和沙盒密钥（公共+私有） [选择或创建SaaS项目](#createsaasenv).
 
 ## SaaS配置 {#saasenv}
 
