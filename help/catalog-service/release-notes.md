@@ -3,7 +3,7 @@ title: ’[!DNL Catalog Service] 发行说明
 description: 的最新发行信息 [!DNL Catalog Service] 用于Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 8b0640064168303f48b34af7bb3f1ce1f43b2470
+source-git-commit: 733bad1c12ff62b226ac8a9675faf9c091e84732
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 0%
@@ -32,6 +32,10 @@ _2023年4月11日_
 
 ![新建](../assets/new.svg) 此 [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) 和 [`refineProduct`](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) 现在，查询会返回简单和复杂产品的可自定义选项数据。<!--DATA-5538-->
 
+## 先前版本
+
++++ 先前版本
+
 ### V1.17发布
 
 _2023年2月22日_
@@ -39,10 +43,6 @@ _2023年2月22日_
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![新建](../assets/new.svg) 此 [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 现已推出。 这个改版后的功能板提供了有关以下内容的数据流的分析： [!DNL Product Recommendations]， [!DNL Live Search]、和 [!DNL Catalog Service]. 对此功能的支持已在的v3.1.0中引入 `catalog-service` 暗喻。
-
-## 先前版本
-
-+++ 先前版本
 
 ### V1.16发布
 
