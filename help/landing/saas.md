@@ -4,9 +4,9 @@ description: 了解如何使用生产和沙盒API密钥将Adobe Commerce或Magen
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: b86464ac65aeb260930fa2f6fed0a4aedbd7eddf
+source-git-commit: e5d9576f0c326dd3a97eeaf9831db0d89b85caff
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -77,13 +77,11 @@ ht-degree: 0%
 
 ### 选择或创建SaaS项目 {#createsaasenv}
 
->[!NOTE]
->
-> 如果您没有看到 **[!UICONTROL Commerce Services Connector]** 中的部分 [!DNL Commerce] 配置，您必须安装 [!DNL Commerce] 模块满足您的需求 [[!DNL Commerce] 服务](#availableservices).
-
 要选择或创建SaaS项目，请请求 [!DNL Commerce] 来自的API密钥 [!DNL Commerce] 您商店的许可证持有者。
 
 1. 在 _管理员_ 侧栏，转到 **系统** >服务> **Commerce服务连接器**.
+
+   如果您没有看到 **[!UICONTROL Commerce Services Connector]** 中的部分 [!DNL Commerce] 配置，安装 [!DNL Commerce] 模块满足您的需求 [[!DNL Commerce] 服务](#availableservices). 此外，确保 `magento/module-services-id` 软件包已安装。
 
 1. 在 _沙盒API密钥_ 和 _生产API密钥_ 部分，粘贴您的键值。
 
