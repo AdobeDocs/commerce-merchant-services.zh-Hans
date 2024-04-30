@@ -3,31 +3,31 @@ title: 将Commerce数据连接到Adobe Experience Platform
 description: 了解如何将Commerce数据连接到Adobe Experience Platform。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+source-git-commit: 89607d22ba8e69e0c98fce97e041022e33d01c07
 workflow-type: tm+mt
-source-wordcount: '2480'
+source-wordcount: '2486'
 ht-degree: 0%
 
 ---
 
 # 将Commerce数据连接到Adobe Experience Platform
 
-当您安装 [!DNL Data Connection] 扩展，中会显示两个新的配置页面 **系统** 下的菜单 **服务** 在商业中 _管理员_.
+当您安装 [!DNL Data Connection] 扩展，中会显示两个新的配置页面 **系统** 下的菜单 **服务** 在Commerce中 _管理员_.
 
 - Commerce服务连接器
 - [!DNL Data Connection]
 
-要将Adobe Commerce实例连接到Adobe Experience Platform，必须配置这两个连接器，从Commerce Services连接器开始，然后使用 [!DNL Data Connection] 扩展。
+要将Adobe Commerce实例连接到Adobe Experience Platform，必须配置这两个连接器，从Commerce服务连接器开始，然后使用 [!DNL Data Connection] 扩展。
 
 ## 配置Commerce服务连接器
 
-如果以前安装过Adobe Commerce服务，则您可能已配置Commerce Services连接器。 如果没有，则必须在 [Commerce服务连接器](../landing/saas.md) 页面：
+如果以前安装过Adobe Commerce服务，则您可能已配置Commerce服务连接器。 如果没有，则必须在 [Commerce服务连接器](../landing/saas.md) 页面：
 
 1. 登录到您的Commerce帐户以 [检索您的生产和沙盒API密钥](../landing/saas.md#credentials).
 1. 选择 [SaaS数据空间](../landing/saas.md#saas-configuration).
 1. 登录到您的Adobe帐户以 [检索您的组织ID](../landing/saas.md#ims-organization-optional).
 
-配置Commerce Services连接器后，配置 [!DNL Data Connection] 扩展。
+配置Commerce服务连接器后，配置 [!DNL Data Connection] 扩展。
 
 ## 配置 [!DNL Data Connection] 扩展
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 #### 步骤1：在Adobe Developer控制台中创建项目
 
-在Adobe Developer控制台中创建一个对Commerce进行身份验证的项目，以便能够进行Experience PlatformAPI调用。
+在Adobe Developer控制台中创建一个验证Commerce的项目，以便它能进行Experience PlatformAPI调用。
 
 要创建项目，请按照 [验证和访问Experience PlatformAPI](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html) 教程。
 
@@ -97,7 +97,7 @@ ht-degree: 0%
 
 - **后台** （服务器端数据）是在Commerce服务器中捕获的数据。 这包括有关订单状态的信息，例如订单是否已下达、已取消、已退款、已发运或已完成。 它还包括 [历史订单数据](#send-historical-order-data).
 
-- **个人资料** 是与购物者的配置文件信息相关的数据。 学习 [更多](#send-customer-profile-data).
+- **配置文件（测试版）** 是与购物者的配置文件信息相关的数据。 学习 [更多](#send-customer-profile-data).
 
 要确保Adobe Commerce实例可以开始数据收集，请查看 [先决条件](overview.md#prerequisites).
 
@@ -117,7 +117,7 @@ ht-degree: 0%
 
 1. （如果您使用自己的AEP Web SDK，请跳过此步骤。） [创建](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html#create) Adobe Experience Platform中的数据流，或者选择要用于收集的现有数据流。 在输入数据流ID **数据流ID** 字段。
 
-1. 输入 **数据集Id** 以包含Commerce数据。 要查找数据集ID，请执行以下操作：
+1. 输入 **数据集Id** Commerce任何其他系统（广告服务器、DSP、广告网络等）。 要查找数据集ID，请执行以下操作：
 
    1. 打开Experience PlatformUI并选择 **数据集** 在左侧导航栏中打开 **数据集** 仪表板。 仪表板列出您组织的所有可用数据集。 将显示每个列出数据集的详细信息，包括其名称、数据集所遵循的架构以及最近一次摄取运行的状态。
    1. 打开与数据流关联的数据集。
@@ -152,11 +152,15 @@ ht-degree: 0%
 | 店面活动 | 只要组织ID和数据流ID有效，默认情况下都会选中。 店面活动在购物者浏览您的网站时收集他们的匿名行为数据。 |
 | 后台活动 | 如果选中，则事件有效负荷包含匿名的订单状态信息，例如订单是否已下达、取消、退款或发运。 |
 | 数据流ID（网站） | 允许数据从Adobe Experience Platform流向其他AdobeDX产品的ID。 此ID必须关联到您的特定Adobe Commerce实例中的特定网站。 如果您指定自己的Experience PlatformWeb SDK，请不要在此字段中指定数据流ID。 此 [!DNL Data Connection] 扩展使用与该SDK关联的数据流ID，并忽略在此字段中指定的任何数据流ID（如果有）。 |
-| 数据集ID（网站） | 包含您的商务数据的数据集的ID。 除非您已取消选择 **店面活动** 或 **后台活动** 复选框。 此外，如果您使用自己的Experience PlatformWeb SDK，因此没有指定数据流ID，则仍必须添加与数据流关联的数据集ID。 否则，无法保存此表单。 |
+| 数据集ID（网站） | 包含Commerce数据的数据集的ID。 除非您已取消选择 **店面活动** 或 **后台活动** 复选框。 此外，如果您使用自己的Experience PlatformWeb SDK，因此没有指定数据流ID，则仍必须添加与数据流关联的数据集ID。 否则，无法保存此表单。 |
 
 完成新用户引导后，店面数据开始流入Experience Platform边缘。 后台数据大约需要5分钟才能显示在边缘。 根据cron时间表，可以在Edge看到后续更新。
 
 ### 发送客户个人资料数据
+
+>[!IMPORTANT]
+>
+>此功能处于测试阶段。
 
 有两种类型的配置文件数据可发送到Experience Platform：配置文件记录和时间序列配置文件事件。
 
@@ -207,7 +211,7 @@ Adobe Commerce最多收集5年的数据 [历史订单数据和状态](events-bac
 
    >[!NOTE]
    >
-   >已为Commerce版本2.4.7及更高版本设置了RabbitMQ，但您必须启用消费者。
+   >RabbitMQ已针对Commerce版本2.4.7及更高版本进行了设置，但您必须启用消费者。
 
 1. 在中通过cron作业启用消息队列使用者 `.magento.env.yaml` 使用 `CRON_CONSUMERS_RUNNER` 环境变量。
 
@@ -243,14 +247,14 @@ Adobe Commerce最多收集5年的数据 [历史订单数据和状态](events-bac
 | 字段 | 描述 |
 |--- |--- |
 | 从设置中复制数据集ID | 复制您输入的数据集ID **设置** 选项卡。 |
-| 数据集ID（网站） | 包含您的商务数据的数据集的ID。 除非您已取消选择 **店面活动** 或 **后台活动** 复选框。 此外，如果您使用自己的Experience PlatformWeb SDK，因此没有指定数据流ID，则仍必须添加与数据流关联的数据集ID。 否则，无法保存此表单。 |
+| 数据集ID（网站） | 包含Commerce数据的数据集的ID。 除非您已取消选择 **店面活动** 或 **后台活动** 复选框。 此外，如果您使用自己的Experience PlatformWeb SDK，因此没有指定数据流ID，则仍必须添加与数据流关联的数据集ID。 否则，无法保存此表单。 |
 | 从 | 您要开始收集订单历史记录数据的起始日期。 |
 | 至 | 您要结束收集订单历史记录数据的起始日期。 |
 | 开始同步 | 开始将订单历史记录数据同步到Experience Platform边缘的过程。 如果 **[!UICONTROL Dataset ID]** 字段为空或数据集ID无效。 |
 
 ## 确认已收集事件数据
 
-要确认从Commerce商店收集数据，请使用 [Adobe Experience Platform debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) 以检查您的Commerce网站。 确认正在收集数据后，您可以通过运行一个查询来验证您的店面和后台事件数据是否显示在边缘，该查询会返回以下位置的数据： [您创建的数据集](overview.md#prerequisites).
+要确认正在从Commerce存储中收集数据，请使用 [Adobe Experience Platform debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) 检查您的Commerce网站。 确认正在收集数据后，您可以通过运行一个查询来验证您的店面和后台事件数据是否显示在边缘，该查询会返回以下位置的数据： [您创建的数据集](overview.md#prerequisites).
 
 1. 选择 **查询** 在Experience Platform的左侧导航区域中，然后单击 [!UICONTROL Create Query].
 
@@ -270,10 +274,10 @@ Adobe Commerce最多收集5年的数据 [历史订单数据和状态](events-bac
 
    ![查询编辑器](assets/query-results.png)
 
-在此示例中，您会看到以下源自 [`commerce.productListAdds`](events.md#addtocart)， [`commerce.productViews`](events.md#productpageview)， [`web.webpagedetails.pageViews`](events.md#pageview)，等等。 利用此视图，可验证您的Commerce数据是否到达边缘。
+在此示例中，您会看到以下源自 [`commerce.productListAdds`](events.md#addtocart)， [`commerce.productViews`](events.md#productpageview)， [`web.webpagedetails.pageViews`](events.md#pageview)，等等。 通过此视图，可验证您的Commerce数据是否已到达边缘。
 
 如果结果不符合预期，请打开您的数据集并查找任何失败的批量导入。 了解有关 [批处理导入疑难解答](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
 
 ## 后续步骤
 
-将Commerce数据发送到Experience Platform边缘时，其他Adobe Experience Cloud产品(如Adobe Journey Optimizer)可以使用该数据。 例如，您可以将Journey Optimizer配置为侦听某些事件，并根据该事件数据触发针对首次用户或存在放弃购物车的电子邮件。 了解如何通过以下方式扩展Commerce平台 [创建客户历程](using-ajo.md) 在Journey Optimizer中。
+在将Commerce数据发送到Experience Platform边缘时，其他Adobe Experience Cloud产品(如Adobe Journey Optimizer)可以使用该数据。 例如，您可以将Journey Optimizer配置为侦听某些事件，并根据该事件数据触发针对首次用户或存在放弃购物车的电子邮件。 了解如何通过以下方式扩展Commerce平台 [创建客户历程](using-ajo.md) 在Journey Optimizer中。

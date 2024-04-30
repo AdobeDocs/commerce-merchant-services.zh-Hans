@@ -4,9 +4,9 @@ description: 了解每个后台事件捕获哪些数据。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: a5a4f04b-89ac-4020-95ce-984f9f2d8385
-source-git-commit: 0ab1b4b23d25bee722b35fbc8b9717ad6d1c299e
+source-git-commit: 813be62b366b1c76a2b909079cfba31ef8000617
 workflow-type: tm+mt
-source-wordcount: '3571'
+source-wordcount: '3611'
 ht-degree: 0%
 
 ---
@@ -404,7 +404,15 @@ ht-degree: 0%
 
 ## 客户个人资料事件
 
+>[!IMPORTANT]
+>
+>此功能处于测试阶段。
+
 从服务器端捕获的个人资料事件包括帐户信息，例如 `accountCreated`， `accountUpdated`、和 `accountDeleted`. 此数据用于帮助填充更好地定义区段或执行营销活动所需的关键客户详细信息，例如发送注册折扣优惠、帐户更改确认等。 从捕获了类似的配置文件事件 [店面](events.md#customer-profile-events).
+
+>[!NOTE]
+>
+>每个客户配置文件事件还包含 [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) 字段，其中包含系统生成的Commerce客户ID作为用户档案的主要标识符，以及用作次要标识符的电子邮件ID。
 
 ### 帐户已创建
 
