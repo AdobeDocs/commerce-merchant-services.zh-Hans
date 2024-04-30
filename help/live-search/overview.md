@@ -1,59 +1,77 @@
 ---
-title: 简介 [!DNL Live Search]
+title: 什么是 [!DNL Live Search]？
 description: '"[!DNL Live Search] Adobe Commerce提供了快速、相关且直观的搜索体验。”'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 51ff52eba117fe438d592ca886dbca25304a0d15
+source-git-commit: 8aca09aba13e32afb191169729dfc1fbd0087262
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '678'
 ht-degree: 0%
 
 ---
 
-# 简介 [!DNL Live Search]
+# 什么是 [!DNL Live Search]？
 
-[!DNL Live Search] 是一项用于Adobe Commerce的服务，取代了标准搜索功能。 此 [!DNL Live Search] 模块随Composer一起安装，并连接 [!DNL Commerce] 安装到 [!DNL Live Search] [服务](../landing/saas.md). 配置后，默认搜索文本字段会被替换为 [!DNL Live Search] 文本字段。 [!DNL Live Search] 此外，还安装产品列表页面(PLP)小组件，该小组件在浏览搜索结果时提供强大的筛选功能。
+[!DNL Live Search] 是一个扩展，取代了Adobe Commerce中的标准搜索功能。 此 [!DNL Live Search] 扩展随Composer一起安装，并连接 [!DNL Commerce] 安装到 [!DNL Live Search] [服务](../landing/saas.md). 配置后，默认搜索文本字段会被替换为 [!DNL Live Search] 文本字段。 [!DNL Live Search] 此外，还安装产品列表页面(PLP)小组件，该小组件在浏览搜索结果时提供强大的筛选功能。
 
-[!DNL Live Search] 显示在 *营销* 下的菜单 *SEO和搜索* 在 [!DNL Commerce] *管理员*.
+替换为 [!DNL Live Search]，您可以：
+
+- 创建有意义的搜索体验，帮助购物者和买家尽最大努力找到他们想要的。
+- 利用AI支持的动态分面和响应会话内购物者行为对搜索结果进行重新排名。
+- 使用基于SaaS的轻量级服务，该服务可轻松进行更新并包含在您的许可证中，从而降低了总拥有成本。
+- 通过启用graphQL API、Headless灵活性、API沙盒环境和超快SaaS来获得技术性。
+
+>[!IMPORTANT]
+>
+>在网站搜索方面，Adobe Commerce会为您提供各种选项。 请务必阅读 [边界和限制](boundaries-limits.md) 实施之前，确保 [!DNL Live Search] 适合您的业务需求。
+
+## 架构
 
 架构的Adobe Commerce端包括托管搜索 *管理员*，同步目录数据，并运行查询服务。 之后 [!DNL Live Search] 安装和配置后，Adobe Commerce开始与SaaS服务共享搜索和目录数据。 此时，管理员用户可以设置、自定义和管理搜索 [Facet](facets.md)， [同义词](synonyms.md)、和 [促销规则](category-merch.md).
 
+![实时搜索数据流](assets/ls-cs-data-flow.png)
+
+## 快速导览
+
+注重速度、相关性和易用性， [!DNL Live Search] 对购物者和商家来说都是一个游戏规则的改变者。 跟随以快速浏览 [!DNL Live Search] 从店面。
+
+### 按键入内容搜索
+
+[!DNL Live Search] 在中，以建议的产品和排名最前的搜索结果的缩略图图像做出响应 [弹出框](storefront-popover.md) 因为购物者在 [Search](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 盒子。 此 [产品详细信息](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) 当购物者单击建议或特色产品时，将显示页面。 A _查看全部_ 弹出框页脚中的链接将显示搜索结果页面。
+
+[!DNL Live Search] 对于包含两个或更多字符的查询，返回“键入时搜索”结果。 对于部分匹配，每个单词的最大字符数为20。 查询中的字符数无法配置。 弹出框包括`name`， `sku`、和 `category_ids` 字段。
+
+![示例店面 — 键入时搜索](assets/storefront-search-as-you-type.png)
+
+### 查看所有搜索结果
+
+要列出“键入时搜索”查询返回的所有产品，请单击 _查看全部_ 在弹出框的页脚中。
+
+![店面示例 — 价格Facet](assets/storefront-view-all-search-results.png)
+
+### 带有Facet的过滤搜索
+
+过滤搜索使用属性值的多个维，或者 [Facet](facets.md)，作为搜索条件。 过滤器的选择由商家定义，并根据返回的产品而发生更改，其中最常用的Facet将固定到列表顶部。
+
+将Facet用作URL参数：`http://yourwebsite.com?color=red`和实时搜索会根据这些属性值筛选结果。
+
+### 同义词
+
+[同义词](synonyms.md) 通过包含购物者可能使用的与目录不同的词语，扩展查询范围并突出查询重点。 您可以微调同义词词典，让购物者保持参与和购买路径。
+
+### 促销规则
+
+促销 [规则](rules.md) 使用向搜索添加逻辑和事件的if-then语句塑造购物体验。 您可以轻松地提升或隐藏促销、季节或其他时间段内的产品。
+
+### 搜索词支持
+
+[!DNL Live Search] 支持Commerce [搜索词重定向](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). 例如，用户可以搜索诸如“运费”之类的术语，并直接转到运费页面。
+
 ## 实时搜索组件
 
-* [!DNL Live Search] [弹出框小组件](storefront-popover.md) 是在包含搜索结果的搜索字段下打开的框。
-* [产品列表页面小组件](plp-styling.md) 提供了一个可搜索的产品列表页面，该页面支持彩块化和同义词。
-* AEM CIF组件： [弹出窗口小组件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/live-search-popover.html?lang=en) 和 [PLP小组件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/live-search-plp.html) 允许AEM站点利用 [!DNL Live Search].
-* [[!DNL Live Search] 管理员](workspace.md) 是配置规则、彩块化和同义词的位置。
-
-## 工作流概述
-
-[!DNL Live Search] 通过将目录数据移动到Adobe Commerce SaaS基础架构并构建用于按用户类型快速提供搜索结果的索引来进行工作。
-
-### 1.安装
-
-[!DNL Live Search] 是 [已安装](install.md) 到您的Adobe Commerce实例中 [Composer](https://getcomposer.org/). 这将安装连接到服务的所需模块，并配置Commerce实例以覆盖默认搜索字段。 此外，它还安装用于配置服务的Commerce Admin选项。
-
-### 2.同步数据
-
-[!DNL Live Search] 将目录数据移动到Adobe的SaaS基础架构。 数据被编入索引，搜索结果从此索引直接传送到店面。 根据大小和复杂性，索引可能需要30分钟到几个小时。
-
-### 3.配置数据
-
-正确配置产品数据可确保为您的客户获得良好的搜索结果。 需要执行几个设置步骤：分配类别和配置属性。
-
-#### 分配类别
-
-产品返回于 [!DNL Live Search] 必须为分配 [类别](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/categories.html). 例如，在Luma中，产品被划分为“男性”、“女性”和“齿轮”等类别。 “Top”、“Bottoms”和“Watches”也设置了子类别。 这可以提高筛选时的粒度。
-
-#### 可搜索和可过滤的字段
-
-已分配产品 [属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) 可用于搜索和筛选的规则。 属性包括“颜色”、“大小”、“材质类型”等。 利用这些属性，用户可以查找“绿色顶盖”。 每个产品可能在Commerce管理员中定义了许多属性。
-
-这些属性中的每一个都可以定义为 [&quot;searchable&quot;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html) 在管理员中。 当设置为“可搜索”时，这些属性可供搜索 [!DNL Live Search].
-
-[Facet](facets.md) 是在中定义的产品属性 [!DNL Live Search] 可筛选。 任何可过滤的属性都可以设置为中的Facet [!DNL Live Search] 但是，一次可以搜索多少个方面是有限制的。
-
-[同义词](synonyms.md) 是一些术语，您可以定义这些术语以帮助引导用户使用正确的产品。 寻找裤子的用户可能会输入“裤子”或“长裤”。 您可以设置同义词，以便这些搜索词将用户引进“裤子”结果。
+- [!DNL Live Search] [弹出框小组件](storefront-popover.md) 是在包含搜索结果的搜索字段下打开的框。
+- [产品列表页面小组件](plp-styling.md) 提供了一个可搜索的产品列表页面，该页面支持彩块化和同义词。
+- [[!DNL Live Search] 管理员](workspace.md) 是配置规则、彩块化和同义词的位置。
 
 ## [!DNL Live Search] 工作区
 
@@ -62,20 +80,6 @@ ht-degree: 0%
 ## 活动
 
 [!DNL Live Search] 用途 [事件](events.md) 以计算 [智能促销](category-merch.md) 和 [性能](performance.md) 功能板。 事件随默认实施一起提供。 Headless店面的事件应该手动启用。
-
-## 自定义构件
-
-大多数商店所有者将希望确保 [!DNL Live Search] 构件符合其存储的外观。
-
-弹出框和PLP构件可以根据需要通过定义自定义CSS规则来设置样式。 请参阅 [样式弹出框元素](storefront-popover-styling.md) 和 [产品列表页面小组件](plp-styling.md).
-
-如果您希望扩展小组件的功能，则每个小组件的源代码在公共存储库中可用。
-在此方案中，您可以根据自己的需求自定义JavaScript，然后将自定义代码托管在CDN上。 此自定义脚本与 [!DNL Live Search] 并返回正常结果，使您能够控制小组件的功能。
-
-* [PLP构件存储库](https://github.com/adobe/storefront-product-listing-page)
-* [搜索栏存储库](https://github.com/adobe/storefront-search-as-you-type)
-
-获取有关以下内容的更多详细信息 [!DNL Live Search] 在 [技术概述](technical-overview.md).
 
 ## [!DNL Live Search] 演示
 

@@ -3,9 +3,9 @@ title: 类别促销
 description: 使用 [!DNL Live Search] 类别推销，可加快购物体验。
 gourl: ls_catalog_merchandising
 exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
-source-git-commit: d5df2a098dbbb2ecfb68c36dd12843c963d46b17
+source-git-commit: 109a4e79a7faac62a4d7c48cadcada1ec28f3c94
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1053'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 0%
 # 类别促销
 
 类别促销允许商店所有者申请 [!DNL Live Search] 智能排名 [规则](rules.md) 到产品类别和子类别。
+
+本视频介绍了类别推销。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
 可在管理员中访问该功能，网址为 **营销** > SEO和搜索> **[!DNL Live Search]** > **类别促销**.
 

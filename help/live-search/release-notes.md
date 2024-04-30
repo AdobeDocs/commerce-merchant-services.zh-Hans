@@ -3,7 +3,7 @@ title: '"[!DNL Live Search] 发行说明”'
 description: “的最新发行信息 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 20b4fc2dc0f6cba325e4bc79778ce4852eb189c2
+source-git-commit: 471bee273a82304ac35b0ca384a2161d7a3399d6
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 0%
@@ -53,8 +53,8 @@ _2024年3月19日_
 
 ### 新增功能
 
-![新建](../assets/new.svg) 添加了对的语言支持 [波兰语](technical-overview.md#language-support).
-![新建](../assets/new.svg) [!DNL Live Search] 现在，对于运行Adobe Commerce 2.4.7的安装，支持PHP 8.3。
+![新建](../assets/new.svg) 添加了对波兰语的语言支持。
+![新建](../assets/new.svg) [!DNL Live Search] 现在，对于运行Adobe Commerce 2.4.4的安装，支持PHP 8.3。
 
 ## [!DNL Live Search] 4.1.0 {#410}
 
@@ -262,7 +262,7 @@ _2023年3月14日_
 
 ![新建](../assets/new.svg) [!DNL Live Search] 现在，对于运行Adobe Commerce 2.4.4的安装，支持PHP 8.1。
 ![新建](../assets/new.svg) 此 `Magento_ElasticsearchCatalogPermissionsGraphQl` 模块会添加到安装期间禁用的模块列表中。
-![新建](../assets/new.svg) 中可用的行数 [[!DNL storefront popover]](quick-tour.md) 可以从以下位置配置： *管理员*.
+![新建](../assets/new.svg) 中可用的行数 [[!DNL storefront popover]](overview.md) 可以从以下位置配置： *管理员*.
 ![新建](../assets/new.svg) 测试版 [PWA](https://developer.adobe.com/commerce/pwa-studio/) 支持 [!DNL Live Search].
 ![新建](../assets/new.svg) 此 [!DNL Live Search] 安装过程会随高级过程更改而更新。
 ![修复](../assets/fix.svg) [高级搜索](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 已从店面页脚中移除链接。

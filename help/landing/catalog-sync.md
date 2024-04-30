@@ -3,7 +3,7 @@ title: 目录同步
 description: 了解如何从导出产品数据 [!DNL Commerce] 服务器至 [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: d95c11a35c78d72da8126affb0753d86aa695827
+source-git-commit: 7d62f8d5539cd744e98d8d6c072d77a2a7c5a256
 workflow-type: tm+mt
 source-wordcount: '1133'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> “目录同步”功能板现在是“数据管理功能板”。 此改版后的功能板现在支持 [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md)， [[!DNL Live Search]](../live-search/guide-overview.md)、和 [[!DNL Catalog Service]](../catalog-service/overview.md). 客户可以通过更新到其中一项服务的最新版本来获取数据管理功能板。 欲知更多信息，请参阅 [数据管理功能板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 文档。 对于尚未升级但仍拥有目录同步功能板的用户，此当前主题仍然适用。
+> “目录同步”功能板现在是“数据管理功能板”。 此改版后的功能板现在支持 [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md)， [[!DNL Live Search]](../live-search/overview.md)、和 [[!DNL Catalog Service]](../catalog-service/overview.md). 客户可以通过更新到其中一项服务的最新版本来获取数据管理功能板。 欲知更多信息，请参阅 [数据管理功能板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 文档。 对于尚未升级但仍拥有目录同步功能板的用户，此当前主题仍然适用。
 
 Adobe Commerce使用索引器将目录数据编译到表中。 该进程由自动触发 [事件](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) 例如产品价格或库存水平改变。
 

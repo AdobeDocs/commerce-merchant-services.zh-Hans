@@ -1,15 +1,15 @@
 ---
 title: 目录适配器扩展
-description: 使用目录适配器呈现来自Commerce Services的价格
+description: 使用目录适配器呈现来自Commerce服务的价格
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
-source-git-commit: a637ece6e806771dfc6359dacececf8ccf05b983
+exl-id: 2c9120eb-aa51-48e9-b6a4-fffe25fc31f2
+source-git-commit: 7d62f8d5539cd744e98d8d6c072d77a2a7c5a256
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
-
 
 # 目录适配器
 
@@ -19,10 +19,10 @@ Adobe Commerce产品价格索引器已禁用，在安装这些扩展模块后无
 ## 要求
 
 * Adobe Commerce 2.4.4+
-* 安装了以下两个Commerce服务：
+* 安装了以下Commerce服务：
 
    * [目录服务](../catalog-service/overview.md)
-   * [实时搜索](../live-search/guide-overview.md)
+   * [实时搜索](../live-search/overview.md)
 
 ## 安装
 
@@ -75,7 +75,7 @@ composer require magento/module-price-indexer-disabler
 
 ### Headless Commerce实例
 
-* 具有Headless Commerce实例并安装了所需服务(实时搜索、产品Recommendations、目录服务)的商家
+* 安装了所需服务(Live Search、产品Recommendations、目录服务)的Headless Commerce实例的商家
 * 不依赖默认的Adobe Commerce产品价格索引器
 
 1. 安装 `magento/module-price-indexer-disabler` 目录适配器包中的模块。
