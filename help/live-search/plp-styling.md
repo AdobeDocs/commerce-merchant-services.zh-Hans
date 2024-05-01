@@ -2,9 +2,9 @@
 title: 产品列表页面小组件
 description: 启用并设置样式 [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: d4511219a0244dca7db896419daba1e6694d80de
+source-git-commit: 1e0baa20defe4e50bd9e45c03ff7c5f758b24e5d
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,8 @@ PLP小组件提供可搜索产品页面中所需的一系列功能。 这些功�
 * 添加到购物车功能
 * 多语言支持
 * 价格滑块
+
+有关如何自定义PLP构件以处理上述功能的信息，请参阅 `storefront-product-listing-page` 自述文件如下 [repo](https://github.com/adobe/storefront-product-listing-page/).
 
 ## 样式设置示例
 
