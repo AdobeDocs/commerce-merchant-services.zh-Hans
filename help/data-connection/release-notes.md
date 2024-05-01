@@ -3,9 +3,9 @@ title: 发行说明
 description: 的最新发行信息 [!DNL Data Connection] 来自Adobe Commerce的扩展。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 2b168c0ef07324c7fc7b3cfd464742b257d073ec
+source-git-commit: 84094f4249eeb9f98a85e582c52e2c48e0dd9316
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '838'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 请参阅 [即将发布的版本](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) 了解发布计划和支持。
 
-请参阅开发人员文档以 [了解哪些商务版本支持此模块](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+请参阅开发人员文档以 [了解哪些Commerce版本支持此模块](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## 支持的服务更新
 
@@ -57,7 +57,7 @@ _2023年10月10日_
 
 _2023年6月10日_
 
-![修复](../assets/fix.svg)  — 修复了以下情况下出现的问题 `orderId` 由于商务订单标识符中的前缀，未在上下文中传递。
+![修复](../assets/fix.svg)  — 修复了以下情况下出现的问题 `orderId` 由于Commerce订单标识符中的前缀，未在上下文中传递。
 ![修复](../assets/fix.svg)  — 更新了内容安全策略配置。
 
 _2023年3月30日_
@@ -79,7 +79,7 @@ _2022年10月12日_
 _2024年4月4日_
 
 ![新建](../assets/new.svg)  — 为所有用户添加了对PHP 8.3的支持 [!DNL Data Connection] 扩展。
-![新建](../assets/new.svg)  — 添加了有关如何执行操作的文章 [集成](mobile-sdk-epc.md) 带有Commerce的Adobe Experience Platform Mobile SDK。
+![新建](../assets/new.svg)  — 添加了有关如何执行操作的文章 [集成](mobile-sdk-epc.md) Adobe Experience Platform Mobile SDK与Commerce。
 
 ## 3.2.0-beta2
 
@@ -87,7 +87,7 @@ _2024年3月4日_
 
 [!BADGE 兼容性]{type=Informative tooltip="兼容性"}
 
-![新建](../assets/new.svg)  — 如果您正在参与Beta测试，请确保您的 `composer.json` 文件在根级别具有以下内容： ` "minimum-stability": "beta"`.
+![新建](../assets/new.svg)  — 如果您正在参与Beta测试，请确保您的 `composer.json` 文件在根级别具有以下内容： ` "minimum-stability": "beta"`. 另外，添加 `composer require "magento/customers-connector: ^1.2.0"` 将客户配置文件从Commerce实例发送到SaaS。
 ![新建](../assets/new.svg)  — 添加了 [添加自定义属性](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data).
 ![新建](../assets/new.svg)  — 添加了 [收集和发送配置文件记录](connect-data.md#send-customer-profile-data) 和要Experience Platform的数据。
 
