@@ -4,9 +4,9 @@ description: 了解如何使用生产和沙盒API密钥将Adobe Commerce或Magen
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: e5d9576f0c326dd3a97eeaf9831db0d89b85caff
+source-git-commit: b6775b196ca36448f50a6fed283ef0626e03d286
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '907'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,11 @@ ht-degree: 0%
 
 ## 凭据 {#apikey}
 
-生产和沙盒API密钥从生成 [!DNL Commerce] 许可证持有者的帐户，由唯一标识符 [!DNL Commerce] ID (MageID)。 要通过如下服务的授权验证，请执行以下操作 [!DNL Product Recommendations] 或 [!DNL Live Search]，则商户组织的许可证持有人可以生成API密钥集，只要帐户处于良好状态。 这些密钥可在“需要知道”的基础上与系统集成商或代表许可证持有人管理项目和环境的开发团队共享。 此外，解决方案集成商还有权使用 [!DNL Commerce Services]. 如果您是解决方案集成商， [!DNL Commerce] 合作伙伴合同应生成API密钥。
+生产和沙盒API密钥从生成 [!DNL Commerce] 的帐户 [许可证所有者](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) 由唯一标识符 [!DNL Commerce] ID (MageID)。 要通过如下服务的授权验证，请执行以下操作 [!DNL Product Recommendations] 或 [!DNL Live Search]，只要帐户处于良好状态，商户组织的许可证所有者可以生成API密钥集。 这些密钥可在“需要知道”的基础上与系统集成商或代表许可证持有人管理项目和环境的开发团队共享。 此外，解决方案集成商还有权使用 [!DNL Commerce Services]. 如果您是解决方案集成商， [!DNL Commerce] 合作伙伴合同应生成API密钥。
+
+>[!NOTE]
+>
+>许可证所有者通常是Adobe Commerce客户的主要联系人，并不总是与Adobe Commerce on cloud infrastructure项目的项目所有者相同。
 
 ### 生成生产和沙盒API密钥 {#genapikey}
 
