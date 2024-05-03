@@ -1,18 +1,18 @@
 ---
-title: '''Commerce配置设置和 [!DNL Live Search] ’'
-description: 介绍Adobe Commerce配置设置，这些设置可以 [!DNL Live Search] 可以阅读。
+title: 'Commerce配置设置'
+description: 介绍Commerce配置设置，这些设置可以 [!DNL Live Search] 可以阅读。
 exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
 features: Services, Search, Configuration
-source-git-commit: d1cd70e66e616c052418c719f6da23b010a22241
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] 和Adobe Commerce配置设置
+# Commerce配置设置
 
-有一些Commerce配置设置可以 [!DNL Live Search] 支持。 本主题列出了这些配置值。
+有一些Commerce配置设置可以 [!DNL Live Search] 支持。 本文列出了这些配置值。
 
 ## 支持的配置值
 

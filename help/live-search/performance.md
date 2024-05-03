@@ -1,17 +1,17 @@
 ---
-title: “性能仪表板”
-description: “ [!DNL Live Search] 绩效仪表板提供对购物者所用搜索词的洞察。”
+title: "性能"
+description: “ [!DNL Live Search] 性能工作区提供了对购物者所用搜索词的洞察。”
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
 
-# 性能仪表板
+# 性能
 
-此 [!DNL Live Search] 绩效仪表板提供对购物者使用搜索词的洞察。 此信息可用于识别趋势、增加点进次数并提高转化率。 “性能”功能板提供特定日期范围内的搜索度量的快照，并包括以下报表：
+此 *性能* 工作区提供对购物者使用的搜索词的洞察。 此信息可用于识别趋势、增加点进次数并提高转化率。 性能工作区提供特定日期范围的搜索度量的快照，并包括以下报表：
 
 * 独特搜索
 * 零个结果
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->性能仪表板每12小时更新一次。
+>性能工作区每12小时更新一次。
 
 ## 字段描述
 

@@ -2,7 +2,7 @@
 title: "添加规则"
 description: “了解如何创建搜索促销规则。”
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 4ce37b03937cf5a8413831c720d05387031a6094
+source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 1. 在“管理员”中，转到 **营销** > SEO和搜索> **[!DNL Live Search]**.
 1. 设置 **范围** 以识别 [商店视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 规则适用的位置。
-1. 单击 **搜索促销** 选项卡。
+1. 单击 **搜索促销** 工作区。
 1. 单击 **添加规则** 以启动规则编辑器。
 
 ## 规则类型
@@ -142,7 +142,7 @@ ht-degree: 0%
 1. 如果规则具有多个查询，请测试每个可能受规则影响的查询。
 1. 完成后，单击 **保存并发布**.
 
-   该规则将添加到规则工作区的列表中。
+   该规则将添加到中的列表 *规则* 工作区。
 
 1. 虽然活动规则会立即生效，但您最多可能必须等待15分钟才能刷新店面中的缓存查询结果。
 

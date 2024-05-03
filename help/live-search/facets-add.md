@@ -2,9 +2,9 @@
 title: "添加Facet"
 description: “了解如何添加可过滤的产品属性作为 [!DNL Live Search] 多方面。”
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 10edbb6127405d45c06d4c8ffc89d92a6ca061c3
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 任何可过滤的产品属性都可以用作Facet。 此 *添加Facet* 面板会列出当前彩块化，并可轻松地将其他“产品”属性分配为Facet。 在此三步流程中，选择某个属性作为Facet，根据需要编辑属性，并将更改发布到店面。
 
-![彩块化工作区](assets/facets-add.png)
+![添加Facet](assets/facets-add.png)
 
 ## 步骤1：添加方面
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 1. 完成后，单击 **保存**.
 
-   ![彩块化工作区](assets/facet-edit.png)
+   ![编辑Facet](assets/facet-edit.png)
 
 1. 将Facet固定到 *过滤器* 列表，单击灰色图钉(![销钉选择器](assets/btn-pin-gray.png))。
 1. 要更改固定多面的顺序，请单击 **移动** (![移动选择器](assets/btn-move.png))图标，并将行拖到中的新位置 *固定的Facet* 部分。

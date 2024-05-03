@@ -3,16 +3,16 @@ title: 什么是 [!DNL Live Search]？
 description: '"[!DNL Live Search] Adobe Commerce提供了快速、相关且直观的搜索体验。”'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: aba552808ea7af540f64f00a2ae4aeaf2b9cc52e
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
 
 # 什么是 [!DNL Live Search]？
 
-[!DNL Live Search] 是一个扩展，取代了Adobe Commerce中的标准搜索功能。 此 [!DNL Live Search] 扩展随Composer一起安装，并连接 [!DNL Commerce] 安装到 [!DNL Live Search] [服务](../landing/saas.md). 配置后，默认搜索文本字段会被替换为 [!DNL Live Search] 文本字段。 [!DNL Live Search] 此外，还安装产品列表页面(PLP)小组件，该小组件在浏览搜索结果时提供强大的筛选功能。
+[!DNL Live Search] 是一项功能，取代了Adobe Commerce中的标准搜索功能。 此 [!DNL Live Search] 功能随Composer一起安装，并连接 [!DNL Commerce] 存储到 [Commerce服务连接器](../landing/saas.md). 配置后，默认搜索文本字段会被替换为 [!DNL Live Search] 文本字段。 [!DNL Live Search] 此外，还安装产品列表页面(PLP)小组件，该小组件在浏览搜索结果时提供强大的筛选功能。
 
 替换为 [!DNL Live Search]，您可以：
 
@@ -75,7 +75,6 @@ ht-degree: 0%
 
 - [!DNL Live Search] [弹出框小组件](storefront-popover.md) 是在包含搜索结果的搜索字段下打开的框。
 - [产品列表页面小组件](plp-styling.md) 提供了一个可搜索的产品列表页面，该页面支持彩块化和同义词。
-- [[!DNL Live Search] 管理员](workspace.md) 是配置规则、彩块化和同义词的位置。
 
 ## [!DNL Live Search] 工作区
 

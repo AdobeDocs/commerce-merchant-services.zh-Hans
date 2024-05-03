@@ -2,16 +2,16 @@
 title: “彩块化工作区”
 description: “了解如何在 [!DNL Live Search] 面向工作区。”
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: e166c8cb9d715dce573195a188b5335c02d8fd0c
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
 
 # 彩块化工作区
 
-此 [!DNL Live Search] 工作区列出了当前可用的所有Facet，并允许访问设置和管理Facet所需的工具。 固定多面首先出现在现有Facet列表中，然后是动态Facet。 可以对列表进行过滤，以显示所有方面，或仅显示固定或动态方面。
+此 *彩块化* 工作区列出了当前可用的所有Facet，并允许访问设置和管理Facet所需的工具。 固定多面首先出现在现有Facet列表中，然后是动态Facet。 可以对列表进行过滤，以显示所有方面，或仅显示固定或动态方面。
 
 ![彩块化工作区](assets/faceting-workspace.png)
 

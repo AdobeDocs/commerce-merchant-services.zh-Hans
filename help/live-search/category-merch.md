@@ -3,7 +3,7 @@ title: 类别促销
 description: 使用 [!DNL Live Search] 类别推销，可加快购物体验。
 gourl: ls_catalog_merchandising
 exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
-source-git-commit: 109a4e79a7faac62a4d7c48cadcada1ec28f3c94
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->类别促销适用于 [!DNL Live Search] [3.0.0或更高版本](release-notes.md). 如果您看到“类别促销”选项卡，但其中未填充数据，请更新 [!DNL Live Search] 模块。
+>类别促销适用于 [!DNL Live Search] [3.0.0或更高版本](release-notes.md). 如果您看到类别促销工作区，但它未填充数据，请更新 [!DNL Live Search] 模块。
 
 ![类别促销](assets/category_workspace.png)
 

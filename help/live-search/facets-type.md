@@ -2,9 +2,9 @@
 title: "彩块化的类型"
 description: '"[!DNL Live Search] 彩块化是动态的，并在相关时显示在过滤器列表中。”'
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
-source-git-commit: 995f528abc0011c6ae7c4c524982c301072ec2eb
+source-git-commit: f96f94a16e1926b7dd2f1ee94f124ac0c823a9e0
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 * 固定Facet — 最常用的Facet可以固定到列表顶部。 其余方面列于 *排序类型* 在固定Facet之后排序。
 * 动态Facet — 具有以下功能的产品属性 [Adobe Sensei](https://www.adobe.com/sensei.html) 查找与产品集和查询最相关的项目。 该计算会考虑整个目录的属性元数据，并在查询时确定与查询最相关的Facet。
 * 常用Facet — 搜索结果中最常出现的产品属性。
-* 价格Facet — 按价格范围返回产品。 您可以在 [*设置*](settings.md) 选项卡。
+* 价格Facet — 按价格范围返回产品。 您可以在 [*设置*](settings.md) 工作区。
 
 在查询时， [!DNL Live Search] 在动态和常用Facet组中生成搜索结果。
 

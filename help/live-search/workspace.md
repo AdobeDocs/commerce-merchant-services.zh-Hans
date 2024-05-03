@@ -1,19 +1,19 @@
 ---
-title: ’[!DNL Live Search] 工作区
+title: '工作区'
 description: 此 [!DNL Live Search] 工作区用于配置、管理和监视搜索性能。
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] 工作区
+# 工作区
 
 可在工作区中配置、管理和监控以下各项的性能 [!DNL Live Search]. 顶部的菜单提供对各个功能区域中工具的访问。  可用功能反映当前的菜单选择。
 
-![彩块化工作区](assets/workspace.png)
+![工作区](assets/workspace.png)
 
 ## 设置范围
 

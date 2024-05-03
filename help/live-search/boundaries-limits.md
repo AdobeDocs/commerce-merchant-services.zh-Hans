@@ -1,8 +1,9 @@
 ---
-title: '"[!DNL Live Search] 边界和限制”'
-description: “了解的界限和限制 [!DNL Live Search] 以确保它满足您的业务需求。”
+title: '边界和限制'
+description: 了解的边界和限制 [!DNL Live Search] 确保它满足您的业务需求。
 role: Admin, Developer
-source-git-commit: 8aca09aba13e32afb191169729dfc1fbd0087262
+exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
 source-wordcount: '566'
 ht-degree: 0%
