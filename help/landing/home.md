@@ -6,20 +6,20 @@ seo-description: Access the product documentation for hosted services that help 
 breadcrumb-title: 文档
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 recommendations: noCatalog
-source-git-commit: 9558367bb80e04af1d55be63fcf4f7382e662436
+source-git-commit: 6368f95bc56cc0bd82f6bfb1d7ba47fa83bd85cb
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
 
 # Adobe Commerce Services指南
 
-Adobe提供了Commerce、集成和数据服务的集合，以帮助商家支持其业务的关键组件。
+Adobe提供Commerce、集成和数据服务的集合，以帮助商家支持其业务的关键组件。
 
 >[!BEGINSHADEBOX &quot;发行信息&quot;]
 
-请参阅 [我们文档的新增功能](whats-new.md) 或 [发行说明](release-notes-all.md) 每个Commerce服务。
+请参阅 [我们文档的新增功能](whats-new.md) 或 [发行说明](release-notes-all.md) 每个Commerce服务对应的章节。
 
 >[!ENDSHADEBOX]
 
@@ -56,13 +56,6 @@ Adobe提供了Commerce、集成和数据服务的集合，以帮助商家支持�
   </td>
     </tr>
 <tr>
-  <td valign="top" width="200px">
-    <img alt="快速签出" src="assets/quick-checkout.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html"><strong>快速签出</strong></a>  <br><em>(可供Magento Open Source)</em>
-    <div>通过提供快速、直观的购物体验，将一次性购物者转化为忠诚的帐户持有者。</div>
-  </td>
-    </tr>
-<tr>
     <td valign="top" width="200px">
        <img alt="商店履行" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>商店履行</strong></a></br>
@@ -80,7 +73,7 @@ Adobe提供了Commerce、集成和数据服务的集合，以帮助商家支持�
     <td valign="top">
        <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"> <strong>渠道管理器</strong></a> <br><em>(可供Magento Open Source)</em>
-    <div>通过与沃尔玛市场集成，提高销售额、接触新客户、简化运营并节省时间。 使员工能够无缝地管理Walmart Marketplace的销售、库存和定价 — 所有这些都在Commerce中实现。</div>
+    <div>通过与沃尔玛市场集成，提高销售额、接触新客户、简化运营并节省时间。 使员工能够无缝地管理Walmart Marketplace的销售、库存和定价 — 所有这些都在Commerce中。</div>
   </td>
    </tr>
 </table>
@@ -100,7 +93,7 @@ Adobe提供了Commerce、集成和数据服务的集合，以帮助商家支持�
        <img alt="[!UICONTROL Services Connector]" src="assets/product-recs.png" width="170px"/></td>
    <td valign="top">
    <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html"><strong>[!DNL Services Connector]</strong></a>
-    <div>Commerce Services Connector使用API密钥和私钥为您的Adobe Commerce或Magento Open Source实例提供集成。 对于数据服务(仅限Adobe Commerce)，您还可以指定配置中的数据空间。</div>
+    <div>Commerce服务连接器使用API密钥和私钥为您的Adobe Commerce或Magento Open Source实例提供集成。 对于数据服务(仅限Adobe Commerce)，您还可以指定配置中的数据空间。</div>
   </td>
    </tr>
 </table>

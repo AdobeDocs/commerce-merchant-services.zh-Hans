@@ -1,18 +1,18 @@
 ---
-title: Commerce Services的发行说明
+title: Commerce服务的发行说明
 description: 所有Commerce服务的发行说明集合
 seo-title: Adobe Commerce Services release notes
 seo-description: See a collated list of all release notes for Adobe Commerce Services and related data and integration services.
 exl-id: 2d0d2663-275d-4471-b47c-95a40b328b2b
 feature: Release Notes, Services
-source-git-commit: 19b94efc006bb88759195aa7c86c71408bd1741e
+source-git-commit: 6368f95bc56cc0bd82f6bfb1d7ba47fa83bd85cb
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '117'
 ht-degree: 0%
 
 ---
 
-# Commerce Services的发行说明
+# Commerce服务的发行说明
 
 使用下表查找与所有Adobe Commerce服务的特定版本相关的发行说明和重要信息。
 
@@ -28,19 +28,18 @@ ht-degree: 0%
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">[!DNL Live Search]</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">[!DNL Payment Services]</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">产品Recommendations</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/release-notes.html">[!DNL Quick Checkout]</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html">[!DNL Store Fulfillment]</a></li>
           </ul>
         </td>
       <td><strong>Integration services</strong>
-        <p>了解集成服务的最新改进，这些改进使我们的Commerce Services能够与其他服务和Adobe扩展及产品连接。</p>
+        <p>了解集成服务的最新改进，这些改进使我们的Commerce服务能够与其他服务和Adobe扩展及产品连接。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/release-notes.html">[!DNL Data Connection]</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html">[!DNL Services Connector]</a></li>
           </ul>
       </td>
       <td><strong>数据服务</strong>
-        <p>了解数据服务的最新改进，通过这些改进，我们的Commerce Services能够管理产品数据。</p>
+        <p>了解数据服务的最新改进，通过这些改进，我们的Commerce服务能够管理产品数据。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html">目录同步</a></li>
           </ul>
