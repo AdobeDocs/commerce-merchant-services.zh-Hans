@@ -3,9 +3,9 @@ title: “开始使用 [!DNL Live Search]"
 description: “了解的系统要求和安装步骤 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 4138cda03e30bdeafe6e39862e8a6c99dae5da43
+source-git-commit: c66eab4ae0dda9a447a17f357ee0bb7364dc46ba
 workflow-type: tm+mt
-source-wordcount: '2370'
+source-wordcount: '2405'
 ht-degree: 0%
 
 ---
@@ -419,9 +419,23 @@ Live Search小组件支持Adobe Commerce支持的大多数价格类型，但不�
 
 价格格式支持Commerce实例中的区域设置配置设置： *商店* >设置> *配置* >常规> *常规* >本地选项>区域设置。
 
+### Headless店面支持
+
+或者，您可能需要安装 `module-data-services-graphql` 模块，用于扩展应用程序的现有GraphQL覆盖范围，以包含店面行为数据收集所需的字段。
+
+```bash
+composer require magento/module-data-services-graphql
+```
+
+此模块可向GraphQL查询添加其他上下文：
+
+- `dataServicesStorefrontInstanceContext`
+- `dataServicesMagentoExtensionContext`
+- `dataServicesStoreConfigurationContext`
+
 ### PWA支持
 
-[!DNL Live Search] 可与PWA Studio配合使用，但用户可能会看到与其他Commerce实施相比的细微差异。 在威尼亚省可以使用搜索和产品列表页面等基本功能，但Graphql的某些排列可能无法正确工作。 此外，可能存在性能差异。
+[!DNL Live Search] 可与PWA Studio配合使用，但用户可能会看到与其他Commerce实施相比的细微差异。 在威尼亚省可以使用搜索和产品列表页面等基本功能，但Graphql的某些排列可能无法正常工作。 此外，可能存在性能差异。
 
 - 的当前PWA实现 [!DNL Live Search] 返回搜索结果所需的处理时间大于 [!DNL Live Search] 与原生Commerce店面合作。
 - [!DNL Live Search] PWA不支持 [事件处理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). 因此，搜索报表和智能促销都将正常工作。
