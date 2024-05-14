@@ -3,9 +3,9 @@ title: '边界和限制'
 description: 了解的边界和限制 [!DNL Live Search] 确保它满足您的业务需求。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 589475cfc695cefb727176ee772c8d0d07e8e0a2
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,6 @@ ht-degree: 0%
 
 - 此 [高级搜索](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 在以下情况下将禁用模块 [!DNL Live Search] ，并删除店面页脚中的高级搜索链接。
 - [分层定价](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) 和 [特殊定价](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) 不支持 [!DNL Live Search] 字段和产品列表页面小组件。
-- [!DNL Live Search] 无法聚合来自多个源的库存数据。
 - 产品价格不含增值税。
 - 不支持内容搜索。
 - 可分页的产品数量限制为10,000个。
