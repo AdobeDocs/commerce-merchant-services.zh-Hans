@@ -3,9 +3,9 @@ title: 什么是 [!DNL Live Search]？
 description: '"[!DNL Live Search] Adobe Commerce提供了快速、相关且直观的搜索体验。”'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 362592eae354b43a3bf98e2839ffe90c21fd3593
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->在网站搜索方面，Adobe Commerce会为您提供各种选项。 请务必阅读 [边界和限制](boundaries-limits.md) 实施之前，确保 [!DNL Live Search] 适合您的业务需求。
+>在网站搜索方面，Adobe Commerce会为您提供各种选项。 在实施之前，请查看 [边界和限制](boundaries-limits.md) 确保以下各项 [!DNL Live Search] 适合您的业务需求。
 
 ## 架构
 
@@ -37,11 +37,11 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
 
-有关如何使用和配置Live Search的更深入视频，请参阅 [完整演示 [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) 主题。
+有关使用和配置Live Search的更深入视频，请参见 [完整演示 [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration) 主题。
 
 ### 按键入内容搜索
 
-[!DNL Live Search] 在中，以建议的产品和排名最前的搜索结果的缩略图图像做出响应 [弹出框](storefront-popover.md) 因为购物者在 [Search](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 盒子。 此 [产品详细信息](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) 当购物者单击建议或特色产品时，将显示页面。 A _查看全部_ 弹出框页脚中的链接将显示搜索结果页面。
+[!DNL Live Search] 在中，以建议的产品和排名最前的搜索结果的缩略图图像做出响应 [弹出框](storefront-popover.md) 因为购物者在 [Search](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 盒子。 此 [产品详细信息](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) 当购物者单击建议或特色产品时显示的页面。 A _查看全部_ 弹出框页脚中的链接将显示搜索结果页面。
 
 [!DNL Live Search] 对于包含两个或更多字符的查询，返回“键入时搜索”结果。 对于部分匹配，每个单词的最大字符数为20。 查询中的字符数无法配置。 弹出框包括`name`， `sku`、和 `category_ids` 字段。
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 ### 带有Facet的过滤搜索
 
-过滤搜索使用属性值的多个维，或者 [Facet](facets.md)，作为搜索条件。 过滤器的选择由商家定义，并根据返回的产品而发生更改，其中最常用的Facet将固定到列表顶部。
+过滤搜索使用属性值的多个维，或者 [Facet](facets.md)，作为搜索条件。 过滤器的选择由商家定义，并根据返回的产品而发生更改，最常用的方面将固定到列表顶部。
 
 将Facet用作URL参数：`http://yourwebsite.com?color=red`和实时搜索会根据这些属性值筛选结果。
 
@@ -69,12 +69,13 @@ ht-degree: 0%
 
 ### 搜索词支持
 
-[!DNL Live Search] 支持Commerce [搜索词重定向](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). 例如，用户可以搜索诸如“运费”之类的术语，并直接转到运费页面。
+[!DNL Live Search] 支持Commerce [搜索词重定向](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms). 例如，用户可以搜索诸如“运费”之类的术语，并直接转到运费页面。
 
 ## 实时搜索组件
 
 - [!DNL Live Search] [弹出框小组件](storefront-popover.md) 是在包含搜索结果的搜索字段下打开的框。
-- [产品列表页面小组件](plp-styling.md) 提供了一个可搜索的产品列表页面，该页面支持彩块化和同义词。
+- [产品列表页面小组件](plp-styling.md) (PLP)提供了一个可搜索的产品列表页面，其中支持方面和同义词。 构件在Live Search 4.0.0+中已安装和启用。
+- (**已弃用**)搜索适配器是PLP小组件的前身，随Live Search &lt; 4.0.0安装。如果您使用的是低于4.0.0的Live Search版本，Commerce建议您进行升级，以便享受PLP构件功能和未来改进带来的好处。
 
 ## [!DNL Live Search] 工作区
 

@@ -3,9 +3,9 @@ title: '"[!DNL Live Search] 发行说明”'
 description: “的最新发行信息 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 471bee273a82304ac35b0ca384a2161d7a3399d6
+source-git-commit: 228ce5f3df3cc020a260fdd710eac02433d7bf0a
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1946'
 ht-degree: 0%
 
 ---
@@ -44,6 +44,16 @@ _2023年6月13日_
 _2023年4月25日_
 
 ![新建](../assets/new.svg) [!DNL Live Search] 客户现在可以利用新的 [SaaS价格索引器](../price-index/price-indexing.md).
+
+## [!DNL Live Search] 4.1.2 {#412}
+
+_2024年5月16日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"}
+
+### 更新
+
+![修复](../assets/fix.svg) 修复了 [`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-by-categories) GraphQL查询以根据 `categoryPath` 和 `categoryList` 用于类别。
 
 ## [!DNL Live Search] 4.1.1 {#411}
 

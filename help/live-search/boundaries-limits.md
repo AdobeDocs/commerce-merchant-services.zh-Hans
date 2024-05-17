@@ -3,9 +3,9 @@ title: '边界和限制'
 description: 了解的边界和限制 [!DNL Live Search] 确保它满足您的业务需求。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 589475cfc695cefb727176ee772c8d0d07e8e0a2
+source-git-commit: b7e81acf3b3c4904f96e5e3b8cfbb49e5b3dddac
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 0%
 - 产品价格不含增值税。
 - 不支持内容搜索。
 - 可分页的产品数量限制为10,000个。
+- 搜索适配器不支持使用自定义源模型创建并用作彩块化的产品属性。 要支持此功能，您必须使用 [产品列表页面小组件](plp-styling.md).
 
 ## 索引
 
