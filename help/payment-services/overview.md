@@ -66,12 +66,12 @@ ht-degree: 0%
 
 要查看PayPal支持的支付方法，请参阅它们的 [支付方式文档](https://developer.paypal.com/docs/checkout/payment-methods/).
 
-## 开始使用
+## 快速入门
 
 载入和设置 [!DNL Payment Services] 只需几个步骤即可完成：
 
 1. 获取 [[!DNL Payment Services] 扩展](install.md).
-1. 将您的Commerce实例连接到Commerce Services。
+1. 将您的Commerce实例连接到Commerce服务。
 1. 载入并设置沙盒服务。
 1. 启用 [!DNL Payment Services] 作为您的支付方式，并开始处理测试支付。
 1. 完成商户入门培训，为您的网站启用实时支付。
