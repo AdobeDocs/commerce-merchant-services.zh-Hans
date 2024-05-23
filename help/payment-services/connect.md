@@ -3,9 +3,9 @@ title: 连接实例
 description: 使用API密钥和私钥连接您的Commerce实例，并在配置中指定数据空间。
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
+source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -70,3 +70,10 @@ ht-degree: 0%
    >[!INFO]
    >
    > 查看我们的 [[!DNL Adobe Commerce] 服务连接器](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en#configuration-faqs) 视频，以了解其他信息。
+
+## 端点
+
+[!DNL Payment Services] 使用 [Commerce服务连接器](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) 以连接到Commerce服务并部署为SaaS。 此 [!DNL Commerce Services Connector] 通过以下位置的端点通信：
+
+* `commerce-beta.adobe.io` 用于沙盒环境。
+* `commerce.adobe.io for` 适用于实时环境。
