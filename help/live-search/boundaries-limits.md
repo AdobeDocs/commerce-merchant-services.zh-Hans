@@ -3,9 +3,9 @@ title: '边界和限制'
 description: 了解的边界和限制 [!DNL Live Search] 确保它满足您的业务需求。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 0f4860afa38dc188c19ee8bcbd386d3fb5d0907f
+source-git-commit: 29983ec083a49859b99c9c906710ce0a01054a50
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,7 @@ ht-degree: 0%
    - 200个可搜索属性
 - [!DNL Live Search] 仅对Adobe Commerce数据库中的产品编制索引。
 - CMS页面未编制索引。
+- 默认情况下，SKU、名称和类别属性可搜索，并且无法从搜索中排除。 如果类别中没有预期的产品，请确保从这些类别中取消分配这些产品。
 
 ## Facet
 
