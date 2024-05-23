@@ -3,7 +3,7 @@ title: '边界和限制'
 description: 了解的边界和限制 [!DNL Live Search] 确保它满足您的业务需求。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: b7e81acf3b3c4904f96e5e3b8cfbb49e5b3dddac
+source-git-commit: 0f4860afa38dc188c19ee8bcbd386d3fb5d0907f
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 0%
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 - [!DNL Live Search] 无法访问类别树的完整分类，这使得某些分层导航搜索场景无法访问。
 - [!DNL Live Search] 使用唯一 [GraphQL端点](https://developer.adobe.com/commerce/services/graphql/live-search/) 用于支持动态彩块化和按类型搜索等功能的查询。 虽然与 [GRAPHQL API](https://developer.adobe.com/commerce/webapi/graphql/)存在一些差异，一些字段可能不完全兼容。
-- 可在搜索查询中返回的结果的最大数量为10,000。
+- 搜索查询中可返回的最大结果数为10,000。
 
 ## 规则
 
