@@ -2,39 +2,35 @@
 title: 载入和安装
 description: “了解如何安装 [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: c33ec5a10f9f2570e971e968efd1524e0d384ecd
+source-git-commit: a2841b809cfc52798dc3f1bdcc033a77333bf0e5
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
 
 # 载入和安装
 
-安装目录服务，以使用从Commerce实例请求和接收产品数据 [目录服务GraphQL API](https://developer.adobe.com/commerce/services/graphql/catalog-service/).
+安装目录服务，以使用从Commerce实例请求和接收产品数据 [目录服务GraphQL API](https://developer.adobe.com/commerce/services/graphql/catalog-service/). 目录服务是作为repo.magento.com存储库中的编辑器中继包提供的。
 
 >[!NOTE]
 >
 >如果您的Commerce实例使用Live Search或Product Recommendations，则当您载入或升级这些服务时，会自动安装或更新目录服务。 有关详细信息，请参阅 [实时搜索](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install) 和 [产品Recommendations](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure).
 
->[!BEGINSHADEBOX]
 
-## 先决条件
 
-的新用户引导流程 [!DNL Catalog Service] 需要访问服务器的命令行。 如果您不熟悉如何使用命令行，请向开发人员或系统集成商寻求帮助。
+## 系统要求
 
 **软件要求**
 
 - Adobe Commerce 2.4.4+
-- PHP 8.1、8.2
+- PHP 8.1、8.2和8.3
 - Composer： 2.x
 
 **支持的平台**
 
 - 云基础架构上的Adobe Commerce：2.4.4+
 - Adobe Commerce内部部署：2.4.4+
-
->[!ENDSHADEBOX]
 
 ## 端点
 
@@ -51,19 +47,23 @@ ht-degree: 0%
 
 开始使用 [!DNL Catalog Service] 对于Adobe Commerce，需要执行以下步骤：
 
-- 安装数据导出扩展
+- 安装目录服务扩展(`magento/catalog-service`)
 - 配置服务和数据导出
 - 访问服务
 
-### 安装数据导出扩展
+### 安装目录服务扩展
 
-您必须具有服务器的命令行访问权限，才能完成 [!DNL Catalog Service] 载入流程。
+>[!BEGINSHADEBOX]
 
-此 [!DNL Catalog Service] 随链接到Commerce帐户的编辑器键一起安装 [`mageid`](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) 在注册过程中提供。 Composer在Adobe Commerce的初始安装期间或之前未将Composer键保存到外部的情况下使用这些键 `auth.json` 文件。
+**先决条件**
 
-请参阅 [获取您的身份验证密钥](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) 以了解有关获取编辑器键的更多信息。
+- 访问 [repo.magento.com](https://repo.magento.com) 以安装扩展。 有关密钥生成和获取必要权限的信息，请参阅 [获取您的身份验证密钥](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). 有关云安装，请参阅 [《云基础架构上的Commerce指南》](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
 
-此 [!DNL Catalog Service] 扩展可以安装在Adobe Commerce云基础架构和内部部署实例上。
+- 访问Adobe Commerce应用程序服务器的命令行。
+
+>[!ENDSHADEBOX]
+
+安装最新版本的目录服务扩展(`magento/catalog-service`)在运行Adobe Commerce版本2.4.4或更高版本的Adobe Commerce实例上。 目录服务作为作曲家中继资料从 [repo.magento.com](https://repo.magento.com) 存储库。
 
 >[!BEGINTABS]
 
@@ -151,7 +151,7 @@ ht-degree: 0%
 
 1. 从执行初始数据同步 [数据管理功能板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
 
-   初始同步可能需要几分钟到几小时，具体取决于目录大小。 您可以从“数据管理”仪表板监视同步状态。 初始同步后，目录会持续导出产品数据以使服务保持最新。
+   初始同步可能需要几分钟到几小时时间，具体取决于目录大小。 您可以从“数据管理”仪表板监视同步状态。 初始同步后，目录会持续导出产品数据以使服务保持最新。
 
 要确保正确运行目录导出，请执行以下操作：
 
