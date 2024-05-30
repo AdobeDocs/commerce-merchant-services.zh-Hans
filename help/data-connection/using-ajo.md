@@ -4,9 +4,9 @@ description: 了解如何使用Adobe Journey Optimizer发送放弃的购物车�
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 5e4e7c0a-c00b-4278-bd73-6b6f2fcbe770
-source-git-commit: a94f75dfab1f88f02e217b0e021cc2dfc94244c7
+source-git-commit: ee84525a9146123d80c303e40acdc6baba098cdd
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1412'
 ht-degree: 0%
 
 ---
@@ -108,16 +108,16 @@ Adobe [!DNL Commerce] 客户通过使用Adobe实施个性化的放弃促销活�
 
    查找 `commerce.checkouts` 事件并检查事件有效负载：
 
-    ```json
-    "personID": "84281643067178465783746543501073369488", 
-    "eventType": "commerce.checkouts", 
-    "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
-    "commerce": { 
-        "cart": {}, 
-        "checkouts": { 
-            "value": 1 
-        } 
-    ```
+   ```json
+   "personID": "84281643067178465783746543501073369488", 
+   "eventType": "commerce.checkouts", 
+   "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
+   "commerce": { 
+       "cart": {}, 
+       "checkouts": { 
+           "value": 1 
+       } 
+   ```
 
    如您所见，完整的事件有效负载包含丰富的事件数据。 在下一部分中，您将配置Journey Optimizer中的事件以侦听和响应 `commerce.checkouts` 事件生成自 [!DNL Commerce] 店面。
 
