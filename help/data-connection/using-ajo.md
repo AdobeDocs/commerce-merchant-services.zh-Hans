@@ -4,9 +4,9 @@ description: 了解如何使用Adobe Journey Optimizer发送放弃的购物车�
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 5e4e7c0a-c00b-4278-bd73-6b6f2fcbe770
-source-git-commit: ee84525a9146123d80c303e40acdc6baba098cdd
+source-git-commit: 6500aaa373d8e9abf88d1ca45dc2742c83bfeca3
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1262'
 ht-degree: 0%
 
 ---
@@ -23,20 +23,6 @@ ht-degree: 0%
 |---|---|---|
 | **定义** | 客户在您的网站上采取的点击或操作。 | 关于生命周期的信息和每个订单的详细信息（过去和当前）。 |
 | **Adobe Commerce捕获的事件** | [pageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[订单历史记录](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/fundamentals/connect-data#send-historical-order-data) |
-
-### 我能用Adobe Commerce做什么？
-
-使用Adobe [!DNL Commerce] 以设置基于规则的电子邮件提醒，此类提醒可用作购物车或浏览放弃电子邮件。 在此处了解详情。
-
-### 我能用Adobe做什么 [!DNL Commerce] 和Experience Cloud？
-
-- **Adobe [!DNL Commerce] 使用Adobe Journey Optimizer**  — 使用Adobe [!DNL Commerce] 通过Adobe Journey Optimizer，您可以使用 [!DNL Commerce] 数据作为全渠道放弃历程的触发器。 您可以根据客户属性、他们放弃的项目、其他购物行为和过去的购买行为，个性化该历程。
-
-- **Adobe Commerce、Adobe Journey Optimizer和Adobe Real-Time CDP**  — 添加Real-Time CDP允许您根据统一的客户配置文件和集中管理的基于规则或由AI支持的受众，进一步优化放弃促销活动。 例如，您可以创建：
-
-   - 弃用率较低的“转化率较高”受众
-   - 多次重新访问某些类别的“高关注度”受众
-   - 一个“高潜能”受众，拥有高支出和高忠诚度，但最近放弃了
 
 ### 其他客户取得了哪些成就？
 
