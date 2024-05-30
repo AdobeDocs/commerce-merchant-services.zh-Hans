@@ -108,17 +108,17 @@ Adobe [!DNL Commerce] 客户通过使用Adobe实施个性化的放弃促销活�
 
    查找 `commerce.checkouts` 事件并检查事件有效负载：
 
-       “&#39;json
-       &quot;personID&quot;： &quot;84281643067178465783746543501073369488&quot;，
-       &quot;eventType&quot;： &quot;commerce.checkouts&quot;，
-       “_id”：“4b41703f-e42e-485b-8d63-7001e3580856-0”，
-       &quot;commerce&quot;： {
-       &quot;cart&quot;： {}，
-       “结帐”： {
-       &quot;value&quot;： 1
-       }
-       ```
-   
+    ```json
+    "personID": "84281643067178465783746543501073369488", 
+    "eventType": "commerce.checkouts", 
+    "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
+    "commerce": { 
+        "cart": {}, 
+        "checkouts": { 
+            "value": 1 
+        } 
+    ```
+
    如您所见，完整的事件有效负载包含丰富的事件数据。 在下一部分中，您将配置Journey Optimizer中的事件以侦听和响应 `commerce.checkouts` 事件生成自 [!DNL Commerce] 店面。
 
 ## 步骤3：在Journey Optimizer中配置事件
