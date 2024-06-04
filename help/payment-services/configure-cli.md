@@ -5,9 +5,9 @@ role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
 feature: Payments, Checkout, Configuration, Integration
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -48,11 +48,11 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >如果未在命令中指定任何索引器，则所有索引器都会更新为相同的值。 如果要更改特定索引器，必须在命令中列出该索引器。
 
-要了解有关手动更改索引器模式的更多信息，请参阅 [配置索引器](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} in the developer documentation. To learn how to change it in the Admin, see [Index management](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} （在核心用户指南中）。
+要了解有关手动更改索引器模式的更多信息，请参阅 [配置索引器](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} 在开发人员文档中。 要了解如何在管理员中更改它，请参阅 [索引管理](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} （在核心用户指南中）。
 
 ### 手动重新索引数据
 
-您可以手动重新索引数据，而不是等待数据自动生成。 请参阅 [重新索引](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Manage the Indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} 以了解更多信息。
+您可以手动重新索引数据，而不是等待数据自动生成。 请参阅 [重新索引](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} 在 [管理索引器](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} 以了解更多信息。
 
 时间 `BY SCHEDULE` 模式被设置，系统跟踪被改变的实体，并且cron作业根据设置的计划更新它们的索引。 请参阅 [从命令行运行cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) 在 [配置和运行cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html))，了解如何使用cron作业手动触发索引。
 
@@ -89,3 +89,15 @@ bin/magento cron:run --group payment_services_data_export
 ```
 
 要了解有关重新索引和索引器的更多信息，请参阅 [管理索引器](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) 开发人员文档中的主题。
+
+## 配置L2/L3处理
+
+[!DNL Payment Services] 可以处理来自卡支付交易的级别2和级别3数据，以便为商家提供附加信息。
+
+>[!WARNING]
+>
+> 通过PayPal与2级和3级处理集成仅适用于美国商家。 请参阅 [支付处理](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank} 有关更多信息，请参阅PayPal开发人员文档。
+
+如果要使用L2/L3处理数据 [!DNL Payment Services]，或者，如果您有任何问题，请联系您的 [!DNL Payment Services] 客户经理。
+
+了解中使用的第2层和第3层处理 [!DNL Payment Services]，请参见 [2级和3级处理](levels-card-payment-transactions.md).

@@ -6,15 +6,15 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
 workflow-type: tm+mt
-source-wordcount: '85'
-ht-degree: 2%
+source-wordcount: '91'
+ht-degree: 4%
 
 ---
 
 
-# [!DNL Payment Services] （用于商务） {#payment-services}
+# [!DNL Payment Services] 适用于Commerce的 {#payment-services}
 
 - [指南概述](guide-overview.md)
 - [简介 [!DNL Payment Services]](overview.md)
@@ -41,6 +41,7 @@ ht-degree: 2%
    - [订单付款状态报表](order-payment-status.md)
    - [支付报表](payouts.md)
    - [可用数据](data.md)
+   - [2级和3级处理](levels-card-payment-transactions.md)
 - 管理付款 {#manage}
    - [退款](refunds.md)
    - [空洞](voids.md)

@@ -3,9 +3,9 @@ title: 启用 [!DNL Payment Services] 用于生产
 description: 通过启用 [!DNL Payment Services] 用于生产。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1019'
 ht-degree: 0%
 
 ---
@@ -144,6 +144,8 @@ ht-degree: 0%
 1. 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. 在“主页”视图中，单击 **[!UICONTROL Settings]**. 请参阅 [主页](payments-home.md) 以了解更多信息。
 1. 选择所需的 _商家ID_ 然后将其提交给您的销售代表，销售代表将配置正确的定价层。
+
+请参阅 [2级和3级处理](levels-card-payment-transactions.md) 以了解有关付款交易记录的详细信息。
 
 ## 启用实时支付
 
