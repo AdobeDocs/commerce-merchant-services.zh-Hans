@@ -1,13 +1,13 @@
 ---
 title: 可用数据
-description: 使用财务报表数据使报表与非商业系统相协调。
+description: 使用Financial Reporting数据协调报表与非Commerce系统。
 role: User
 level: Intermediate
 exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
 feature: Payments, Checkout, Data Import/Export
-source-git-commit: c4068d71eba45ea45b1c1eefc324bf830479e0e3
+source-git-commit: 9a933d41bffc2af453eed00caeb941eb18b23852
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 您可以使用与特定订单关联的增量ID来调整Adobe Commerce Financial Reporting与非Adobe企业资源计划(ERP)系统。
 
-当支付服务将商业订单发送至PayPal时，增量ID包含为 `custom_id` _和_ 在 `invoice_id` (也包含随机字符串，位于 `increment_id`)。
+当支付服务将Commerce订单发送至PayPal时，增量ID包含为 `custom_id` _和_ 在 `invoice_id` (也包含随机字符串，位于 `increment_id`)。
 
 在付款的商家活动详细信息和PayPal webhook中均可轻松访问ID。
 
@@ -79,5 +79,5 @@ ht-degree: 0%
 
 有关更多信息，请参阅PayPal的REST API文档：
 
-* [`purchase_unit`，其中 `custom_id` 和 `invoice_id` 驻留](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit:~:text=Read%20only.-，purchase_unit， — 折叠)
+* [`purchase_unit`，其中 `custom_id` 和 `invoice_id` 驻留](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
 * [显示订单详细信息](https://developer.paypal.com/docs/api/orders/v2/#orders_get)
