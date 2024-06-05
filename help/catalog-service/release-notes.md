@@ -3,9 +3,9 @@ title: ’[!DNL Catalog Service] 发行说明
 description: 的最新发行信息 [!DNL Catalog Service] 用于Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: a2841b809cfc52798dc3f1bdcc033a77333bf0e5
+source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '677'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,13 @@ ht-degree: 0%
 
 _2024年5月23日_
 
-![修复](../assets/fix.svg) 此 `InStock` 现在，选项值的标记会考虑限定范围的值 `enabled` 产品变体的状态。
+![修复](../assets/fix.svg) <!--DATA-5033-->此 `InStock` 现在，选项值的标记会考虑限定范围的值 `enabled` 产品变体的状态。
+
+![修复](../assets/fix.svg) <!--DATA-5888-->添加对需要大数字（最多16位）和高小数精度（最多4位小数）的产品价格的支持。 要将价格配置更新应用到现有目录，请从以下位置重新同步目录数据： [数据管理功能板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)，或使用 [Adobe Commerce命令行界面](../landing/catalog-sync.md#command-line-interface).
+
+## 先前版本
+
++++ 先前版本
 
 ### V1.18发布
 
@@ -37,10 +43,6 @@ _2024年4月11日_
 ![新建](../assets/new.svg) 添加了对PHP 8.3的支持。
 
 ![新建](../assets/new.svg) 此 [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) 和 [`refineProduct`](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) 现在，查询会返回简单和复杂产品的可自定义选项数据。<!--DATA-5538-->
-
-## 先前版本
-
-+++ 先前版本
 
 ### V1.17发布
 
