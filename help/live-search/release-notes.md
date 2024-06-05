@@ -3,9 +3,9 @@ title: '"[!DNL Live Search] 发行说明”'
 description: “的最新发行信息 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 228ce5f3df3cc020a260fdd710eac02433d7bf0a
+source-git-commit: fe261bfaf5a64c9501bc5523d29f9b6a9fc1a6a2
 workflow-type: tm+mt
-source-wordcount: '1946'
+source-wordcount: '1966'
 ht-degree: 0%
 
 ---
@@ -28,10 +28,6 @@ _2024年2月13日_
 
 ![新建](../assets/new.svg) [!DNL Live Search] 现在支持为设置默认规则 [搜索促销](rules.md).
 
-_2023年10月27日_
-
-![新建](../assets/new.svg) 此 [!DNL Live Search] PLP构件现在支持色板。
-
 _2023年10月12日_
 
 ![新建](../assets/new.svg) Commerce管理员现在可以指定索引的语言 [!DNL Live Search]. 请参阅 [设置](settings.md).
@@ -44,6 +40,28 @@ _2023年6月13日_
 _2023年4月25日_
 
 ![新建](../assets/new.svg) [!DNL Live Search] 客户现在可以利用新的 [SaaS价格索引器](../price-index/price-indexing.md).
+
+### PLP小组件
+
+_2024年5月31日_
+
+![新建](../assets/new.svg) 发布了PLP构件版本2.0.0，其中添加了对以下功能的支持：
+
+- 添加到购物车按钮 — 仅适用于简单产品。
+- 每个产品有多个图像 — 为可配置产品选择不同颜色时，图像可能会发生更改。
+
+_2023年10月27日_
+
+![新建](../assets/new.svg) 此 [!DNL Live Search] PLP构件现在支持色板。
+
+
+## [!DNL Live Search] 4.2.0 {#420}
+
+_2024年5月31日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"}
+
+![新建](../assets/new.svg) 更新了Live Search扩展以使用PLP构件版本2.0.0。
 
 ## [!DNL Live Search] 4.1.2 {#412}
 
@@ -75,16 +93,6 @@ _2024年2月22日_
 ### 新增功能
 
 ![新建](../assets/new.svg) 此 [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) 现已推出。 这个改版后的功能板提供了有关以下内容的数据流的分析： [!DNL Product Recommendations]， [!DNL Live Search]、和 [!DNL Catalog Service].
-![新建](../assets/new.svg) 多个新增功能已添加到 [PLP小组件](plp-styling.md)：
-
-* 列表/网格视图切换
-* 添加到购物车按钮
-* 样本支持
-* 每个产品有多个图像
-* 价格滑块
-* 语言支持
-
-商家必须升级 [!DNL Live Search] 版本>= 4.1.0的扩展以访问这些功能。
 
 ### 更新
 
@@ -114,9 +122,9 @@ _2023年11月13日_
 
 安装版本3.1.1或更高版本后，启用新的索引器：
 
-* 产品价格信息源
-* 范围网站数据馈送
-* 范围客户组数据馈送
+- 产品价格信息源
+- 范围网站数据馈送
+- 范围客户组数据馈送
 
 升级后，在将更改推送到生产环境之前，请在QA或暂存中测试更新的配置。
 
@@ -145,7 +153,7 @@ _2023年9月15日_
 
 ![修复](../assets/fix.svg) 产品和价格馈送的表大小已大大减少。 表 `catalog_data_exporter_products` 和 `catalog_data_exporter_product_prices` 应该会看到规模的大幅缩减。
 ![修复](../assets/fix.svg) “规则”选项卡已重命名为“搜索规则”
-![修复](../assets/fix.svg) 当按“趋势”进行排名时，您现在可以选择以下两项：* 3天（默认）* 14天* 30天
+![修复](../assets/fix.svg) 当按“趋势”进行排名时，您现在可以选择以下选项： - 3天（默认） - 14天 — 30天
 ![修复](../assets/fix.svg) “活动”（提升/固定/伯里/隐藏）已重命名为“手动排名”
 ![修复](../assets/fix.svg) “排名类型”已重命名为“智能排名”
 ![修复](../assets/fix.svg) 次要错误修复
@@ -170,11 +178,11 @@ _2023年8月7日_
 
 ![新建](../assets/new.svg) 以下值已添加到 `storeDetails` 对象：
 
-* &quot;允许每页所有产品&quot;
-* 汇率
-* “网格上每页的产品允许值”
-* “网格上每页产品默认值”
-* 存储语言
+- &quot;允许每页所有产品&quot;
+- 汇率
+- “网格上每页的产品允许值”
+- “网格上每页产品默认值”
+- 存储语言
 
 ### 更新
 
@@ -201,7 +209,7 @@ _2023年3月14日_
 ![新建](../assets/new.svg) [产品列表页面小组件](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling)
 ![新建](../assets/new.svg) [类别过滤选项](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#facets)
 ![新建](../assets/new.svg) 添加了使用拖放操作创建Pin事件的功能
-![新建](../assets/new.svg) 新固定操作： *固定到位置 — 单击一次以固定按钮创建“固定”事件*固定到顶部 — 将产品放在第一个位置*固定到底部 — 将产品放在结果底部*一次单击即可取消固定事件
+![新建](../assets/new.svg) 新固定操作： — 固定到位置 — 单击一次以固定按钮创建“固定”事件 — 固定到顶部 — 将产品置于第一个位置 — 固定到底部 — 将产品置于结果底部 — 一次单击即可取消固定事件
 ![新建](../assets/new.svg) [规则的智能排名](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add)
 ![新建](../assets/new.svg) [!DNL Live Search] 现在支持完全 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Commerce中的功能（以前称为多源清单，或MSI）。 要启用全面支持，您必须 [更新](install.md#update) 依赖关系模块 `commerce-data-export` 到版本102.2.0+。
 
@@ -326,6 +334,6 @@ _2023年3月14日_
 
 要了解更多信息，请执行以下操作：
 
-* [Adobe Commerce开发人员文档](https://developer.adobe.com/commerce/docs)
-* [Adobe Commerce用户指南](https://experienceleague.adobe.com/en/docs/commerce)
-* [[!DNL Live Search] 在市场上](https://commercemarketplace.adobe.com/magento-live-search.html)
+- [Adobe Commerce开发人员文档](https://developer.adobe.com/commerce/docs)
+- [Adobe Commerce用户指南](https://experienceleague.adobe.com/en/docs/commerce)
+- [[!DNL Live Search] 在市场上](https://commercemarketplace.adobe.com/magento-live-search.html)
