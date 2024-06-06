@@ -3,9 +3,9 @@ title: '边界和限制'
 description: 了解的边界和限制 [!DNL Live Search] 确保它满足您的业务需求。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 29983ec083a49859b99c9c906710ce0a01054a50
+source-git-commit: 63c90d4ef0e14c0baaf8c79569a01e5dffa5b450
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -39,12 +39,14 @@ ht-degree: 0%
 - 在一个Facet中，最多可返回30个分段。 如果需要返回30个以上的分段， [创建支持票证](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) 因此，Adobe可以分析性能影响并确定为您的环境提高此限制是否可行。
 - 动态Facet会导致大型索引和高序度索引的性能问题。 如果您已创建动态Facet，并且发现任何性能下降或页面未加载但存在超时错误，请尝试将您的Facet更改为Pinded以确定这是否解决了您的性能问题。
 - 库存状态(`quantity_and_stock_status`)不支持作为Facet。 您可以使用 `inStock: 'true'` 以筛选出缺货的产品。 开箱即用支持的应用程序位于 `LiveSearchAdapter` 模块（当中的“显示缺货产品”设置为“真”） [!DNL Commerce] 管理员。
+- 不支持将日期类型属性作为Facet。
 
 ## 查询
 
 - [!DNL Live Search] 无法访问类别树的完整分类，这使得某些分层导航搜索场景无法访问。
 - [!DNL Live Search] 使用唯一 [GraphQL端点](https://developer.adobe.com/commerce/services/graphql/live-search/) 用于支持动态彩块化和按类型搜索等功能的查询。 虽然与 [GRAPHQL API](https://developer.adobe.com/commerce/webapi/graphql/)存在一些差异，一些字段可能不完全兼容。
 - 搜索查询中可返回的最大结果数为10,000。
+- 无法使用日期类型属性筛选结果。
 
 ## 规则
 
@@ -56,7 +58,7 @@ ht-degree: 0%
 ## 同义词
 
 - [!DNL Live Search] 最多可管理200个 [同义词](synonyms.md) 每个商店视图。
-- 不支持多词同义词。
+- 每个存储视图的多词同义词限制为20。
 
 ## 类别促销
 

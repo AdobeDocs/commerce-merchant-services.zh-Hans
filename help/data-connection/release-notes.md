@@ -3,9 +3,9 @@ title: 发行说明
 description: 的最新发行信息 [!DNL Data Connection] 来自Adobe Commerce的扩展。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 84094f4249eeb9f98a85e582c52e2c48e0dd9316
+source-git-commit: a2d5e695b3f6491d051da77bfc0fb596f5411c92
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '877'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,15 @@ _2022年10月12日_
 
 +++
 
+## 3.1.2
+
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+
+_2024年6月5日_
+
+![修复](../assets/new.svg)  — 修复了在启动时使用了错误日期格式的问题 [历史同步](connect-data.md#specify-order-history-date-range).
+![修复](../assets/new.svg)  — 修复了 [startCheckout](events.md#startcheckout) 事件未在Adobe Commerce 2.4.7上发送。
+
 ## 3.1.1
 
 [!BADGE 兼容性]{type=Informative tooltip="兼容性"}
@@ -121,7 +130,7 @@ _2023年6月27日_
 
 ![新建](../assets/new.svg)  — 添加了 [关闭发送店面活动](connect-data.md#data-collection) 到Experience Platform。
 ![修复](../assets/fix.svg)  — 更新了内容安全策略配置。
-![修复](../assets/fix.svg)  — 修复了对Commerce 2.4.7版本上的后台事件的支持。
+![修复](../assets/fix.svg)  — 修复了Commerce 2.4.7版本上对后台事件的支持。
 ![新建](../assets/new.svg)  — 添加了关于将更改保存到时缓存失效的通知消息 [!DNL Data Connection] 扩展表单。
 
 
