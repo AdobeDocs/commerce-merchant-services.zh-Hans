@@ -4,9 +4,9 @@ description: 了解如何使用生产和沙盒API密钥将Adobe Commerce或Magen
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 448cfcc1297aba21383cdba3284aeb95095360b2
+source-git-commit: 84238910d58e0635ae38a0ebe54903b2a2d9d666
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '1034'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,11 @@ ht-degree: 0%
 
 ### 选择或创建SaaS项目 {#createsaasenv}
 
-要选择或创建SaaS项目，请请求 [!DNL Commerce] 来自的API密钥 [!DNL Commerce] 您商店的许可证持有者。
+要选择或创建SaaS项目，请请求 [!DNL Commerce] 来自的API密钥 [!DNL Commerce] 您的商店的许可证所有者：
+
+>[!NOTE]
+>
+> 如果您没有看到 **[!UICONTROL Commerce Services Connector]** 中的部分 [!DNL Commerce] 配置，您必须安装 [!DNL Commerce] 模块满足您的需求 [[!DNL Commerce] 服务](#availableservices).
 
 1. 在 _管理员_ 侧栏，转到 **系统** >服务> **Commerce服务连接器**.
 
@@ -102,10 +106,14 @@ ht-degree: 0%
 1. 如果不存在任何SaaS项目，请单击 **创建项目**. 然后在 **项目** 字段中，输入SaaS项目的名称。
 
    创建SaaS项目时， [!DNL Commerce] 根据您的URL生成一个或多个SaaS数据空间 [!DNL Commerce] 许可证：
-   - Adobe Commerce — 一个生产数据空间；两个测试数据空间
+   - Adobe Commerce — 一个生产数据空间；仅两个测试数据空间。 在具有多个暂存环境的Cloud Pro项目上，您可以通过以下方式为每个暂存环境请求额外的测试数据空间 [提交支持请求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
    - Magento Open Source — 一个生产数据空间；无测试数据空间
 
 1. 选择 **数据空间** 用于的当前配置 [!DNL Commerce] 商店。
+
+>[!NOTE]
+>
+>如果您有单独的实例可与Commerce服务集成， [提交支持服务单](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) 为每个额外的实例请求新的SaaS项目。 在支持人员创建SaaS项目后，请使用相同的API密钥为实例配置Commerce Services集成，并为数据空间选择新的SaaS项目。
 
 >[!WARNING]
 >
