@@ -3,9 +3,9 @@ title: ’[!DNL Product Recommendations] 发行说明
 description: 的最新发行信息 [!DNL Product Recommendations] 来自Adobe Commerce的。
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 316059288ace6ebaf3748a294d8fe7351fc63bbd
+source-git-commit: 76fb723c2269cfc2af197e7facc588099be8a39f
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1329'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,7 @@ _2024年5月9日_
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![修复](../assets/fix.svg) 修复了单击 **[!DNL Add to Cart]** “产品Recommendations”单元中简单产品上的按钮将购物者重定向到主页，而不是停留在当前页面。
+![错误](../assets/bug.svg) 出现验证错误，原因是 `referenceBlock` 中的元素 `ProductRecommendations Layout` xml文件。
 
 ### 先前版本
 

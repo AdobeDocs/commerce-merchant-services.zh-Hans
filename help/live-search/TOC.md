@@ -4,10 +4,10 @@ user-guide-description: “本指南详细介绍了如何使用 [!DNL Live Searc
 breadcrumb-title: “[!DNL Live Search] 指南”
 role: Admin
 feature: Services, Search
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 5df5eef652212c095a8f46a8736e1e97426f631e
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 10%
+source-wordcount: '72'
+ht-degree: 11%
 
 ---
 
@@ -44,7 +44,6 @@ ht-degree: 10%
    - [索引](indexing.md)
    - [GraphQL](graphql.md)
    - [设置](settings.md)
-   - [Commerce配置设置](configuration.md)
 - [活动](events.md)
 - GraphQL查询 {#graphql}
    - [attributeMetadata](https://developer.adobe.com/commerce/services/graphql/live-search/attribute-metadata/)

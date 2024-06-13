@@ -3,9 +3,9 @@ title: “开始使用 [!DNL Live Search]"
 description: “了解的系统要求和安装步骤 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: c66eab4ae0dda9a447a17f357ee0bb7364dc46ba
+source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
 workflow-type: tm+mt
-source-wordcount: '2405'
+source-wordcount: '2266'
 ht-degree: 0%
 
 ---
@@ -169,7 +169,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 ## 5.配置数据
 
-正确配置产品数据可确保为您的客户获得良好的搜索结果。 在此部分中，您可以启用产品列表构件并分配类别和属性。
+正确配置产品数据可确保为您的客户获得良好的搜索结果。 在此部分中，您可以启用产品列表构件并分配类别。
 
 ### 启用产品列表小组件
 
@@ -197,16 +197,6 @@ bin/magento saas:resync --feed categoryPermissions
 ### 分配类别
 
 产品返回于 [!DNL Live Search] 必须分配给 [类别](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories). 例如，在Luma中，产品被划分为“男性”、“女性”和“齿轮”等类别。 “Top”、“Bottoms”和“Watches”也设置了子类别。 这可以提高筛选时的粒度。
-
-### 可搜索和可过滤的字段
-
-已分配产品 [属性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) 可用于搜索和筛选的规则。 属性包括“颜色”、“大小”、“材质类型”等。 利用这些属性，用户可以查找“绿色顶盖”。 每个产品可能在 [!DNL Commerce] 管理员。
-
-这些属性中的每一个都可以定义为 [&quot;searchable&quot;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 在“管理员”中。 当设置为“可搜索”时，这些属性可供搜索 [!DNL Live Search].
-
-[Facet](facets.md) 是在中定义的产品属性 [!DNL Live Search] 可筛选。 任何可过滤的属性都可以设置为中的Facet [!DNL Live Search] 但是，一次可以搜索多少个方面是有限制的。
-
-[同义词](synonyms.md) 是一些术语，您可以定义这些术语以帮助引导用户使用正确的产品。 寻找裤子的用户可能会输入“裤子”或“长裤”。 您可以设置同义词，以便这些搜索词将用户引进“裤子”结果。
 
 ## 6.测试连接 {#test-connection}
 
@@ -432,6 +422,10 @@ composer require magento/module-data-services-graphql
 - `dataServicesStorefrontInstanceContext`
 - `dataServicesMagentoExtensionContext`
 - `dataServicesStoreConfigurationContext`
+
+### B2B支持
+
+[!DNL Live Search] 支持 [B2B功能](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview) 附加 [限制](boundaries-limits.md#b2b-and-category-permissions).
 
 ### PWA支持
 
