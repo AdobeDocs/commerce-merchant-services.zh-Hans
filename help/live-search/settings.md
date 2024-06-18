@@ -2,9 +2,9 @@
 title: "设置"
 description: “配置设置 [!DNL Live Search] 服务。”
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 0%
 | 印尼语 | id |
 | 爱尔兰语 | ga |
 | 意大利语 | it |
-| 日语 | ja |
+| 日语（片假名） | ja |
 | 朝鲜语 | ko |
 | 拉脱维亚语 | lv |
 | 立陶宛语 | lt |
