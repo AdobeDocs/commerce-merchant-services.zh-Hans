@@ -2,9 +2,9 @@
 title: 载入和安装
 description: “了解如何安装 [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: a2841b809cfc52798dc3f1bdcc033a77333bf0e5
+source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '799'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 >[!TAB 云基础架构]
 
-使用此方法安装 [!DNL Catalog Service] Commerce Cloud实例的扩展。
+使用此方法安装 [!DNL Catalog Adapter] 用于Commerce Cloud实例。
 
 1. 在本地工作站上，转到云基础架构项目上Adobe Commerce的项目目录。
 
@@ -83,16 +83,16 @@ ht-degree: 0%
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. 添加目录服务模块。
+1. 添加目录适配器模块。
 
    ```bash
-   composer require "magento/catalog-service" "^3.0.1" --no-update
+   composer require magento/catalog-adapter --no-update
    ```
 
 1. 更新包依赖关系。
 
    ```bash
-   composer update "magento/catalog-service"
+   composer update "magento/catalog-adapter"
    ```
 
 1. 提交和推送对的代码更改 `composer.json` 和 `composer.lock` 文件。
@@ -105,22 +105,22 @@ ht-degree: 0%
    git push origin <branch-name>
    ```
 
-   推送更新会启动 [Commerce云部署流程](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) 以应用更改。 从检查部署状态 [部署日志](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+   将更新推送到云环境会启动 [Commerce云部署流程](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) 以应用更改。 从检查部署状态 [部署日志](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 >[!TAB 内部部署]
 
-使用此方法安装 [!DNL Catalog Service] 内部部署实例的扩展。
+使用此方法安装 [!DNL Catalog Adapter] 用于内部部署实例。
 
 1. 使用Composer将Catalog Service模块添加到您的项目中：
 
    ```bash
-   composer require "magento/catalog-service" "^3.0.1"  --no-update
+   composer require magento/catalog-adapter --no-update
    ```
 
 1. 更新依赖项并安装扩展：
 
    ```bash
-   composer update  "magento/catalog-service"
+   composer update  "magento/catalog-adapter"
    ```
 
 1. 升级Adobe Commerce：
