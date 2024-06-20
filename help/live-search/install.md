@@ -3,7 +3,7 @@ title: “开始使用 [!DNL Live Search]"
 description: “了解的系统要求和安装步骤 [!DNL Live Search] 来自Adobe Commerce。”
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: aba1f41965e6c430f569adcf9d940cf399b50b73
 workflow-type: tm+mt
 source-wordcount: '2266'
 ht-degree: 0%
@@ -216,7 +216,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 您已安装 [!DNL Live Search] 扩展、同步、验证和配置您的数据。 现在，您需要确保 [!DNL Live Search] 构件符合您商店的外观。
 
-您可以根据需要通过定义自定义CSS规则来设置弹出框和PLP小组件的样式。 请参阅 [样式弹出框元素](storefront-popover-styling.md) 和 [产品列表页面小组件](plp-styling.md).
+您可以根据需要通过定义自定义CSS规则来设置弹出框和PLP小组件的样式。 请参阅 [样式弹出框元素](storefront-popover.md#styling-popover-example) 和 [产品列表页面小组件](plp-styling.md#styling-example).
 
 如果您希望扩展小组件的功能，则每个小组件的源代码在公共存储库中可用。
 在此方案中，您可以根据自己的需求自定义JavaScript，然后将自定义代码托管在CDN上。 此自定义脚本与 [!DNL Live Search] 并返回正常结果，使您能够控制小组件的功能。

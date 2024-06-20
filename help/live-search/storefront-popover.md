@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: “ [!DNL Live Search storefront popover] 会动态返回建议的产品和缩略图。”
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: e375404a50dd4972ab584f69d7953aba2c8f4566
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,13 @@ ht-degree: 0%
 
 ![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
+>[!TIP]
+>
+>了解如何在中将产品属性设置为可搜索 [设置Live Search](workspace.md) 文章。
+
 ## [!DNL Popover] 页面大小
 
-的页面大小 [!DNL popover] 确定可以返回多少行自动完成产品。 以前，页面大小硬编码为六行。 但是， `page_size` value现在是一个设置，可以从以下位置配置： *管理员*. 在Live Search安装过程中， `page_size` 的值将更改为的当前 [目录搜索](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit` 设置。
+的页面大小 [!DNL popover] 确定可以返回多少行自动完成产品。 在Live Search安装过程中， `page_size` 的值将更改为的当前 [目录搜索](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit` 设置。
 
 默认情况下，“目录搜索 — 自动完成限制”值设置为八行。 要更改 [!DNL popover]，请执行以下操作：
 
@@ -31,22 +35,98 @@ ht-degree: 0%
 1. 设置 **自动完成限制** 到您希望在 [!DNL popover].
 1. 完成后，单击 **保存配置**.
 
-## 目录服务
+## 样式 [!DNL Popover] 示例
 
-此 [Adobe Commerce的目录服务](../catalog-service/overview.md) 扩展提供了丰富的视图模型目录数据，以便快速和完全呈现与产品相关的店面体验。 目录服务可以与Live Search结合使用，以提供本机扩展当前不支持的功能：
+您可以自定义 [!DNL Popover] 小部件，以符合贵公司的风格和品牌指南。
 
-* 扩展属性
-* 还可以引入其他产品信息
+此 [!DNL storefront popover] 始终显示产品 `name` 和 `price`，并且无法配置字段选择。 但是， [!DNL popover] 可以使用为元素设置样式 [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/) 类。 例如，以下声明更改了 [!DNL popover] 容器和页脚。
 
-商家可以使用目录服务自定义和扩展小部件或店面元素，但这不属于Adobe支持团队的范围。
+```css
+.livesearch.popover-container {
+    background-color: lavender;
+}
+
+.livesearch.view-all-footer {
+    background-color: magenta;
+}
+```
+
+## 容器可见性
+
+的父组件 `.livesearch.popover-container` 是 `.search-autocomplete`.  此 `.active` 类指示容器的可见性。 此 `.active` 类有条件地添加当 [!DNL popover] 是打开的。
+
+```css
+.search-autocomplete.active   /* visible */
+.search-autocomplete          /* not visible */
+```
+
+有关设置店面元素样式的详细信息，请参阅 [层叠样式表(CSS)](https://developer.adobe.com/commerce/frontend-core/guide/css/) 在 [前端开发人员指南](https://developer.adobe.com/commerce/frontend-core/guide/).
+
+## 类选择器
+
+您可以使用以下类选择器来设置容器和产品元素在 [!DNL popover].
+
+- `.livesearch.popover-container`
+- `.livesearch.view-all-footer`
+- `.livesearch.products-container`
+- `.livesearch.product-result`
+- `.livesearch.product-name`
+- `.livesearch.product-price`
+
+### 容器类选择器
+
+#### .livesearch.pover-container
+
+![[!DNL Popover] 容器](assets/livesearch-popover-container.png)
+
+#### .livesearch.view-all-footer
+
+![查看所有页脚](assets/livesearch-view-all-footer.png)
+
+### 产品类选择器
+
+#### .livesearch.products-container
+
+![产品容器](assets/livesearch-product-container.png)
+
+#### .livesearch.product-result
+
+![产品结果](assets/livesearch-product-result.png)
+
+#### .livesearch.product-name
+
+![产品名称](assets/livesearch-product-name.png)
+
+#### .livesearch.product-price
+
+![产品价格](assets/livesearch-product-price.png)
+
+#### .livesearch产品链接
+
+![产品结果](assets/livesearch-product-link.png)
+
+## 使用修改的主题 {#working-with-modified-theme}
+
+您可以使用 [!DNL storefront popover] 带有自定义 [主题](https://developer.adobe.com/commerce/frontend-core/guide/themes/) 所需的文件继承自 *Luma*. 此 `top.search` 中的块 `header-wrapper` 的 `Magento_Search` 不得修改模块。
+
+```html
+<referenceContainer name="header-wrapper">
+   <block class="Magento\Framework\View\Element\Template" name="top.search" as="topSearch" template="Magento_Search::form.mini.phtml">
+      <arguments>
+         <argument name="configProvider" xsi:type="object">Magento\Search\ViewModel\ConfigProvider</argument>
+      </arguments>
+   </block>
+</referenceContainer>
+```
+
+## 禁用 [!DNL popover]
+
+要禁用 [!DNL popover] 并恢复标准 [快速搜索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 功能，输入以下命令：
+
+```bash
+bin/magento module:disable Magento_LiveSearchStorefrontPopover
+```
 
 ## Headless实施
 
-对于具有Headless实施的客户，可以使用安装实时搜索弹出框 [npm包](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).
-
-## 限制
-
-* 此 [!DNL Live Search] [!DNL storefront popover] 仅适用于使用 *Luma* 主题，或基于 *Luma*. 搜索结果页面上的痕迹导航不具有 *Luma* 样式。
-* 此 [!DNL popover] 不支持 *空白* 主题。 请参阅 [样式 [!DNL Popover] 元素](storefront-popover-styling.md) 了解更多信息。
-* 此 [!DNL popover] 快速订购表单上不支持。
-* 不支持愿望清单和产品比较。
+对于采用Headless实施的客户，您可以安装 [!DNL Live Search popover] 使用 [npm包](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).

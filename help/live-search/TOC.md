@@ -4,10 +4,10 @@ user-guide-description: “本指南详细介绍了如何使用 [!DNL Live Searc
 breadcrumb-title: “[!DNL Live Search] 指南”
 role: Admin
 feature: Services, Search
-source-git-commit: 5df5eef652212c095a8f46a8736e1e97426f631e
+source-git-commit: a1d3e87f71a19df355009a7ae5d736b5d2dc7b15
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 11%
+source-wordcount: '74'
+ht-degree: 10%
 
 ---
 
@@ -15,14 +15,14 @@ ht-degree: 11%
 
 - [什么是 [!DNL Live Search]？](overview.md)
 - [安装](install.md)
+- [设置Live Search](workspace.md)
 - [边界和限制](boundaries-limits.md)
 - [发行说明](release-notes.md)
 - 店面 {#live-search-storefront}
-   - [产品列表页面小组件](plp-styling.md)
+   - [店面小组件](storefront-widgets.md)
+   - [产品列表页面](plp-styling.md)
    - [店面 [!DNL Popover]](storefront-popover.md)
-   - [样式 [!DNL Popover] 元素](storefront-popover-styling.md)
 - 管理员 {#live-search-admin}
-   - [工作区](workspace.md)
    - [性能](performance.md)
    - Facet {#facets}
       - [概述](facets.md)
