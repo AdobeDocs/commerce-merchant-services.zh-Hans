@@ -1,15 +1,15 @@
 ---
 title: 查看日志并排除故障
-description: “了解如何进行故障排除 [!DNL data export] 使用data-export和saas-export日志时出错。”
+description: 了解如何进行故障排除 [!DNL data export] 使用data-export和saas-export日志时出错。
 feature: Services
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 55903c19-af3a-4115-a7be-9d1efaed8140
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
-
 
 # 查看日志并排除故障
 
@@ -26,9 +26,7 @@ ht-degree: 0%
 | SaaS导出日志 | `saas-export.log` | 提供有关发送到Commerce SaaS服务的数据的信息。 |
 | SaaS导出错误日志 | `saas-export-errors.log` | 提供有关将数据发送到Commerce SaaS服务时发生的错误的信息。 |
 
-如果您没有看到Adobe Commerce服务的预期数据，请使用数据导出扩展的错误日志来确定出现问题的位置。
-
-您可以使用其他数据扩展日志，以进行跟踪和故障排除。 请参阅 [扩展日志记录](#extended-logging).
+如果您没有看到Adobe Commerce服务的预期数据，请使用数据导出扩展的错误日志来确定出现问题的位置。 此外，您还可以使用其他数据扩展日志，以进行跟踪和故障排除。 请参阅 [扩展日志记录](#extended-logging).
 
 ### 日志格式
 
@@ -85,7 +83,7 @@ ht-degree: 0%
    - **`"synced" < "processed"`** 这意味着与之前同步的版本相比，信息源表未检测到项目中的任何更改。 在同步操作过程中将忽略此类项目。
    - **`"synced" > "processed"`** 相同的实体id(例如， `Product ID`)可以在不同范围中具有多个值。 例如，一个产品可以分配给五个网站。 在这种情况下，您可能具有“1个已处理”项目和“5个已同步”项目。
 
-+++ 示例：价格馈送的完整重新同步日志
++++ **示例：价格馈送的完整重新同步日志**
 
 ```
 Price feed full resync:
@@ -125,7 +123,42 @@ Price feed full resync:
 
 **示例查询字符串**—`feed.feed:"products" and feed.status:"Complete"`
 
+## 故障排除
+
+如果Commerce Services中的数据缺失或不正确，请检查日志，以查看在从Adobe Commerce实例同步到Commerce服务平台期间是否出现问题。 如果需要，可使用扩展日志记录将其他信息添加到日志以进行故障排除。
+
+- commerce-data-export-errors.log — 如果在收集阶段发生错误
+- saas-export-errors.log — 如果在传输阶段发生错误
+
+如果您看到与配置或第三方扩展无关的错误，请提交 [支持服务单](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) 尽可能多的信息。
+
+### 解决目录同步问题 {#resolvesync}
+
+触发数据重新同步时，最多可能需要一小时才能更新数据并反映在UI组件中，例如实时搜索和推荐单元。 如果您仍然看到目录与Commerce店面中的数据之间存在差异，或者如果目录同步失败，请参阅以下内容：
+
+#### 数据差异
+
+1. 在搜索结果中显示相关产品的详细视图。
+1. 复制JSON输出，并验证内容是否与您在 [!DNL Commerce] 目录。
+1. 如果内容不匹配，请对目录中的产品进行细微更改，例如添加空格或句点。
+1. 等待重新同步或 [触发手动重新同步](#resync).
+
+#### 同步未运行
+
+如果同步未按计划运行或未同步任何内容，请参阅此 [知识库](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) 文章。
+
+#### 同步失败
+
+如果目录同步的状态为 **失败**，提交 [支持服务单](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+
 ## 扩展日志记录
+
+有关其他日志信息，您可以使用环境变量通过用于跟踪和疑难解答的其他数据来扩展日志。
+
+中有两个日志文件 `var/log/` 目录：
+
+- commerce-data-export-errors.log — 如果在收集阶段发生错误
+- saas-export-errors.log — 如果在传输阶段发生错误
 
 您可以使用环境变量通过其他数据扩展日志，以进行跟踪和故障排除。
 
@@ -164,7 +197,3 @@ Profiler数据存储在数据导出日志中(`var/log/commerce-data-export.log`)
 ```
 <Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>
 ```
-
-
-
-

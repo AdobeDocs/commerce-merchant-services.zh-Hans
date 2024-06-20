@@ -1,18 +1,23 @@
 ---
 title: 将数据与SaaS数据导出同步
-description: “了解如何 [!DNL SaaS Data Export] 在Adobe Commerce实例和连接的SaaS服务之间收集并同步数据。”
+description: 了解如何 [!DNL SaaS Data Export] 在Adobe Commerce实例和连接的SaaS服务之间收集并同步数据。
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 530a6ed7-46ec-45fc-94e9-c850168e8aed
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
 
 # 将数据与SaaS数据导出同步
 
-当您安装需要数据导出的Commerce服务(如Catalog Service、Live Search或Product Recommendations)时，将安装一组Saas数据导出模块以管理数据收集和同步过程。 下图显示了SaaS数据导出流程。
+当您安装需要数据导出的Commerce服务(如Catalog Service、Live Search或Product Recommendations)时，将安装一组Saas数据导出模块以管理数据收集和同步过程。
+
+SaaS数据导出会持续将产品数据从Adobe Commerce实例移动到Commerce Services平台，以使数据保持最新。 例如，产品Recommendations需要当前的目录信息才能准确地返回具有正确名称、定价和可用性的推荐。 使用 [数据管理功能板](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) 观察和管理同步过程，或使用命令行界面触发同步并重新索引产品数据以供Commerce服务使用。
+
+下图显示了SaaS数据导出流程。
 
 ![适用于Adobe Commerce的SaaS数据导出收集和同步流程](assets/data-export-flow.png){width="900" zoomable="yes"}
 

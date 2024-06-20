@@ -2,9 +2,9 @@
 title: 载入和安装
 description: “了解如何安装 [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '823'
 ht-degree: 0%
 
 ---
@@ -152,6 +152,10 @@ ht-degree: 0%
 1. 从执行初始数据同步 [数据管理功能板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
 
    初始同步可能需要几分钟到几小时时间，具体取决于目录大小。 您可以从“数据管理”仪表板监视同步状态。 初始同步后，目录会持续导出产品数据以使服务保持最新。
+
+   >[!NOTE]
+   >
+   >您还可以使用Commerce CLI从命令行启动初始同步。 请参阅 [初始同步](../data-export/data-export-cli-commands.md#initial-sync) 在 _SaaS数据导出指南_.
 
 要确保正确运行目录导出，请执行以下操作：
 
