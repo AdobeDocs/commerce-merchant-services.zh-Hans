@@ -4,9 +4,9 @@ description: 了解如何使用生产和沙盒API密钥将Adobe Commerce或Magen
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 84238910d58e0635ae38a0ebe54903b2a2d9d666
+source-git-commit: 3eb873c84edb56d2fc399c72296f2b545a78064e
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1051'
 ht-degree: 0%
 
 ---
@@ -125,6 +125,6 @@ ht-degree: 0%
 
 要将您的Adobe Commerce实例连接到Adobe Experience Platform，请使用Adobe ID登录到您的Adobe帐户。 登录后，与您的Adobe帐户关联的IMS组织将显示在此部分中。
 
-## 目录同步
+## SaaS数据导出
 
-当 [!DNL Commerce] 实例已成功连接到 [!DNL Commerce Services]，目录同步过程会从您的 [!DNL Commerce] 服务器至 [!DNL Commerce Services]. 目前，只有产品Recommendations使用目录同步服务。 [了解详情](catalog-sync.md) 关于目录同步过程。
+当 [!DNL Commerce] 实例已成功连接到 [!DNL Commerce Services]，SaaS数据导出流程将从以下位置导出Commerce数据： [!DNL Commerce] 服务器至 [!DNL Commerce SaaS Services] 以便将其同步到连接的Commerce服务。 在Admin中，您可以使用 [数据管理功能板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). 有关详细信息，请参见 [SaaS数据导出指南](../data-export/overview.md).
