@@ -2,9 +2,9 @@
 title: '设置实时搜索'
 description: 此 [!DNL Live Search] 工作区用于配置、管理和监视搜索性能。
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: 5e79bb43449b95b4c6aa0e234a0dbc999c312e59
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,20 @@ ht-degree: 0%
 
 可在工作区中配置、管理和监控以下各项的性能 [!DNL Live Search]. 顶部的菜单提供对各个功能区域中工具的访问。 可用功能反映当前的菜单选择。
 
-![工作区](assets/workspace.png)
+![Workspace](assets/workspace.png)
+
+## 数据收集
+
+要确保工作区上的每个功能区域都包含正确的数据，您需要根据选定的店面实施配置数据收集：
+
+1. Luma — 数据收集现成可用。
+1. Headless — 根据店面实施，必须手动配置数据收集。
+
+如果您使用的是Headless店面，请参阅以下文档以获得有关需要添加的事件的更多信息：
+
+- [必需事件](events.md) 用于“实时搜索”功能板。
+- [店面事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) 需要添加为先决条件。
+- [示例](https://github.com/adobe/commerce-events/tree/main/examples) 事件结构的属性。
 
 ## 设置范围
 
@@ -41,15 +54,15 @@ ht-degree: 0%
 1. 选择要可搜索的属性，例如 `color`.
 1. 选择 **店面属性** 并设置 **在搜索中使用** 到 `yes`.
 
-   ![工作区](assets/attribute-searchable.png)
+   ![Workspace](assets/attribute-searchable.png)
 
 [!DNL Live Search] 也尊重 [粗细](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) ，在Adobe Commerce中设置。 权重较高的属性在搜索结果中的显示位置将较高。
 
 以下属性始终可搜索：
 
-* `sku`
-* `name`
-* `categories`
+- `sku`
+- `name`
+- `categories`
 
 [Facet](facets.md) 是在中定义的产品属性 [!DNL Live Search] 可筛选。 您可以将任何可过滤的属性设置为Facet [!DNL Live Search]，但有 [限制](boundaries-limits.md) 一次可以搜索的Facet的数量。
 
