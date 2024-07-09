@@ -4,9 +4,9 @@ description: 使用事务报表可以查看事务授权率和事务趋势。
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: 9f0381546a98a8a5d72394adbd3ddd49daf539cb
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '1264'
 ht-degree: 0%
 
 ---
@@ -35,15 +35,19 @@ ht-degree: 0%
 
 在 _管理员_ 侧栏，转到 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**查看详细的表格“事务处理”报告视图。
 
-![交易报表视图](assets/transactions-report-detail.png){width="600" zoomable="yes"}
+![交易报表视图](assets/transactions-report-view.png){width="600" zoomable="yes"}
 
 您可以根据本主题中的部分对此视图进行配置，以便最好地呈现您希望查看的数据。
 
-请参阅链接的商务订单和提供商交易ID、交易金额、每笔交易的支付方式等，所有这些都包含在此报表中。
+请参阅此报表中的链接Commerce订单和提供商交易ID、交易金额、每笔交易的支付方式等。
 
 并非所有支付方式都提供相同的信息粒度。 例如，信用卡交易提供回复、AVS和CCV代码，以及“交易”报表中卡的最后四位；PayPal支付按钮不提供。
 
 您可以 [下载事务](#download-transactions) CSV文件格式，用于现有会计或订单管理软件。
+
+>[!WARNING]
+>
+> 事务报表不包含任何在外部进行的捕获 [!DNL Payment Services].
 
 ### 选择数据源
 
@@ -127,8 +131,9 @@ ht-degree: 0%
 
 | 列 | 描述 |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | 商业订单ID（仅包含成功交易的值，对于拒绝的交易为空）<br> <br>查看相关内容 [订单信息](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}中，单击ID。 |
+| [!UICONTROL Order ID] | Commerce订单ID（仅包含成功交易的值，对于被拒绝的交易为空）<br> <br>查看相关内容 [订单信息](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}中，单击ID。 |
 | [!UICONTROL Provider Transaction ID] | 由付款提供商提供的交易ID；仅包含成功交易的值，并包含拒绝交易的短划线。 |
+| [!UICONTROL Customer ID] | 订单的Commerce客户编号<br> <br>请参阅 [客户信息](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} 主题以了解更多信息。 |
 | [!UICONTROL Transaction Date] | 交易日期时间戳 |
 | [!UICONTROL Payment Method] | 具有品牌和卡类型详细信息的交易的支付方法。 请参阅 [信息卡类型](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) 有关更多信息；适用于Payment Services 1.6.0及更高版本 |
 | [!UICONTROL Card Last Four Digits] | 用于交易记录的信用卡或借记卡的最后四位数字 |
