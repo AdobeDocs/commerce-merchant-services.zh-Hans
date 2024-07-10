@@ -2,7 +2,7 @@
 title: 载入和安装
 description: “了解如何安装 [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
+source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
 workflow-type: tm+mt
 source-wordcount: '823'
 ht-degree: 0%
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 >[!TAB 云基础架构]
 
-使用此方法安装 [!DNL Catalog Adapter] 用于Commerce Cloud实例。
+使用此方法安装 [!DNL Catalog Service] 用于Commerce Cloud实例。
 
 1. 在本地工作站上，转到云基础架构项目上Adobe Commerce的项目目录。
 
@@ -83,16 +83,16 @@ ht-degree: 0%
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. 添加目录适配器模块。
+1. 添加目录服务模块。
 
    ```bash
-   composer require magento/catalog-adapter --no-update
+   composer require magento/catalog-service --no-update
    ```
 
 1. 更新包依赖关系。
 
    ```bash
-   composer update "magento/catalog-adapter"
+   composer update "magento/catalog-service"
    ```
 
 1. 提交和推送对的代码更改 `composer.json` 和 `composer.lock` 文件。
@@ -109,18 +109,18 @@ ht-degree: 0%
 
 >[!TAB 内部部署]
 
-使用此方法安装 [!DNL Catalog Adapter] 用于内部部署实例。
+使用此方法安装 [!DNL Catalog Service] 用于内部部署实例。
 
 1. 使用Composer将Catalog Service模块添加到您的项目中：
 
    ```bash
-   composer require magento/catalog-adapter --no-update
+   composer require magento/catalog-service --no-update
    ```
 
 1. 更新依赖项并安装扩展：
 
    ```bash
-   composer update  "magento/catalog-adapter"
+   composer update  "magento/catalog-service"
    ```
 
 1. 升级Adobe Commerce：
@@ -175,7 +175,7 @@ ht-degree: 0%
 
 ## 目录服务和API网格
 
-此 [适用于Adobe Developer App Builder的API网格](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 使开发人员能够使用AdobeIO将专用或第三方API以及其他界面与Adobe产品集成。
+此 [适用于Adobe Developer App Builder的API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 使开发人员能够使用AdobeIO将专用或第三方API以及其他界面与Adobe产品集成。
 
 请参阅 [[!DNL Catalog Service] 和API Mesh](mesh.md) 有关安装和配置详细信息的主题。
 

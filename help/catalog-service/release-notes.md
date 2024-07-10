@@ -3,9 +3,9 @@ title: ’[!DNL Catalog Service] 发行说明
 description: 的最新发行信息 [!DNL Catalog Service] 用于Adobe Commerce。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
+source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,22 @@ _2024年5月23日_
 ![修复](../assets/fix.svg) <!--DATA-5033-->此 `InStock` 现在，选项值的标记会考虑限定范围的值 `enabled` 产品变体的状态。
 
 ![修复](../assets/fix.svg) <!--DATA-5888-->添加对需要大数字（最多16位）和高小数精度（最多4位小数）的产品价格的支持。 要将价格配置更新应用到现有目录，请从以下位置重新同步目录数据： [数据管理功能板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)，或使用 [Adobe Commerce命令行界面](../landing/catalog-sync.md#command-line-interface).
+
+#### 已知限制
+
+尚不支持以下功能：
+
+* 动态属性有效负载的最大大小为9 MB。
+* 本集团产品价格可按简单产品价格计算。
+* 在图像数组中，只有第一个图像包含角色。
+
+通过使用API Mesh和核心GraphQL API解决以下限制：
+
+* 最低广告价格
+* 分层定价
+* 捆绑固定价格的产品
+
+有关详细信息和示例，请参阅 [目录服务和API网格](mesh.md)
 
 ## 先前版本
 
@@ -59,7 +75,6 @@ _2024年2月13日_
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![新建](../assets/new.svg) 目录服务API现在支持产品视频。
-![修复](../assets/fix.svg) 现在支持固定价格的捆绑产品。
 ![修复](../assets/fix.svg) 缺货期权现在显示在PDP构件中。
 
 #### 已知限制
@@ -134,7 +149,7 @@ _2023年3月6日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
-![新建](../assets/new.svg) 已添加 [`categories`](https://developer.adobe.com/commerce/services/graphql/schema/catalog-service/categories/) GraphQL功能。
+![新建](../assets/new.svg) 已添加 [`categories`](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/) GraphQL功能。
 ![修复](../assets/fix.svg) 改进了性能和API可扩展性。
 
 ### V1.4发布
@@ -187,7 +202,7 @@ _2022年9月12日_
 ![修复](../assets/fix.svg) 提高了服务的稳定性和性能
 ![新建](../assets/new.svg) 从目录中删除产品时会收到更新
 
-### 测试版
+### Beta版本
 
 _2022年8月9日_
 
