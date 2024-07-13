@@ -1,62 +1,63 @@
 ---
 title: '边界和限制'
-description: 了解的边界和限制 [!DNL Live Search] 确保它满足您的业务需求。
+description: 了解 [!DNL Live Search] 的界限和限制，以确保它满足您的业务需求。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
+source-git-commit: 2d383d6b0d9e7b915fac32f90b25f1640dcab6cf
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '724'
 ht-degree: 0%
 
 ---
 
 # 边界和限制
 
-在网站搜索方面，Adobe Commerce会为您提供各种选项。 检讨以下界限及限制，以确保 [!DNL Live Search] 和 [!DNL Catalog Service] 满足您的业务需求。 如果您需要高级搜索功能，例如内容搜索、自带算法(BYOA)或基于属性的促销，请考虑使用第三方搜索解决方案。
+在网站搜索方面，Adobe Commerce会为您提供各种选项。 查看以下边界和限制以确保[!DNL Live Search]和[!DNL Catalog Service]满足您的业务需求。 如果您需要高级搜索功能，例如内容搜索、自带算法(BYOA)或基于属性的促销，请考虑使用第三方搜索解决方案。
 
 ## 常规
 
-- 此 [高级搜索](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 在以下情况下将禁用模块 [!DNL Live Search] ，并删除店面页脚中的高级搜索链接。
-- [分层定价](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) 和 [特殊定价](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) 不支持 [!DNL Live Search] 字段和产品列表页面小组件。
+- 安装[!DNL Live Search]后，[高级搜索](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)模块被禁用，店面页脚中的高级搜索链接被删除。
+- [层定价](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier)和[特殊定价](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special)在[!DNL Live Search]字段和产品列表页小部件中不受支持。
 - 产品价格不含增值税。
 - 不支持内容搜索。
 - 可分页的产品数量限制为10,000个。
-- 搜索适配器不支持使用自定义源模型创建并用作彩块化的产品属性。 要支持此功能，您必须使用 [产品列表页面小组件](plp-styling.md).
+- 每个属性（包括描述和自定义属性）硬限制为1MB。
+- 搜索适配器不支持使用自定义源模型创建并用作彩块化的产品属性。 若要支持此功能，您必须使用[产品列表页小组件](plp-styling.md)。
 
 ## 索引
 
-- [!DNL Live Search] [索引](indexing.md) 每个商店视图最多共有450个产品属性。 其分布情况如下：
+- [!DNL Live Search] [索引](indexing.md)每个商店视图最多包含450个产品属性。 其分布情况如下：
    - 50个可排序的属性
    - 200个可过滤属性
    - 200个可搜索属性
-- [!DNL Live Search] 仅对Adobe Commerce数据库中的产品编制索引。
+- [!DNL Live Search]仅对Adobe Commerce数据库中的产品编制索引。
 - CMS页面未编制索引。
 - 默认情况下，SKU、名称和类别属性可搜索，并且无法从搜索中排除。 如果类别中没有预期的产品，请确保从这些类别中取消分配这些产品。
 
 ## Facet
 
 - 最多可以将100个属性配置为可编制索引的200个可筛选属性中的Facet。
-- 在一个Facet中，最多可返回30个分段。 如果需要返回30个以上的分段， [创建支持票证](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) 因此，Adobe可以分析性能影响并确定为您的环境提高此限制是否可行。
+- 在一个Facet中，最多可返回30个分段。 如果需要返回30个以上的存储段，请[创建支持票证](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)，以便Adobe分析性能影响并确定是否可以为您的环境提高此限制。
 - 动态Facet会导致大型索引和高序度索引的性能问题。 如果您已创建动态Facet，并且发现任何性能下降或页面未加载但存在超时错误，请尝试将您的Facet更改为Pinded以确定这是否解决了您的性能问题。
-- 库存状态(`quantity_and_stock_status`)不支持作为Facet。 您可以使用 `inStock: 'true'` 以筛选出缺货的产品。 开箱即用支持的应用程序位于 `LiveSearchAdapter` 模块（当中的“显示缺货产品”设置为“真”） [!DNL Commerce] 管理员。
+- Stock状态(`quantity_and_stock_status`)不支持作为Facet。 您可以使用`inStock: 'true'`筛选缺货产品。 当[!DNL Commerce]管理员中的“Display out of stock products”设置为“True”时，`LiveSearchAdapter`模块即开即用支持此功能。
 - 不支持将日期类型属性作为Facet。
 
 ## 查询
 
-- [!DNL Live Search] 使用唯一 [GraphQL端点](https://developer.adobe.com/commerce/services/graphql/live-search/) 用于支持动态彩块化和按类型搜索等功能的查询。 虽然与 [GRAPHQL API](https://developer.adobe.com/commerce/webapi/graphql/)存在一些差异，一些字段可能不完全兼容。
+- [!DNL Live Search]对查询使用唯一的[GraphQL端点](https://developer.adobe.com/commerce/services/graphql/live-search/)以支持动态彩块化和按类型搜索等功能。 尽管与[GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/)类似，但存在一些差异，并且某些字段可能不完全兼容。
 - 搜索查询中可返回的最大结果数为10,000。
 - 无法使用日期类型属性筛选结果。
 
 ## 规则
 
-- 搜索促销的最大数量 [规则](rules.md) 每个商店视图为50。
+- 每个存储视图的最大搜索推销[规则](rules.md)数为50。
 - 类别促销在每个类别中可以有一个规则。
 - 每个规则的最大条件数为10。
 - 每个规则的最大事件数为25。
 
 ## 同义词
 
-- [!DNL Live Search] 最多可管理200个 [同义词](synonyms.md) 每个商店视图。
+- [!DNL Live Search]在每个存储视图中最多可管理200个[同义词](synonyms.md)。
 - 每个存储视图的多词同义词限制为20。
 
 ## 类别促销
@@ -72,12 +73,12 @@ ht-degree: 0%
    - 必须将产品分配到根类别。
    - 必须向“未登录”客户组提供“允许”浏览权限。
    - 要将产品限制为“未登录”客户组，请转至每个类别并为每个客户组设置权限。
-- 目前不支持对PWA Studio上具有PLP小组件的B2B的现成支持。 但是，您可以 [使用API](install.md#pwa-support) 以实施此功能。
-- 中的类别Facet [!DNL Live Search] 可能会显示无法显示给特定客户组的类别。
+- 目前不支持对PWA Studio上具有PLP小组件的B2B的现成支持。 但是，您可以[使用API](install.md#pwa-support)来实施此功能。
+- [!DNL Live Search]中的类别Facet可能显示无法向特定客户组显示的类别。
 
 ## [!DNL Storefront popover]
 
-- 此 [[!DNL popover]](storefront-popover.md) 仅适用于使用 *Luma* 主题，或基于 *Luma*. 搜索结果页面上的痕迹导航不具有 *Luma* 样式。
-- 此 [!DNL popover] 不支持 *空白* 主题。
-- 此 [!DNL popover] 快速订购表单上不支持。
+- [[!DNL popover]](storefront-popover.md)仅适用于使用&#x200B;*Luma*&#x200B;主题或基于&#x200B;*Luma*&#x200B;的自定义主题的商店。 搜索结果页面上的痕迹导航将没有&#x200B;*Luma*&#x200B;样式。
+- [!DNL popover]不支持&#x200B;*Blank*&#x200B;主题。
+- 快速订购单不支持[!DNL popover]。
 - 不支持愿望清单和产品比较。
