@@ -1,18 +1,19 @@
 ---
-title: '使用API Mesh显示计税价格'
-description: '''使用 [!DNL API Mesh] 以便Adobe Commerce和目录服务显示含税价格。'
+title: 使用API网格显示计税价格
+description: 使用Adobe Commerce和目录服务的 [!DNL API Mesh] 显示含税价格。
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
-source-git-commit: d235f28c7f438fe89eb20ea7ef8bda7ae39733c0
+exl-id: 0d3da296-4409-4653-b397-99eae35e4cb7
+source-git-commit: 33573d3fb75e7a822b3d6ad8a9e45d2ebee4a3c3
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 0%
 
 ---
 
-# 使用Adobe Developer App Builder的API网格显示计税价格
+# 使用Adobe Developer App Builder的API Mesh显示计税价格
 
-[API网格](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 使开发人员能够使用Adobe I/O Runtime将专用或第三方API和其他界面与Adobe产品集成。
+[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/)使开发人员能够使用Adobe I/O Runtime将私有或第三方API和其他接口与Adobe产品集成。
 
 在本主题中，API网格用于在产品详细信息页面上显示产品价格，并包含税费。
 
@@ -20,18 +21,18 @@ ht-degree: 0%
 
 您必须为其配置税才能在产品详细信息页面上显示。
 
-1. [设置税率](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html).
-1. 启用税为 [在目录中显示](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html#step-1%3A-configure-catalog-prices-display-settings)，并将其设置为 `Including and Excluding Tax` 或 `Including Tax`.
+1. [设置税率](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html)。
+1. 使税在目录](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html#step-1%3A-configure-catalog-prices-display-settings)中显示为[，并将其设置为`Including and Excluding Tax`或`Including Tax`。
 
 通过检查产品详细信息页面，验证目录服务是否正常工作。
 
-![产品详细信息页面上显示的税额](assets/display-tax.png)
+产品详细信息页面上显示![税费](assets/display-tax.png)
 
 ## 配置API网格
 
-如果尚未这样做，请将API网格与目录服务连接到您的实例。 欲知详情，请参阅 [快速入门](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) API Mesh开发人员指南中的主题。
+如果尚未这样做，请将API网格与目录服务连接到您的实例。 请参阅API Mesh开发人员指南的[快速入门](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/)主题中的详细说明。
 
-在 `mesh.json` 文件，替换 `name `， `endpoint`、和 `x-api-key` 值。
+在`mesh.json`文件中，替换`name `、`endpoint`和`x-api-key`值。
 
 ```json
 {
@@ -104,17 +105,17 @@ ht-degree: 0%
   }
 ```
 
-此 `mesh.json` 配置文件：
+此`mesh.json`配置文件：
 
 * 转换Commerce核心应用程序以要求在其任何查询或类型之前添加“Core_”。 这样可防止与目录服务可能出现的命名冲突。
-* 扩展 `ComplexProductView` 和 `SimpleProductView` 类型具有名为的新字段 `priceWithTaxes`.
+* 使用名为`priceWithTaxes`的新字段扩展`ComplexProductView`和`SimpleProductView`类型。
 * 为新字段添加自定义解析程序。
 
-使用创建网格 [create命令](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/#create-a-mesh-1) 使用 `mesh.json` 文件。
+使用[创建命令](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/#create-a-mesh-1)和`mesh.json`文件创建网格。
 
 ### GraphQL查询
 
-您可以检索新的 `priceWithTaxes` 数据使用GraphQL。
+您可以使用GraphQL检索新的`priceWithTaxes`数据。
 
 查询示例：
 

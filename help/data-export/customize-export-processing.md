@@ -1,9 +1,10 @@
 ---
 title: 提高SaaS数据导出性能
-description: “了解如何使用多线程数据导出模式提高Commerce服务的SaaS数据导出性能。”
+description: 了解如何使用多线程数据导出模式提高Commerce服务的SaaS数据导出性能。
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 20c81ef4-5a97-45cd-9401-e82910a2ccc3
+source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 # 提高SaaS数据导出性能
 
-**多线程数据导出模式** 通过将馈送数据拆分为多个批次并并行处理这些批次来加快导出过程。
+**多线程数据导出模式**&#x200B;通过将馈送数据拆分为多个批次并并行处理来加速导出过程。
 
 开发人员或系统集成商可以通过使用多线程数据导出模式而不是默认的单线程模式来提高性能。 在单线程模式下，馈送提交过程不会并行化。 此外，由于设置了默认限制，所有客户端只能使用一个线程。 在大多数情况下，不需要自定义配置。
 
@@ -23,13 +24,13 @@ Adobe建议使用默认配置进行数据摄取，这通常满足Commerce商家�
 
 在决定是否自定义数据导出配置时，请考虑以下关键因素：
 
-- **初始同步** — 评估产品数量和 [估计数据量及传输时间](estimate-data-volume-sync-time.md) 基于默认配置。 问问自己：您能否在载入Commerce服务后等待此初始数据同步？
+- **初始同步** — 评估产品数量，[根据默认配置估计数据量和传输时间](estimate-data-volume-sync-time.md)。 问问自己：您能否在载入Commerce服务后等待此初始数据同步？
 
-- **添加新的商店视图或网站** — 如果您计划在上线后添加具有相同产品数的商店视图或网站，请估计数据量并传输时间。 确定使用默认配置时同步时间是否可接受，或者是否需要多线程处理。
+- **添加新的商店视图或网站** — 如果您计划在上线后添加具有相同产品数的商店视图或网站，请估计数据量和传输时间。 确定使用默认配置时同步时间是否可接受，或者是否需要多线程处理。
 
-- **常规导入** — 预测常规进口，如价格更新或库存状态更改。 评估这些更新是否可以在一个可接受的时间范围内应用，或者是否需要更快的处理。
+- **常规导入** — 预测常规导入，如价格更新或库存状态更改。 评估这些更新是否可以在一个可接受的时间范围内应用，或者是否需要更快的处理。
 
-- **产品权重** — 考虑您的产品是轻的还是重的。 如果产品说明或属性夸大了产品大小，则相应地调整批次大小。
+- **产品重量** — 考虑您的产品是轻量还是重量。 如果产品说明或属性夸大了产品大小，则相应地调整批次大小。
 
 请记住，周到的规划（包括估计数据量以及同步时间）通常可以消除自定义的需要。 根据这些估计安排信息源摄取操作以实现最佳结果。
 
@@ -39,10 +40,10 @@ Adobe建议使用默认配置进行数据摄取，这通常满足Commerce商家�
 
 ## 配置多线程
 
-所有应用程序均支持多线程模式 [同步方法](data-synchronization.md#synchronization-process) — 完全同步、部分同步和失败的项目同步。 要配置多线程，请指定同步过程中要使用的线程数和批处理大小。
+所有[同步方法](data-synchronization.md#synchronization-process)都支持多线程模式 — 完全同步、部分同步和失败项目同步。 要配置多线程，请指定同步过程中要使用的线程数和批处理大小。
 
-- `threadCount` 是激活到进程实体的线程数。 默认 `threadCount` 是 `1`.
-- `batchSize` 是一个迭代中处理的实体数。 默认 `batchSize` 是 `100` 除价格馈送之外的所有馈送的记录。 对于价格馈送，默认值为 `500` 记录。
+- `threadCount`是激活到进程实体的线程数。 默认`threadCount`为`1`。
+- `batchSize`是一个迭代中处理的实体数。 除价格馈送之外，所有馈送的默认`batchSize`是`100`条记录。 对于价格馈送，默认值为`500`条记录。
 
 您可以在运行resync命令时将多线程配置为临时选项，或者通过将多线程配置添加到Adobe Commerce应用程序配置中来配置多线程。
 
@@ -52,19 +53,19 @@ Adobe建议使用默认配置进行数据摄取，这通常满足Commerce商家�
 
 ### 在运行时配置多线程
 
-从命令行运行完整同步命令时，通过添加 `threadCount` 和 `batchSize` CLI命令选项。
+从命令行运行完整同步命令时，通过将`threadCount`和`batchSize`选项添加到CLI命令来指定多线程处理。
 
 ```
 bin/magento saas:resync --feed=products --threadCount=2 --batchSize=200
 ```
 
-在命令行中指定的选项会覆盖Adobe Commerce应用程序中指定的数据导出配置 `config.php` 文件。
+在命令行中指定的选项会覆盖Adobe Commerce应用程序`config.php`文件中指定的数据导出配置。
 
 ### 将多线程添加到Commerce配置
 
 要使用多线程处理所有数据导出操作，系统集成商或开发人员可以在Commerce应用程序配置中修改每个馈送的线程数和批量大小。
 
-可以通过将自定义值添加到 [系统部分](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) 配置文件的URL， `app/etc/config.php`.
+可以通过将自定义值添加到配置文件`app/etc/config.php`的[系统节](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system)来应用这些更改。
 
 **示例：为产品和价格配置多线程**
 

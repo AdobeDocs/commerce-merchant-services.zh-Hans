@@ -1,6 +1,6 @@
 ---
 title: "索引"
-description: “了解如何 [!DNL Live Search] 索引产品属性属性。”
+description: “了解 [!DNL Live Search] 如何索引产品属性属性。”
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 索引
 
-此 [!DNL Live Search] 索引过程读取产品属性的目录并建立索引，以便快速搜索、过滤和展示产品。
+[!DNL Live Search]索引过程读取目录中的产品属性并建立索引，以便快速搜索、过滤和展示产品。
 
 产品属性属性（元数据）确定：
 
@@ -19,40 +19,40 @@ ht-degree: 0%
 * 它在商店中的外观和行为
 * 数据传输操作中包含的数据
 
-属性元数据的范围是 `website/store/store view`.
+属性元数据的范围是`website/store/store view`。
 
-此 [!DNL Live Search] API允许客户端按具有以下属性的任何产品属性进行排序： [店面属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` 设置为 `Yes` 在Adobe Commerce Admin中。 启用时， `Search Weight` 和 `Visible in Advanced Search` 可以为属性设置。
+[!DNL Live Search] API允许客户端按Adobe Commerce管理员中将[storefront属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search`设置为`Yes`的任何产品属性进行排序。 启用后，可以为属性设置`Search Weight`和`Visible in Advanced Search`。
 
-[!DNL Live Search] 不会为已删除的产品或设置为的产品编制索引 `Not Visible Individually`.
+[!DNL Live Search]不为已删除的产品或设置为`Not Visible Individually`的产品编制索引。
 
 >[!NOTE]
 >
-> Commerce客户具有 [!DNL Live Search] 能够利用网站上的更快价格更改更新和同步时间， [SaaS价格索引器](../price-index/price-indexing.md).
+> 拥有[!DNL Live Search]的Commerce客户可以使用[SaaS价格索引器](../price-index/price-indexing.md)利用其网站上更快的价格更改更新和同步时间。
 
 ## 索引管道
 
-客户端从店面调用搜索服务以检索（可筛选、可排序）索引元数据。 仅限具有下列项的可搜索产品属性： *在分层导航中使用* 属性设置为 `Filterable (with results)` 和 *在产品列表中使用排序* 设置为 `Yes` 可以由搜索服务调用。
-为了构建一个动态查询，搜索服务需要知道哪些属性是可搜索的，以及哪些属性是可搜索的 [粗细](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search). [!DNL Live Search] 遵循Adobe Commerce搜索权重（1-10，其中10是最高优先级）。 可以在架构中找到同步并与目录服务共享的数据列表，架构定义于：
+客户端从店面调用搜索服务以检索（可筛选、可排序）索引元数据。 搜索服务只能调用可搜索的产品属性，该属性的&#x200B;*用于分层导航*&#x200B;属性设置为`Filterable (with results)`，*用于产品列表排序*&#x200B;设置为`Yes`。
+要构造动态查询，搜索服务需要知道哪些属性是可搜索的，以及它们的[权重](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search)。 [!DNL Live Search]遵循Adobe Commerce搜索权重（1-10，其中10是最高优先级）。 可以在架构中找到同步并与目录服务共享的数据列表，架构定义于：
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 
-![[!DNL Live Search] 索引客户端搜索图](assets/indexing-pipeline.svg)
+![[!DNL Live Search]索引客户端搜索关系图](assets/indexing-pipeline.svg)
 
-1. 检查贸易商 [!DNL Live Search] 权利。
+1. 检查[!DNL Live Search]权利的商人。
 1. 获取对属性元数据进行了更改的存储视图。
 1. 存储索引属性。
 1. 重新索引搜索索引。
 
 ### 完整索引
 
-时间 [!DNL Live Search] 已配置并在载入期间同步，最多可能需要60分钟才能构建初始索引。 大型目录可能需要更长的时间来编制索引。 该过程在之后开始 `cron` 提交信息源并结束运行。
+如果配置了[!DNL Live Search]并在载入期间同步，则生成初始索引最多可能需要60分钟。 大型目录可能需要更长的时间来编制索引。 该进程在`cron`提交信息源并结束运行后开始。
 
 以下事件会触发完全同步和索引生成：
 
-* 入门 [目录数据同步](install.md#synchronize-catalog-data)
+* 正在载入[目录数据同步](install.md#synchronize-catalog-data)
 * 属性元数据的更改
 
-例如，更改 `Use in Search` 的属性 `color` 属性来源 `No` 到 `Yes` 将属性元数据更改为 `searchable=true`，并触发完全同步和重新索引。 更改时，以下属性元数据会触发完全同步和重新索引：
+例如，将`color`属性的`Use in Search`属性从`No`更改为`Yes`将属性元数据更改为`searchable=true`，并触发完全同步和重新索引。 更改时，以下属性元数据会触发完全同步和重新索引：
 
 * `filterableInSearch`
 * `searchable`
@@ -61,24 +61,24 @@ ht-degree: 0%
 
 ### 流式产品更新
 
-生成初始索引后，于 [入门](install.md#synchronize-catalog-data)，则以下增量产品更新将持续同步并重新索引：
+在[上线](install.md#synchronize-catalog-data)期间生成初始索引后，将持续同步并重新编制以下增量产品更新的索引：
 
 * 添加到目录的新产品
 * 产品属性值的更改
 
-例如，将新的样本值添加到 `color` 属性作为流式产品更新处理。
+例如，将新样本值添加到`color`属性会作为流式产品更新处理。
 流式更新工作流：
 
 1. 更新的产品已从Adobe Commerce实例同步到目录服务。
 1. 索引服务不断从目录服务中查找产品更新。 更新的产品在到达目录服务时会编制索引。
-1. 产品更新可能需要15分钟才能在中可用 [!DNL Live Search].
+1. 产品更新可能最多需要15分钟才能在[!DNL Live Search]中可用。
 
 ## 客户端搜索
 
-此 [!DNL Live Search] API允许客户端通过设置 [店面属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html)， *用于在产品列表中排序* 到 `Yes`. 根据主题，此设置会导致将属性作为选项包含在 [排序方式](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) 目录页面上的分页控件。 索引产品属性最多可达200个 [!DNL Live Search]，替换为 [店面属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) 可搜索和可过滤的页面。
+[!DNL Live Search] API允许客户端通过将[storefront属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html)、*产品列表*&#x200B;中用于排序的`Yes`来按任何可排序的产品属性进行排序。 根据主题，此设置会导致属性作为选项包含在目录页面上的[排序方式](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html)分页控件中。 [!DNL Live Search]最多可以为200个产品属性编制索引，其中[storefront属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html)可搜索和过滤。
 索引元数据存储在索引管道中，可供搜索服务访问。
 
-![[!DNL Live Search] 索引元数据API图](assets/index-metadata-api.svg)
+![[!DNL Live Search]索引元数据API图](assets/index-metadata-api.svg)
 
 ### 可排序的属性工作流
 

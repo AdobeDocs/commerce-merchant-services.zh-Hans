@@ -1,27 +1,27 @@
 ---
 title: 产品列表页面小组件
-description: 启用并设置样式 [!DNL Live Search Product Listing Page Widget]
+description: 正在启用和设置 [!DNL Live Search Product Listing Page Widget]的样式
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
 source-git-commit: faf217486d57588d8535c1d605e963c91ec3ee68
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
 
 # 产品列表页面小组件
 
-此 [!DNL Live Search Product Listing Page Widget] (PLP)使用Commerce Services平台提供高性能、可搜索且可彩块化的产品列表页面。 本主题介绍如何启用和设置PLP小组件的样式。
+[!DNL Live Search Product Listing Page Widget] (PLP)使用Commerce Services平台提供高性能、可搜索且可彩块化的产品列表页面。 本主题介绍如何启用和设置PLP小组件的样式。
 
 ## 启用PLP小组件
 
-当 [!DNL Live Search] 安装服务，默认搜索功能将转换为 [!DNL Live Search] 自动。
+安装[!DNL Live Search]服务后，默认搜索功能会自动转换为[!DNL Live Search]。
 
-此 [!DNL Live Search] 默认情况下，新安装会启用PLP小组件。 如果您正在升级 [!DNL Live Search] 并且PLP小组件已关闭，将保持关闭状态。
+默认情况下，新安装已启用[!DNL Live Search] PLP小组件。 如果您正在升级[!DNL Live Search]，并且PLP构件已关闭，则它仍将处于关闭状态。
 
 >[!IMPORTANT]
 >
->当 [!DNL Live Search Product Listing Page Widget] 启用，则无法更改产品列表页面上的排序顺序方向。
+>启用[!DNL Live Search Product Listing Page Widget]后，无法更改产品列表页面上的排序顺序方向。
 
 ## 构件功能
 
@@ -29,7 +29,7 @@ PLP小组件提供以下开箱即用的功能：
 
 - 添加到购物车按钮 — 仅适用于简单产品。
 - 每个产品有多个图像 — 为可配置产品选择不同颜色时，图像可能会发生更改。
-- 支持颜色样本 — 请注意，必须拼写颜色属性 `color` 以便代码正确验证。
+- 支持颜色样本 — 请注意，color属性的拼写必须为`color`才能正确验证代码。
 
 ### 自定义构件
 
@@ -39,7 +39,7 @@ PLP小组件提供以下开箱即用的功能：
 - 多语言支持
 - 价格滑块
 
-有关如何自定义PLP构件以处理上述功能的信息，请参阅 `storefront-product-listing-page` 自述文件如下 [repo](https://github.com/adobe/storefront-product-listing-page/).
+有关如何自定义PLP构件以处理上述功能的信息，请参阅以下[存储库](https://github.com/adobe/storefront-product-listing-page/)中的`storefront-product-listing-page`自述文件。
 
 >[!WARNING]
 >
@@ -47,13 +47,13 @@ PLP小组件提供以下开箱即用的功能：
 
 ## 样式设置示例
 
-您可以自定义PLP小组件的外观，以使用匹配您的网站 [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/).
+您可以使用[CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/)自定义PLP小组件的外观，以匹配您的网站。
 
 >[!NOTE]
 >
->不会继承Adobe Commerce主题中自定义类的元素。 这些元素必须由其特定类定位以匹配自定义类；主操作类不适用于构件按钮。 CSS中的常规目标元素会被继承； `button` 适用于构件按钮。
+>不会继承Adobe Commerce主题中自定义类的元素。 这些元素必须由其特定类定位以匹配自定义类；主操作类不适用于构件按钮。 CSS中的常规目标元素是继承的；`button`适用于构件按钮。
 
-高亮显示的div包含目标类 `ds-sdk-product-item__product-name`.
+高亮显示的div包含目标类`ds-sdk-product-item__product-name`。
 
 ![分页](assets/plp-css-example.png)
 
@@ -84,7 +84,7 @@ PLP小组件提供以下开箱即用的功能：
 
 - `.ds-plp-pagination_item`
 
-![分页项目](assets/plp-css-pagination-item.png)
+![分页项](assets/plp-css-pagination-item.png)
 
 - `.ds-plp-pagination_item--current`
 
@@ -136,7 +136,7 @@ PLP小组件提供以下开箱即用的功能：
 - `.ds-plp-facets__pills`
 - `.ds-sdk-pill`
 
-![面丸](assets/plp-css-facets-pill.png){width="350"}
+![Facet片](assets/plp-css-facets-pill.png){width="350"}
 
 - `.ds-sdk-pill__label`
 - `.ds-sdk-pill__cta`
@@ -157,7 +157,7 @@ PLP小组件提供以下开箱即用的功能：
 
 - `.ds-sdk-labelled-input`
 
-![带标签的输入](assets/plp-css-labelled-input.png)
+![已标记的输入](assets/plp-css-labelled-input.png)
 
 - `.ds-sdk-labelled-input__input`
 - `.ds-sdk-labelled-input__label`
@@ -190,5 +190,5 @@ PLP小组件提供以下开箱即用的功能：
 
 要禁用PLP小组件，请执行以下操作：
 
-1. 转到 **商店** >设置> **配置** > **[!DNL Live Search]** > **店面特色** 并设置 **启用产品列表小组件** “不”。
-1. 选择 **保存配置** 以保存设置。
+1. 转到&#x200B;**商店** >设置> **配置** > **[!DNL Live Search]** > **店面功能**&#x200B;并将&#x200B;**启用产品列表小组件**&#x200B;设置为“否”。
+1. 选择&#x200B;**保存配置**&#x200B;以保存设置。

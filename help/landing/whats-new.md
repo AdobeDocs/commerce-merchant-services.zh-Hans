@@ -18,6 +18,6 @@ ht-degree: 0%
 
 | 服务 | 更改 | 类型 |
 | -- | -- | -- |
-| [**目录服务**](../live-search/overview.md) | 添加了 [使用目录服务和API网格显示税](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/taxes.html) 主题。 | 新建主题 |
+| [**目录服务**](../live-search/overview.md) | 添加了使用目录服务和API网格的[显示税](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/taxes.html)主题。 | 新建主题 |
 
 此表将在每个月的第一个星期一更新。

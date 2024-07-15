@@ -17,9 +17,9 @@ ht-degree: 0%
 
 Adobe提供Commerce、集成和数据服务的集合，以帮助商家支持其业务的关键组件。
 
->[!BEGINSHADEBOX &quot;发行信息&quot;]
+>[!BEGINSHADEBOX “版本信息”]
 
-请参阅 [我们文档的新增功能](whats-new.md) 或 [发行说明](release-notes-all.md) 每个Commerce服务对应的章节。
+请参阅文档中的[新增功能](whats-new.md)或每个Commerce服务的[发行说明](release-notes-all.md)。
 
 >[!ENDSHADEBOX]
 
@@ -51,7 +51,7 @@ Adobe提供Commerce、集成和数据服务的集合，以帮助商家支持其�
 <tr>
   <td valign="top" width="200px">
     <img alt="支付服务" src="assets/payment-services.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview"><strong>支付服务</strong></a>  <br><em>(可供Magento Open Source)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview"><strong>付款服务</strong></a> <br><em>(可用于Magento Open Source)</em>
     <div>通过轻松提供各种支付方式（包括免息支付分期付款）和单一付款处理、订单和发票视图，提高客户满意度。</div>
   </td>
     </tr>
@@ -65,14 +65,14 @@ Adobe提供Commerce、集成和数据服务的集合，以帮助商家支持其�
 <tr>
     <td valign="top" width="200px">
        <img alt="AmazonSales Channel" src="assets/amazon-channel.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/amazon/guide-overview"> <strong>Amazon sales channel</strong></a> <br><em>(可供Magento Open Source)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/amazon/guide-overview"> <strong>Amazon销售渠道</strong></a> <br><em>(可用于Magento Open Source)</em>
     <div>与世界上最大的全球在线购物目的地集成，以实现Amazon销售、提供数据自动化和同步、管理Amazon列表以及通过单个仪表板实现更多功能。</div>
   </td>
    </tr>
 <tr>
     <td valign="top">
        <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/channel-manager/guide-overview"> <strong>渠道管理器</strong></a> <br><em>(可供Magento Open Source)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/channel-manager/guide-overview"> <strong>渠道经理</strong></a> <br><em>(可用于Magento Open Source)</em>
     <div>通过与沃尔玛市场集成，提高销售额、接触新客户、简化运营并节省时间。 使员工能够无缝地管理Walmart Marketplace的销售、库存和定价 — 所有这些都在Commerce中。</div>
   </td>
    </tr>

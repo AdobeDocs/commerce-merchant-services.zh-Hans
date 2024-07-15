@@ -1,6 +1,6 @@
 ---
 title: “同义词类型”
-description: “单向和双向 [!DNL Live Search] 同义词扩展了关键字的定义。”
+description: “单向 [!DNL Live Search] 和双向同义词扩展了关键字的定义。”
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
 source-git-commit: cb5db979828eb0b678d19c926de2823829717c02
 workflow-type: tm+mt
@@ -17,23 +17,23 @@ ht-degree: 0%
 
 双向同义词具有相同的含义并返回相同的搜索结果。 在下面的示例中，以粗体显示的第一个单词是目录中使用的关键字，后面跟有与原始关键字相同含义的单词。 您可以为同一关键字创建一个简单的双向同义词对，或创建多个双向同义词链。
 
-**夹克** ![双向选择器](assets/btn-two-way.png) 外套
-**裤子** ![双向选择器](assets/btn-two-way.png) 短裤 ![双向选择器](assets/btn-two-way.png) 裤子
+**夹克** ![双向选择器](assets/btn-two-way.png)外套
+**裤子** ![双向选择器](assets/btn-two-way.png)裤子![双向选择器](assets/btn-two-way.png)裤子
 
 ## 单向
 
 单向同义词是关键字的子集，但具有更具体的含义。 例如，羊毛衫和短裤是裤子，但并非所有裤子都是羊毛衫或短裤。 一种裤子搜索包括羊毛衫和短裤。 不过，搜索短裤不会带来额外费用。
 
-**运动衫** ![单向选择器](assets/btn-one-way.png) 连帽衫
-**裤子** ![单向选择器](assets/btn-one-way.png) 卡普里斯 ![多个单向选择器](assets/btn-multiple-one-way.png) 牛仔裤 ![多个单向选择器](assets/btn-multiple-one-way.png) 推车手
+**运动衫** ![单向选择器](assets/btn-one-way.png)连帽衫
+**裤子** ![单向选择器](assets/btn-one-way.png)卡普里斯![多个单向选择器](assets/btn-multiple-one-way.png)小腿长裤![多个单向选择器](assets/btn-multiple-one-way.png)兜售推手
 
 ## 最佳实践
 
-请牢记以下最佳实践，以最大限度地利用 [!DNL Live Search] 同义词。
+请牢记以下最佳实践，以充分利用[!DNL Live Search]同义词。
 
 ### 避免“停用词”
 
-[!DNL Live Search] 从同义词中过滤掉常用英语“停用词”，例如：
+[!DNL Live Search]从同义词中过滤出常用英语“停用词”，例如：
 
 a、an、and、are、as、at、be、but、by、for、if、in、into、is、it、no、not、of、on、or、such、that、the、their、then、there、these、they、this、to、was、will、with
 

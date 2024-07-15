@@ -18,7 +18,7 @@ ht-degree: 0%
 
 - **[配置 [!DNL Commerce integration settings]](#create-an-adobe-commerce-integration)** — 为商店履行服务创建Adobe Commerce集成，并生成访问令牌以验证来自商店履行服务器的传入请求。
 
-- **[配置存储履行服务的帐户凭据](#configure-store-fulfillment-account-credentials)** — 添加凭据以将Adobe Commerce连接到您的“商店履行”帐户。
+- **[配置商店履行服务的帐户凭据](#configure-store-fulfillment-account-credentials)** — 添加凭据以将Adobe Commerce连接到商店履行帐户。
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## 创建Adobe Commerce集成
 
-要将Adobe Commerce与商店履行服务集成，您需要创建一个Commerce集成并生成可用于对来自商店履行服务器的请求进行身份验证的访问令牌。 您还必须更新Adobe Commerce [!UICONTROL Consumer Settings] 要阻止的选项 `The consumer isn't authorized to access %resources.` 响应来自Adobe Commerce的请求的错误 [!DNL Store Fulfillment] 服务。
+要将Adobe Commerce与商店履行服务集成，您需要创建Commerce集成并生成可用于对来自商店履行服务器的请求进行身份验证的访问令牌。 您还必须更新Adobe Commerce [!UICONTROL Consumer Settings]选项，以防止从Adobe Commerce向[!DNL Store Fulfillment]服务发出请求时出现`The consumer isn't authorized to access %resources.`响应错误。
 
 1. 在“管理员”中，创建“商店履行”的集成。
 
@@ -45,15 +45,15 @@ ht-degree: 0%
 
 1. 与您的客户经理合作，完成商店履行方面的配置并授权集成。
 
-1. 启用Adobe Commerce [!UICONTROL Consumer Settings] 选项至 [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens].
+1. 将Adobe Commerce [!UICONTROL Consumer Settings]选项启用到[!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens]。
 
-   - 从管理员，转到 **[!UICONTROL Stores]** >  [!UICONTROL Configuration] > **[!UICONTROL Services]** >  **[!UICONTROL OAuth]** > **[!UICONTROL Consumer Settings]**
+   - 从管理员转到&#x200B;**[!UICONTROL Stores]** > [!UICONTROL Configuration] > **[!UICONTROL Services]** > **[!UICONTROL OAuth]** > **[!UICONTROL Consumer Settings]**
 
-   - 设置 [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens] 选项至 **[!UICONTROL Yes]**.
+   - 将[!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens]选项设置为&#x200B;**[!UICONTROL Yes]**。
 
 >[!IMPORTANT]
 >
-> 集成令牌因环境而异。 如果您使用来自其他环境的源数据恢复某个环境的数据库（例如，从暂存环境恢复生产数据），请排除 `oauth_token` 表，以便在还原操作期间不会覆盖集成令牌详细信息。
+> 集成令牌因环境而异。 如果您使用来自其他环境的源数据还原某个环境的数据库，例如从暂存环境还原生产数据，请从数据库导出中排除`oauth_token`表，以便在还原操作期间不会覆盖集成令牌详细信息。
 
 
 ## 配置存储履行帐户凭据
@@ -70,19 +70,19 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->帐户创建过程可能需要一些时间才能完成。 在等待凭据时， [查看和配置“商店履行”解决方案的其他设置](service-config-settings-overview.md).
+>帐户创建过程可能需要一些时间才能完成。 在等待凭据时，[查看并配置商店履行解决方案](service-config-settings-overview.md)的其他设置。
 
 ### 添加凭据以连接到商店履行
 
-1. 配置 [帐户凭据](enable-general.md) 用于生产和沙盒环境。
+1. 为生产和沙盒环境配置[帐户凭据](enable-general.md)。
 
-1. 从管理员，转到 **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**
+1. 从管理员转到&#x200B;**[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**
 
-1. 输入为提供的帐户凭据 **[!UICONTROL Production environment]**. 所有字段都是必填字段。
+1. 输入为&#x200B;**[!UICONTROL Production environment]**&#x200B;提供的帐户凭据。 所有字段都是必填字段。
 
-1. 选择 **[!UICONTROL Save Config]**.
+1. 选择&#x200B;**[!UICONTROL Save Config]**。
 
-1. 通过选择测试连接 **[!UICONTROL Validate Credentials]**.
+1. 通过选择&#x200B;**[!UICONTROL Validate Credentials]**&#x200B;测试连接。
 
 >[!NOTE]
 >

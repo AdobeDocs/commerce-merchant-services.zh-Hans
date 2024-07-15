@@ -11,44 +11,44 @@ ht-degree: 0%
 
 ---
 
-# 安装 [!DNL Payment Services]
+# 安装[!DNL Payment Services]
 
-要开始使用的付款服务，请执行以下操作： [!DNL Adobe Commerce] 和 [!DNL Magento Open Source]，您必须完成一些入门培训步骤。
+要开始使用[!DNL Adobe Commerce]和[!DNL Magento Open Source]的支付服务，您必须完成一些入门步骤。
 
 >[!INFO]
 >
-> 查看我们的 [配置 [!DNL Payment Services] 适用于Adobe Commerce的](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-payment-services) 视频，以了解其他信息。
+> 有关更多信息，请参阅我们的[为Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-payment-services)配置 [!DNL Payment Services] 视频。
 
-下载并安装 [!DNL Payment Services] 扩展 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 是使用的先决步骤 [!DNL Payment Services].
+下载并安装[!DNL Adobe Commerce]和[!DNL Magento Open Source]的[!DNL Payment Services]扩展是使用[!DNL Payment Services]的必备步骤。
 
-![[!DNL Payment Services] 扩展管理员视图](assets/admin-view.png){width="300" zoomable="yes"}
+![[!DNL Payment Services]扩展管理员视图](assets/admin-view.png){width="300" zoomable="yes"}
 
 ## 下载扩展
 
-必须首先从以下位置下载扩展 [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) 安装之前。
+必须先从[Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html)下载该扩展，然后才能安装它。
 
-1. 导航至 [Commerce Marketplace中的支付服务扩展](https://commercemarketplace.adobe.com/magento-payment-services.html).
-1. 要选择版本和版本，请切换 **[!UICONTROL Edition]** 和 **[!UICONTROL Your store version]** 到您的首选内容。
-1. 单击 **[!UICONTROL Add to Cart]**.
-1. 完成结账并单击 **[!UICONTROL Place Order]**.
+1. 导航到Commerce Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html)中的[Payment Services扩展。
+1. 要选择版本和版本，请将&#x200B;**[!UICONTROL Edition]**&#x200B;和&#x200B;**[!UICONTROL Your store version]**&#x200B;切换到您的首选选项。
+1. 单击&#x200B;**[!UICONTROL Add to Cart]**。
+1. 完成签出，然后单击&#x200B;**[!UICONTROL Place Order]**。
 1. 检查与您的Marketplace下载关联的电子邮件，以查看订单确认和详细信息。
 
 ## 安装扩展
 
-您可以安装 [!DNL Payment Services] 两者的扩展 [!DNL Adobe Commerce] 链接到您的Commerce帐户的云基础架构和本地实例 [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) 在注册过程中提供。
-[!DNL Magento Open Source] 客户使用内部部署说明。
+您可以在云基础架构和本地实例上为[!DNL Adobe Commerce]安装[!DNL Payment Services]扩展，这些实例已链接到注册过程中提供的Commerce帐户[mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys)。
+[!DNL Magento Open Source]客户使用本地说明。
 
-Composer在初始安装期间使用这些密钥 [!DNL Adobe Commerce]，或者在之前未将编辑器键保存到的情况下 `auth.json` 文件。
+Composer在初始安装[!DNL Adobe Commerce]期间使用这些密钥，或者在以前未将Composer密钥保存到`auth.json`文件的情况下使用这些密钥。
 
-请参阅 [获取您的身份验证密钥](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 以了解有关获取编辑器键的更多信息。
+有关获取编辑器密钥的详细信息，请参阅[获取您的身份验证密钥](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html)。
 
-请参阅 [安装扩展](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/extensions.html) 有关下载和安装扩展之前需要考虑的事项的更多信息。
+请参阅[安装扩展](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/extensions.html)，以了解有关下载和安装扩展之前应考虑哪些内容的更多信息。
 
-### [!DNL Adobe Commerce] 在云基础架构上
+### 云基础架构上的[!DNL Adobe Commerce]
 
-此方法用于安装 [!DNL Payment Services] Commerce Cloud实例的扩展。
+此方法用于为Commerce Cloud实例安装[!DNL Payment Services]扩展。
 
-1. 更新您的 `composer.json` 文件：
+1. 更新您的`composer.json`文件：
 
    ```bash
    composer require magento/payment-services --no-update
@@ -60,13 +60,13 @@ Composer在初始安装期间使用这些密钥 [!DNL Adobe Commerce]，或者�
    composer update magento/payment-services --with-dependencies
    ```
 
-   使用 `composer update` 用于更新所有根依赖项的命令。
+   使用`composer update`命令更新所有根依赖项。
 
 1. 提交并推送更改。
 
 ### 内部部署和其他配置
 
-此方法用于安装 [!DNL Payment Services] 本地实例的扩展和 [!DNL Magento Open Source] 客户。
+此方法用于为内部部署实例和[!DNL Magento Open Source]客户安装[!DNL Payment Services]扩展。
 
 1. 要获取该扩展，请运行以下命令：
 
@@ -80,7 +80,7 @@ Composer在初始安装期间使用这些密钥 [!DNL Adobe Commerce]，或者�
    composer update magento/payment-services --with-dependencies
    ```
 
-   使用 `composer update` 用于更新所有根依赖项的命令。
+   使用`composer update`命令更新所有根依赖项。
 
 1. 升级实例：
 
@@ -99,7 +99,7 @@ Composer在初始安装期间使用这些密钥 [!DNL Adobe Commerce]，或者�
 
 ## 升级扩展
 
-当有新版本的 [!DNL Payment Services] 发布后，您可以轻松升级扩展。
+发布[!DNL Payment Services]的新版本后，您可以轻松升级扩展。
 
 1. 要获取包的最新版本，请执行以下操作：
 
@@ -107,13 +107,13 @@ Composer在初始安装期间使用这些密钥 [!DNL Adobe Commerce]，或者�
    composer update magento/payment-services --with-dependencies
    ```
 
-   使用 `composer update` 用于更新所有根依赖项的命令。
+   使用`composer update`命令更新所有根依赖项。
 
 1. 提交并推送更改。
 
 ## 故障排除
 
-尝试安装 [!DNL Payment Services] 扩展。 使用以下故障排除方法解决错误。
+在尝试安装[!DNL Payment Services]扩展时，您可能会看到错误。 使用以下故障排除方法解决错误。
 
 ### 不正确的编辑器键
 
@@ -127,19 +127,19 @@ Could not find a matching version of package magento/payment-services. Check the
 
 要查看已配置的编辑器键：
 
-1. 查找的位置 `auth.json` 文件：
+1. 查找`auth.json`文件的位置：
 
    ```bash
    composer config --global home
    ```
 
-1. 查看 `auth.json` 文件：
+1. 查看`auth.json`文件：
 
    ```bash
    cat /path/to/auth.json
    ```
 
-1. 请参阅 [哪些键与您的Commerce帐户关联 `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+1. 查看[哪些密钥与您的Commerce帐户`MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html)关联。
 
 ### 内存不足，无法用于PHP
 
@@ -149,9 +149,9 @@ Could not find a matching version of package magento/payment-services. Check the
 Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocate 4096 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
 ```
 
-[增加内存限制](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html#increase-php-memory-limit) 环境上的PHP的 `php.ini`.
+在`php.ini`中增加环境上PHP的内存限制[](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html#increase-php-memory-limit)。
 
-或者，也可以使用此命令指定内存限制： `php -d memory_limit=-1 [path to composer]/composer require magento/payment-services`.
+或者，也可以使用此命令指定内存限制： `php -d memory_limit=-1 [path to composer]/composer require magento/payment-services`。
 
 例如：
 

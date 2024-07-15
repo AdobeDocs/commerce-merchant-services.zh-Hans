@@ -20,15 +20,15 @@ ht-degree: 0%
 
 您可以使用与特定订单关联的增量ID来调整Adobe Commerce Financial Reporting与非Adobe企业资源计划(ERP)系统。
 
-当支付服务将Commerce订单发送至PayPal时，增量ID包含为 `custom_id` _和_ 在 `invoice_id` (也包含随机字符串，位于 `increment_id`)。
+当付款服务将Commerce订单发送至PayPal时，增量ID将作为`custom_id` _和_&#x200B;包含在`invoice_id`中（其中还包含在`increment_id`之后的随机字符串）。
 
 在付款的商家活动详细信息和PayPal webhook中均可轻松访问ID。
 
-此 `invoice_id` 和 `custom_id` 显示在付款的商家活动详细信息底部附近：
+`invoice_id`和`custom_id`显示在付款的商家活动详细信息底部附近：
 
-![`custom_id` 在商家活动详细信息中](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
+商家活动详细信息中的![`custom_id`](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
 
-`custom_id` 和 `invoice_id` 详情请见PayPal的webhook：
+PayPal webhook详细信息中的`custom_id`和`invoice_id`：
 
 ```json
    ...
@@ -79,5 +79,5 @@ ht-degree: 0%
 
 有关更多信息，请参阅PayPal的REST API文档：
 
-* [`purchase_unit`，其中 `custom_id` 和 `invoice_id` 驻留](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
+* [`purchase_unit`，其中`custom_id`和`invoice_id`位于](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
 * [显示订单详细信息](https://developer.paypal.com/docs/api/orders/v2/#orders_get)

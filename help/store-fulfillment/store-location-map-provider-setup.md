@@ -7,37 +7,37 @@ feature: Shipping/Delivery, Integration, Tools and External Services, Configurat
 exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
 
 # 存储位置和映射设置
 
-通过配置，为“存储实施”启用存储位置和映射功能 [距离提供器](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html) 以搜索零售商店位置。
+通过配置[距离提供程序](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html)来搜索零售商店位置，为商店完成启用商店位置和映射功能。
 
 **要求**
 
-在配置过程中，您会为Google Maps平台提供一个Google API密钥。 如果你没有， [从Google Maps平台生成一个](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html#configure-google-maps).
+在配置过程中，您会为Google Maps平台提供一个Google API密钥。 如果您没有，请[从Google地图平台](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html#configure-google-maps)生成一个。
 
 要配置距离提供器，请执行以下操作：
 
-1. 从 **[!UICONTROL Stores > General]** 在管理员中进行配置，为映射内容类型添加Google映射集成。
+1. 从管理员的&#x200B;**[!UICONTROL Stores > General]**&#x200B;配置中，为映射内容类型添加Google映射集成。
 
-   - 转到 **[!UICONTROL Stores > Configuration  > General > Content Management]**.
+   - 转到&#x200B;**[!UICONTROL Stores > Configuration  > General > Content Management]**。
 
-   - 将您的Google API密钥添加到 **[!UICONTROL Google Maps API Key]** 字段。
+   - 将您的Google API密钥添加到&#x200B;**[!UICONTROL Google Maps API Key]**&#x200B;字段。
 
-1. 从 **[!UICONTROL Stores > Inventory]** 配置中，为“商店履行”选择距离提供方。
+1. 从“管理员”的&#x200B;**[!UICONTROL Stores > Inventory]**&#x200B;配置中，为“商店履行”选择距离提供程序。
 
-   - 转到 **[!UICONTROL Stores > Configuration > Catalog > Inventory]**.
+   - 转到&#x200B;**[!UICONTROL Stores > Configuration > Catalog > Inventory]**。
 
-   - 展开 **[!UICONTROL Distance Provider for Distance Based SSA]** 部分。
+   - 展开&#x200B;**[!UICONTROL Distance Provider for Distance Based SSA]**&#x200B;部分。
 
-   - 设置 **提供商** 到 **Google Map**.
+   - 将&#x200B;**提供程序**&#x200B;设置为&#x200B;**Google映射**。
 
-1. 配置设置 **[!UICONTROL Google Distance Provider]**.
+1. 配置&#x200B;**[!UICONTROL Google Distance Provider]**&#x200B;的设置。
 
-   - 添加您的 **Google API密钥**.
+   - 添加您的&#x200B;**Google API密钥**。
 
-   - 设置 **[!UICONTROL Computation Mode]** 到 `Driving` 和 **[!UICONTROL Value]** 到 `Distance`
+   - 将&#x200B;**[!UICONTROL Computation Mode]**&#x200B;设置为`Driving`并将&#x200B;**[!UICONTROL Value]**&#x200B;设置为`Distance`

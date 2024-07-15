@@ -4,7 +4,7 @@ description: 定义包括或排除用作推荐的产品条件。
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
 source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Adobe Commerce会自动将不可配置的默认过滤器应用于推荐单元。 如果您将多个推荐单元部署到页面，则Adobe Commerce会过滤掉这些单元中重复的所有产品。 仅使用对重复产品的第一次引用，以便为推荐其他产品腾出空间。 Adobe Commerce还会过滤掉任何之前购买过的产品和购物车中的产品。
 
-当您 [创建](create.md) 推荐单元，您可以定义用于控制哪些产品可以在推荐中显示的过滤器。 这些过滤器基于您定义的一组包含或排除条件。 只有符合所有包含条件的产品才会出现在推荐中。 不建议使用符合任何排除条件的产品。
+当您[创建](create.md)推荐单元时，您可以定义用于控制可在推荐中显示哪些产品的过滤器。 这些过滤器基于您定义的一组包含或排除条件。 只有符合所有包含条件的产品才会出现在推荐中。 不建议使用符合任何排除条件的产品。
 
 您可以通过选择每个过滤器页面上的切换来配置多个过滤器，并仅启用所需的过滤器。 这允许您创建过滤器草稿以供将来使用。 每个选项卡上会显示已启用的过滤器的数量。
 
@@ -27,22 +27,22 @@ Adobe Commerce会自动将不可配置的默认过滤器应用于推荐单元。
 
 ### 逻辑运算符
 
-逻辑运算符 `AND` 和 `OR` 用于连接多个条件。 如果同时使用包含和排除过滤器，则会先评估包含内容，以确定所有可能推荐的产品，然后从列表中删除与任何排除过滤器匹配的产品。
+逻辑运算符`AND`和`OR`用于连接多个条件。 如果同时使用包含和排除过滤器，则会先评估包含内容，以确定所有可能推荐的产品，然后从列表中删除与任何排除过滤器匹配的产品。
 
-- `AND`  — 连接两个包含过滤条件
-- `OR`  — 连接两个排除过滤条件
+- `AND` — 加入两个包含过滤条件
+- `OR` — 加入两个排除筛选条件
 
 >[!NOTE]
 >
-> 包含和排除过滤器取代了版本3.2.2及更高版本中的旧版类别排除项 `magento/product-recommendations` 模块。 请参阅 [发行说明](release-notes.md) 了解有关Adobe Commerce版本的更多信息。
+> 包含和排除过滤器将取代`magento/product-recommendations`模块版本3.2.2及更高版本中的旧版类别排除。 请参阅[发行说明](release-notes.md)，了解有关Adobe Commerce版本的更多信息。
 
 ## 筛选器类型 {#filtertypes}
 
-![过滤器](assets/rec-conditions.png)
+![筛选器](assets/rec-conditions.png)
 
 ### 类别
 
-基于产品类别的过滤器使用直接类别分配及其子类别。 例如，启用类别的排除条件 `Gear` 不包括分配到的产品 `Gear` 及其所有子类别(例如 `Gear/Bags` 或 `Gear/Fitness Equipment`. 对于B2B商家，类别过滤器遵循任何 [客户特定的产品类别](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) 您已配置。
+基于产品类别的过滤器使用直接类别分配及其子类别。 例如，为类别`Gear`启用排除条件将排除分配给`Gear`的产品及其所有子类别，如`Gear/Bags`或`Gear/Fitness Equipment`。 对于B2B商家，类别过滤器会遵循您配置的任何[客户特定的产品类别](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html)。
 
 当您将推荐部署到页面类型时，Adobe Commerce建议您使用以下类别过滤器配置：
 
@@ -60,19 +60,19 @@ Adobe Commerce会自动将不可配置的默认过滤器应用于推荐单元。
 
 ### 类型
 
-基于产品类型的筛选器包括或排除特定类型的所有产品。 支持的类型包括 _简单_， _可配置_， _虚拟_， _可下载_，或 _礼品卡_. _捆绑_ 和 _已分组_ 尚不支持产品。
+基于产品类型的筛选器包括或排除特定类型的所有产品。 支持的类型包括&#x200B;_简单_、_可配置_、_虚拟_、_可下载_&#x200B;或&#x200B;_礼品卡_。 尚不支持&#x200B;_捆绑包_&#x200B;和&#x200B;_分组的_&#x200B;产品。
 
 ### 可见性
 
-根据可见性过滤产品，例如： _目录_， _Search_，或同时使用两者。
+根据可见性筛选产品，例如： _目录_、_搜索_&#x200B;或两者。
 
 ### 价格
 
-基于产品价格的过滤器使用最终价格来执行比较。 最终价格包括匿名购物者可以享受的任何折扣或特殊价格。 对B2B商家而言，显示的价格反映了 [客户特定的组定价](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) 您已配置。
+基于产品价格的过滤器使用最终价格来执行比较。 最终价格包括匿名购物者可以享受的任何折扣或特殊价格。 对于B2B商家，显示的价格反映了您配置的[客户特定的组价格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html)。
 
 ### 库存状态
 
 以下排除过滤器可用于根据库存状态筛选产品：
 
 - 缺货 — （仅排除）不包括缺货产品。
-- 库存低 — （仅排除）不包括库存低的产品。 低库存状态基于 _仅X左侧阈值_ 中的值 [清单配置](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html).
+- 库存低 — （仅排除）不包括库存低的产品。 低库存状态基于[库存配置](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html)中的&#x200B;_仅X剩余阈值_&#x200B;值。

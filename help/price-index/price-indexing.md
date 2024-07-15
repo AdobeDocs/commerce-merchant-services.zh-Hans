@@ -15,19 +15,19 @@ ht-degree: 0%
 
 SaaS定价索引通过将繁重的计算流程（例如索引和价格计算）从Commerce应用程序移动到Adobe的云基础架构来改进网站性能。 这种方法允许商家快速扩展资源以缩短价格指数化时间，从而在将数据发送到店面和Commerce互联服务时更快地反映价格变化。
 
-下图显示了当Commerce使用时，流入SaaS服务的索引数据流 [价格索引](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) Commerce应用程序中包含的进程：
+下图显示了当Commerce使用Commerce应用程序中包含的[价格索引](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)流程时指向SaaS服务的索引数据流：
 
 ![默认数据流](assets/old_way.png)
 
-启用SaaS价格索引后，数据流会发生变化。 使用以下方式执行价格索引 [Commerce SaaS数据导出](../data-export/data-synchronization.md).
+启用SaaS价格索引后，数据流会发生变化。 使用[Commerce SaaS数据导出](../data-export/data-synchronization.md)执行价格索引。
 
 ![SaaS价格索引数据流](assets/new_way.png)
 
 所有商户都可以从使用SaaS价格索引中受益，但拥有以下特征的项目的商户可以实现最大的收益：
 
-* **不变价格变化** — 商家需要重复更改价格以满足战略目标，如频繁促销、季节性折扣或库存减价。
-* **多个网站和/或客户组** — 在多个网站（域/品牌）和/或客户组之间共享产品目录的商家。
-* **网站或客户组之间的许多独特价格** — 具有大量共享产品目录的商家，这些目录包含跨网站或客户组的独特价格。 例如，B2B商家具有预先协商的价格或采用不同定价策略的品牌。
+* **价格不断变化** — 需要重复更改价格以满足战略目标（如频繁促销、季节性折扣或库存减价）的商家。
+* **多个网站和/或客户组** — 在多个网站（域/品牌）和/或客户组中共享产品目录的商家。
+* **多个网站或客户群之间的许多独特价格** — 具有广泛共享产品目录的商家，这些目录包含各个网站或客户群之间的独特价格。 例如，B2B商家具有预先协商的价格或采用不同定价策略的品牌。
 
 ## 使用SaaS价格索引
 
@@ -48,7 +48,7 @@ SaaS定价索引通过将繁重的计算流程（例如索引和价格计算）�
 
 >[!NOTE]
 >
->如果需要，可以使用禁用Commerce应用程序中的默认价格索引器 [目录适配器](catalog-adapter.md).
+>如果需要，可以使用[目录适配器](catalog-adapter.md)禁用Commerce应用程序中的默认价格索引器。
 
 ## 将价格与SaaS价格索引同步
 
@@ -66,7 +66,7 @@ bin/magento saas:resync --feed=prices
 
 如果您的自定义产品类型使用特定公式计算最终价格，则可以扩展产品价格信息源的行为。
 
-1. 在上创建插件 `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` 类。
+1. 在`Magento\ProductPriceDataExporter\Model\Provider\ProductPrice`类中创建插件。
 
    ```xml
    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

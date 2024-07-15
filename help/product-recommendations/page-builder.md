@@ -1,6 +1,6 @@
 ---
-title: ’[!DNL Page Builder] 集成
-description: 了解如何使用 [!DNL Product Recommendations] 页面生成器中的单位。
+title: “[!DNL Page Builder]集成”
+description: 了解如何在页面生成器中使用 [!DNL Product Recommendations] 单位。
 exl-id: dd972642-1fb4-426a-ac68-f56bb5fa2ecf
 feature: Services, Recommendations, Page Builder
 source-git-commit: 6bd1010066919d8339ddfb70cd7443d701a4ac78
@@ -10,13 +10,13 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Page Builder] 集成
+# [!DNL Page Builder]集成
 
 产品Recommendations可以集成在您网站上部署的任何页面生成器内容中。
 
 >[!NOTE]
 >
-> 在本地Page Builder页面上最多可以有25个推荐单元。 非本机页面生成器页面最多可以具有5个推荐单元。 请参阅 [创建新推荐](create.md) 以了解更多信息。
+> 在本地Page Builder页面上最多可以有25个推荐单元。 非本机页面生成器页面最多可以具有5个推荐单元。 有关详细信息，请参阅[新建推荐](create.md)。
 
 ## 将产品Recommendations与页面生成器内容结合使用
 
@@ -24,17 +24,17 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >Page Builder推荐单位的量度仅显示在默认的存储视图中 [!DNL Product Recommendations] 工作区。 即使您将页面生成器推荐单元放置在非默认商店视图的存储视图上，与这些页面生成器推荐单元相关的量度也不会在非默认商店视图上显示 [!DNL Product Recommendations] 工作区。 要在非默认商店视图中查看页面生成器量度 [!DNL Product Recommendations] 工作区，打开和 [编辑](edit.md) 非默认商店视图中的页面生成器推荐单元，然后单击 [!UICONTROL **保存**]. 页面生成器量度现在显示在 [!DNL Product Recommendations] 非默认存储下的工作区。
+   >Page Builder推荐单位的量度仅显示在默认的存储视图[!DNL Product Recommendations]工作区中。 即使您将页面生成器推荐单元放置在非默认商店视图的存储视图上，与这些页面生成器推荐单元相关的量度也不会显示在非默认商店视图[!DNL Product Recommendations]工作区中。 要在非默认存储视图[!DNL Product Recommendations]工作区上查看页面生成器量度，请打开并在非默认存储视图中编辑[页面生成器推荐单元](edit.md)，然后单击&#x200B;[!UICONTROL **保存**]。 Page Builder量度现在显示在[!DNL Product Recommendations]工作区的非默认storeview下。
 
 1. 在页面生成器中，选择产品Recommendations内容小部件并放置在您的网站上。
 
-![插入推荐单位](assets/pb-insert.png)
+![插入推荐单元](assets/pb-insert.png)
 
-1. 单击 **编辑产品推荐**
-1. 单击 **选择**
-1. 选择您之前创建的推荐单元，然后单击 **添加选定项**
+1. 单击&#x200B;**编辑产品推荐**
+1. 单击&#x200B;**选择**
+1. 选择您之前创建的推荐单元，然后单击&#x200B;**添加选定项**
 
-![插入推荐单位](assets/pb-select.png)
+![插入推荐单元](assets/pb-select.png)
 
 1. 对页面生成器内容进行任何其他编辑并保存更改。
 

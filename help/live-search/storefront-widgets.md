@@ -11,20 +11,20 @@ ht-degree: 0%
 
 # 店面小组件
 
-安装时 [!DNL Live Search] 您的店面上有两个新构件：
+安装[!DNL Live Search]后，您的店面将获得两个新构件：
 
-- [!DNL Live Search] [弹出框小组件](storefront-popover.md) 是在包含搜索结果的搜索字段下打开的框。
-- [产品列表页面小组件](plp-styling.md) (PLP)提供了一个可搜索的产品列表页面，其中支持方面和同义词。 构件在Live Search 4.0.0+中已安装和启用。
+- [!DNL Live Search] [弹出窗口小组件](storefront-popover.md)是在包含搜索结果的搜索字段下打开的框。
+- [产品列表页小组件](plp-styling.md) (PLP)提供了一个支持方面和同义词的可搜索产品列表页。 构件在Live Search 4.0.0+中已安装和启用。
 
 您可以自定义这些构件的外观和风格，以最符合贵公司的风格和品牌指南。
 
 ## “实时搜索”弹出窗口小组件
 
-当您开始在Commerce店面搜索框中键入内容时， [!DNL Live Search] 在页面上，提供了推荐的产品和排名最前的搜索结果的缩略图图像作为响应， [弹出框小组件](storefront-popover.md).
+当您开始在Commerce店面搜索框中键入内容时，[!DNL Live Search]将在[弹出窗口小组件](storefront-popover.md)中用建议的产品和排名最前的搜索结果的缩略图图像作出响应。
 
 ![弹出窗口小组件](assets/ls-search-popover.png)
 
-要详细了解弹出框构件以及如何自定义店面构件，请参阅 [[!DNL Storefront Popover]](storefront-popover.md).
+要了解有关弹出框小组件以及如何自定义店面小组件的更多信息，请参阅[[!DNL Storefront Popover]](storefront-popover.md)。
 
 ## 产品列表页面小组件
 
@@ -32,4 +32,4 @@ ht-degree: 0%
 
 ![产品列表页面小组件](assets/ls-plp.png)
 
-要了解有关产品列表页面构件以及如何自定义店面构件的更多信息，请参阅 [产品列表页面小组件](plp-styling.md).
+要了解有关产品列表页面构件以及如何自定义店面构件的更多信息，请参阅[产品列表页面构件](plp-styling.md)。

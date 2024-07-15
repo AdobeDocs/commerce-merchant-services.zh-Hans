@@ -1,6 +1,6 @@
 ---
 user-guide-title: “[!DNL Catalog Service] 指南”
-user-guide-description: “本指南详细介绍了如何使用 [!DNL Catalog Service] 为Adobe Commerce服务。”
+user-guide-description: “本指南提供了有关 [!DNL Catalog Service] 用于Adobe Commerce的详细说明。”
 breadcrumb-title: “[!DNL Catalog Service] 指南”
 hide: true
 role: Admin
@@ -12,14 +12,14 @@ ht-degree: 10%
 
 ---
 
-# [!DNL Catalog Service] 适用于Adobe Commerce的 {#catalog-service}
+# Adobe Commerce的[!DNL Catalog Service] {#catalog-service}
 
 - [指南概述](guide-overview.md)
-- [简介 [!DNL Catalog Service]](overview.md)
+- [ [!DNL Catalog Service]简介](overview.md)
 - [载入和安装](installation.md)
 - [目录服务和API网格](mesh.md)
 - [使用API网格显示计税价格](taxes.md)
-- GraphQL查询 {#graphql}
+- GraphQL查询{#graphql}
    - [类别查询](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/)
    - [产品查询](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/)
    - [productSearch查询](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)

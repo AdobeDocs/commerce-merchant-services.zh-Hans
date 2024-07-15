@@ -1,6 +1,6 @@
 ---
 title: “搜索促销”
-description: '"[!DNL Live Search] 促销规则将逻辑与操作相结合，塑造购物体验。”'
+description: “[!DNL Live Search]促销规则将逻辑与操作结合起来以塑造购物体验。”
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
 source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt
@@ -36,14 +36,14 @@ ht-degree: 0%
 
 ## 逻辑运算符
 
-逻辑运算符 `AND` 和 `OR` 连接两个条件并返回不同的结果。 在多个条件的规则中使用的所有逻辑运算符是相同的。 不能同时使用两者 `AND` 和 `OR` 在同一条规则中。
+逻辑运算符`AND`和`OR`连接两个条件并返回不同的结果。 在多个条件的规则中使用的所有逻辑运算符是相同的。 无法在同一规则中同时使用`AND`和`OR`。
 
 ### 匹配运算符
 
-匹配运算符 `All` 和 `Any` 确定用于连接规则中多个条件的逻辑运算符，并可用于更改现有运算符。
+匹配运算符`All`和`Any`确定用于连接规则中多个条件的逻辑运算符，并可用于更改现有运算符。
 
-* `All`  — 使用 `AND` 逻辑运算符以连接多个条件。 使用 `All` 匹配运算符只能有一个 `Search query is` 条件。
-* `Any`  — 使用 `OR` 逻辑运算符以连接多个条件。
+* `All` — 使用`AND`逻辑运算符连接多个条件。 使用`All`匹配运算符的规则只能有一个`Search query is`条件。
+* `Any` — 使用`OR`逻辑运算符连接多个条件。
 
 在构成复杂规则时，使用缩进写出规则有助于描述返回要达到的结果所需的条件、关联事件和产品名称或SKU。 然后，构建规则并对结果进行测试。
 
@@ -54,25 +54,25 @@ ht-degree: 0%
 ## 多个规则的优先顺序
 
 在任何时候，只对一个搜索词应用一个搜索规则。
-如果发现多个规则适用于搜索短语，则会应用所有这些规则。 如果两个规则发生冲突……`rule 1` 能提升sku1，但 `rule 2` 隐藏同一SKU — 然后是最近应用的规则(`rule 2`)优先。
+如果发现多个规则适用于搜索短语，则会应用所有这些规则。 如果两个规则（`rule 1`提升SKU1但`rule 2`隐藏同一SKU）之间存在冲突，则优先使用最近应用的规则(`rule 2`)。
 
 * 规则按“上次修改”时间戳排序。 最近修改的规则将按时间戳顺序最先应用，其后应用旧规则。
-* 此 `query is` 条件优先于其他条件。 如果较新的规则包含 `query contains` 条件，但旧规则具有 `query is` 条件， `query is` 规则已应用。
+* `query is`条件优先于其他条件。 如果较新的规则包含`query contains`条件，而较旧的规则具有`query is`条件，则应用`query is`规则。
 
 ### 店面请求
 
-如果活动规则包含 `query is` 条件与搜索短语匹配，则应用此条件。 如果有多个匹配规则具有 `query is` 条件，应用最近更新的活动规则。
+如果包含`query is`条件的活动规则与搜索短语匹配，则会应用该规则。 如果有多个具有`query is`条件的匹配规则，则应用最近更新的活动规则。
 否则，将应用最近更新的活动规则。
 
 ### 预览请求
 
 在管理员中发出的请求的工作方式略有不同。 在管理员中预览时，将应用所有规则，包括已过期和已计划的规则。
 
-* 如果正在预览的规则具有 `query is` 条件，则应用。
-* 如果正在预览的规则不包含 `query is` 条件，以及随后的活动、匹配规则 `query is` 找到条件， `query is` 规则已应用。
-* 如果正在预览的规则不包含 `query is` 条件，且没有其他包含 `query is` 找到条件后，将应用正在预览的规则。
+* 如果正在预览的规则具有`query is`条件，则应用它。
+* 如果要预览的规则不具有`query is`条件，但发现具有`query is`条件的后续活动匹配规则，则应用`query is`规则。
+* 如果正在预览的规则不具有`query is`条件，并且未找到具有`query is`条件的其他规则，则应用正在预览的规则。
 
 ## 类别推销和类别产品分配
 
-[!DNL Live Search] 允许您按类别过滤。 请参阅 [类别促销](category-merch.md) 以了解更多信息。
-但是，在Adobe Commerce中，您可以创建一个虚拟类别，并使用 [类别产品分配](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). 此类类别是在运行时生成的，在类别数据库中不存在。 因此， [!DNL Live Search] 无法读取或使用此类别类型。
+[!DNL Live Search]允许您按类别筛选。 有关详细信息，请参阅[类别推销](category-merch.md)。
+但是，在Adobe Commerce中，您可以创建具有[类别产品分配](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html)的虚拟类别。 此类类别是在运行时生成的，在类别数据库中不存在。 因此，[!DNL Live Search]无法读取或使用此类别类型。

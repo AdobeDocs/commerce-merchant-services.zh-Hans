@@ -13,16 +13,16 @@ ht-degree: 0%
 
 # [!DNL Commerce Services Connector]
 
-某些Adobe Commerce和Magento Open Source功能由提供支持 [!DNL Commerce Services] 并部署为SaaS（软件即服务）。 要使用这些服务，您必须连接 [!DNL Commerce] 使用生产和沙盒API密钥的实例，并在 [配置](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). 您只需设置一次。
+某些Adobe Commerce和Magento Open Source功能由[!DNL Commerce Services]提供支持，并部署为SaaS（软件即服务）。 若要使用这些服务，必须使用生产和沙盒API密钥连接[!DNL Commerce]实例，并在[配置](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)中指定数据空间。 您只需设置一次。
 
 ## 可用服务 {#availableservices}
 
-下面列出了 [!DNL Commerce] 您可通过访问的功能 [!DNL Commerce Services Connector]：
+下面列出了可通过[!DNL Commerce Services Connector]访问的[!DNL Commerce]功能：
 
 | 服务 | 可用性 |
 | ---|--- |
-| [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) 由Adobe Sensei提供支持 | Adobe Commerce |
-| [[!DNL Live Search]](/help/live-search/overview.md) 由Adobe Sensei提供支持 | Adobe Commerce |
+| 由Adobe Sensei支持的[[!DNL Product Recommendations]](/help/product-recommendations/overview.md) | Adobe Commerce |
+| 由Adobe Sensei支持的[[!DNL Live Search]](/help/live-search/overview.md) | Adobe Commerce |
 | [[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce和Magento Open Source |
 | [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html) | Adobe Commerce和Magento Open Source |
 | [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) | Adobe Commerce |
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ## 架构
 
-从高层次上说， [!DNL Commerce Services Connector] 由以下核心元素组成：
+从较高层面来看，[!DNL Commerce Services Connector]由以下核心元素组成：
 
 ![Commerce服务连接器架构](assets/saas-config-sync-workflow.png)
 
@@ -39,11 +39,11 @@ ht-degree: 0%
 
 ## 凭据 {#apikey}
 
-生产和沙盒API密钥从生成 [!DNL Commerce] 的帐户 [许可证所有者](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) 由唯一标识符 [!DNL Commerce] ID (MageID)。 要通过如下服务的授权验证，请执行以下操作 [!DNL Product Recommendations] 或 [!DNL Live Search]，只要帐户处于良好状态，商户组织的许可证所有者可以生成API密钥集。
+生产和沙盒API密钥从[许可证所有者](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding)的[!DNL Commerce]帐户生成，该帐户由唯一的[!DNL Commerce] ID (MageID)标识。 要通过诸如[!DNL Product Recommendations]或[!DNL Live Search]之类的服务的授权验证，只要帐户处于良好状态，商家组织的许可证所有者可以生成API密钥集。
 
-这些密钥可在“需要知道”的基础上与系统集成商或代表许可证持有人管理项目和环境的开发团队共享。 已授予的开发人员 [!DNL Shared Access] 由许可证所有者不能代表他们生成密钥，即使商家的组织存在于 [!DNL Switch Accounts] 下拉菜单。
+这些密钥可在“需要知道”的基础上与系统集成商或代表许可证持有人管理项目和环境的开发团队共享。 已被许可证所有者授予[!DNL Shared Access]的开发者无法代表他们生成密钥，即使商户的组织位于其帐户上的[!DNL Switch Accounts]下拉列表中。
 
-此外，解决方案集成商还有权使用 [!DNL Commerce Services]. 如果您是解决方案集成商， [!DNL Commerce] 合作伙伴合同应生成API密钥。
+此外，解决方案集成商也有权使用[!DNL Commerce Services]。 如果您是解决方案集成商，[!DNL Commerce]合作伙伴合同的签名者应生成API密钥。
 
 >[!NOTE]
 >
@@ -51,13 +51,13 @@ ht-degree: 0%
 
 ### 生成生产和沙盒API密钥 {#genapikey}
 
-1. 登录 [!DNL Commerce] 帐户位置 [https://account.magento.com](https://account.magento.com/){：target=&quot;_blank&quot;}.
+1. 在[https://account.magento.com](https://account.magento.com/){：target=&quot;_blank&quot;}登录到您的[!DNL Commerce]帐户。
 
-1. 在 **Magento** 选项卡，选择 **API门户** 在侧栏上。
+1. 在&#x200B;**Magento**&#x200B;选项卡下，在侧栏中选择&#x200B;**API门户**。
 
-1. 从 _环境_ 菜单，选择 **生产** 或 **沙盒**.
+1. 从&#x200B;_环境_&#x200B;菜单中，选择&#x200B;**生产**&#x200B;或&#x200B;**沙盒**。
 
-1. 在 _API密钥_ 部分并单击 **新增**.
+1. 在&#x200B;_API密钥_&#x200B;部分中输入名称，然后单击&#x200B;**新增**。
 
    这将打开一个用于下载新密钥的对话框。
 
@@ -67,59 +67,59 @@ ht-degree: 0%
    >
    > 这是您必须复制或下载密钥的唯一机会。
 
-1. 单击 **下载** 然后单击 **取消**.
+1. 单击&#x200B;**下载**，然后单击&#x200B;**取消**。
 
 1. 对每个环境（生产和沙盒）重复上述步骤。
 
-   此 **API密钥** 部分现在显示您的API（公共）密钥。 在执行以下操作时，您需要生产和沙盒密钥（公共+私有） [选择或创建SaaS项目](#createsaasenv).
+   **API密钥**&#x200B;部分现在显示您的API（公共）密钥。 当您[选择或创建SaaS项目](#createsaasenv)时，需要生产和沙盒密钥（公共+私有）。
 
 ## SaaS配置 {#saasenv}
 
-[!DNL Commerce] 必须使用SaaS项目和SaaS数据空间配置实例，以便 [!DNL Commerce Services] 可以将数据发送到正确的位置。 SaaS项目对所有SaaS数据空间进行分组。 SaaS数据空间用于收集和存储以下各项的数据： [!DNL Commerce Services] 去工作。 其中一些数据可从以下导出： [!DNL Commerce] 实例和某些可以从店面的购物者行为中收集。 然后，该数据将保留到安全云存储中。
+[!DNL Commerce]实例必须配置有SaaS项目和SaaS数据空间，以便[!DNL Commerce Services]能够将数据发送到正确的位置。 SaaS项目对所有SaaS数据空间进行分组。 SaaS数据空间用于收集和存储使[!DNL Commerce Services]能够工作的数据。 某些此类数据可从[!DNL Commerce]实例中导出，而某些数据可从店面的购物者行为中收集。 然后，该数据将保留到安全云存储中。
 
-对象 [!DNL Product Recommendations]，SaaS数据空间包含目录和行为数据。 您可以指向 [!DNL Commerce] 实例到SaaS数据空间，创建者： [选择它](https://docs.magento.com/user-guide/configuration/services/saas.html) 在 [!DNL Commerce] 配置。
+对于[!DNL Product Recommendations]，SaaS数据空间包含目录和行为数据。 通过在[!DNL Commerce]配置中选择[实例](https://docs.magento.com/user-guide/configuration/services/saas.html)，您可以将[!DNL Commerce]实例指向SaaS数据空间。
 
 >[!WARNING]
 >
-> 仅在生产环境中使用生产SaaS数据空间 [!DNL Commerce] 安装以避免数据冲突。 否则，您可能会用测试数据污染生产站点数据，从而导致部署延迟。 例如，可能会从暂存数据（如暂存URL）错误地覆盖您的生产产品数据。
+> 请仅在生产[!DNL Commerce]安装中使用生产SaaS数据空间，以避免数据冲突。 否则，您可能会用测试数据污染生产站点数据，从而导致部署延迟。 例如，可能会从暂存数据（如暂存URL）错误地覆盖您的生产产品数据。
 
 ### 选择或创建SaaS项目 {#createsaasenv}
 
-要选择或创建SaaS项目，请请求 [!DNL Commerce] 来自的API密钥 [!DNL Commerce] 您的商店的许可证所有者：
+要选择或创建SaaS项目，请从存储的[!DNL Commerce]许可证所有者请求[!DNL Commerce] API密钥：
 
 >[!NOTE]
 >
-> 如果您没有看到 **[!UICONTROL Commerce Services Connector]** 中的部分 [!DNL Commerce] 配置，您必须安装 [!DNL Commerce] 模块满足您的需求 [[!DNL Commerce] 服务](#availableservices).
+> 如果在[!DNL Commerce]配置中未看到&#x200B;**[!UICONTROL Commerce Services Connector]**&#x200B;部分，则必须为所需的[[!DNL Commerce] 服务](#availableservices)安装[!DNL Commerce]模块。
 
-1. 在 _管理员_ 侧栏，转到 **系统** >服务> **Commerce服务连接器**.
+1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**系统** >服务> **Commerce服务连接器**。
 
-   如果您没有看到 **[!UICONTROL Commerce Services Connector]** 中的部分 [!DNL Commerce] 配置，安装 [!DNL Commerce] 模块满足您的需求 [[!DNL Commerce] 服务](#availableservices). 此外，确保 `magento/module-services-id` 软件包已安装。
+   如果在[!DNL Commerce]配置中未看到&#x200B;**[!UICONTROL Commerce Services Connector]**&#x200B;部分，请为所需的[[!DNL Commerce] 服务](#availableservices)安装[!DNL Commerce]模块。 另外，确保已安装`magento/module-services-id`包。
 
-1. 在 _沙盒API密钥_ 和 _生产API密钥_ 部分，粘贴您的键值。
+1. 在&#x200B;_沙盒API密钥_&#x200B;和&#x200B;_生产API密钥_&#x200B;部分中，粘贴您的密钥值。
 
-   私钥必须包括 `----BEGIN PRIVATE KEY---` 在键的开头和 `----END PRIVATE KEY----` 在私钥的末尾。
+   私钥必须在私钥的开头包含`----BEGIN PRIVATE KEY---`，在私钥的结尾包含`----END PRIVATE KEY----`。
 
-1. 单击 **保存**.
+1. 单击&#x200B;**保存**。
 
-任何与键关联的SaaS项目都会显示在 **项目** 中的字段 **SaaS标识符** 部分。
+与您的密钥关联的任何SaaS项目都显示在&#x200B;**SaaS标识符**&#x200B;部分的&#x200B;**项目**&#x200B;字段中。
 
-1. 如果不存在任何SaaS项目，请单击 **创建项目**. 然后在 **项目** 字段中，输入SaaS项目的名称。
+1. 如果不存在任何SaaS项目，请单击&#x200B;**创建项目**。 然后在&#x200B;**项目**&#x200B;字段中，输入SaaS项目的名称。
 
-   创建SaaS项目时， [!DNL Commerce] 根据您的URL生成一个或多个SaaS数据空间 [!DNL Commerce] 许可证：
-   - Adobe Commerce — 一个生产数据空间；仅两个测试数据空间。 在具有多个暂存环境的Cloud Pro项目上，您可以通过以下方式为每个暂存环境请求额外的测试数据空间 [提交支持请求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+   创建SaaS项目时，[!DNL Commerce]会根据您的[!DNL Commerce]许可证生成一个或多个SaaS数据空间：
+   - Adobe Commerce — 一个生产数据空间；仅两个测试数据空间。 在具有多个暂存环境的Cloud Pro项目中，您可以通过[提交支持请求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，为每个暂存环境请求额外的测试数据空间。
    - Magento Open Source — 一个生产数据空间；无测试数据空间
 
-1. 选择 **数据空间** 用于的当前配置 [!DNL Commerce] 商店。
+1. 选择要用于[!DNL Commerce]存储当前配置的&#x200B;**数据空间**。
 
 >[!NOTE]
 >
->如果您有单独的实例可与Commerce服务集成， [提交支持服务单](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) 为每个额外的实例请求新的SaaS项目。 在支持人员创建SaaS项目后，请使用相同的API密钥为实例配置Commerce Services集成，并为数据空间选择新的SaaS项目。
+>如果您有单独的实例要与Commerce服务集成，请[提交支持票证](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，以便为每个额外的实例请求新的SaaS项目。 在支持人员创建SaaS项目后，请使用相同的API密钥为实例配置Commerce Services集成，并为数据空间选择新的SaaS项目。
 
 >[!WARNING]
 >
 > 如果您在“我的帐户”的“API门户”部分生成新密钥，请立即更新管理员配置中的API密钥。 如果您在管理员中生成新密钥但未更新它们，则SaaS扩展不再有效，并且您会丢失宝贵的数据。
 
-要更改SaaS项目或数据空间的名称，请单击 **重命名** 旁边都有。 更改名称不会影响您的服务，因为名称只是一个标签，可帮助您识别和区分项目和数据空间。
+若要更改SaaS项目或数据空间的名称，请单击其中任一项目或数据空间旁边的&#x200B;**重命名**。 更改名称不会影响您的服务，因为名称只是一个标签，可帮助您识别和区分项目和数据空间。
 
 ## IMS组织（可选） {#organizationid}
 
@@ -127,4 +127,4 @@ ht-degree: 0%
 
 ## SaaS数据导出
 
-当 [!DNL Commerce] 实例已成功连接到 [!DNL Commerce Services]，SaaS数据导出流程将从以下位置导出Commerce数据： [!DNL Commerce] 服务器至 [!DNL Commerce SaaS Services] 以便将其同步到连接的Commerce服务。 在Admin中，您可以使用 [数据管理功能板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). 有关详细信息，请参见 [SaaS数据导出指南](../data-export/overview.md).
+当您的[!DNL Commerce]实例成功连接到[!DNL Commerce Services]时，SaaS数据导出过程会将Commerce数据从[!DNL Commerce]服务器导出到[!DNL Commerce SaaS Services]，以便将其同步到连接的Commerce服务。 在Admin中，您可以使用[数据管理仪表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)检查同步状态。 有关详细信息，请参阅[SaaS数据导出指南](../data-export/overview.md)。

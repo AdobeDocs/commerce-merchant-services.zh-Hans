@@ -4,18 +4,18 @@ description: 了解产品推荐如何处理Cookie限制。
 exl-id: 2f48c47c-569b-455c-a589-8f99b7b74064
 source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---
 
 # 处理Cookie限制
 
-Adobe Commerce和Magento Open Source都会在数据存储在浏览器Cookie中之前请求用户同意。 有关更多信息，请参阅 [Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html).
+Adobe Commerce和Magento Open Source都会在数据存储在浏览器Cookie中之前请求用户同意。 有关详细信息，请参阅[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)。
 
-当您部署 `magento/product-recommendations` 模块到生产环境，它会开始收集店面上的购物者交互事件。 由于这些事件的数据可以存储在浏览器Cookie或本地存储中，因此该功能支持Cookie限制模式，因为它在购物者同意Cookie之前不收集事件。
+将`magento/product-recommendations`模块部署到生产环境时，它会开始收集店面上的购物者交互事件。 由于这些事件的数据可以存储在浏览器Cookie或本地存储中，因此该功能支持Cookie限制模式，因为它在购物者同意Cookie之前不收集事件。
 
-这可能不适用于第三方Cookie同意解决方案。 每个商家都有责任确保在获得Cookie同意之前不会收集数据，法律通常要求这样做。 如果您通过自定义代码管理Cookie同意，则可以使用名为的“不跟踪”Cookie `mg_dnt` 以限制数据收集。
+这可能不适用于第三方Cookie同意解决方案。 每个商家都有责任确保在获得Cookie同意之前不会收集数据，法律通常要求这样做。 如果您通过自定义代码管理Cookie同意，则可以使用名为`mg_dnt`的不跟踪Cookie来限制数据收集。
 
 - Cookie的名称：
 

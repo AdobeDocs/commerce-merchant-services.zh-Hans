@@ -11,17 +11,17 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Data Connection] 后台事件
+# [!DNL Data Connection]个后台事件
 
-以下列出了安装时可用的Commerce后台事件 [!DNL Data Connection] 扩展。 这些事件收集的数据将发送到Adobe Experience Platform。 您还可以创建 [自定义事件](custom-events.md) 收集未开箱即用的其他数据。
+下面列出了安装[!DNL Data Connection]扩展时可用的Commerce后台事件。 这些事件收集的数据将发送到Adobe Experience Platform。 您还可以创建[自定义事件](custom-events.md)以收集未开箱即用的其他数据。
 
-除了以下事件收集的数据之外，您还会获得 [其他数据](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) 由Adobe Experience Platform Web SDK提供。
+除了以下事件收集的数据之外，您还会获取由Adobe Experience Platform Web SDK提供的[其他数据](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html)。
 
-后台事件包含服务器端数据。 此数据包括 [订单状态](#order-status) 有关订单是否已下达、取消、退款、已发运或完成的信息。 服务器端数据还包括 [客户配置文件事件](#customer-profile-events) 信息，例如帐户是否已创建、更新或删除。
+后台事件包含服务器端数据。 此数据包含[订单状态](#order-status)信息，例如订单是否已下达、取消、退款、已发运或已完成。 服务器端数据还包含[客户配置文件事件](#customer-profile-events)信息，例如帐户是否已创建、更新或删除。
 
 >[!NOTE]
 >
->所有后台活动都包括 [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) 字段，其中包括购物者的电子邮件地址（如果可用）和ECID。
+>所有后台事件都包含[`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html)字段，其中包括购物者的电子邮件地址（如果可用）和ECID。
 
 ## 订单状态
 
@@ -45,10 +45,10 @@ ht-degree: 0%
 | `commerce.order.payments.paymentTransactionID` | 此付款交易记录的唯一标识符。 |
 | `commerce.order.payments.paymentAmount` | 付款的值。 |
 | `commerce.order.payments.paymentType` | 此订单的付款方式。 计数，允许自定义值。 |
-| `commerce.order.payments.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR`. |
+| `commerce.order.payments.currencyCode` | 使用的[ISO 4217](https://en.wikipedia.org/wiki/ISO_4217)货币代码，如`USD`或`EUR`。 |
 | `commerce.order.taxAmount` | 买方作为最终付款的一部分所支付的税额。 |
 | `commerce.order.discountAmount` | 指示应用于整个订单的折扣金额。 |
-| `commerce.order.createdDate` | 在商业系统中创建新订单的时间和日期。 例如， `2022-10-15T20:20:39+00:00`. |
+| `commerce.order.createdDate` | 在商业系统中创建新订单的时间和日期。 例如，`2022-10-15T20:20:39+00:00`。 |
 | `commerce.order.currencyCode` | 用于订单总额的ISO 4217货币代码。 |
 | `commerce.shipping` | 一个或多个产品的运输详细信息。 |
 | `commerce.shipping.shippingMethod` | 客户选择的配送方式，如标准配送、加急配送、店内提货等。 |
@@ -65,9 +65,9 @@ ht-degree: 0%
 | `commerce.billing.address.city` | 城市的名称。 |
 | `commerce.billing.address.state` | 省/市/自治区名称。 这是自由格式字段。 |
 | `commerce.billing.address.postalCode` | 位置的邮政编码。 并非所有国家/地区都提供邮政编码。 在一些国家/地区，这将仅包含邮政编码的一部分。 |
-| `commerce.billing.address.country` | 政府管辖地区的名称。 除 `xdm:countryCode`，这是一个自由格式的字段，可以包含任何语言的国家/地区名称。 |
+| `commerce.billing.address.country` | 政府管辖地区的名称。 除`xdm:countryCode`之外，这是一个自由形式的字段，可以包含任何语言的国家/地区名称。 |
 | `personalEmail` | 个人电子邮件地址。 |
-| `personalEmail.address` | 技术地址，例如， `name@domain.com` 如RFC2822和后续标准中通常定义。 |
+| `personalEmail.address` | 技术地址，例如RFC2822和后续标准中通常定义的`name@domain.com`。 |
 | `productListItems` | 订单中的一系列产品。 |
 | `productListItems.id` | 此产品条目的行项目标识符。 |
 | `productListItems.SKU` | 库存单位。 产品的唯一标识符。 |
@@ -75,10 +75,10 @@ ht-degree: 0%
 | `productListItems.priceTotal` | 产品行项目的总价。 |
 | `productListItems.quantity` | 购物车中的产品件数。 |
 | `productListItems.discountAmount` | 指示应用的折扣金额。 |
-| `productListItems.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR`. |
+| `productListItems.currencyCode` | 使用的[ISO 4217](https://en.wikipedia.org/wiki/ISO_4217)货币代码，如`USD`或`EUR`。 |
 | `productListItems.selectedOptions` | 用于可配置产品的字段。 |
-| `productListItems.selectedOptions.attribute` | 标识可配置产品的属性，如 `size` 或 `color`. |
-| `productListItems.selectedOptions.value` | 标识属性的值，例如 `small` 或 `black`. |
+| `productListItems.selectedOptions.attribute` | 标识可配置产品的属性，如`size`或`color`。 |
+| `productListItems.selectedOptions.value` | 标识属性的值，如`small`或`black`。 |
 | `productListItems.categories` | 包含有关产品类别的信息。 |
 | `productListItems.categories.id` | 类别的唯一标识符。 |
 | `productListItems.categories.name` | 类别的名称。 |
@@ -103,7 +103,7 @@ ht-degree: 0%
 | `commerce.order.currencyCode` | 用于订单总额的ISO 4217货币代码。 |
 | `commerce.order.purchaseOrderNumber` | 购买者为此购买或合同分配的唯一标识符。 |
 | `commerce.order.payments` | 此订单的付款清单。 |
-| `commerce.order.payments.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR`. |
+| `commerce.order.payments.currencyCode` | 使用的[ISO 4217](https://en.wikipedia.org/wiki/ISO_4217)货币代码，如`USD`或`EUR`。 |
 | `commerce.order.payments.paymentType` | 此订单的付款方式。 计数，允许自定义值。 |
 | `commerce.order.payments.paymentAmount` | 付款的值。 |
 | `commerce.shipping` | 一个或多个产品的运输详细信息。 |
@@ -115,7 +115,7 @@ ht-degree: 0%
 | `commerce.commerceScope.storeViewCode` | 唯一的商店视图代码。 每个商店可以有多个商店视图。 |
 | `commerce.commerceScope.websiteCode` | 唯一的网站代码。 在一个环境中可以有许多网站。 |
 | `personalEmail` | 个人电子邮件地址。 |
-| `personalEmail.address` | 技术地址，例如， `name@domain.com` 如RFC2822和后续标准中通常定义。 |
+| `personalEmail.address` | 技术地址，例如RFC2822和后续标准中通常定义的`name@domain.com`。 |
 | `productListItems` | 订单中的一系列产品。 |
 | `productListItems.id` | 此产品条目的行项目标识符。 |
 | `productListItems.SKU` | 库存单位。 产品的唯一标识符。 |
@@ -146,10 +146,10 @@ ht-degree: 0%
 | `commerce.order.payments.paymentTransactionID` | 此付款交易记录的唯一标识符。 |
 | `commerce.order.payments.paymentAmount` | 付款的值。 |
 | `commerce.order.payments.paymentType` | 此订单的付款方式。 计数，允许自定义值。 |
-| `commerce.order.payments.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR`. |
+| `commerce.order.payments.currencyCode` | 使用的[ISO 4217](https://en.wikipedia.org/wiki/ISO_4217)货币代码，如`USD`或`EUR`。 |
 | `commerce.order.priceTotal` | 应用所有折扣和税费后此订单的总价。 |
 | `commerce.order.purchaseOrderNumber` | 购买者为此购买或合同分配的唯一标识符。 |
-| `commerce.order.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR`. |
+| `commerce.order.currencyCode` | 使用的[ISO 4217](https://en.wikipedia.org/wiki/ISO_4217)货币代码，如`USD`或`EUR`。 |
 | `commerce.order.lastUpdatedDate` | 在商业系统中上次更新特定订单记录的时间。 |
 | `commerce.shipping` | 一个或多个产品的运输详细信息。 |
 | `commerce.shipping.shippingMethod` | 客户选择的配送方式，如标准配送、加急配送、店内提货等。 |
@@ -160,8 +160,8 @@ ht-degree: 0%
 | `commerce.shipping.address.city` | 城市的名称。 |
 | `commerce.shipping.address.state` | 国家的名称。 这是自由格式字段。 |
 | `commerce.shipping.address.postalCode` | 位置的邮政编码。 并非所有国家/地区都提供邮政编码。 在一些国家/地区，这将仅包含邮政编码的一部分。 |
-| `commerce.shipping.address.country` | 政府管辖地区的名称。 除 `xdm:countryCode`，这是一个自由格式的字段，可以包含任何语言的国家/地区名称。 |
-| `commerce.shipping.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR`. |
+| `commerce.shipping.address.country` | 政府管辖地区的名称。 除`xdm:countryCode`之外，这是一个自由形式的字段，可以包含任何语言的国家/地区名称。 |
+| `commerce.shipping.currencyCode` | 使用的[ISO 4217](https://en.wikipedia.org/wiki/ISO_4217)货币代码，如`USD`或`EUR`。 |
 | `commerce.shipping.trackingNumber` | 装运承运人为订单项目装运提供的跟踪编号。 |
 | `commerce.shipping.trackingURL` | 用于跟踪订单项目的装运状态的URL。 |
 | `commerce.shipping.shipDate` | 订单中的一个或多个项目发运的日期。 |
@@ -176,19 +176,19 @@ ht-degree: 0%
 | `commerce.billing.address.city` | 城市的名称。 |
 | `commerce.billing.address.state` | 省/市/自治区名称。 这是自由格式字段。 |
 | `commerce.billing.address.postalCode` | 位置的邮政编码。 并非所有国家/地区都提供邮政编码。 在一些国家/地区，这将仅包含邮政编码的一部分。 |
-| `commerce.billing.address.country` | 政府管辖地区的名称。 除 `xdm:countryCode`，这是一个自由格式的字段，可以包含任何语言的国家/地区名称。 |
+| `commerce.billing.address.country` | 政府管辖地区的名称。 除`xdm:countryCode`之外，这是一个自由形式的字段，可以包含任何语言的国家/地区名称。 |
 | `personalEmail` | 个人电子邮件地址。 |
-| `personalEmail.address` | 技术地址，例如， `name@domain.com` 如RFC2822和后续标准中通常定义。 |
+| `personalEmail.address` | 技术地址，例如RFC2822和后续标准中通常定义的`name@domain.com`。 |
 | `productListItems` | 订单中的一系列产品。 |
 | `productListItems.SKU` | 库存单位。 产品的唯一标识符。 |
 | `productListItems.name` | 产品的显示名称或人类可读的名称。 |
 | `productListItems.priceTotal` | 产品行项目的总价。 |
 | `productListItems.quantity` | 购物车中的产品件数。 |
 | `productListItems.discountAmount` | 指示应用的折扣金额。 |
-| `productListItems.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR`. |
+| `productListItems.currencyCode` | 使用的[ISO 4217](https://en.wikipedia.org/wiki/ISO_4217)货币代码，如`USD`或`EUR`。 |
 | `productListItems.selectedOptions` | 用于可配置产品的字段。 |
-| `productListItems.selectedOptions.attribute` | 标识可配置产品的属性，如 `size` 或 `color`. |
-| `productListItems.selectedOptions.value` | 标识属性的值，例如 `small` 或 `black`. |
+| `productListItems.selectedOptions.attribute` | 标识可配置产品的属性，如`size`或`color`。 |
+| `productListItems.selectedOptions.value` | 标识属性的值，如`small`或`black`。 |
 | `productListItems.categories` | 包含有关产品类别的信息。 |
 | `productListItems.categories.id` | 类别的唯一标识符。 |
 | `productListItems.categories.name` | 类别的名称。 |
@@ -217,7 +217,7 @@ ht-degree: 0%
 | `commerce.commerceScope.storeViewCode` | 唯一的商店视图代码。 每个商店可以有多个商店视图。 |
 | `commerce.commerceScope.websiteCode` | 唯一的网站代码。 在一个环境中可以有许多网站。 |
 | `personalEmail` | 个人电子邮件地址。 |
-| `personalEmail.address` | 技术地址，例如， `name@domain.com` 如RFC2822和后续标准中通常定义。 |
+| `personalEmail.address` | 技术地址，例如RFC2822和后续标准中通常定义的`name@domain.com`。 |
 
 ### orderLineItemRefreaded
 
@@ -239,19 +239,19 @@ ht-degree: 0%
 | `commerce.refunds.transactionID` | 此退款的唯一标识符。 |
 | `commerce.refunds.refundAmount` | 退款的值。 |
 | `commerce.refunds.refundPaymentType` | 此订单的付款方式。 计数，允许自定义值。 |
-| `commerce.refunds.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR`. |
+| `commerce.refunds.currencyCode` | 使用的[ISO 4217](https://en.wikipedia.org/wiki/ISO_4217)货币代码，如`USD`或`EUR`。 |
 | `personalEmail` | 个人电子邮件地址。 |
-| `personalEmail.address` | 技术地址，例如， `name@domain.com` 如RFC2822和后续标准中通常定义。 |
+| `personalEmail.address` | 技术地址，例如RFC2822和后续标准中通常定义的`name@domain.com`。 |
 | `productListItems` | 订单中的一系列产品。 |
 | `productListItems.SKU` | 库存单位。 产品的唯一标识符。 |
 | `productListItems.name` | 产品的显示名称或人类可读的名称。 |
 | `productListItems.priceTotal` | 产品行项目的总价。 |
 | `productListItems.quantity` | 购物车中的产品件数。 |
 | `productListItems.discountAmount` | 指示应用的折扣金额。 |
-| `productListItems.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR`. |
+| `productListItems.currencyCode` | 使用的[ISO 4217](https://en.wikipedia.org/wiki/ISO_4217)货币代码，如`USD`或`EUR`。 |
 | `productListItems.selectedOptions` | 用于可配置产品的字段。 |
-| `productListItems.selectedOptions.attribute` | 标识可配置产品的属性，如 `size` 或 `color`. |
-| `productListItems.selectedOptions.value` | 标识属性的值，例如 `small` 或 `black`. |
+| `productListItems.selectedOptions.attribute` | 标识可配置产品的属性，如`size`或`color`。 |
+| `productListItems.selectedOptions.value` | 标识属性的值，如`small`或`black`。 |
 | `productListItems.categories` | 包含有关产品类别的信息。 |
 | `productListItems.categories.id` | 类别的唯一标识符。 |
 | `productListItems.categories.name` | 类别的名称。 |
@@ -280,14 +280,14 @@ ht-degree: 0%
 | `commerce.commerceScope.storeViewCode` | 唯一的商店视图代码。 每个商店可以有多个商店视图。 |
 | `commerce.commerceScope.websiteCode` | 唯一的网站代码。 在一个环境中可以有许多网站。 |
 | `personalEmail` | 个人电子邮件地址。 |
-| `personalEmail.address` | 技术地址，例如， `name@domain.com` 如RFC2822和后续标准中通常定义。 |
+| `personalEmail.address` | 技术地址，例如RFC2822和后续标准中通常定义的`name@domain.com`。 |
 | `productListItems` | 订单中的一系列产品。 |
 | `productListItems.SKU` | 库存单位。 产品的唯一标识符。 |
 | `productListItems.name` | 产品的显示名称或人类可读的名称。 |
 | `productListItems.quantity` | 购物车中的产品件数。 |
 | `productListItems.selectedOptions` | 用于可配置产品的字段。 |
-| `productListItems.selectedOptions.attribute` | 标识可配置产品的属性，如 `size` 或 `color`. |
-| `productListItems.selectedOptions.value` | 标识属性的值，例如 `small` 或 `black`. |
+| `productListItems.selectedOptions.attribute` | 标识可配置产品的属性，如`size`或`color`。 |
+| `productListItems.selectedOptions.value` | 标识属性的值，如`small`或`black`。 |
 | `productListItems.categories` | 包含有关产品类别的信息。 |
 | `productListItems.categories.id` | 类别的唯一标识符。 |
 | `productListItems.categories.name` | 类别的名称。 |
@@ -325,13 +325,13 @@ ht-degree: 0%
 | `commerce.commerceScope.storeViewCode` | 唯一的商店视图代码。 每个商店可以有多个商店视图。 |
 | `commerce.commerceScope.websiteCode` | 唯一的网站代码。 在一个环境中可以有许多网站。 |
 | `personalEmail` | 个人电子邮件地址。 |
-| `personalEmail.address` | 技术地址，例如， `name@domain.com` 如RFC2822和后续标准中通常定义。 |
+| `personalEmail.address` | 技术地址，例如RFC2822和后续标准中通常定义的`name@domain.com`。 |
 | `productListItems` | 订单中的一系列产品。 |
 | `productListItems.SKU` | 库存单位。 产品的唯一标识符。 |
 | `productListItems.name` | 产品的显示名称或人类可读的名称。 |
 | `productListItems.selectedOptions` | 用于可配置产品的字段。 |
-| `productListItems.selectedOptions.attribute` | 标识可配置产品的属性，如 `size` 或 `color`. |
-| `productListItems.selectedOptions.value` | 标识属性的值，例如 `small` 或 `black`. |
+| `productListItems.selectedOptions.attribute` | 标识可配置产品的属性，如`size`或`color`。 |
+| `productListItems.selectedOptions.value` | 标识属性的值，如`small`或`black`。 |
 | `productListItems.categories` | 包含有关产品类别的信息。 |
 | `productListItems.categories.id` | 类别的唯一标识符。 |
 | `productListItems.categories.name` | 类别的名称。 |
@@ -364,9 +364,9 @@ ht-degree: 0%
 | `commerce.order.payments.paymentTransactionID` | 此付款交易记录的唯一标识符。 |
 | `commerce.order.payments.paymentAmount` | 付款的值。 |
 | `commerce.order.payments.paymentType` | 此订单的付款方式。 计数，允许自定义值。 |
-| `commerce.order.payments.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR`. |
+| `commerce.order.payments.currencyCode` | 使用的[ISO 4217](https://en.wikipedia.org/wiki/ISO_4217)货币代码，如`USD`或`EUR`。 |
 | `commerce.order.taxAmount` | 买方作为最终付款的一部分所支付的税额。 |
-| `commerce.order.createdDate` | 在商业系统中创建新订单的时间和日期。 例如， `2022-10-15T20:20:39+00:00`. |
+| `commerce.order.createdDate` | 在商业系统中创建新订单的时间和日期。 例如，`2022-10-15T20:20:39+00:00`。 |
 | `commerce.shipping` | 一个或多个产品的运输详细信息。 |
 | `commerce.shipping.shippingMethod` | 客户选择的配送方式，如标准配送、加急配送、店内提货等。 |
 | `commerce.shipping.shippingAmount` | 客户必须支付的运费。 |
@@ -377,26 +377,26 @@ ht-degree: 0%
 | `commerce.shipping.address.city` | 城市的名称。 |
 | `commerce.shipping.address.state` | 国家的名称。 这是自由格式字段。 |
 | `commerce.shipping.address.postalCode` | 位置的邮政编码。 并非所有国家/地区都提供邮政编码。 在一些国家/地区，这将仅包含邮政编码的一部分。 |
-| `commerce.shipping.address.country` | 政府管辖地区的名称。 除 `xdm:countryCode`，这是一个自由格式的字段，可以包含任何语言的国家/地区名称。 |
+| `commerce.shipping.address.country` | 政府管辖地区的名称。 除`xdm:countryCode`之外，这是一个自由形式的字段，可以包含任何语言的国家/地区名称。 |
 | `commerce.billing.address` | 帐单邮寄地址。 |
 | `commerce.billing.address.street1` | 主要街道级别信息、公寓号、街道号和街道名称 |
 | `commerce.billing.address.street2` | 街道级别信息的附加字段。 |
 | `commerce.billing.address.city` | 城市的名称。 |
 | `commerce.billing.address.state` | 省/市/自治区名称。 这是自由格式字段。 |
 | `commerce.billing.address.postalCode` | 位置的邮政编码。 并非所有国家/地区都提供邮政编码。 在一些国家/地区，这将仅包含邮政编码的一部分。 |
-| `commerce.billing.address.country` | 政府管辖地区的名称。 除 `xdm:countryCode`，这是一个自由格式的字段，可以包含任何语言的国家/地区名称。 |
+| `commerce.billing.address.country` | 政府管辖地区的名称。 除`xdm:countryCode`之外，这是一个自由形式的字段，可以包含任何语言的国家/地区名称。 |
 | `personalEmail` | 个人电子邮件地址。 |
-| `personalEmail.address` | 技术地址，例如， `name@domain.com` 如RFC2822和后续标准中通常定义。 |
+| `personalEmail.address` | 技术地址，例如RFC2822和后续标准中通常定义的`name@domain.com`。 |
 | `productListItems` | 订单中的一系列产品。 |
 | `productListItems.SKU` | 库存单位。 产品的唯一标识符。 |
 | `productListItems.name` | 产品的显示名称或人类可读的名称。 |
 | `productListItems.priceTotal` | 产品行项目的总价。 |
 | `productListItems.quantity` | 购物车中的产品件数。 |
 | `productListItems.discountAmount` | 指示应用的折扣金额。 |
-| `productListItems.currencyCode` | 此 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 使用的货币代码，如 `USD` 或 `EUR`. |
+| `productListItems.currencyCode` | 使用的[ISO 4217](https://en.wikipedia.org/wiki/ISO_4217)货币代码，如`USD`或`EUR`。 |
 | `productListItems.selectedOptions` | 用于可配置产品的字段。 |
-| `productListItems.selectedOptions.attribute` | 标识可配置产品的属性，如 `size` 或 `color`. |
-| `productListItems.selectedOptions.value` | 标识属性的值，例如 `small` 或 `black`. |
+| `productListItems.selectedOptions.attribute` | 标识可配置产品的属性，如`size`或`color`。 |
+| `productListItems.selectedOptions.value` | 标识属性的值，如`small`或`black`。 |
 | `productListItems.categories` | 包含有关产品类别的信息。 |
 | `productListItems.categories.id` | 类别的唯一标识符。 |
 | `productListItems.categories.name` | 类别的名称。 |
@@ -408,11 +408,11 @@ ht-degree: 0%
 >
 >此功能处于测试阶段。
 
-从服务器端捕获的个人资料事件包括帐户信息，例如 `accountCreated`， `accountUpdated`、和 `accountDeleted`. 此数据用于帮助填充更好地定义区段或执行营销活动所需的关键客户详细信息，例如发送注册折扣优惠、帐户更改确认等。 从捕获了类似的配置文件事件 [店面](events.md#customer-profile-events).
+从服务器端捕获的配置文件事件包括帐户信息，如`accountCreated`、`accountUpdated`和`accountDeleted`。 此数据用于帮助填充更好地定义区段或执行营销活动所需的关键客户详细信息，例如发送注册折扣优惠、帐户更改确认等。 从[店面](events.md#customer-profile-events)捕获到类似的配置文件事件。
 
 >[!NOTE]
 >
->每个客户配置文件事件还包含 [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) 字段，其中包含系统生成的Commerce客户ID作为用户档案的主要标识符，以及用作次要标识符的电子邮件ID。
+>每个客户个人资料事件还包括[`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html)字段，其中包括系统生成的Commerce客户ID作为个人资料的主要标识符，以及用作辅助标识符的电子邮件ID。
 
 ### 帐户已创建
 
@@ -431,7 +431,7 @@ ht-degree: 0%
 | `person.name.firstName` | 包含客户的名字。 |
 | `person.name.lastName` | 包含客户的姓氏。 |
 | `personalEmail` | 个人电子邮件地址。 |
-| `personalEmail.address` | 技术地址，例如， `name@domain.com` 如RFC2822和后续标准中通常定义。 |
+| `personalEmail.address` | 技术地址，例如RFC2822和后续标准中通常定义的`name@domain.com`。 |
 | `commerce.commerceScope` | 指示事件发生位置（商店视图、商店、网站等）。 |
 | `commerce.commerceScope.environmentID` | 环境ID 32位数的字母数字ID，用连字符分隔。 |
 | `commerce.commerceScope.storeCode` | 唯一商店代码。 每个网站可以有许多商店。 |
@@ -455,7 +455,7 @@ ht-degree: 0%
 | `person.name.firstName` | 包含客户的名字。 |
 | `person.name.lastName` | 包含客户的姓氏。 |
 | `personalEmail` | 个人电子邮件地址。 |
-| `personalEmail.address` | 技术地址，例如， `name@domain.com` 如RFC2822和后续标准中通常定义。 |
+| `personalEmail.address` | 技术地址，例如RFC2822和后续标准中通常定义的`name@domain.com`。 |
 | `commerce.commerceScope` | 指示事件发生位置（商店视图、商店、网站等）。 |
 | `commerce.commerceScope.environmentID` | 环境ID 32位数的字母数字ID，用连字符分隔。 |
 | `commerce.commerceScope.storeCode` | 唯一商店代码。 每个网站可以有许多商店。 |
@@ -479,7 +479,7 @@ ht-degree: 0%
 | `person.name.firstName` | 包含客户的名字。 |
 | `person.name.lastName` | 包含客户的姓氏。 |
 | `personalEmail` | 个人电子邮件地址。 |
-| `personalEmail.address` | 技术地址，例如， `name@domain.com` 如RFC2822和后续标准中通常定义。 |
+| `personalEmail.address` | 技术地址，例如RFC2822和后续标准中通常定义的`name@domain.com`。 |
 | `commerce.commerceScope` | 指示事件发生位置（商店视图、商店、网站等）。 |
 | `commerce.commerceScope.environmentID` | 环境ID 32位数的字母数字ID，用连字符分隔。 |
 | `commerce.commerceScope.storeCode` | 唯一商店代码。 每个网站可以有许多商店。 |

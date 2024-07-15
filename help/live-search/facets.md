@@ -1,6 +1,6 @@
 ---
 title: "Facet"
-description: '"[!DNL Live Search] Facet使用属性值的多个维度作为搜索条件。”'
+description: “[!DNL Live Search] Facet使用属性值的多个维度作为搜索条件。”
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
 source-git-commit: 460065ecf6478e4313bd31ea848e04c7e8e192a3
 workflow-type: tm+mt
@@ -11,19 +11,19 @@ ht-degree: 0%
 
 # Facet
 
-分面是一种高性能筛选方法，它使用多个属性值的维度作为搜索条件。 多面向搜索与此类似，但比标准“更智能” [分层导航](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). 可用过滤器的列表由 [可过滤属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) 搜索结果中返回的产品数量。
+分面是一种高性能筛选方法，它使用多个属性值的维度作为搜索条件。 分面搜索类似，但比标准[分层导航](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html)更“智能”。 可用筛选器的列表由搜索结果中返回的产品的[可筛选属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes)确定。
 
-[!DNL Live Search] 使用 `productSearch` 查询，返回面向和特定于的其他数据 [!DNL Live Search]. 请参阅 [`productSearch` 查询](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) 在开发人员文档中查看代码示例。
+[!DNL Live Search]使用`productSearch`查询，该查询返回刻面和[!DNL Live Search]特有的其他数据。 有关代码示例，请参阅开发人员文档中的[`productSearch`查询](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)。
 
-![过滤的搜索结果](assets/storefront-search-results-run.png)
+![已过滤的搜索结果](assets/storefront-search-results-run.png)
 
-任何已定义的Facet都可以用作URL参数，并将根据参数值筛选结果： `http://yourstore.com?brand=acme&color=red`.
+任何定义的Facet都可以用作URL参数，并将根据参数值过滤结果： `http://yourstore.com?brand=acme&color=red`。
 
 ## 彩块化要求
 
 分面的类别和产品属性要求与用于分层导航的可过滤属性类似。 属性的每个店面属性必须将“在搜索结果中用于分层导航”值设置为“是”。
 
-[!DNL Live Search] 最多支持：
+[!DNL Live Search]最多支持：
 
 * 100个配置为Facet的属性
 * 50个可排序的属性
@@ -38,21 +38,21 @@ ht-degree: 0%
 
 | 设置 | 描述 |
 |--- |--- |
-| [类别显示设置](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | 锚点 —  `Yes` |
-| [属性属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [目录输入类型](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`， `Dropdown`， `Multiple Select`， `Price`， `Visual swatch` （仅限构件）， `Text swatch` （仅限构件） |
-| 属性店面属性 | 在搜索结果分层导航中使用 —  `Yes` |
+| [类别显示设置](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | 锚点 — `Yes` |
+| [属性属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [目录输入类型](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`、`Dropdown`、`Multiple Select`、`Price`、`Visual swatch`（仅限构件）、`Text swatch`（仅限构件） |
+| 属性店面属性 | 在搜索结果分层导航中使用 — `Yes` |
 
 ## Facet聚合
 
-分面聚合按以下方式执行：如果店面具有三个分面（类别、颜色和价格），并且购物者对所有这三个分面都进行过滤(颜色=蓝色，价格为$10.00-50.00，类别= `promotions`)。
+按如下方式执行Facet聚合：如果店面具有三个Facet（类别、颜色和价格），并且购物者对所有三个（颜色=蓝色，价格为$10.00-50.00，类别= `promotions`）都进行过滤。
 
-* `categories` 聚合 — 聚合 `categories`，然后应用 `color` 和 `price` 过滤器，但不匹配 `categories` 筛选。
-* `color` 聚合 — 聚合 `color`，然后应用`price` 和 `categories` 过滤器，但不匹配 `color` 筛选。
-* `price` 聚合 — 聚合 `price`，然后应用 `color` 和 `categories` 过滤器，但不匹配 `price` 筛选。
+* `categories`聚合 — 聚合`categories`，然后应用`color`和`price`筛选器，但不应用`categories`筛选器。
+* `color`聚合 — 聚合`color`，然后应用`price`和`categories`筛选器，但不应用`color`筛选器。
+* `price`聚合 — 聚合`price`，然后应用`color`和`categories`筛选器，但不应用`price`筛选器。
 
 ## 默认属性值
 
-以下产品属性具有 [店面属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) 使用方： [!DNL Live Search] 默认情况下处于启用状态。
+以下产品属性具有[店面属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html)，这些属性由[!DNL Live Search]使用并默认启用。
 
 | 属性 | 店面属性 | 属性 |
 |---|---|---|
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 ## 默认的非系统属性属性
 
-下表显示了非系统属性的默认搜索和可过滤属性，包括那些特定于Luma示例数据的属性。 设置 *在搜索中使用* 属性属性至 `Yes` 使属性在两者中均可搜索 [!DNL Live Search] 以及本机Adobe Commerce。
+下表显示了非系统属性的默认搜索和可过滤属性，包括那些特定于Luma示例数据的属性。 将&#x200B;*Use in Search*&#x200B;属性属性设置为`Yes`可使该属性在[!DNL Live Search]和本机Adobe Commerce中均可搜索。
 
 | 属性代码 | 可搜索 | 在分层导航中使用 |
 |--- |--- |--- |

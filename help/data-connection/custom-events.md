@@ -6,24 +6,24 @@ role: Admin, Developer
 feature: Personalization, Integration, Eventing
 source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
 
 # 创建自定义事件
 
-您可以扩展 [事件平台](events.md) 创建自己的店面活动以收集行业独特的数据。 创建和配置自定义事件时，它会发送到 [Adobe Commerce事件收集器](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-collector).
+您可以通过创建自己的店面活动来收集行业独特的数据，从而扩展[事件平台](events.md)。 创建和配置自定义事件时，会将其发送到[Adobe Commerce事件收集器](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-collector)。
 
 ## 处理自定义事件
 
 仅Adobe Experience Platform支持自定义事件。 自定义数据不会转发到Adobe Commerce功能板和量度跟踪器。
 
-对于任何 `custom` 事件，收集器：
+对于任何`custom`事件，收集器：
 
-- 添加 `identityMap` 替换为 `ECID` 作为主要标识
-- 包括 `email` 在 `identityMap` 作为辅助标识 _如果_ `personalEmail.address` 在事件中设置
-- 将整个事件包装在 `xdm` 对象，然后再转发到边缘
+- 添加以`ECID`作为主标识的`identityMap`
+- 将`email`作为辅助标识&#x200B;_包含在`identityMap`中，如果在事件中设置了_ `personalEmail.address`
+- 在转发到Edge之前，将`xdm`对象中的完整事件打包
 
 示例：
 
@@ -39,7 +39,7 @@ mse.publish.custom({
 });
 ```
 
-在Experience Platform边缘中：
+在Experience PlatformEdge中：
 
 ```javascript
 {
@@ -75,13 +75,13 @@ mse.publish.custom({
 
 仅该Experience Platform支持标准事件的属性覆盖。 自定义数据不会转发到Commerce功能板和量度跟踪器。
 
-对于具有的任何事件 `customContext`，收集器会覆盖相关上下文中设置的联接字段，其中的字段为 `customContext`. 覆盖的用例是当开发人员想要重用和扩展由已支持的事件中的页面其他部分设置的上下文时。
+对于具有`customContext`的任何事件，收集器将覆盖相关上下文中设置的具有`customContext`中字段的联接字段。 覆盖的用例是当开发人员想要重用和扩展由已支持的事件中的页面其他部分设置的上下文时。
 
 >[!NOTE]
 >
 >覆盖自定义事件时，应该为该事件类型关闭到Experience Platform的事件转发，以避免重复计数。
 
-示例:
+示例：
 
 通过Adobe Commerce Events SDK发布的带覆盖的产品视图：
 
@@ -101,7 +101,7 @@ mse.publish.productPageView({
 });
 ```
 
-在Experience Platform边缘中：
+在Experience PlatformEdge中：
 
 ```javascript
 {

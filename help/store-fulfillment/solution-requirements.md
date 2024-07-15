@@ -1,13 +1,13 @@
 ---
 title: 商店履行要求
-description: 配置和入门的要求 [!DNL Store Fulfillment solution].
+description: 配置和载入 [!DNL Store Fulfillment solution]的要求。
 role: Leader, Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
 source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 平台和软件版本要求
 
-此 [!DNL Store Fulfillment] 解决方案在以下平台上向Adobe Commerce客户提供。
+[!DNL Store Fulfillment]解决方案在以下平台上可供Adobe Commerce客户使用。
 
 - 云基础架构上的Adobe Commerce (ECE)
 - Adobe Commerce内部部署(EE)
@@ -27,9 +27,9 @@ ht-degree: 0%
 
 - [存储履行发行说明](release-notes.md)
 
-- [Adobe Commerce发行说明](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) 在 *Adobe Commerce发行信息*.
+- *Adobe Commerce发行信息*&#x200B;中的[Adobe Commerce发行说明](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html)。
 
-- [Adobe Commerce系统要求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) 在 *Adobe Commerce安装指南*.
+- *Adobe Commerce安装指南*&#x200B;中的[Adobe Commerce系统要求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)。
 
 
 ## 商店协助应用程序要求
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 **最低操作系统要求**
 
-- Android 6
+- ANDROID 6
 - iOS 12
 
 **最低硬件要求**
@@ -62,6 +62,6 @@ ht-degree: 0%
 
 - 在支持“商店履行”解决方案的所有位置都提供Wi-Fi：最低3 Mbps Internet速度
 
-- 店铺和仓库联系人可以在轮班期间访问iOS或Android移动设备，无论是个人设备还是商家提供的设备
+- 商店和仓库联系人可以在轮班期间访问iOS或Android移动设备，无论这些设备是个人使用的还是商家提供的
 
 - 使用“商店履行”解决方案管理的产品必须具有包含SKU或UPC产品代码的产品属性

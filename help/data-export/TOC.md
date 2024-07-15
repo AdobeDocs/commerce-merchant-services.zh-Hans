@@ -1,7 +1,7 @@
 ---
-user-guide-title: '"[!DNL Data Export] SaaS服务指南”'
-user-guide-description: “本指南提供了有关使用 [!DNL Data Export] Adobe Commerce SaaS服务的扩展。”
-breadcrumb-title: '"[!DNL Data Export] SaaS服务指南”'
+user-guide-title: "[!DNL Data Export]用于SaaS服务的指南"
+user-guide-description: “本指南提供了有关Adobe Commerce SaaS服务使用 [!DNL Data Export] 扩展的详细信息。”
+breadcrumb-title: "[!DNL Data Export]用于SaaS服务的指南"
 hide: true
 role: Admin
 feature: Services
@@ -12,11 +12,11 @@ ht-degree: 6%
 
 ---
 
-# [!DNL SaaS Data Export Guide] 适用于Adobe Commerce的 {#saas-data-export}
+# Adobe Commerce的[!DNL SaaS Data Export Guide] {#saas-data-export}
 
 - [指南概述](overview.md)
 - [数据同步](data-synchronization.md)
-- 导出计划和性能 {#performance}
+- 导出计划和性能{#performance}
    - [估计数据量及传输时间](estimate-data-volume-sync-time.md)
    - [提高导出性能](customize-export-processing.md)
 - [CLI命令参考](data-export-cli-commands.md)

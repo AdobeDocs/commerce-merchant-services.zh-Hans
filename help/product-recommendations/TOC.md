@@ -1,6 +1,6 @@
 ---
 user-guide-title: “[!DNL Product Recommendations] 指南”
-user-guide-description: 本指南提供了有关使用的详细说明 [!DNL Product Recommendations] 来自Adobe Commerce的。
+user-guide-description: 本指南提供了使用Adobe Commerce中的 [!DNL Product Recommendations] 的详细说明。
 breadcrumb-title: “[!DNL Product Recommendations] 指南”
 role: Admin
 feature: Services, Recommendations
@@ -11,12 +11,12 @@ ht-degree: 12%
 
 ---
 
-# [!DNL Product Recommendations] （用于商务） {#product-recommendations}
+# Commerce的[!DNL Product Recommendations] {#product-recommendations}
 
 - [指南概述](guide-overview.md)
-- [简介 [!DNL Product Recommendations]](overview.md)
+- [ [!DNL Product Recommendations]简介](overview.md)
 - [发行说明](release-notes.md)
-- 开始使用 {#getting-started}
+- 开始使用{#getting-started}
    - [入门](onboarding.md)
    - [实施工作流](implementation-workflow.md)
    - [行为数据](behavioral-data.md)
@@ -26,14 +26,14 @@ ht-degree: 12%
    - [验证](verify.md)
    - [暂存环境](staging-environment.md)
    - [Page Builder集成](page-builder.md)
-- [!DNL Product Recommendations] 管理员 {#admin}
-   - [工作区](workspace.md)
+- [!DNL Product Recommendations]管理员{#admin}
+   - [Workspace](workspace.md)
    - [创建](create.md)
    - [编辑](edit.md)
    - [推荐类型](type.md)
    - [过滤器](filters.md)
    - [投放位置和标签](placement.md)
-- [!DNL Product Recommendations] 开发人员 {#developer}
+- [!DNL Product Recommendations]开发人员{#developer}
    - [概述](development-overview.md)
    - [收集数据](events.md)
    - [自定义](customize.md)

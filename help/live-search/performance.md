@@ -1,6 +1,6 @@
 ---
 title: "性能"
-description: “ [!DNL Live Search] 性能工作区提供了对购物者所用搜索词的洞察。”
+description: “ [!DNL Live Search] 性能工作区提供了有关购物者使用的搜索词的洞察信息。”
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 性能
 
-此 *性能* 工作区提供对购物者使用的搜索词的洞察。 此信息可用于识别趋势、增加点进次数并提高转化率。 性能工作区提供特定日期范围的搜索度量的快照，并包括以下报表：
+*性能*&#x200B;工作区提供了有关购物者使用的搜索词的洞察信息。 此信息可用于识别趋势、增加点进次数并提高转化率。 性能工作区提供特定日期范围的搜索度量的快照，并包括以下报表：
 
 * 独特搜索
 * 零个结果
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 ![性能](assets/performance-unique-searches.png)
 
-您也可以参阅 [数据管理功能板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 了解更多有关数据同步的数据。
+您还可以参考[数据管理功能板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html)，了解有关数据同步的更多数据。
 
 ## 查看报表
 
-1. 要输入 **日期范围**，单击日历(![日历](assets/btn-calendar.png))，然后执行以下操作之一：
+1. 要输入&#x200B;**日期范围**，请单击日历（![日历](assets/btn-calendar.png)）并执行以下操作之一：
 
    * 要指定单个日期，请双击日历上的日期。
    * 要指定日期范围，请单击日历上的第一个日期和最后一个日期。
