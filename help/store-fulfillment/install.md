@@ -5,7 +5,7 @@ role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
+source-git-commit: 8999d63319f627e0b56a0ef5a881d25dbeaf648f
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 如果您已安装预发行版或测试版的Store Fulfillment for Adobe Commerce扩展，请使用以下命令将其删除，然后再安装当前版本。
 
-```terminal
+```bash
 rm -rf composer.lock vendor/walmart &&
 composer require walmart/magento-bopis-metapackage:1.0.0
 ```
@@ -107,7 +107,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 1. 使用`setup:upgrade`MagentoCLI命令在Adobe Commerce中注册该扩展。
 
-   ```terminal
+   ```bash
    bin/magento setup:upgrade
    ```
 
@@ -191,7 +191,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 如果需要，请使用[setup:static-content:deploy](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html){target="_blank"} CLI命令将静态视图文件部署到生产环境。
 
-```terminal
+```bash
 php bin/magento setup:static-content:deploy -f
 ```
 
