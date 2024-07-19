@@ -3,9 +3,9 @@ title: 安装和配置
 description: 了解如何安装、更新和卸载 [!DNL Product Recommendations]。
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 role: Admin, Developer
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -51,11 +51,19 @@ composer require magento/module-visual-product-recommendations
 
 ## 配置[!DNL Product Recommendations] {#configure}
 
-安装`magento/product-recommendations`模块后，必须通过指定API密钥并选择SaaS数据空间来配置[Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)。
+1. 安装`magento/product-recommendations`模块后，通过指定API密钥并选择SaaS数据空间来配置[Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)。
 
-为确保目录导出正确运行，请确认[cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html)作业和[索引器](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)正在运行，并且`Product Feed`索引器设置为`Update by Schedule`。
+   通过配置此连接，可以实现Commerce实例、目录服务和其他支持服务之间的数据同步和通信。 数据同步由[SaaS Data Export扩展](../data-export/overview.md)处理。
 
-当您通过API密钥成功链接到Commerce服务并指定SaaS数据空间时，目录同步将开始。 然后，您可以[验证](verify.md)行为数据是否已发送到店面。
+1. 为确保目录导出可以正确运行，请确认[cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html)作业和[索引器](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)正在运行，并且`Product Feed`索引器设置为`Update by Schedule`。
+
+成功将Commerce应用程序链接到Commerce服务并指定SaaS数据空间后，将开始目录同步。 然后，您可以[验证](verify.md)行为数据是否已发送到店面。
+
+## 监测数据同步并排除其故障
+
+通过Commerce Admin，您可以使用[数据管理功能板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)监视同步过程。 使用[Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting)和日志管理该进程并对其进行故障排除。
+
+然后，您可以[验证](verify.md)行为数据是否已发送到店面。
 
 ## 更新[!DNL Product Recommendations]安装 {#update}
 

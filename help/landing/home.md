@@ -6,9 +6,9 @@ seo-description: Access the product documentation for hosted services that help 
 breadcrumb-title: 文档
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '474'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Adobe提供Commerce、集成和数据服务的集合，以帮助商家支持其�
 
 >[!BEGINSHADEBOX “版本信息”]
 
-请参阅文档中的[新增功能](whats-new.md)或每个Commerce服务的[发行说明](release-notes-all.md)。
+请参阅每个Commerce服务的[发行说明](release-notes-all.md)。
 
 >[!ENDSHADEBOX]
 
@@ -98,9 +98,23 @@ Adobe提供Commerce、集成和数据服务的集合，以帮助商家支持其�
    </tr>
 </table>
 
-## 数据服务
+## 数据工具
 
 <table>
+<tr>
+   <td valign="top" width="200">
+      <img alt="[!DNL SaaS Data Export]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/overview"><strong>[!DNL SaaS Data Export]</strong></a>
+    <div>SaaS数据导出将目录、订单和库存数据从Commerce服务器导出到连接的Commerce服务，以使服务保持最新。 当由事件（如产品价格或库存水平的变化）触发时，索引器会编译数据。 您可以通过*数据管理功能板*或命令行界面来观察和管理此过程。</div>
+  </td>
+</tr>
+<tr>
+   <td valign="top" width="200">
+      <img alt="[!DNL SaaS Price Indexer]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/price-index/price-indexing.md"><strong>[!DNL SaaS Price Indexer]</strong></a>
+    <div>SaaS定价索引功能通过将资源密集型任务（如索引和价格计算）从Commerce应用程序转移到Adobe的云基础架构来优化站点性能。 此方式让商家能够快速扩展资源以加快价格指数化速度，并更快地为店面服务和连接Commerce服务提供价格更新。</div>
+  </td>
+</tr>
 <tr>
    <td valign="top" width="200">
       <img alt="[!DNL Catalog Sync]" src="assets/live-search.png" width="170px"/></td>

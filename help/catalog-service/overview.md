@@ -3,16 +3,16 @@ title: '[!DNL Catalog Service]'
 description: “[!DNL Catalog Service] for Adobe Commerce提供了一种检索产品显示页和产品列表页内容的方法，其速度比本机Adobe Commerce GraphQL查询快得多。”
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
 
 # Adobe Commerce的[!DNL Catalog Service]
 
-Adobe Commerce扩展的[!DNL Catalog Service]提供丰富视图模型（只读）目录数据，以便快速和完全呈现与产品相关的店面体验，包括：
+Adobe Commerce扩展的[!DNL Catalog Service]提供丰富视图模型（只读）目录数据，以便快速而全面地呈现与产品相关的店面体验，包括：
 
 * 产品详细信息页面
 * 产品列表和类别页面
@@ -21,11 +21,13 @@ Adobe Commerce扩展的[!DNL Catalog Service]提供丰富视图模型（只读�
 * 产品比较页面
 * 渲染产品数据的任何其他页面，如购物车、订单和愿望清单页面
 
-[!DNL Catalog Service]使用[GraphQL](https://graphql.org/)来请求和接收产品数据。 GraphQL是一种查询语言，前端客户端使用它与在后端(如Adobe Commerce)上定义的应用程序编程接口(API)进行通信。 GraphQL是一种常用的通信方法，因为它非常轻量，允许系统集成商指定每个响应的内容和顺序。
+[!DNL Catalog Service]使用[GraphQL](https://graphql.org/)请求和接收目录数据，包括产品、产品属性、库存和价格。 GraphQL是一种查询语言，前端客户端使用它与在后端(如Adobe Commerce)上定义的应用程序编程接口(API)进行通信。 GraphQL是一种常用的通信方法，因为它非常轻量，允许系统集成商指定每个响应的内容和顺序。
 
 Adobe Commerce有两个GraphQL系统。 核心GraphQL系统提供了广泛的查询（读取操作）和突变（写入操作），允许购物者与多种类型的页面交互，包括产品、客户帐户、购物车、结账等。 但是，返回产品信息的查询未针对速度进行优化。 GraphQL系统提供的服务只能对产品和相关信息进行查询。 这些查询的性能优于类似的核心查询。
 
-[!DNL Catalog Service]客户可以使用新的[SaaS价格索引器](../price-index/price-indexing.md)，这提供了更快的价格更改更新和同步时间。
+目录服务可用的数据由SaaS数据导出扩展提供。 此扩展在Commerce应用程序与连接的Commerce服务之间同步数据，以确保对服务GraphQL API端点的查询返回最新的目录数据。 有关管理和排查SaaS数据导出操作问题的信息，请参阅[SaaS Data Export Guide](../data-export/overview.md)。
+
+[!DNL Catalog Service]客户可以使用[SaaS价格索引器](../price-index/price-indexing.md)，这提供了更快的价格更新和同步时间。
 
 ## 架构
 
@@ -54,7 +56,7 @@ GraphQL的核心系统和服务不会直接相互通信。 您可以从不同的
 
 架构将产品类型的多样性减少为两个用例：
 
-* 简单产品是指使用单一价格和数量定义的产品。 目录服务将简单、虚拟、可下载和礼品卡产品类型映射到`simpleProductViews`。
+* 简单产品是指用单一价格和单一数量定义的产品。 目录服务将简单、虚拟、可下载和礼品卡产品类型映射到`simpleProductViews`。
 
 * 复杂的产品由多个简单的产品组成。 元件简单产品可以有不同的价格。 也可以定义复杂产品，以便购物者可以指定简单产品的组成数量。 目录服务将可配置、捆绑包和分组的产品类型映射到`complexProductViews`。
 

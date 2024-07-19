@@ -2,9 +2,9 @@
 title: 载入和安装
 description: “了解如何安装 [!DNL Catalog Service]”
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
@@ -143,7 +143,7 @@ ht-degree: 0%
 
 ### 配置服务和数据导出
 
-安装[!DNL Catalog Service]后，请完成以下任务以将目录服务与Adobe Commerce实例集成。 此集成支持数据同步以及Commerce实例、目录服务和其他支持服务之间的通信。
+安装[!DNL Catalog Service]后，请完成以下任务以将目录服务与Adobe Commerce实例集成。 此集成支持在Commerce实例、目录服务和其他支持服务之间进行数据同步和通信。 数据同步由[SaaS Data Export扩展](../data-export/overview.md)处理。
 
 1. 通过指定API密钥并选择SaaS数据空间来设置[Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas)。
 
@@ -162,6 +162,10 @@ ht-degree: 0%
 - [确认cron作业正在运行](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)。
 - 验证索引器是从[Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)运行，还是使用Commerce CLI命令`bin/magento indexer:info`运行。
 - 验证`Catalog Attributes Feed, Product Feed, Product Overrides Feed`和`Product Variant Feed`索引器是否设置为`Update by Schedule`。
+
+### 监测数据同步并排除其故障
+
+通过Commerce Admin，您可以使用[数据管理功能板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)监视同步过程。 使用[Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting)和日志管理该进程并对其进行故障排除。
 
 ### 访问服务
 

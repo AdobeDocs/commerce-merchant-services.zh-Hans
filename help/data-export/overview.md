@@ -4,7 +4,7 @@ description: 了解如何为Adobe Commerce SaaS服务使用 [!DNL data export] �
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: c5711fa6-09e2-42b0-a7af-4d7b866c871d
-source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL SaaS Data Export] 指南
 
-[!DNL SaaS data export]通过优化Adobe Commerce实例与连接的Commerce服务之间的数据同步来提高前端性能。 将Live Search、产品Recommendations或目录服务添加到Adobe Commerce安装时，将自动安装[!DNL Data export]扩展。
+[!DNL SaaS data export]在Adobe Commerce实例和连接的Commerce服务之间同步数据。 将Live Search、产品Recommendations或目录服务添加到Adobe Commerce安装时，将自动安装[!DNL Data export]扩展。
 
 SaaS数据导出收集和导出各种类型的数据，称为&#x200B;_馈送_，用于聚合特定类型的信息。 根据安装的Commerce服务，SaaS数据导出源包括：
 
@@ -22,7 +22,7 @@ SaaS数据导出收集和导出各种类型的数据，称为&#x200B;_馈送_，
 - **销售订单馈送**&#x200B;汇总订单数据，包括其相关实体，如发票、装运、贷项通知单等。
 - **多Source库存馈送**&#x200B;汇总有关库存库存状态物料的数据。
 
-数据导出扩展支持多种方法来启动和管理数据同步过程。
+SaaS数据导出是作为PHP扩展提供的。 它支持多种方法来启动和管理数据同步过程。
 
 - **从Admin或命令行手动同步**
 

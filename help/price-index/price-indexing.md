@@ -4,16 +4,16 @@ description: 使用SaaS价格索引提高性能
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 5b92d6ea-cfd6-4976-a430-1a3aeaed51fd
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
 # SaaS价格索引
 
-SaaS定价索引通过将繁重的计算流程（例如索引和价格计算）从Commerce应用程序移动到Adobe的云基础架构来改进网站性能。 这种方法允许商家快速扩展资源以缩短价格指数化时间，从而在将数据发送到店面和Commerce互联服务时更快地反映价格变化。
+SaaS定价索引功能通过将资源密集型任务（如索引和价格计算）从Commerce应用程序转移到Adobe的云基础架构来优化站点性能。 此方式让商家能够快速扩展资源以加快价格指数化速度，并更快地为店面服务和连接Commerce服务提供价格更新。
 
 下图显示了当Commerce使用Commerce应用程序中包含的[价格索引](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)流程时指向SaaS服务的索引数据流：
 

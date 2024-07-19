@@ -3,9 +3,9 @@ title: 开始使用 [!DNL Live Search]
 description: “从Adobe Commerce了解 [!DNL Live Search] 的系统要求和安装步骤。”
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: aba1f41965e6c430f569adcf9d940cf399b50b73
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '2266'
+source-wordcount: '2357'
 ht-degree: 0%
 
 ---
@@ -146,6 +146,8 @@ bin/magento saas:resync --feed categoryPermissions
 您可以查看使用[数据管理功能板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)同步和共享的数据。 此仪表板提供关于您店面产品数据可用性的宝贵见解，确保可及时向购物者显示这些数据。
 
 ![数据管理仪表板](assets/data-management-dashboard.png)
+
+您还可以运行sync命令，并使用[Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting)和数据导出扩展日志对同步过程进行疑难解答。
 
 #### 将来的产品更新
 
@@ -386,6 +388,10 @@ composer update magento/live-search --with-dependencies
 - [PLP小组件](https://github.com/adobe/storefront-product-listing-page)
 - [搜索栏](https://github.com/adobe/storefront-search-as-you-type)
 
+### Data Export扩展
+
+启用Live Search后，Data Export扩展将在Commerce应用程序和Live Search之间同步Commerce数据。 此过程确保店面上有最新的Commerce数据。 在Admin中，您可以使用数据管理功能板检查同步状态。 您可以使用Commerce CLI和日志管理数据导出过程并排除其故障。 有关详细信息，请参阅[数据导出指南](../data-export/overview.md)。
+
 ### Inventory management
 
 [!DNL Live Search]支持Commerce中的[Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)功能(以前称为多Source清单，或MSI)。 要启用完全支持，您必须[将](install.md#update)依赖项模块`commerce-data-export`更新为版本102.2.0+。
@@ -394,7 +400,7 @@ composer update magento/live-search --with-dependencies
 
 ### 价格索引器
 
-Live Search客户可以使用新的[SaaS价格索引器](../price-index/price-indexing.md)，它提供了更快的价格更改更新和同步时间。
+Live Search客户可以使用[SaaS价格索引器](../price-index/price-indexing.md)，它提供了更快的价格更改更新和同步时间。
 
 ### 价格支持
 

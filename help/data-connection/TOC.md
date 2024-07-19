@@ -5,9 +5,9 @@ breadcrumb-title: "适用于Adobe Commerce的[!DNL Data Connection]扩展"
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 6500aaa373d8e9abf88d1ca45dc2742c83bfeca3
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '110'
+source-wordcount: '116'
 ht-degree: 3%
 
 ---
@@ -32,3 +32,4 @@ ht-degree: 3%
 - 用例{#use-cases}
    - [使用Adobe Journey Optimizer发送放弃的购物车电子邮件](using-ajo.md)
    - [使用Commerce事件数据在Real-Time CDP中创建受众](create-audience.md)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
