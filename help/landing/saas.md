@@ -4,16 +4,16 @@ description: 了解如何使用生产和沙盒API密钥将Adobe Commerce或Magen
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 3eb873c84edb56d2fc399c72296f2b545a78064e
+source-git-commit: 391208f63c092f1eebb7330e2445079e09594890
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-某些Adobe Commerce和Magento Open Source功能由[!DNL Commerce Services]提供支持，并部署为SaaS（软件即服务）。 若要使用这些服务，必须使用生产和沙盒API密钥连接[!DNL Commerce]实例，并在[配置](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)中指定数据空间。 您只需设置一次。
+某些Adobe Commerce和Magento Open Source功能由[!DNL Commerce Services]提供支持，并部署为SaaS（软件即服务）。 若要使用这些服务，必须使用生产和沙盒API密钥连接[!DNL Commerce]实例，并在[配置](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)中指定数据空间。 您只需为每个Commerce实例配置一次连接即可。
 
 ## 可用服务 {#availableservices}
 
@@ -24,7 +24,6 @@ ht-degree: 0%
 | 由Adobe Sensei支持的[[!DNL Product Recommendations]](/help/product-recommendations/overview.md) | Adobe Commerce |
 | 由Adobe Sensei支持的[[!DNL Live Search]](/help/live-search/overview.md) | Adobe Commerce |
 | [[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce和Magento Open Source |
-| [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html) | Adobe Commerce和Magento Open Source |
 | [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) | Adobe Commerce |
 | [[!DNL Catalog Service]](/help/catalog-service/overview.md) | Adobe Commerce |
 | [[!DNL Data Connection]](/help/data-connection/overview.md) | Adobe Commerce |
@@ -39,7 +38,7 @@ ht-degree: 0%
 
 ## 凭据 {#apikey}
 
-生产和沙盒API密钥从[许可证所有者](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding)的[!DNL Commerce]帐户生成，该帐户由唯一的[!DNL Commerce] ID (MageID)标识。 要通过诸如[!DNL Product Recommendations]或[!DNL Live Search]之类的服务的授权验证，只要帐户处于良好状态，商家组织的许可证所有者可以生成API密钥集。
+生产和沙盒API密钥从[许可证所有者](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding)的[!DNL Commerce]帐户生成。 Commerce帐户由唯一的[!DNL Commerce] ID (MageID)标识。 商户组织的许可证所有者可以为产品Recommendations或Live Search等服务生成API密钥，前提是帐户处于良好状态。
 
 这些密钥可在“需要知道”的基础上与系统集成商或代表许可证持有人管理项目和环境的开发团队共享。 已被许可证所有者授予[!DNL Shared Access]的开发者无法代表他们生成密钥，即使商户的组织位于其帐户上的[!DNL Switch Accounts]下拉列表中。
 
@@ -57,15 +56,13 @@ ht-degree: 0%
 
 1. 从&#x200B;_环境_&#x200B;菜单中，选择&#x200B;**生产**&#x200B;或&#x200B;**沙盒**。
 
-1. 在&#x200B;_API密钥_&#x200B;部分中输入名称，然后单击&#x200B;**新增**。
-
-   这将打开一个用于下载新密钥的对话框。
+1. 在&#x200B;_API密钥_&#x200B;部分中输入名称，然后单击&#x200B;**新增**&#x200B;打开对话框下载新密钥。
 
    ![下载私钥](assets/download-api-private-key.png)
 
    >[!WARNING]
    >
-   > 这是您必须复制或下载密钥的唯一机会。
+   > 此对话框提供了复制或下载密钥的唯一机会。
 
 1. 单击&#x200B;**下载**，然后单击&#x200B;**取消**。
 

@@ -1,125 +1,163 @@
 ---
 title: 服务文档
-description: Browse Services for Adobe Commerce产品文档
+description: 浏览Commerce SaaS服务的Adobe Commerce产品文档
 seo-title: Services for Adobe Commerce
-seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
+seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
 breadcrumb-title: 文档
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 recommendations: noCatalog
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 391208f63c092f1eebb7330e2445079e09594890
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
 
 # Adobe Commerce Services指南
 
-Adobe提供Commerce、集成和数据服务的集合，以帮助商家支持其业务的关键组件。
+Adobe提供Commerce服务、集成服务和数据工具的集合，以帮助商家支持其业务的关键组件。
 
->[!BEGINSHADEBOX “版本信息”]
-
-请参阅每个Commerce服务的[发行说明](release-notes-all.md)。
-
->[!ENDSHADEBOX]
+>[!NOTE]
+>
+>Adobe建议升级到所有Commerce服务的最新支持版本。 请参阅[发行说明](release-notes-all.md)。
 
 ## Commerce服务
 
-<table>
-<tr>
-  <td valign="top" width="200">
-      <img alt="[!DNL Live Search]" src="assets/live-search.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/overview"><strong>[!DNL Live Search]</strong></a>
-    <div>实施此AI支持的搜索工具，为B2C购物者提供更智能、更快速且相关的结果。</div>
-  </td>
-   </tr>
-<tr>
-   <td valign="top" width="200">
-       <img alt="[!UICONTROL Product Recommendations]" src="assets/product-recs.png" width="170px"/></td>
+<table style="table-layout:fixed">
+<tr style="border: 0;">
    <td valign="top">
-   <a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/overview"><strong>[!DNL Product Recommendations]</strong></a>
-    <div>根据购物者行为、流行趋势、产品相似性等添加由AI提供支持的推荐。</div>
-  </td>
-   </tr>
-<tr>
-    <td valign="top" width="200px">
-       <img alt="目录服务" src="assets/catalog-service.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/catalog-service/guide-overview"> <strong>目录服务</strong></a> <br>
-    <div>为客户提供优化的产品体验，同时提高性能、改进可扩展性和提高转化率。</div>
-  </td>
-   </tr>
-<tr>
-  <td valign="top" width="200px">
-    <img alt="支付服务" src="assets/payment-services.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview"><strong>付款服务</strong></a> <br><em>(可用于Magento Open Source)</em>
-    <div>通过轻松提供各种支付方式（包括免息支付分期付款）和单一付款处理、订单和发票视图，提高客户满意度。</div>
-  </td>
-    </tr>
-<tr>
-    <td valign="top" width="200px">
-       <img alt="商店履行" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/store-fulfillment/guide-overview"> <strong>商店履行</strong></a></br>
-    <div>提供通过移动设备实现的全面履行工作流程，从而提供卓越的在线购买体验、店内取货(BOPIS)客户体验并最大限度地提高员工的工作效率。</div>
-  </td>
-   </tr>
-<tr>
-    <td valign="top" width="200px">
-       <img alt="AmazonSales Channel" src="assets/amazon-channel.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/amazon/guide-overview"> <strong>Amazon销售渠道</strong></a> <br><em>(可用于Magento Open Source)</em>
-    <div>与世界上最大的全球在线购物目的地集成，以实现Amazon销售、提供数据自动化和同步、管理Amazon列表以及通过单个仪表板实现更多功能。</div>
-  </td>
-   </tr>
-<tr>
-    <td valign="top">
-       <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/channel-manager/guide-overview"> <strong>渠道经理</strong></a> <br><em>(可用于Magento Open Source)</em>
-    <div>通过与沃尔玛市场集成，提高销售额、接触新客户、简化运营并节省时间。 使员工能够无缝地管理Walmart Marketplace的销售、库存和定价 — 所有这些都在Commerce中。</div>
-  </td>
-   </tr>
+      <a href="../live-search//overview.md">
+      <img alt="Search" src="../assets/icons/Magnify.svg" width="40">
+      </a>
+      <div>
+         <a href="../live-search//overview.md">
+         <strong>[!DNL Live Search]</strong>
+         </a>
+      </div>
+      <p>
+         <em>实施此AI支持的搜索工具，为B2C购物者提供更智能、更快和更相关的结果。</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../product-recommendations/overview.md">
+      <img alt="竖起大拇指" src="../assets/icons/ThumbUp.svg" width="40">
+      </a>
+      <div>
+         <a href="../product-recommendations/overview.md">
+         <strong>产品Recommendations</strong>
+         </a>
+      </div>
+      <p>
+         <em>根据购物者行为、流行趋势、产品相似性等添加AI支持的推荐。</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../catalog-service/overview.md">
+      <img alt="连接的服务的目录数据" src="../assets/icons/DataBook.svg" width="40">
+      </a>
+      <div>
+         <a href="../catalog-service/overview.md">
+         <strong>目录服务</strong>
+         </a>
+      </div>
+      <p>
+         <em>为您的客户提供优化的产品体验，同时提高性能、改进可扩展性和提高转化率。</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../payment-services/guide-overview.md">
+      <img alt="信用卡付款" src="../assets/icons/CreditCard.svg" width="40">
+      </a>
+      <div>
+         <a href="../payment-services/guide-overview.md">
+         <strong>付款服务</strong>
+         </a>
+      </div>
+      <p>
+         <em>通过多种付款方式提高客户满意度，包括免息分期付款，以及简化付款处理、订单和发票的查看。</em>
+      </p>
+   </td>
+</tr>
 </table>
 
 ## Integration services
 
-<table>
-<tr>
-  <td valign="top" width="200">
-      <img alt="[!DNL Data Connection]" src="assets/live-search.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview"><strong>[!DNL Data Connection]</strong></a>  
-    <div>利用Adobe Commerce和Adobe Experience Platform Edge之间的连接，将Commerce数据用于其他Adobe Experience Cloud产品，例如Adobe Analytics和Adobe Target。</div>
-  </td>
-   </tr>
-<tr>
-   <td valign="top" width="200">
-       <img alt="[!UICONTROL Services Connector]" src="assets/product-recs.png" width="170px"/></td>
+<table style="table-layout:fixed">
+<tr style="border: 0;">
    <td valign="top">
-   <a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas"><strong>[!DNL Services Connector]</strong></a>
-    <div>Commerce服务连接器使用API密钥和私钥为您的Adobe Commerce或Magento Open Source实例提供集成。 对于数据服务(仅限Adobe Commerce)，您还可以指定配置中的数据空间。</div>
-  </td>
-   </tr>
+      <a href="../data-connection/overview.md">
+      <img alt="将数据传输到平台" src="../assets/icons/TransferToPlatform.svg" width="40">
+      </a>
+      <div>
+         <a href="../data-connection/overview.md">
+         <strong>[!DNL Data Connection]</strong>
+         </a>
+      </div>
+      <p>
+         <em>利用Adobe Commerce和Adobe Experience Platform Edge之间的连接将Commerce数据用于其他Adobe Experience Cloud产品，如Adobe Analytics和Adobe Target。</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../landing/saas.md">
+      <img alt="竖起大拇指" src="../assets/icons/DataSetting.svg" width="40">
+      </a>
+      <div>
+          <a href="../landing/saas.md">
+         <strong>Commerce服务连接器</strong>
+         </a>
+      </div>
+      <p>
+         <em>配置身份验证以启用Adobe Commerce与连接的服务之间的安全通信。 对于每个环境，请为Commerce服务数据存储指定数据空间ID。</em>
+      </p>
+   </td>
+</tr>
 </table>
 
 ## 数据工具
 
-<table>
-<tr>
-   <td valign="top" width="200">
-      <img alt="[!DNL SaaS Data Export]" src="assets/live-search.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/overview"><strong>[!DNL SaaS Data Export]</strong></a>
-    <div>SaaS数据导出将目录、订单和库存数据从Commerce服务器导出到连接的Commerce服务，以使服务保持最新。 当由事件（如产品价格或库存水平的变化）触发时，索引器会编译数据。 您可以通过*数据管理功能板*或命令行界面来观察和管理此过程。</div>
-  </td>
-</tr>
-<tr>
-   <td valign="top" width="200">
-      <img alt="[!DNL SaaS Price Indexer]" src="assets/live-search.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/price-index/price-indexing.md"><strong>[!DNL SaaS Price Indexer]</strong></a>
-    <div>SaaS定价索引功能通过将资源密集型任务（如索引和价格计算）从Commerce应用程序转移到Adobe的云基础架构来优化站点性能。 此方式让商家能够快速扩展资源以加快价格指数化速度，并更快地为店面服务和连接Commerce服务提供价格更新。</div>
-  </td>
-</tr>
-<tr>
-   <td valign="top" width="200">
-      <img alt="[!DNL Catalog Sync]" src="assets/live-search.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync"><strong>[!DNL Catalog Sync]</strong></a>
-    <div>目录同步会将产品数据从Commerce服务器导出到Commerce服务，以保持服务处于最新状态。 由产品价格或库存水平更改等事件触发的索引器编译目录数据。 您可以通过*Catalog Sync*仪表板或命令行界面来观察和管理此过程。</div>
-  </td>
-</tr>
+<table style="table-layout:fixed">
+<tr style="border: 0;">
+   <td valign="top">
+       <a href="../data-export/overview.md">
+      <img alt="SaaS数据导出信息源管理" src="../assets/icons/FeedManagement.svg" width="40">
+      </a>
+      <div>
+         <a href="../data-export/overview.md">
+         <strong>[!DNL SaaS Data Export]</strong>
+         </a>
+      </div>
+      <p>
+         <em>自动将目录、订单和清单数据从Adobe Commerce同步到连接的服务。 使用Commerce CLI命令或<strong>数据管理功能板</strong>管理同步处理。</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../price-index/price-indexing.md">
+      <img alt="产品价格信息源" src="../assets/icons/Feed.svg" width="40">
+      </a>
+      <div>
+          <a href="../price-index/price-indexing.md">
+         <strong>SaaS价格索引器</strong>
+         </a>
+      </div>
+      <p>
+         <em>通过从Commerce应用程序向Adobe的云基础架构转移大量占用资源的任务（如索引和价格计算），优化站点性能。</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <img alt="监控数据同步" src="../assets/icons/Monitoring.svg" width="40">
+      </a>
+      <div>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+         <strong>数据管理仪表板</strong>
+         </a>
+      </div>
+      <p>
+         <em>在Commerce管理员中，轻松地跟踪统一仪表板的Commerce数据同步并触发重新同步。 获取有关数据可用性的宝贵见解，以便及时向购物者显示。</em>
+      </p>
+   </td>
 </table>
+
+>[!NOTE]
+>
+>使用Product Recommendations v6.0.0、Live Search v4.1.0或目录服务v1.17（具有有效许可证）的Commerce商家可以免费使用数据管理功能板。 使用早期服务版本的商家可以使用[目录同步](../landing/catalog-sync.md)来管理和跟踪数据同步。
