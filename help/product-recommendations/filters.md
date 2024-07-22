@@ -2,9 +2,9 @@
 title: 筛选产品
 description: 定义包括或排除用作推荐的产品条件。
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: aa036228bb4040de5a8d4d159727fa0c4c6d99e1
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '704'
 ht-degree: 0%
 
 ---
@@ -57,6 +57,10 @@ Adobe Commerce会自动将不可配置的默认过滤器应用于推荐单元。
 ### 产品
 
 产品筛选器指定哪些特定产品符合条件或不符合条件，以便显示在推荐中。 您无法选择已禁用或无法单独显示的产品，因为这些产品永远不会显示在推荐中。
+
+>[!NOTE]
+>
+>可配置产品的子产品不显示在推荐单元中，因为这些子产品具有&#x200B;_不可见_&#x200B;的可见性。
 
 ### 类型
 

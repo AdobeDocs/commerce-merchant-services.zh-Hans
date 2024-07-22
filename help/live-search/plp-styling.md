@@ -2,9 +2,9 @@
 title: 产品列表页面小组件
 description: 正在启用和设置 [!DNL Live Search Product Listing Page Widget]的样式
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: faf217486d57588d8535c1d605e963c91ec3ee68
+source-git-commit: aa036228bb4040de5a8d4d159727fa0c4c6d99e1
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ PLP小组件提供以下开箱即用的功能：
 - 多语言支持
 - 价格滑块
 
-有关如何自定义PLP构件以处理上述功能的信息，请参阅以下[存储库](https://github.com/adobe/storefront-product-listing-page/)中的`storefront-product-listing-page`自述文件。
+有关如何自定义PLP构件以处理上述功能的信息，请参阅以下[存储库](https://github.com/adobe/storefront-product-listing-page/)中的`storefront-product-listing-page`自述文件。 此存储库中的自述文件提供了一个示例，说明如何自定义PLP构件并将这些自定义项部署到您的站点。
 
 >[!WARNING]
 >
