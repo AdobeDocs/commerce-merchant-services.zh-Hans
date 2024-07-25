@@ -4,9 +4,9 @@ description: 了解如何使用生产和沙盒API密钥将Adobe Commerce或Magen
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 391208f63c092f1eebb7330e2445079e09594890
+source-git-commit: 1089ba268866ef3097a909440a06587dc1987fc5
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1026'
 ht-degree: 0%
 
 ---
@@ -102,9 +102,7 @@ ht-degree: 0%
 
 1. 如果不存在任何SaaS项目，请单击&#x200B;**创建项目**。 然后在&#x200B;**项目**&#x200B;字段中，输入SaaS项目的名称。
 
-   创建SaaS项目时，[!DNL Commerce]会根据您的[!DNL Commerce]许可证生成一个或多个SaaS数据空间：
-   - Adobe Commerce — 一个生产数据空间；仅两个测试数据空间。 在具有多个暂存环境的Cloud Pro项目中，您可以通过[提交支持请求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，为每个暂存环境请求额外的测试数据空间。
-   - Magento Open Source — 一个生产数据空间；无测试数据空间
+   所有商家均可访问每个SaaS项目的一个生产数据空间和两个测试数据空间。 对于具有多个暂存环境的On Cloud Pro项目，您可以通过[提交支持请求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/)，为每个暂存环境请求额外的测试数据空间。
 
 1. 选择要用于[!DNL Commerce]存储当前配置的&#x200B;**数据空间**。
 
