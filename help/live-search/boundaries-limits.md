@@ -3,9 +3,9 @@ title: '边界和限制'
 description: 了解 [!DNL Live Search] 的界限和限制，以确保它满足您的业务需求。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 2d383d6b0d9e7b915fac32f90b25f1640dcab6cf
+source-git-commit: 61ebda0015c6d5a7c0bb08f7aae9a4593bca84a4
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '748'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 0%
 ## 同义词
 
 - [!DNL Live Search]在每个存储视图中最多可管理200个[同义词](synonyms.md)。
-- 每个存储视图的多词同义词限制为20。
+- 多词同义词可能无法始终按预期工作。 请务必先在暂存环境中测试这些同义词，然后再在生产中使用它们，因为它们可能会对相关性产生负面影响。
 
 ## 类别促销
 
