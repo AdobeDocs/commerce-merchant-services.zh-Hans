@@ -3,16 +3,16 @@ title: 在暂存环境中测试
 description: 了解如何在暂存环境中使用生产环境中的 [!DNL Product Recommendations] 进行测试。
 exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
 feature: Services, Recommendations, Staging
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
 
 # 在暂存环境中测试
 
-在将推荐部署到生产环境之前，您应在非生产环境中进行测试，以确保一切都按预期运行。
+在将推荐部署到生产环境之前，请在非生产环境中测试该服务，以确保一切都按预期运行。
 
 [!DNL Product Recommendations]根据从店面收集的[购物者行为数据](behavioral-data.md)返回产品。 但是，在非生产环境中，您可能没有任何来自购物者的行为数据。 唯一可以在没有行为数据的情况下测试的推荐类型为`More like this`。 此推荐类型不需要任何输入数据，因为它使用直接内容相似度匹配。
 
@@ -30,14 +30,14 @@ Adobe Commerce允许您通过[切换](settings.md) SaaS数据空间，从生产�
 
 要从生产环境中获取推荐，您必须确保：
 
-- Storefront数据收集是[在生产环境中配置和启用的](install-configure.md)。
-- 您的非生产环境目录与生产环境目录大致相同。 使用类似的目录可确保推荐单位中返回的产品与生产单位中的产品非常相似。
+- Storefront数据收集在生产环境中[已配置并启用](install-configure.md)。
+- 非生产环境中的目录与生产环境中的目录大致相同。 使用类似的目录可确保推荐单元中返回的产品与生产环境中的产品非常相似。
 
 ## 在非生产环境中生成行为数据
 
 1. 将`magento/product-recommendations`模块部署到非生产环境，其中目录数据类似于您的生产目录。
 
-1. 在管理员中为[配置](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)使用其中一个非生产数据空间ID。
+1. 在管理员中为[配置](../landing/saas.md#saas-configuration)使用其中一个非生产数据空间ID。
 
 1. 通过单击店面周围自行生成数据以模拟实际购物者的行为（或创建自动化脚本）。 通过测试，您可在非生产环境中生成行为事件。 这些事件用于生成支持推荐的产品亲和度。 为了进行测试，[!DNL Commerce]建议您与以下推荐类型进行交互：
 
@@ -47,6 +47,6 @@ Adobe Commerce允许您通过[切换](settings.md) SaaS数据空间，从生产�
 
 ### 注意事项
 
-- 来自非生产SaaS数据空间的行为和目录数据标识隔离环境，在该环境中生成的产品推荐完全基于在关联的店面上生成的行为数据。
+- 来自非生产[SaaS数据空间](../landing/saas.md#saas-configuration)的行为和目录数据标识了一个独立的环境，在该环境中，生成的产品推荐完全基于在关联的店面中生成的行为数据。
 
-- 由于没有大量行为数据，因此用于计算产品关联的输入数据是稀疏的。 但是，该数据仍会发送到Sensei以计算机器学习模型，并根据您在此环境中生成的数据提供推荐。
+- 由于没有大量行为数据，因此用于计算产品关联的输入数据是稀疏的。 但是，该数据仍会被发送到Sensei以计算机器学习模型，并根据在此环境中生成的数据提供推荐。

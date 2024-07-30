@@ -3,9 +3,9 @@ title: 安装和配置
 description: 了解如何安装、更新和卸载 [!DNL Product Recommendations]。
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 role: Admin, Developer
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ composer require magento/product-recommendations
 composer require magento/module-page-builder-product-recommendations
 ```
 
-通过在页面生成器中启用[!DNL Product Recommendations]，您可以将现有的活动[推荐单元](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)添加到在页面生成器中创建的任何内容，例如页面、块和动态块。
+通过在页面生成器中启用[!DNL Product Recommendations]，您可以将现有的活动[推荐单元](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)添加到在页面生成器中创建的任何内容，例如页面、块和动态块。
 
 有关详细说明，请参阅[将 [!DNL Product Recommendations] 与页面生成器内容一起使用](page-builder.md)。
 
@@ -51,13 +51,13 @@ composer require magento/module-visual-product-recommendations
 
 ## 配置[!DNL Product Recommendations] {#configure}
 
-1. 安装`magento/product-recommendations`模块后，通过指定API密钥并选择SaaS数据空间来配置[Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)。
+1. 安装`magento/product-recommendations`模块后，通过指定API密钥并选择SaaS数据空间来配置[Commerce Services Connector](../landing/saas.md)。
 
    通过配置此连接，可以实现Commerce实例、目录服务和其他支持服务之间的数据同步和通信。 数据同步由[SaaS Data Export扩展](../data-export/overview.md)处理。
 
-1. 为确保目录导出可以正确运行，请确认[cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html)作业和[索引器](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)正在运行，并且`Product Feed`索引器设置为`Update by Schedule`。
+1. 为确保目录导出可以正确运行，请确认[cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)作业和[索引器](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)正在运行，并且`Product Feed`索引器设置为`Update by Schedule`。
 
-成功将Commerce应用程序链接到Commerce服务并指定SaaS数据空间后，将开始目录同步。 然后，您可以[验证](verify.md)行为数据是否已发送到店面。
+成功将Commerce应用程序链接到Commerce Services并指定[SaaS数据空间](../landing/saas.md#saas-configuration)后，将开始目录同步。 然后，您可以[验证](verify.md)行为数据是否已发送到店面。
 
 ## 监测数据同步并排除其故障
 
@@ -107,7 +107,7 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 >[!NOTE]
 >
-> 在版本3.x.x的产品Recommendations中，您只需要一个API密钥。 在版本4.x.x及更高版本中，您必须提供生产公共API密钥和专用API密钥以及沙盒公共API密钥和专用API密钥。 如果您未提供这两对API密钥，则无法在管理员中访问产品Recommendations功能。 但是，您的店面将继续收集数据，并且现有推荐将继续向您的购物者显示。
+> 在版本3.x.x的产品Recommendations中，您只需要一个API密钥。 在版本4.x.x及更高版本中，您必须为沙盒和生产环境提供公共API密钥和私有API密钥。 如果您未提供这两对API密钥，则无法在管理员中访问产品Recommendations功能。 但是，数据收集会在您的店面中继续，并且现有推荐将继续向您的购物者显示。
 
 ## 防火墙
 
@@ -115,4 +115,4 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 ## 卸载[!DNL Product Recommendations] {#uninstall}
 
-如有必要，您可以[卸载](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html)产品推荐模块。
+如有必要，您可以[卸载](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)产品推荐模块。
