@@ -3,9 +3,9 @@ title: 指南概述
 description: 了解如何使用 [!DNL Data Connection] 扩展将Adobe Commerce数据与Adobe Experience Platform集成。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+source-git-commit: 7b9867179a871e4949ea74f9214e9e52ea26bb71
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1752'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,13 @@ ht-degree: 0%
 >
 >Experience Platform连接器已重命名为[!DNL Data Connection]。
 
-[!DNL Data Connection]扩展将您的Adobe Commerce Web实例连接到Adobe Experience Platform和Edge Network。 了解如何[将](./mobile-sdk-epc.md) Adobe Experience Platform Mobile SDK与Commerce集成。
+[!DNL Data Connection]扩展将您的Adobe Commerce Web实例连接到Adobe Experience Platform和Edge Network。 对于移动设备应用程序开发人员，您可以将Adobe Experience Platform Mobile SDK与Commerce结合使用，以捕获Commerce数据并将其发送到Experience Platform。 [了解更多](./mobile-sdk-epc.md)。
 
 您的Commerce商店包含大量数据。 有关您的购物者如何浏览、查看以及最终购买您网站上的产品的信息可能会揭示创造更个性化购物体验的机会。 虽然这些数据可以为本机Commerce功能（如购物车价格规则和动态块）提供信息，但数据仍会孤立在您的Commerce实例中。
 
 Adobe Experience Platform提供了一套技术，当与Commerce商店中的数据结合后，可以将这些数据通过Edge Network分发到其他AdobeDX产品，以解锁关于购物者购买行为的洞察。 借助这些深入的见解，您可以跨所有渠道创建更加个性化的购物体验。
 
-下图显示了Commerce数据如何从您的商店流向其他AdobeDX产品：
+下图显示了安装和配置[!DNL Data Connection]扩展后，Commerce数据如何从您的商店流向其他AdobeDX产品。
 
 ![数据如何流向Experience Platform边缘](assets/commerce-edge.png)
 

@@ -4,9 +4,9 @@ description: 了解如何从Adobe Commerce安装、更新和卸载 [!DNL Data Co
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: e6f1094799826bdc0e4dc45a495df4880a8bc8c9
+source-git-commit: 962452b7e3fdfecabe05f5af3d16afd8d24f2740
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,7 @@ ht-degree: 0%
 
    - `magento/orders-connector`
    - `magento/data-services`
+   - `magento/customers-connector`
    - `magento/module-experience-connector`
    - `magento/module-experience-connector-admin`
    - `magento/module-experience-connector-admin-graph-ql`
@@ -44,9 +45,9 @@ ht-degree: 0%
 
 1. （可选）要包含B2B数据（包含[申请事件](events.md#b2b-events)），请安装[B2B扩展](#install-the-b2b-extension)。
 
-### 安装Adobe I/O事件
+### 安装Adobe I/O事件并配置客户连接器模块
 
-安装`experience-platform-connector`扩展后，必须安装Adobe Commerce的Adobe I/O事件。
+安装`experience-platform-connector`扩展后，必须安装Adobe Commerce的Adobe I/O事件并配置`customers-connector`模块。
 
 以下步骤适用于云基础架构和内部部署安装的Adobe Commerce。
 
@@ -70,19 +71,7 @@ ht-degree: 0%
    bin/magento module:enable Magento_AdobeCommerceEventsClient Magento_AdobeCommerceEventsGenerator Magento_AdobeIoEventsClient Magento_AdobeCommerceOutOfProcessExtensibility
    ```
 
-根据部署类型最终完成安装：内部部署或云基础架构上的Adobe Commerce 。
-
-#### 内部部署
-
-在内部部署环境中，您必须手动启用代码生成和Adobe Commerce事件：
-
-```bash
-bin/magento events:generate:module
-bin/magento module:enable Magento_AdobeCommerceEvents
-bin/magento setup:upgrade
-bin/magento setup:di:compile
-bin/magento config:set adobe_io_events/eventing/enabled 1
-```
+根据部署类型最终完成安装：云基础架构或内部部署上的Adobe Commerce 。
 
 #### 在云基础架构上
 
@@ -97,6 +86,18 @@ stage:
 提交更新的文件并将其推送到云环境。 部署完成后，使用以下命令启用发送事件：
 
 ```bash
+bin/magento config:set adobe_io_events/eventing/enabled 1
+```
+
+#### 内部部署
+
+在内部部署环境中，您必须手动启用代码生成和Adobe Commerce事件：
+
+```bash
+bin/magento events:generate:module
+bin/magento module:enable Magento_AdobeCommerceEvents
+bin/magento setup:upgrade
+bin/magento setup:di:compile
 bin/magento config:set adobe_io_events/eventing/enabled 1
 ```
 

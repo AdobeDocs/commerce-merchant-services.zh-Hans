@@ -3,9 +3,9 @@ title: 将Commerce数据连接到Adobe Experience Platform
 description: 了解如何将Commerce数据连接到Adobe Experience Platform。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 89607d22ba8e69e0c98fce97e041022e33d01c07
+source-git-commit: c252c2fb614ec74f1bdd11cc482066a7133dd523
 workflow-type: tm+mt
-source-wordcount: '2486'
+source-wordcount: '2532'
 ht-degree: 0%
 
 ---
@@ -182,6 +182,10 @@ ht-degree: 0%
 
 配置文件记录在Real-Time CDP中可用大约需要10分钟。 配置文件事件会立即开始流式传输。
 
+>[!TIP]
+>
+>如果Experience Platform中未显示配置文件数据，请参阅[Commerce知识库](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported)以获取故障排除建议。
+
 #### 字段描述
 
 | 字段 | 描述 |
@@ -277,6 +281,10 @@ Adobe Commerce最多收集5年的[历史订单数据和状态](events-backoffice
 在此示例中，您看到来自[`commerce.productListAdds`](events.md#addtocart)、[`commerce.productViews`](events.md#productpageview)、[`web.webpagedetails.pageViews`](events.md#pageview)等的事件数据。 通过此视图，可验证您的Commerce数据是否已到达边缘。
 
 如果结果不符合预期，请打开您的数据集并查找任何失败的批量导入。 了解有关[批处理导入疑难解答的详细信息](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html)。
+
+### 验证配置文件数据是否显示在Experience Platform中
+
+如果Experience Platform中未显示配置文件数据，请参阅[Commerce知识库](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported)以获取故障排除建议。
 
 ## 后续步骤
 
