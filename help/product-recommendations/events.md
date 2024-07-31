@@ -3,7 +3,7 @@ title: 收集数据
 description: 了解事件如何收集产品推荐的数据。
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
-source-git-commit: 7ed9321a2f4e58a7476aa91e74611fe896e1a7b1
+source-git-commit: 67296ea42bfddb10b0c86cb1ca47324f5fec7825
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 0%
@@ -34,15 +34,16 @@ ht-degree: 0%
 | `view` | 推荐单元将变为可在页面上查看，例如通过滚动到视图中。 | 是 |
 
 要正确填充仪表板，需要以下事件。
-| “仪表板”列 | 活动    | 加入字段  |
+
+| “仪表板”列 | 活动 | 加入字段 |
 | ---------------- | --------- | ----------- |
-| 展示次数      |`page-view`，`recs-request-sent`，`recs-response-received`，`recs-unit-render` | unitId  |
-| 视图            |`page-view`，`recs-request-sent`，`recs-response-received`，`recs-unit-render`，`recs-unit-view` | unitId  |
-| 点击次数           |`page-view`，`recs-request-sent`，`recs-response-received`，`recs-item-click`，`recs-add-to-cart-click`    | unitId  |
-| 收入          |`page-view`，`recs-request-sent`，`recs-response-received`，`recs-item-click`，`recs-add-to-cart-click`，`place-order` | unitId， sku |
-| LT收入       |`page-view`，`recs-request-sent`，`recs-response-received`，`recs-item-click`，`recs-add-to-cart-click`，`place-order` | unitId， sku |
-| CTR              |`page-view`，`recs-request-sent`，`recs-response-received`，`recs-unit-render`，`recs-item-click`，`recs-add-to-cart-click`  | unitId， sku |
-| vCTR             |`page-view`，`recs-request-sent`，`recs-response-received`，`recs-unit-render`，`recs-unit-view`，`recs-item-click`，`recs-add-to-cart-click` | unitId， sku |
+| 展示次数 | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-unit-render` | unitId |
+| 视图 | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-unit-render`，`recs-unit-view` | unitId |
+| 点击次数 | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-item-click`，`recs-add-to-cart-click` | unitId |
+| 收入 | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-item-click`，`recs-add-to-cart-click`，`place-order` | unitId， sku |
+| LT收入 | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-item-click`，`recs-add-to-cart-click`，`place-order` | unitId， sku |
+| CTR | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-unit-render`，`recs-item-click`，`recs-add-to-cart-click` | unitId， sku |
+| vCTR | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-unit-render`，`recs-unit-view`，`recs-item-click`，`recs-add-to-cart-click` | unitId， sku |
 
 如果店面是通过PWA Studio实现的，请参阅[PWA文档](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)。 如果您使用自定义前端技术，如React或Vue JS，请参阅用户指南以了解如何在Headless](headless.md)环境中集成[Product Recommendations。
 
