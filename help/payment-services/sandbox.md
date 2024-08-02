@@ -3,9 +3,9 @@ title: 设置测试沙盒
 description: 使用PayPal沙盒帐户在测试模式下使用 [!DNL Payment Services] 。
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: bfb49e3602cc80f97817a8fd8d7c4684a3a3bcd2
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -81,5 +81,7 @@ PayPal沙盒帐户允许您在测试模式下使用[!DNL Payment Services]。 Pa
 >此设置不适用于其他签出流。
 
 ## 在沙盒环境中测试
+
+强烈建议您先使用测试数据空间实现集成和暂存环境，并使用真正的信用卡和银行在生产环境中测试支付，然后再向购物者公开此功能。
 
 有关详细信息，请参阅[测试和验证](test-validate.md)。

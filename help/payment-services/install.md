@@ -4,9 +4,9 @@ description: 安装Payments Services扩展。
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 692a7e55d72b1e2f1a161d508be5e179c4d26bde
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -21,8 +21,6 @@ ht-degree: 0%
 
 下载并安装[!DNL Adobe Commerce]和[!DNL Magento Open Source]的[!DNL Payment Services]扩展是使用[!DNL Payment Services]的必备步骤。
 
-![[!DNL Payment Services]扩展管理员视图](assets/admin-view.png){width="300" zoomable="yes"}
-
 ## 下载扩展
 
 必须先从[Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html)下载该扩展，然后才能安装它。
@@ -32,6 +30,10 @@ ht-degree: 0%
 1. 单击&#x200B;**[!UICONTROL Add to Cart]**。
 1. 完成签出，然后单击&#x200B;**[!UICONTROL Place Order]**。
 1. 检查与您的Marketplace下载关联的电子邮件，以查看订单确认和详细信息。
+
+>[!NOTE]
+>
+> 对于Adobe Commerce版本2.4.7或更高版本，[!DNL Payment Services]现成可用。
 
 ## 安装扩展
 
@@ -97,6 +99,10 @@ Composer在初始安装[!DNL Adobe Commerce]期间使用这些密钥，或者在
 1. 提交更改。
 1. 要确保已提交的代码已部署，请更新您的实例。
 
+>[!NOTE]
+>
+> [!DNL Payment Services] 1.6.1与PHP版本7.x兼容。但是，强烈建议更新到最新的[!DNL Payment Services]版本。
+
 ## 升级扩展
 
 发布[!DNL Payment Services]的新版本后，您可以轻松升级扩展。
@@ -109,11 +115,21 @@ Composer在初始安装[!DNL Adobe Commerce]期间使用这些密钥，或者在
 
    使用`composer update`命令更新所有根依赖项。
 
+1. 更新编辑器后，运行：
+
+   ```bash
+   bin/magento setup:upgrade
+   ```
+
 1. 提交并推送更改。
 
 ## 故障排除
 
 在尝试安装[!DNL Payment Services]扩展时，您可能会看到错误。 使用以下故障排除方法解决错误。
+
+### 存储库列表
+
+验证存储库列表中是否存在`repo.magento.com`。
 
 ### 不正确的编辑器键
 

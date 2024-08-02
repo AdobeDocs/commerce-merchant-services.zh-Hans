@@ -3,7 +3,7 @@ title: 使用 [!DNL Payment Services]创建订单
 description: 管理员允许商家为其需要帮助的客户直接使用 [!DNL Payment Services] 完成订单。
 exl-id: 1542a33f-9c01-4c36-bbce-bfa3107fbeb8
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 托管的信用卡字段
 
-在Admin中创建订单时，[!DNL Payment Services]可用作付款方式：
+创建订单时，[!DNL Payment Services]可在管理员中作为付款方式使用：
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏中，展开&#x200B;**[!UICONTROL Sales]**&#x200B;并选择&#x200B;**[!UICONTROL Orders]**。
 1. 单击&#x200B;**[!UICONTROL Create New Order]**。

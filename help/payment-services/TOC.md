@@ -6,10 +6,10 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 4%
+source-wordcount: '103'
+ht-degree: 3%
 
 ---
 
@@ -19,10 +19,6 @@ ht-degree: 4%
 - [指南概述](guide-overview.md)
 - [ [!DNL Payment Services]简介](overview.md)
 - [发行说明](release-notes.md)
-- 付款和结帐{#payments-checkout}
-   - [付款选项](payments-options.md)
-   - [信用卡保险存储](vaulting.md)
-   - [结帐](checkout.md)
 - 载入[!DNL Payment Services] {#get-started}
    - [载入概述](onboard.md)
    - [安装 [!DNL Payment Services] 扩展](install.md)
@@ -34,18 +30,23 @@ ht-degree: 4%
    - [[!DNL Payment Services]设置](settings.md)
    - [命令行配置](configure-cli.md)
    - [旧版配置](configure-admin.md)
-- [测试和验证](test-validate.md)
-- [创建订单](create-order.md)
+   - [测试和验证](test-validate.md)
+- 付款和结帐{#payments-checkout}
+   - [付款选项](payments-options.md)
+   - [信用卡保险存储](vaulting.md)
+   - [结帐](checkout.md)
+   - [在管理员中创建订单](create-order.md)
+   - 管理付款{#manage}
+      - [ [!DNL Payment Services]的行项目](line-items.md)
+      - [退款](refunds.md)
+      - [空洞](voids.md)
 - Financial Reporting {#reporting}
    - [交易报表](transactions.md)
    - [订单付款状态报表](order-payment-status.md)
    - [支付报表](payouts.md)
    - [可用数据](data.md)
    - [2级和3级处理](levels-card-payment-transactions.md)
-- 管理付款{#manage}
-   - [退款](refunds.md)
-   - [空洞](voids.md)
-- 安全性{#security-compliance}
-   - [安全性和合规性](security.md)
+- 安全性和合规性{#security-compliance}
+   - [安全性](security.md)
    - [有效保护欺诈行为](fraud-protection.md)
 - [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
