@@ -3,9 +3,9 @@ title: 发行说明
 description: 来自Adobe Commerce的 [!DNL Data Connection] 扩展的最新发行信息。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: c736647fc148a02803bc458b16ff1f3419dc1fe1
+source-git-commit: 8dc6aa5ab2472d1282fbf65605fd511250816af7
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -24,15 +24,21 @@ ht-degree: 0%
 
 有关[!DNL Data Connection]扩展使用的扩展的功能更改和修复，请参阅&#x200B;**支持的服务更新**。
 
-请参阅[即将发布的版本](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html)，了解版本计划和支持。
+请参阅[即将发布的版本](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)，了解版本计划和支持。
 
-请参阅开发人员文档，以[了解哪些Commerce版本支持此模块](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)。
+请参阅开发人员文档，以[了解哪些Commerce版本支持此模块](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)。
 
 ## 支持的服务更新
 
 以下发行说明介绍了与[!DNL Data Connection]扩展使用的扩展相关的功能更改和修复。
 
 +++支持的服务更新
+
+_2024年8月2日_
+
+![固定](../assets/fix.svg) — 固定将订单总额配置为含税时的付款总额。
+![新](../assets/new.svg) — 添加了`taxAmount`字段以订购购买事件。
+![新](../assets/new.svg) — 添加了向事件添加自定义数据的功能。 有关[示例](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md)，请参阅以下内容。
 
 _2024年1月24日_
 
@@ -78,7 +84,7 @@ _2024年7月22日_
 
 [!BADGE 兼容性]{type=Informative tooltip="兼容性"}
 
-![修复](../assets/new.svg) — 已更新Experience Platform连接器中继包以删除未使用的数据导出器和索引器。
+![修复](../assets/fix.svg) — 已更新Experience Platform连接器中继包以删除未使用的数据导出器和索引器。
 
 ## 3.1.2
 
@@ -86,8 +92,8 @@ _2024年6月5日_
 
 [!BADGE 兼容性]{type=Informative tooltip="兼容性"}
 
-![修复](../assets/new.svg) — 修复了在启动[历史同步](connect-data.md#specify-order-history-date-range)时使用错误日期格式的问题。
-![修复](../assets/new.svg) — 修复了Adobe Commerce 2.4.7上未发送[startCheckout](events.md#startcheckout)事件的问题。
+![修复](../assets/fix.svg) — 修复了在启动[历史同步](connect-data.md#specify-order-history-date-range)时使用错误日期格式的问题。
+![修复](../assets/fix.svg) — 修复了Adobe Commerce 2.4.7上未发送[startCheckout](events.md#startcheckout)事件的问题。
 
 ## 3.1.1
 
@@ -115,8 +121,8 @@ _2023年11月16日_
 [!BADGE 兼容性]{type=Informative tooltip="兼容性"}
 
 ![新](../assets/new.svg) -Experience Platform连接器已重命名为[!DNL Data Connection]。
-![修复](../assets/new.svg) — 添加了在Adobe IMS无法生成访问令牌时记录错误响应的功能。
-![修复](../assets/new.svg) — 如果您尝试同步历史订单但未指定帐户凭据，则添加了通知消息。
+![修复](../assets/fix.svg) — 添加了在Adobe IMS无法生成访问令牌时记录错误响应的功能。
+![修复](../assets/fix.svg) — 如果您尝试同步历史订单但未指定帐户凭据，则添加了通知消息。
 
 ## 3.0.0
 
