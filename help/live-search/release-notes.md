@@ -3,9 +3,9 @@ title: "[!DNL Live Search]发行说明"
 description: “来自Adobe Commerce的 [!DNL Live Search] 的最新发行信息。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: fe261bfaf5a64c9501bc5523d29f9b6a9fc1a6a2
+source-git-commit: 33ac4c2018e14c4379cab1438d6a5f11978796b6
 workflow-type: tm+mt
-source-wordcount: '1966'
+source-wordcount: '1993'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,14 @@ _2023年10月27日_
 
 ![新建](../assets/new.svg) [!DNL Live Search] PLP小组件现在支持色板。
 
+## [!DNL Live Search] 4.2.1 {#421}
+
+_2024年7月31日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"}
+
+![修复](../assets/fix.svg)修复了某些脚本未在签出页面上加载的问题。
+![修复](../assets/fix.svg)修复了`composer.json`文件中的依赖项版本。
 
 ## [!DNL Live Search] 4.2.0 {#420}
 
