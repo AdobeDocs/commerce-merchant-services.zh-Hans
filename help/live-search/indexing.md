@@ -2,9 +2,9 @@
 title: "索引"
 description: “了解 [!DNL Live Search] 如何索引产品属性属性。”
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 920324dbad62adaee5c7db688e59398557e03663
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 属性元数据的范围是`website/store/store view`。
 
-[!DNL Live Search] API允许客户端按Adobe Commerce管理员中将[storefront属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search`设置为`Yes`的任何产品属性进行排序。 启用后，可以为属性设置`Search Weight`和`Visible in Advanced Search`。
+[!DNL Live Search] API允许客户端按Adobe Commerce管理员中将[storefront属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search`设置为`Yes`的任何产品属性进行排序。 启用后，可以为属性设置`Search Weight`。
 
 [!DNL Live Search]不为已删除的产品或设置为`Not Visible Individually`的产品编制索引。
 

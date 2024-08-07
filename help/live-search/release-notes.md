@@ -3,9 +3,9 @@ title: "[!DNL Live Search]发行说明"
 description: “来自Adobe Commerce的 [!DNL Live Search] 的最新发行信息。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 33ac4c2018e14c4379cab1438d6a5f11978796b6
+source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '2010'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 0%
 ## 托管服务更新
 
 这些说明描述了在未发布版本控制版本或对托管服务的改进的情况下发布的更新。
+
+_2024年8月7日_
+
+![固定](../assets/fix.svg)将[价格分面](settings.md#price-faceting)的最大间隔值或价格范围从10,000增加到40,000,000。
 
 _2024年2月13日_
 

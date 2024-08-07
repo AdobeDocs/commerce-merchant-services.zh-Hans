@@ -2,7 +2,7 @@
 title: "设置"
 description: “配置 [!DNL Live Search] 服务的设置。”
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
+source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 1. 在管理员中，转到&#x200B;**营销** > *SEO和搜索* > **[!DNL Live Search]**。
 1. 在&#x200B;*价格分面*&#x200B;下的&#x200B;**设置**&#x200B;工作区上，执行以下操作：
    * 输入&#x200B;**选择的数量**&#x200B;或可用的价格分组。 最多可以定义50个价格分组。
-   * 输入每个组的&#x200B;**间隔值**&#x200B;或价格范围。 最大值为10,000。
+   * 输入每个组的&#x200B;**间隔值**&#x200B;或价格范围。 最大值为40,000,000。
 1. 单击&#x200B;**保存**。
 
    更新后的设置大约需要15分钟才能在店面中提供。

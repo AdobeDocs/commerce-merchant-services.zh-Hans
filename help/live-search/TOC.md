@@ -4,10 +4,10 @@ user-guide-description: “本指南提供了有关使用Adobe Commerce中的 [!
 breadcrumb-title: “[!DNL Live Search] 指南”
 role: Admin
 feature: Services, Search
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 2e13908ff96259bb707b6d0f897206bcd2059386
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 10%
+source-wordcount: '82'
+ht-degree: 9%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 10%
 - [安装](install.md)
 - [设置Live Search](workspace.md)
 - [边界和限制](boundaries-limits.md)
+- [最佳实践](best-practice.md)
 - [发行说明](release-notes.md)
 - 店面{#live-search-storefront}
    - [店面小组件](storefront-widgets.md)
