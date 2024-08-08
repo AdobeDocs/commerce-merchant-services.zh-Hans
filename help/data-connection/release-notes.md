@@ -3,9 +3,9 @@ title: 发行说明
 description: 来自Adobe Commerce的 [!DNL Data Connection] 扩展的最新发行信息。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 8dc6aa5ab2472d1282fbf65605fd511250816af7
+source-git-commit: f894a1a192f648df01e1f869bec9c8a4c66803e1
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -78,13 +78,21 @@ _2022年10月12日_
 
 +++
 
+## 3.1.4
+
+_2024年8月9日_
+
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+
+![修复](../assets/fix.svg) — 已更新`experience-platform-connector`中继包以删除其他未使用的数据导出器和索引器。
+
 ## 3.1.3
 
 _2024年7月22日_
 
 [!BADGE 兼容性]{type=Informative tooltip="兼容性"}
 
-![修复](../assets/fix.svg) — 已更新Experience Platform连接器中继包以删除未使用的数据导出器和索引器。
+![修复](../assets/fix.svg) — 已更新`experience-platform-connector`中继包以删除未使用的数据导出器和索引器。
 
 ## 3.1.2
 
