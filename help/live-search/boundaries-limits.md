@@ -3,9 +3,9 @@ title: '边界和限制'
 description: 了解 [!DNL Live Search] 的界限和限制，以确保它满足您的业务需求。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 61ebda0015c6d5a7c0bb08f7aae9a4593bca84a4
+source-git-commit: b24b2f79c56d43a20f4e5a3367ac07d00e3aed55
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,7 @@ ht-degree: 0%
 - 类别促销在每个类别中可以有一个规则。
 - 每个规则的最大条件数为10。
 - 每个规则的最大事件数为25。
+- 为了避免分页响应产生不可预测的结果，固定产品的数量不应超过请求的页面大小。
 
 ## 同义词
 
