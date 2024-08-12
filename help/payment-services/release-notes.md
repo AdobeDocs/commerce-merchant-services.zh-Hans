@@ -3,9 +3,9 @@ title: "[!DNL Payment Services]发行说明"
 description: 查看发行说明，了解所有 [!DNL Payment Services] 发行版本的信息。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: c02c7c8700c9aa2157b296b8995c05805e371941
+source-git-commit: 73a48822a7df6999ddb597e53cd6b869b1b97222
 workflow-type: tm+mt
-source-wordcount: '2787'
+source-wordcount: '2788'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ _2024年8月2日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
-![新建](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services]现在支持订单级别](line-items.md)的[行项数据。 此功能允许商家查看有关订单中项目的详细信息，如产品详细信息、数量和价格（包括销售税、折扣和其他相关信息）。
+![新建](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services]现在支持订单级别](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/manage/line-items)的[行项数据。 此功能允许商家查看有关订单中项目的详细信息，如产品详细信息、数量和价格（包括销售税、折扣和其他相关信息）。
 
 ![新建](../assets/new.svg)<!-- PAY-5380 --> [!DNL Payment Services]改进了Admin](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/configure/configure-admin#general-configuration)体验中的[配置，让商家可以更轻松、更直观地完成入门流程。 此功能允许商家重置其[!DNL Payment Services] ID。
 
