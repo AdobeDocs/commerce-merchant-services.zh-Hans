@@ -4,9 +4,9 @@ description: Adobe Commerce的 [!DNL Data Export Extension] 的最新发行信�
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 11ea98069dcc6d06e9ab90add8239fef2c8edc7d
+source-git-commit: 38a4e795200e368e91cd3075c611656e852b73f1
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,16 @@ ht-degree: 0%
 
 ![新](../assets/new.svg)已将立即导出源cron-job重命名为`*_feed_resend_failed_items`。
 
-![新](../assets/new.svg)重命名了立即导出信息源并更改日志表。
+![新](../assets/new.svg)重命名了立即导出信息源、索引器视图ID和更改日志表。
+- 信息源表（和索引器视图ID）：
+   - `catalog_data_exporter_products` -> `cde_products_feed`
+   - `catalog_data_exporter_product_attributes` -> `cde_product_attributes_feed`
+   - `catalog_data_exporter_categories` -> `cde_categories_feed`
+   - `catalog_data_exporter_product_prices` -> `cde_product_prices_feed`
+   - `catalog_data_exporter_product_variants` -> `cde_product_variants_feed`
+   - `inventory_data_exporter_stock_status` -> `inventory_data_exporter_stock_status_feed`
+- 更改日志表名称 — 遵循与信息源表相同的命名模式，但更改日志表名称会添加`_cl`后缀。  例如`catalog_data_exporter_products_cl`-> `cde-products_feed_cl`
+如果您的自定义代码引用了其中的任何实体，请使用新名称更新引用，以确保代码继续正常运行。
 
 ![修复](../assets/fix.svg)仅为需要它的馈送设置馈送数据中的`modified_at`字段。
 
