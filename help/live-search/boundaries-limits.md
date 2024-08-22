@@ -3,7 +3,7 @@ title: '边界和限制'
 description: 了解 [!DNL Live Search] 的界限和限制，以确保它满足您的业务需求。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
+source-git-commit: 2f28b77691e5b125875f1ce39301bfebd093a922
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 0%
@@ -70,12 +70,12 @@ ht-degree: 0%
 ## B2B和类别权限
 
 - 如果产品未添加到默认共享目录，则不会显示产品。
-- 使用[类别权限](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions)限制客户组：
+- 使用[类别权限](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions)限制客户组：
    - 必须将产品分配给根类别。
    - 必须向“未登录”客户组提供“允许”浏览权限。
-   - 要将产品限制为“未登录”客户组，请转到每个类别并为每个[客户组](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage)设置权限。
+   - 要将产品限制为“未登录”客户组，请转到每个类别并为每个[客户组](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage)设置权限。
 - 目前不支持对PWA Studio上具有PLP小组件的B2B的现成支持。 但是，您可以[使用API](install.md#pwa-support)来实施此功能。
-- [!DNL Live Search]中的类别Facet可能显示无法显示给特定[客户组](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage)的类别。
+- [!DNL Live Search]中的类别Facet可能显示无法显示给特定[客户组](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage)的类别。
 - [!DNL Live Search]最多可支持1,000个客户组。
 
 ## [!DNL Storefront popover]
