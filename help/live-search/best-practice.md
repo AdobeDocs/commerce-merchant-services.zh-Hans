@@ -2,9 +2,9 @@
 title: '[!DNL Live Search]最佳实践'
 description: 了解在商店中实施 [!DNL Live Search] 的最佳实践。
 role: Admin, Developer
-source-git-commit: 88be2212f3a992e7a2d18bf1d5c2e8d5d2b64b80
+source-git-commit: 77d12a1294c87089ce806615f92bf89396bfc43b
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2349'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,9 @@ ht-degree: 0%
 
 了解有关[弹出框](storefront-popover.md)小组件的更多信息。
 
-### 同义词和拼写
+### 同义词和拼写错误
 
-合并同义词和常见拼写错误以确保全面的搜索结果。 此外，您可以展开搜索查询以包含购物者可能使用的与目录中指定词不同的词。 您不希望因为某人正在寻找“沙发”而失去销售，而您的产品却被列为“沙发”。 您可以通过输入客户可能用于查找产品的所有词来捕获广泛的搜索词。 您可以[将同义词设置为单向或双向](synonyms-add.md#step-2-define-the-synonym-by-type)以改进结果。
+默认情况下，实时搜索会管理错误拼写。 您可以设置同义词，以包含购物者可能使用的与目录中指定单词不同的单词。 您不希望因为某人正在寻找“沙发”而失去销售，而您的产品却被列为“沙发”。 您可以通过输入客户可能用于查找产品的所有词来捕获广泛的搜索词。 您可以[将同义词设置为单向或双向](synonyms-add.md#step-2-define-the-synonym-by-type)以改进结果。
 
 #### 优化同义词的提示
 

@@ -2,9 +2,9 @@
 title: "彩块化的类型"
 description: “[!DNL Live Search]个Facet是动态的，并在相关时显示在筛选器列表中。”
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
-source-git-commit: f96f94a16e1926b7dd2f1ee94f124ac0c823a9e0
+source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,11 @@ ht-degree: 0%
 
 * 固定Facet — 最常用的Facet可以固定到列表顶部。 其余Facet在固定的Facet之后以&#x200B;*排序类型*&#x200B;顺序列出。
 * 动态Facet - [Adobe Sensei](https://www.adobe.com/sensei.html)发现与产品集和查询最相关的产品属性。 该计算会考虑整个目录的属性元数据，并在查询时确定与查询最相关的Facet。
+
+  >[!NOTE]
+  >
+  >如果您发现在创建动态Facet后，GraphQL查询响应中会显示超时错误，请将所有Facet更改为Pinded以查看它是否解决了性能问题。
+
 * 常用Facet — 搜索结果中最常出现的产品属性。
 * 价格Facet — 按价格范围返回产品。 您可以在&#x200B;[*设置*](settings.md)&#x200B;工作区中指定选择的数量和价格范围间隔。
 
