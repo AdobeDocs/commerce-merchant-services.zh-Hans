@@ -4,9 +4,9 @@ description: 了解如何使用生产和沙盒API密钥将Adobe Commerce或Magen
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
+source-git-commit: 34d4fdffbfaf85e28df4500298411258b2dab2c2
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 ### 生成生产和沙盒API密钥 {#genapikey}
 
-1. 在[https://account.magento.com](https://account.magento.com/customer/account/login){：target=&quot;_blank&quot;}登录到您的[!DNL Commerce]帐户。
+1. 在[https://account.magento.com](https://account.magento.com/customer/account/login){:target="_blank"}登录到您的[!DNL Commerce]帐户。
 
 1. 在&#x200B;**Magento**&#x200B;选项卡下，在侧栏中选择&#x200B;**API门户**。
 
@@ -79,10 +79,17 @@ ht-degree: 0%
 >[!WARNING]
 >
 > 请仅在生产[!DNL Commerce]安装中使用生产SaaS数据空间，以避免数据冲突。 否则，您可能会用测试数据污染生产站点数据，从而导致部署延迟。 例如，可能会从暂存数据（如暂存URL）错误地覆盖您的生产产品数据。
+> 如果发生这种情况，[提交支持请求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)以请求数据清理。
 
 ### SaaS数据空间配置
 
-所有商家均可访问每个SaaS项目的一个生产数据空间和两个测试数据空间。 对于具有多个暂存环境的Adobe Commerce Cloud Pro项目，您可以通过[提交支持请求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)，为每个暂存环境请求额外的测试数据空间。
+所有Adobe Commerce商家均可访问每个SaaS项目的一个生产数据空间和两个测试数据空间。
+
+您可以在任何非生产环境中使用测试数据空间，但前提是不同时在多个环境中使用相同的数据空间。 要在其他环境中使用测试数据空间，请先执行数据清理，然后再在该环境中选择和配置数据空间。
+
+对于具有多个暂存环境的Adobe Commerce Cloud Pro项目，您可以通过[提交支持请求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)，为每个暂存环境请求额外的测试数据空间。 但是，如果您只有一个暂存环境并且需要额外的测试数据空间，则可以使用以下选项：
+- 联系客户成功团队或您指定的客户成功经理以请求额外的暂存环境。 这另外还有额外费用。
+- [提交支持请求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)以获取额外的测试数据空间，并指明该额外数据空间的业务理由。 此请求有待审批。
 
 ### 选择或创建SaaS项目 {#createsaasenv}
 
