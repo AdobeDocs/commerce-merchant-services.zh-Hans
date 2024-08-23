@@ -4,9 +4,9 @@ description: Adobe Commerce的 [!DNL Data Export Extension] 的最新发行信�
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 38a4e795200e368e91cd3075c611656e852b73f1
+source-git-commit: 4b579b7ec7698f32b5f2254f20514cedbbb50cdd
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ## 103.3.4发行版
 
-![修复](../assets/fix.svg)通过添加有关重新索引过程的更多详细信息，改进Commerce SaaS数据导出日志记录。
+![修复](../assets/fix.svg)通过添加每次将数据从Commerce实例传输到Commerce服务<!--MDEE-785-->时发送`data_sent_outside`事件的机制，增加了对数据传输审核日志记录的支持
 
 ## 103.3.3发行版
 
