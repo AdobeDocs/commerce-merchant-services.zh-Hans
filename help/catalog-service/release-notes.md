@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service]发行说明'
 description: Adobe Commerce的 [!DNL Catalog Service] 的最新发行信息。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
+source-git-commit: 58d5abf84a190b203661606c439beb088b7ee20d
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,25 @@ ht-degree: 0%
 
 ## 当前主要版本
 
+### V1.22发布
+
+_2024年8月13日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"}
+
+![新](../assets/new.svg)添加了对按产品SKU检索所有变体的支持。 查看[目录服务API引用](https://developer.adobe.com/commerce/services/graphql/catalog-service/)。<!--DATA-6067-->
+
+
+## 先前版本
+
++++ 先前版本
+
 ### V1.19发布
 
 _2024年5月23日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"}
+
 
 ![修复](../assets/fix.svg) <!--DATA-5033-->选项值的`InStock`标志现在会考虑产品变体的作用域`enabled`状态。
 
@@ -45,10 +61,6 @@ _2024年5月23日_
 * 捆绑固定价格的产品
 
 有关详细信息和示例，请参阅[目录服务和API网格](mesh.md)
-
-## 先前版本
-
-+++ 先前版本
 
 ### V1.18发布
 
