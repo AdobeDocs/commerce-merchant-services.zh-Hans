@@ -2,9 +2,9 @@
 title: 筛选产品
 description: 定义包括或排除用作推荐的产品条件。
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: aa036228bb4040de5a8d4d159727fa0c4c6d99e1
+source-git-commit: b602385b956b6af131b008428d1182a586303bc7
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '734'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,11 @@ Adobe Commerce会自动将不可配置的默认过滤器应用于推荐单元。
 
 ### 类别
 
-基于产品类别的过滤器使用直接类别分配及其子类别。 例如，为类别`Gear`启用排除条件将排除分配给`Gear`的产品及其所有子类别，如`Gear/Bags`或`Gear/Fitness Equipment`。 对于B2B商家，类别过滤器会遵循您配置的任何[客户特定的产品类别](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html)。
+基于产品类别的过滤器使用直接类别分配及其子类别。 例如，为类别`Gear`启用排除条件将排除分配给`Gear`的产品及其所有子类别，如`Gear/Bags`或`Gear/Fitness Equipment`。 这同样适用于类别上的包含过滤器。 例如，启用类别`Gear`的包含条件包括分配给`Gear`的产品及其所有子类别，如`Gear/Bags`或`Gear/Fitness Equipment`。
+
+>[!NOTE]
+>
+>对于B2B商家，类别过滤器会遵循您配置的任何[客户特定的产品类别](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html)。
 
 当您将推荐部署到页面类型时，Adobe Commerce建议您使用以下类别过滤器配置：
 

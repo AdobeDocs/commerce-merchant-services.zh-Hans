@@ -3,9 +3,9 @@ title: '边界和限制'
 description: 了解 [!DNL Live Search] 的界限和限制，以确保它满足您的业务需求。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 4898d426a3d5fd2ea9059d200ebf8ba45d0d65df
+source-git-commit: 562af9995b49f4c0fddc76c2ae1c53dd928b1daa
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,10 @@ ht-degree: 0%
 - [层定价](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier)和[特殊定价](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special)在[!DNL Live Search]字段和产品列表页小部件中不受支持。
 - 产品价格不含增值税。
 - 不支持内容搜索。
-- 可分页的产品数量限制为10,000个。
+- 可分页的产品数量限制为10,000个。 虽然可以增加此限制，但可能会影响性能。 确保在类别或搜索结果中包含大量产品时提供有意义的产品过滤方式，这样购物者就不必使用深度分页。
 - 每个属性（包括描述和自定义属性）硬限制为1MB。
 - 搜索适配器不支持使用自定义源模型创建并用作彩块化的产品属性。 若要支持此功能，您必须使用[产品列表页小组件](plp-styling.md)。
+- 不支持自定义产品类型。
 
 ## 索引
 
@@ -84,3 +85,15 @@ ht-degree: 0%
 - [!DNL popover]不支持&#x200B;*Blank*&#x200B;主题。
 - 快速订购单不支持[!DNL popover]。
 - 不支持愿望清单和产品比较。
+- 不支持秘鲁索尔(PEN)的货币符号。
+
+## 故障排除
+
+有关对[!DNL Live Search]中的一些常见问题进行故障排除的帮助，请参阅以下知识库文章：
+
+- [[!DNL Live Search] 目录未同步](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)
+- [[!DNL Live Search] 仪表板和搜索结果排名不正确](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect)
+- [[!DNL Live Search] 显示缺货产品，而不管管理员中的库存状态设置如何](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-displays-out-of-stock-products)
+- [[!DNL Live Search] 方面未按字母顺序排序](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted)
+
+如果您需要其他帮助，请联系[支持](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。

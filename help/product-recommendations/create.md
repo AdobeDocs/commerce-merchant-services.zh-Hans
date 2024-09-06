@@ -2,9 +2,9 @@
 title: 创建新推荐
 description: 了解如何创建产品推荐单元。
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 51ff52eba117fe438d592ca886dbca25304a0d15
+source-git-commit: 5266ca2766697fc0fd8baf236a5ae83a26528977
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '1438'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ _推荐单元_
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**营销** > _促销活动_ > **产品Recommendations**&#x200B;以显示&#x200B;_产品Recommendations_&#x200B;工作区。
 
-1. 指定要显示推荐的[存储视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)。
+1. 指定要显示推荐的[存储视图](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views)。
 
    >[!NOTE]
    >
-   > 必须在默认的存储区视图中创建Page Builder推荐单元，然后才可以在任何位置使用。 要了解有关使用页面生成器创建产品推荐的更多信息，请参阅[添加内容 — 产品Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)。
+   > 必须在默认的存储区视图中创建Page Builder推荐单元，然后才可以在任何位置使用。 要了解有关使用页面生成器创建产品推荐的更多信息，请参阅[添加内容 — 产品Recommendations](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)。
 
 1. 单击&#x200B;**创建推荐**。
 
@@ -34,14 +34,14 @@ _推荐单元_
 
    >[!NOTE]
    >
-   > 将商店配置为将产品添加到购物车后立即[显示购物车页面时，“购物车”页面上不支持产品Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration.html#redirect-to-cart)。
+   > 将商店配置为将产品添加到购物车后立即[显示购物车页面时，“购物车”页面上不支持产品Recommendations](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。
 
    * 主页
    * 类别
    * 产品详细信息
    * 购物车
    * 确认
-   * [页面生成器](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
+   * [页面生成器](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
    您最多可以为每种页面类型创建5个有效的推荐单元，为页面生成器创建25个有效的推荐单元。 当达到限制时，页面类型将灰显。
 
@@ -81,37 +81,56 @@ _推荐单元_
 
 ## 就绪指示器
 
-某些推荐类型使用购物者的行为数据来[训练机器学习模型](behavioral-data.md)以构建个性化推荐。
+就绪指示器根据可用的目录和行为数据显示哪些推荐类型将表现最佳。 您还可以使用就绪指示器来确定您的事件是否存在问题，或者您是否没有足够的流量来填充推荐类型。
 
-只需要目录数据。 无需行为数据即可实现这些目标：
+就绪指示器可分为[基于静态的](#static-based)或[基于动态的](#dynamic-based)。 基于静态的仅使用目录数据；而基于动态的则使用来自购物者的行为数据。 该行为数据用于[训练机器学习模型](behavioral-data.md)以构建个性化推荐并计算其准备程度分数。
+
+就绪指标的计算基于两个因素：
+
+* 足够的结果集大小：在大多数情况下返回的结果是否足够以避免使用[备份建议](behavioral-data.md#backuprecs)？
+
+* 充分的结果集多样性：返回的产品是否代表您目录中的各种产品？ 此因素的目标是避免少数产品成为整个站点中唯一推荐的项目。
+
+基于上述因素，就绪值计算并显示如下：
+
+* 75%或更高的比例意味着针对该建议类型提出的建议将具有高度相关性。
+* 至少50%意味着针对该建议类型提出的建议将不那么相关。
+* 不足50%意味着为该建议类型提出的建议将不相关。
+
+这些是一般准则，但根据所收集数据的性质，每个具体情况可能有所不同，如上所述。 了解有关[就绪指示器的计算方式](#understand-how-readiness-indicators-are-calculated)和[就绪指示器可能偏低的原因](#what-to-do-if-the-readiness-indicator-percent-is-low)的详细信息。
+
+### 基于静态
+
+以下推荐类型基于静态，因为它们只需要目录数据。 不使用行为数据。
 
 * _最喜欢这个_
-* _最近查看的项目_
 * _视觉相似度_
 
-基于最近六个月的店面行为数据：
+### 基于动态
+
+以下推荐类型基于动态，因为它们使用店面行为数据。
+
+过去六个月的店面行为数据：
 
 * _查看了这个项目，也查看了那个项目_
 * _查看了这个项目，但购买了那个项目_
 * _已购买，已购买_
 * _为您推荐_
 
-基于人气的推荐类型使用最近七天的店面行为数据：
+过去七天的店面行为数据：
 
 * 查看次数最多
 * 购买次数最多
 * 已添加到购物车
 * 趋势
 
-就绪指示器值预计会由于以下因素而波动，例如目录的总体大小、产品交互事件的数量（查看次数、添加到购物车的次数、购买次数）以及在特定时间范围内注册这些事件的SKU的百分比，如上所示。 例如，在节假日流量高峰期，就绪指示器显示的值可能高于正常流量时的值。
+最近的购物者行为数据（仅限视图）：
 
-为了帮助您可视化每种推荐类型的培训进度，_选择推荐类型_&#x200B;部分显示每种类型的就绪程度度量。 这些准备情况指标的计算基于两个因素：
+* _最近查看的项目_
 
-* 足够的结果集大小：在大多数情况下返回的结果是否足够以避免使用[备份建议](behavioral-data.md#backuprecs)？
+### 可视化进度
 
-* 充分的结果集多样性：返回的产品是否代表您目录中的各种产品？ 此因素的目标是避免少数产品成为整个站点中唯一推荐的项目。
-
-基于上述因素，计算并显示就绪值。 当推荐类型的就绪值达到或高于75%时，会将该推荐类型视为准备部署。 推荐类型在就绪性至少为50%时被视为部分就绪。 当推荐类型的就绪值小于50%时，会将该推荐类型视为未准备好部署。 这些是一般准则，但根据收集数据的性质，每个具体情况可能有所不同，如上所述。
+为了帮助您可视化每种推荐类型的培训进度，_选择推荐类型_&#x200B;部分显示每种类型的就绪程度度量。
 
 ![推荐类型](assets/create-recommendation-select-type.png)
 _推荐类型_
@@ -119,6 +138,29 @@ _推荐类型_
 >[!NOTE]
 >
 >指标可能永远不会达到100%。
+
+依赖目录数据的推荐类型的就绪指示器百分比变化不大，因为商人的目录变化不频繁。 但是，基于购物者行为数据的推荐类型的就绪指示器百分比可能会经常更改，具体取决于购物者的日常活动。
+
+#### 如果就绪指示器百分比很低，该怎么办
+
+就绪性百分比低表示您的目录中符合此推荐类型推荐条件的产品不多。 这意味着，如果仍部署此推荐类型，则返回[备用推荐](behavioral-data.md#backuprecs)的可能性很高。
+
+下面列出了常见低就绪分数的可能原因和解决方案：
+
+* **基于静态** — 这些指示器的百分比较低可能是由于缺少可显示产品的目录数据所致。 如果它们低于预期值，则完全同步可以修复此问题。
+* **基于动态** — 基于动态的指示器的低百分比可能是由以下原因造成的：
+
+   * 推荐类型（requestId、产品上下文等）的必需店面事件中缺少字段。
+   * 存储区上的低流量，因此我们收到的行为事件量很低。
+   * 您商店中不同产品的店面行为事件多样性很低。 例如，如果在大多数情况下仅查看或购买了10%的产品，则相应的就绪指示器将会较低。
+
+#### 就绪指示器的计算方式
+
+准备情况指示指示指示对模型进行多少培训。 指标与收集的事件类型、与之交互的产品宽度和目录大小无关。
+
+就绪指示器百分比的计算方法可指明根据推荐类型可推荐的产品数量。 产品统计是根据目录的总体大小、交互数量（例如查看次数、点击次数、添加到购物车的次数）以及在特定时间范围内注册这些事件的SKU的百分比来应用的。 例如，在节假日流量高峰期，就绪指示器显示的值可能高于正常流量时的值。
+
+由于这些变量，就绪指示器百分比可能会波动。 这解释了为何您可能会看到推荐类型进出“准备部署”。
 
 ## 预览Recommendations {#preview}
 
