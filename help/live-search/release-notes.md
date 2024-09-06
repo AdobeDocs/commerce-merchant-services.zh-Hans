@@ -3,9 +3,9 @@ title: "[!DNL Live Search]发行说明"
 description: “来自Adobe Commerce的 [!DNL Live Search] 的最新发行信息。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
+source-git-commit: 5e0ab74e73f187213e83ce290abf2bb08571b9d1
 workflow-type: tm+mt
-source-wordcount: '2010'
+source-wordcount: '2027'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 0%
 ## 托管服务更新
 
 这些说明描述了在未发布版本控制版本或对托管服务的改进的情况下发布的更新。
+
+_2024年9月4日_
+
+![Fix](../assets/fix.svg)将Facet](boundaries-limits.md#facets)内可返回[的最大存储段数增加到100。
 
 _2024年8月7日_
 

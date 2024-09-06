@@ -3,7 +3,7 @@ title: '边界和限制'
 description: 了解 [!DNL Live Search] 的界限和限制，以确保它满足您的业务需求。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 2f28b77691e5b125875f1ce39301bfebd093a922
+source-git-commit: 4898d426a3d5fd2ea9059d200ebf8ba45d0d65df
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 0%
@@ -37,7 +37,7 @@ ht-degree: 0%
 ## Facet
 
 - 最多可以将100个属性配置为可编制索引的200个可筛选属性中的Facet。
-- 在一个Facet中，最多可返回30个分段。 如果需要返回30个以上的存储段，请[创建支持票证](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)，以便Adobe分析性能影响并确定是否可以为您的环境提高此限制。
+- 在一个Facet中，最多可返回100个分段。 如果您需要返回100个以上的分段，请[创建一个支持票证](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)，以便Adobe分析性能影响并确定是否可以为您的环境提高此限制。
 - 动态Facet会导致大型索引和高序度索引的性能问题。 如果您已创建动态Facet，并且发现任何性能下降或页面未加载但存在超时错误，请尝试将您的Facet更改为Pinded以确定这是否解决了您的性能问题。
 - Stock状态(`quantity_and_stock_status`)不支持作为Facet。 您可以使用`inStock: 'true'`筛选缺货产品。 当[!DNL Commerce]管理员中的“Display out of stock products”设置为“True”时，`LiveSearchAdapter`模块即开即用支持此功能。
 - 不支持将日期类型属性作为Facet。
