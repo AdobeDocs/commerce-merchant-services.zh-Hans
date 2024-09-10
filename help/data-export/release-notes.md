@@ -4,9 +4,9 @@ description: Adobe Commerce的 [!DNL Data Export Extension] 的最新发行信�
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 915f6c5580f2976edde6609b8fd1c0ba4b09aade
+source-git-commit: aaa3673154345207a90eaa9fea6384330420bfe5
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,11 @@ ht-degree: 0%
 >SaaS数据导出扩展是随Live Search、Product Recommendations和Catalog Service一起自动安装的模块集合。 您可以使用编辑器检查系统上安装的版本。 在某些情况下，您可能希望升级系统上的数据导出扩展以获取修复或新功能，而不更新Commerce服务版本。
 
 ## 当前主要版本
+
+## 103.3.11发行版
+
+![修复](../assets/fix.svg)数据导出服务现在以百分比形式发送捆绑产品的特殊价格数据，从而更正了以前发送捆绑产品的特殊价格数据作为最终价格的问题。&lt;！-MDEE-854—>
+![Fix](../assets/fix.svg)已更新单色实现，以便与Monolog 3兼容。&lt;！-MDEE-858—>
 
 ## 103.3.10发行版
 
