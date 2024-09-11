@@ -4,9 +4,9 @@ description: Adobe Commerce的 [!DNL Data Export Extension] 的最新发行信�
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: aaa3673154345207a90eaa9fea6384330420bfe5
+source-git-commit: 93be63ca7a4edc2890a37a6460a123e28226301a
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '711'
 ht-degree: 0%
 
 ---
@@ -30,8 +30,8 @@ ht-degree: 0%
 
 ## 103.3.11发行版
 
-![修复](../assets/fix.svg)数据导出服务现在以百分比形式发送捆绑产品的特殊价格数据，从而更正了以前发送捆绑产品的特殊价格数据作为最终价格的问题。&lt;！-MDEE-854—>
-![Fix](../assets/fix.svg)已更新单色实现，以便与Monolog 3兼容。&lt;！-MDEE-858—>
+![修复](../assets/fix.svg)数据导出服务现在以百分比形式发送捆绑产品的特殊价格数据，从而更正了以前发送捆绑产品的特殊价格数据作为最终价格的问题。 <!--MDEE-854-->
+![Fix](../assets/fix.svg)已更新单色实现，以便与Monolog 3兼容。<!--MDEE-858-->
 
 ## 103.3.10发行版
 

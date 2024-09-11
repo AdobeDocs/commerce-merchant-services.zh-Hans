@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service]发行说明'
 description: Adobe Commerce的 [!DNL Catalog Service] 的最新发行信息。
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 58d5abf84a190b203661606c439beb088b7ee20d
+source-git-commit: 93be63ca7a4edc2890a37a6460a123e28226301a
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '813'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,15 @@ ht-degree: 0%
 
 ## 当前主要版本
 
+### V1.23发布
+
+_2024年8月22日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"}
+
+![修复](../assets/fix.svg)您现在可以检索产品信息，而无需产品覆盖（价格）数据。 在以前的版本中，这些查询返回以下错误：
+`The following sku does not have product override data in the DB: <SKU value>. Make sure data is synced.` <!--DATA-6121-->
+
 ### V1.22发布
 
 _2024年8月13日_
@@ -34,6 +43,14 @@ _2024年8月13日_
 ## 先前版本
 
 +++ 先前版本
+
+### V1.22发布
+
+_2024年8月13日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"}
+
+![新](../assets/new.svg)添加了对按产品SKU检索所有变体的支持。 查看[目录服务API引用](https://developer.adobe.com/commerce/services/graphql/catalog-service/)。<!--DATA-6067-->
 
 ### V1.19发布
 
