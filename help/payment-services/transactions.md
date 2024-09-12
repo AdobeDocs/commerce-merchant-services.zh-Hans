@@ -4,9 +4,9 @@ description: 使用事务报表可以查看事务授权率和事务趋势。
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 0800b4a0f9a3297a3490fa11f32e6af0abe67e2a
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1272'
 ht-degree: 0%
 
 ---
@@ -35,11 +35,11 @@ ht-degree: 0%
 
 在&#x200B;_管理员_&#x200B;侧边栏中，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**以查看详细的表格化交易报告视图。
 
-![事务报表视图](assets/transactions-report-view.png){width="600" zoomable="yes"}
+![事务报表视图](assets/transactions-report-view.png){width="800" zoomable="yes"}
 
 您可以根据本主题中的部分对此视图进行配置，以便最好地呈现您希望查看的数据。
 
-请参阅此报表中的链接Commerce订单和提供商交易ID、交易金额、每笔交易的支付方式等。
+请参阅链接的Commerce订单和PayPal交易ID、交易金额、每笔交易的支付方式等，所有这些都包含在此报表中。
 
 并非所有支付方式都提供相同的信息粒度。 例如，信用卡交易提供回复、AVS和CCV代码，以及“交易”报表中卡的最后四位；PayPal支付按钮不提供。
 
@@ -86,12 +86,11 @@ ht-degree: 0%
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**。
 1. 单击&#x200B;**[!UICONTROL Filter]**&#x200B;选择器。
 1. 切换&#x200B;_[!UICONTROL Transaction Result]_选项以仅查看选定订单交易记录的报表结果。
-1. 选择&#x200B;_[!UICONTROL Card Type]_以查看所选卡片类型的报告结果。 当付款处理器无法识别卡类型时，将显示包含更多信息的工具提示。
-1. 选择&#x200B;_[!UICONTROL Card Brand]_以查看选定卡片品牌的报告结果。 当支付处理器无法识别卡品牌时，将显示包含更多信息的工具提示。
-1. 切换&#x200B;_[!UICONTROL Payment Method]_选项以仅查看选定付款方法的报告结果。
+1. 切换&#x200B;_[!UICONTROL Payment Method]_选项以查看用于交易的付款类型的报告结果。
+1. 切换&#x200B;_[!UICONTROL Payment Detail]_选项以查看使用的付款类型的附加信息（如果可用）。
 1. 输入&#x200B;_最小订单金额_&#x200B;或&#x200B;_最大订单金额_&#x200B;以查看该订单金额范围内的报表结果。
 1. 输入&#x200B;_[!UICONTROL Order ID]_以搜索特定事务。
-1. 介绍&#x200B;_[!UICONTROL Card Last Four Digits]_以搜索特定的信用卡或借记卡。
+1. 介绍&#x200B;_[!UICONTROL Card Last Four]_以搜索特定的信用卡或借记卡。
 1. 输入&#x200B;_[!UICONTROL Customer ID]_以显示特定客户的所有交易记录。
 1. 输入&#x200B;_[!UICONTROL Customer Email]_以筛选该电子邮件的事务。
 1. 单击&#x200B;**[!UICONTROL Hide filters]**&#x200B;以隐藏筛选器。
@@ -134,11 +133,12 @@ ht-degree: 0%
 | 列 | 描述 |
 | ------------ | -------------------- |
 | [!UICONTROL Order ID] | Commerce订单ID（仅包含成功交易的值，对于拒绝的交易为空）<br> <br>要查看相关的[订单信息](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}，请单击ID。 |
-| [!UICONTROL Provider Transaction ID] | 由付款提供商提供的交易ID；仅包含成功交易的值，并包含拒绝交易的短划线。 |
+| [!UICONTROL PayPal Transaction ID] | 由付款提供商提供的交易ID；仅包含成功交易的值，并包含拒绝交易的短划线。 您可以单击此ID以访问PayPal交易详细信息页面。 |
 | [!UICONTROL Customer ID] | 订单的Commerce客户ID<br> <br>有关详细信息，请参阅[客户信息](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"}主题。 |
 | [!UICONTROL Transaction Date] | 交易日期时间戳 |
-| [!UICONTROL Payment Method] | 具有品牌和卡类型详细信息的交易的支付方法。 有关详细信息，请参阅[卡类型](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type)；适用于Payment Services 1.6.0及更高版本 |
-| [!UICONTROL Card Last Four Digits] | 用于交易记录的信用卡或借记卡的最后四位数字 |
+| [!UICONTROL Payment Method] | 用于交易的付款类型，其中包含有关品牌和卡类型的信息。 有关详细信息，请参阅[卡类型](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type)；适用于Payment Services 1.6.0及更高版本 |
+| [!UICONTROL Payment Detail] | 提供有关用于交易的付款类型的附加信息（如果可用）。 |
+| [!UICONTROL Card Last Four] | 用于交易记录的信用卡或借记卡的最后四位数字 |
 | [!UICONTROL Result] | 交易的结果 — *[!UICONTROL OK]* （成功交易），*[!UICONTROL Rejected by Payment Provider]* （由PayPal拒绝），*[!UICONTROL Rejected by Bank]* （由签发卡的银行拒绝） |
 | [!UICONTROL Response Code] | 提供来自付款提供商或银行的拒绝原因的错误代码；请参阅[`Rejected by Bank`状态](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response)和[`Rejected by Payment Provider`状态](https://developer.paypal.com/api/rest/reference/orders/v2/errors/)的可能响应代码列表和描述。 |
 | [!UICONTROL AVS Code] | 地址验证服务代码；付款请求的处理器响应信息。 有关详细信息，请参阅[可能的代码和说明列表](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response)。 |

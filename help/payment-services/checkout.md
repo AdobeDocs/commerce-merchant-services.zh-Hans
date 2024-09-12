@@ -1,16 +1,17 @@
 ---
-title: 结帐
-description: 根据客户的需求自定义结帐。
+title: 签出 [!DNL Payment Services]
+description: 自定义 [!DNL Payment Services] 结帐以符合客户的需求。
 feature: Payments, Checkout
 exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
-source-git-commit: 4a534f2f9844173b4ec878976595159c2c47c561
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
 
-# 结帐
+
+# 在[!DNL Payment Services]中签出
 
 您可以配置Adobe Commerce [!DNL Payment Services]的结账功能，以最适合您的购物者。 [订单自动失效](#order-auto-voided-if-error)和[信用卡保险存储](#credit-card-vaulting)等功能可确保您的购物者获得流畅的用户体验。
 
