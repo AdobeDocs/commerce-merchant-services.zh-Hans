@@ -3,9 +3,9 @@ title: "[!DNL Payment Services]发行说明"
 description: 查看发行说明，了解所有 [!DNL Payment Services] 发行版本的信息。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: a5963055a17b5af0c30f3d5f6236d1524e028b22
 workflow-type: tm+mt
-source-wordcount: '2968'
+source-wordcount: '3017'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,14 @@ _2021年6月28日_
 ![新](../assets/new.svg)<!-- Issue PAY-2761 -->您现在可以通过使用“列”设置控件显示或隐藏列，自定义在[订单付款状态报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns)和[付款报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns)中显示的数据。
 
 +++
+
+## v2.8.1
+
+_2024年9月13日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"}
+
+![修复](../assets/fix.svg)<!-- PAY-5644 -->修复了在[!DNL Payment Services]中使用多个范围时SDK参数的缓存问题。 现在，每个范围的SDK配置都是单独缓存的，而不是通过单个键缓存。 这可以确保每个作用域的缓存都独立失效，从而提高管理多个作用域时的可靠性。
 
 ## v2.8.0
 
