@@ -2,7 +2,7 @@
 title: 在 [!DNL Payment Services]中跟踪您的装运
 description: 自定义Paypal商家信息板中显示的 [!DNL Payment Services] 发运和跟踪信息。
 feature: Payments
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: 2169907d7200a0937ce5a3ddf9634423cc8c2f5f
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
@@ -48,4 +48,4 @@ ht-degree: 0%
 
 ### 与第三方的兼容性
 
-通过[Commerce API](https://developer.adobe.com/commerce/webapi/rest/attributes/#magentosalesapishipmentrepositoryinterface-shipmentrepositoryinterface){target=_blank}创建装运实体时，任何第三方扩展都与功能兼容。
+通过[Commerce API](https://developer.adobe.com/commerce/webapi/rest/attributes/#ShipmentRepositoryInterface){target=_blank}创建装运实体时，任何第三方扩展都与功能兼容。
