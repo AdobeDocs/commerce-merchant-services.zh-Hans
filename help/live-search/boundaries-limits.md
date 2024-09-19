@@ -3,9 +3,9 @@ title: '边界和限制'
 description: 了解 [!DNL Live Search] 的界限和限制，以确保它满足您的业务需求。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 562af9995b49f4c0fddc76c2ae1c53dd928b1daa
+source-git-commit: 2feb97bf6aa41e5b99d3dcbc51ef3c1cdc05d8da
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '905'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,14 @@ ht-degree: 0%
 ## 常规
 
 - 安装[!DNL Live Search]后，[高级搜索](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)模块被禁用，店面页脚中的高级搜索链接被删除。
-- [层定价](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier)和[特殊定价](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special)在[!DNL Live Search]字段和产品列表页小部件中不受支持。
+- [层定价](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier)在[!DNL Live Search]字段和产品列表页小部件中不受支持。
 - 产品价格不含增值税。
-- 不支持内容搜索。
+- 不支持内容搜索(CMS页面和块)。
 - 可分页的产品数量限制为10,000个。 虽然可以增加此限制，但可能会影响性能。 确保在类别或搜索结果中包含大量产品时提供有意义的产品过滤方式，这样购物者就不必使用深度分页。
 - 每个属性（包括描述和自定义属性）硬限制为1MB。
 - 搜索适配器不支持使用自定义源模型创建并用作彩块化的产品属性。 若要支持此功能，您必须使用[产品列表页小组件](plp-styling.md)。
 - 不支持自定义产品类型。
+- 您可以使用“开头为”或“包含”条件筛选结果，但存在一些限制，如[此处](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations)所述。
 
 ## 索引
 

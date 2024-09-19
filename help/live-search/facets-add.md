@@ -2,7 +2,7 @@
 title: "添加Facet"
 description: “了解如何将可筛选的产品属性添加为 [!DNL Live Search] Facet。”
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 2439e9c2b38269e1cf9761d2b662abce76b8304e
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -44,7 +44,7 @@ ht-degree: 0%
 
    * 标签 — （仅限[Headless](facets-type.md)）输入要使用的Facet标签。
    * 排序类型 — Facet按字母顺序对所有[!DNL Commerce]店面排序。 对于Headless实施，Facet可以按字母顺序或计数排序。 选项：按字母顺序、计数（仅限Headless）
-   * 最大值 — 输入店面中显示的最大Facet值数。 有效条目： 0 - 30；默认值： 8
+   * 最大值 — 输入店面中显示的最大Facet值数。 有效条目： 0 - 100；默认值： 8
 
 1. 完成后，单击&#x200B;**保存**。
 
@@ -65,7 +65,7 @@ ht-degree: 0%
 |--- |--- |
 | 标签 | （仅限[Headless](facets-type.md)）可以编辑店面中显示的[Facet标签](facets-type.md)，以便与您的品牌保持一致。 |
 | 排序类型 | 用于[排序](facets-type.md)方面的方法。 所有[!DNL Commerce]店面仅按字母顺序对Facet进行排序。 Headless实施也可以按`Count`排序。 选项：<br />按字母顺序 — 按字母顺序对Facet进行排序。<br />计数 — （仅限Headless）根据找到的匹配数对Facet进行排序。 |
-| 最大值 | 可在店面中显示的每个Facet的最大值数。 表示一组值的多面均匀分布。 有效条目： 0 - 30；默认值： 8 |
+| 最大值 | 可在店面中显示的每个Facet的最大值数。 表示一组值的多面均匀分布。 有效条目： 0 - 100；默认值： 8 |
 
 ### 控件
 

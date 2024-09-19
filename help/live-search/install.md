@@ -3,9 +3,9 @@ title: 开始使用 [!DNL Live Search]
 description: “从Adobe Commerce了解 [!DNL Live Search] 的系统要求和安装步骤。”
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
+source-git-commit: 8981dda82dbdf45d1df0257beb8603b22e98aa4b
 workflow-type: tm+mt
-source-wordcount: '2417'
+source-wordcount: '2977'
 ht-degree: 0%
 
 ---
@@ -110,6 +110,58 @@ Adobe Commerce [!DNL Live Search]和[[!DNL Catalog Service]](../catalog-service/
    ```bash
    bin/magento setup:upgrade
    ```
+
+### 安装[!DNL Live Search]测试版
+
+>[!IMPORTANT]
+>
+>如果要探索[!DNL Live Search]中可用的新功能，请考虑安装Beta版。
+
+此测试版支持[`productSearch`查询](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)中的三种新功能：
+
+- **分层搜索** — 在另一个搜索上下文中搜索 — 使用此功能，您最多可以为搜索查询执行两层搜索。 例如：
+
+   - **第1层搜索** — 在“product_attribute_1”上搜索“motor”。
+   - **第2层搜索** — 在“product_attribute_2”上搜索“部件号123”。 此示例在结果中搜索“motor”的“部件号123”。
+
+  分层搜索可用于`startsWith`搜索索引和`contains`搜索索引，如下所述：
+
+- **startsWith搜索索引** — 使用`startsWith`索引进行搜索。 此新功能允许：
+
+   - 搜索属性值以特定字符串开头的产品。
+   - 配置“结尾为”搜索，以便购物者可以搜索属性值以特定字符串结尾的产品。 要启用“结束于”搜索，需要反向摄取产品属性，并且API调用也应该是一个反向字符串。
+
+- **包含搜索索引** — 使用包含索引搜索属性。 此新功能允许：
+
+   - 在较大的字符串中搜索查询。 例如，如果购物者搜索字符串“HAPE-123”中的产品编号“PE-123”。
+
+      - 注意：此搜索类型不同于现有的[短语搜索](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase)，后者执行自动完成搜索。 例如，如果您的产品属性值为“outdoor pants”，则短语搜索会返回“out pan”的响应，但不会返回“oor ants”的响应。 但是，包含搜索会返回“或蚂蚁”的响应。
+
+这些新条件增强了搜索查询过滤机制以细化搜索结果。 这些新条件不会影响主搜索查询。
+
+您可以在搜索结果页面上实施这些新条件。 例如，您可以在页面上添加新部分，购物者可以进一步细化其搜索结果。 您可以允许购物者选择特定的产品属性，如“制造商”、“部件号”和“说明”。 从该位置，他们使用`contains`或`startsWith`条件在这些属性中搜索。 有关可搜索的[属性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types)的列表，请参阅管理员指南。
+
+1. 要安装测试版，请从命令行运行以下命令：
+
+   ```bash
+   composer require magento/module-live-search-search-types:"^1.0-beta"
+   ```
+
+   此测试版在管理员中为&#x200B;**[!UICONTROL Autocomplete]**、**[!UICONTROL Contains]**&#x200B;和&#x200B;**[!UICONTROL Starts with]**&#x200B;添加&#x200B;**[!UICONTROL Search types]**&#x200B;复选框。 它还更新了`productSearch` GraphQL API以包含这些新搜索功能。
+
+1. 在管理员中，[将产品属性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties)设置为可搜索，并指定该属性的搜索功能，如&#x200B;**包含**（默认值）或&#x200B;**开头为**。 您最多可以为&#x200B;**Contains**&#x200B;指定6个要启用的属性，为&#x200B;**Starts with**&#x200B;指定6个要启用的属性。 对于测试版，请注意，管理员不强制执行此限制，但会在API搜索中强制执行。
+
+   ![指定搜索功能](./assets/search-filters-admin.png)
+
+1. 请参阅[开发人员文档](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability)，了解如何使用新的`contains`和`startsWith`搜索功能更新[!DNL Live Search] API调用。
+
+### 字段描述
+
+| 字段 | 描述 |
+|--- |--- |
+| `Autocomplete` | 默认启用，无法修改。 通过`Autocomplete`，您可以在[搜索筛选器](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering)中使用`contains`。 此处，`contains`中的搜索查询返回自动完成类型的搜索响应。 Adobe建议您使用此类型的搜索来搜索通常包含超过50个字符的说明字段。 |
+| `Contains` | 启用真正的“字符串中包含的文本”搜索，而不是自动完成搜索。 在[搜索筛选器](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability)中使用`contains`。 有关详细信息，请参阅[限制](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations)。 |
+| `Starts with` | 用于查询以特定值开头的字符串。 在[搜索筛选器](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability)中使用`startsWith`。 |
 
 ## 2.配置API密钥
 
