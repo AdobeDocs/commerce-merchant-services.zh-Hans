@@ -3,9 +3,9 @@ title: 将Commerce数据连接到Adobe Experience Platform
 description: 了解如何将Commerce数据连接到Adobe Experience Platform。
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: c252c2fb614ec74f1bdd11cc482066a7133dd523
+source-git-commit: 15b1c90cb60094d7f4a4da6435c5262f75cf0081
 workflow-type: tm+mt
-source-wordcount: '2532'
+source-wordcount: '2910'
 ht-degree: 0%
 
 ---
@@ -75,9 +75,13 @@ ht-degree: 0%
 
 1. 单击&#x200B;**保存配置**。
 
+1. 单击&#x200B;**[!UICONTROL Test connection]**&#x200B;按钮以确保您输入的服务帐户和凭据信息正确。
+
 ### 常规
 
 1. 在管理员中，转到&#x200B;**系统** >服务> **[!DNL Data Connection]**。
+
+   ![[!DNL Data Connection]设置](./assets/epc-settings.png){width="700" zoomable="yes"}
 
 1. 在&#x200B;**常规**&#x200B;下的&#x200B;**设置**&#x200B;选项卡中，验证与您的Adobe Experience Platform帐户关联的ID，该ID已在[Commerce Services Connector](../landing/saas.md#organizationid)中配置。 组织ID是全局的。 每个Adobe Commerce实例只能关联一个组织ID。
 
@@ -97,7 +101,7 @@ ht-degree: 0%
 
 - **后台** （服务器端数据）是Commerce服务器中捕获的数据。 这包括有关订单状态的信息，例如订单是否已下达、已取消、已退款、已发运或已完成。 它还包含[历史订单数据](#send-historical-order-data)。
 
-- **配置文件(Beta)**&#x200B;是与购物者的配置文件信息相关的数据。 了解[更多](#send-customer-profile-data)。
+- **配置文件**&#x200B;是与购物者的配置文件信息相关的数据。 了解[更多](#send-customer-profile-data)。
 
 要确保Adobe Commerce实例可以开始数据收集，请查看[先决条件](overview.md#prerequisites)。
 
@@ -158,13 +162,9 @@ ht-degree: 0%
 
 ### 发送客户个人资料数据
 
->[!IMPORTANT]
->
->此功能处于测试阶段。
-
 有两种类型的配置文件数据可发送到Experience Platform：配置文件记录和时间序列配置文件事件。
 
-配置文件记录包含购物者在Commerce实例中创建配置文件时保存的数据，例如购物者的姓名。 如果您的架构和数据集配置正确[](profile-data.md)，则会向Experience Platform发送配置文件记录，并将其转发到Adobe的配置文件管理和分段服务： [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=zh-Hans)。
+配置文件记录包含购物者在Commerce实例中创建配置文件时保存的数据，例如购物者的姓名。 如果您的架构和数据集配置正确[](profile-data.md)，则会向Experience Platform发送配置文件记录，并将其转发到Adobe的配置文件管理和分段服务： [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html#)。
 
 时间序列配置文件事件包含有关购物者配置文件信息的数据，例如，购物者在您的网站上创建、编辑或删除帐户的情况。 将配置文件事件数据发送到Experience Platform时，该数据会位于可供其他DX产品使用的数据集中。
 
@@ -240,6 +240,8 @@ Adobe Commerce最多收集5年的[历史订单数据和状态](events-backoffice
 
 1. 选择&#x200B;**订单历史记录**&#x200B;选项卡。
 
+   ![[!DNL Data Connection]订单历史记录](./assets/epc-order-history.png){width="700" zoomable="yes"}
+
 1. 在&#x200B;**订单历史记录同步**&#x200B;下，**从设置复制数据集ID**&#x200B;复选框已启用。 这将确保您使用在&#x200B;**设置**&#x200B;选项卡中指定的相同数据集。
 
 1. 在&#x200B;**从**&#x200B;和&#x200B;**到**&#x200B;字段中，指定要发送的历史订单数据的日期范围。 您不能选择超过五年的日期范围。
@@ -255,6 +257,36 @@ Adobe Commerce最多收集5年的[历史订单数据和状态](events-backoffice
 | 从 | 您要开始收集订单历史记录数据的起始日期。 |
 | 至 | 您要结束收集订单历史记录数据的起始日期。 |
 | 开始同步 | 开始将订单历史记录数据同步到Experience Platform边缘的过程。 如果&#x200B;**[!UICONTROL Dataset ID]**&#x200B;字段为空或数据集ID无效，则此按钮被禁用。 |
+
+### 数据自定义
+
+在&#x200B;**数据自定义**&#x200B;选项卡上，您可以查看在[!DNL Commerce]中配置并发送到Experience Platform的任何自定义属性。
+
+![[!DNL Data Connection]数据自定义](./assets/epc-data-customization.png){width="700" zoomable="yes"}
+
+>[!IMPORTANT]
+>
+>确保您在&#x200B;**数据收集**&#x200B;选项卡上指定的[数据流ID](#data-collection)与链接到架构的ID匹配，以便摄取自定义属性。
+
+为订单创建自定义属性并将它们发送到Experience Platform时，Commerce中的属性名称必须与Experience Platform上[!DNL Commerce]架构中的属性名称匹配。 如果两者不匹配，则可能很难识别差异。 如果您的名称不匹配，**自定义订单属性**&#x200B;表可以帮助解决此问题。
+
+**自定义订单属性**&#x200B;表提供了在Experience Platform中的[!DNL Commerce]后台和[!DNL Commerce]架构之间自定义订单属性的配置和映射的可见性。 此表允许您查看跨不同来源的订单层和订单项目层自定义属性，从而更容易识别缺少或未对齐的属性。 它还显示数据集ID以帮助区分实时数据集和历史数据集，因为每个数据集可以具有自己的自定义属性。
+
+如果在表中的自定义属性名称旁边没有出现绿色复选标记，则表示源中的属性名称不匹配。 在一个源中更正属性名称，将出现绿色复选标记，指示名称现在匹配。
+
+- 如果在Experience Platform架构中更新了属性名称，则必须在&#x200B;**数据自定义**&#x200B;选项卡上保存配置以触发Experience Platform架构更改。 单击&#x200B;**[!UICONTROL Refresh]**&#x200B;按钮时，此更改将反映在&#x200B;**自定义订单属性**&#x200B;表中。
+- 如果属性名称在[!DNL Commerce]中更新，则必须生成订单事件以更新&#x200B;**自定义订单属性**&#x200B;表中的名称。 此更改将在大约60分钟后反映出来。
+
+详细了解如何[设置自定义属性](custom-attributes.md)。
+
+#### 字段描述
+
+| 字段 | 描述 |
+|--- |--- |
+| 数据集 | 显示包含自定义属性的数据集。 实时数据集和历史数据集可以拥有自己的自定义属性。 |
+| Adobe Commerce | 显示在[!DNL Commerce]后台创建的任何自定义属性。 |
+| Experience Platform | 在Experience Platform中显示[!DNL Commerce]架构中指定的任何自定义属性。 |
+| 刷新 | 从Experience Platform中的[!DNL Commerce]架构检索任何自定义属性名称。 |
 
 ## 确认已收集事件数据
 

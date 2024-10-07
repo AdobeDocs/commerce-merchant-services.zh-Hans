@@ -4,14 +4,14 @@ description: 了解如何创建架构、数据集和数据流，以收集Commerc
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 86a3ba12-7f26-4f7e-98a0-9af0d1d8d881
-source-git-commit: 813be62b366b1c76a2b909079cfba31ef8000617
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
 
-# 更新Commerce数据摄取(Beta)的配置文件记录架构
+# 更新Commerce数据摄取的配置文件记录架构
 
 当您的购物者在Commerce网站中创建配置文件时，将创建配置文件记录并捕获数据。 您必须先创建特定于配置文件记录的架构和数据集，然后才能将该配置文件数据流式传输到Experience Platform。
 

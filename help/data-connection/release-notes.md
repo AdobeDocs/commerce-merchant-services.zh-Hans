@@ -3,9 +3,9 @@ title: 发行说明
 description: 来自Adobe Commerce的 [!DNL Data Connection] 扩展的最新发行信息。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 92140fccc8099979d604c7cb86ed5bd7086be29b
+source-git-commit: 15b1c90cb60094d7f4a4da6435c5262f75cf0081
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1055'
 ht-degree: 0%
 
 ---
@@ -78,6 +78,16 @@ _2022年10月12日_
 
 +++
 
+## 3.2.0
+
+_2024年10月7日_
+
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+
+![新](../assets/new.svg) — 添加了创建[自定义订单属性](custom-attributes.md)以访问后台数据的功能。
+![新](../assets/new.svg) — 添加了新[自定义订单属性](connect-data.md#data-customization)表，以帮助您查看[!DNL Commerce]中配置并发送到Experience Platform的任何自定义属性。
+![新](../assets/new.svg) — 已添加[收集配置文件记录](connect-data.md#send-customer-profile-data)和将数据发送到Experience Platform的功能。
+
 ## 3.2.0-beta3
 
 _2024年8月27日_
@@ -128,7 +138,7 @@ _2024年3月4日_
 [!BADGE 兼容性]{type=Informative tooltip="兼容性"}
 
 ![新](../assets/new.svg) — 如果您正在参与测试版，请确保您的`composer.json`文件在根级别具有以下内容： ` "minimum-stability": "beta"`。 此外，添加`composer require "magento/customers-connector: ^1.2.0"`以将客户配置文件从Commerce实例发送到SaaS。
-![新](../assets/new.svg) — 已添加[添加自定义属性](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data)的功能。
+![新](../assets/new.svg) — 已添加[添加自定义属性](custom-attributes.md)的功能。
 ![新](../assets/new.svg) — 已添加[收集配置文件记录](connect-data.md#send-customer-profile-data)和将数据发送到Experience Platform的功能。
 
 ## 3.1.0

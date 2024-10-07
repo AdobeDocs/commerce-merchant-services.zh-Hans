@@ -3,7 +3,7 @@ title: 指南概述
 description: 了解如何使用 [!DNL Data Connection] 扩展将Adobe Commerce数据与Adobe Experience Platform集成。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: 7b9867179a871e4949ea74f9214e9e52ea26bb71
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
 source-wordcount: '1752'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Adobe Experience Platform提供了一套技术，当与Commerce商店中的数�
 
 | 应用程序 | 用途 | 用例 |
 |---|---|---|
-| [Adobe [!DNL Real-Time CDP]](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=zh-Hans) | 用户档案管理和分段服务 | **购买历史记录分段**：商家可以识别在特定时段（每月、每季、每年等）购买商品的客户。 然后，商家可以为这些客户创建区段，并针对促销活动、促销活动以及作为订阅服务潜在客户的&#x200B;_顶部的_&#x200B;数据来定位他们。<br> **基于类别的分段**：商家可以查看已购买的产品的类别。<br> **基于优惠的分段**：商家可以识别始终返回产品的客户。 现在，提供给他们的优惠和折扣会更加明智。 例如，对于始终返回产品的客户，可以移除免运费。<br> **相似对象定位**： _相似对象受众_&#x200B;是商家为促销而采用的一种方法，用于吸引那些可能与现有客户具有相似特征而对其业务感兴趣的新客户。 可以根据行为和事务性数据创建相似区段。<br> **客户倾向**：客户行为的变化可以通过从事务型数据创建的更深入的客户用户档案来识别。 随着更多数据流入到产品退货和产品配置等计算中，倾向分数将具有更高的置信度。<br> **交叉销售**：商家可以从Commerce中捕获的精细信息中识别强大的交叉销售和追加销售机会。 |
+| [Adobe [!DNL Real-Time CDP]](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html#) | 用户档案管理和分段服务 | **购买历史记录分段**：商家可以识别在特定时段（每月、每季、每年等）购买商品的客户。 然后，商家可以为这些客户创建区段，并针对促销活动、促销活动以及作为订阅服务潜在客户的&#x200B;_顶部的_&#x200B;数据来定位他们。<br> **基于类别的分段**：商家可以查看已购买的产品的类别。<br> **基于优惠的分段**：商家可以识别始终返回产品的客户。 现在，提供给他们的优惠和折扣会更加明智。 例如，对于始终返回产品的客户，可以移除免运费。<br> **相似对象定位**： _相似对象受众_&#x200B;是商家为促销而采用的一种方法，用于吸引那些可能与现有客户具有相似特征而对其业务感兴趣的新客户。 可以根据行为和事务性数据创建相似区段。<br> **客户倾向**：客户行为的变化可以通过从事务型数据创建的更深入的客户用户档案来识别。 随着更多数据流入到产品退货和产品配置等计算中，倾向分数将具有更高的置信度。<br> **交叉销售**：商家可以从Commerce中捕获的精细信息中识别强大的交叉销售和追加销售机会。 |
 | [客户 [!DNL Journey Analytics]](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html) | 对整个Commerce历程的深入分析 | **季节性趋势**：商家可以确定季节性趋势，这有助于他们为特定产品的周期性需求变化做好准备。 此外，商家可以识别任何产品跨年整体受欢迎程度的变化。<br> **转化分析**：通过了解购买产品的时间，以及访问店面展示活动，商家可以生成客户的丰富个人资料以执行转化分析。 |
 | [Adobe [!DNL Analytics]](https://experienceleague.adobe.com/docs/analytics/analyze/admin-overview/analytics-overview.html) | 对客户行为和营销活动绩效的深入分析 | **订单退货**：商家可以识别具有退货模式的客户和较大的客户区段。 这有助于商户改进其商业策略，因为他们了解其客户群行为是什么样的。<br> **订单地址**：根据送货地址，商家可以了解订单是由客户自己下单，还是由其他个人或实体下单。<br> **季节性趋势**：商家可以确定季节性趋势，这有助于他们为特定产品的周期性需求变化做好准备。 此外，商家可以识别任何产品跨年整体受欢迎程度的变化。<br> **转化分析**：通过了解购买产品的时间，以及访问店面展示活动，商家可以生成客户的丰富个人资料以执行转化分析。 **注意** Adobe Analytics仅支持行为（店面）事件数据。 Adobe Analytics不支持事务性(backoffice)事件数据。 |
 | [Adobe [!DNL Journey Optimizer]](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) | 跨渠道的活动编排 | **基于行为的历程**：商家可以通过建议购买新型号来定位两年前购买手机的客户。 商家可以为这些客户创建个性化的促销活动和促销活动，并使用电子邮件和短信功能进行联系。 此外，商家可以使用历史顺序和行为数据来识别趋势。 例如，如果客户以前购买过具有特定配置的项目，现在又希望再次购买相同的产品，则可以通过赋予他们可见性和访问相同产品配置的权限来增强其购买历程。<br> **Personalization**：通过访问客户个人资料信息，[!DNL Journey Optimizer]可以解锁高度个性化的历程，从而允许商家通过多个不同渠道联系客户。<br> **已创建新配置文件**：欢迎电子邮件和促销活动可鼓励和影响新客户的购物历程。<br> **已删除个人资料**：商家可以选择停止向已关闭其帐户的客户发送促销电子邮件。 或者，商家也可以建立营销活动以赢回失去的客户。 |
@@ -67,6 +67,8 @@ Adobe Experience Platform提供了一套技术，当与Commerce商店中的数�
 * [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
 * [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html)
 
+>[!BEGINSHADEBOX]
+
 ## 先决条件
 
 要使用[!DNL Data Connection]扩展，您必须具备以下条件：
@@ -75,6 +77,8 @@ Adobe Experience Platform提供了一套技术，当与Commerce商店中的数�
 * Adobe ID和组织ID
 * [Adobe客户端数据层(ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html)，收集店面事件数据时需要此层
 * 对其他AdobeDX产品的权利。
+
+>[!ENDSHADEBOX]
 
 ## 载入步骤
 

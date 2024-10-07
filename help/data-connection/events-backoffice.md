@@ -4,9 +4,9 @@ description: 了解每个后台事件捕获哪些数据。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: a5a4f04b-89ac-4020-95ce-984f9f2d8385
-source-git-commit: 813be62b366b1c76a2b909079cfba31ef8000617
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '3611'
+source-wordcount: '3606'
 ht-degree: 0%
 
 ---
@@ -403,10 +403,6 @@ ht-degree: 0%
 | `productListItems.categories.path` | 类别的路径。 |
 
 ## 客户个人资料事件
-
->[!IMPORTANT]
->
->此功能处于测试阶段。
 
 从服务器端捕获的配置文件事件包括帐户信息，如`accountCreated`、`accountUpdated`和`accountDeleted`。 此数据用于帮助填充更好地定义区段或执行营销活动所需的关键客户详细信息，例如发送注册折扣优惠、帐户更改确认等。 从[店面](events.md#customer-profile-events)捕获到类似的配置文件事件。
 

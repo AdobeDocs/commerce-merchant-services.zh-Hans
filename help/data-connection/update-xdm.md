@@ -4,9 +4,9 @@ description: 了解如何创建架构、数据集和数据流，以收集和发�
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 90ddfdd41958b254fc0c2f3e0891385193f1bb9c
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
@@ -66,33 +66,6 @@ ht-degree: 0%
 为行为数据和后台数据配置架构、数据集和数据流后，您可以[配置](connect-data.md#data-collection)您的Commerce实例以收集这些数据并将这些数据发送给Experience Platform。
 
 要包含购物者的配置文件信息，请参阅[时间序列配置文件事件数据](#time-series-profile-event-data)。
-
-### 添加自定义属性
-
-如果要将自定义后台事件数据从Commerce实例传递到Experience Platform，则可以使用自定义属性。
-
-自定义属性可在两个级别受支持：
-
-- 订单级别
-- 订单物料级别
-
->[!NOTE]
->
->Adobe Commerce支持数据类型为字符串或字符串数组的自定义属性。
-
-1. 在[!DNL Commerce]应用程序中添加并启用其他模块。 查看以下[示例](https://github.com/shiftedreality/beacon-backoffice-custom-events/blob/main/BeaconDemo/Plugin/ModifyOrder.php)。
-
-   您需要修改示例代码以公开其他自定义属性。 根据存储这些属性的位置以及提取这些属性所需的逻辑，实施会有所不同。
-
-1. 扩展现有XDM架构。 请参阅以下[指南](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups)，为订单和订单项目级别创建自定义属性。 租户ID字段是动态生成的，但字段结构应与提供的示例类似。
-
-   >[!IMPORTANT]
-   >
-   >XDM自定义属性必须与从[!DNL Commerce]发送的属性匹配。
-
-1. 确保与XDM架构关联的数据流与在[数据收集](connect-data.md#data-collection)选项卡上指定的数据流相同。
-
-1. 单击&#x200B;**数据收集**&#x200B;选项卡上的&#x200B;**[!UICONTROL Save]**&#x200B;以检索您指定的任何自定义属性。
 
 ## 时间序列配置文件事件数据
 
