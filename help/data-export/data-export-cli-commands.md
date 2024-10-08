@@ -1,9 +1,8 @@
 ---
 title: SaaS数据导出命令行界面
 description: 了解如何使用命令行界面命令来管理Adobe Commerce SaaS服务的 [!DNL data export extension] 的馈送和进程。
-recommendations: noCatalog
 exl-id: f360d920-7d02-4317-8c56-c7d4c4ed2ff2
-source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
+source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 0%

@@ -2,9 +2,8 @@
 title: 估计数据量及传输时间
 description: 了解如何估算 [!DNL data export] 工具在Adobe Commerce和连接的服务之间同步馈送数据所需的数据量和传输时间。
 role: Admin, Developer
-recommendations: noCatalog
 exl-id: 51ea98fd-cf90-44bd-a639-992bfc7f3eca
-source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
+source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 0%
