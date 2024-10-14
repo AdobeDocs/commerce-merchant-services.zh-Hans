@@ -3,7 +3,7 @@ title: 在暂存环境中测试
 description: 了解如何在暂存环境中使用生产环境中的 [!DNL Product Recommendations] 进行测试。
 exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
 feature: Services, Recommendations, Staging
-source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
+source-git-commit: 4a5c3550b03651279c24de6b6361ffa6dc28776e
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 在将推荐部署到生产环境之前，请在非生产环境中测试该服务，以确保一切都按预期运行。
 
-[!DNL Product Recommendations]根据从店面收集的[购物者行为数据](behavioral-data.md)返回产品。 但是，在非生产环境中，您可能没有任何来自购物者的行为数据。 唯一可以在没有行为数据的情况下测试的推荐类型为`More like this`。 此推荐类型不需要任何输入数据，因为它使用直接内容相似度匹配。
+[!DNL Product Recommendations]根据从店面收集的[购物者行为数据](events.md)返回产品。 但是，在非生产环境中，您可能没有任何来自购物者的行为数据。 唯一可以在没有行为数据的情况下测试的推荐类型为`More like this`。 此推荐类型不需要任何输入数据，因为它使用直接内容相似度匹配。
 
 以下推荐类型需要行为数据：
 

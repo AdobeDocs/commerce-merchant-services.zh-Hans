@@ -2,9 +2,9 @@
 title: 产品Recommendations管理员开发
 description: 产品Recommendations架构和开发功能的概述。
 exl-id: caef5e0c-dd69-4846-8f85-b1c5e1c6a28f
-source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
+source-git-commit: 4a5c3550b03651279c24de6b6361ffa6dc28776e
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
@@ -24,20 +24,6 @@ ht-degree: 0%
 ![产品推荐体系结构图](assets/arch-diag-sensei.svg)
 
 安装和配置推荐模块后，您的店面将开始收集行为数据。 Adobe Sensei会处理此行为数据与您的目录数据，并计算推荐服务所利用的产品关联。 此时，商家可以直接从管理UI创建、管理产品推荐单元并将其部署到其店面。
-
-## 数据类型
-
-产品Recommendations需要以下数据：
-
-- **行为** — 购物者在您网站上的参与数据，例如产品查看次数、添加到购物车的商品数和购买次数。 Commerce和Adobe Sensei不收集个人身份信息。
-
-- **目录** — 产品元数据，如名称、价格、可用性等。
-
-安装`magento/product-recommendations`模块时，Adobe Sensei会聚合行为和目录数据，并为每种推荐类型创建产品Recommendations 。 然后，产品Recommendations服务会将这些推荐部署到您的店面。
-
->[!NOTE]
->
->对于可配置产品，产品Recommendations使用推荐单元中的父产品的图像。 如果可配置产品未指定图像，则该特定产品的推荐单元将为空。
 
 ## 后续步骤
 

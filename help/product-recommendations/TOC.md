@@ -4,10 +4,10 @@ user-guide-description: 本指南提供了使用Adobe Commerce中的 [!DNL Produ
 breadcrumb-title: “[!DNL Product Recommendations] 指南”
 role: Admin
 feature: Services, Recommendations
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 4a5c3550b03651279c24de6b6361ffa6dc28776e
 workflow-type: tm+mt
-source-wordcount: '60'
-ht-degree: 11%
+source-wordcount: '58'
+ht-degree: 12%
 
 ---
 
@@ -19,11 +19,9 @@ ht-degree: 11%
 - 开始使用{#getting-started}
    - [入门](onboarding.md)
    - [实施工作流](implementation-workflow.md)
-   - [行为数据](behavioral-data.md)
    - [Headless](headless.md)
    - [安装](install-configure.md)
    - [设置](settings.md)
-   - [验证](verify.md)
    - [暂存环境](staging-environment.md)
    - [Page Builder集成](page-builder.md)
 - [!DNL Product Recommendations]管理员{#admin}
@@ -36,6 +34,7 @@ ht-degree: 11%
 - [!DNL Product Recommendations]开发人员{#developer}
    - [概述](development-overview.md)
    - [收集数据](events.md)
+   - [验证](verify.md)
    - [自定义](customize.md)
    - [处理Cookie限制](setting-cookie.md)
 - [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

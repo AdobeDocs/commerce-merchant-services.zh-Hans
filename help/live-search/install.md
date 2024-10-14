@@ -3,9 +3,9 @@ title: 开始使用 [!DNL Live Search]
 description: “从Adobe Commerce了解 [!DNL Live Search] 的系统要求和安装步骤。”
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 9a10613db182d0d6bf8dad2bbcd1fd9023804370
+source-git-commit: 89dd5ae305563e5f6bbcdb80764fd9eeb177b491
 workflow-type: tm+mt
-source-wordcount: '3000'
+source-wordcount: '3093'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,14 @@ Adobe Commerce [!DNL Live Search]和[[!DNL Catalog Service]](../catalog-service/
 
 从较高层面来看，加入[!DNL Live Search]要求您：
 
-![实时搜索工作流](assets/livesearch-workflow.png)
+1. [安装](#1-install-the-live-search-extension) [!DNL Live Search]扩展
+1. [配置](#2-configure-api-keys) API密钥
+1. [同步](#3-sync-your-catalog-data)您的目录数据
+1. [验证](#4-verify-that-the-data-was-exported)是否已导出目录数据
+1. [配置](#5-configure-the-data)数据
+1. [测试](#6-test-the-connection)连接
+1. [验证](#7-validate-events-are-capturing-data)事件是否正在捕获数据
+1. [自定义](#8-customize-for-your-storefront)您的店面
 
 ## 1.安装[!DNL Live Search]扩展
 
@@ -272,7 +279,15 @@ bin/magento saas:resync --feed categoryPermissions
 
 要允许[!DNL Live Search]通过防火墙，请将`commerce.adobe.io`添加到允许列表。
 
-## 7.针对您的店面进行定制
+## 7.验证事件是否正在捕获数据
+
+确保部署到您站点的店面事件正常工作。 这对于Headless实施尤为重要。
+
+- 查看[!DNL Live Search]所需的[事件](events.md)。
+- 确保[实时搜索仪表板](performance.md)显示的是来自非生产环境的数据。
+- [验证事件集合](../product-recommendations/verify.md)。 此页面位于[!DNL Product Recommendations]指南中，验证步骤也适用于[!DNL Live Search]。
+
+## 8.针对您的店面进行定制
 
 您已安装[!DNL Live Search]扩展、同步、验证和配置您的数据。 下一步是确保[!DNL Live Search]构件符合商店的外观。
 

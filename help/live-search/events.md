@@ -3,34 +3,25 @@ title: '[!DNL Live Search]个事件'
 description: 了解事件如何收集 [!DNL Live Search]的数据。
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
-source-git-commit: 0d966c8dbd788563fa453912961fdc62a5a6c23e
+source-git-commit: 45a7d101c28eb9cd1404090c3ea5024652a97913
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
 
 # [!DNL Live Search]个事件
 
-[!DNL Live Search]使用事件来增强搜索算法，例如“查看次数最多”和“查看了这个项目，查看了那个项目”。 虽然LUMA用户可开箱即用地实施事件，但Headless和其他自定义实施必须实施事件以满足其自身需求。
+[!DNL Live Search]使用事件来增强搜索算法，例如“查看次数最多”和“查看了这个项目，查看了那个项目”。 虽然[Commerce示例Luma主题](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/design/themes/themes#the-default-theme)开箱即用地事件，但Headless和其他自定义实施必须根据自己的需求实施事件。
 
-由于[!DNL Live Search]和[!DNL Product Recommendations]使用相同的后端算法，因此某些事件由这两个服务共享。 需要一些产品Recommendations事件才能填充Recommendations功能板。
+此表描述了[!DNL Live Search] [排名策略](rules-add.md#intelligent-ranking)使用的事件。
 
-此表描述了[!DNL Live Search]策略使用的事件。
-
-| 策略 | 产品 | 活动 | 页面 |
+| 排名策略 | 活动 | 页面 |
 | --- | --- | --- | ---|
-| 查看次数最多 | 实时搜索<br>产品推荐 | 页面视图<br>产品视图 | 产品详细信息页面 |
-| 购买次数最多 | 实时搜索<br>产品推荐 | 页面视图<br>完成签出 | 购物车/结帐 |
-| 添加到购物车的次数最多 | 实时搜索<br>产品推荐 | 页面查看<br>添加到购物车 | 产品详细信息页面<br>产品列表页面<br>购物车<br>愿望清单 |
-| 查看了这个项目，也查看了那个项目 | 实时搜索<br>产品推荐 | 页面视图<br>产品视图 | 产品详细信息页面 |
-| 趋势 | 实时搜索<br>产品推荐 | 页面视图<br>产品视图 | 产品详细信息页面 |
-| 查看了这个项目，购买了那个项目 | 产品推荐 | 页面视图<br>产品视图 | 产品详细信息页面<br>购物车/结帐 |
-| 购买了此项，也购买了此项 | 产品推荐 | 页面视图<br>产品视图 | 产品详细信息页面 |
-| 转化：查看以购买 | 产品推荐 | 页面视图<br>产品视图 | 产品详细信息页面 |
-| 转化：查看以购买 | 产品推荐 | 页面视图<br>完成签出 | 购物车/结帐 |
-| 转化：查看到购物车 | 产品推荐 | 页面视图<br>产品视图 | 产品详细信息页面 |
-| 转化：查看到购物车 | 产品推荐 | 页面查看<br>添加到购物车 | 产品详细信息页面<br>产品列表页面<br>购物车<br>愿望清单 |
+| 查看次数最多 | `page-view`<br>`product-view` | 产品详细信息页面 |
+| 购买次数最多 | `page-view`<br>`complete-checkout` | 购物车/结帐 |
+| 添加到购物车的次数最多 | `page-view`<br>`add-to-cart` | 产品详细信息页面<br>产品列表页面<br>购物车<br>愿望清单 |
+| 查看了这个项目，也查看了那个项目 | `page-view`<br>`product-view` | 产品详细信息页面 |
 
 >[!NOTE]
 >
@@ -42,13 +33,13 @@ ht-degree: 0%
 
 | 仪表板区域 | 活动 | 加入字段 |
 | ------------------- | ------------- | ---------- |
-| 独特搜索 | `page-view`，`search-request-sent`， | searchRequestId |
-| 零结果搜索 | `page-view`，`search-request-sent`， | searchRequestId |
-| 零结果率 | `page-view`，`search-request-sent`， | searchRequestId |
-| 热门搜索 | `page-view`，`search-request-sent`， | searchRequestId |
+| 独特搜索 | `page-view`，`search-request-sent`，`search-response-received` | `searchRequestId` |
+| 零结果搜索 | `page-view`，`search-request-sent`，`search-response-received` | `searchRequestId` |
+| 零结果率 | `page-view`，`search-request-sent`，`search-response-received` | `searchRequestId` |
+| 热门搜索 | `page-view`，`search-request-sent`，`search-response-received` | `searchRequestId` |
 | 平均 点击位置 | `page-view`，`search-request-sent`，`search-response-received`，`search-results-view`，`search-product-click` | searchRequestId |
-| 点进率 | `page-view`，`search-request-sent`，`search-response-received`，`search-results-view`，`search-product-click` | searchRequestId， sku |
-| 转化率 | `page-view`，`search-request-sent`，`search-response-received`，`search-results-view`，`search-product-click`，`product-view`，`add-to-cart`，`place-order` | searchRequestId， sku |
+| 点进率 | `page-view`，`search-request-sent`，`search-response-received`，`search-results-view`，`search-product-click` | `searchRequestId`，`sku`，`parentSku` |
+| 转化率 | `page-view`，`search-request-sent`，`search-response-received`，`search-results-view`，`search-product-click`，`product-view`，`add-to-cart`，`place-order` | `searchRequestId`，`sku`，`parentSku` |
 
 ### 所需上下文
 
@@ -72,11 +63,8 @@ mse.publish.searchRequestSent("search-bar");
 
 ## 注意事项
 
-广告拦截器和隐私设置可能会阻止捕获事件，并可能导致参与和收入[量度](workspace.md)少报。
-
-事件不会捕获商户网站上发生的每个交易。 事件旨在让商家大致了解网站上发生的事件。
-
-Headless实施必须实施事件以支持[产品Recommendations仪表板](../product-recommendations/events.md)。
+- 广告拦截器和隐私设置可能会阻止捕获事件，并可能导致参与和收入[量度](performance.md)少报。 此外，由于购物者离开页面或网络问题，某些事件可能无法发送。
+- Headless实施必须实施事件以推动智能促销。
 
 >[!NOTE]
 >
