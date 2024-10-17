@@ -3,7 +3,7 @@ title: 收集数据
 description: 了解事件如何收集产品推荐的数据。
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
-source-git-commit: 87db52e0c851b56c9a8ceba1bf25c222c6d63cda
+source-git-commit: cd1ce643d7c1ffeec8e9853cfc6ffc5519ce8f7a
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 0%
@@ -78,7 +78,7 @@ _冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于产
 [Adobe Commerce店面事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start)列出了部署到您的店面的所有事件。 但是，从该列表中，有一个特定于产品Recommendations的事件子集。 当购物者与店面上的推荐单元进行交互时，这些事件会收集数据，并增强用于帮助您分析推荐表现情况的量度。
 
 | 事件 | 描述 |
-| --- | --- | --- |
+| --- | --- |
 | `impression-render` | 在页面上呈现推荐单元时发送。 如果页面有两个推荐单位（已购买、已查看），则会发送两个`impression-render`事件。 此事件用于跟踪展示次数的量度。 |
 | `rec-add-to-cart-click` | 购物者单击推荐单元中项目的&#x200B;**添加到购物车**&#x200B;按钮。 |
 | `rec-click` | 购物者单击推荐单元中的产品。 |
@@ -113,7 +113,7 @@ _冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于产
 此表描述了每种建议案类型使用的事件。
 
 | 推荐类型 | 活动 | 页面 |
-| --- | --- | --- | ---|
+| --- | --- | --- |
 | 查看次数最多 | `page-view`<br>`product-view` | 产品详细信息页面 |
 | 购买次数最多 | `page-view`<br>`complete-checkout` | 购物车/结帐 |
 | 添加到购物车的次数最多 | `page-view`<br>`add-to-cart` | 产品详细信息页面<br>产品列表页面<br>购物车<br>愿望清单 |
