@@ -4,16 +4,16 @@ description: 了解如何使用生产和沙盒API密钥将Adobe Commerce或Magen
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: bfb839c25a378eedd3a20fd01f12f7398c6568b9
+source-git-commit: adf5691a1bdfd35ffa7612d732cc149fd7594e9f
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1259'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-某些Adobe Commerce和Magento Open Source功能由[!DNL Commerce Services]提供支持，并部署为SaaS（软件即服务）。 若要使用这些服务，必须使用生产和沙盒API密钥连接[!DNL Commerce]实例，并在[配置](#saas-configuration)中指定数据空间。 您只需为每个Commerce实例配置一次连接即可。
+某些Adobe Commerce和Magento Open Source功能由[!DNL Commerce Services]提供支持，并部署为SaaS（软件即服务）。 若要使用这些服务，必须使用生产和沙盒API密钥连接[!DNL Commerce]实例，并在[配置](#saas-configuration)中指定数据空间。 您只需为每个实例配置一次连接即可。
 
 ## 可用服务 {#availableservices}
 
@@ -45,6 +45,7 @@ ht-degree: 0%
 此外，解决方案集成商也有权使用[!DNL Commerce Services]。 如果您是解决方案集成商，[!DNL Commerce]合作伙伴合同的签名者应生成API密钥。
 
 >[!NOTE]
+>密钥标识符&#x200B;*Production*&#x200B;和&#x200B;*Sandbox*&#x200B;未引用您的环境。 对于每个环境（例如本地、开发、暂存或生产环境），您要将同一组API密钥使用到。
 >
 >许可证所有者通常是Adobe Commerce客户的主要联系人，并不总是与Adobe Commerce on cloud infrastructure项目的项目所有者相同。
 
@@ -68,7 +69,7 @@ ht-degree: 0%
 
 1. 对每个环境（生产和沙盒）重复上述步骤。
 
-   **API密钥**&#x200B;部分现在显示您的API（公共）密钥。 当您[选择或创建SaaS项目](#createsaasenv)时，需要生产和沙盒密钥（公共+私有）。
+   **API密钥**&#x200B;部分现在显示您的API（公共）密钥。 当您[在与许可证关联的任何环境/安装中选择或创建SaaS项目](#createsaasenv)时，您需要所有四个密钥（生产和沙盒密钥，Public+Private）。
 
 ## SaaS配置 {#saasenv}
 
@@ -78,7 +79,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> 请仅在生产[!DNL Commerce]安装中使用生产SaaS数据空间，以避免数据冲突。 否则，您可能会用测试数据污染生产站点数据，从而导致部署延迟。 例如，可能会从暂存数据（如暂存URL）错误地覆盖您的生产产品数据。
+> 请仅在生产[!DNL Commerce]安装中使用&#x200B;**生产SaaS数据空间**以避免数据冲突。 否则，您可能会用测试数据污染生产站点数据，从而导致部署延迟。 例如，可能会从暂存数据（如暂存URL）错误地覆盖您的生产产品数据。
 > 如果发生这种情况，[提交支持请求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)以请求数据清理。
 
 ### SaaS数据空间配置
