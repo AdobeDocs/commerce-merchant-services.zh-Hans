@@ -4,7 +4,7 @@ description: 安装Payments Services扩展。
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 0%
@@ -42,9 +42,9 @@ ht-degree: 0%
 
 Composer在初始安装[!DNL Adobe Commerce]期间使用这些密钥，或者在以前未将Composer密钥保存到`auth.json`文件的情况下使用这些密钥。
 
-有关获取编辑器密钥的详细信息，请参阅[获取您的身份验证密钥](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html)。
+有关获取编辑器密钥的详细信息，请参阅[获取您的身份验证密钥](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)。
 
-请参阅[安装扩展](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/extensions.html)，以了解有关下载和安装扩展之前应考虑哪些内容的更多信息。
+请参阅[安装扩展](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)，以了解有关下载和安装扩展之前应考虑哪些内容的更多信息。
 
 ### 云基础架构上的[!DNL Adobe Commerce]
 
@@ -155,7 +155,7 @@ Could not find a matching version of package magento/payment-services. Check the
    cat /path/to/auth.json
    ```
 
-1. 查看[哪些密钥与您的Commerce帐户`MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html)关联。
+1. 查看[哪些密钥与您的Commerce帐户`MageID`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)关联。
 
 ### 内存不足，无法用于PHP
 
@@ -165,7 +165,7 @@ Could not find a matching version of package magento/payment-services. Check the
 Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocate 4096 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
 ```
 
-在`php.ini`中增加环境上PHP的内存限制[](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html#increase-php-memory-limit)。
+在`php.ini`中增加环境上PHP的内存限制[](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings#increase-php-memory-limit)。
 
 或者，也可以使用此命令指定内存限制： `php -d memory_limit=-1 [path to composer]/composer require magento/payment-services`。
 

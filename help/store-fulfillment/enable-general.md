@@ -4,7 +4,7 @@ description: 配置常规设置以启用商店的 [!DNL Store Fulfillment] 。 �
 role: Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '2405'
 ht-degree: 0%
@@ -356,7 +356,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关配置店内传递选项的更多信息，请参阅&#x200B;_Adobe Commerce用户指南_&#x200B;中的[店内传递](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html)。
+>有关配置店内传递选项的更多信息，请参阅&#x200B;_Adobe Commerce用户指南_&#x200B;中的[店内传递](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery)。
 
 
 ### 投放方法配置

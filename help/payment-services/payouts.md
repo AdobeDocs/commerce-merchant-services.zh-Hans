@@ -5,7 +5,7 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1301'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->付款报表仅显示捕获的订单（付款操作设置为[`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method)），或[标记为`Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html)。
+>付款报表仅显示捕获的订单（付款操作设置为[`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method)），或[标记为`Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice)。
 
 ## 支付数据可视化视图
 
@@ -155,7 +155,7 @@ ht-degree: 0%
 | [!UICONTROL Code] | 表示贷方(*CR*)或借方(*DR*)的交易代码 |
 | [!UICONTROL Reference ID] | 与此事件相关的原始交易ID |
 | [!UICONTROL Invoice] | 交易的发票ID（每张订单一个） |
-| [!UICONTROL Commerce order] | Commerce订单ID <br> <br>要查看相关的[订单信息](https://docs.magento.com/user-guide/sales/orders.html)，请单击ID。 |
+| [!UICONTROL Commerce order] | Commerce订单ID <br> <br>要查看相关的[订单信息](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders)，请单击ID。 |
 | [!UICONTROL Commerce trans] | Commerce交易ID |
 | [!UICONTROL Pay method] | 信用卡类型 — *[!UICONTROL BANK]*、*[!UICONTROL PAYPAL]*、*[!UICONTROL CREDIT_CARD]* — 和相关联的卡提供商（如&#x200B;*Visa*&#x200B;或&#x200B;*MasterCard*） |
 | [!UICONTROL TRANS AMT] | 交易金额 |

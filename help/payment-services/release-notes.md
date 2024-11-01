@@ -3,7 +3,7 @@ title: "[!DNL Payment Services]发行说明"
 description: 查看发行说明，了解所有 [!DNL Payment Services] 发行版本的信息。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: a5963055a17b5af0c30f3d5f6236d1524e028b22
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '3017'
 ht-degree: 0%
@@ -391,7 +391,7 @@ _2022年8月9日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
-![新](../assets/new.svg)<!-- Issue PAY-XX -->一般可用性版本 — [!DNL Payment Services]现在 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 版本2.4.0到2.4.5](https://devdocs.magento.com/release/availability.html#compatibility)支持[。
+![新](../assets/new.svg)<!-- Issue PAY-XX -->一般可用性版本 — [!DNL Payment Services]现在 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 版本2.4.0到2.4.5](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)支持[。
 
 ![已修复问题](../assets/fix.svg)<!-- Issue PAY-x --> Apple Pay现在与移动和桌面上的Safari浏览器v15.5兼容。
 
@@ -419,7 +419,7 @@ _2022年3月31日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
-![新](../assets/new.svg)<!-- Issue PAY-2127 -->一般可用性版本 — [!DNL Payment Services]现在 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 版本2.4.0到2.4.4](https://devdocs.magento.com/release/availability.html#compatibility)支持[。
+![新](../assets/new.svg)<!-- Issue PAY-2127 -->一般可用性版本 — [!DNL Payment Services]现在 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 版本2.4.0到2.4.4](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)支持[。
 
 ![新](../assets/new.svg)<!-- Issue PAY-2682 --> [!DNL Adobe Commerce]和[!DNL Magento Open Source]的[!DNL Payment Services]扩展现在适用于加拿大商家。 商家可以使用[法语](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr#carte-de-cr%C3%A9dit-et-devises-accept%C3%A9es)或[英语](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#accepted-credit-cards-and-currencies)查看付款配置。
 
@@ -463,7 +463,7 @@ _2021年11月29日_
 
 ![新](../assets/new.svg)<!-- Issue PAY-1443 -->您可以轻松[自定义[!DNL Payment Services]扩展的PayPal付款按钮和信用卡字段的外观](payments-options.md)。
 
-![已知问题](../assets/bug.svg)<!-- Issue PAY-2473 -->在安装扩展期间使用[不正确的编辑器键](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html)会阻止用户使用正确的`MAGEID`进行[身份验证](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html)。
+![已知问题](../assets/bug.svg)<!-- Issue PAY-2473 -->在安装扩展期间使用[不正确的编辑器键](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html)会阻止用户使用正确的`MAGEID`进行[身份验证](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)。
 
 ![已知问题](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services]报告[不能立即同步](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)。
 

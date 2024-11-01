@@ -5,7 +5,7 @@ role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 8999d63319f627e0b56a0ef5a881d25dbeaf648f
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 0%
@@ -36,17 +36,17 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **访问Walmart Commerce Technologies软件存档（.zip文件）的“商店履行”** — 在新用户引导和启用过程中，请与您的客户经理合作，以访问“商店履行”扩展的安装文件。
 
-- **Adobe Commerce帐户信息** — 安装[!DNL Store Fulfillment]解决方案需要[[!DNL Commerce] 帐户](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"}。 您需要具有对[!DNL Adobe Commerce]项目的所有者或管理员访问权限的帐户ID和凭据。
+- **Adobe Commerce帐户信息** — 安装[!DNL Store Fulfillment]解决方案需要[[!DNL Commerce] 帐户](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create){target="_blank"}。 您需要具有对[!DNL Adobe Commerce]项目的所有者或管理员访问权限的帐户ID和凭据。
 
-- 对于云基础架构项目上的[!DNL Adobe Commerce]，软件安装程序必须具有对云项目的管理员访问权限。 请参阅[管理用户访问权限](https://devdocs.magento.com/cloud/project/user-admin.html)。
+- 对于云基础架构项目上的[!DNL Adobe Commerce]，软件安装程序必须具有对云项目的管理员访问权限。 请参阅[管理用户访问权限](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/user-access)。
 
-- **使用编辑器和[!DNL Commerce CLI]**&#x200B;的体验 — 有关使用这些工具在[!DNL Adobe Commerce]平台上安装和管理扩展的信息，请参阅[常规CLI安装](https://devdocs.magento.com/extensions/install/){target="_blank"}。
+- **使用编辑器和[!DNL Commerce CLI]**&#x200B;的体验 — 有关使用这些工具在[!DNL Adobe Commerce]平台上安装和管理扩展的信息，请参阅[常规CLI安装](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions){target="_blank"}。
 
 - **在Adobe Commerce上安装第三方扩展的体验** — 有关参考，请参阅Adobe Commerce文档。
 
-   - [在云基础架构实例上安装Adobe Commerce的扩展](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension)。
+   - [在云基础架构实例上安装Adobe Commerce的扩展](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension)。
 
-   - [为Adobe Commerce本地实例安装扩展](https://devdocs.magento.com/extensions/install/)。
+   - [为Adobe Commerce本地实例安装扩展](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)。
 
 ### 步骤1：下载扩展包
 
@@ -135,7 +135,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 1. 登录到服务器。
 
-   对于云基础架构上的Adobe Commerce安装，[使用SSH登录到远程环境](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh)。
+   对于云基础架构上的Adobe Commerce安装，[使用SSH登录到远程环境](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh)。
 
 1. 验证是否已启用“商店履行服务”模块。
 

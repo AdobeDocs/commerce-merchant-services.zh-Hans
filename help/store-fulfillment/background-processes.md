@@ -4,7 +4,7 @@ description: “为用于与履行服务同步数据的 [!DNL Store Fulfillment]
 role: Admin, Developer
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 # 后台进程配置
 
-Store Fulfillment集成使用后台流程和报文队列以获得最佳性能和规模。 使用自动启动[消息队列运行者](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html)的[部署变量](https://devdocs.magento.com/cloud/env/variables-deploy.html#cron_consumers_runner)为您的Adobe Commerce存储区构建环境。
+Store Fulfillment集成使用后台流程和报文队列以获得最佳性能和规模。 使用自动启动[消息队列运行者](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework)的[部署变量](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#cron_consumers_runner)为您的Adobe Commerce存储区构建环境。
 
-后台进程使用标准Adobe Commerce [计划任务](https://docs.magento.com/user-guide/system/cron.html)功能进行管理。 这些流程负责将订单和商家商店配置数据与商店履行Web服务同步。
+后台进程使用标准Adobe Commerce [计划任务](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cron)功能进行管理。 这些流程负责将订单和商家商店配置数据与商店履行Web服务同步。
 
 ## 管理“商店履行”的计划任务
 

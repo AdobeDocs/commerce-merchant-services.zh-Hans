@@ -3,7 +3,7 @@ title: 信用卡保险存储
 description: 购物者可以保存（保存）自己的信用卡信息以便将来购买。
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ![将存储的凭据用于将来购买](assets/use-stored-card.png){width="400" zoomable="yes"}
 
-他们还可以从其“我的帐户”中的[存储支付方式](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html)中轻松删除其保险存储的信用卡。
+他们还可以从其“我的帐户”中的[存储支付方式](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods)中轻松删除其保险存储的信用卡。
 
 ![我的帐户中存储的付款方式](assets/stored-payment-methods.png){width="400" zoomable="yes"}
 

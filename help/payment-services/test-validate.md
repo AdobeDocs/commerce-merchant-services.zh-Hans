@@ -3,7 +3,7 @@ title: 测试和验证
 description: 测试和验证有助于确保 [!DNL Payment Services] 功能按预期工作，并为您的客户提供最佳付款选项
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 feature: Payments, Checkout
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 在沙盒环境中测试[!DNL Payment Services]是一个重要的验证步骤，即使它是一个仅连接到PayPal沙盒而非实际银行和商家的模拟环境。
 
 1. 使用[信用卡字段](payments-options.md#credit-card-fields)或任何[PayPal付款按钮](payments-options.md#paypal-smart-buttons)成功完成从商店结帐。 有关使用假信用卡进行测试的更多信息，请参阅[测试凭据](#testing-credentials)。
-1. 捕获（当您的付款操作为[设置为`Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)时）、[退款](refunds.md)或[void](voids.md)刚刚完成的订单。 如果付款操作设置为`Authorize`而不是`Authorize and Capture`，则您也可以[为订单](https://docs.magento.com/user-guide/sales/invoice-create.html){target="_blank"}创建发票。
+1. 捕获（当您的付款操作为[设置为`Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)时）、[退款](refunds.md)或[void](voids.md)刚刚完成的订单。 如果付款操作设置为`Authorize`而不是`Authorize and Capture`，则您也可以[为订单](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"}创建发票。
 1. 在24-48小时内，查看[付款报表](payouts.md)中的交易和其他信息。
 1. 在[订单付款状态报告](order-payment-status.md)中查看订单的详细信息。
 
