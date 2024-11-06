@@ -2,9 +2,9 @@
 title: 创建新推荐
 description: 了解如何创建产品推荐单元。
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 0b651189184a107dec8452d5b0d588f52d689605
+source-git-commit: 0d6e935fc5812efd7d3359a4fa242f8d5d85043e
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1497'
 ht-degree: 0%
 
 ---
@@ -158,6 +158,10 @@ _推荐类型_
 #### 如果就绪指示器百分比很低，该怎么办
 
 就绪性百分比低表示您的目录中符合此推荐类型推荐条件的产品不多。 这意味着，如果仍部署此推荐类型，则返回[备用推荐](events.md#backuprecs)的可能性很高。
+
+>[!IMPORTANT]
+>
+>不支持&#x200B;_捆绑包_、_分组_&#x200B;和自定义产品类型。 如果您的目录包含大量此类产品类型，则就绪性得分可能较低。 此外，任何包含空格的SKU都可能会降低推荐的相关性，应避免使用。
 
 下面列出了常见低就绪分数的可能原因和解决方案：
 

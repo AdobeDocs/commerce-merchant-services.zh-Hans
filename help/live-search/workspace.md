@@ -2,7 +2,7 @@
 title: '设置实时搜索'
 description: ' [!DNL Live Search] 工作区用于配置、管理和监视搜索性能。'
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
+source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 0%
@@ -41,7 +41,7 @@ ht-degree: 0%
 | [同义词](synonyms.md) | 扩展搜索范围，以包含购物者可能用于查找与您的目录中的产品不同的字词。 |
 | [搜索促销](rules.md) | 使用触发计划操作的逻辑规则塑造搜索体验。 提升、隐藏、固定或隐藏产品以校准搜索结果来支持您的业务目标。 |
 | [类别促销](category-merch.md) | 在类别级别应用规则和智能促销。 |
-| [GraphQL](graphql.md) | 登录到商店管理员的开发人员可以使用实际目录数据编写和测试查询。 要了解更多信息，请转到[!DNL Live Search]开发人员文档中的[GraphQL概述](https://developer.adobe.com/commerce/webapi/graphql/)。 |
+| [GraphQL](graphql.md) | 登录到商店管理员的开发人员可以使用实际目录数据编写和测试查询。 要了解更多信息，请转到[!DNL Live Search]开发人员文档中的[GraphQL概述](https://developer.adobe.com/commerce/services/graphql/live-search/)。 |
 | [设置](settings.md) | 确定如何在店面中按价格范围对价格方面值进行分组并设置索引语言。 |
 
 ## 将属性设置为可搜索

@@ -3,9 +3,9 @@ title: '边界和限制'
 description: 了解 [!DNL Live Search] 的界限和限制，以确保它满足您的业务需求。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: c01c0480d9452e52ebf7e31e6a5d81c26c0a8234
+source-git-commit: 438d6a04cb0044f9e06f8c8b53c8eec79d650170
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,7 @@ ht-degree: 0%
 - 动态Facet会导致大型索引和高序度索引的性能问题。 如果您已创建动态Facet，并且发现任何性能下降或页面未加载但存在超时错误，请尝试将您的Facet更改为Pinded以确定这是否解决了您的性能问题。
 - Stock状态(`quantity_and_stock_status`)不支持作为Facet。 您可以使用`inStock: 'true'`筛选缺货产品。 当[!DNL Commerce]管理员中的“Display out of stock products”设置为“True”时，`LiveSearchAdapter`模块即开即用支持此功能。
 - 不支持将日期类型属性作为Facet。
+- 将属性添加为Facet后，对该属性元数据所做的任何更改都不会反映在Facet中。
 
 ## 查询
 

@@ -2,9 +2,9 @@
 title: 筛选产品
 description: 定义包括或排除用作推荐的产品条件。
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: e42b9524fb2e8518576935bc0cd378eca9a579c5
+source-git-commit: 0d6e935fc5812efd7d3359a4fa242f8d5d85043e
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '749'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Adobe Commerce会自动将不可配置的默认过滤器应用于推荐单元。
 
 ### 类型
 
-基于产品类型的筛选器包括或排除特定类型的所有产品。 支持的类型包括&#x200B;_简单_、_可配置_、_虚拟_、_可下载_&#x200B;或&#x200B;_礼品卡_。 尚不支持&#x200B;_捆绑包_&#x200B;和&#x200B;_分组的_&#x200B;产品。
+基于产品类型的筛选器包括或排除特定类型的所有产品。 支持的类型包括&#x200B;_简单_、_可配置_、_虚拟_、_可下载_&#x200B;或&#x200B;_礼品卡_。 不支持&#x200B;_捆绑包_、_分组_&#x200B;和自定义产品类型。
 
 ### 可见性
 

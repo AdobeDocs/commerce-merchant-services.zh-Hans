@@ -3,9 +3,9 @@ title: "[!DNL Live Search]发行说明"
 description: “来自Adobe Commerce的 [!DNL Live Search] 的最新发行信息。”
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: a68fe02be6e207b323d600910cba62992edd6725
+source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2042'
 ht-degree: 0%
 
 ---
@@ -318,8 +318,8 @@ _2023年3月14日_
 
 [!BADGE 支持]{type="信息性" tooltip="支持"}
 
-![修复](../assets/fix.svg) [自定义价格属性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types)在配置为[Facet]({%链接live-search/facets-add.md %})时不再返回错误。
-![修复](../assets/fix.svg)修复了在没有[货币符号](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration(optional)) (`data-currency-symbol`)可用时导致错误发生的问题。
+![Fix](../assets/fix.svg) [自定义价格属性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types)在配置为[Facet](facets-add.md)时不再返回错误。
+![修复](../assets/fix.svg)修复了在没有[货币符号](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration#step-5-customize-currency-symbols-optional) (`data-currency-symbol`)可用时导致错误发生的问题。
 ![Fix](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md)现在显示[特别价格](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special)（最低最终价格）（可用时）。
 
 ### [!DNL Live Search] 1.3.0 {#130}

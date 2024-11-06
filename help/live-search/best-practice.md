@@ -2,9 +2,10 @@
 title: '[!DNL Live Search]最佳实践'
 description: 了解在商店中实施 [!DNL Live Search] 的最佳实践。
 role: Admin, Developer
-source-git-commit: 77d12a1294c87089ce806615f92bf89396bfc43b
+exl-id: 69b2c2a6-c8a9-4640-8d2b-08fcd7a96034
+source-git-commit: 834935abc55e21863c83e82dae8ec79e70e67220
 workflow-type: tm+mt
-source-wordcount: '2349'
+source-wordcount: '2359'
 ht-degree: 0%
 
 ---
@@ -137,7 +138,7 @@ ht-degree: 0%
 
 ### 利用产品元数据
 
-确保[将准确而详细的产品属性设置为可搜索](workspace.md#set-attributes-as-searchable)。 请注意，默认情况下，SKU、名称和类别属性是可搜索的，不能从搜索中排除。 
+确保[将准确而详细的产品属性设置为可搜索](workspace.md#set-attributes-as-searchable)。 请注意，默认情况下，SKU、名称和类别属性是可搜索的，不能从搜索中排除。 为获得最佳结果，请勿在SKU中使用空格。
 
 要增加搜索相关性，请为每个可搜索属性分配一个权重。 权重较高的属性在搜索结果中应显示在较高的位置。 按相关性排序受多个标准影响，例如搜索权重。 这意味着，有时搜索权重较低的属性仍可以比搜索权重较高的属性具有更大的相关性。 其他标准可以包括任何给定属性中的匹配数、找到的搜索词的位置以及搜索词之前和之后的整体文本结构。
 
