@@ -3,9 +3,9 @@ title: "[!DNL Payment Services]发行说明"
 description: 查看发行说明，了解所有 [!DNL Payment Services] 发行版本的信息。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: f48a177f53c88d1794683d08976ca6c88031fb93
 workflow-type: tm+mt
-source-wordcount: '3017'
+source-wordcount: '3174'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,24 @@ _2021年6月28日_
 ![新](../assets/new.svg)<!-- Issue PAY-2761 -->您现在可以通过使用“列”设置控件显示或隐藏列，自定义在[订单付款状态报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns)和[付款报表](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns)中显示的数据。
 
 +++
+
+## v2.9.0
+
+_2024年11月7日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"}
+
+![新建](../assets/new.svg)<!-- PAY-5629 --> [!DNL Payment Services]现在支持Apple Pay **的**&#x200B;升级SDK URL，从而改进了使用Apple Pay的商户的集成。 此功能与macOS 14及更高版本兼容，运行早期版本的macOS的设备将不会显示此功能。
+
+![新](../assets/new.svg)<!-- PAY-5630 -->已更新&#x200B;**结帐**、**产品**、**购物车**&#x200B;和&#x200B;**迷你购物车**&#x200B;页面，以支持Apple Pay的&#x200B;**升级SDK URL**，从而增强将Apple Pay作为付款选项提供的商户的用户体验。
+
+![新增](../assets/new.svg)<!-- PAY-5635 -->基于Apple支付地址&#x200B;**改进了估计运费**，允许客户在结账时查看准确的运费。
+
+![修复](../assets/fix.svg)<!-- PAY-5661 -->修复了结账时出现的各种&#x200B;**[!DNL Payment Services]问题**，提高了商家和购物者付款流程的可靠性。
+
+![修复](../assets/fix.svg)<!-- PAY-5692 -->修复了在使用&#x200B;**智能按钮进行快速结帐**&#x200B;时，**客户的名字和姓氏**&#x200B;未添加到订单中的问题。
+
+![修复](../assets/fix.svg)<!-- PAY-5712 -->解决了总金额为空时，商户无法&#x200B;**使用“零小计结帐”付款选项**&#x200B;完成结帐的问题。
 
 ## v2.8.1
 
