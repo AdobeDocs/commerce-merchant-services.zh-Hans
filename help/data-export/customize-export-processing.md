@@ -3,7 +3,7 @@ title: 提高SaaS数据导出性能
 description: 了解如何使用多线程数据导出模式提高Commerce服务的SaaS数据导出性能。
 role: Admin, Developer
 exl-id: 20c81ef4-5a97-45cd-9401-e82910a2ccc3
-source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
+source-git-commit: 6f67ea717595fe517d751ae14bf8123c7d05831b
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -41,8 +41,8 @@ Adobe建议使用默认配置进行数据摄取，这通常满足Commerce商家�
 
 所有[同步方法](data-synchronization.md#synchronization-process)都支持多线程模式 — 完全同步、部分同步和失败项目同步。 要配置多线程，请指定同步过程中要使用的线程数和批处理大小。
 
-- `threadCount`是激活到进程实体的线程数。 默认`threadCount`为`1`。
-- `batchSize`是一个迭代中处理的实体数。 除价格馈送之外，所有馈送的默认`batchSize`是`100`条记录。 对于价格馈送，默认值为`500`条记录。
+- `thread-count`是激活到进程实体的线程数。 默认`thread-count`为`1`。
+- `batch-size`是一个迭代中处理的实体数。 除价格馈送之外，所有馈送的默认`batch-size`是`100`条记录。 对于价格馈送，默认值为`500`条记录。
 
 您可以在运行resync命令时将多线程配置为临时选项，或者通过将多线程配置添加到Adobe Commerce应用程序配置中来配置多线程。
 
@@ -52,10 +52,10 @@ Adobe建议使用默认配置进行数据摄取，这通常满足Commerce商家�
 
 ### 在运行时配置多线程
 
-从命令行运行完整同步命令时，通过将`threadCount`和`batchSize`选项添加到CLI命令来指定多线程处理。
+从命令行运行完整同步命令时，通过将`thread-count`和`batch-size`选项添加到CLI命令来指定多线程处理。
 
 ```
-bin/magento saas:resync --feed=products --threadCount=2 --batchSize=200
+bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 ```
 
 在命令行中指定的选项会覆盖Adobe Commerce应用程序`config.php`文件中指定的数据导出配置。
