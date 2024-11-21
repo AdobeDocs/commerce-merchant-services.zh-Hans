@@ -2,10 +2,11 @@
 title: '[!DNL Catalog Service]'
 description: “[!DNL Catalog Service] for Adobe Commerce提供了一种检索产品显示页和产品列表页内容的方法，其速度比本机Adobe Commerce GraphQL查询快得多。”
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
+role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 06ef294d2670e5d36bbb6cd18deafce2cc751772
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1078'
 ht-degree: 0%
 
 ---
@@ -61,6 +62,14 @@ GraphQL的核心系统和服务不会直接相互通信。 您可以从不同的
 * 复杂的产品由多个简单的产品组成。 元件简单产品可以有不同的价格。 也可以定义复杂产品，以便购物者可以指定简单产品的组成数量。 目录服务将可配置、捆绑包和分组的产品类型映射到`complexProductViews`。
 
 复杂的产品选项通过其行为而非类型进行统一和区分。 每个选项值表示一个简单的产品。 此选项值可以访问简单产品属性，包括价格。 当购物者选择复杂产品的所有选项时，所选选项的组合指向特定的简单产品。 在购物者为所有可用选项选择值之前，简单产品将保持不明确。
+
+#### 产品视图属性
+
+简单和复杂的产品都有客户定义的属性，这些属性可显示在店面上。 这些属性作为[ProductViewAttributes](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#productviewattribute-type)返回。 在Adobe Commerce中，可用的属性在创建产品时定义。 您可以从Adobe Commerce后端或以编程方式添加其他属性。 请参阅[扩展和自定义SaaS数据导出馈送数据](../data-export/extensibility-and-customizations.md)。
+
+>[!TIP]
+>
+>您可以将[API Mesh与目录服务](mesh.md)一起使用，扩展目录服务GraphQL架构以添加数据或配置现有目录数据来启用新功能，而不是将数据类型添加到Commerce后端。
 
 ### 价格
 

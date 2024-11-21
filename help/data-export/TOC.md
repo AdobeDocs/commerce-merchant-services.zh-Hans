@@ -4,9 +4,9 @@ user-guide-description: “本指南提供了有关Adobe Commerce SaaS服务使�
 breadcrumb-title: "[!DNL Data Export]用于SaaS服务的指南"
 role: Admin
 feature: Services
-source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
+source-git-commit: 06ef294d2670e5d36bbb6cd18deafce2cc751772
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '75'
 ht-degree: 5%
 
 ---
@@ -21,6 +21,8 @@ ht-degree: 5%
 - [CLI命令参考](data-export-cli-commands.md)
 - [查看日志并排除故障](troubleshooting-logging.md)
 - [管理SaaS数据导出扩展](manage-extension.md)
-- [扩展和自定义SaaS数据导出源](extensibility-and-customizations.md)
+- 可扩展性{#extensibility}
+   - [扩展和自定义SaaS数据导出源](extensibility-and-customizations.md)
+   - [动态添加产品属性](add-attribute-dynamically.md)
 - [发行说明](release-notes.md)
 - [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
