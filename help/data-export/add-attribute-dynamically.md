@@ -1,15 +1,15 @@
 ---
-title: 以编程方式将产品属性添加到数据导出器信息源
-description: 了解如何将自定义产品属性添加到 [!DNL SaaS Data Export] 馈送数据。
+title: 动态添加产品属性
+description: 了解如何在数据同步过程中动态地将自定义产品属性添加到数据导出馈送。
 role: Admin, Developer
-source-git-commit: 06ef294d2670e5d36bbb6cd18deafce2cc751772
+source-git-commit: e75092e918d06d4d1291784b0498d274ea8396e8
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
 
-# 以编程方式将产品属性添加到数据导出器信息源
+# 在数据同步期间动态添加产品属性
 
 您可以通过创建插件在数据同步过程中添加属性，来扩展产品属性，而无需在Adobe Commerce中注册这些属性。
 
