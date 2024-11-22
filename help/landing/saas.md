@@ -4,9 +4,9 @@ description: 了解如何使用生产和沙盒API密钥将Adobe Commerce或Magen
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: daad5bb1ce74126d727207812abebdcf0cbf72c0
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1304'
 ht-degree: 0%
 
 ---
@@ -118,6 +118,10 @@ ht-degree: 0%
 与您的密钥关联的任何SaaS项目都显示在&#x200B;**SaaS标识符**&#x200B;部分的&#x200B;**项目**&#x200B;字段中。
 
 1. 如果不存在任何SaaS项目，请单击&#x200B;**创建项目**。 然后在&#x200B;**项目**&#x200B;字段中，输入SaaS项目的名称。
+
+>[!NOTE]
+>
+>为避免混淆，请勿使用特定的Commerce服务作为项目的名称，例如&#x200B;*Live Search*、*Product Recommendations*&#x200B;或&#x200B;*Data Connection*。  除非已为多个SaaS项目配置了您的许可证，否则您可以为多个服务使用同一SaaS项目。
 
 1. 选择要用于[!DNL Commerce]存储当前配置的&#x200B;**数据空间**。
 
