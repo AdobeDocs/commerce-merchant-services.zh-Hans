@@ -3,10 +3,10 @@ title: 发行说明
 description: 来自Adobe Commerce的 [!DNL Data Connection] 扩展的最新发行信息。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 15b1c90cb60094d7f4a4da6435c5262f75cf0081
+source-git-commit: 4662c9467f750d9a255034feb69f51492c98a0d9
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 0%
+source-wordcount: '1108'
+ht-degree: 1%
 
 ---
 
@@ -77,6 +77,15 @@ _2022年10月12日_
 ![新](../assets/new.svg) — 已添加对[AEM店面](overview.md#aem-support)的支持。
 
 +++
+
+## 3.2.1
+
+_2024年12月2日_
+
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"}
+
+![新](../assets/new.svg) — 已将HIPAA就绪扩展添加到[!DNL Data Connection]，以便商家可以与Experience Platform共享[!DNL Commerce]后台事件数据并维护HIPAA合规性。
+![修复](../assets/fix.svg) — 修复[!DNL Data Connection]扩展覆盖`eventForwarding`数据并为所有客户设置`HIPAA`标记的问题。 现在，扩展仅为HIPAA客户设置标记。
 
 ## 3.2.0
 
