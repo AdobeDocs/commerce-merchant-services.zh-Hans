@@ -3,9 +3,9 @@ title: '[!DNL Live Search]最佳实践'
 description: 了解在商店中实施 [!DNL Live Search] 的最佳实践。
 role: Admin, Developer
 exl-id: 69b2c2a6-c8a9-4640-8d2b-08fcd7a96034
-source-git-commit: 834935abc55e21863c83e82dae8ec79e70e67220
+source-git-commit: ba2b798f2e7d5716be0d1686359ac8382f6cf8e4
 workflow-type: tm+mt
-source-wordcount: '2359'
+source-wordcount: '2426'
 ht-degree: 0%
 
 ---
@@ -106,6 +106,14 @@ ht-degree: 0%
 ## 改进搜索结果相关性
 
 此部分讨论如何通过实施有效的搜索规则并使用产品元数据来确保准确而详细的属性可搜索来改进搜索结果相关性。
+
+### 图像
+
+确保可配置产品的子产品具有具有正确角色的图像。 拥有父产品或子产品可能会导致搜索结果没有图像。
+
+>[!NOTE]
+>
+>搜索结果中的图像可能会因搜索词而异。 如果搜索词确定子产品更相关，则将使用子产品的图像，而不是父产品的图像。
 
 ### 搜索规则
 
