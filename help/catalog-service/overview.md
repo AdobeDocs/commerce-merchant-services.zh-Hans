@@ -1,15 +1,16 @@
 ---
 title: '[!DNL Catalog Service]'
-description: “[!DNL Catalog Service] for Adobe Commerce提供了一种检索产品显示页和产品列表页内容的方法，其速度比本机Adobe Commerce GraphQL查询快得多。”
+description: 适用于Adobe Commerce的[!DNL Catalog Service]提供了一种检索产品显示页面和产品列表页面内容的方法，其速度比本机Adobe Commerce GraphQL查询快得多。
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 06ef294d2670e5d36bbb6cd18deafce2cc751772
+source-git-commit: fe42f9287f1bdc3b297c553cbb18e6a015970fcb
 workflow-type: tm+mt
 source-wordcount: '1078'
 ht-degree: 0%
 
 ---
+
 
 # Adobe Commerce的[!DNL Catalog Service]
 
