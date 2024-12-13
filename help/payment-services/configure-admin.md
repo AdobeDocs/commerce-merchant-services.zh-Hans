@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: feeaed7b7130b3581a1b1f7e3bdd161ce1e7d765
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1718'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 0%
 1. 对于&#x200B;**[!UICONTROL Show on checkout page]**，选择`Yes`以启用签出页面上的信用卡字段。
 1. 对于&#x200B;**[!UICONTROL Vault Enabled]**，选择`Yes`以启用信用卡保险存储以进行签出。
 1. 对于&#x200B;**[!UICONTROL Vault Enabled in Admin]**，选择`Yes`以允许商家使用其保险存储信用卡为客户创建订单。
-1. 要启用&#x200B;**[!UICONTROL 3DS Secure authentication]** （`Off`默认为），请选择`Always`或`When required`。
+1. 要启用&#x200B;**[!UICONTROL 3D Secure authentication]** （`Off`默认为），请选择`Always`或`When required`。
 1. 对于&#x200B;**[!UICONTROL Debug Mode]**，选择`Yes`启用调试模式，或选择`No`禁用调试模式。
 1. 单击&#x200B;**[!UICONTROL Save Config]**&#x200B;保存更改。
 1. 导航到&#x200B;**[!UICONTROL System]** > **[!UICONTROL Cache Management]**，然后单击&#x200B;**[!UICONTROL Flush Cache]**&#x200B;以刷新所有无效缓存。
@@ -82,7 +82,7 @@ ht-degree: 0%
 | [!UICONTROL Show on checkout page] | 网站 | 启用或禁用结账页面上的信用卡字段。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled] | 商店视图 | 启用或禁用[信用卡保险存储](vaulting.md)。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled in Admin] | 商店视图 | 启用或禁用[商家在Admin](vaulting.md)中使用保管式付款方式完成客户订单的功能。 选项： [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL 3DS Secure authentication] | 网站 | 启用或禁用[3DS安全身份验证](security.md#3ds)。 选项： [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
+| [!UICONTROL 3D Secure authentication] | 网站 | 启用或禁用[3DS安全身份验证](security.md#3ds)。 选项： [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | 网站 | 启用或禁用调试模式。 选项： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
 ## [!UICONTROL Apple Pay]
@@ -136,6 +136,7 @@ ht-degree: 0%
    * **[!UICONTROL Show Google Pay on product detail page]**
    * **[!UICONTROL Show Google Pay in mini cart preview]**
    * **[!UICONTROL Show Google Pay on cart page]**
+1. 要启用&#x200B;**[!UICONTROL 3D Secure authentication]** （`Off`默认为），请选择`Always`或`When required`。
 1. 要启用调试模式，请为&#x200B;**[!UICONTROL Debug Mode]**&#x200B;选择`Yes` （`No`禁用它）。
 1. 根据需要选择&#x200B;**[!UICONTROL Button Color]**、**[!UICONTROL Button Type]**&#x200B;和&#x200B;**[!UICONTROL Button Style]**，配置&#x200B;_[!UICONTROL Google Pay]_按钮的外观。
 1. 要设置高度，请使用&#x200B;**[!UICONTROL Button Style]**&#x200B;中定义的高度默认值。
@@ -153,6 +154,7 @@ ht-degree: 0%
 | [!UICONTROL Show buttons on product detail page] | 商店视图 | 在产品详细信息页面上启用或禁用[!DNL Google Pay]。 选项： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons in mini-cart preview] | 商店视图 | 在迷你购物车预览中启用或禁用[!DNL Google Pay]。 选项： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on cart page] | 商店视图 | 在购物车页面上启用或禁用[!DNL Google Pay]。 选项： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL 3D Secure authentication] | 商店视图 | 启用或禁用[3D安全身份验证](security.md#3ds)。 选项： [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | 网站 | 启用或禁用调试模式。 选项： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Button Color] | 商店视图 | 定义[!DNL Google Pay]按钮的颜色。 选项： `[!UICONTROL Default]` / `[!UICONTROL Black]` / `[!UICONTROL White]` |
 | [!UICONTROL Button Type] | 商店视图 | 定义[!DNL Google Pay]按钮的类型。 选项： `[!UICONTROL buy]` / `[!UICONTROL checkout]` / `[!UICONTROL order]` / `[!UICONTROL pay]` / `[!UICONTROL plain]` |

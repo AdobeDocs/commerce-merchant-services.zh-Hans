@@ -1,11 +1,11 @@
 ---
-title: "[!DNL Payment Services]发行说明"
+title: '[!DNL Payment Services]发行说明'
 description: 查看发行说明，了解所有 [!DNL Payment Services] 发行版本的信息。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: f48a177f53c88d1794683d08976ca6c88031fb93
+source-git-commit: feeaed7b7130b3581a1b1f7e3bdd161ce1e7d765
 workflow-type: tm+mt
-source-wordcount: '3174'
+source-wordcount: '3311'
 ht-degree: 0%
 
 ---
@@ -91,13 +91,31 @@ _2021年6月28日_
 
 +++
 
+## v2.10.0
+
+_2024年12月13日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"}
+
+![新建](../assets/new.svg)<!-- PAY-5702 --> [!DNL Payment Services]现在支持GraphQL端点以便在不购买的情况下进行保险存储，从而允许客户保存其付款方式而不完成交易。
+
+![新建](../assets/fix.svg)<!-- PAY-5789 --> [!DNL Payment Services]现在支持[使用Google Pay的3D安全身份验证](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/security-compliance/security#3ds)，增强了商家和客户在付款交易过程中的安全性。
+
+![修复](../assets/fix.svg)<!-- PAY-5703 --> [!DNL Payment Services]添加了[客户直接在其&#x200B;**我的帐户**](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting)中保存卡片的功能，从而改善了便利性并简化了未来的结账流程。`Vault without purchase functionality might not be 100% compatible with Adobe Commerce 2.4.4 due to a known issue with` [`GraphQL authorization mechanisms`](https://developer.adobe.com/commerce/webapi/graphql/usage/authorization-tokens/)。
+
+![修复](../assets/fix.svg)<!-- PAY-5762 -->修复了从产品详细信息页面(PDP)启动订单时，未在订单审核页面上应用优惠券代码的问题。
+
+![修复](../assets/fix.svg)<!-- PAY-5792 --> [!DNL Payment Services]现在在结账页面](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting)上显示[保险存储卡的说明和帐单地址，使客户更清楚地了解他们保存的付款方式。
+
+![修复](../assets/fix.svg)<!-- PAY-5793 --> [!DNL Payment Services]允许商家直接从结帐页面存储存储存储电子仓库卡的帐单地址，以确保准确和完整的付款信息。
+
 ## v2.9.0
 
 _2024年11月7日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
-![新建](../assets/new.svg)<!-- PAY-5629 --> [!DNL Payment Services]现在支持Apple Pay **的**&#x200B;升级SDK URL，从而改进了使用Apple Pay的商户的集成。 此功能与macOS 14及更高版本兼容，运行早期版本的macOS的设备将不会显示此功能。
+![新建](../assets/new.svg)<!-- PAY-5629 --> [!DNL Payment Services]现在支持Apple Pay的&#x200B;**升级SDK URL**，从而改进了使用Apple Pay的商户的集成。 此功能与macOS 14及更高版本兼容，运行早期版本的macOS的设备将不会显示此功能。
 
 ![新](../assets/new.svg)<!-- PAY-5630 -->已更新&#x200B;**结帐**、**产品**、**购物车**&#x200B;和&#x200B;**迷你购物车**&#x200B;页面，以支持Apple Pay的&#x200B;**升级SDK URL**，从而增强将Apple Pay作为付款选项提供的商户的用户体验。
 
@@ -115,7 +133,7 @@ _2024年9月13日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
-![修复](../assets/fix.svg)<!-- PAY-5644 -->修复了在[!DNL Payment Services]中使用多个范围时SDK参数的缓存问题。 现在，每个范围的SDK配置都是单独缓存的，而不是通过单个键缓存。 这可以确保每个作用域的缓存都独立失效，从而提高管理多个作用域时的可靠性。
+![修复](../assets/fix.svg)<!-- PAY-5644 -->修复了在[!DNL Payment Services]中使用多个作用域时，SDK参数的缓存问题。 现在，每个范围的SDK配置都是单独缓存的，而不是通过单个键缓存。 这可以确保每个作用域的缓存都独立失效，从而提高管理多个作用域时的可靠性。
 
 ## v2.8.0
 
