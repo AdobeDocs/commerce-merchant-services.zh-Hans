@@ -1,10 +1,10 @@
 ---
-title: “管理同义词”
-description: “了解如何管理现有 [!DNL Live Search] 同义词。”
+title: 管理同义词
+description: 了解如何管理现有 [!DNL Live Search] 同义词。
 exl-id: 9f910b3c-ea28-4a50-9d3f-24b4812c0e75
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: b31d2f566dfd5c765c3d12bd2659c89afe7f91e0
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
@@ -32,8 +32,6 @@ ht-degree: 0%
 1. 单击&#x200B;**编辑**。
 关键字是列表中的第一个术语，每个术语用逗号分隔。 关键字和扩展词可以更新，但同义词的类型不能更改。
 1. 单击要编辑的项目。 然后，根据需要更新文本。
-
-   ![编辑双向同义词](assets/synonym-two-way-edit.png)
 
 1. 完成后，单击&#x200B;**保存**。
 

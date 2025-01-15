@@ -3,9 +3,9 @@ title: 安装和配置
 description: 了解如何安装、更新和卸载 [!DNL Product Recommendations]。
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 role: Admin, Developer
-source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
+source-git-commit: b31d2f566dfd5c765c3d12bd2659c89afe7f91e0
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,10 @@ ht-degree: 0%
 ## 安装[!DNL Product Recommendations] {#install}
 
 由于[!DNL Product Recommendations]模块是独立的中继包，因此比Adobe Commerce更频繁地发布更新。 为确保您及时了解最新的错误修复和功能，请参阅[发行说明](release-notes.md)。
+
+>[!IMPORTANT]
+>
+>确保您拥有使用产品Recommendations的正确[权利](../landing/saas.md#credentials)。
 
 使用编辑器安装`magento/product-recommendations`模块：
 
