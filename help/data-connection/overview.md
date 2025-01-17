@@ -3,9 +3,9 @@ title: 指南概述
 description: 了解如何使用 [!DNL Data Connection] 扩展将Adobe Commerce数据与Adobe Experience Platform集成。
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
+source-git-commit: eb98389cfdd7a0492a4437e9de9412f2d2e5401c
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1762'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >
 >Experience Platform连接器已重命名为[!DNL Data Connection]。
 
-[!DNL Data Connection]扩展将您的Adobe Commerce Web实例连接到Adobe Experience Platform和Edge Network。 对于移动设备应用程序开发人员，您可以将Adobe Experience Platform Mobile SDK与Commerce结合使用，以捕获Commerce数据并将其发送到Experience Platform。 [了解更多](./mobile-sdk-epc.md)。
+[!DNL Data Connection]扩展将您的Adobe Commerce Web实例连接到Adobe Experience Platform和Edge Network。 对于移动设备应用程序开发人员，您可以将Adobe Experience Platform Mobile SDK与Commerce结合使用，以捕获Commerce数据并将其发送给Experience Platform。 [了解更多](./mobile-sdk-epc.md)。
 
 您的Commerce商店包含大量数据。 有关您的购物者如何浏览、查看以及最终购买您网站上的产品的信息可能会揭示创造更个性化购物体验的机会。 虽然这些数据可以为本机Commerce功能（如购物车价格规则和动态块）提供信息，但数据仍会孤立在您的Commerce实例中。
 
@@ -49,23 +49,23 @@ Adobe Experience Platform提供了一套技术，当与Commerce商店中的数�
 
 在这两个系统之间共享数据需要您了解多个概念。
 
-* **数据** — 与Experience Platform共享的数据是从您店面的浏览器事件、服务器上的后台事件和配置文件记录数据中收集的数据。 店面活动是从购物者在网站上的交互中捕获的，并包括[`addToCart`](events.md#addtocart)、[`pageView`](events.md#pageview)、[`createAccount`](events.md#createaccount)、[`editAccount`](events.md#editaccount)、[`startCheckout`](events.md#startcheckout)、[`completeCheckout`](events.md#completecheckout)、[`signIn`](events.md#signin)、[`signOut`](events.md#signout)等事件。 查看[店面活动](events.md#storefront-events)以获取完整的店面活动列表。 服务器端或后台事件包括[订单状态](events-backoffice.md#order-status)信息，如[`orderPlaced`](events-backoffice.md#orderplaced)、[`orderReturned`](events-backoffice.md#orderitemreturncompleted)、[`orderShipped`](events-backoffice.md#ordershipmentcompleted)、[`orderCancelled`](events-backoffice.md#ordercancelled)等。 有关后台事件的完整列表，请参阅[后台事件](events-backoffice.md)。 配置文件记录数据包含创建、更新或删除新配置文件时的信息。 请参阅[个人资料记录数据](events-profilerecord.md)以了解详情。
+- **数据** — 与Experience Platform共享的数据是从您店面的浏览器事件、服务器上的后台事件和配置文件记录数据中收集的数据。 店面活动是从购物者在网站上的交互中捕获的，并包括[`addToCart`](events.md#addtocart)、[`pageView`](events.md#pageview)、[`createAccount`](events.md#createaccount)、[`editAccount`](events.md#editaccount)、[`startCheckout`](events.md#startcheckout)、[`completeCheckout`](events.md#completecheckout)、[`signIn`](events.md#signin)、[`signOut`](events.md#signout)等事件。 查看[店面活动](events.md#storefront-events)以获取完整的店面活动列表。 服务器端或后台事件包括[订单状态](events-backoffice.md#order-status)信息，如[`orderPlaced`](events-backoffice.md#orderplaced)、[`orderReturned`](events-backoffice.md#orderitemreturncompleted)、[`orderShipped`](events-backoffice.md#ordershipmentcompleted)、[`orderCancelled`](events-backoffice.md#ordercancelled)等。 有关后台事件的完整列表，请参阅[后台事件](events-backoffice.md)。 配置文件记录数据包含创建、更新或删除新配置文件时的信息。 请参阅[个人资料记录数据](events-profilerecord.md)以了解详情。
 
-* **Experience Platform和Edge Network** — 大部分AdobeDX产品的数据仓库。 发送到Experience Platform的数据随后通过Experience PlatformEdge Network传播到AdobeDX产品中。 例如，您可以启动Journey Optimizer，从边缘检索特定的Commerce事件数据，并在Journey Optimizer中构建一个弃用的购物车电子邮件。 然后，如果Commerce商店中有任何放弃的购物车，Journey Optimizer可以发送该电子邮件。 了解有关[Experience Platform和Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)的更多信息。
+- **Experience Platform和Edge Network** — 大部分AdobeDX产品的数据仓库。 发送给Experience Platform的数据会通过Experience PlatformEdge Network传播到AdobeDX产品中。 例如，您可以启动Journey Optimizer，从边缘检索特定的Commerce事件数据，并在Journey Optimizer中构建一个弃用的购物车电子邮件。 然后，如果Commerce商店中有任何放弃的购物车，Journey Optimizer可以发送该电子邮件。 了解有关[Experience Platform和Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)的更多信息。
 
-* **架构** — 架构描述的是所发送数据的结构。 在Experience Platform摄取Commerce数据之前，必须构建一个架构来描述数据的结构，并对每个字段中可以包含的数据类型提供限制。 架构由一个基类以及零个或多个架构字段组组成。 该架构使用XDM结构，所有AdobeDX产品都可以读取该结构。 因此，当您将数据发送至Experience Platform时，可以确保所有DX产品都能理解您的数据。 了解有关[架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)的更多信息。
+- **架构** — 架构描述正在发送的数据的结构。 在Experience Platform摄取Commerce数据之前，必须构建一个描述数据结构的架构并为每个字段中可以包含的数据类型提供限制。 架构由一个基类以及零个或多个架构字段组组成。 该架构使用XDM结构，所有AdobeDX产品都可以读取该结构。 该架构可确保所有DX产品都能理解发送到Experience Platform的数据。 了解有关[架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)的更多信息。
 
-* **数据集** — 数据集合的存储和管理结构，通常是包含架构（列）和字段（行）的表。 数据集还包含描述其存储的数据的各个方面的元数据。 所有成功引入Adobe Experience Platform的数据都包含在数据集中。 了解有关[数据集](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html)的更多信息。
+- **数据集** — 数据集合的存储和管理结构，通常是包含架构（列）和字段（行）的表。 数据集还包含描述其存储的数据的各个方面的元数据。 所有成功引入Adobe Experience Platform的数据都包含在数据集中。 了解有关[数据集](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html)的更多信息。
 
-* **数据流** — 允许数据从Adobe Experience Platform流向其他AdobeDX产品的ID。 此ID必须关联到您的特定Adobe Commerce实例中的特定网站。 创建此数据流时，请指定您在上面创建的XDM架构。 了解有关[数据流](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html)的更多信息。
+- **数据流** — 允许数据从Adobe Experience Platform流向其他AdobeDX产品的ID。 此ID必须关联到您的特定Adobe Commerce实例中的特定网站。 创建此数据流时，请指定您在上面创建的XDM架构。 了解有关[数据流](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html)的更多信息。
 
 ## 支持的架构
 
 [!DNL Data Connection]扩展在以下体系结构上可用：
 
-* PHP/Luma
-* [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
-* [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html)
+- PHP/Luma
+- [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
+- [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html)
 
 >[!BEGINSHADEBOX]
 
@@ -73,10 +73,10 @@ Adobe Experience Platform提供了一套技术，当与Commerce商店中的数�
 
 要使用[!DNL Data Connection]扩展，您必须具备以下条件：
 
-* Adobe Commerce 2.4.4或更高版本
-* Adobe ID和组织ID
-* [Adobe客户端数据层(ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html)，收集店面事件数据时需要此层
-* 对其他AdobeDX产品的权利。
+- Adobe Commerce 2.4.4或更高版本
+- Adobe ID和组织ID
+- [Adobe客户端数据层(ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html)，收集店面事件数据时需要此层
+- 对其他AdobeDX产品的权利。
 
 >[!ENDSHADEBOX]
 
@@ -98,7 +98,11 @@ Adobe Experience Platform提供了一套技术，当与Commerce商店中的数�
 
 >[!NOTE]
 >
->对于移动开发人员，了解如何[将](./mobile-sdk-epc.md) Adobe Experience Platform Mobile SDK与Commerce集成。
+>对于移动设备开发人员，了解如何[将](./mobile-sdk-epc.md) Adobe Experience Platform Mobile SDK与Commerce集成。
+
+## HIPAA准备就绪
+
+[!DNL Data Connection]扩展允许您与Experience Platform共享[!DNL Commerce]后台数据并维护HIPAA合规性。 [了解更多](hipaa-readiness.md)。
 
 ## 受众
 
@@ -108,5 +112,5 @@ Adobe Experience Platform提供了一套技术，当与Commerce商店中的数�
 
 如果您需要本指南中未涉及的信息或问题，请使用以下资源：
 
-* [帮助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
-* [支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} — 提交票证以接收其他帮助。
+- [帮助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
+- [支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} — 提交票证以接收其他帮助。

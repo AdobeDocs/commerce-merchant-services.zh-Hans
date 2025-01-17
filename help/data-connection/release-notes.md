@@ -3,7 +3,7 @@ title: 发行说明
 description: 来自Adobe Commerce的 [!DNL Data Connection] 扩展的最新发行信息。
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 4662c9467f750d9a255034feb69f51492c98a0d9
+source-git-commit: 83d801fea806df51b440c11b87cd0de45793a322
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 1%
@@ -73,18 +73,18 @@ _2023年3月30日_
 
 _2022年10月12日_
 
-![新](../assets/new.svg) — 已将两个[店面事件](events.md)、`openCart`和`removeFromCart`添加到Adobe Commerce店面事件SDK和收集器。
+![新](../assets/new.svg) — 已将两个[店面活动](events.md)、`openCart`和`removeFromCart`添加到Adobe Commerce店面活动SDK和收集器。
 ![新](../assets/new.svg) — 已添加对[AEM店面](overview.md#aem-support)的支持。
 
 +++
 
 ## 3.2.1
 
-_2024年12月2日_
+_2025年1月17日_
 
 [!BADGE 兼容性]{type=Informative tooltip="兼容性"}
 
-![新](../assets/new.svg) — 已将HIPAA就绪扩展添加到[!DNL Data Connection]，以便商家可以与Experience Platform共享[!DNL Commerce]后台事件数据并维护HIPAA合规性。
+![新](../assets/new.svg) — 已将[HIPAA就绪扩展](hipaa-readiness.md)添加到[!DNL Data Connection]，以便商家可以与Experience Platform共享[!DNL Commerce]后台事件数据并维护HIPAA合规性。
 ![修复](../assets/fix.svg) — 修复[!DNL Data Connection]扩展覆盖`eventForwarding`数据并为所有客户设置`HIPAA`标记的问题。 现在，扩展仅为HIPAA客户设置标记。
 
 ## 3.2.0
@@ -231,7 +231,7 @@ _2022年10月12日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
-![新](../assets/new.svg) — 添加了在[将您的Adobe Commerce实例](connect-data.md)连接到Experience Platform时指定您自己的AEP Web SDK的功能。
+![新](../assets/new.svg) — 添加了在[将您的AEP Web SDK实例](connect-data.md)连接到Experience Platform时指定您自己的Adobe Commerce的功能。
 ![修复](../assets/fix.svg) — 更新了数据流作用域要求，以便数据流ID的作用域必须限制在网站中，而不是存储审阅。
 
 ## 1.0.0

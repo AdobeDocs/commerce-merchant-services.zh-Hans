@@ -1,13 +1,13 @@
 ---
-user-guide-title: "适用于Adobe Commerce的[!DNL Data Connection]扩展"
-user-guide-description: “本指南提供了有关使用Adobe Commerce的 [!DNL Data Connection] 扩展的详细信息。”
-breadcrumb-title: "适用于Adobe Commerce的[!DNL Data Connection]扩展"
+user-guide-title: Adobe Commerce的[!DNL Data Connection]扩展
+user-guide-description: 本指南提供了有关使用Adobe Commerce的 [!DNL Data Connection] 扩展的详细说明。
+breadcrumb-title: Adobe Commerce的[!DNL Data Connection]扩展
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
+source-git-commit: 5593f97db030f4cc8daeaa95948a6763fc45eb8f
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '129'
 ht-degree: 3%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 3%
 # Adobe Commerce的[!DNL Data Connection]扩展 {#data-connection}
 
 - [指南概述](overview.md)
+- [Commerce服务的HIPAA准备工作](hipaa-readiness.md)
+- [Commerce服务如何处理隐私请求](handle-privacy-request.md)
 - [发行说明](release-notes.md)
 - 基础知识{#fundamentals}
    - [安装 [!DNL Data Connection] 扩展](install.md)

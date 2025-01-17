@@ -1,22 +1,26 @@
 ---
 title: 收集数据
-description: 了解事件如何收集产品推荐的数据。
+description: 了解事件如何收集 [!DNL Product Recommendations]的数据。
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
-source-git-commit: cd1ce643d7c1ffeec8e9853cfc6ffc5519ce8f7a
+source-git-commit: eb98389cfdd7a0492a4437e9de9412f2d2e5401c
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1360'
 ht-degree: 0%
 
 ---
 
 # 收集数据
 
-当您安装和配置基于SaaS的Adobe Commerce功能(如[Product Recommendations](install-configure.md)或[Live Search](../live-search/install.md))时，这些模块会将行为数据收集部署到您的店面。 此机制从购物者那里收集匿名行为数据，并为产品推荐和[实时搜索](../live-search/overview.md)结果提供支持。 例如，`view`事件用于计算`Viewed this, viewed that`推荐类型，`place-order`事件用于计算`Bought this, bought that`推荐类型。
+当您安装和配置基于SaaS的Adobe Commerce功能（如[[!DNL Product Recommendations]](install-configure.md)或[[!DNL Live Search]](../live-search/install.md)）时，模块会将行为数据收集部署到您的店面。 此机制从购物者那里收集匿名行为数据并支持[!DNL Product Recommendations]。 例如，`view`事件用于计算`Viewed this, viewed that`推荐类型，`place-order`事件用于计算`Bought this, bought that`推荐类型。
 
 >[!NOTE]
 >
->为产品推荐目的而收集的数据不包括个人身份信息(PII)。 所有用户标识符（如Cookie ID和IP地址）都经过严格匿名处理。 了解[更多](https://www.adobe.com/privacy/experience-cloud.html)。
+>为[!DNL Product Recommendations]目的的数据收集不包括个人身份信息(PII)。 所有用户标识符（如Cookie ID和IP地址）都经过严格匿名处理。 了解[更多](https://www.adobe.com/privacy/experience-cloud.html)。
+
+## 医疗保健客户
+
+如果您是医疗保健客户，并且安装了[数据服务HIPAA扩展](../data-connection/hipaa-readiness.md#installation)（它是[数据连接](../data-connection/overview.md)扩展的一部分），则不再捕获[!DNL Product Recommendations]使用的店面事件数据。 这是因为店面事件数据是在客户端生成的。 要继续捕获和发送店面事件数据，请为[!DNL Product Recommendations]重新启用事件收集。 有关详细信息，请参阅[常规配置](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services)。
 
 ## 数据类型和事件
 
@@ -75,7 +79,7 @@ _冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于产
 
 ### 活动
 
-[Adobe Commerce店面事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start)列出了部署到您的店面的所有事件。 但是，从该列表中，有一个特定于产品Recommendations的事件子集。 当购物者与店面上的推荐单元进行交互时，这些事件会收集数据，并增强用于帮助您分析推荐表现情况的量度。
+[Adobe Commerce店面事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start)列出了部署到您的店面的所有事件。 在该列表中，有一个特定于[!DNL Product Recommendations]的事件子集。 当购物者与店面上的推荐单元进行交互时，这些事件会收集数据，并有助于量度分析推荐的执行情况。
 
 | 事件 | 描述 |
 | --- | --- |

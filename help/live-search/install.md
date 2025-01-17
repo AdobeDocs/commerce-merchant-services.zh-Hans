@@ -1,9 +1,9 @@
 ---
 title: 开始使用 [!DNL Live Search]
-description: “从Adobe Commerce了解 [!DNL Live Search] 的系统要求和安装步骤。”
+description: 从Adobe Commerce中了解 [!DNL Live Search] 的系统要求和安装步骤。
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 89dd5ae305563e5f6bbcdb80764fd9eeb177b491
+source-git-commit: 42ad3e05789844a0bcc6cb114a0db067f3d497db
 workflow-type: tm+mt
 source-wordcount: '3093'
 ht-degree: 0%
@@ -178,7 +178,7 @@ Adobe Commerce [!DNL Live Search]和[[!DNL Catalog Service]](../catalog-service/
 
 请参阅[Commerce Services Connector](../landing/saas.md)文章以了解如何配置API密钥。
 
-## 3.同步您的目录数据 {#synchronize-catalog-data}
+## 3.同步您的目录数据
 
 [!DNL Live Search]将目录数据移动到Adobe的SaaS基础架构。 数据被编入索引，搜索结果从此索引直接传送到店面。 根据大小和复杂性，索引可能需要30分钟到几个小时。
 
@@ -214,7 +214,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 初始同步后，增量产品更新最多可能需要15分钟才能用于店面搜索。 若要了解详细信息，请参阅“索引”文档中的[流式产品更新](indexing.md)。
 
-## 4.验证是否已导出数据 {#verify-export}
+## 4.验证是否已导出数据
 
 要检查您的目录数据是否已从Adobe Commerce导出并与[!DNL Live Search]同步，您有几个选项：
 
@@ -265,7 +265,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 [!DNL Live Search]中返回的产品必须分配给[类别](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories)。 例如，在Luma中，产品被划分为“男性”、“女性”和“齿轮”等类别。 “Top”、“Bottoms”和“Watches”也设置了子类别。 这些类别分配可改进筛选时的粒度。
 
-## 6.测试连接 {#test-connection}
+## 6.测试连接
 
 现在，在SaaS中使用目录数据，测试以确保在以下情况下返回产品数据：
 
@@ -299,7 +299,7 @@ bin/magento saas:resync --feed categoryPermissions
 - [PLP Widget存储库](https://github.com/adobe/storefront-product-listing-page)
 - [搜索栏存储库](https://github.com/adobe/storefront-search-as-you-type)
 
-## 正在更新[!DNL Live Search] {#update}
+## 正在更新[!DNL Live Search]
 
 在更新Live Search之前，请从命令行运行以下命令以检查已安装的Live Search版本：
 
@@ -345,11 +345,11 @@ composer update magento/live-search --with-dependencies
    composer update magento/live-search --with-dependencies
    ```
 
-## 正在卸载[!DNL Live Search] {#uninstall}
+## 正在卸载[!DNL Live Search]
 
 要卸载[!DNL Live Search]，请参阅[卸载模块](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)。
 
-## [!DNL Live Search]包 {#packages}
+## [!DNL Live Search]包
 
 [!DNL Live Search]扩展包含以下包：
 
@@ -359,7 +359,7 @@ composer update magento/live-search --with-dependencies
 | `module-live-search-adapter` | 将搜索请求从店面路由到[!DNL Live Search]服务，并在店面中呈现结果。 <br /> — 类别浏览 — 将请求从店面[顶部导航](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-top)路由到搜索服务。<br /> — 全局搜索 — 将请求从店面右上角的[快速搜索](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)框路由到[!DNL Live Search]服务。 |
 | `module-live-search-storefront-popover` | “键入时搜索”弹出框取代了标准快速搜索，并返回排名最前的搜索结果的数据和缩略图。 |
 
-## [!DNL Live Search]依赖项 {#dependencies}
+## [!DNL Live Search]依赖项
 
 用于安装[!DNL Live Search]扩展的[!DNL Composer]中继包包括以下模块依赖项。
 
