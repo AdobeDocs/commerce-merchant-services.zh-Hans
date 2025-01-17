@@ -1,11 +1,11 @@
 ---
-title: '边界和限制'
+title: 边界和限制
 description: 了解 [!DNL Live Search] 的界限和限制，以确保它满足您的业务需求。
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 438d6a04cb0044f9e06f8c8b53c8eec79d650170
+source-git-commit: 867d65d0ffd212061524605fd725df1eb75be9eb
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '943'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,7 @@ ht-degree: 0%
 - 每个属性（包括描述和自定义属性）硬限制为1MB。
 - 搜索适配器不支持使用自定义源模型创建并用作彩块化的产品属性。 若要支持此功能，您必须使用[产品列表页小组件](plp-styling.md)。
 - 不支持自定义产品类型。
+- 不支持用`"is_user_defined": false`编程创建的自定义属性。
 - 您可以使用“开头为”或“包含”条件筛选结果，但存在一些限制，如[此处](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations)所述。
 
 ## 索引
