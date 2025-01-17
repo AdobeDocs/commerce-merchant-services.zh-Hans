@@ -3,9 +3,9 @@ title: '[!DNL Live Search]发行说明'
 description: Adobe Commerce中 [!DNL Live Search] 的最新发行信息。
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 3cd773060e0546026cc4cb1979abaceadd3fcc2c
+source-git-commit: 006b9cc1fe83ecbeb8102984eb3378e0e05df3d2
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2087'
 ht-degree: 0%
 
 ---
@@ -145,6 +145,7 @@ _2023年11月13日_
 ### 更新
 
 ![修复](../assets/fix.svg)对于新安装，现在默认启用[!DNL Live Search] PLP小组件。
+![修复](../assets/fix.svg)已弃用搜索适配器。 今后，将仅更新搜索适配器以解决安全问题。
 ![修复](../assets/fix.svg)重新配置的CSS样式以更好地隔离构件类。
 ![修复](../assets/fix.svg)小错误修复
 

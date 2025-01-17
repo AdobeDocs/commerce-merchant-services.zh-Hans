@@ -1,11 +1,11 @@
 ---
 title: 什么是 [!DNL Live Search]？
-description: “[!DNL Live Search]来自Adobe Commerce，可提供快速、相关和直观的搜索体验。”
+description: Adobe Commerce的[!DNL Live Search]提供了快速、相关且直观的搜索体验。
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
+source-git-commit: 006b9cc1fe83ecbeb8102984eb3378e0e05df3d2
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
@@ -74,8 +74,8 @@ ht-degree: 0%
 ## 实时搜索组件
 
 - [!DNL Live Search] [弹出窗口小组件](storefront-popover.md)是在包含搜索结果的搜索字段下打开的框。
-- [产品列表页小组件](plp-styling.md) (PLP)提供了一个支持方面和同义词的可搜索产品列表页。 构件在Live Search 4.0.0+中已安装和启用。
-- （**已弃用**）搜索适配器是PLP小部件的前身，且安装时实时搜索小于4.0.0。如果您使用的是低于4.0.0的Live Search版本，Commerce建议您进行升级，以便享受PLP构件功能和未来改进带来的好处。
+- [产品列表页小组件](plp-styling.md) (PLP)提供了一个支持方面和同义词的可搜索产品列表页。 构件在Live Search 4.0.0+中安装和启用，并替换搜索适配器。
+- （**已弃用**）搜索适配器是PLP小部件的前身，且随Live Search &lt; 4.0.0安装。如果您使用的是低于4.0.0的Live Search版本，Commerce建议您进行升级，以便享受PLP构件功能和未来改进带来的好处。 今后，将仅更新搜索适配器以解决安全问题。
 
 ## [!DNL Live Search]工作区
 
