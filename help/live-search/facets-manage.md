@@ -1,8 +1,8 @@
 ---
-title: “管理Facet”
-description: “了解如何管理现有 [!DNL Live Search] 彩块化。”
+title: 管理Facet
+description: 了解如何管理现有 [!DNL Live Search] 彩块化。
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: bce69f952e70e2e8dcb892357dea41e18f61e5f6
+source-git-commit: e7befb65ef465e98ff35db3046a438835cfd157f
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
@@ -50,16 +50,20 @@ ht-degree: 0%
 
 1. 在&#x200B;**最大值**&#x200B;列中，设置要在店面中显示的Facet筛选值的最大数量（从0到10）。
 1. 完成后，单击&#x200B;**保存**。
-您所做的更改在发布之后才会显示在店面中。
+
+   您所做的更改在发布之后才会显示在店面中。
 
 ## 固定/取消固定方面
 
 点击时pin会更改颜色，用于将Facet移动到&#x200B;*固定的Facet*&#x200B;或&#x200B;*动态Facet*&#x200B;部分。
 
 1. 若要将Facet固定到&#x200B;*筛选器*&#x200B;列表的顶部，请在&#x200B;*动态Facet*&#x200B;列表中查找该Facet，然后单击灰色管脚（![Pin选择器](assets/btn-pin-gray.png)）。
-销钉变为蓝色，Facet移到*固定的Facet*&#x200B;部分。
+
+   销钉变为蓝色，Facet移到&#x200B;*固定的Facet*&#x200B;部分。
+
 1. 若要取消固定Facet，请在&#x200B;*固定Facet*&#x200B;列表中找到Facet，然后单击蓝色Pin （![固定Facet选择器](assets/btn-pin-blue.png)）。
-销钉变为灰色，Facet移至*动态Facet*&#x200B;部分。
+
+   销钉变为灰色，Facet移至&#x200B;*动态Facet*&#x200B;部分。
 
    ![固定和动态Facet](assets/facets-pinned-unpinned.png)
 
@@ -76,8 +80,9 @@ ht-degree: 0%
 通过将行移动到不同的位置，可以更改固定小平面的顺序。 固定的Facet在行的开头有一个&#x200B;*移动*&#x200B;图标（![移动选择器](assets/btn-move.png)）。 与固定多面不同，动态Facet无法移动。
 
 1. 在列表的&#x200B;*固定Facet*&#x200B;部分中查找该Facet。
-1. 使用&#x200B;**移动** （![移动选择器](assets/btn-move.png)）图标将行拖动到&#x200B;*固定多面*分区中的新位置。
-发布更改后，重新排序的Facet将显示在店面*筛选器*&#x200B;列表中。
+1. 使用&#x200B;**移动** （![移动选择器](assets/btn-move.png)）图标将行拖动到&#x200B;*固定多面*&#x200B;分区中的新位置。
+
+   发布更改后，重新排序的Facet将显示在店面&#x200B;*筛选器*&#x200B;列表中。
 
 ## 删除facet
 
