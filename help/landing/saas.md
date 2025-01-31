@@ -4,9 +4,9 @@ description: 了解如何使用生产和沙盒API密钥将Adobe Commerce或Magen
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: daad5bb1ce74126d727207812abebdcf0cbf72c0
+source-git-commit: 867ce9c218632714d463af5c366dccd792d892ad
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1338'
 ht-degree: 0%
 
 ---
@@ -88,9 +88,11 @@ ht-degree: 0%
 
 您可以在任何非生产环境中使用测试数据空间，但前提是不同时在多个环境中使用相同的数据空间。 要在其他环境中使用测试数据空间，请先执行数据清理，然后再在该环境中选择和配置数据空间。
 
-对于具有多个暂存环境的Adobe Commerce Cloud Pro项目，您可以通过[提交支持请求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)，为每个暂存环境请求额外的测试数据空间。 但是，如果您只有一个暂存环境并且需要额外的测试数据空间，则可以使用以下选项：
-- 联系客户成功团队或您指定的客户成功经理以请求额外的暂存环境。 这另外还有额外费用。
-- [提交支持请求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)以获取额外的测试数据空间，并指明该额外数据空间的业务理由。 此请求有待审批。
+对于具有多个暂存环境的Adobe Commerce Cloud Pro项目，您可以通过[提交支持请求](https://experienceleague.adobe.com/home?support-tab=home#support)，为每个暂存环境请求额外的测试数据空间。 但是，如果您只有一个暂存环境并且需要额外的测试数据空间，则可以使用以下选项：
+- 联系客户成功团队或您指定的客户成功经理以请求额外的暂存环境。
+- [提交支持请求](https://experienceleague.adobe.com/home?support-tab=home#support)以请求额外的测试数据空间，并指明额外数据空间的业务理由。 此请求有待审批。
+
+使用Adobe支付服务的Magento Open Source客户可能还会请求额外的数据空间。 在提交[支持请求](https://experienceleague.adobe.com/home?support-tab=home#support)以请求测试数据空间之前，请与付款团队联系，以请求其他数据空间。
 
 ### 选择或创建SaaS项目 {#createsaasenv}
 
