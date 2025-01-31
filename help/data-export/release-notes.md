@@ -4,9 +4,9 @@ description: Adobe Commerce的 [!DNL Data Export Extension] 的最新发行信�
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 4e40ea6214498f2b1c8bcf86b471d61a74ef561c
+source-git-commit: 7d9f4e362fdb92e404a9293e3e9e6e45bb6bde86
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -28,32 +28,36 @@ ht-degree: 0%
 
 ## 当前主要版本
 
+## 103.3.18发行版
+
+![修复](../assets/fix.svg)现在可以在数据导出数据更新中正确触发产品和类别实体的暂存更新。&lt;！-MDEE-963—>
+
 ## 103.3.17发行版
 
-![修复](../assets/fix.svg)添加了与PHP 8.4的兼容性。 &lt;！-MDEE-941—>
+![修复](../assets/fix.svg)添加了与PHP 8.4的兼容性。<!--MDEE-941-->
 
 ## 103.3.16发行版
 
-![Fix](../assets/fix.svg)对于多个商店视图的可配置产品，选项值可以为空。 &lt;！-MDEE-926—>
+![Fix](../assets/fix.svg)对于多个商店视图的可配置产品，选项值可以为空。<!--MDEE-926-->
 
 ## 103.3.15发行版
 
-![修复](../assets/fix.svg)已确保在旧配置上稳定运行集成测试。 &lt;！-MDEE-869—>
-![修复](../assets/fix.svg)停止传播不必要的属性选项。 &lt;！-MDEE-882—>
-![修复](../assets/fix.svg)修复了数据序列化失败时发送到数据导出日志的错误消息。 &lt;！-MDEE-913—>
-![修复](../assets/fix.svg)通过额外的测试覆盖率提高了简单产品更新的可靠性。 &lt;！-MDEE-886—>
+![修复](../assets/fix.svg)已确保在旧配置上稳定运行集成测试。 <!--MDEE-869-->
+![修复](../assets/fix.svg)停止传播不必要的属性选项。 <!--MDEE-882-->
+![修复](../assets/fix.svg)修复了数据序列化失败时发送到数据导出日志的错误消息。 <!--MDEE-913-->
+![修复](../assets/fix.svg)通过额外的测试覆盖率提高了简单产品更新的可靠性。<!--MDEE-886-->
 
 ## 103.3.14发行版
 
-![修复](../assets/fix.svg)导出程序索引器现在为依赖的索引器维护正确的状态。 以前，这些索引错误地失效，需要进行额外的检查和验证，从而减慢索引性能。 &lt;！-MDEE-866—>
+![修复](../assets/fix.svg)导出程序索引器现在为依赖的索引器维护正确的状态。 以前，这些索引错误地失效，需要进行额外的检查和验证，从而减慢索引性能。<!--MDEE-866-->
 
 ## 103.3.13发行版
 
-![修复](../assets/fix.svg)通过为属性选项数据添加本地缓存，提高了数据同步过程的性能。&lt;！-MDEE-864—>
+![修复](../assets/fix.svg)通过为属性选项数据添加本地缓存，提高了数据同步过程的性能。<!--MDEE-864-->
 
 ## 103.3.12发行版
 
-![修复](../assets/fix.svg)解决了增加简单和虚拟产品同步时间的问题。 &lt;！-MDEE-861—>
+![修复](../assets/fix.svg)解决了增加简单和虚拟产品同步时间的问题。<!--MDEE-861-->
 
 ## 103.3.11发行版
 
