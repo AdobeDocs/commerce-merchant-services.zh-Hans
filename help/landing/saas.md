@@ -4,9 +4,9 @@ description: 了解如何使用生产和沙盒API密钥将Adobe Commerce或Magen
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 867ce9c218632714d463af5c366dccd792d892ad
+source-git-commit: c7ba4401d94f14cc66ef7b404e5444e1f2cb1e23
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1372'
 ht-degree: 0%
 
 ---
@@ -57,6 +57,10 @@ ht-degree: 0%
 
 1. 从&#x200B;_环境_&#x200B;菜单中，选择&#x200B;**生产**&#x200B;或&#x200B;**沙盒**。
 
+   >[!NOTE]
+   >
+   >*生产*&#x200B;和&#x200B;*沙盒*&#x200B;是指将数据存储在AdobeSaaS后端系统中的数据空间环境。 它并非指您将使用键的商务环境。
+
 1. 在&#x200B;_API密钥_&#x200B;部分中输入名称，然后单击&#x200B;**新增**&#x200B;打开对话框下载新密钥。
 
    ![下载私钥](assets/download-api-private-key.png)
@@ -69,7 +73,7 @@ ht-degree: 0%
 
 1. 对每个环境（生产和沙盒）重复上述步骤。
 
-   **API密钥**&#x200B;部分现在显示您的API（公共）密钥。 当您[在与许可证关联的任何环境/安装中选择或创建SaaS项目](#createsaasenv)时，您需要所有四个密钥（生产和沙盒密钥，Public+Private）。
+   **API密钥**&#x200B;部分现在显示您的API（公共）密钥。 当您[在与许可证关联的任何环境或安装中选择或创建SaaS项目](#createsaasenv)时，需要所有四个密钥（生产和沙盒密钥，Public+Private）。
 
 ## SaaS配置 {#saasenv}
 
