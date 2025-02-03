@@ -3,9 +3,9 @@ title: 什么是 [!DNL Live Search]？
 description: Adobe Commerce的[!DNL Live Search]提供了快速、相关且直观的搜索体验。
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 006b9cc1fe83ecbeb8102984eb3378e0e05df3d2
+source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
@@ -84,3 +84,9 @@ ht-degree: 0%
 ## 活动
 
 [!DNL Live Search]使用[事件](events.md)计算[智能促销](category-merch.md)和[性能](performance.md)仪表板。 事件随默认实施一起提供。 Headless店面的事件应该手动启用。
+
+## 目录数据保留策略
+
+如果您连续90天没有在测试环境中提交目录数据的搜索查询，则目录数据将设置为休眠模式，并且任何搜索查询都不会返回任何数据。 此策略不会影响生产环境中的目录数据。
+
+要在测试环境中重新激活目录数据，请[提交标题为“重新激活[!DNL Live Search]”的支持请求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)并包含环境ID。 测试环境中的目录数据应在几小时内恢复。

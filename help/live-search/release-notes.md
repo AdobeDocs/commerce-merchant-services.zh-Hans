@@ -3,9 +3,9 @@ title: '[!DNL Live Search]发行说明'
 description: Adobe Commerce中 [!DNL Live Search] 的最新发行信息。
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 006b9cc1fe83ecbeb8102984eb3378e0e05df3d2
+source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
 workflow-type: tm+mt
-source-wordcount: '2087'
+source-wordcount: '2106'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 0%
 ## 托管服务更新
 
 这些说明描述了在未发布版本控制版本或对托管服务的改进的情况下发布的更新。
+
+_2025年1月31日_
+
+![新](../assets/new.svg)测试环境中无查询的目录数据有新的数据保留策略。 [了解更多](overview.md#catalog-data-retention-policy)。
 
 _2024年9月19日_
 

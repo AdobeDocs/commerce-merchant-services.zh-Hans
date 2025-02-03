@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations]发行说明'
 description: Adobe Commerce中 [!DNL Product Recommendations] 的最新发行信息。
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 0e0f67c01c49c8d8c0ac4967eda0bde8685b2980
+source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1429'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,10 @@ ht-degree: 0%
 ## 托管服务更新
 
 这些说明描述了在版本化版本之外发布或发现的更新或已知问题，或对托管服务的改进。
+
+_2025年1月31日_
+
+![新](../assets/new.svg)测试环境中无查询的目录数据有新的数据保留策略。 [了解更多](overview.md#catalog-data-retention-policy)。
 
 _2024年6月28日_
 

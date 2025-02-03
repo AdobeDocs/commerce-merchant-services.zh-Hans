@@ -1,11 +1,11 @@
 ---
 title: ' [!DNL Product Recommendations]简介'
-description: “[!DNL Product Recommendations]是一个强大的营销工具，可用于提高转化率、增加收入和刺激购物者参与。”
+description: '[!DNL Product Recommendations]是一个强大的营销工具，可用于提高转化率、增加收入和刺激购物者参与。'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
 recommendations: noCatalog
-source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
+source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -43,3 +43,9 @@ ht-degree: 0%
 观看此视频以了解[!DNL Product Recommendations]：
 
 >[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)
+
+## 目录数据保留策略
+
+如果您连续90天没有在测试环境中提交对目录数据的查询，则目录数据将设置为休眠模式，并且任何查询都不会返回任何数据。 此策略不会影响生产环境中的目录数据。
+
+要在测试环境中重新激活目录数据，请[提交标题为“重新激活[!DNL Product Recommendations]”的支持请求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)并包含环境ID。 测试环境中的目录数据应在几小时内恢复。

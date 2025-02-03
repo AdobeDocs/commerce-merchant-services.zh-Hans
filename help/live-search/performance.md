@@ -1,10 +1,10 @@
 ---
-title: "性能"
-description: “ [!DNL Live Search] 性能工作区提供了有关购物者使用的搜索词的洞察信息。”
+title: 性能
+description: ' [!DNL Live Search] 性能工作区提供了有关购物者使用的搜索词的洞察信息。'
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 7539c0fe9ebe4b82f42f3a7ff30b03c951980eed
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 0%
 
 您还可以参考[数据管理功能板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html)，了解有关数据同步的更多数据。
 
+>[!NOTE]
+>
+>性能工作区每12小时更新一次。
+
 ## 查看报表
 
 1. 要输入&#x200B;**日期范围**，请单击日历（![日历](assets/btn-calendar.png)）并执行以下操作之一：
@@ -30,7 +34,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->性能工作区每12小时更新一次。
+>日期范围不能超过一年。
 
 ## 字段描述
 
