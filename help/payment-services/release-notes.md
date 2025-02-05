@@ -3,9 +3,9 @@ title: '[!DNL Payment Services]发行说明'
 description: 查看发行说明，了解所有 [!DNL Payment Services] 发行版本的信息。
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: feeaed7b7130b3581a1b1f7e3bdd161ce1e7d765
+source-git-commit: 8cf48ade51157a8d2ce51333deb4d142e4a1a011
 workflow-type: tm+mt
-source-wordcount: '3311'
+source-wordcount: '3344'
 ht-degree: 0%
 
 ---
@@ -91,13 +91,23 @@ _2021年6月28日_
 
 +++
 
+## v2.10.1
+
+_2025年2月5日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"}
+
+![新](../assets/new.svg)<!-- PAY-5813 -->添加了对Adobe Commerce 2.4.8和PHP 8.4的支持。
+
 ## v2.10.0
 
 _2024年12月13日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
-![新建](../assets/new.svg)<!-- PAY-5702 --> [!DNL Payment Services]现在支持GraphQL端点以便在不购买的情况下进行保险存储，从而允许客户保存其付款方式而不完成交易。
+![新建](../assets/new.svg)<!-- PAY-5873 --> [!DNL Payment Services]现在支持Adobe Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)的[Edge Delivery Services店面中的[[!DNL Payment Services] 放置组件](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/payment-services/)。
+
+![新建](../assets/new.svg)<!-- PAY-5702 --> [!DNL Payment Services]现在支持[GraphQL端点无需购买即可保险存储](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/queries/get-vault-config/)，允许客户保存其付款方式而不完成交易。
 
 ![新建](../assets/fix.svg)<!-- PAY-5789 --> [!DNL Payment Services]现在支持[使用Google Pay的3D安全身份验证](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/security-compliance/security#3ds)，增强了商家和客户在付款交易过程中的安全性。
 
