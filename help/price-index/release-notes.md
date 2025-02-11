@@ -1,12 +1,13 @@
 ---
 title: '[!DNL Catalog Adapter]发行说明'
-description: '适用于Adobe Commerce的 [!DNL Catalog Adapter] 的最新发行信息。'
+description: Adobe Commerce的 [!DNL Catalog Adapter] 的最新发行信息。
 feature: Services, Release Notes
 recommendations: noCatalog
 roles: Admin, Developer
-source-git-commit: 71e3a3c6b6339895f19a0cd71a7952790ba3f8a8
+exl-id: d7aeee8f-9043-4517-9fde-ffe24aa77b19
+source-git-commit: 7bc5a4185317afbe3b767945455070734c452450
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,10 @@ ht-degree: 0%
 
 ## 当前主要版本
 
+## 1.0.9版本
+
+![修复](../assets/fix.svg)添加了与PHP 8.4的兼容性。<!--MDEE-941-->
+
 ## 1.0.8版本
 
-![修复](../assets/fix.svg)修复了在将具有数字SKU的可配置产品变体添加到愿望清单时，导致异常日志中出现错误的问题。 &lt;！-MDEE-876—>
-
+![修复](../assets/fix.svg)修复了在将具有数字SKU的可配置产品变体添加到愿望清单时，导致异常日志中出现错误的问题。<!--MDEE-876-->
