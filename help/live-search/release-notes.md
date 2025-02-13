@@ -3,9 +3,9 @@ title: '[!DNL Live Search]发行说明'
 description: Adobe Commerce中 [!DNL Live Search] 的最新发行信息。
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
+source-git-commit: f5bd9e76239dfa73babe4067efae20b4fbcd82c1
 workflow-type: tm+mt
-source-wordcount: '2106'
+source-wordcount: '2129'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,15 @@ _2023年10月27日_
 
 ![新建](../assets/new.svg) [!DNL Live Search] PLP小组件现在支持色板。
 
-## [!DNL Live Search] 4.2.2 {#422}
+## [!DNL Live Search] 4.2.3
+
+_2025年2月13日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"}
+
+![修复](../assets/fix.svg)修复了订单详细信息页面缺少订单编号、日期和&#x200B;**[!UICONTROL Reorder]**&#x200B;按钮的问题。
+
+## [!DNL Live Search] 4.2.2
 
 _2025年1月6日_
 
@@ -78,7 +86,7 @@ _2025年1月6日_
 
 ![修复](../assets/fix.svg)修复了导致Adobe Commerce版本2.4.5和更低版本上的`categoryList` GraphqL查询出错的问题。
 
-## [!DNL Live Search] 4.2.1 {#421}
+## [!DNL Live Search] 4.2.1
 
 _2024年7月31日_
 
@@ -87,7 +95,7 @@ _2024年7月31日_
 ![修复](../assets/fix.svg)修复了某些脚本未在签出页面上加载的问题。
 ![修复](../assets/fix.svg)修复了`composer.json`文件中的依赖项版本。
 
-## [!DNL Live Search] 4.2.0 {#420}
+## [!DNL Live Search] 4.2.0
 
 _2024年5月31日_
 
@@ -95,7 +103,7 @@ _2024年5月31日_
 
 ![新](../assets/new.svg)更新了Live Search扩展以使用PLP小组件2.0.0版。
 
-## [!DNL Live Search] 4.1.2 {#412}
+## [!DNL Live Search] 4.1.2
 
 _2024年5月16日_
 
@@ -105,7 +113,7 @@ _2024年5月16日_
 
 ![修复](../assets/fix.svg)修复了[`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-by-categories) GraphQL查询以根据`categoryPath`和`categoryList`正确筛选类别。
 
-## [!DNL Live Search] 4.1.1 {#411}
+## [!DNL Live Search] 4.1.1
 
 _2024年3月19日_
 
@@ -116,7 +124,7 @@ _2024年3月19日_
 ![New](../assets/new.svg)添加了对波兰语的语言支持。
 ![New](../assets/new.svg) [!DNL Live Search]现在支持运行Adobe Commerce 2.4.4的安装使用PHP 8.3。
 
-## [!DNL Live Search] 4.1.0 {#410}
+## [!DNL Live Search] 4.1.0
 
 _2024年2月22日_
 
@@ -132,7 +140,7 @@ _2024年2月22日_
 ![修复](../assets/fix.svg)修复了导致搜索弹出框始终在价格值前面显示货币符号（无论区域设置如何）的问题。
 ![修复](../assets/fix.svg)为已禁用的核心插件删除了不必要的类型定义，以修复安装时的兼容性问题。
 
-## [!DNL Live Search] 4.0.0 {#400}
+## [!DNL Live Search] 4.0.0
 
 _2023年11月13日_
 
@@ -165,7 +173,7 @@ _2023年11月13日_
 
 +++3.1.1和之前的版本
 
-## [!DNL Live Search] 3.1.1 {#311}
+## [!DNL Live Search] 3.1.1
 
 _2023年9月15日_
 
@@ -194,7 +202,7 @@ _2023年9月15日_
 ![修复](../assets/fix.svg)“排名类型”已重命名为“智能排名”
 ![修复](../assets/fix.svg)小错误修复
 
-## [!DNL Live Search] 3.1.0 {#310}
+## [!DNL Live Search] 3.1.0
 
 _2023年9月1日_
 
@@ -204,7 +212,7 @@ _2023年9月1日_
 
 ![修复](../assets/fix.svg)产品列表构件已更新为使用[目录服务API](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/)。
 
-## [!DNL Live Search] 3.0.2 {#302}
+## [!DNL Live Search] 3.0.2
 
 _2023年8月7日_
 
@@ -233,7 +241,7 @@ _2023年8月7日_
 
 使用实时搜索产品列表页面构件会导致Google Tag Manager失败。 如果需要Google Tag Manager，请使用默认的Search Adapter 。
 
-## [!DNL Live Search] 3.0.1 {#301}
+## [!DNL Live Search] 3.0.1
 
 _2023年3月14日_
 
@@ -278,7 +286,7 @@ _2023年3月14日_
 
 建议在推送到生产环境之前进行升级和测试。 在验证其测试环境结果后，请考虑在非高峰时间升级生产环境。
 
-## [!DNL Live Search] 2.0.5 {#205}
+## [!DNL Live Search] 2.0.5
 
 [!BADGE 支持]{type="信息性" tooltip="支持"}
 
@@ -288,7 +296,7 @@ _2023年3月14日_
 
 建议在推送到生产环境之前进行升级和测试。 在验证其测试环境结果后，请考虑在非高峰时间升级生产环境。
 
-### [!DNL Live Search] 2.0.4 {#204}
+### [!DNL Live Search] 2.0.4
 
 [!BADGE 支持]{type="信息性" tooltip="支持"}
 
@@ -302,7 +310,7 @@ _2023年3月14日_
 
 建议用户在推送到生产环境之前进行升级和测试。 在验证其测试环境结果后，请考虑在非高峰时间升级生产环境。
 
-### [!DNL Live Search] 2.0.3 {#203}
+### [!DNL Live Search] 2.0.3
 
 [!BADGE 支持]{type="信息性" tooltip="支持"}
 
@@ -312,7 +320,7 @@ _2023年3月14日_
 
 建议用户在推送到生产环境之前进行升级和测试。 在验证其测试环境结果后，请考虑在非高峰时间升级生产环境。
 
-### [!DNL Live Search] 2.0 {#20}
+### [!DNL Live Search] 2.0
 
 [!BADGE 支持]{type="信息性" tooltip="支持"}
 
@@ -324,10 +332,10 @@ _2023年3月14日_
 [!DNL Live Search]支持![新](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/)。
 ![新建](../assets/new.svg) [!DNL Live Search]安装过程已更新，其中包含高级过程更改。
 已从店面页脚中删除![修复](../assets/fix.svg) [高级搜索](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)链接。
-![错误](../assets/bug.svg)以下产品属性在与PWA的测试版一起使用时，[Commerce GraphQL API](https://developer.adobe.com/commerce/services/graphql/live-search/)不支持： `description`、`name`、`short_description`
+![错误](../assets/bug.svg)以下产品属性在与PWA的Beta版一起使用时，[Commerce GraphQL API](https://developer.adobe.com/commerce/services/graphql/live-search/)不支持： `description`、`name`、`short_description`
 ![错误](../assets/bug.svg) [!DNL Live Search]的PWA测试版不支持[事件处理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)。
 
-### [!DNL Live Search] 1.3.1 {#131}
+### [!DNL Live Search] 1.3.1
 
 [!BADGE 支持]{type="信息性" tooltip="支持"}
 
@@ -335,7 +343,7 @@ _2023年3月14日_
 ![修复](../assets/fix.svg)修复了在没有[货币符号](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration#step-5-customize-currency-symbols-optional) (`data-currency-symbol`)可用时导致错误发生的问题。
 ![Fix](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md)现在显示[特别价格](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special)（最低最终价格）（可用时）。
 
-### [!DNL Live Search] 1.3.0 {#130}
+### [!DNL Live Search] 1.3.0
 
 [!BADGE 支持]{type="信息性" tooltip="支持"}
 
@@ -346,7 +354,7 @@ _2023年3月14日_
 搜索适配器的![错误](../assets/bug.svg)修补程序处理重复的产品。
 ![错误](../assets/bug.svg) [!DNL Live Search]支持具有多个（虚拟）[库存](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage)的[单一来源](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage)（物理）库存位置。 现在不支持多个清单源。
 
-### [!DNL Live Search] 1.2.0 {#120}
+### [!DNL Live Search] 1.2.0
 
 [!BADGE 支持]{type="信息性" tooltip="支持"}
 
@@ -359,7 +367,7 @@ _2023年3月14日_
 如果搜索条件包含空的排序顺序值，![修复](../assets/fix.svg) [!DNL Live Search]将不再引发错误
 ![修复](../assets/fix.svg)如果属性代码包含字符串“to”或“from”，则范围筛选不再中断
 
-### [!DNL Live Search] 1.1.0 {#110}
+### [!DNL Live Search] 1.1.0
 
 [!BADGE 支持]{type="信息性" tooltip="支持"}
 
