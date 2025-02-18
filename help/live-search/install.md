@@ -3,9 +3,9 @@ title: 开始使用 [!DNL Live Search]
 description: 从Adobe Commerce中了解 [!DNL Live Search] 的系统要求和安装步骤。
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 42ad3e05789844a0bcc6cb114a0db067f3d497db
+source-git-commit: 079998ad1390849bc8078f958140e101b95460ca
 workflow-type: tm+mt
-source-wordcount: '3093'
+source-wordcount: '3100'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Adobe Commerce [!DNL Live Search]和[[!DNL Catalog Service]](../catalog-service/
 
 ## 1.安装[!DNL Live Search]扩展
 
-[!DNL Live Search]是通过[Composer](https://getcomposer.org/)从[Adobe市场](https://commercemarketplace.adobe.com/magento-live-search.html)安装为扩展的。 安装和配置[!DNL Live Search]后，Adobe[!DNL Commerce]开始与SaaS服务共享搜索和目录数据。 此时，*管理员*&#x200B;用户可以设置、自定义和管理搜索Facet、同义词和促销规则。
+[!DNL Live Search]是通过[Composer](https://getcomposer.org/)从[Adobe Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)安装为扩展的。 安装和配置[!DNL Live Search]后，Adobe [!DNL Commerce]开始与SaaS服务共享搜索和目录数据。 此时，*管理员*&#x200B;用户可以设置、自定义和管理搜索Facet、同义词和促销规则。
 
 >[!NOTE]
 >
@@ -60,9 +60,9 @@ Adobe Commerce [!DNL Live Search]和[[!DNL Catalog Service]](../catalog-service/
 
    >[!IMPORTANT]
    >
-   >由于Elasticsearch7将于2023年8月宣布终止支持，建议所有Adobe Commerce客户迁移到OpenSearch 2.x搜索引擎。 有关在产品升级期间迁移搜索引擎的信息，请参阅&#x200B;_升级指南_&#x200B;中的[迁移到OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration)。
+   >由于Elasticsearch 7将于2023年8月宣布终止支持，建议所有Adobe Commerce客户迁移到OpenSearch 2.x搜索引擎。 有关在产品升级期间迁移搜索引擎的信息，请参阅&#x200B;_升级指南_&#x200B;中的[迁移到OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration)。
 
-1. 从[Adobe市场](https://commercemarketplace.adobe.com/magento-live-search.html)下载`live-search`包。
+1. 从[Adobe Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)下载`live-search`包。
 
 1. 从命令行运行以下命令：
 
@@ -227,7 +227,7 @@ bin/magento saas:resync --feed categoryPermissions
   >
   >如果您收到`table does not exist`错误，请在`catalog_data_exporter_products`和`catalog_data_exporter_product_attributes`表中查找条目。 这些表名称在4.2.1之前的[!DNL Live Search]版本中使用。
 
-- 使用带有默认查询的[GraphQL游乐场](https://developer.adobe.com/commerce/services/graphql/live-search/)来验证以下内容：
+- 使用带有默认查询的[GraphQL游乐场](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/graphql)&#x200B;(有关更多详细信息，请参阅[GraphQL引用](https://developer.adobe.com/commerce/services/graphql/live-search/))来验证以下内容：
 
    - 返回的产品计数接近您对商店视图的预期。
    - 将返回Facet。
@@ -402,7 +402,7 @@ Adobe建议直接调用SaaS API，尤其是目录服务端点。
 - [PLP小组件](https://github.com/adobe/storefront-product-listing-page)
 - [实时搜索字段](https://github.com/adobe/storefront-search-as-you-type)
 
-默认情况下，当您不使用标准组件(如Search Adapter、Luma构件或AEM CIF构件)时，无法自动收集用户交互数据。 Adobe Sensei将使用此收集的数据进行智能推销和性能跟踪。 要解决此问题，您需要开发自定义解决方案，以采用Headless方式实施此数据收集。
+默认情况下，当您未使用搜索适配器、Luma构件或AEM CIF构件等标准组件时，无法自动收集用户交互数据。 Adobe Sensei将使用此收集的数据进行智能推销和性能跟踪。 要解决此问题，您需要开发自定义解决方案，以采用Headless方式实施此数据收集。
 
 [!DNL Live Search]的最新版本已使用[!DNL Catalog Service]。
 
@@ -508,13 +508,13 @@ composer require magento/module-data-services-graphql
 
 ### PWA支持
 
-[!DNL Live Search]适用于PWA Studio，但用户可能看到与其他Commerce实现略有不同。 在威尼亚省可以使用搜索和产品列表页面等基本功能，但Graphql的某些排列可能无法正常工作。 此外，可能存在性能差异。
+[!DNL Live Search]适用于PWA Studio，但用户可能会看到与其他Commerce实施相比的细微差异。 在威尼亚省可以使用搜索和产品列表页面等基本功能，但Graphql的某些排列可能无法正常工作。 此外，可能存在性能差异。
 
-- 当前[!DNL Live Search]的PWA实现需要比[!DNL Live Search]更多的处理时间来返回搜索结果(使用本机Commerce店面)。
-- PWA[!DNL Live Search]不支持[事件处理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)。 因此，搜索报表和智能促销在PWA店面中不起作用。
+- 与使用本机PWA店面的[!DNL Live Search]相比，当前[!DNL Live Search]的Commerce实现需要更多的处理时间来返回搜索结果。
+- PWA中的[!DNL Live Search]不支持[事件处理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)。 因此，搜索报表和智能促销在PWA商店中不起作用。
 - 使用[PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)时，GraphQL不支持直接筛选`description`、`name`、`short_description`，但是这些字段可以通过更一般的筛选器返回。
 
-要将[!DNL Live Search]与PWA Studio一起使用，集成商还必须：
+要将[!DNL Live Search]与PWA Studio结合使用，集成商还必须：
 
 1. 安装[livesearch-storefront-utils](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils)。
 1. 在`storeDetails`对象中设置`environmentId`。
